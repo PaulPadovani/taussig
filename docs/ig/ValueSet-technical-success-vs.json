@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "technical-success-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs technical-success-vs</b></p><a name=\"technical-success-vs\"> </a><a name=\"hctechnical-success-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-technical-success.html\"><code>https://taussig/fhir/CodeSystem/technical-success</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;0.6.0</span></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/technical-success-vs",
+  "version" : "0.6.0",
+  "name" : "TechnicalSuccessVS",
+  "title" : "TAUSSIG — Succès technique",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://taussig/fhir/CodeSystem/technical-success"
+    }]
+  }
+}

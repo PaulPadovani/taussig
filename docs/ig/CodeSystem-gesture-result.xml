@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="gesture-result"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem gesture-result</b></p><a name="gesture-result"> </a><a name="hcgesture-result"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/gesture-result</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">success<a name="gesture-result-success"> </a></td><td>Succès</td></tr><tr><td style="white-space:nowrap">partial<a name="gesture-result-partial"> </a></td><td>Partiel</td></tr><tr><td style="white-space:nowrap">failure_repositioned<a name="gesture-result-failure_repositioned"> </a></td><td>Échec — repositionné</td></tr><tr><td style="white-space:nowrap">failure_abandoned<a name="gesture-result-failure_abandoned"> </a></td><td>Échec — abandonné</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/gesture-result"/>
+  <version value="0.6.0"/>
+  <name value="GestureResult"/>
+  <title value="TAUSSIG — Résultat d'un geste / d'un matériel"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Résultat au niveau geste et tentative matériel."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="success"/>
+    <display value="Succès"/>
+  </concept>
+  <concept>
+    <code value="partial"/>
+    <display value="Partiel"/>
+  </concept>
+  <concept>
+    <code value="failure_repositioned"/>
+    <display value="Échec — repositionné"/>
+  </concept>
+  <concept>
+    <code value="failure_abandoned"/>
+    <display value="Échec — abandonné"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,672 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/measurement-property> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "measurement-property"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem measurement-property</b></p><a name=\"measurement-property\"> </a><a name=\"hcmeasurement-property\"> </a><p><b>Propriétés</b></p><p><b>Cette terminologie de référence (CodeSystem) définit les propriétés suivantes pour ses concepts</b></p><table class=\"grid\"><tr><td><b>Nom</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>unit_ucum</td><td>unit_ucum</td><td>string</td><td>Unité UCUM canonique</td></tr><tr><td>derivation</td><td>derivation</td><td>string</td><td>mesuré ou calculé</td></tr><tr><td>site_dependent</td><td>site_dependent</td><td>boolean</td><td>Requiert un body_site SNOMED</td></tr><tr><td>snomed_secondary</td><td>snomed_secondary</td><td>Coding</td><td>Codage SNOMED secondaire générique</td></tr><tr><td>family</td><td>family</td><td>string</td><td>Famille physiologique</td></tr><tr><td>value_type</td><td>value_type</td><td>string</td><td>Type FHIR de la valeur attendue (Quantity | CodeableConcept)</td></tr><tr><td>value_set</td><td>value_set</td><td>string</td><td>ValueSet canonique des valeurs admises (propriétés qualitatives)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-property</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>unit_ucum</b></td><td><b>derivation</b></td><td><b>site_dependent</b></td><td><b>snomed_secondary</b></td><td><b>family</b></td><td><b>value_type</b></td><td><b>value_set</b></td></tr><tr><td style=\"white-space:nowrap\">pressure_systolic<a name=\"measurement-property-pressure_systolic\"> </a></td><td>Pression systolique</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 251067001}\">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">pressure_diastolic<a name=\"measurement-property-pressure_diastolic\"> </a></td><td>Pression diastolique</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 251067001}\">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">pressure_mean<a name=\"measurement-property-pressure_mean\"> </a></td><td>Pression moyenne</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 251067001}\">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">pressure_end_diastolic<a name=\"measurement-property-pressure_end_diastolic\"> </a></td><td>Pression télédiastolique (ventricule)</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 251067001}\">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">pressure_wedge<a name=\"measurement-property-pressure_wedge\"> </a></td><td>Pression capillaire pulmonaire bloquée (wedge)</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 251067001}\">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">oxygen_saturation<a name=\"measurement-property-oxygen_saturation\"> </a></td><td>Saturation en oxygène</td><td>%</td><td>mesuré</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 103228002}\">saturation de l'hémoglobine en oxygène</a></td><td>Oxymétrie</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">flow_pulmonary<a name=\"measurement-property-flow_pulmonary\"> </a></td><td>Débit pulmonaire (Qp)</td><td>L/min</td><td>calculé</td><td>false</td><td/><td>Débit</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">flow_systemic<a name=\"measurement-property-flow_systemic\"> </a></td><td>Débit systémique (Qs)</td><td>L/min</td><td>calculé</td><td>false</td><td/><td>Débit</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">flow_ratio_qp_qs<a name=\"measurement-property-flow_ratio_qp_qs\"> </a></td><td>Rapport Qp/Qs</td><td>{ratio}</td><td>calculé</td><td>false</td><td/><td>Débit</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">cardiac_output<a name=\"measurement-property-cardiac_output\"> </a></td><td>Débit cardiaque</td><td>L/min</td><td>calculé</td><td>false</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 82799009}\">DC - débit cardiaque</a></td><td>Débit</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">cardiac_index<a name=\"measurement-property-cardiac_index\"> </a></td><td>Index cardiaque</td><td>L/min/m2</td><td>calculé</td><td>false</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 54993008}\">IC - index cardiaque</a></td><td>Débit</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">resistance_pulmonary<a name=\"measurement-property-resistance_pulmonary\"> </a></td><td>Résistance vasculaire pulmonaire (RVP)</td><td>mm[Hg].min/L</td><td>calculé</td><td>false</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 88619007}\">résistance vasculaire</a></td><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">resistance_pulmonary_indexed<a name=\"measurement-property-resistance_pulmonary_indexed\"> </a></td><td>RVP indexée (RVPi)</td><td>mm[Hg].min/L/m2</td><td>calculé</td><td>false</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 88619007}\">résistance vasculaire</a></td><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">resistance_systemic<a name=\"measurement-property-resistance_systemic\"> </a></td><td>Résistance vasculaire systémique (RVS)</td><td>mm[Hg].min/L</td><td>calculé</td><td>false</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 88619007}\">résistance vasculaire</a></td><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">resistance_ratio_pvr_svr<a name=\"measurement-property-resistance_ratio_pvr_svr\"> </a></td><td>Rapport RVP/RVS</td><td>{ratio}</td><td>calculé</td><td>false</td><td/><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">gradient_peak_to_peak<a name=\"measurement-property-gradient_peak_to_peak\"> </a></td><td>Gradient pic-à-pic</td><td>mm[Hg]</td><td>calculé</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 251081004}\">Cardiovascular pressure gradient</a></td><td>Gradient</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">gradient_mean<a name=\"measurement-property-gradient_mean\"> </a></td><td>Gradient moyen</td><td>mm[Hg]</td><td>calculé</td><td>true</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 251081004}\">Cardiovascular pressure gradient</a></td><td>Gradient</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">oxygen_consumption<a name=\"measurement-property-oxygen_consumption\"> </a></td><td>Consommation d'oxygène (VO2)</td><td>mL/min/m2</td><td>mesuré/estimé</td><td>false</td><td/><td>Autre</td><td>Quantity</td><td/></tr><tr><td style=\"white-space:nowrap\">regurgitation_grade<a name=\"measurement-property-regurgitation_grade\"> </a></td><td>Grade de régurgitation</td><td/><td>mesuré</td><td>true</td><td/><td>Qualitatif</td><td>CodeableConcept</td><td><code>https://taussig/fhir/ValueSet/taussig-regurgitation-grade</code></td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/measurement-property"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "TaussigMeasurementProperty"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Propriétés de mesure hémodynamique"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "19"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "unit_ucum" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "Unité UCUM canonique" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.property.code [ fhir:value "derivation" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "mesuré ou calculé" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.property.code [ fhir:value "site_dependent" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "Requiert un body_site SNOMED" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.property.code [ fhir:value "snomed_secondary" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "Codage SNOMED secondaire générique" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "Coding" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.property.code [ fhir:value "family" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "Famille physiologique" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.property.code [ fhir:value "value_type" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "Type FHIR de la valeur attendue (Quantity | CodeableConcept)" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.property.code [ fhir:value "value_set" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "ValueSet canonique des valeurs admises (propriétés qualitatives)" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pressure_systolic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pression systolique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Pression" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg]" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:251067001 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "251067001" ] ;
+         fhir:Coding.display [ fhir:value "Cardiovascular pressure" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pressure_diastolic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pression diastolique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Pression" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg]" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:251067001 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "251067001" ] ;
+         fhir:Coding.display [ fhir:value "Cardiovascular pressure" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pressure_mean" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pression moyenne" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Pression" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg]" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:251067001 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "251067001" ] ;
+         fhir:Coding.display [ fhir:value "Cardiovascular pressure" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pressure_end_diastolic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pression télédiastolique (ventricule)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Pression" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg]" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:251067001 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "251067001" ] ;
+         fhir:Coding.display [ fhir:value "Cardiovascular pressure" ]
+       ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pressure_wedge" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pression capillaire pulmonaire bloquée (wedge)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Pression" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg]" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:251067001 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "251067001" ] ;
+         fhir:Coding.display [ fhir:value "Cardiovascular pressure" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oxygen_saturation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Saturation en oxygène" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Oxymétrie" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "%" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:103228002 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "103228002" ] ;
+         fhir:Coding.display [ fhir:value "saturation de l'hémoglobine en oxygène" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "flow_pulmonary" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Débit pulmonaire (Qp)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Débit" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "L/min" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "flow_systemic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Débit systémique (Qs)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Débit" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "L/min" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "flow_ratio_qp_qs" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rapport Qp/Qs" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Débit" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "{ratio}" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cardiac_output" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Débit cardiaque" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Débit" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "L/min" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:82799009 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "82799009" ] ;
+         fhir:Coding.display [ fhir:value "DC - débit cardiaque" ]
+       ]
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "cardiac_index" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Index cardiaque" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Débit" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "L/min/m2" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:54993008 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "54993008" ] ;
+         fhir:Coding.display [ fhir:value "IC - index cardiaque" ]
+       ]
+     ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "resistance_pulmonary" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Résistance vasculaire pulmonaire (RVP)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Résistance" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg].min/L" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:88619007 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "88619007" ] ;
+         fhir:Coding.display [ fhir:value "résistance vasculaire" ]
+       ]
+     ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "resistance_pulmonary_indexed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "RVP indexée (RVPi)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Résistance" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg].min/L/m2" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:88619007 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "88619007" ] ;
+         fhir:Coding.display [ fhir:value "résistance vasculaire" ]
+       ]
+     ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "resistance_systemic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Résistance vasculaire systémique (RVS)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Résistance" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg].min/L" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:88619007 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "88619007" ] ;
+         fhir:Coding.display [ fhir:value "résistance vasculaire" ]
+       ]
+     ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "resistance_ratio_pvr_svr" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rapport RVP/RVS" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Résistance" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "{ratio}" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gradient_peak_to_peak" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gradient pic-à-pic" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Gradient" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg]" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:251081004 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "251081004" ] ;
+         fhir:Coding.display [ fhir:value "Cardiovascular pressure gradient" ]
+       ]
+     ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "gradient_mean" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gradient moyen" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Gradient" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mm[Hg]" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "calculé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ], [
+       fhir:index 5 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed_secondary" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:251081004 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "251081004" ] ;
+         fhir:Coding.display [ fhir:value "Cardiovascular pressure gradient" ]
+       ]
+     ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "oxygen_consumption" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Consommation d'oxygène (VO2)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Autre" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "unit_ucum" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mL/min/m2" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré/estimé" ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Quantity" ]
+     ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "regurgitation_grade" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Grade de régurgitation" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "family" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "Qualitatif" ]
+     ], [
+       fhir:index 1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "derivation" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "mesuré" ]
+     ], [
+       fhir:index 2 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "site_dependent" ] ;
+       fhir:CodeSystem.concept.property.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 3 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_type" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "CodeableConcept" ]
+     ], [
+       fhir:index 4 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "value_set" ] ;
+       fhir:CodeSystem.concept.property.valueString [ fhir:value "https://taussig/fhir/ValueSet/taussig-regurgitation-grade" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/measurement-property.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="material-type"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem material-type</b></p><a name="material-type"> </a><a name="hcmaterial-type"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/material-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">balloon<a name="material-type-balloon"> </a></td><td>Ballon</td></tr><tr><td style="white-space:nowrap">stent<a name="material-type-stent"> </a></td><td>Stent</td></tr><tr><td style="white-space:nowrap">device_implant<a name="material-type-device_implant"> </a></td><td>Dispositif implantable</td></tr><tr><td style="white-space:nowrap">consumable<a name="material-type-consumable"> </a></td><td>Consommable</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/material-type"/>
+  <version value="0.6.0"/>
+  <name value="MaterialType"/>
+  <title value="TAUSSIG — Type de matériel"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Catégorie de matériel utilisé pendant un geste."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="balloon"/>
+    <display value="Ballon"/>
+  </concept>
+  <concept>
+    <code value="stent"/>
+    <display value="Stent"/>
+  </concept>
+  <concept>
+    <code value="device_implant"/>
+    <display value="Dispositif implantable"/>
+  </concept>
+  <concept>
+    <code value="consumable"/>
+    <display value="Consommable"/>
+  </concept>
+</CodeSystem>

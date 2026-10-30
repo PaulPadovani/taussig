@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/technical-success> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "technical-success"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem technical-success</b></p><a name=\"technical-success\"> </a><a name=\"hctechnical-success\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/technical-success</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">complete<a name=\"technical-success-complete\"> </a></td><td>Complet</td></tr><tr><td style=\"white-space:nowrap\">partial<a name=\"technical-success-partial\"> </a></td><td>Partiel</td></tr><tr><td style=\"white-space:nowrap\">failed<a name=\"technical-success-failed\"> </a></td><td>Échec</td></tr><tr><td style=\"white-space:nowrap\">aborted<a name=\"technical-success-aborted\"> </a></td><td>Interrompu</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/technical-success"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "TechnicalSuccess"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Succès technique de la procédure"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Niveau de succès technique au niveau procédure."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "complete" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Complet" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "partial" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Partiel" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "failed" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Échec" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "aborted" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Interrompu" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/technical-success.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

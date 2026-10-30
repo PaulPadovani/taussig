@@ -1,0 +1,338 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TAUSSIG — Procédures (SNOMED CT, interopérabilité) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.62"}
+    h3,h4,h5,h6{--heading-prefix:"4.62"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - trial-use
+
+
+
+  France
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — Procédures (SNOMED CT, interopérabilité)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-valueset -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Contenu narratif</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-taussig-procedure-snomed.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-taussig-procedure-snomed.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-taussig-procedure-snomed.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: TAUSSIG — Procédures (SNOMED CT, interopérabilité)
+(Expérimental)
+  </h2>
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/ValueSet/taussig-procedure-snomed<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.6.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed|0.6.0"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            à date du 
+2026-10-30
+
+          
+        
+      </td>
+
+
+
+      <td><i>Nom computable</i>: <span style="font-family: monospace;">taussig_procedure_snomed</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<div data-fhir="generated">
+<p>Working set SNOMED CT des gestes de cathétérisme congénital (couche d'interopérabilité FHIR Procedure.code). Résolu sur le SMT depuis les gestes IPCCC retenus. À valider cliniquement.</p>
+
+</div>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-taussig-catheterization.html">TAUSSIG — Cathétérisme cardiaque (acte pivot)</a></li>
+ <li><a href="StructureDefinition-taussig-interventional-gesture.html">TAUSSIG — Geste interventionnel</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Définition logique (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="taussig-procedure-snomed"> </a><a name="hctaussig-procedure-snomed"> </a>
+<ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href="http://snomed.info/id/112811009">112811009</a></td><td>fermeture d'une communication interatriale</td></tr><tr><td><a href="http://snomed.info/id/1231783006">1231783006</a></td><td>Percutaneous closure of prosthetic cardiac paravalvular leak using device</td></tr><tr><td><a href="http://snomed.info/id/1344914001">1344914001</a></td><td>Open occlusion of left atrial appendage</td></tr><tr><td><a href="http://snomed.info/id/1357782001">1357782001</a></td><td>Fluoroscopy guided percutaneous embolization of lymphatic vessel with contrast</td></tr><tr><td><a href="http://snomed.info/id/175268008">175268008</a></td><td>embolectomie percutanée de l'artère pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/232770003">232770003</a></td><td>dilatation par ballonnet d'une prothèse de valve mitrale</td></tr><tr><td><a href="http://snomed.info/id/232810003">232810003</a></td><td>dilatation par ballonnet d'une prothèse de valve tricuspidienne</td></tr><tr><td><a href="http://snomed.info/id/232869005">232869005</a></td><td>dilatation par ballonnet d'une prothèse de valve pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/232978003">232978003</a></td><td>insertion d'endoprothèse dans une veine pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/233003002">233003002</a></td><td>insertion d'endoprothèse dans une voie veineuse systémique</td></tr><tr><td><a href="http://snomed.info/id/233043007">233043007</a></td><td>septostomie atriale</td></tr><tr><td><a href="http://snomed.info/id/233044001">233044001</a></td><td>septostomie auriculaire par ballonnet par retrait</td></tr><tr><td><a href="http://snomed.info/id/233067004">233067004</a></td><td>dilatation par ballonnet de la chambre de chasse du ventricule droit</td></tr><tr><td><a href="http://snomed.info/id/233100002">233100002</a></td><td>fermeture transluminale percutanée de communication interventriculaire avec prothèse</td></tr><tr><td><a href="http://snomed.info/id/233202003">233202003</a></td><td>dilatation par ballonnet du canal artériel</td></tr><tr><td><a href="http://snomed.info/id/233214006">233214006</a></td><td>angioplastie de l'artère pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/233215007">233215007</a></td><td>mise en place d'endoprothèse dans l'artère pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/252425004">252425004</a></td><td>électrophysiologie cardiaque</td></tr><tr><td><a href="http://snomed.info/id/261562001">261562001</a></td><td>angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/276892002">276892002</a></td><td>angioplastie percutanée par ballonnet d'une veine pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/276896004">276896004</a></td><td>angioplastie transluminale percutanée par ballonnet de la voie veineuse systémique guidée par radioscopie avec produit de contraste</td></tr><tr><td><a href="http://snomed.info/id/308683001">308683001</a></td><td>biopsie transluminale ventriculaire droite après transplantation cardiaque</td></tr><tr><td><a href="http://snomed.info/id/308696000">308696000</a></td><td>angioplastie de coarctation</td></tr><tr><td><a href="http://snomed.info/id/34945008">34945008</a></td><td>angiocardiographie</td></tr><tr><td><a href="http://snomed.info/id/384642005">384642005</a></td><td>valvuloplastie de la valve mitrale</td></tr><tr><td><a href="http://snomed.info/id/41817002">41817002</a></td><td>fermeture d'un foramen ovale perméable</td></tr><tr><td><a href="http://snomed.info/id/41976001">41976001</a></td><td>cathétérisme cardiaque</td></tr><tr><td><a href="http://snomed.info/id/428280004">428280004</a></td><td>insertion d'une endoprothèse dans le canal artériel</td></tr><tr><td><a href="http://snomed.info/id/428394001">428394001</a></td><td>péricardiocentèse transluminale percutanée</td></tr><tr><td><a href="http://snomed.info/id/432394003">432394003</a></td><td>réparation de la valve mitrale guidée par radioscopie</td></tr><tr><td><a href="http://snomed.info/id/442188002">442188002</a></td><td>valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie</td></tr><tr><td><a href="http://snomed.info/id/448779009">448779009</a></td><td>Occlusion of systemic to pulmonary artery shunt using transluminal embolic device</td></tr><tr><td><a href="http://snomed.info/id/448785002">448785002</a></td><td>mise en place d'endoprothèse au site de coarctation aortique</td></tr><tr><td><a href="http://snomed.info/id/448949007">448949007</a></td><td>mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/449033003">449033003</a></td><td>dilatation par ballonnet d'un conduit cardiaque</td></tr><tr><td><a href="http://snomed.info/id/449227002">449227002</a></td><td>dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/449389000">449389000</a></td><td>pose d'une endoprothèse dans un conduit cardiaque</td></tr><tr><td><a href="http://snomed.info/id/46897002">46897002</a></td><td>valvuloplastie percutanée par ballonnet de la valve pulmonaire</td></tr><tr><td><a href="http://snomed.info/id/61192001">61192001</a></td><td>fermeture d'une fistule ou fenestration aorticopulmonaire</td></tr><tr><td><a href="http://snomed.info/id/698642008">698642008</a></td><td>fermeture par voie percutanée du ligament artériel persistant</td></tr><tr><td><a href="http://snomed.info/id/707813002">707813002</a></td><td>dilatation transluminale percutanée par ballonnet d'un conduit cardiaque</td></tr><tr><td><a href="http://snomed.info/id/707823006">707823006</a></td><td>Percutaneous transluminal embolization for major systemic to pulmonary collateral artery</td></tr><tr><td><a href="http://snomed.info/id/708810002">708810002</a></td><td>Endovascular retrieval of foreign body from aorta</td></tr><tr><td><a href="http://snomed.info/id/71330003">71330003</a></td><td>réparation d'une fistule artérioveineuse par occlusion</td></tr><tr><td><a href="http://snomed.info/id/77166000">77166000</a></td><td>valvuloplastie aortique percutanée par ballonnet</td></tr><tr><td><a href="http://snomed.info/id/773996000">773996000</a></td><td>implantation d'une valve aortique transcathéter</td></tr><tr><td><a href="http://snomed.info/id/787162002">787162002</a></td><td>implantation d'une prothèse de valve pulmonaire, par voie percutanée</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de 127.0.0.1 basée sur SNOMED CT édition 11000315107 21-juin 2026<span class="copy-text-inline"><button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 47 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>Système</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://snomed.info/sct-112811009"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/112811009">112811009</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;112811009&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;112811009&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-1231783006"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/1231783006">1231783006</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;1231783006&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;1231783006&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-1344914001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/1344914001">1344914001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;1344914001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;1344914001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-1357782001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/1357782001">1357782001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;1357782001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;1357782001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-175268008"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/175268008">175268008</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;175268008&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;175268008&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-232770003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/232770003">232770003</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;232770003&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;232770003&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-232810003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/232810003">232810003</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;232810003&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;232810003&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-232869005"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/232869005">232869005</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;232869005&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;232869005&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-232978003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/232978003">232978003</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;232978003&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;232978003&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233003002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233003002">233003002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233003002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233003002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233043007"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233043007">233043007</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233043007&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233043007&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233044001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233044001">233044001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233044001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233044001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233067004"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233067004">233067004</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233067004&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233067004&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233100002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233100002">233100002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233100002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233100002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233202003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233202003">233202003</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233202003&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233202003&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233214006"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233214006">233214006</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233214006&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233214006&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-233215007"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/233215007">233215007</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;233215007&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;233215007&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-252425004"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/252425004">252425004</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;252425004&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;252425004&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-261562001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/261562001">261562001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;261562001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;261562001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-276892002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/276892002">276892002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;276892002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;276892002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-276896004"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/276896004">276896004</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;276896004&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;276896004&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-308683001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/308683001">308683001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;308683001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;308683001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-308696000"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/308696000">308696000</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;308696000&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;308696000&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-34945008"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/34945008">34945008</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;34945008&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;34945008&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-384642005"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/384642005">384642005</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;384642005&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;384642005&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-41817002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/41817002">41817002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;41817002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;41817002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-41976001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/41976001">41976001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;41976001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;41976001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-428280004"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/428280004">428280004</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;428280004&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;428280004&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-428394001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/428394001">428394001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;428394001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;428394001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-432394003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/432394003">432394003</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;432394003&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;432394003&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-442188002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/442188002">442188002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;442188002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;442188002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-448779009"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/448779009">448779009</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;448779009&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;448779009&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-448785002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/448785002">448785002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;448785002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;448785002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-448949007"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/448949007">448949007</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;448949007&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;448949007&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-449033003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/449033003">449033003</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;449033003&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;449033003&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-449227002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/449227002">449227002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;449227002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;449227002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-449389000"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/449389000">449389000</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;449389000&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;449389000&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-46897002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/46897002">46897002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;46897002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;46897002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-61192001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/61192001">61192001</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;61192001&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;61192001&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-698642008"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/698642008">698642008</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;698642008&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;698642008&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-707813002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/707813002">707813002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;707813002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;707813002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-707823006"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/707823006">707823006</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;707823006&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;707823006&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-708810002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/708810002">708810002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;708810002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;708810002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-71330003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/71330003">71330003</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;71330003&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;71330003&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-77166000"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/77166000">77166000</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;77166000&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;77166000&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-773996000"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/773996000">773996000</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;773996000&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;773996000&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-787162002"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/787162002">787162002</a></td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/11000315107/version/20260621&quot;, &quot;code&quot;: &quot;787162002&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/11000315107/version/20260621&quot;/&gt;&lt;code value=&quot;787162002&quot;/&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy" aria-label="copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology">Description du (des) tableau(x) ci-dessus</a>.
+  </p>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-10-30 22:35:00 +0100">
+    2026-10-30
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

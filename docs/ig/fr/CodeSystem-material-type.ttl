@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/material-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "material-type"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem material-type</b></p><a name=\"material-type\"> </a><a name=\"hcmaterial-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/material-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">balloon<a name=\"material-type-balloon\"> </a></td><td>Ballon</td></tr><tr><td style=\"white-space:nowrap\">stent<a name=\"material-type-stent\"> </a></td><td>Stent</td></tr><tr><td style=\"white-space:nowrap\">device_implant<a name=\"material-type-device_implant\"> </a></td><td>Dispositif implantable</td></tr><tr><td style=\"white-space:nowrap\">consumable<a name=\"material-type-consumable\"> </a></td><td>Consommable</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/material-type"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MaterialType"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Type de matériel"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Catégorie de matériel utilisé pendant un geste."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "balloon" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ballon" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "device_implant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dispositif implantable" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "consumable" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Consommable" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/material-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

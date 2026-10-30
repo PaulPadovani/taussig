@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAUSSIG — Téléchargements</title>
+<link rel="stylesheet" href="assets/taussig/styles.css">
+<style>
+/* ————— chrome (commun aux pages) ————— */
+.entete{display:flex;align-items:center;gap:28px;padding:0 40px;height:60px;border-bottom:var(--trait-fin) solid var(--ligne-1);background:var(--papier-0);position:sticky;top:0;z-index:20}
+.marque{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--encre-1)}
+.marque b{font:var(--graisse-demi) 19px/1 var(--police-titre);letter-spacing:.04em}
+.marque span{font-size:var(--taille-2xs);letter-spacing:var(--approche-caps);text-transform:uppercase;color:var(--encre-3)}
+.entete nav{display:flex;gap:22px;margin-left:auto}
+.nav-lien{font-size:var(--taille-md);color:var(--encre-2);text-decoration:none;padding:19px 1px;border-bottom:var(--trait-fort) solid transparent}
+.nav-lien:hover{color:var(--primaire)}
+.nav-lien[aria-current="page"]{color:var(--encre-1);font-weight:var(--graisse-moyenne);border-bottom-color:var(--primaire)}
+.ariane{display:flex;align-items:center;gap:9px;font-size:var(--taille-sm);padding:12px 40px 0;color:var(--encre-3)}
+.ariane a{color:var(--encre-3);text-decoration:none}.ariane a:hover{color:var(--primaire);text-decoration:underline}
+.ariane .sep{color:var(--encre-4)}.ariane [aria-current]{color:var(--encre-1);font-weight:var(--graisse-moyenne)}
+main{max-width:1080px;margin:0 auto;padding:4px 40px 80px}
+.tete-page{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:10px 0 4px}
+.tete-page h1{font-size:var(--taille-3xl)}
+.tete-page .sous{font-size:var(--taille-md);color:var(--encre-3)}
+.intro{max-width:var(--mesure-prose);font-size:var(--taille-prose);line-height:var(--interligne-texte);color:var(--encre-2);margin:6px 0 26px}
+
+h2.sec{font-size:var(--taille-xl);color:var(--encre-1);font-weight:var(--graisse-demi);margin:34px 0 4px}
+.sec-note{font-size:var(--taille-sm);color:var(--encre-3);margin-bottom:16px;max-width:var(--mesure-prose)}
+
+/* ————— cartes artefacts ————— */
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.carte{display:flex;flex-direction:column;border:var(--trait-fin) solid var(--ligne-1);border-radius:var(--rayon-lg);background:var(--papier-0);padding:18px 18px 16px;transition:border-color var(--duree-1),box-shadow var(--duree-1)}
+.carte:hover{border-color:var(--ligne-2);box-shadow:var(--ombre-1)}
+.carte .haut{display:flex;align-items:flex-start;gap:12px;margin-bottom:8px}
+.fmt{flex:0 0 auto;font:var(--graisse-demi) var(--taille-2xs)/1 var(--police-code);letter-spacing:.03em;padding:6px 9px;border-radius:var(--rayon-sm);white-space:nowrap;text-transform:uppercase}
+.fmt.xlsx{color:var(--relationnel);background:var(--relationnel-fond);border:1px solid var(--relationnel-bord)}
+.fmt.pdf{color:var(--clinique);background:var(--clinique-fond);border:1px solid var(--clinique-bord)}
+.fmt.dbml{color:var(--primaire);background:var(--primaire-fond);border:1px solid var(--primaire-bord)}
+.fmt.zip{color:var(--fhir);background:var(--fhir-fond);border:1px solid var(--fhir-bord)}
+.carte h3{font-size:var(--taille-lg);color:var(--encre-1);font-weight:var(--graisse-demi);line-height:var(--interligne-serre)}
+.carte h3 .taille{font-size:var(--taille-xs);color:var(--encre-4);font-weight:var(--graisse-normale);font-variant-numeric:tabular-nums;margin-left:6px}
+.carte p{font-size:var(--taille-sm);color:var(--encre-2);line-height:var(--interligne-ui);flex:1;margin:2px 0 12px}
+.carte .lic{font-size:var(--taille-2xs);color:var(--encre-3);margin-bottom:12px;padding-top:8px;border-top:var(--trait-fin) solid var(--ligne-1)}
+.carte .lic b{color:var(--encre-2);font-weight:var(--graisse-moyenne)}
+.dl{align-self:flex-start;font:var(--graisse-moyenne) var(--taille-sm)/1 var(--police-texte);color:var(--sur-primaire);background:var(--primaire);border:none;border-radius:var(--rayon-sm);padding:9px 15px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+.dl:hover{background:var(--primaire-fonce)}
+.dl svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2}
+
+/* ————— value sets ————— */
+.vs-cadre{overflow-x:auto;border:var(--trait-fin) solid var(--ligne-1);border-radius:var(--rayon-md)}
+table.vs{border-collapse:collapse;width:100%;font-size:var(--taille-sm)}
+table.vs th{text-align:left;font-size:var(--taille-2xs);letter-spacing:.04em;text-transform:uppercase;color:var(--encre-3);font-weight:var(--graisse-demi);padding:9px 14px;background:var(--papier-1);border-bottom:var(--trait-fin) solid var(--ligne-1)}
+table.vs td{padding:8px 14px;border-top:var(--trait-fin) solid var(--ligne-1);vertical-align:middle}
+table.vs tr:hover td{background:var(--papier-1)}
+table.vs .t{color:var(--encre-1)}
+table.vs .n{font-variant-numeric:tabular-nums;color:var(--encre-2);text-align:right;white-space:nowrap}
+table.vs .taille{color:var(--encre-4);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.vs a{color:var(--primaire);text-decoration:none;font-weight:var(--graisse-moyenne);white-space:nowrap}
+table.vs a:hover{text-decoration:underline}
+
+/* ————— licences ————— */
+.licences{border:var(--trait-fin) solid var(--ligne-1);border-radius:var(--rayon-lg);background:var(--papier-1);padding:18px 20px}
+.licences ul{list-style:none;display:grid;gap:8px}
+.licences li{display:flex;gap:12px;font-size:var(--taille-sm);color:var(--encre-2);line-height:var(--interligne-ui)}
+.licences li b{color:var(--encre-1);flex:0 0 130px;font-weight:var(--graisse-moyenne)}
+.avert{font-size:var(--taille-sm);color:var(--encre-3);margin-top:14px;padding:12px 14px;border-left:var(--trait-accent) solid var(--attention-bord);background:var(--attention-fond);border-radius:0 var(--rayon-sm) var(--rayon-sm) 0}
+
+@media (max-width:720px){main{padding-left:22px;padding-right:22px}.licences li{flex-direction:column;gap:2px}.licences li b{flex-basis:auto}}
+</style>
+<link rel="stylesheet" href="assets/public.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><meta name="description" content="TAUSSIG — modèle de données, dictionnaire et ressources de recherche en cathétérisme cardiaque congénital."></head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a><header class="entete"><a class="marque" href="index.html"><b>TAUSSIG</b><span class="brand-acronym"><strong>T</strong>ranslational <strong>A</strong>rchitecture for <strong>U</strong>nified <strong>S</strong>emantic, <strong>S</strong>tructuring and <strong>I</strong>nteroperable data <strong>G</strong>eneration in Pediatric Cardiology</span></a><nav aria-label="Navigation principale"><a class="nav-lien" href="index.html">Accueil</a><a class="nav-lien" href="methode.html">Méthode</a><a class="nav-lien" href="explorateur.html">Modèle</a><a class="nav-lien" href="dictionnaire.html">Dictionnaire</a><a class="nav-lien" href="couverture.html">Terminologie</a><a class="nav-lien" href="profils-fhir.html">Profil FHIR</a><a class="nav-lien" href="trajectoires.html">Trajectoire</a><a class="nav-lien" href="telechargements.html" aria-current="page">Téléchargements</a></nav></header>
+<nav class="ariane" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span class="sep">›</span><span aria-current="page">Téléchargements</span></nav>
+
+<main id="contenu" class="page-tool page-telechargements">
+  <div class="tete-page"><h1>Téléchargements</h1><span class="sous" id="sous"></span></div>
+  <p class="intro">Les fichiers du modèle et du dictionnaire, accompagnés des listes de valeurs dérivées. Aucun compte rendu ne figure dans ces téléchargements. Consultez les <a href="licences.html">informations de réutilisation et de citation</a>.</p>
+
+  <h2 class="sec">Fichiers du modèle</h2><p class="sec-note"><a href="mds-impression.html">Ouvrir la version imprimable du dictionnaire →</a></p>
+  <div class="grille" id="grille"><p><a href="telechargements/TAUSSIG-schema-relationnel-v4.dbml" download>Schéma relationnel DBML</a> · <a href="telechargements/TAUSSIG-DataElements-POC-v4.xlsx" download>Dictionnaire Excel</a> · <a href="mds-impression.html">Dictionnaire imprimable</a></p></div>
+
+  <h2 class="sec">Value sets dérivés</h2>
+  <p class="sec-note">Un fichier CSV par axe clinique (libellé + codes des terminologies de référence). Encodage UTF-8, ouverture directe dans Excel. <span id="dl-zip"></span></p>
+  <div class="vs-cadre">
+    <table class="vs"><thead><tr><th>Value set</th><th style="text-align:right">Codes</th><th>Fichier</th><th></th></tr></thead><tbody id="vs-corps"></tbody></table>
+  </div>
+
+  <h2 class="sec">Licences & attribution</h2>
+  <div class="licences"><p>Les ressources sont proposées pour l’examen du modèle de recherche. Les correspondances terminologiques restent à arbitrer ; les mentions de licence du projet sont en cours d’harmonisation.</p><p><a href="licences.html">Lire les informations de réutilisation et de citation →</a></p></div>
+</main>
+
+<script src="data/downloads.js"></script>
+<script>
+const DL = window.TAUSSIG_DOWNLOADS;
+document.getElementById('sous').textContent = `mis à jour le ${DL.genere}`;
+function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+const ICO = '<svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>';
+const FMT = f => (/pdf/i.test(f)?'pdf':/xlsx|excel/i.test(f)?'xlsx':/dbml/i.test(f)?'dbml':'zip');
+
+document.getElementById('grille').innerHTML = DL.fichiers.map(f => `
+  <div class="carte">
+    <div class="haut"><span class="fmt ${FMT(f.format)}">${esc(f.format)}</span></div>
+    <h3>${esc(f.titre)}<span class="taille">${esc(f.taille)}</span></h3>
+    <p>${esc(f.desc)}</p>
+    <div class="lic"><b>Licence :</b> ${esc(f.licence)}</div>
+    <a class="dl" href="${esc(f.fichier)}" download>${ICO} Télécharger</a>
+  </div>`).join('');
+
+// value sets
+const zip = DL.fichiers.find(f => f.id === 'csvzip');
+if(zip) document.getElementById('dl-zip').innerHTML =
+  `— ou <a href="${esc(zip.fichier)}" download style="color:var(--primaire);font-weight:var(--graisse-moyenne)">tout télécharger (ZIP, ${esc(zip.taille)})</a>.`;
+document.getElementById('vs-corps').innerHTML = DL.valuesets.map(v => `
+  <tr>
+    <td class="t">${esc(v.titre)}</td>
+    <td class="n">${v.codes}</td>
+    <td class="taille">${esc(v.taille)}</td>
+    <td><a href="${esc(v.fichier)}" download>CSV ↓</a></td>
+  </tr>`).join('');
+</script>
+<footer class="site-footer"><div><a class="footer-brand" href="index.html">TAUSSIG</a><p>Un modèle commun pour la recherche en cathétérisme cardiaque congénital.</p></div><nav aria-label="Informations du site"><a href="methode.html">À propos & méthode</a><a href="licences.html">Réutilisation & citation</a><a href="telechargements.html">Ressources</a></nav><p class="footer-note">Modèle v4 · Recherche en cours · Aucun compte rendu hébergé sur ce site.</p></footer><noscript><p class="noscript-note">Les outils interactifs nécessitent JavaScript. Les fichiers du modèle restent accessibles sur la <a href="telechargements.html">page des téléchargements</a>.</p></noscript></body>
+</html>

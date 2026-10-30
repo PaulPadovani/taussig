@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/condition-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "condition-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem condition-type</b></p><a name=\"condition-type\"> </a><a name=\"hccondition-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/condition-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">residual_lesion<a name=\"condition-type-residual_lesion\"> </a></td><td>Lésion résiduelle</td></tr><tr><td style=\"white-space:nowrap\">acquired_lesion<a name=\"condition-type-acquired_lesion\"> </a></td><td>Lésion acquise</td></tr><tr><td style=\"white-space:nowrap\">post_surgical_state<a name=\"condition-type-post_surgical_state\"> </a></td><td>État post-chirurgical</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/condition-type"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "ConditionType"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Type de condition évolutive"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Catégorie d'une lésion évolutive."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "residual_lesion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lésion résiduelle" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "acquired_lesion" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lésion acquise" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "post_surgical_state" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "État post-chirurgical" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/condition-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "measurement-modality-to-snomed",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts measurement-modality-to-snomed</b></p><a name=\"measurement-modality-to-snomed\"> </a><a name=\"hcmeasurement-modality-to-snomed\"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping de <a href=\"CodeSystem-measurement-modality.html\">TAUSSIG — Modalité de mesure</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td></tr><tr><td>catheterization (Cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>41976001 (cathétérisme cardiaque)</td></tr><tr><td>echocardiography (Échocardiographie)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>40701008 (échocardiographie)</td></tr><tr><td>cardiac_mri (IRM cardiaque)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>241620005 (IRM du cœur)</td></tr><tr><td>ct (Scanner)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>241547009 (tomodensitométrie du cœur)</td></tr><tr><td>ecg</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>29303009 (ECG)</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/ConceptMap/measurement-modality-to-snomed",
+  "version" : "0.6.0",
+  "name" : "MeasurementModalityToSnomed",
+  "title" : "TAUSSIG — Modalité de mesure -> SNOMED (Observation.method)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "group" : [{
+    "source" : "https://taussig/fhir/CodeSystem/measurement-modality",
+    "target" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "catheterization",
+      "target" : [{
+        "code" : "41976001",
+        "display" : "cathétérisme cardiaque",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "echocardiography",
+      "target" : [{
+        "code" : "40701008",
+        "display" : "échocardiographie",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "cardiac_mri",
+      "target" : [{
+        "code" : "241620005",
+        "display" : "IRM du cœur",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ct",
+      "target" : [{
+        "code" : "241547009",
+        "display" : "tomodensitométrie du cœur",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "ecg",
+      "target" : [{
+        "code" : "29303009",
+        "display" : "ECG",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ae-management"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem ae-management</b></p><a name="ae-management"> </a><a name="hcae-management"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/ae-management</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">transcatheter_bailout<a name="ae-management-transcatheter_bailout"> </a></td><td>Geste de rattrapage transcathéter</td></tr><tr><td style="white-space:nowrap">surgical_bailout<a name="ae-management-surgical_bailout"> </a></td><td>Geste de rattrapage chirurgical</td></tr><tr><td style="white-space:nowrap">no_treatment<a name="ae-management-no_treatment"> </a></td><td>Aucun traitement requis</td></tr><tr><td style="white-space:nowrap">medical_treatment<a name="ae-management-medical_treatment"> </a></td><td>Traitement médical</td></tr><tr><td style="white-space:nowrap">transfusion<a name="ae-management-transfusion"> </a></td><td>Transfusion</td></tr><tr><td style="white-space:nowrap">thrombolysis<a name="ae-management-thrombolysis"> </a></td><td>Thrombolyse</td></tr><tr><td style="white-space:nowrap">surgical_intervention<a name="ae-management-surgical_intervention"> </a></td><td>Intervention chirurgicale</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/ae-management"/>
+  <version value="0.6.0"/>
+  <name value="TaussigAeManagement"/>
+  <title value="TAUSSIG — Gestion de la complication (prise en charge péri-procédurale)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Variable de prise en charge d'un événement indésirable de cathétérisme congénital (échelle d'escalade). Ancrage IPCCC/EPCC chap. 15 + SNOMED procédure. À valider cliniquement."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="transcatheter_bailout"/>
+    <display value="Geste de rattrapage transcathéter"/>
+  </concept>
+  <concept>
+    <code value="surgical_bailout"/>
+    <display value="Geste de rattrapage chirurgical"/>
+  </concept>
+  <concept>
+    <code value="no_treatment"/>
+    <display value="Aucun traitement requis"/>
+  </concept>
+  <concept>
+    <code value="medical_treatment"/>
+    <display value="Traitement médical"/>
+  </concept>
+  <concept>
+    <code value="transfusion"/>
+    <display value="Transfusion"/>
+  </concept>
+  <concept>
+    <code value="thrombolysis"/>
+    <display value="Thrombolyse"/>
+  </concept>
+  <concept>
+    <code value="surgical_intervention"/>
+    <display value="Intervention chirurgicale"/>
+  </concept>
+</CodeSystem>

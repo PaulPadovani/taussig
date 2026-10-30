@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="measurement-modality"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem measurement-modality</b></p><a name="measurement-modality"> </a><a name="hcmeasurement-modality"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-modality</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">catheterization<a name="measurement-modality-catheterization"> </a></td><td>Cathétérisme</td></tr><tr><td style="white-space:nowrap">echocardiography<a name="measurement-modality-echocardiography"> </a></td><td>Échocardiographie</td></tr><tr><td style="white-space:nowrap">cardiac_mri<a name="measurement-modality-cardiac_mri"> </a></td><td>IRM cardiaque</td></tr><tr><td style="white-space:nowrap">ct<a name="measurement-modality-ct"> </a></td><td>Scanner</td></tr><tr><td style="white-space:nowrap">ecg<a name="measurement-modality-ecg"> </a></td><td>ECG</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/measurement-modality"/>
+  <version value="0.6.0"/>
+  <name value="MeasurementModality"/>
+  <title value="TAUSSIG — Modalité de mesure"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Modalité d'acquisition d'une mesure."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="catheterization"/>
+    <display value="Cathétérisme"/>
+  </concept>
+  <concept>
+    <code value="echocardiography"/>
+    <display value="Échocardiographie"/>
+  </concept>
+  <concept>
+    <code value="cardiac_mri"/>
+    <display value="IRM cardiaque"/>
+  </concept>
+  <concept>
+    <code value="ct"/>
+    <display value="Scanner"/>
+  </concept>
+  <concept>
+    <code value="ecg"/>
+    <display value="ECG"/>
+  </concept>
+</CodeSystem>

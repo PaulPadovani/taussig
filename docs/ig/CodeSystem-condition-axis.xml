@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="condition-axis"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem condition-axis</b></p><a name="condition-axis"> </a><a name="hccondition-axis"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/condition-axis</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">congenital<a name="condition-axis-congenital"> </a></td><td>Diagnostic congénital</td></tr><tr><td style="white-space:nowrap">evolutive<a name="condition-axis-evolutive"> </a></td><td>Condition évolutive</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/condition-axis"/>
+  <version value="0.6.0"/>
+  <name value="ConditionAxis"/>
+  <title value="TAUSSIG — Axe d'une condition cardiaque"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Distingue le diagnostic congénital des conditions évolutives."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="congenital"/>
+    <display value="Diagnostic congénital"/>
+  </concept>
+  <concept>
+    <code value="evolutive"/>
+    <display value="Condition évolutive"/>
+  </concept>
+</CodeSystem>

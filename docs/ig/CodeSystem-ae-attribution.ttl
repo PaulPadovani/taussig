@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/ae-attribution> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ae-attribution"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem ae-attribution</b></p><a name=\"ae-attribution\"> </a><a name=\"hcae-attribution\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/ae-attribution</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">device<a name=\"ae-attribution-device\"> </a></td><td>Dispositif</td></tr><tr><td style=\"white-space:nowrap\">vascular_access<a name=\"ae-attribution-vascular_access\"> </a></td><td>Abord vasculaire</td></tr><tr><td style=\"white-space:nowrap\">anesthesia<a name=\"ae-attribution-anesthesia\"> </a></td><td>Anesthésie</td></tr><tr><td style=\"white-space:nowrap\">procedure_technique<a name=\"ae-attribution-procedure_technique\"> </a></td><td>Technique procédurale</td></tr><tr><td style=\"white-space:nowrap\">patient_condition<a name=\"ae-attribution-patient_condition\"> </a></td><td>État du patient</td></tr><tr><td style=\"white-space:nowrap\">contrast<a name=\"ae-attribution-contrast\"> </a></td><td>Produit de contraste</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"ae-attribution-unknown\"> </a></td><td>Inconnu</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/ae-attribution"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AeAttribution"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Attribution d'un EI"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Cause suspectée d'un événement indésirable."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "device" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dispositif" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vascular_access" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Abord vasculaire" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anesthesia" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anesthésie" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "procedure_technique" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Technique procédurale" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient_condition" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "État du patient" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "contrast" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Produit de contraste" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inconnu" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/ae-attribution.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

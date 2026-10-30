@@ -1,0 +1,98 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "taussig-genetic-syndrome",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-genetic-syndrome</b></p><a name=\"taussig-genetic-syndrome\"> </a><a name=\"hctaussig-genetic-syndrome\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <code>http://www.orpha.net</code><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td>870</td><td>Trisomie 21</td></tr><tr><td>881</td><td>Syndrome de Turner</td></tr><tr><td>567</td><td>Syndrome de délétion 22q11.2</td></tr><tr><td>3380</td><td>Syndrome de trisomie 18</td></tr><tr><td>3378</td><td>Syndrome de trisomie 13</td></tr><tr><td>365</td><td>Glycogénose par déficit en maltase acide</td></tr><tr><td>95</td><td>Ataxie de Friedreich</td></tr><tr><td>98896</td><td>Dystrophie musculaire de Duchenne</td></tr><tr><td>558</td><td>Syndrome de Marfan</td></tr><tr><td>98249</td><td>Syndrome d'Ehlers-Danlos</td></tr><tr><td>60030</td><td>Syndrome de Loeys-Dietz</td></tr><tr><td>648</td><td>Syndrome de Noonan</td></tr><tr><td>805</td><td>Sclérose tubéreuse de Bourneville</td></tr><tr><td>904</td><td>Syndrome de Williams</td></tr><tr><td>52</td><td>Syndrome d'Alagille</td></tr><tr><td>290</td><td>Syndrome de rubéole congénitale</td></tr><tr><td>68341</td><td>Anomalies congénitales multiples/syndrome dysmorphique</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/taussig-genetic-syndrome",
+  "version" : "0.6.0",
+  "name" : "taussig_genetic_syndrome",
+  "title" : "TAUSSIG — Syndromes génétiques (Orphanet)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "copyright" : "Orphanet (c) 2025, CC-BY-4.0.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.orpha.net",
+      "concept" : [{
+        "code" : "870",
+        "display" : "Trisomie 21"
+      },
+      {
+        "code" : "881",
+        "display" : "Syndrome de Turner"
+      },
+      {
+        "code" : "567",
+        "display" : "Syndrome de délétion 22q11.2"
+      },
+      {
+        "code" : "3380",
+        "display" : "Syndrome de trisomie 18"
+      },
+      {
+        "code" : "3378",
+        "display" : "Syndrome de trisomie 13"
+      },
+      {
+        "code" : "365",
+        "display" : "Glycogénose par déficit en maltase acide"
+      },
+      {
+        "code" : "95",
+        "display" : "Ataxie de Friedreich"
+      },
+      {
+        "code" : "98896",
+        "display" : "Dystrophie musculaire de Duchenne"
+      },
+      {
+        "code" : "558",
+        "display" : "Syndrome de Marfan"
+      },
+      {
+        "code" : "98249",
+        "display" : "Syndrome d'Ehlers-Danlos"
+      },
+      {
+        "code" : "60030",
+        "display" : "Syndrome de Loeys-Dietz"
+      },
+      {
+        "code" : "648",
+        "display" : "Syndrome de Noonan"
+      },
+      {
+        "code" : "805",
+        "display" : "Sclérose tubéreuse de Bourneville"
+      },
+      {
+        "code" : "904",
+        "display" : "Syndrome de Williams"
+      },
+      {
+        "code" : "52",
+        "display" : "Syndrome d'Alagille"
+      },
+      {
+        "code" : "290",
+        "display" : "Syndrome de rubéole congénitale"
+      },
+      {
+        "code" : "68341",
+        "display" : "Anomalies congénitales multiples/syndrome dysmorphique"
+      }]
+    }]
+  }
+}

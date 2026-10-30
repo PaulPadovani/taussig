@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "genetic-method",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem genetic-method</b></p><a name=\"genetic-method\"> </a><a name=\"hcgenetic-method\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/genetic-method</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">clinical<a name=\"genetic-method-clinical\"> </a></td><td>Clinique</td></tr><tr><td style=\"white-space:nowrap\">cytogenetic<a name=\"genetic-method-cytogenetic\"> </a></td><td>Cytogénétique</td></tr><tr><td style=\"white-space:nowrap\">molecular<a name=\"genetic-method-molecular\"> </a></td><td>Moléculaire</td></tr><tr><td style=\"white-space:nowrap\">suspected<a name=\"genetic-method-suspected\"> </a></td><td>Suspecté</td></tr><tr><td style=\"white-space:nowrap\">ruled_out<a name=\"genetic-method-ruled_out\"> </a></td><td>Écarté</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/genetic-method",
+  "version" : "0.6.0",
+  "name" : "GeneticMethod",
+  "title" : "TAUSSIG — Méthode de confirmation génétique",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Méthode ayant confirmé/écarté le syndrome (Observation.method).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "clinical",
+    "display" : "Clinique"
+  },
+  {
+    "code" : "cytogenetic",
+    "display" : "Cytogénétique"
+  },
+  {
+    "code" : "molecular",
+    "display" : "Moléculaire"
+  },
+  {
+    "code" : "suspected",
+    "display" : "Suspecté"
+  },
+  {
+    "code" : "ruled_out",
+    "display" : "Écarté"
+  }]
+}

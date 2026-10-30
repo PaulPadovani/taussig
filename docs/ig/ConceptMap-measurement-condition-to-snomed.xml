@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="measurement-condition-to-snomed"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CarteDeConcepts measurement-condition-to-snomed</b></p><a name="measurement-condition-to-snomed"> </a><a name="hcmeasurement-condition-to-snomed"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping de <a href="CodeSystem-measurement-condition.html">TAUSSIG — Condition de mesure</a> to <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a></p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>resting (Repos)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>263678003 (au repos)</td><td/></tr><tr><td>exercise (Effort)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>128976003 (état à l'effort)</td><td/></tr><tr><td>pharmacologic_stress (Stress pharmacologique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>428813002 (épreuve de stress pharmacologique)</td><td/></tr><tr><td>supplemental_o2 (Oxygène)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>57485005 (oxygénothérapie)</td><td/></tr><tr><td>nitric_oxide (Monoxyde d'azote)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>6710000 (monoxyde d'azote)</td><td/></tr><tr><td>room_air (Air ambiant)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td><td style="background-color: #efefef">Pas de concept SNOMED — TAUSSIG-local.</td></tr><tr><td>other (Autre)</td><td colspan="2" style="background-color: #efefef">(not mapped)</td><td style="background-color: #efefef">Pas de concept SNOMED — TAUSSIG-local.</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/ConceptMap/measurement-condition-to-snomed"/>
+  <version value="0.6.0"/>
+  <name value="MeasurementConditionToSnomed"/>
+  <title value="TAUSSIG — Condition de mesure -&gt; SNOMED"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="https://taussig/fhir/CodeSystem/measurement-condition"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="resting"/>
+      <target>
+        <code value="263678003"/>
+        <display value="au repos"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="exercise"/>
+      <target>
+        <code value="128976003"/>
+        <display value="état à l'effort"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="pharmacologic_stress"/>
+      <target>
+        <code value="428813002"/>
+        <display value="épreuve de stress pharmacologique"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="supplemental_o2"/>
+      <target>
+        <code value="57485005"/>
+        <display value="oxygénothérapie"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="nitric_oxide"/>
+      <target>
+        <code value="6710000"/>
+        <display value="monoxyde d'azote"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="room_air"/>
+      <target>
+        <equivalence value="unmatched"/>
+        <comment value="Pas de concept SNOMED — TAUSSIG-local."/>
+      </target>
+    </element>
+    <element>
+      <code value="other"/>
+      <target>
+        <equivalence value="unmatched"/>
+        <comment value="Pas de concept SNOMED — TAUSSIG-local."/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

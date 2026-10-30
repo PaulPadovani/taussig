@@ -1,0 +1,103 @@
+/* ============================================================
+   TAUSSIG — Couleurs
+   Thème clair par défaut (lisibilité clinique).
+   Règle de contraste : toute couleur destinée au texte courant
+   atteint AA (≥ 4,5:1) sur --papier-0 ; les variantes « -vif »
+   (graphiques, traits) atteignent ≥ 3:1.
+   ============================================================ */
+:root {
+
+  /* ---- Neutres « papier & encre » (tièdes, teinte ≈ 85) ---- */
+  --papier-0: oklch(98.5% 0.004 85);  /* fond de page            ≈ #FAF9F6 */
+  --papier-1: oklch(96.6% 0.005 85);  /* fonds alternés, zébrures           */
+  --papier-2: oklch(94.2% 0.007 85);  /* insets, survols neutres            */
+  --papier-3: oklch(90.5% 0.008 85);  /* pistes de jauges, désactivé        */
+  --ligne-1:  oklch(89% 0.008 85);    /* filet fin (hairline)               */
+  --ligne-2:  oklch(80% 0.010 85);    /* bordure appuyée                    */
+  --encre-1:  oklch(24% 0.010 85);    /* texte principal        ≈ 15,6:1    */
+  --encre-2:  oklch(40% 0.012 85);    /* texte secondaire        ≈ 8,1:1    */
+  --encre-3:  oklch(50% 0.012 85);    /* texte atténué (AA)      ≈ 5,1:1    */
+  --encre-4:  oklch(64% 0.010 85);    /* décoratif — jamais pour du texte   */
+
+  /* ---- Primaire « sarcelle d'encre » : actions, liens, focus ---- */
+  --primaire:        oklch(42% 0.062 205);   /* ≈ 6,9:1 */
+  --primaire-fonce:  oklch(34% 0.058 205);   /* survol / actif */
+  --primaire-fond:   oklch(95.8% 0.014 205); /* fonds teintés  */
+  --primaire-bord:   oklch(85% 0.040 205);
+  --sur-primaire:    oklch(98.5% 0.004 85);  /* texte sur aplat primaire */
+  --focus:           oklch(55% 0.11 205);    /* anneau de focus clavier  */
+
+  /* ---- Les trois registres du mode provenance ----
+     Chaque registre = teinte + traitement formel (cf. base.css) :
+     · clinique     framboise — arrondi, chaleureux (rayon plein)
+     · relationnel  ardoise   — angles vifs, filets (rayon 2 px)
+     · fhir         flamme    — monospace, îlot sombre            */
+  --clinique:          oklch(50% 0.130 355);   /* texte, AA ≈ 5,2:1 */
+  --clinique-vif:      oklch(58% 0.155 355);   /* marqueurs, traits */
+  --clinique-fond:     oklch(96.8% 0.013 355);
+  --clinique-bord:     oklch(88% 0.048 355);
+
+  --relationnel:       oklch(45% 0.058 255);   /* AA ≈ 6,3:1 */
+  --relationnel-vif:   oklch(55% 0.075 255);
+  --relationnel-fond:  oklch(96.6% 0.010 255);
+  --relationnel-bord:  oklch(87.5% 0.032 255);
+
+  --fhir:              oklch(51% 0.115 55);    /* AA ≈ 4,9:1 */
+  --fhir-vif:          oklch(62% 0.145 55);
+  --fhir-fond:         oklch(96.8% 0.020 70);
+  --fhir-bord:         oklch(87% 0.055 65);
+
+  /* ---- Sémantique (états) — DISTINCTE de la palette data-viz ---- */
+  --succes:         oklch(50% 0.100 155);
+  --succes-fond:    oklch(96.4% 0.020 155);
+  --succes-bord:    oklch(86% 0.055 155);
+  --attention:      oklch(52% 0.100 80);
+  --attention-fond: oklch(96.8% 0.028 90);
+  --attention-bord: oklch(86% 0.065 85);
+  --danger:         oklch(49% 0.150 27);
+  --danger-fond:    oklch(96.4% 0.016 27);
+  --danger-bord:    oklch(86.5% 0.050 27);
+
+  /* ---- Surlignage synchronisé (« le surligneur ») ----
+     Commun aux trois registres : le lien, pas la vue.        */
+  --halo-fond:        oklch(94.5% 0.068 100);      /* lavis jaune pâle   */
+  --halo-anneau:      oklch(68% 0.120 90);         /* anneau ocre 1,5 px */
+  --halo-fond-sombre: oklch(72% 0.115 95 / 0.22);  /* variante îlot sombre */
+
+  /* ---- Data-viz catégorielle (Paul Tol « muted », daltonien-compatible) ---- */
+  --viz-1: #332288;  /* indigo      */
+  --viz-2: #88CCEE;  /* cyan clair  */
+  --viz-3: #44AA99;  /* sarcelle    */
+  --viz-4: #117733;  /* vert        */
+  --viz-5: #DDCC77;  /* sable       */
+  --viz-6: #CC6677;  /* rose        */
+  --viz-7: #882255;  /* lie-de-vin  */
+  --viz-8: #AA4499;  /* pourpre     */
+
+  /* ---- Data-viz séquentielle (heatmap) — teinte unique 205,
+          clarté monotone : lisible quel que soit le type de daltonisme ---- */
+  --seq-1: oklch(96% 0.014 205);
+  --seq-2: oklch(88% 0.032 205);
+  --seq-3: oklch(79% 0.052 205);
+  --seq-4: oklch(69% 0.068 205);
+  --seq-5: oklch(58% 0.078 205);
+  --seq-6: oklch(45% 0.080 205);
+  --seq-7: oklch(31% 0.068 205);
+
+  /* ---- Matrice de couverture (couleur + forme + hachures) ---- */
+  --couv-plein:   var(--seq-6);   /* ● couvert  */
+  --couv-partiel: var(--seq-3);   /* ◪ partiel (+ hachures) */
+  --couv-absent:  var(--papier-2);/* ○ absent   */
+
+  /* ---- Îlot sombre (blocs code / JSON uniquement) ---- */
+  --ilot-fond:    oklch(24% 0.014 250);
+  --ilot-fond-2:  oklch(29% 0.016 250);   /* barre de titre du bloc */
+  --ilot-ligne:   oklch(38% 0.018 250);
+  --ilot-texte:   oklch(93% 0.008 85);
+  --ilot-attenue: oklch(68% 0.020 250);
+  /* coloration syntaxique JSON */
+  --syn-cle:      oklch(80% 0.070 230);   /* clés        */
+  --syn-chaine:   oklch(79% 0.105 60);    /* chaînes     */
+  --syn-nombre:   oklch(81% 0.105 150);   /* nombres     */
+  --syn-ponct:    var(--ilot-attenue);    /* ponctuation */
+}

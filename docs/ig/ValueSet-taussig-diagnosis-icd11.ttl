@@ -1,0 +1,973 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-diagnosis-icd11> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-diagnosis-icd11"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-diagnosis-icd11</b></p><a name=\"taussig-diagnosis-icd11\"> </a><a name=\"hctaussig-diagnosis-icd11\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <code>http://id.who.int/icd/release/11/mms</code><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>English (English, en)</b></td></tr><tr><td>LA80</td><td>Anomalie de position-orientation du cœur</td><td>Anomalous position-orientation of heart</td></tr><tr><td>LA80.0</td><td>Lévocardie</td><td>Laevocardia</td></tr><tr><td>LA80.1</td><td>Dextrocardie</td><td>Dextrocardia</td></tr><tr><td>LA80.2</td><td>Mésocardie</td><td>Mesocardia</td></tr><tr><td>LA82</td><td>Image en miroir complète</td><td>Total mirror imagery</td></tr><tr><td>LA83</td><td>Isomérisme droit</td><td>Right isomerism</td></tr><tr><td>LA84</td><td>Isomérisme gauche</td><td>Left isomerism</td></tr><tr><td>LA85</td><td>Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle</td><td>Congenital anomaly of an atrioventricular or ventriculo-arterial connection</td></tr><tr><td>LA85.0</td><td>Connexions atrioventriculaires discordantes</td><td>Discordant atrioventricular connections</td></tr><tr><td>LA85.00</td><td>Transposition congénitalement corrigée des grandes artères</td><td>Congenitally corrected transposition of great arteries</td></tr><tr><td>LA85.1</td><td>Transposition des gros vaisseaux</td><td>Transposition of the great arteries</td></tr><tr><td>LA85.2</td><td>Ventricule droit à double issue</td><td>Double outlet right ventricle</td></tr><tr><td>LA85.20</td><td>Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition</td><td>Double outlet right ventricle with subpulmonary ventricular septal defect, transposition type</td></tr><tr><td>LA85.21</td><td>Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux</td><td>Double outlet right ventricle with non-committed ventricular septal defect</td></tr><tr><td>LA85.22</td><td>Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire</td><td>Double outlet right ventricle with subaortic or doubly committed ventricular septal defect without pulmonary stenosis, ventricular septal defect type</td></tr><tr><td>LA85.23</td><td>Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot</td><td>Double outlet right ventricle with subaortic or doubly committed ventricular septal defect and pulmonary stenosis, Fallot type</td></tr><tr><td>LA85.3</td><td>Ventricule gauche à double issue</td><td>Double outlet left ventricle</td></tr><tr><td>LA85.4</td><td>Tronc artériel commun</td><td>Common arterial trunk</td></tr><tr><td>LA85.40</td><td>Tronc artériel commun à dominance aortique</td><td>Common arterial trunk with aortic dominance</td></tr><tr><td>LA85.41</td><td>Tronc artériel commun à dominance pulmonaire et arc aortique interrompue</td><td>Common arterial trunk with pulmonary dominance and interrupted aortic arch</td></tr><tr><td>LA86</td><td>Anomalie congénitale de la veine médiastinale</td><td>Congenital anomaly of mediastinal vein</td></tr><tr><td>LA86.0</td><td>Veine cave supérieure gauche</td><td>Left superior caval vein</td></tr><tr><td>LA86.1</td><td>Absence de toit du sinus coronaire</td><td>Unroofed coronary sinus</td></tr><tr><td>LA86.2</td><td>Anomalie du retour veineux pulmonaire</td><td>Anomalous pulmonary venous connection</td></tr><tr><td>LA86.20</td><td>Connexion veineuse pulmonaire totale anormale</td><td>Total anomalous pulmonary venous connection</td></tr><tr><td>LA86.21</td><td>Connexion veineuse pulmonaire partielle anormale</td><td>Partial anomalous pulmonary venous connection</td></tr><tr><td>LA86.22</td><td>Syndrome du cimeterre</td><td>Scimitar syndrome</td></tr><tr><td>LA86.3</td><td>Sténose ou hypoplasie veineuse pulmonaire congénitale</td><td>Congenital pulmonary venous stenosis or hypoplasia</td></tr><tr><td>LA87</td><td>Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire</td><td>Congenital anomaly of an atrioventricular valve or atrioventricular septum</td></tr><tr><td>LA87.0</td><td>Anomalie congénitale de la valve tricuspide</td><td>Congenital anomaly of tricuspid valve</td></tr><tr><td>LA87.00</td><td>Insuffisance tricuspide congénitale</td><td>Congenital tricuspid regurgitation</td></tr><tr><td>LA87.01</td><td>Sténose congénitale de la valve tricuspide</td><td>Congenital tricuspid valvar stenosis</td></tr><tr><td>LA87.02</td><td>Dysplasie de la valve tricuspide</td><td>Dysplasia of tricuspid valve</td></tr><tr><td>LA87.03</td><td>Malformation d'Ebstein de la valve tricuspide</td><td>Ebstein malformation of tricuspid valve</td></tr><tr><td>LA87.1</td><td>Anomalie congénitale de la valve mitrale</td><td>Congenital anomaly of mitral valve</td></tr><tr><td>LA87.10</td><td>Insuffisance mitrale congénitale</td><td>Congenital mitral regurgitation</td></tr><tr><td>LA87.11</td><td>Sténose valvulaire mitrale congénitale</td><td>Congenital mitral valvar stenosis</td></tr><tr><td>LA87.12</td><td>Dysplasie de la valve mitrale</td><td>Dysplasia of mitral valve</td></tr><tr><td>LA87.13</td><td>Anomalie congénitale de l'appareil mitral sousvalvaire</td><td>Congenital anomaly of mitral subvalvar apparatus</td></tr><tr><td>LA87.3</td><td>Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire</td><td>Common atrioventricular junction without an atrioventricular septal defect</td></tr><tr><td>LA87.4</td><td>Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire</td><td>Common atrioventricular junction with atrioventricular septal defect</td></tr><tr><td>LA87.40</td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement</td><td>Atrioventricular septal defect with communication at the atrial level only</td></tr><tr><td>LA87.41</td><td>Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement</td><td>Atrioventricular septal defect with communication at the ventricular level only</td></tr><tr><td>LA87.42</td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire</td><td>Atrioventricular septal defect with communication at atrial level and restrictive communication at ventricular level</td></tr><tr><td>LA87.43</td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire</td><td>Atrioventricular septal defect with communication at atrial level and unrestrictive communication at ventricular level</td></tr><tr><td>LA87.44</td><td>Communication septale auriculoventriculaire avec déséquilibre ventriculaire</td><td>Atrioventricular septal defect with ventricular imbalance</td></tr><tr><td>LA87.45</td><td>Anomalie septal auriculoventriculaire et tétralogie de Fallot</td><td>Atrioventricular septal defect and tetralogy of Fallot</td></tr><tr><td>LA88</td><td>Anomalie congénitale du ventricule ou du septum ventriculaire</td><td>Congenital anomaly of a ventricle or the ventricular septum</td></tr><tr><td>LA88.0</td><td>Obstruction congénitale de la voie de sortie du ventricule droit</td><td>Congenital right ventricular outflow tract obstruction</td></tr><tr><td>LA88.1</td><td>Ventricule droit à double chambre</td><td>Double chambered right ventricle</td></tr><tr><td>LA88.2</td><td>Tétralogie de Fallot</td><td>Tetralogy of Fallot</td></tr><tr><td>LA88.20</td><td>Tétralogie de Fallot avec syndrome de valve pulmonaire absente</td><td>Tetralogy of Fallot with absent pulmonary valve syndrome</td></tr><tr><td>LA88.21</td><td>Tétralogie de Fallot avec atrésie pulmonaire</td><td>Tetralogy of Fallot with pulmonary atresia</td></tr><tr><td>LA88.22</td><td>Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire</td><td>Tetralogy of Fallot with pulmonary atresia and systemic-to-pulmonary collateral artery</td></tr><tr><td>LA88.3</td><td>Obstruction congénitale de la voie de sortie du ventricule gauche</td><td>Congenital left ventricular outflow tract obstruction</td></tr><tr><td>LA88.4</td><td>Communication interventriculaire</td><td>Ventricular septal defect</td></tr><tr><td>LA88.40</td><td>Communication interventriculaire musculaire trabéculaire</td><td>Trabecular muscular ventricular septal defect</td></tr><tr><td>LA88.41</td><td>Communication interventriculaire centrale périmembraneuse</td><td>Perimembranous central ventricular septal defect</td></tr><tr><td>LA88.42</td><td>Communication interventriculaire non significatif sur le plan hémodynamique</td><td>Ventricular septal defect haemodynamically insignificant</td></tr><tr><td>LA89</td><td>Cœur fonctionnellement univentriculaire</td><td>Functionally univentricular heart</td></tr><tr><td>LA89.0</td><td>Connexion auriculoventriculaire à double entrée</td><td>Double inlet atrioventricular connection</td></tr><tr><td>LA89.1</td><td>Atrésie de la valve tricuspide</td><td>Tricuspid atresia</td></tr><tr><td>LA89.2</td><td>Atrésie mitrale</td><td>Mitral atresia</td></tr><tr><td>LA89.3</td><td>Syndrome d'hypoplasie du cœur gauche</td><td>Hypoplastic left heart syndrome</td></tr><tr><td>LA8A</td><td>Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes</td><td>Congenital anomaly of a ventriculo-arterial valve or adjacent regions</td></tr><tr><td>LA8A.0</td><td>Anomalie congénitale de la valve pulmonaire</td><td>Congenital anomaly of pulmonary valve</td></tr><tr><td>LA8A.00</td><td>Sténose congénitale de la valve pulmonaire</td><td>Congenital pulmonary valvar stenosis</td></tr><tr><td>LA8A.01</td><td>Insuffisance congénitale de la valve pulmonaire</td><td>Congenital pulmonary regurgitation</td></tr><tr><td>LA8A.1</td><td>Atrésie pulmonaire congénitale</td><td>Congenital pulmonary atresia</td></tr><tr><td>LA8A.10</td><td>Atrésie pulmonaire avec septum ventriculaire intact</td><td>Pulmonary atresia with intact ventricular septum</td></tr><tr><td>LA8A.2</td><td>Anomalie congénitale de la valve aortique</td><td>Congenital anomaly of aortic valve</td></tr><tr><td>LA8A.20</td><td>Sténose congénitale de la valve aortique</td><td>Congenital aortic valvar stenosis</td></tr><tr><td>LA8A.21</td><td>Insuffisance aortique congénitale</td><td>Congenital aortic regurgitation</td></tr><tr><td>LA8A.22</td><td>Valve aortique bicuspide</td><td>Bicuspid aortic valve</td></tr><tr><td>LA8A.23</td><td>Atrésie de la valve aortique</td><td>Aortic valvar atresia</td></tr><tr><td>LA8A.24</td><td>Valve aortique unicuspide</td><td>Unicuspid aortic valve</td></tr><tr><td>LA8A.3</td><td>Sténose supravalvulaire aortique congénitale</td><td>Congenital supravalvar aortic stenosis</td></tr><tr><td>LA8A.4</td><td>Anévrisme du sinus aortique de Valsalva</td><td>Aneurysm of aortic sinus of Valsalva</td></tr><tr><td>LA8A.5</td><td>Sténose sous-aortique congénitale</td><td>Congenital subaortic stenosis</td></tr><tr><td>LA8A.6</td><td>Sténose sous-pulmonaire congénitale</td><td>Congenital subpulmonary stenosis</td></tr><tr><td>LA8B</td><td>Anomalie congénitale des grandes artères, y compris le canal artériel</td><td>Congenital anomaly of great arteries including arterial duct</td></tr><tr><td>LA8B.0</td><td>Fenêtre aortopulmonaire congénitale</td><td>Congenital aortopulmonary window</td></tr><tr><td>LA8B.1</td><td>Anomalie congénitale de l'arbre artériel pulmonaire</td><td>Congenital anomaly of pulmonary arterial tree</td></tr><tr><td>LA8B.2</td><td>Anomalie congénitale de l'aorte ou de ses branches</td><td>Congenital anomaly of aorta or its branches</td></tr><tr><td>LA8B.21</td><td>Coarctation de l'aorte</td><td>Coarctation of aorta</td></tr><tr><td>LA8B.22</td><td>Interruption de la crosse aortique</td><td>Interrupted aortic arch</td></tr><tr><td>LA8B.23</td><td>Anomalie congénitale de l'aorte thoracique descendante ou abdominale</td><td>Congenital anomaly of descending thoracic or abdominal aorta</td></tr><tr><td>LA8B.24</td><td>Anomalie congénitale de la branche de l'arc aortique</td><td>Congenital anomaly of aortic arch branch</td></tr><tr><td>LA8B.3</td><td>Syndrome de compression trachéo-œsophagienne</td><td>Tracheo-oesophageal compressive syndrome</td></tr><tr><td>LA8B.4</td><td>Persistance du canal artériel</td><td>Patent arterial duct</td></tr><tr><td>LA8C</td><td>Anomalie congénitale des artères coronaires</td><td>Congenital anomaly of coronary artery</td></tr><tr><td>LA8C.0</td><td>Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire</td><td>Anomalous origin of coronary artery from pulmonary arterial tree</td></tr><tr><td>LA8C.1</td><td>Origine aortique anormale ou trajet anormal de l'artère coronaire</td><td>Anomalous aortic origin or course of coronary artery</td></tr><tr><td>LA8C.2</td><td>Fistule artérielle coronaire congénitale</td><td>Congenital coronary arterial fistula</td></tr><tr><td>LA8D</td><td>Malformation congénitale du péricarde</td><td>Congenital pericardial anomaly</td></tr><tr><td>LA8E</td><td>Anomalie congénitale du septum auriculaire</td><td>Congenital anomaly of atrial septum</td></tr><tr><td>LA8E.0</td><td>Foramen ovale perméable</td><td>Patent oval foramen</td></tr><tr><td>LA8E.1</td><td>Communication interauriculaire dans la fosse ovale</td><td>Atrial septal defect within oval fossa</td></tr><tr><td>LA8E.2</td><td>Anomalie du sinus veineux</td><td>Sinus venosus defect</td></tr><tr><td>LA8E.3</td><td>Communication interauriculaire par l'orifice du sinus coronaire</td><td>Interatrial communication through coronary sinus orifice</td></tr><tr><td>LA8F</td><td>Anomalie congénitale de l'oreillette droite</td><td>Congenital anomaly of right atrium</td></tr><tr><td>LA8G</td><td>Anomalie congénitale de l'oreillette gauche</td><td>Congenital anomaly of left atrium</td></tr><tr><td>LA8G.0</td><td>Oreillette gauche divisée</td><td>Divided left atrium</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-diagnosis-icd11"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.0"] ;
+  fhir:ValueSet.name [ fhir:value "TaussigDiagnosisIcd11"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Diagnostics congénitaux (CIM-11 MMS)"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Axe de classification diagnostique de la POC : énumération des entités CIM-11 MMS retenues pour les cardiopathies congénitales, avec le libellé français officiel de l'OMS. Liaison extensible : un code CIM-11 hors liste reste admis, mais l'autocomplétion et les statistiques se font sur ce working set curé."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://id.who.int/icd/release/11/mms" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA80" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie de position-orientation du cœur" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anomalous position-orientation of heart" ]
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA80.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lévocardie" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Laevocardia" ]
+         ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA80.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dextrocardie" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dextrocardia" ]
+         ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA80.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Mésocardie" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mesocardia" ]
+         ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA82" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Image en miroir complète" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Total mirror imagery" ]
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA83" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isomérisme droit" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Right isomerism" ]
+         ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA84" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Isomérisme gauche" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Left isomerism" ]
+         ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of an atrioventricular or ventriculo-arterial connection" ]
+         ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Connexions atrioventriculaires discordantes" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Discordant atrioventricular connections" ]
+         ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transposition congénitalement corrigée des grandes artères" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenitally corrected transposition of great arteries" ]
+         ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transposition des gros vaisseaux" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Transposition of the great arteries" ]
+         ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricule droit à double issue" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double outlet right ventricle" ]
+         ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double outlet right ventricle with subpulmonary ventricular septal defect, transposition type" ]
+         ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double outlet right ventricle with non-committed ventricular septal defect" ]
+         ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double outlet right ventricle with subaortic or doubly committed ventricular septal defect without pulmonary stenosis, ventricular septal defect type" ]
+         ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double outlet right ventricle with subaortic or doubly committed ventricular septal defect and pulmonary stenosis, Fallot type" ]
+         ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricule gauche à double issue" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double outlet left ventricle" ]
+         ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.4" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tronc artériel commun" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Common arterial trunk" ]
+         ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.40" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tronc artériel commun à dominance aortique" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Common arterial trunk with aortic dominance" ]
+         ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA85.41" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Common arterial trunk with pulmonary dominance and interrupted aortic arch" ]
+         ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de la veine médiastinale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of mediastinal vein" ]
+         ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Veine cave supérieure gauche" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Left superior caval vein" ]
+         ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Absence de toit du sinus coronaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unroofed coronary sinus" ]
+         ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie du retour veineux pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anomalous pulmonary venous connection" ]
+         ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86.20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Connexion veineuse pulmonaire totale anormale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Total anomalous pulmonary venous connection" ]
+         ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Connexion veineuse pulmonaire partielle anormale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Partial anomalous pulmonary venous connection" ]
+         ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syndrome du cimeterre" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Scimitar syndrome" ]
+         ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA86.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose ou hypoplasie veineuse pulmonaire congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital pulmonary venous stenosis or hypoplasia" ]
+         ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of an atrioventricular valve or atrioventricular septum" ]
+         ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de la valve tricuspide" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of tricuspid valve" ]
+         ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insuffisance tricuspide congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital tricuspid regurgitation" ]
+         ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose congénitale de la valve tricuspide" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital tricuspid valvar stenosis" ]
+         ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dysplasie de la valve tricuspide" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dysplasia of tricuspid valve" ]
+         ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Malformation d'Ebstein de la valve tricuspide" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ebstein malformation of tricuspid valve" ]
+         ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de la valve mitrale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of mitral valve" ]
+         ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insuffisance mitrale congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital mitral regurgitation" ]
+         ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose valvulaire mitrale congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital mitral valvar stenosis" ]
+         ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dysplasie de la valve mitrale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Dysplasia of mitral valve" ]
+         ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.13" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de l'appareil mitral sousvalvaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of mitral subvalvar apparatus" ]
+         ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Common atrioventricular junction without an atrioventricular septal defect" ]
+         ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.4" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Common atrioventricular junction with atrioventricular septal defect" ]
+         ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.40" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Atrioventricular septal defect with communication at the atrial level only" ]
+         ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.41" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Atrioventricular septal defect with communication at the ventricular level only" ]
+         ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.42" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Atrioventricular septal defect with communication at atrial level and restrictive communication at ventricular level" ]
+         ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.43" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Atrioventricular septal defect with communication at atrial level and unrestrictive communication at ventricular level" ]
+         ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.44" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication septale auriculoventriculaire avec déséquilibre ventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Atrioventricular septal defect with ventricular imbalance" ]
+         ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA87.45" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie septal auriculoventriculaire et tétralogie de Fallot" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Atrioventricular septal defect and tetralogy of Fallot" ]
+         ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale du ventricule ou du septum ventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of a ventricle or the ventricular septum" ]
+         ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule droit" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital right ventricular outflow tract obstruction" ]
+         ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricule droit à double chambre" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double chambered right ventricle" ]
+         ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tétralogie de Fallot" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tetralogy of Fallot" ]
+         ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tétralogie de Fallot avec syndrome de valve pulmonaire absente" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tetralogy of Fallot with absent pulmonary valve syndrome" ]
+         ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tetralogy of Fallot with pulmonary atresia" ]
+         ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tetralogy of Fallot with pulmonary atresia and systemic-to-pulmonary collateral artery" ]
+         ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule gauche" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital left ventricular outflow tract obstruction" ]
+         ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.4" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interventriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ventricular septal defect" ]
+         ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.40" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interventriculaire musculaire trabéculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Trabecular muscular ventricular septal defect" ]
+         ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.41" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interventriculaire centrale périmembraneuse" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Perimembranous central ventricular septal defect" ]
+         ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA88.42" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interventriculaire non significatif sur le plan hémodynamique" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ventricular septal defect haemodynamically insignificant" ]
+         ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA89" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cœur fonctionnellement univentriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Functionally univentricular heart" ]
+         ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA89.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Connexion auriculoventriculaire à double entrée" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Double inlet atrioventricular connection" ]
+         ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA89.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrésie de la valve tricuspide" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tricuspid atresia" ]
+         ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA89.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrésie mitrale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mitral atresia" ]
+         ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA89.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syndrome d'hypoplasie du cœur gauche" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hypoplastic left heart syndrome" ]
+         ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of a ventriculo-arterial valve or adjacent regions" ]
+         ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de la valve pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of pulmonary valve" ]
+         ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose congénitale de la valve pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital pulmonary valvar stenosis" ]
+         ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insuffisance congénitale de la valve pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital pulmonary regurgitation" ]
+         ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrésie pulmonaire congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital pulmonary atresia" ]
+         ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrésie pulmonaire avec septum ventriculaire intact" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pulmonary atresia with intact ventricular septum" ]
+         ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de la valve aortique" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of aortic valve" ]
+         ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose congénitale de la valve aortique" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital aortic valvar stenosis" ]
+         ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Insuffisance aortique congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital aortic regurgitation" ]
+         ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valve aortique bicuspide" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Bicuspid aortic valve" ]
+         ]
+       ], [
+         fhir:index 74 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrésie de la valve aortique" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aortic valvar atresia" ]
+         ]
+       ], [
+         fhir:index 75 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.24" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valve aortique unicuspide" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Unicuspid aortic valve" ]
+         ]
+       ], [
+         fhir:index 76 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose supravalvulaire aortique congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital supravalvar aortic stenosis" ]
+         ]
+       ], [
+         fhir:index 77 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.4" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anévrisme du sinus aortique de Valsalva" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Aneurysm of aortic sinus of Valsalva" ]
+         ]
+       ], [
+         fhir:index 78 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.5" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose sous-aortique congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital subaortic stenosis" ]
+         ]
+       ], [
+         fhir:index 79 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8A.6" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose sous-pulmonaire congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital subpulmonary stenosis" ]
+         ]
+       ], [
+         fhir:index 80 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale des grandes artères, y compris le canal artériel" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of great arteries including arterial duct" ]
+         ]
+       ], [
+         fhir:index 81 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fenêtre aortopulmonaire congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital aortopulmonary window" ]
+         ]
+       ], [
+         fhir:index 82 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of pulmonary arterial tree" ]
+         ]
+       ], [
+         fhir:index 83 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de l'aorte ou de ses branches" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of aorta or its branches" ]
+         ]
+       ], [
+         fhir:index 84 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coarctation de l'aorte" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coarctation of aorta" ]
+         ]
+       ], [
+         fhir:index 85 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Interruption de la crosse aortique" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Interrupted aortic arch" ]
+         ]
+       ], [
+         fhir:index 86 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de l'aorte thoracique descendante ou abdominale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of descending thoracic or abdominal aorta" ]
+         ]
+       ], [
+         fhir:index 87 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.24" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de la branche de l'arc aortique" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of aortic arch branch" ]
+         ]
+       ], [
+         fhir:index 88 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Syndrome de compression trachéo-œsophagienne" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tracheo-oesophageal compressive syndrome" ]
+         ]
+       ], [
+         fhir:index 89 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8B.4" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Persistance du canal artériel" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Patent arterial duct" ]
+         ]
+       ], [
+         fhir:index 90 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8C" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale des artères coronaires" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of coronary artery" ]
+         ]
+       ], [
+         fhir:index 91 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8C.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anomalous origin of coronary artery from pulmonary arterial tree" ]
+         ]
+       ], [
+         fhir:index 92 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8C.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Origine aortique anormale ou trajet anormal de l'artère coronaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anomalous aortic origin or course of coronary artery" ]
+         ]
+       ], [
+         fhir:index 93 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8C.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fistule artérielle coronaire congénitale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital coronary arterial fistula" ]
+         ]
+       ], [
+         fhir:index 94 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8D" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Malformation congénitale du péricarde" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital pericardial anomaly" ]
+         ]
+       ], [
+         fhir:index 95 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8E" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale du septum auriculaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of atrial septum" ]
+         ]
+       ], [
+         fhir:index 96 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8E.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Foramen ovale perméable" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Patent oval foramen" ]
+         ]
+       ], [
+         fhir:index 97 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8E.1" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interauriculaire dans la fosse ovale" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Atrial septal defect within oval fossa" ]
+         ]
+       ], [
+         fhir:index 98 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8E.2" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie du sinus veineux" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sinus venosus defect" ]
+         ]
+       ], [
+         fhir:index 99 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8E.3" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interauriculaire par l'orifice du sinus coronaire" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Interatrial communication through coronary sinus orifice" ]
+         ]
+       ], [
+         fhir:index 100 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8F" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de l'oreillette droite" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of right atrium" ]
+         ]
+       ], [
+         fhir:index 101 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8G" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie congénitale de l'oreillette gauche" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Congenital anomaly of left atrium" ]
+         ]
+       ], [
+         fhir:index 102 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA8G.0" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oreillette gauche divisée" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Divided left atrium" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-diagnosis-icd11.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

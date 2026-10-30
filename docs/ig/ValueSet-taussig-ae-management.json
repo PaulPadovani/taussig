@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "taussig-ae-management",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-ae-management</b></p><a name=\"taussig-ae-management\"> </a><a name=\"hctaussig-ae-management\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-ae-management.html\"><code>https://taussig/fhir/CodeSystem/ae-management</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;0.6.0</span></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/taussig-ae-management",
+  "version" : "0.6.0",
+  "name" : "TaussigAeManagement",
+  "title" : "TAUSSIG — Prise en charge d'un événement indésirable",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Modes de prise en charge d'un EI pendant le cathétérisme (CodeSystem TAUSSIG ae-management).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://taussig/fhir/CodeSystem/ae-management"
+    }]
+  }
+}

@@ -1,0 +1,49 @@
+/* ============================================================
+   TAUSSIG — Espacements, rayons, ombres, traits
+   ============================================================ */
+:root {
+
+  /* ---- Espacements (base 4 px) ---- */
+  --esp-1: 2px;
+  --esp-2: 4px;
+  --esp-3: 6px;
+  --esp-4: 8px;
+  --esp-5: 12px;
+  --esp-6: 16px;
+  --esp-7: 20px;
+  --esp-8: 24px;
+  --esp-9: 32px;
+  --esp-10: 40px;
+  --esp-11: 48px;
+  --esp-12: 64px;
+  --esp-13: 80px;
+
+  /* ---- Rayons — le rayon porte le registre ----
+     · relationnel : angles vifs (--rayon-vif)
+     · neutre      : sm / md / lg
+     · clinique    : capsule (--rayon-plein)                  */
+  --rayon-vif:   2px;    /* tables, chips relationnels        */
+  --rayon-sm:    4px;    /* boutons, champs, badges           */
+  --rayon-md:    8px;    /* cartes, blocs de code             */
+  --rayon-lg:    12px;   /* panneaux, overlays                */
+  --rayon-plein: 999px;  /* capsules cliniques, interrupteurs */
+
+  /* ---- Ombres (froides, très discrètes ; 3 niveaux) ---- */
+  --ombre-1: 0 1px 2px oklch(30% 0.01 250 / 0.06);
+  --ombre-2: 0 2px 8px oklch(30% 0.01 250 / 0.08), 0 1px 2px oklch(30% 0.01 250 / 0.05);
+  --ombre-3: 0 12px 32px oklch(30% 0.01 250 / 0.14), 0 2px 8px oklch(30% 0.01 250 / 0.07);
+  --anneau-focus: 0 0 0 2px var(--papier-0), 0 0 0 4px var(--focus);
+
+  /* ---- Traits (timelines et liens de schéma sont des traits) ---- */
+  --trait-fin:    1px;    /* filets de tableaux, hairlines           */
+  --trait-moyen:  1.5px;  /* liens de schéma, axes, connecteurs      */
+  --trait-fort:   2px;    /* état survolé / sélectionné d'un lien    */
+  --trait-accent: 3px;    /* barre de registre, étape courante       */
+
+  /* ---- Ligne de vie (gabarits dédiés) ---- */
+  --vie-axe:        1.5px;  /* axe temporel                          */
+  --vie-barre:      10px;   /* épaisseur des barres d'état (implant) */
+  --vie-intervalle: 6px;    /* épaisseur des intervalles (conditions)*/
+  --vie-marqueur:   12px;   /* diamètre des marqueurs d'événement    */
+  --vie-marqueur-contexte: 9px; /* événements de contexte (grisés)   */
+}

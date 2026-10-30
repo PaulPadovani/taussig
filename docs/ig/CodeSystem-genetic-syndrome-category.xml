@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="genetic-syndrome-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem genetic-syndrome-category</b></p><a name="genetic-syndrome-category"> </a><a name="hcgenetic-syndrome-category"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/genetic-syndrome-category</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">chromosomal_anomaly<a name="genetic-syndrome-category-chromosomal_anomaly"> </a></td><td>Anomalie chromosomique</td></tr><tr><td style="white-space:nowrap">monogenic_disorder<a name="genetic-syndrome-category-monogenic_disorder"> </a></td><td>Maladie monogénique</td></tr><tr><td style="white-space:nowrap">syndromic_association<a name="genetic-syndrome-category-syndromic_association"> </a></td><td>Association syndromique</td></tr><tr><td style="white-space:nowrap">teratogenic<a name="genetic-syndrome-category-teratogenic"> </a></td><td>Tératogène</td></tr><tr><td style="white-space:nowrap">unknown<a name="genetic-syndrome-category-unknown"> </a></td><td>Inconnu</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/genetic-syndrome-category"/>
+  <version value="0.6.0"/>
+  <name value="GeneticSyndromeCategory"/>
+  <title value="TAUSSIG — Catégorie de syndrome génétique"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Catégorie étiologique d'un syndrome génétique."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="chromosomal_anomaly"/>
+    <display value="Anomalie chromosomique"/>
+  </concept>
+  <concept>
+    <code value="monogenic_disorder"/>
+    <display value="Maladie monogénique"/>
+  </concept>
+  <concept>
+    <code value="syndromic_association"/>
+    <display value="Association syndromique"/>
+  </concept>
+  <concept>
+    <code value="teratogenic"/>
+    <display value="Tératogène"/>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <display value="Inconnu"/>
+  </concept>
+</CodeSystem>

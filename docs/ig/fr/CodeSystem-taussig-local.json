@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "taussig-local",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem taussig-local</b></p><a name=\"taussig-local\"> </a><a name=\"hctaussig-local\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/taussig-local</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-CAVOPULM-INF<a name=\"taussig-local-TAUSSIG-CAVOPULM-INF\"> </a></td><td>Dérivation cavopulmonaire inférieure (VCI vers artère pulmonaire)</td><td><div><p>Anastomose entre la veine cave inférieure et l'artère pulmonaire, isolée. SNOMED CT ne\nfournit de concept que pour la dérivation supérieure (443327008) et pour la dérivation\ntotale (443298009), et aucune structure corporelle pour la composante inférieure seule.</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/taussig-local",
+  "version" : "0.6.0",
+  "name" : "TaussigLocal",
+  "title" : "TAUSSIG — Concepts locaux (sans équivalent de référence)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Concepts nécessaires au modèle et vérifiés absents des terminologies de référence. Chaque code documente l'absence constatée.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "TAUSSIG-CAVOPULM-INF",
+    "display" : "Dérivation cavopulmonaire inférieure (VCI vers artère pulmonaire)",
+    "definition" : "Anastomose entre la veine cave inférieure et l'artère pulmonaire, isolée. SNOMED CT ne\n    fournit de concept que pour la dérivation supérieure (443327008) et pour la dérivation\n    totale (443298009), et aucune structure corporelle pour la composante inférieure seule."
+  }]
+}

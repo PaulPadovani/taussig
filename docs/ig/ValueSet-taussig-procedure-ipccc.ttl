@@ -1,0 +1,362 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-procedure-ipccc> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-procedure-ipccc"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-procedure-ipccc</b></p><a name=\"taussig-procedure-ipccc\"> </a><a name=\"hctaussig-procedure-ipccc\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-ipccc.html\"><code>https://taussig/fhir/CodeSystem/ipccc</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-13.4605.4605\">13.05.05</a></td><td>angiocardiographie</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-13.4605.4607\">13.05.07</a></td><td>cathétérisme cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-13.4605.4606\">13.05.06</a></td><td>cathétérisme cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-13.4605.4612\">13.05.12</a></td><td>électrophysiologie cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4645.4604\">12.45.04</a></td><td>Extraction endovasculaire de corps étranger de l'aorte</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4600.4621\">12.00.21</a></td><td>angioplastie percutanée par ballonnet d'une veine pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4600.4622\">12.00.22</a></td><td>insertion d'endoprothèse dans une veine pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4600.4643\">12.00.43</a></td><td>angioplastie percutanée par ballonnet d'une voie veineuse systémique</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4600.4644\">12.00.44</a></td><td>insertion d'endoprothèse dans une voie veineuse systémique</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4600.4636\">12.00.36</a></td><td>Pose de stent dans la veine cave supérieure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4601.4641\">12.01.41</a></td><td>septostomie auriculaire par ballonnet par retrait</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4601.4647\">12.01.47</a></td><td>septostomie atriale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4601.4606\">12.01.06</a></td><td>fermeture d'une communication interatriale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4601.4607\">12.01.07</a></td><td>fermeture d'un foramen ovale perméable</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4638.4625\">12.38.25</a></td><td>Occlusion de l'auricule gauche</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4601.4688\">12.01.88</a></td><td>Fermeture percutanée d'une CIA sinus venosus par stent couvert</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4602.4698\">12.02.98</a></td><td>Remplacement valvulaire tricuspide par voie transluminale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4602.4699\">12.02.99</a></td><td>Valve-in-valve tricuspide transluminale (dans une prothèse)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4602.4612\">12.02.12</a></td><td>dilatation par ballonnet d'une prothèse de valve tricuspidienne</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4603.4610\">12.03.10</a></td><td>valvuloplastie de la valve mitrale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4603.4612\">12.03.12</a></td><td>dilatation par ballonnet d'une prothèse de valve mitrale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4645.4619\">12.45.19</a></td><td>Fermeture percutanée d'une fuite paravalvulaire de prothèse cardiaque par dispositif</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4603.4697\">12.03.97</a></td><td>réparation de la valve mitrale guidée par radioscopie</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4603.4698\">12.03.98</a></td><td>Remplacement valvulaire mitral par voie transluminale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4604.4690\">12.04.90</a></td><td>Valve-in-valve mitrale transluminale (dans une prothèse)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4604.4691\">12.04.91</a></td><td>Valve-in-valve mitrale transcathéter par voie transapicale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4606.4625\">12.06.25</a></td><td>biopsie transluminale ventriculaire droite après transplantation cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4606.4605\">12.06.05</a></td><td>dilatation par ballonnet de la chambre de chasse du ventricule droit</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4606.4618\">12.06.18</a></td><td>Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4606.4695\">12.06.95</a></td><td>Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4608.4607\">12.08.07</a></td><td>fermeture transluminale percutanée de communication interventriculaire avec prothèse</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4605\">12.13.05</a></td><td>valvuloplastie percutanée par ballonnet de la valve pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4609\">12.13.09</a></td><td>valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4606\">12.13.06</a></td><td>dilatation par ballonnet d'une prothèse de valve pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4616.4605\">12.16.05</a></td><td>valvuloplastie aortique percutanée par ballonnet</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4651\">12.13.51</a></td><td>implantation d'une prothèse de valve pulmonaire, par voie percutanée</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4687\">12.13.87</a></td><td>implantation d'une prothèse de valve pulmonaire, par voie percutanée</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4652\">12.13.52</a></td><td>implantation d'une prothèse de valve pulmonaire, par voie percutanée</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4681\">12.13.81</a></td><td>implantation d'une valve aortique transcathéter</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4682\">12.13.82</a></td><td>implantation d'une valve aortique transcathéter</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4614.4605\">12.14.05</a></td><td>angioplastie de l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4615.4603\">12.15.03</a></td><td>angioplastie de l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4615.4604\">12.15.04</a></td><td>angioplastie de l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4615.4613\">12.15.13</a></td><td>mise en place d'endoprothèse dans l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4615.4614\">12.15.14</a></td><td>mise en place d'endoprothèse dans l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4615.4670\">12.15.70</a></td><td>Pose de stent entre artère pulmonaire gauche et aorte descendante (Potts inversé)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4615.4642\">12.15.42</a></td><td>Restriction de flux des artères pulmonaires droite et gauche par dispositifs transcathéter</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4615.4649\">12.15.49</a></td><td>embolectomie percutanée de l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4612.4608\">12.12.08</a></td><td>fermeture d'une fistule ou fenestration aorticopulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4618.4604\">12.18.04</a></td><td>angioplastie de coarctation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4618.4608\">12.18.08</a></td><td>angioplastie de coarctation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4618.4617\">12.18.17</a></td><td>mise en place d'endoprothèse au site de coarctation aortique</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4618.4622\">12.18.22</a></td><td>mise en place d'endoprothèse au site de coarctation aortique</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4610.4614\">12.10.14</a></td><td>insertion d'une endoprothèse dans le canal artériel</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4610.4626\">12.10.26</a></td><td>dilatation par ballonnet du canal artériel</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4624.4604\">12.24.04</a></td><td>fermeture par voie percutanée du ligament artériel persistant</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4625.4665\">12.25.65</a></td><td>Embolisation percutanée transluminale d'une collatérale systémico-pulmonaire majeure (MAPCA)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4625.4602\">12.25.02</a></td><td>réparation d'une fistule artérioveineuse par occlusion</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4649.4650\">12.49.50</a></td><td>Embolisation percutanée d'un vaisseau lymphatique guidée par fluoroscopie</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4670.4608\">12.70.08</a></td><td>Occlusion de collatérale véino-veineuse par dispositif</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4631.4619\">12.31.19</a></td><td>dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4636.4637\">12.36.37</a></td><td>angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4631.4627\">12.31.27</a></td><td>mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4636.4634\">12.36.34</a></td><td>dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4631.4634\">12.31.34</a></td><td>Occlusion d'anastomose systémico-pulmonaire par dispositif d'embolisation transluminal</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4636.4614\">12.36.14</a></td><td>dilatation par ballonnet d'un conduit cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4636.4636\">12.36.36</a></td><td>dilatation transluminale percutanée par ballonnet d'un conduit cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4636.4623\">12.36.23</a></td><td>pose d'une endoprothèse dans un conduit cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4636.4632\">12.36.32</a></td><td>pose d'une endoprothèse dans un conduit cardiaque</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4632.4643\">12.32.43</a></td><td>péricardiocentèse transluminale percutanée</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4645.4613\">12.45.13</a></td><td>Implantation de dispositif par voie transluminale</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4641.4630\">12.41.30</a></td><td>Stratégie hybride (chirurgicale et transluminale combinées)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4613.4684\">12.13.84</a></td><td>Implantation de valve aortique par voie transapicale (approche hybride)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4608.4628\">12.08.28</a></td><td>Fermeture peropératoire de CIV par dispositif transluminal (approche hybride)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4620.4621\">12.20.21</a></td><td>Stratégie hybride pour hypoplasie du cœur gauche (cathéter et chirurgie)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4620.4620\">12.20.20</a></td><td>Approche hybride du cœur gauche hypoplasique (cathéter et chirurgie) : stade 1</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4610.4604\">12.10.04</a></td><td>Cerclage bilatéral des artères pulmonaires + pose transcathéter de stent dans le canal artériel</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4620.4623\">12.20.23</a></td><td>Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP + réparation de l'arc</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-12.4620.4622\">12.20.22</a></td><td>Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-procedure-ipccc"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.0"] ;
+  fhir:ValueSet.name [ fhir:value "TaussigProcedureIpccc"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Gestes de cathétérisme (IPCCC)"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Axe IPCCC des gestes de cathétérisme congénital retenus pour la POC (gestes diagnostiques, interventionnels et hybrides). Remplace, pour l'autocomplétion, la liaison à la short list IPCCC de 1 822 codes, inexploitable comme menu."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13.05.05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angiocardiographie" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13.05.07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cathétérisme cardiaque" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13.05.06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cathétérisme cardiaque" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13.05.12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "électrophysiologie cardiaque" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.45.04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Extraction endovasculaire de corps étranger de l'aorte" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.00.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie percutanée par ballonnet d'une veine pulmonaire" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.00.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "insertion d'endoprothèse dans une veine pulmonaire" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.00.43" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie percutanée par ballonnet d'une voie veineuse systémique" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.00.44" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "insertion d'endoprothèse dans une voie veineuse systémique" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.00.36" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pose de stent dans la veine cave supérieure" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.01.41" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "septostomie auriculaire par ballonnet par retrait" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.01.47" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "septostomie atriale" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.01.06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture d'une communication interatriale" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.01.07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture d'un foramen ovale perméable" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.38.25" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Occlusion de l'auricule gauche" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.01.88" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fermeture percutanée d'une CIA sinus venosus par stent couvert" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.02.98" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Remplacement valvulaire tricuspide par voie transluminale" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.02.99" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valve-in-valve tricuspide transluminale (dans une prothèse)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.02.12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une prothèse de valve tricuspidienne" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.03.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvuloplastie de la valve mitrale" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.03.12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une prothèse de valve mitrale" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.45.19" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fermeture percutanée d'une fuite paravalvulaire de prothèse cardiaque par dispositif" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.03.97" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "réparation de la valve mitrale guidée par radioscopie" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.03.98" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Remplacement valvulaire mitral par voie transluminale" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.04.90" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valve-in-valve mitrale transluminale (dans une prothèse)" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.04.91" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Valve-in-valve mitrale transcathéter par voie transapicale" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.06.25" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "biopsie transluminale ventriculaire droite après transplantation cardiaque" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.06.05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet de la chambre de chasse du ventricule droit" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.06.18" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.06.95" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.08.07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture transluminale percutanée de communication interventriculaire avec prothèse" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvuloplastie percutanée par ballonnet de la valve pulmonaire" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une prothèse de valve pulmonaire" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.16.05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvuloplastie aortique percutanée par ballonnet" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.51" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "implantation d'une prothèse de valve pulmonaire, par voie percutanée" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.87" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "implantation d'une prothèse de valve pulmonaire, par voie percutanée" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.52" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "implantation d'une prothèse de valve pulmonaire, par voie percutanée" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.81" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "implantation d'une valve aortique transcathéter" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.82" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "implantation d'une valve aortique transcathéter" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.14.05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie de l'artère pulmonaire" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.15.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie de l'artère pulmonaire" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.15.04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie de l'artère pulmonaire" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.15.13" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse dans l'artère pulmonaire" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.15.14" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse dans l'artère pulmonaire" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.15.70" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pose de stent entre artère pulmonaire gauche et aorte descendante (Potts inversé)" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.15.42" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Restriction de flux des artères pulmonaires droite et gauche par dispositifs transcathéter" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.15.49" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "embolectomie percutanée de l'artère pulmonaire" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.12.08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture d'une fistule ou fenestration aorticopulmonaire" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.18.04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie de coarctation" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.18.08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie de coarctation" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.18.17" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse au site de coarctation aortique" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.18.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse au site de coarctation aortique" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.10.14" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "insertion d'une endoprothèse dans le canal artériel" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.10.26" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet du canal artériel" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.24.04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture par voie percutanée du ligament artériel persistant" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.25.65" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Embolisation percutanée transluminale d'une collatérale systémico-pulmonaire majeure (MAPCA)" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.25.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "réparation d'une fistule artérioveineuse par occlusion" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.49.50" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Embolisation percutanée d'un vaisseau lymphatique guidée par fluoroscopie" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.70.08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Occlusion de collatérale véino-veineuse par dispositif" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.31.19" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire" ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.36.37" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire" ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.31.27" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire" ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.36.34" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.31.34" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Occlusion d'anastomose systémico-pulmonaire par dispositif d'embolisation transluminal" ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.36.14" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'un conduit cardiaque" ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.36.36" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation transluminale percutanée par ballonnet d'un conduit cardiaque" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.36.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pose d'une endoprothèse dans un conduit cardiaque" ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.36.32" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pose d'une endoprothèse dans un conduit cardiaque" ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.32.43" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "péricardiocentèse transluminale percutanée" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.45.13" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Implantation de dispositif par voie transluminale" ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.41.30" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stratégie hybride (chirurgicale et transluminale combinées)" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.13.84" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Implantation de valve aortique par voie transapicale (approche hybride)" ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.08.28" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fermeture peropératoire de CIV par dispositif transluminal (approche hybride)" ]
+       ], [
+         fhir:index 74 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.20.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stratégie hybride pour hypoplasie du cœur gauche (cathéter et chirurgie)" ]
+       ], [
+         fhir:index 75 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.20.20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Approche hybride du cœur gauche hypoplasique (cathéter et chirurgie) : stade 1" ]
+       ], [
+         fhir:index 76 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.10.04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerclage bilatéral des artères pulmonaires + pose transcathéter de stent dans le canal artériel" ]
+       ], [
+         fhir:index 77 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.20.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP + réparation de l'arc" ]
+       ], [
+         fhir:index 78 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12.20.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-procedure-ipccc.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

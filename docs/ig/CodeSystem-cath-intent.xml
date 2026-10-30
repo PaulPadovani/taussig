@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cath-intent"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cath-intent</b></p><a name="cath-intent"> </a><a name="hccath-intent"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/cath-intent</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">diagnostic<a name="cath-intent-diagnostic"> </a></td><td>Diagnostique</td></tr><tr><td style="white-space:nowrap">interventional<a name="cath-intent-interventional"> </a></td><td>Interventionnel</td></tr><tr><td style="white-space:nowrap">hybrid<a name="cath-intent-hybrid"> </a></td><td>Hybride</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/cath-intent"/>
+  <version value="0.6.0"/>
+  <name value="CathIntent"/>
+  <title value="TAUSSIG — Intention du cathétérisme"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Intention globale de la procédure de cathétérisme."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="diagnostic"/>
+    <display value="Diagnostique"/>
+  </concept>
+  <concept>
+    <code value="interventional"/>
+    <display value="Interventionnel"/>
+  </concept>
+  <concept>
+    <code value="hybrid"/>
+    <display value="Hybride"/>
+  </concept>
+</CodeSystem>

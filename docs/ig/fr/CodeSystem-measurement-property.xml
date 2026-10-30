@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="measurement-property"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem measurement-property</b></p><a name="measurement-property"> </a><a name="hcmeasurement-property"> </a><p><b>Propriétés</b></p><p><b>Cette terminologie de référence (CodeSystem) définit les propriétés suivantes pour ses concepts</b></p><table class="grid"><tr><td><b>Nom</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>unit_ucum</td><td>unit_ucum</td><td>string</td><td>Unité UCUM canonique</td></tr><tr><td>derivation</td><td>derivation</td><td>string</td><td>mesuré ou calculé</td></tr><tr><td>site_dependent</td><td>site_dependent</td><td>boolean</td><td>Requiert un body_site SNOMED</td></tr><tr><td>snomed_secondary</td><td>snomed_secondary</td><td>Coding</td><td>Codage SNOMED secondaire générique</td></tr><tr><td>family</td><td>family</td><td>string</td><td>Famille physiologique</td></tr><tr><td>value_type</td><td>value_type</td><td>string</td><td>Type FHIR de la valeur attendue (Quantity | CodeableConcept)</td></tr><tr><td>value_set</td><td>value_set</td><td>string</td><td>ValueSet canonique des valeurs admises (propriétés qualitatives)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-property</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>unit_ucum</b></td><td><b>derivation</b></td><td><b>site_dependent</b></td><td><b>snomed_secondary</b></td><td><b>family</b></td><td><b>value_type</b></td><td><b>value_set</b></td></tr><tr><td style="white-space:nowrap">pressure_systolic<a name="measurement-property-pressure_systolic"> </a></td><td>Pression systolique</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">pressure_diastolic<a name="measurement-property-pressure_diastolic"> </a></td><td>Pression diastolique</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">pressure_mean<a name="measurement-property-pressure_mean"> </a></td><td>Pression moyenne</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">pressure_end_diastolic<a name="measurement-property-pressure_end_diastolic"> </a></td><td>Pression télédiastolique (ventricule)</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">pressure_wedge<a name="measurement-property-pressure_wedge"> </a></td><td>Pression capillaire pulmonaire bloquée (wedge)</td><td>mm[Hg]</td><td>mesuré</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td><td>Pression</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">oxygen_saturation<a name="measurement-property-oxygen_saturation"> </a></td><td>Saturation en oxygène</td><td>%</td><td>mesuré</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 103228002}">saturation de l'hémoglobine en oxygène</a></td><td>Oxymétrie</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">flow_pulmonary<a name="measurement-property-flow_pulmonary"> </a></td><td>Débit pulmonaire (Qp)</td><td>L/min</td><td>calculé</td><td>false</td><td/><td>Débit</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">flow_systemic<a name="measurement-property-flow_systemic"> </a></td><td>Débit systémique (Qs)</td><td>L/min</td><td>calculé</td><td>false</td><td/><td>Débit</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">flow_ratio_qp_qs<a name="measurement-property-flow_ratio_qp_qs"> </a></td><td>Rapport Qp/Qs</td><td>{ratio}</td><td>calculé</td><td>false</td><td/><td>Débit</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">cardiac_output<a name="measurement-property-cardiac_output"> </a></td><td>Débit cardiaque</td><td>L/min</td><td>calculé</td><td>false</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 82799009}">DC - débit cardiaque</a></td><td>Débit</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">cardiac_index<a name="measurement-property-cardiac_index"> </a></td><td>Index cardiaque</td><td>L/min/m2</td><td>calculé</td><td>false</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 54993008}">IC - index cardiaque</a></td><td>Débit</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">resistance_pulmonary<a name="measurement-property-resistance_pulmonary"> </a></td><td>Résistance vasculaire pulmonaire (RVP)</td><td>mm[Hg].min/L</td><td>calculé</td><td>false</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 88619007}">résistance vasculaire</a></td><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">resistance_pulmonary_indexed<a name="measurement-property-resistance_pulmonary_indexed"> </a></td><td>RVP indexée (RVPi)</td><td>mm[Hg].min/L/m2</td><td>calculé</td><td>false</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 88619007}">résistance vasculaire</a></td><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">resistance_systemic<a name="measurement-property-resistance_systemic"> </a></td><td>Résistance vasculaire systémique (RVS)</td><td>mm[Hg].min/L</td><td>calculé</td><td>false</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 88619007}">résistance vasculaire</a></td><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">resistance_ratio_pvr_svr<a name="measurement-property-resistance_ratio_pvr_svr"> </a></td><td>Rapport RVP/RVS</td><td>{ratio}</td><td>calculé</td><td>false</td><td/><td>Résistance</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">gradient_peak_to_peak<a name="measurement-property-gradient_peak_to_peak"> </a></td><td>Gradient pic-à-pic</td><td>mm[Hg]</td><td>calculé</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251081004}">Cardiovascular pressure gradient</a></td><td>Gradient</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">gradient_mean<a name="measurement-property-gradient_mean"> </a></td><td>Gradient moyen</td><td>mm[Hg]</td><td>calculé</td><td>true</td><td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251081004}">Cardiovascular pressure gradient</a></td><td>Gradient</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">oxygen_consumption<a name="measurement-property-oxygen_consumption"> </a></td><td>Consommation d'oxygène (VO2)</td><td>mL/min/m2</td><td>mesuré/estimé</td><td>false</td><td/><td>Autre</td><td>Quantity</td><td/></tr><tr><td style="white-space:nowrap">regurgitation_grade<a name="measurement-property-regurgitation_grade"> </a></td><td>Grade de régurgitation</td><td/><td>mesuré</td><td>true</td><td/><td>Qualitatif</td><td>CodeableConcept</td><td><code>https://taussig/fhir/ValueSet/taussig-regurgitation-grade</code></td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/measurement-property"/>
+  <version value="0.6.0"/>
+  <name value="TaussigMeasurementProperty"/>
+  <title value="TAUSSIG — Propriétés de mesure hémodynamique"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="19"/>
+  <property>
+    <code value="unit_ucum"/>
+    <description value="Unité UCUM canonique"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="derivation"/>
+    <description value="mesuré ou calculé"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="site_dependent"/>
+    <description value="Requiert un body_site SNOMED"/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="snomed_secondary"/>
+    <description value="Codage SNOMED secondaire générique"/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <code value="family"/>
+    <description value="Famille physiologique"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="value_type"/>
+    <description value="Type FHIR de la valeur attendue (Quantity | CodeableConcept)"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="value_set"/>
+    <description value="ValueSet canonique des valeurs admises (propriétés qualitatives)"/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="pressure_systolic"/>
+    <display value="Pression systolique"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Pression"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg]"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251067001"/>
+        <display value="Cardiovascular pressure"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="pressure_diastolic"/>
+    <display value="Pression diastolique"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Pression"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg]"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251067001"/>
+        <display value="Cardiovascular pressure"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="pressure_mean"/>
+    <display value="Pression moyenne"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Pression"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg]"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251067001"/>
+        <display value="Cardiovascular pressure"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="pressure_end_diastolic"/>
+    <display value="Pression télédiastolique (ventricule)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Pression"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg]"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251067001"/>
+        <display value="Cardiovascular pressure"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="pressure_wedge"/>
+    <display value="Pression capillaire pulmonaire bloquée (wedge)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Pression"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg]"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251067001"/>
+        <display value="Cardiovascular pressure"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="oxygen_saturation"/>
+    <display value="Saturation en oxygène"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Oxymétrie"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="%"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="103228002"/>
+        <display value="saturation de l'hémoglobine en oxygène"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="flow_pulmonary"/>
+    <display value="Débit pulmonaire (Qp)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Débit"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="L/min"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="flow_systemic"/>
+    <display value="Débit systémique (Qs)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Débit"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="L/min"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="flow_ratio_qp_qs"/>
+    <display value="Rapport Qp/Qs"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Débit"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="{ratio}"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="cardiac_output"/>
+    <display value="Débit cardiaque"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Débit"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="L/min"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="82799009"/>
+        <display value="DC - débit cardiaque"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="cardiac_index"/>
+    <display value="Index cardiaque"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Débit"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="L/min/m2"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="54993008"/>
+        <display value="IC - index cardiaque"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="resistance_pulmonary"/>
+    <display value="Résistance vasculaire pulmonaire (RVP)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Résistance"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg].min/L"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="88619007"/>
+        <display value="résistance vasculaire"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="resistance_pulmonary_indexed"/>
+    <display value="RVP indexée (RVPi)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Résistance"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg].min/L/m2"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="88619007"/>
+        <display value="résistance vasculaire"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="resistance_systemic"/>
+    <display value="Résistance vasculaire systémique (RVS)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Résistance"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg].min/L"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="88619007"/>
+        <display value="résistance vasculaire"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="resistance_ratio_pvr_svr"/>
+    <display value="Rapport RVP/RVS"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Résistance"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="{ratio}"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="gradient_peak_to_peak"/>
+    <display value="Gradient pic-à-pic"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Gradient"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg]"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251081004"/>
+        <display value="Cardiovascular pressure gradient"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="gradient_mean"/>
+    <display value="Gradient moyen"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Gradient"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mm[Hg]"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="calculé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+    <property>
+      <code value="snomed_secondary"/>
+      <valueCoding>
+        <system value="http://snomed.info/sct"/>
+        <code value="251081004"/>
+        <display value="Cardiovascular pressure gradient"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="oxygen_consumption"/>
+    <display value="Consommation d'oxygène (VO2)"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Autre"/>
+    </property>
+    <property>
+      <code value="unit_ucum"/>
+      <valueString value="mL/min/m2"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré/estimé"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="false"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="Quantity"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="regurgitation_grade"/>
+    <display value="Grade de régurgitation"/>
+    <property>
+      <code value="family"/>
+      <valueString value="Qualitatif"/>
+    </property>
+    <property>
+      <code value="derivation"/>
+      <valueString value="mesuré"/>
+    </property>
+    <property>
+      <code value="site_dependent"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="value_type"/>
+      <valueString value="CodeableConcept"/>
+    </property>
+    <property>
+      <code value="value_set"/>
+      <valueString value="https://taussig/fhir/ValueSet/taussig-regurgitation-grade"/>
+    </property>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,117 @@
+# TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+
+## Profil de ressource: TAUSSIG — Praticien 
+
+**Utilisations:**
+
+* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-practitioner)
+
+### Vues formelles du contenu du profil
+
+ [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Tableau des éléments clés](#tabs-key) 
+*  [Tableau différentiel (differential)](#tabs-diff) 
+*  [Tableau récapitulatif (snapshot)](#tabs-snap) 
+*  [Statistiques/Références](#tabs-summ) 
+*  [Tous](#tabs-all) 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-practitioner.html) 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-practitioner.html) 
+
+ **Vue des éléments clés** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+ **Vue différentielle** 
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-practitioner.html) 
+
+ **Vue d'ensembleView** 
+
+#### Bindings terminologiques
+
+#### Contraintes
+
+Cette structure est dérivée de [FRCorePractitionerProfile](https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-practitioner.html) 
+
+ 
+
+Autres représentations du profil : [CSV](../StructureDefinition-taussig-practitioner.csv), [Excel](../StructureDefinition-taussig-practitioner.xlsx), [Schematron](../StructureDefinition-taussig-practitioner.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "taussig-practitioner",
+  "url" : "https://taussig/fhir/StructureDefinition/taussig-practitioner",
+  "version" : "0.6.0",
+  "name" : "TaussigPractitioner",
+  "title" : "TAUSSIG — Praticien",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Praticien (opérateur, valideur), dérivé de FR Core Practitioner. L'identifiant RPPS est porté par la slice FR Core idNatPs (urn:oid:1.2.250.1.71.4.2.1) — plus besoin de la redéclarer.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Practitioner",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Practitioner",
+      "path" : "Practitioner"
+    },
+    {
+      "id" : "Practitioner.name",
+      "path" : "Practitioner.name",
+      "max" : "1",
+      "mustSupport" : true
+    }]
+  }
+}
+
+```

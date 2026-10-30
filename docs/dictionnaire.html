@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAUSSIG — Dictionnaire du modèle de données</title>
+<link rel="stylesheet" href="assets/taussig/styles.css">
+<style>
+/* ————— chrome (commun aux pages) ————— */
+.entete{display:flex;align-items:center;gap:28px;padding:0 40px;height:60px;border-bottom:var(--trait-fin) solid var(--ligne-1);background:var(--papier-0);position:sticky;top:0;z-index:30}
+.marque{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--encre-1)}
+.marque b{font:var(--graisse-demi) 19px/1 var(--police-titre);letter-spacing:.04em}
+.marque span{font-size:var(--taille-2xs);letter-spacing:var(--approche-caps);text-transform:uppercase;color:var(--encre-3)}
+.entete nav{display:flex;gap:22px;margin-left:auto}
+.nav-lien{font-size:var(--taille-md);color:var(--encre-2);text-decoration:none;padding:19px 1px;border-bottom:var(--trait-fort) solid transparent}
+.nav-lien:hover{color:var(--primaire)}
+.nav-lien[aria-current="page"]{color:var(--encre-1);font-weight:var(--graisse-moyenne);border-bottom-color:var(--primaire)}
+.ariane{display:flex;align-items:center;gap:9px;font-size:var(--taille-sm);padding:12px 40px 0;color:var(--encre-3)}
+.ariane a{color:var(--encre-3);text-decoration:none}.ariane a:hover{color:var(--primaire);text-decoration:underline}
+.ariane .sep{color:var(--encre-4)}.ariane [aria-current]{color:var(--encre-1);font-weight:var(--graisse-moyenne)}
+.tete-page{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:10px 0 4px;padding:0 40px}
+.tete-page h1{font-size:var(--taille-3xl)}
+.tete-page .sous{font-size:var(--taille-md);color:var(--encre-3)}
+.intro{max-width:var(--mesure-prose);font-size:var(--taille-prose);line-height:var(--interligne-texte);color:var(--encre-2);margin:6px 40px 0}
+
+/* ————— disposition : sidebar + contenu ————— */
+.cadre{display:grid;grid-template-columns:236px 1fr;gap:0;align-items:start;max-width:1360px;margin:14px auto 0;padding:0 40px 80px}
+.rail{position:sticky;top:78px;align-self:start;max-height:calc(100vh - 92px);overflow:auto;padding-right:8px;border-right:var(--trait-fin) solid var(--ligne-1)}
+.rail-zone{font-size:var(--taille-2xs);letter-spacing:var(--approche-caps);text-transform:uppercase;color:var(--encre-3);margin:16px 0 4px;font-weight:var(--graisse-demi)}
+.rail-zone:first-child{margin-top:0}
+.rail a{display:flex;justify-content:space-between;gap:8px;text-decoration:none;color:var(--encre-2);font-size:var(--taille-sm);padding:4px 10px 4px 6px;border-radius:var(--rayon-sm);border-left:2px solid transparent}
+.rail a:hover{background:var(--papier-1);color:var(--primaire)}
+.rail a.actif{background:var(--relationnel-fond);color:var(--relationnel);border-left-color:var(--relationnel);font-weight:var(--graisse-moyenne)}
+.rail a .cpt{color:var(--encre-4);font-variant-numeric:tabular-nums;font-size:var(--taille-2xs)}
+.contenu{min-width:0;padding-left:26px}
+
+/* ————— barre outils ————— */
+.barre{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px;position:sticky;top:66px;background:var(--papier-0);padding:8px 0;z-index:10;border-bottom:var(--trait-fin) solid var(--ligne-1)}
+.recherche{flex:1;min-width:200px;position:relative}
+.recherche input{width:100%;font:var(--graisse-normale) var(--taille-md)/1 var(--police-texte);color:var(--encre-1);background:var(--papier-0);border:var(--trait-fin) solid var(--ligne-2);border-radius:var(--rayon-sm);padding:9px 12px 9px 32px}
+.recherche input:focus{outline:2px solid var(--focus);outline-offset:1px;border-color:var(--primaire)}
+.recherche::before{content:"⌕";position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--encre-3);font-size:16px}
+.bouton{font:var(--graisse-moyenne) var(--taille-sm)/1 var(--police-texte);color:var(--primaire);background:var(--papier-0);border:var(--trait-fin) solid var(--ligne-2);border-radius:var(--rayon-sm);padding:9px 13px;cursor:pointer;text-decoration:none;white-space:nowrap;transition:background var(--duree-1),border-color var(--duree-1)}
+.bouton:hover{background:var(--primaire-fond);border-color:var(--primaire-bord)}
+.bouton[aria-pressed="false"]{color:var(--encre-3)}
+.compte-live{font-size:var(--taille-xs);color:var(--encre-3);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* ————— sections d'entité ————— */
+.entite{margin-bottom:30px;scroll-margin-top:120px}
+.ent-tete{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:6px;border-bottom:var(--trait-fort) solid var(--relationnel-bord)}
+.ent-tete h2{font-size:var(--taille-2xl);color:var(--encre-1);font-weight:var(--graisse-demi)}
+.ent-tete .tech{font-family:var(--police-code);font-size:var(--taille-sm);color:var(--relationnel)}
+.ent-tete .cpt{font-size:var(--taille-xs);color:var(--encre-3);font-variant-numeric:tabular-nums}
+.ent-tete .zone{font-size:var(--taille-2xs);letter-spacing:var(--approche-caps);text-transform:uppercase;color:var(--encre-4);margin-left:auto}
+.ent-desc{font-size:var(--taille-sm);color:var(--encre-2);line-height:var(--interligne-texte);margin:8px 0 12px;max-width:var(--mesure-prose)}
+
+/* ————— table d'attributs ————— */
+.attrs{border-collapse:collapse;width:100%;font-size:var(--taille-sm)}
+.attrs td{padding:9px 12px 9px 0;vertical-align:top;border-top:var(--trait-fin) solid var(--ligne-1)}
+.attrs tr:first-child td{border-top:none}
+.attrs tr.masque{display:none}
+.a-nom{white-space:nowrap;width:1%}
+.a-nom code{font-family:var(--police-code);font-size:var(--taille-sm);color:var(--encre-1)}
+.a-nom .req{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--clinique-vif);margin-right:7px;vertical-align:middle}
+.a-nom .req.opt{background:var(--papier-3)}
+.a-nom .pk{font-size:var(--taille-2xs);color:var(--primaire);border:1px solid var(--primaire-bord);border-radius:var(--rayon-sm);padding:0 4px;margin-left:6px;letter-spacing:.03em}
+.a-def{color:var(--encre-2);line-height:var(--interligne-ui);min-width:240px}
+.a-meta{white-space:nowrap;color:var(--encre-3);font-size:var(--taille-xs)}
+.a-meta .t{color:var(--encre-1)}
+.a-meta .card{font-variant-numeric:tabular-nums}
+.a-fhir{font-size:var(--taille-xs);white-space:nowrap}
+.a-fhir .path{font-family:var(--police-code);color:var(--fhir);font-size:var(--taille-xs)}
+.a-fhir .sub{display:block;margin-top:3px;color:var(--encre-4)}
+.a-fhir .bind{color:var(--fhir-vif);text-transform:lowercase}
+.a-fhir .cs{color:var(--encre-3)}
+.a-vs{white-space:nowrap}
+.chip{display:inline-flex;align-items:center;gap:5px;font-family:var(--police-code);font-size:var(--taille-2xs);color:var(--relationnel);background:var(--relationnel-fond);border:1px solid var(--relationnel-bord);border-radius:var(--rayon-plein);padding:2px 9px;text-decoration:none}
+.chip:hover{background:var(--relationnel-bord)}
+.lien-exp{font-size:var(--taille-xs);color:var(--primaire);text-decoration:none;white-space:nowrap}
+.lien-exp:hover{text-decoration:underline}
+body.no-fhir .col-fhir{display:none}
+.vide-recherche{display:none;padding:40px 0;color:var(--encre-3);font-size:var(--taille-md)}
+.vide-recherche.on{display:block}
+mark{background:var(--halo-fond);color:inherit;border-radius:2px;padding:0 1px}
+
+@media (max-width:900px){
+  .cadre{grid-template-columns:1fr;padding:0 22px 60px}
+  .rail{display:none}
+  .contenu{padding-left:0}
+  .tete-page,.intro{padding-left:22px;padding-right:22px}
+}
+</style>
+<link rel="stylesheet" href="assets/public.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><meta name="description" content="TAUSSIG — modèle de données, dictionnaire et ressources de recherche en cathétérisme cardiaque congénital."></head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a><header class="entete"><a class="marque" href="index.html"><b>TAUSSIG</b><span class="brand-acronym"><strong>T</strong>ranslational <strong>A</strong>rchitecture for <strong>U</strong>nified <strong>S</strong>emantic, <strong>S</strong>tructuring and <strong>I</strong>nteroperable data <strong>G</strong>eneration in Pediatric Cardiology</span></a><nav aria-label="Navigation principale"><a class="nav-lien" href="index.html">Accueil</a><a class="nav-lien" href="methode.html">Méthode</a><a class="nav-lien" href="explorateur.html">Modèle</a><a class="nav-lien" href="dictionnaire.html" aria-current="page">Dictionnaire</a><a class="nav-lien" href="couverture.html">Terminologie</a><a class="nav-lien" href="profils-fhir.html">Profil FHIR</a><a class="nav-lien" href="trajectoires.html">Trajectoire</a><a class="nav-lien" href="telechargements.html">Téléchargements</a></nav></header><main id="contenu" class="page-tool page-dictionnaire">
+<nav class="ariane" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span class="sep">›</span><span aria-current="page">Dictionnaire du modèle</span></nav>
+
+<div class="tete-page"><h1>Dictionnaire du modèle</h1><span class="sous" id="sous"></span></div>
+<p class="intro">L’ensemble minimal de données (MDS) du cathétérisme cardiaque congénital, variable par variable. Chaque attribut porte sa <b>définition normalisée</b> (ISO/IEC 11179), son type et sa cardinalité, sa <b>correspondance FHIR</b> et son value set. Cherchez un terme, ou dépliez une variable dans l’<a href="explorateur.html">explorateur</a>.</p>
+
+<div class="cadre">
+  <aside class="rail" id="rail" aria-label="Navigation par entité"></aside>
+  <div class="contenu">
+    <div class="barre">
+      <div class="recherche"><input id="q" type="search" placeholder="Chercher une variable, une définition…" aria-label="Rechercher"></div>
+      <button class="bouton" id="btnFhir" aria-pressed="true" title="Afficher ou masquer la colonne FHIR">Colonne FHIR</button>
+      <a class="bouton" href="telechargements.html" title="Versions téléchargeables">Fichiers & impression</a>
+      <span class="compte-live" id="live" aria-live="polite"></span>
+    </div>
+    <div id="sections"></div>
+    <p class="vide-recherche" id="vide">Aucune variable ne correspond à cette recherche.</p>
+  </div>
+</div>
+
+</main><script src="data/dict.js"></script>
+<script>
+const D = window.TAUSSIG_DICT;
+document.getElementById('sous').textContent =
+  `${D.meta.nbElements} variables · ${D.meta.nbEntities} entités · ${D.meta.nbValuesets} value sets`;
+
+// —— raccourcis de systèmes de codage (affichage clinicien) ——
+function csCourt(cs){
+  if(!cs) return '';
+  const m = [[/loinc/,'LOINC'],[/snomed/,'SNOMED CT'],[/icd.*11|id\.who/,'ICD-11'],[/icd.*10|cim.*10/,'CIM-10'],
+    [/orpha/,'Orphanet'],[/ucum/,'UCUM'],[/ccam/,'CCAM'],[/echsa/,'ECHSA'],[/ipccc/,'IPCCC'],
+    [/administrative-gender/,'HL7 genre'],[/taussig/,'TAUSSIG']];
+  for(const [re,lbl] of m) if(re.test(cs)) return lbl;
+  return cs.replace(/^https?:\/\//,'').split('/')[0];
+}
+function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+
+// —— construire les sections par entité ——
+const railHtml = [], secHtml = [];
+let zoneCourante = null;
+D.entities.forEach(ent => {
+  if(ent.zone !== zoneCourante){
+    zoneCourante = ent.zone;
+    railHtml.push(`<div class="rail-zone">${ent.zoneTitre}</div>`);
+  }
+  railHtml.push(`<a href="#${ent.name}" data-ent="${ent.name}">${ent.fr}<span class="cpt">${ent.n}</span></a>`);
+
+  // lignes d'attributs de cette entité
+  const rows = Object.keys(D.elements)
+    .filter(k => k.split('.',1)[0] === ent.name)
+    .map(k => {
+      const e = D.elements[k], attr = k.slice(ent.name.length+1);
+      const req = e.req === 'oui';
+      const pk = attr === 'id';
+      const meta = [e.type, e.card].filter(Boolean).join(' · ');
+      const fhir = e.path ? `<span class="path">${esc(e.path)}</span>`
+        + `<span class="sub">${[e.bind && e.bind!=='n/a'?`<span class="bind">${esc(e.bind)}</span>`:'', e.cs?`<span class="cs">${csCourt(e.cs)}</span>`:''].filter(Boolean).join(' · ')}</span>`
+        : '<span class="cs">—</span>';
+      const vs = e.vs ? `<a class="chip" href="explorateur.html#t=${ent.name}&c=${attr}" title="Voir le value set dans l’explorateur">${esc(e.vs)}</a>` : '';
+      const blob = (attr+' '+e.def+' '+ent.fr).toLowerCase();
+      return `<tr data-blob="${esc(blob)}">
+        <td class="a-nom"><span class="req ${req?'':'opt'}" title="${req?'requis':'optionnel'}"></span><code>${esc(attr)}</code>${pk?'<span class="pk">clé</span>':''}</td>
+        <td class="a-def" data-label="Définition">${esc(e.def)||'<span style="color:var(--encre-4)">—</span>'}</td>
+        <td class="a-meta" data-label="Type · cardinalité"><span class="t">${esc(e.type)}</span> <span class="card">${esc(e.card)}</span></td>
+        <td class="a-fhir col-fhir" data-label="Correspondance FHIR">${fhir}</td>
+        <td class="a-vs" data-label="Valeurs & détail">${vs}<a class="lien-exp" href="explorateur.html#t=${ent.name}&c=${attr}" title="Déplier dans l’explorateur">↗</a></td>
+      </tr>`;
+    }).join('');
+
+  secHtml.push(`<section class="entite" id="${ent.name}" data-ent="${ent.name}">
+    <div class="ent-tete"><h2>${ent.fr}</h2><span class="tech">${ent.name}</span><span class="cpt">${ent.n} variables</span><span class="zone">${ent.zoneTitre}</span></div>
+    <p class="ent-desc">${esc(ent.desc)}</p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Variables : ${ent.fr}"><table class="attrs"><tbody>${rows}</tbody></table></div>
+  </section>`);
+});
+document.getElementById('rail').innerHTML = railHtml.join('');
+document.getElementById('sections').innerHTML = secHtml.join('');
+
+// —— recherche live ——
+const q = document.getElementById('q'), vide = document.getElementById('vide'), live = document.getElementById('live');
+function filtrer(){
+  const t = q.value.trim().toLowerCase();
+  let visibles = 0;
+  document.querySelectorAll('.entite').forEach(sec => {
+    let n = 0;
+    sec.querySelectorAll('tbody tr').forEach(tr => {
+      const ok = !t || tr.dataset.blob.includes(t);
+      tr.classList.toggle('masque', !ok);
+      if(ok){ n++; visibles++; }
+    });
+    sec.style.display = n ? '' : 'none';
+    const lien = document.querySelector(`.rail a[data-ent="${sec.dataset.ent}"]`);
+    if(lien) lien.style.display = n ? '' : 'none';
+  });
+  vide.classList.toggle('on', visibles === 0);
+  live.textContent = t ? `${visibles} variable${visibles>1?'s':''}` : '';
+}
+q.addEventListener('input', filtrer);
+
+// —— toggle colonne FHIR ——
+const btnFhir = document.getElementById('btnFhir');
+btnFhir.addEventListener('click', () => {
+  const on = document.body.classList.toggle('no-fhir');
+  btnFhir.setAttribute('aria-pressed', on ? 'false' : 'true');
+});
+
+// —— surlignage de la section active dans le rail ——
+const liens = new Map([...document.querySelectorAll('.rail a')].map(a => [a.dataset.ent, a]));
+const io = new IntersectionObserver(ents => {
+  ents.forEach(en => {
+    if(en.isIntersecting){
+      liens.forEach(a => a.classList.remove('actif'));
+      const a = liens.get(en.target.dataset.ent);
+      if(a){ a.classList.add('actif'); }
+    }
+  });
+}, {rootMargin:'-120px 0px -70% 0px'});
+document.querySelectorAll('.entite').forEach(s => io.observe(s));
+</script>
+<footer class="site-footer"><div><a class="footer-brand" href="index.html">TAUSSIG</a><p>Un modèle commun pour la recherche en cathétérisme cardiaque congénital.</p></div><nav aria-label="Informations du site"><a href="methode.html">À propos & méthode</a><a href="licences.html">Réutilisation & citation</a><a href="telechargements.html">Ressources</a></nav><p class="footer-note">Modèle v4 · Recherche en cours · Aucun compte rendu hébergé sur ce site.</p></footer><noscript><p class="noscript-note">Les outils interactifs nécessitent JavaScript. Les fichiers du modèle restent accessibles sur la <a href="telechargements.html">page des téléchargements</a>.</p></noscript></body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "access-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem access-type</b></p><a name=\"access-type\"> </a><a name=\"hcaccess-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/access-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">arterial_femoral<a name=\"access-type-arterial_femoral\"> </a></td><td>Artériel fémoral</td></tr><tr><td style=\"white-space:nowrap\">venous_femoral<a name=\"access-type-venous_femoral\"> </a></td><td>Veineux fémoral</td></tr><tr><td style=\"white-space:nowrap\">arterial_humeral<a name=\"access-type-arterial_humeral\"> </a></td><td>Artériel huméral</td></tr><tr><td style=\"white-space:nowrap\">venous_humeral<a name=\"access-type-venous_humeral\"> </a></td><td>Veineux huméral</td></tr><tr><td style=\"white-space:nowrap\">arterial_carotid<a name=\"access-type-arterial_carotid\"> </a></td><td>Artériel carotidien</td></tr><tr><td style=\"white-space:nowrap\">venous_jugular<a name=\"access-type-venous_jugular\"> </a></td><td>Veineux jugulaire</td></tr><tr><td style=\"white-space:nowrap\">transhepatic<a name=\"access-type-transhepatic\"> </a></td><td>Transhépatique</td></tr><tr><td style=\"white-space:nowrap\">umbilical<a name=\"access-type-umbilical\"> </a></td><td>Ombilical</td></tr><tr><td style=\"white-space:nowrap\">surgical_hybrid<a name=\"access-type-surgical_hybrid\"> </a></td><td>Chirurgical/hybride</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/access-type",
+  "version" : "0.6.0",
+  "name" : "AccessType",
+  "title" : "TAUSSIG — Type d'abord vasculaire",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Voie d'abord vasculaire.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "arterial_femoral",
+    "display" : "Artériel fémoral"
+  },
+  {
+    "code" : "venous_femoral",
+    "display" : "Veineux fémoral"
+  },
+  {
+    "code" : "arterial_humeral",
+    "display" : "Artériel huméral"
+  },
+  {
+    "code" : "venous_humeral",
+    "display" : "Veineux huméral"
+  },
+  {
+    "code" : "arterial_carotid",
+    "display" : "Artériel carotidien"
+  },
+  {
+    "code" : "venous_jugular",
+    "display" : "Veineux jugulaire"
+  },
+  {
+    "code" : "transhepatic",
+    "display" : "Transhépatique"
+  },
+  {
+    "code" : "umbilical",
+    "display" : "Ombilical"
+  },
+  {
+    "code" : "surgical_hybrid",
+    "display" : "Chirurgical/hybride"
+  }]
+}

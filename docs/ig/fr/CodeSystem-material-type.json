@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "material-type",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem material-type</b></p><a name=\"material-type\"> </a><a name=\"hcmaterial-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/material-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">balloon<a name=\"material-type-balloon\"> </a></td><td>Ballon</td></tr><tr><td style=\"white-space:nowrap\">stent<a name=\"material-type-stent\"> </a></td><td>Stent</td></tr><tr><td style=\"white-space:nowrap\">device_implant<a name=\"material-type-device_implant\"> </a></td><td>Dispositif implantable</td></tr><tr><td style=\"white-space:nowrap\">consumable<a name=\"material-type-consumable\"> </a></td><td>Consommable</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/material-type",
+  "version" : "0.6.0",
+  "name" : "MaterialType",
+  "title" : "TAUSSIG — Type de matériel",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Catégorie de matériel utilisé pendant un geste.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "balloon",
+    "display" : "Ballon"
+  },
+  {
+    "code" : "stent",
+    "display" : "Stent"
+  },
+  {
+    "code" : "device_implant",
+    "display" : "Dispositif implantable"
+  },
+  {
+    "code" : "consumable",
+    "display" : "Consommable"
+  }]
+}

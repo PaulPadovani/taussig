@@ -1,0 +1,92 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "taussig-materiel-types",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-materiel-types</b></p><a name=\"taussig-materiel-types\"> </a><a name=\"hctaussig-materiel-types\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/705924003\">705924003</a></td><td>Cardiac balloon catheter</td></tr><tr><td><a href=\"http://snomed.info/id/65818007\">65818007</a></td><td>endoprothèse</td></tr><tr><td><a href=\"http://snomed.info/id/19923001\">19923001</a></td><td>cathéter</td></tr><tr><td><a href=\"http://snomed.info/id/102317008\">102317008</a></td><td>Guiding catheter</td></tr><tr><td><a href=\"http://snomed.info/id/1137638009\">1137638009</a></td><td>Cardiac catheter guidewire</td></tr><tr><td><a href=\"http://snomed.info/id/467764008\">467764008</a></td><td>Catheter introducer</td></tr><tr><td><a href=\"http://snomed.info/id/25005004\">25005004</a></td><td>anse</td></tr><tr><td><a href=\"http://snomed.info/id/860585001\">860585001</a></td><td>Transcatheter pulmonary valve bioprosthesis</td></tr><tr><td><a href=\"http://snomed.info/id/1362137001\">1362137001</a></td><td>Aortic transcatheter heart valve bioprosthesis, stent framework</td></tr><tr><td><a href=\"http://snomed.info/id/1141607002\">1141607002</a></td><td>Transcatheter biologic tricuspid valve prosthesis</td></tr></table></li><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-closure-device-type.html\"><code>https://taussig/fhir/CodeSystem/closure-device-type</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;0.6.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-CIA\">TAUSSIG-OCCLUDER-CIA</a></td><td>Dispositif de fermeture de CIA</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-CIV\">TAUSSIG-OCCLUDER-CIV</a></td><td>Dispositif de fermeture de CIV</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-CANAL\">TAUSSIG-OCCLUDER-CANAL</a></td><td>Dispositif de fermeture de canal artériel</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-VASCULAR\">TAUSSIG-OCCLUDER-VASCULAR</a></td><td>Dispositif de fermeture d’un autre vaisseau</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-FOP\">TAUSSIG-OCCLUDER-FOP</a></td><td>Dispositif de fermeture de FOP</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/taussig-materiel-types",
+  "version" : "0.6.0",
+  "name" : "taussig_materiel_types",
+  "title" : "TAUSSIG — Types de dispositifs interventionnels",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Working set de matériel ; catégories de fermeture distinguées par cible selon la décision clinique du 30 octobre 2026. Les catégories fines de fermeture utilisent des codes TAUSSIG locaux.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "705924003",
+        "display" : "Cardiac balloon catheter"
+      },
+      {
+        "code" : "65818007",
+        "display" : "endoprothèse"
+      },
+      {
+        "code" : "19923001",
+        "display" : "cathéter"
+      },
+      {
+        "code" : "102317008",
+        "display" : "Guiding catheter"
+      },
+      {
+        "code" : "1137638009",
+        "display" : "Cardiac catheter guidewire"
+      },
+      {
+        "code" : "467764008",
+        "display" : "Catheter introducer"
+      },
+      {
+        "code" : "25005004",
+        "display" : "anse"
+      },
+      {
+        "code" : "860585001",
+        "display" : "Transcatheter pulmonary valve bioprosthesis"
+      },
+      {
+        "code" : "1362137001",
+        "display" : "Aortic transcatheter heart valve bioprosthesis, stent framework"
+      },
+      {
+        "code" : "1141607002",
+        "display" : "Transcatheter biologic tricuspid valve prosthesis"
+      }]
+    },
+    {
+      "system" : "https://taussig/fhir/CodeSystem/closure-device-type",
+      "concept" : [{
+        "code" : "TAUSSIG-OCCLUDER-CIA",
+        "display" : "Dispositif de fermeture de CIA"
+      },
+      {
+        "code" : "TAUSSIG-OCCLUDER-CIV",
+        "display" : "Dispositif de fermeture de CIV"
+      },
+      {
+        "code" : "TAUSSIG-OCCLUDER-CANAL",
+        "display" : "Dispositif de fermeture de canal artériel"
+      },
+      {
+        "code" : "TAUSSIG-OCCLUDER-VASCULAR",
+        "display" : "Dispositif de fermeture d’un autre vaisseau"
+      },
+      {
+        "code" : "TAUSSIG-OCCLUDER-FOP",
+        "display" : "Dispositif de fermeture de FOP"
+      }]
+    }]
+  }
+}

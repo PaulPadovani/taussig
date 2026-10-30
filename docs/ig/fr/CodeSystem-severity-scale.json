@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "severity-scale",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem severity-scale</b></p><a name=\"severity-scale\"> </a><a name=\"hcseverity-scale\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/severity-scale</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">bergersen_c3po<a name=\"severity-scale-bergersen_c3po\"> </a></td><td>Bergersen / C3PO</td></tr><tr><td style=\"white-space:nowrap\">ncdr_impact<a name=\"severity-scale-ncdr_impact\"> </a></td><td>NCDR-IMPACT</td></tr><tr><td style=\"white-space:nowrap\">ctcae_v5<a name=\"severity-scale-ctcae_v5\"> </a></td><td>CTCAE v5</td></tr><tr><td style=\"white-space:nowrap\">clavien_dindo<a name=\"severity-scale-clavien_dindo\"> </a></td><td>Clavien-Dindo</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"severity-scale-other\"> </a></td><td>Autre</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/severity-scale",
+  "version" : "0.6.0",
+  "name" : "SeverityScale",
+  "title" : "TAUSSIG — Échelle de gravité d'un EI",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Échelle de gradation validée par la littérature.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "bergersen_c3po",
+    "display" : "Bergersen / C3PO"
+  },
+  {
+    "code" : "ncdr_impact",
+    "display" : "NCDR-IMPACT"
+  },
+  {
+    "code" : "ctcae_v5",
+    "display" : "CTCAE v5"
+  },
+  {
+    "code" : "clavien_dindo",
+    "display" : "Clavien-Dindo"
+  },
+  {
+    "code" : "other",
+    "display" : "Autre"
+  }]
+}

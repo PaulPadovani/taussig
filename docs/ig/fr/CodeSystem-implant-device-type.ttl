@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/implant-device-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "implant-device-type"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem implant-device-type</b></p><a name=\"implant-device-type\"> </a><a name=\"hcimplant-device-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/implant-device-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">conduit<a name=\"implant-device-type-conduit\"> </a></td><td>Conduit</td></tr><tr><td style=\"white-space:nowrap\">shunt<a name=\"implant-device-type-shunt\"> </a></td><td>Shunt</td></tr><tr><td style=\"white-space:nowrap\">valve<a name=\"implant-device-type-valve\"> </a></td><td>Valve</td></tr><tr><td style=\"white-space:nowrap\">stent<a name=\"implant-device-type-stent\"> </a></td><td>Stent</td></tr><tr><td style=\"white-space:nowrap\">occluder<a name=\"implant-device-type-occluder\"> </a></td><td>Occluder</td></tr><tr><td style=\"white-space:nowrap\">baffle<a name=\"implant-device-type-baffle\"> </a></td><td>Baffle</td></tr><tr><td style=\"white-space:nowrap\">fenestration<a name=\"implant-device-type-fenestration\"> </a></td><td>Fenestration</td></tr><tr><td style=\"white-space:nowrap\">coil<a name=\"implant-device-type-coil\"> </a></td><td>Coil</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"implant-device-type-other\"> </a></td><td>Autre</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/implant-device-type"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "ImplantDeviceType"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Type d'implant"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Type de dispositif/substrat longitudinal."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "conduit" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Conduit" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "shunt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Shunt" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "valve" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Valve" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "stent" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stent" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "occluder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Occluder" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "baffle" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Baffle" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "fenestration" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fenestration" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "coil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Coil" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Autre" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/implant-device-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

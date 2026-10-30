@@ -1,0 +1,367 @@
+{
+  "package": "taussig.poc",
+  "version": "0.6.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "FR",
+  "extensions": [
+    {
+      "url": "https://taussig/fhir/StructureDefinition/adverseEventAttribution",
+      "title": "Attribution de l\u0027EI",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/adverseEventManagement",
+      "title": "Prise en charge de l\u0027EI",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/attemptNumber",
+      "title": "Numéro de tentative",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/contrastUsed",
+      "title": "Produit de contraste utilisé",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/derivationMethod",
+      "title": "Dérivation de la mesure",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/diagnosisRole",
+      "title": "Rôle du diagnostic",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/echoGuided",
+      "title": "Écho-guidage",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/ecmoSupport",
+      "title": "Assistance ECMO",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/implantClinicalStatus",
+      "title": "État clinique de l\u0027implant",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/implantedExternally",
+      "title": "Posé en externe",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/indicationRole",
+      "title": "Rôle de l\u0027indication",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/introducerSize",
+      "title": "Taille d\u0027introducteur",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/measurementCondition",
+      "title": "Condition de mesure",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/previousImplant",
+      "title": "Implant précédent",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/procedurePhase",
+      "title": "Phase procédurale (mesure)",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/relatedDiagnosis",
+      "title": "Diagnostic congénital d\u0027origine",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/severityLevel",
+      "title": "Niveau de gravité (1-5)",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/severityScale",
+      "title": "Échelle de gravité",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/usageSequence",
+      "title": "Ordre d\u0027usage",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/ventilationType",
+      "title": "Mode ventilatoire",
+      "types": [
+        "code"
+      ]
+    }
+  ],
+  "profiles": {
+    "AdverseEvent": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-adverse-event",
+        "title": "TAUSSIG — Événement indésirable"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-vascular-access",
+        "title": "TAUSSIG — Abord vasculaire"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation",
+        "title": "TAUSSIG — Exposition et contraste de procédure"
+      },
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-procedure-outcome",
+        "title": "TAUSSIG — Résultat global de procédure"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile",
+        "title": "TAUSSIG — Syndrome génétique (covariable de contexte)"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-material-used",
+        "title": "TAUSSIG — Matériel utilisé (consommable de geste)"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-care-episode",
+        "title": "TAUSSIG — Épisode de soins"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-organization",
+        "title": "TAUSSIG — Organisation"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-patient",
+        "title": "TAUSSIG — Patient"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration",
+        "title": "TAUSSIG — Administration médicamenteuse péri-procédurale"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-practitioner",
+        "title": "TAUSSIG — Praticien"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0": [
+      "Practitioner.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/note|5.2.0": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0": [
+      "Organization"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints": [
+      "StructureDefinition.snapshot.element.type.profile"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment|2.2.0": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date|2.2.0": [
+      "Encounter"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie|2.2.0": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0": [
+      "Organization"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name|2.2.0": [
+      "Patient.name"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.2.0": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier|2.2.0": [
+      "Patient.contact"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-relationship-category|2.2.0": [
+      "Patient.contact.relationship"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place|2.2.0": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0": [
+      "Patient"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.2.0": [
+      "Practitioner"
+    ],
+    "https://taussig/fhir/StructureDefinition/adverseEventAttribution": [
+      "AdverseEvent"
+    ],
+    "https://taussig/fhir/StructureDefinition/adverseEventManagement": [
+      "AdverseEvent"
+    ],
+    "https://taussig/fhir/StructureDefinition/contrastUsed": [
+      "Procedure"
+    ],
+    "https://taussig/fhir/StructureDefinition/derivationMethod": [
+      "Observation"
+    ],
+    "https://taussig/fhir/StructureDefinition/echoGuided": [
+      "Procedure"
+    ],
+    "https://taussig/fhir/StructureDefinition/ecmoSupport": [
+      "Procedure"
+    ],
+    "https://taussig/fhir/StructureDefinition/implantClinicalStatus": [
+      "Device"
+    ],
+    "https://taussig/fhir/StructureDefinition/implantedExternally": [
+      "Device"
+    ],
+    "https://taussig/fhir/StructureDefinition/introducerSize": [
+      "Procedure"
+    ],
+    "https://taussig/fhir/StructureDefinition/measurementCondition": [
+      "Observation"
+    ],
+    "https://taussig/fhir/StructureDefinition/previousImplant": [
+      "Device"
+    ],
+    "https://taussig/fhir/StructureDefinition/procedurePhase": [
+      "Observation"
+    ],
+    "https://taussig/fhir/StructureDefinition/relatedDiagnosis": [
+      "Condition"
+    ],
+    "https://taussig/fhir/StructureDefinition/severityLevel": [
+      "AdverseEvent"
+    ],
+    "https://taussig/fhir/StructureDefinition/severityScale": [
+      "AdverseEvent"
+    ],
+    "https://taussig/fhir/StructureDefinition/ventilationType": [
+      "Procedure"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "diagnosis-role",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem diagnosis-role</b></p><a name=\"diagnosis-role\"> </a><a name=\"hcdiagnosis-role\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/diagnosis-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">primary_indication<a name=\"diagnosis-role-primary_indication\"> </a></td><td>Indication principale</td></tr><tr><td style=\"white-space:nowrap\">associated_lesion<a name=\"diagnosis-role-associated_lesion\"> </a></td><td>Lésion associée</td></tr><tr><td style=\"white-space:nowrap\">incidental<a name=\"diagnosis-role-incidental\"> </a></td><td>Fortuit</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/diagnosis-role",
+  "version" : "0.6.0",
+  "name" : "DiagnosisRole",
+  "title" : "TAUSSIG — Rôle d'une indication/diagnostic",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Rôle de l'indication d'un cathétérisme.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "primary_indication",
+    "display" : "Indication principale"
+  },
+  {
+    "code" : "associated_lesion",
+    "display" : "Lésion associée"
+  },
+  {
+    "code" : "incidental",
+    "display" : "Fortuit"
+  }]
+}

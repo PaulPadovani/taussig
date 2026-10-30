@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/genetic-syndrome-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "genetic-syndrome-category"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem genetic-syndrome-category</b></p><a name=\"genetic-syndrome-category\"> </a><a name=\"hcgenetic-syndrome-category\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/genetic-syndrome-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">chromosomal_anomaly<a name=\"genetic-syndrome-category-chromosomal_anomaly\"> </a></td><td>Anomalie chromosomique</td></tr><tr><td style=\"white-space:nowrap\">monogenic_disorder<a name=\"genetic-syndrome-category-monogenic_disorder\"> </a></td><td>Maladie monogénique</td></tr><tr><td style=\"white-space:nowrap\">syndromic_association<a name=\"genetic-syndrome-category-syndromic_association\"> </a></td><td>Association syndromique</td></tr><tr><td style=\"white-space:nowrap\">teratogenic<a name=\"genetic-syndrome-category-teratogenic\"> </a></td><td>Tératogène</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"genetic-syndrome-category-unknown\"> </a></td><td>Inconnu</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/genetic-syndrome-category"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "GeneticSyndromeCategory"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Catégorie de syndrome génétique"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Catégorie étiologique d'un syndrome génétique."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "chromosomal_anomaly" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie chromosomique" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "monogenic_disorder" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Maladie monogénique" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "syndromic_association" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Association syndromique" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "teratogenic" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tératogène" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inconnu" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/genetic-syndrome-category.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

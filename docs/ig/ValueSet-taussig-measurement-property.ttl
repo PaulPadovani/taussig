@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-measurement-property> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-measurement-property"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-measurement-property</b></p><a name=\"taussig-measurement-property\"> </a><a name=\"hctaussig-measurement-property\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-measurement-property.html\"><code>https://taussig/fhir/CodeSystem/measurement-property</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-pressure_systolic\">pressure_systolic</a></td><td>Pression systolique</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-pressure_diastolic\">pressure_diastolic</a></td><td>Pression diastolique</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-pressure_mean\">pressure_mean</a></td><td>Pression moyenne</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-pressure_end_diastolic\">pressure_end_diastolic</a></td><td>Pression télédiastolique (ventricule)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-pressure_wedge\">pressure_wedge</a></td><td>Pression capillaire pulmonaire bloquée (wedge)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-oxygen_saturation\">oxygen_saturation</a></td><td>Saturation en oxygène</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-flow_pulmonary\">flow_pulmonary</a></td><td>Débit pulmonaire (Qp)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-flow_systemic\">flow_systemic</a></td><td>Débit systémique (Qs)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-flow_ratio_qp_qs\">flow_ratio_qp_qs</a></td><td>Rapport Qp/Qs</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-cardiac_output\">cardiac_output</a></td><td>Débit cardiaque</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-cardiac_index\">cardiac_index</a></td><td>Index cardiaque</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-resistance_pulmonary\">resistance_pulmonary</a></td><td>Résistance vasculaire pulmonaire (RVP)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-resistance_pulmonary_indexed\">resistance_pulmonary_indexed</a></td><td>RVP indexée (RVPi)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-resistance_systemic\">resistance_systemic</a></td><td>Résistance vasculaire systémique (RVS)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-resistance_ratio_pvr_svr\">resistance_ratio_pvr_svr</a></td><td>Rapport RVP/RVS</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-gradient_peak_to_peak\">gradient_peak_to_peak</a></td><td>Gradient pic-à-pic</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-gradient_mean\">gradient_mean</a></td><td>Gradient moyen</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-oxygen_consumption\">oxygen_consumption</a></td><td>Consommation d'oxygène (VO2)</td></tr><tr><td><a href=\"CodeSystem-measurement-property.html#measurement-property-regurgitation_grade\">regurgitation_grade</a></td><td>Grade de régurgitation</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-measurement-property"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.0"] ;
+  fhir:ValueSet.name [ fhir:value "TaussigMeasurementProperty"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept)"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Working set POC des propriétés de mesure hémodynamique de cathétérisme."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/measurement-property" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pressure_systolic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pression systolique" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pressure_diastolic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pression diastolique" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pressure_mean" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pression moyenne" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pressure_end_diastolic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pression télédiastolique (ventricule)" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "pressure_wedge" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pression capillaire pulmonaire bloquée (wedge)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "oxygen_saturation" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Saturation en oxygène" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "flow_pulmonary" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Débit pulmonaire (Qp)" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "flow_systemic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Débit systémique (Qs)" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "flow_ratio_qp_qs" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rapport Qp/Qs" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cardiac_output" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Débit cardiaque" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "cardiac_index" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Index cardiaque" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "resistance_pulmonary" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Résistance vasculaire pulmonaire (RVP)" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "resistance_pulmonary_indexed" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "RVP indexée (RVPi)" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "resistance_systemic" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Résistance vasculaire systémique (RVS)" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "resistance_ratio_pvr_svr" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rapport RVP/RVS" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "gradient_peak_to_peak" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gradient pic-à-pic" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "gradient_mean" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Gradient moyen" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "oxygen_consumption" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Consommation d'oxygène (VO2)" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "regurgitation_grade" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Grade de régurgitation" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-measurement-property.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

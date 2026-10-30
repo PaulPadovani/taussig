@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/access-type-to-snomed> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "access-type-to-snomed"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts access-type-to-snomed</b></p><a name=\"access-type-to-snomed\"> </a><a name=\"hcaccess-type-to-snomed\"> </a><p>Mapping de <a href=\"ValueSet-access-type-vs.html\">TAUSSIG — Types d'abord vasculaire</a> vers <a href=\"https://browser.ihtsdotools.org/\">All Codes SCT ValueSet</a></p><br/><p>Mapping de <a href=\"CodeSystem-access-type.html\">TAUSSIG — Type d'abord vasculaire</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>arterial_femoral (Artériel fémoral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>7657000 (artère fémorale)</td><td/></tr><tr><td>venous_femoral (Veineux fémoral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>83419000 (veine fémorale)</td><td/></tr><tr><td>arterial_humeral (Artériel huméral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>17137000 (artère brachiale)</td><td/></tr><tr><td>venous_humeral (Veineux huméral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>20115005 (veine brachiale)</td><td/></tr><tr><td>arterial_carotid (Artériel carotidien)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>32062004 (artère carotide commune)</td><td/></tr><tr><td>venous_jugular (Veineux jugulaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>12123001 (veine jugulaire interne)</td><td/></tr><tr><td>transhepatic (Transhépatique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\" title=\"relatedto\">is related to</a></td><td>8993003 (veine hépatique)</td><td/></tr><tr><td>umbilical (Ombilical)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>367567000 (veine ombilicale)</td><td/></tr><tr><td>surgical_hybrid (Chirurgical/hybride)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">Voie d'abord (abord chirurgical/hybride), pas un vaisseau : pas de site SNOMED.</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://taussig/fhir/ConceptMap/access-type-to-snomed"] ;
+  fhir:ConceptMap.version [ fhir:value "0.6.0"] ;
+  fhir:ConceptMap.name [ fhir:value "AccessTypeToSnomed"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ConceptMap.description [ fhir:value "Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://taussig/fhir/ValueSet/access-type-vs" ;
+     fhir:link <https://taussig/fhir/ValueSet/access-type-vs>
+  ] ;
+  fhir:ConceptMap.targetCanonical [
+     fhir:value "http://snomed.info/sct?fhir_vs" ;
+     fhir:link <http://snomed.info/sct?fhir_vs>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://taussig/fhir/CodeSystem/access-type" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://snomed.info/sct" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "arterial_femoral" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "7657000" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "artère fémorale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "venous_femoral" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "83419000" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "veine fémorale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "arterial_humeral" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "17137000" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "artère brachiale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "venous_humeral" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "20115005" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "veine brachiale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "arterial_carotid" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "32062004" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "artère carotide commune" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "venous_jugular" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "12123001" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "veine jugulaire interne" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "transhepatic" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "8993003" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "veine hépatique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "relatedto" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "umbilical" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "367567000" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "veine ombilicale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "surgical_hybrid" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "Voie d'abord (abord chirurgical/hybride), pas un vaisseau : pas de site SNOMED." ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/access-type-to-snomed.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

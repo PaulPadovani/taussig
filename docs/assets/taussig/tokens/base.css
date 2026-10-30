@@ -1,0 +1,81 @@
+/* ============================================================
+   TAUSSIG — Base & utilitaires
+   Réglages d'éléments + les quelques classes transverses
+   (halo synchronisé, îlot sombre, substitut d'image).
+   ============================================================ */
+
+body {
+  margin: 0;
+  background: var(--papier-0);
+  color: var(--encre-1);
+  font: var(--graisse-normale) var(--taille-md) / var(--interligne-ui) var(--police-texte);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--police-titre);
+  font-weight: var(--graisse-moyenne);
+  line-height: var(--interligne-serre);
+  letter-spacing: var(--approche-titre);
+  margin: 0;
+}
+
+p { margin: 0; }
+code, pre, kbd { font-family: var(--police-code); font-size: 0.93em; }
+
+a { color: var(--primaire); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in oklch, var(--primaire) 40%, transparent); transition: color var(--duree-1) var(--ease-sortie), text-decoration-color var(--duree-1) var(--ease-sortie); }
+a:hover { color: var(--primaire-fonce); text-decoration-color: var(--primaire-fonce); }
+
+::selection { background: var(--primaire-fond); }
+:focus-visible { outline: none; box-shadow: var(--anneau-focus); border-radius: var(--rayon-sm); }
+
+/* Chiffres tabulaires — obligatoire dans tableaux, deltas, axes */
+.tabulaire { font-variant-numeric: tabular-nums lining-nums; }
+
+/* Étiquette en petites capitales (en-têtes de colonnes, méta) */
+.etiquette {
+  font-size: var(--taille-xs);
+  font-weight: var(--graisse-demi);
+  letter-spacing: var(--approche-caps);
+  text-transform: uppercase;
+  color: var(--encre-3);
+}
+
+/* ---- Halo de correspondance (surlignage synchronisé) ----
+   Appliqué simultanément aux éléments liés des trois registres. */
+.halo {
+  background: var(--halo-fond) !important;
+  box-shadow: inset 0 0 0 1.5px var(--halo-anneau);
+  border-radius: var(--rayon-sm);
+  transition: background var(--duree-1) var(--ease-sortie), box-shadow var(--duree-1) var(--ease-sortie);
+}
+.ilot-sombre .halo {
+  background: var(--halo-fond-sombre) !important;
+  box-shadow: inset 0 0 0 1.5px var(--halo-anneau);
+}
+
+/* ---- Îlot sombre : réservé aux blocs code / JSON ---- */
+.ilot-sombre {
+  background: var(--ilot-fond);
+  color: var(--ilot-texte);
+  border-radius: var(--rayon-md);
+}
+
+/* ---- Substitut d'image (jamais de fausse illustration) ---- */
+.substitut-image {
+  background: repeating-linear-gradient(-45deg, var(--papier-1) 0 10px, var(--papier-2) 10px 11px);
+  border: var(--trait-fin) solid var(--ligne-1);
+  border-radius: var(--rayon-md);
+  display: grid;
+  place-items: center;
+  color: var(--encre-3);
+  font-family: var(--police-code);
+  font-size: var(--taille-xs);
+}
+
+/* Accessibilité */
+.masque-visuel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 1ms !important; animation-duration: 1ms !important; }
+}

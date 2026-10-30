@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="severity-scale"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem severity-scale</b></p><a name="severity-scale"> </a><a name="hcseverity-scale"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/severity-scale</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">bergersen_c3po<a name="severity-scale-bergersen_c3po"> </a></td><td>Bergersen / C3PO</td></tr><tr><td style="white-space:nowrap">ncdr_impact<a name="severity-scale-ncdr_impact"> </a></td><td>NCDR-IMPACT</td></tr><tr><td style="white-space:nowrap">ctcae_v5<a name="severity-scale-ctcae_v5"> </a></td><td>CTCAE v5</td></tr><tr><td style="white-space:nowrap">clavien_dindo<a name="severity-scale-clavien_dindo"> </a></td><td>Clavien-Dindo</td></tr><tr><td style="white-space:nowrap">other<a name="severity-scale-other"> </a></td><td>Autre</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/severity-scale"/>
+  <version value="0.6.0"/>
+  <name value="SeverityScale"/>
+  <title value="TAUSSIG — Échelle de gravité d'un EI"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Échelle de gradation validée par la littérature."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="bergersen_c3po"/>
+    <display value="Bergersen / C3PO"/>
+  </concept>
+  <concept>
+    <code value="ncdr_impact"/>
+    <display value="NCDR-IMPACT"/>
+  </concept>
+  <concept>
+    <code value="ctcae_v5"/>
+    <display value="CTCAE v5"/>
+  </concept>
+  <concept>
+    <code value="clavien_dindo"/>
+    <display value="Clavien-Dindo"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Autre"/>
+  </concept>
+</CodeSystem>

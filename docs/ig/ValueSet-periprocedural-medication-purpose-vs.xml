@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="periprocedural-medication-purpose-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs periprocedural-medication-purpose-vs</b></p><a name="periprocedural-medication-purpose-vs"> </a><a name="hcperiprocedural-medication-purpose-vs"> </a><ul><li>Include tous les codes définis dans <a href="CodeSystem-periprocedural-medication-purpose.html"><code>https://taussig/fhir/CodeSystem/periprocedural-medication-purpose</code></a><span title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification"> version &#x1F4E6;0.6.0</span></li></ul></div>
+  </text>
+  <url value="https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs"/>
+  <version value="0.6.0"/>
+  <name value="PeriproceduralMedicationPurposeVS"/>
+  <title value="TAUSSIG — Rôles des médicaments péri-procéduraux"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://taussig/fhir/CodeSystem/periprocedural-medication-purpose"/>
+    </include>
+  </compose>
+</ValueSet>

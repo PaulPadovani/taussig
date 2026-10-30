@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="genetic-syndrome-to-icd11"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CarteDeConcepts genetic-syndrome-to-icd11</b></p><a name="genetic-syndrome-to-icd11"> </a><a name="hcgenetic-syndrome-to-icd11"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping de <code>http://www.orpha.net</code> to <code>http://id.who.int/icd/release/11/mms</code> (International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS))</p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td></tr><tr><td>870 (Trisomie 21)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD40.0</td></tr><tr><td>881 (Syndrome de Turner)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD50.0</td></tr><tr><td>567 (Syndrome de délétion 22q11.2)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD44.N0</td></tr><tr><td>3380 (Syndrome de trisomie 18)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD40.2</td></tr><tr><td>3378 (Syndrome de trisomie 13)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD40.1</td></tr><tr><td>365 (Glycogénose par déficit en maltase acide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>5C51.3</td></tr><tr><td>95 (Ataxie de Friedreich)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>8A03.10</td></tr><tr><td>98896 (Dystrophie musculaire de Duchenne)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>8C70.1</td></tr><tr><td>558 (Syndrome de Marfan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD28.01</td></tr><tr><td>98249 (Syndrome d'Ehlers-Danlos)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD28.1</td></tr><tr><td>60030 (Syndrome de Loeys-Dietz)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>BD50.Z</td></tr><tr><td>648 (Syndrome de Noonan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD2F.15</td></tr><tr><td>805 (Sclérose tubéreuse de Bourneville)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD2D.2</td></tr><tr><td>904 (Syndrome de Williams)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD44.70</td></tr><tr><td>52 (Syndrome d'Alagille)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LB20.0Y</td></tr><tr><td>290 (Syndrome de rubéole congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>KA62.8</td></tr><tr><td>68341 (Anomalies congénitales multiples/syndrome dysmorphique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD2F</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11"/>
+  <version value="0.6.0"/>
+  <name value="GeneticSyndromeToIcd11"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="http://www.orpha.net"/>
+    <target value="http://id.who.int/icd/release/11/mms"/>
+    <element>
+      <code value="870"/>
+      <display value="Trisomie 21"/>
+      <target>
+        <code value="LD40.0"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="881"/>
+      <display value="Syndrome de Turner"/>
+      <target>
+        <code value="LD50.0"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="567"/>
+      <display value="Syndrome de délétion 22q11.2"/>
+      <target>
+        <code value="LD44.N0"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="3380"/>
+      <display value="Syndrome de trisomie 18"/>
+      <target>
+        <code value="LD40.2"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="3378"/>
+      <display value="Syndrome de trisomie 13"/>
+      <target>
+        <code value="LD40.1"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="365"/>
+      <display value="Glycogénose par déficit en maltase acide"/>
+      <target>
+        <code value="5C51.3"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="95"/>
+      <display value="Ataxie de Friedreich"/>
+      <target>
+        <code value="8A03.10"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="98896"/>
+      <display value="Dystrophie musculaire de Duchenne"/>
+      <target>
+        <code value="8C70.1"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="558"/>
+      <display value="Syndrome de Marfan"/>
+      <target>
+        <code value="LD28.01"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="98249"/>
+      <display value="Syndrome d'Ehlers-Danlos"/>
+      <target>
+        <code value="LD28.1"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="60030"/>
+      <display value="Syndrome de Loeys-Dietz"/>
+      <target>
+        <code value="BD50.Z"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="648"/>
+      <display value="Syndrome de Noonan"/>
+      <target>
+        <code value="LD2F.15"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="805"/>
+      <display value="Sclérose tubéreuse de Bourneville"/>
+      <target>
+        <code value="LD2D.2"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="904"/>
+      <display value="Syndrome de Williams"/>
+      <target>
+        <code value="LD44.70"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="52"/>
+      <display value="Syndrome d'Alagille"/>
+      <target>
+        <code value="LB20.0Y"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="290"/>
+      <display value="Syndrome de rubéole congénitale"/>
+      <target>
+        <code value="KA62.8"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+    <element>
+      <code value="68341"/>
+      <display value="Anomalies congénitales multiples/syndrome dysmorphique"/>
+      <target>
+        <code value="LD2F"/>
+        <equivalence value="relatedto"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

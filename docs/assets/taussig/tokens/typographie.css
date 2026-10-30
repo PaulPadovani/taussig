@@ -1,0 +1,44 @@
+/* ============================================================
+   TAUSSIG — Typographie
+   Trois familles, trois rôles :
+   · Spectral         titres et registre narratif (vue clinique)
+   · Source Sans 3    texte, interface, tableaux (tabular-nums)
+   · Source Code Pro  codes, JSON, identifiants techniques
+   ============================================================ */
+:root {
+  --police-titre: "Spectral", Georgia, "Times New Roman", serif;
+  --police-texte: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --police-code:  "Source Code Pro", ui-monospace, "SF Mono", Consolas, monospace;
+
+  /* Échelle (base interface 15 px, ratio ≈ 1,2) */
+  --taille-2xs: 11px;    /* exposants de badges, axes        */
+  --taille-xs:  12.5px;  /* légendes, méta                   */
+  --taille-sm:  13.5px;  /* tableaux denses, code            */
+  --taille-md:  15px;    /* interface par défaut             */
+  --taille-prose: 17px;  /* texte courant long               */
+  --taille-lg:  18px;    /* intertitres mineurs, chiffres KPI secondaires */
+  --taille-xl:  21.5px;  /* h4                               */
+  --taille-2xl: 26px;    /* h3                               */
+  --taille-3xl: 31px;    /* h2                               */
+  --taille-4xl: 37.5px;  /* h1                               */
+  --taille-5xl: 46px;    /* titre de vitrine, chiffres héros */
+
+  /* Interlignes */
+  --interligne-serre: 1.2;   /* titres, chiffres              */
+  --interligne-ui:    1.45;  /* interface, tableaux           */
+  --interligne-texte: 1.6;   /* texte courant                 */
+  --interligne-prose: 1.68;  /* colonnes de lecture longues   */
+
+  /* Graisses (jamais > 600 : le registre reste calme) */
+  --graisse-normale: 400;
+  --graisse-moyenne: 500;
+  --graisse-demi:    600;
+
+  /* Approches */
+  --approche-titre: -0.012em;  /* Spectral grands corps        */
+  --approche-caps:  0.07em;    /* étiquettes en petites capitales */
+  --approche-code:  0;
+
+  /* Largeur de lecture confortable (français, ≈ 65–70 signes) */
+  --mesure-prose: 68ch;
+}

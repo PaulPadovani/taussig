@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "genetic-syndrome-category",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem genetic-syndrome-category</b></p><a name=\"genetic-syndrome-category\"> </a><a name=\"hcgenetic-syndrome-category\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/genetic-syndrome-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">chromosomal_anomaly<a name=\"genetic-syndrome-category-chromosomal_anomaly\"> </a></td><td>Anomalie chromosomique</td></tr><tr><td style=\"white-space:nowrap\">monogenic_disorder<a name=\"genetic-syndrome-category-monogenic_disorder\"> </a></td><td>Maladie monogénique</td></tr><tr><td style=\"white-space:nowrap\">syndromic_association<a name=\"genetic-syndrome-category-syndromic_association\"> </a></td><td>Association syndromique</td></tr><tr><td style=\"white-space:nowrap\">teratogenic<a name=\"genetic-syndrome-category-teratogenic\"> </a></td><td>Tératogène</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"genetic-syndrome-category-unknown\"> </a></td><td>Inconnu</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/genetic-syndrome-category",
+  "version" : "0.6.0",
+  "name" : "GeneticSyndromeCategory",
+  "title" : "TAUSSIG — Catégorie de syndrome génétique",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Catégorie étiologique d'un syndrome génétique.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "chromosomal_anomaly",
+    "display" : "Anomalie chromosomique"
+  },
+  {
+    "code" : "monogenic_disorder",
+    "display" : "Maladie monogénique"
+  },
+  {
+    "code" : "syndromic_association",
+    "display" : "Association syndromique"
+  },
+  {
+    "code" : "teratogenic",
+    "display" : "Tératogène"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Inconnu"
+  }]
+}

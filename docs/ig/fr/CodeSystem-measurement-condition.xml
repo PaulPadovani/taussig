@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="measurement-condition"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem measurement-condition</b></p><a name="measurement-condition"> </a><a name="hcmeasurement-condition"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-condition</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">resting<a name="measurement-condition-resting"> </a></td><td>Repos</td></tr><tr><td style="white-space:nowrap">exercise<a name="measurement-condition-exercise"> </a></td><td>Effort</td></tr><tr><td style="white-space:nowrap">pharmacologic_stress<a name="measurement-condition-pharmacologic_stress"> </a></td><td>Stress pharmacologique</td></tr><tr><td style="white-space:nowrap">supplemental_o2<a name="measurement-condition-supplemental_o2"> </a></td><td>Oxygène</td></tr><tr><td style="white-space:nowrap">nitric_oxide<a name="measurement-condition-nitric_oxide"> </a></td><td>Monoxyde d'azote</td></tr><tr><td style="white-space:nowrap">room_air<a name="measurement-condition-room_air"> </a></td><td>Air ambiant</td></tr><tr><td style="white-space:nowrap">other<a name="measurement-condition-other"> </a></td><td>Autre</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/measurement-condition"/>
+  <version value="0.6.0"/>
+  <name value="MeasurementCondition"/>
+  <title value="TAUSSIG — Condition de mesure"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Condition physiologique/pharmacologique pendant la mesure."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="resting"/>
+    <display value="Repos"/>
+  </concept>
+  <concept>
+    <code value="exercise"/>
+    <display value="Effort"/>
+  </concept>
+  <concept>
+    <code value="pharmacologic_stress"/>
+    <display value="Stress pharmacologique"/>
+  </concept>
+  <concept>
+    <code value="supplemental_o2"/>
+    <display value="Oxygène"/>
+  </concept>
+  <concept>
+    <code value="nitric_oxide"/>
+    <display value="Monoxyde d'azote"/>
+  </concept>
+  <concept>
+    <code value="room_air"/>
+    <display value="Air ambiant"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Autre"/>
+  </concept>
+</CodeSystem>

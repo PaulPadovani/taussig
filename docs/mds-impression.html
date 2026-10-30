@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAUSSIG — MDS du cathétérisme congénital (document imprimable)</title>
+<link rel="stylesheet" href="assets/taussig/styles.css">
+<style>
+/* ————— écran : feuille de papier centrée ————— */
+body{background:var(--papier-2)}
+.barre-ecran{position:sticky;top:0;z-index:10;display:flex;gap:12px;align-items:center;justify-content:center;padding:10px;background:var(--papier-0);border-bottom:var(--trait-fin) solid var(--ligne-1);font-size:var(--taille-sm);color:var(--encre-3)}
+.barre-ecran a,.barre-ecran button{font:var(--graisse-moyenne) var(--taille-sm)/1 var(--police-texte);color:var(--primaire);background:var(--papier-0);border:var(--trait-fin) solid var(--ligne-2);border-radius:var(--rayon-sm);padding:8px 13px;cursor:pointer;text-decoration:none}
+.barre-ecran a:hover,.barre-ecran button:hover{background:var(--primaire-fond);border-color:var(--primaire-bord)}
+.feuille{background:var(--papier-0);max-width:210mm;margin:18px auto;padding:22mm 18mm;box-shadow:var(--ombre-2);color:var(--encre-1)}
+
+/* ————— couverture ————— */
+.couv{min-height:60vh;display:flex;flex-direction:column;justify-content:center;border-bottom:var(--trait-accent) solid var(--primaire);padding-bottom:26px;margin-bottom:26px}
+.couv .marque{font-family:var(--police-titre);font-weight:var(--graisse-demi);font-size:46px;letter-spacing:.02em;color:var(--primaire)}
+.couv .kicker{font-size:var(--taille-2xs);letter-spacing:var(--approche-caps);text-transform:uppercase;color:var(--encre-3);margin-bottom:8px}
+.couv h1{font-size:var(--taille-3xl);line-height:var(--interligne-serre);margin:14px 0 4px;text-wrap:balance}
+.couv .stitre{font-size:var(--taille-lg);color:var(--encre-2);font-family:var(--police-titre);font-style:italic}
+.couv .meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:22px;font-size:var(--taille-sm);color:var(--encre-2)}
+.couv .meta b{color:var(--encre-1);font-variant-numeric:tabular-nums}
+.couv .abstract{max-width:64ch;font-size:var(--taille-md);line-height:var(--interligne-texte);color:var(--encre-2);margin-top:20px}
+.couv .licence{margin-top:20px;font-size:var(--taille-xs);color:var(--encre-3);border-top:var(--trait-fin) solid var(--ligne-1);padding-top:12px;max-width:64ch}
+
+/* ————— corps ————— */
+h2.zone{font-size:var(--taille-2xl);color:var(--primaire);font-weight:var(--graisse-demi);margin:26px 0 4px;padding-bottom:5px;border-bottom:var(--trait-fort) solid var(--primaire-bord)}
+h2.zone .num{font-variant-numeric:tabular-nums;color:var(--encre-4);margin-right:8px}
+.entite{margin:16px 0 6px;break-inside:avoid}
+.ent-tete{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;break-after:avoid}
+.ent-tete h3{font-size:var(--taille-xl);color:var(--encre-1);font-weight:var(--graisse-demi)}
+.ent-tete .tech{font-family:var(--police-code);font-size:var(--taille-xs);color:var(--relationnel)}
+.ent-tete .cpt{font-size:var(--taille-2xs);color:var(--encre-4);font-variant-numeric:tabular-nums}
+.ent-desc{font-size:var(--taille-sm);color:var(--encre-2);line-height:var(--interligne-ui);margin:4px 0 8px}
+
+table{border-collapse:collapse;width:100%;font-size:var(--taille-xs);margin-bottom:6px}
+thead th{text-align:left;font-size:var(--taille-2xs);letter-spacing:.04em;text-transform:uppercase;color:var(--encre-3);font-weight:var(--graisse-demi);border-bottom:var(--trait-fort) solid var(--ligne-2);padding:4px 8px 4px 0;vertical-align:bottom}
+tbody td{padding:5px 8px 5px 0;vertical-align:top;border-bottom:var(--trait-fin) solid var(--ligne-1);line-height:var(--interligne-ui)}
+tbody tr{break-inside:avoid}
+.c-attr{white-space:nowrap;width:1%}
+.c-attr code{font-family:var(--police-code);color:var(--encre-1)}
+.c-attr .req{color:var(--clinique-vif);font-weight:var(--graisse-demi)}
+.c-def{color:var(--encre-2)}
+.c-tc{white-space:nowrap;color:var(--encre-2);font-variant-numeric:tabular-nums}
+.c-fhir{white-space:nowrap}
+.c-fhir code{font-family:var(--police-code);color:var(--fhir);font-size:var(--taille-2xs)}
+.c-fhir .b{display:block;color:var(--encre-4);font-size:var(--taille-2xs)}
+.c-vs code{font-family:var(--police-code);color:var(--relationnel);font-size:var(--taille-2xs)}
+
+/* ————— annexe value sets ————— */
+h2.annexe{font-size:var(--taille-2xl);color:var(--relationnel);font-weight:var(--graisse-demi);margin:30px 0 4px;padding-bottom:5px;border-bottom:var(--trait-fort) solid var(--relationnel-bord);break-before:page}
+.vs{margin:14px 0;break-inside:avoid}
+.vs h3{font-size:var(--taille-lg);color:var(--encre-1);font-weight:var(--graisse-demi)}
+.vs .canon{font-family:var(--police-code);font-size:var(--taille-2xs);color:var(--relationnel)}
+.vs .cnt{font-size:var(--taille-2xs);color:var(--encre-4)}
+.vs table td,.vs table th{font-size:var(--taille-2xs)}
+.vs .plus{font-size:var(--taille-2xs);color:var(--encre-3);font-style:italic;margin-top:3px}
+
+/* ————— impression ————— */
+@media print{
+  @page{size:A4;margin:16mm 15mm 18mm}
+  html,body{background:#fff}
+  .barre-ecran{display:none}
+  .feuille{box-shadow:none;margin:0;padding:0;max-width:none}
+  .couv{min-height:auto;break-after:page;padding-top:20mm}
+  h2.zone{break-after:avoid}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="barre-ecran">
+  <span>Document imprimable — <b>Cmd/Ctrl + P → Enregistrer en PDF</b></span>
+  <button onclick="window.print()">Imprimer / PDF</button>
+  <a href="dictionnaire.html">← Dictionnaire interactif</a>
+</div>
+<div class="feuille" id="doc"></div>
+
+<script src="data/dict.js"></script>
+<script>
+const D = window.TAUSSIG_DICT;
+const DATE = new Date().toLocaleDateString('fr-FR', {year:'numeric', month:'long', day:'numeric'});
+function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function csCourt(cs){
+  if(!cs) return '';
+  const m=[[/loinc/,'LOINC'],[/snomed/,'SNOMED CT'],[/icd.*11|id\.who/,'ICD-11'],[/icd.*10|cim.*10/,'CIM-10'],
+    [/orpha/,'Orphanet'],[/ucum/,'UCUM'],[/ccam/,'CCAM'],[/echsa/,'ECHSA'],[/ipccc/,'IPCCC'],
+    [/administrative-gender/,'HL7'],[/taussig/,'TAUSSIG']];
+  for(const [re,l] of m) if(re.test(cs)) return l;
+  return cs.replace(/^https?:\/\//,'').split('/')[0];
+}
+
+let h = '';
+// ————— couverture —————
+h += `<section class="couv">
+  <div class="marque">TAUSSIG</div>
+  <div class="kicker">Modèle de données · POC v4</div>
+  <h1>Ensemble minimal de données du cathétérisme cardiaque congénital</h1>
+  <div class="stitre">Minimum Data Set — définitions normalisées et correspondances FHIR</div>
+  <div class="meta">
+    <div><b>${D.meta.nbElements}</b> variables</div>
+    <div><b>${D.meta.nbEntities}</b> entités</div>
+    <div><b>${D.meta.nbValuesets}</b> value sets</div>
+    <div>Version <b>v4</b></div>
+    <div>Généré le ${DATE}</div>
+  </div>
+  <p class="abstract">Ce document décrit, variable par variable, l’ensemble minimal de données proposé pour structurer le cathétérisme cardiaque congénital. Chaque attribut est défini selon la norme ISO/IEC 11179 (définition nominale, singulière, autoportante), typé et cardinalisé, puis rattaché à sa ressource et à son chemin FHIR ainsi qu’aux terminologies de référence. Il est destiné à servir de support à un consensus d’experts (Delphi) et de spécification pour l’Implementation Guide FHIR.</p>
+  <p class="licence">Conditions de réutilisation des artefacts TAUSSIG en cours d’harmonisation. Les mappings vers les terminologies tierces (IPCCC, ECHSA, SNOMED CT, CIM-11/10, CCAM, Orphanet, UCUM, LOINC) restent soumis aux licences de leurs propriétaires respectifs — voir la page Licences du site. Document de travail : ne pas utiliser à des fins de codage réglementaire.</p>
+</section>`;
+
+// ————— corps : zones -> entités -> attributs —————
+D.zones.forEach((z, zi) => {
+  const ents = D.entities.filter(e => e.zone === z.id);
+  if(!ents.length) return;
+  h += `<h2 class="zone"><span class="num">${zi+1}.</span>${esc(z.titre)}</h2>`;
+  ents.forEach(ent => {
+    const keys = Object.keys(D.elements).filter(k => k.split('.',1)[0] === ent.name);
+    h += `<section class="entite"><div class="ent-tete"><h3>${esc(ent.fr)}</h3><span class="tech">${ent.name}</span><span class="cpt">${ent.n} var.</span></div>`;
+    if(ent.desc) h += `<p class="ent-desc">${esc(ent.desc)}</p>`;
+    h += `<table><thead><tr><th>Attribut</th><th>Définition</th><th>Type · card.</th><th>FHIR</th><th>Value set</th></tr></thead><tbody>`;
+    keys.forEach(k => {
+      const e = D.elements[k], attr = k.slice(ent.name.length+1);
+      const req = e.req === 'oui';
+      const fhir = e.path ? `<code>${esc(e.path)}</code>` +
+        (e.bind && e.bind!=='n/a' || e.cs ? `<span class="b">${[e.bind&&e.bind!=='n/a'?esc(e.bind):'', e.cs?csCourt(e.cs):''].filter(Boolean).join(' · ')}</span>` : '') : '—';
+      h += `<tr>
+        <td class="c-attr"><code>${esc(attr)}</code>${req?' <span class="req" title="requis">•</span>':''}</td>
+        <td class="c-def">${esc(e.def)||'—'}</td>
+        <td class="c-tc">${esc(e.type)} · ${esc(e.card)}</td>
+        <td class="c-fhir">${fhir}</td>
+        <td class="c-vs">${e.vs?`<code>${esc(e.vs)}</code>`:'—'}</td>
+      </tr>`;
+    });
+    h += `</tbody></table></section>`;
+  });
+});
+
+// ————— annexe : value sets (extraits, complets en CSV) —————
+h += `<h2 class="annexe">Annexe · Value sets</h2>`;
+h += `<p class="ent-desc">Extraits des value sets dérivés du modèle ; les listes complètes de codes sont fournies en téléchargement (fichiers CSV). Chaque value set croise un libellé clinique et ses codes dans les terminologies de référence.</p>`;
+const AXES = [['diagnostics','Diagnostics'],['conditions','Conditions cardiaques'],['procedures','Gestes / procédures'],
+  ['complications','Complications (EI)'],['genetique','Syndromes génétiques'],['sites','Sites anatomiques'],
+  ['materiel','Matériel'],['mesures-prop','Mesures — propriétés'],['mesures-methode','Mesures — méthode'],['mesures-phase','Mesures — phase']];
+const MAXROWS = 12;
+AXES.forEach(([id]) => {
+  const vs = D.valuesets[id]; if(!vs) return;
+  h += `<section class="vs"><h3>${esc(vs.titre)}</h3>` +
+    (vs.canon?`<div class="canon">ValueSet/${esc(vs.canon)}</div>`:'') +
+    `<div class="cnt">${vs.lignes.length} codes · colonnes : ${vs.colonnes.map(esc).join(', ')}</div>`;
+  h += `<table><thead><tr>${vs.colonnes.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>`;
+  vs.lignes.slice(0, MAXROWS).forEach(l => {
+    h += `<tr>${l.map((v,i)=>`<td${i>0?' style="font-family:var(--police-code)"':''}>${esc(v)}</td>`).join('')}</tr>`;
+  });
+  h += `</tbody></table>`;
+  if(vs.lignes.length > MAXROWS) h += `<div class="plus">… ${vs.lignes.length-MAXROWS} autres codes — liste complète dans le fichier CSV téléchargeable.</div>`;
+  h += `</section>`;
+});
+
+document.getElementById('doc').innerHTML = h;
+document.title = `TAUSSIG — MDS cathétérisme congénital v4 (${D.meta.nbElements} variables)`;
+</script>
+</body>
+</html>

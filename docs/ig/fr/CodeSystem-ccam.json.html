@@ -1,0 +1,496 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TAUSSIG — CCAM (sous-ensemble cath congénital) - JSON Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.82"}
+    h3,h4,h5,h6{--heading-prefix:"4.82"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - trial-use
+
+
+
+  France
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — CCAM (sous-ensemble cath congénital)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-ccam.html">Contenu narratif</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ccam.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ccam.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: TAUSSIG — CCAM (sous-ensemble cath congénital)</h2>
+
+  <table class="colsd" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+
+            à date du 
+2026-10-30
+
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-ccam.json" no-download="true">json brut</a> | <a href="CodeSystem-ccam.json" download>Télécharger</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "ccam",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.language">language</a>" : "fr",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CodeSystem ccam&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ccam\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcccam\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM&lt;/code&gt; provides &lt;b&gt;a fragment&lt;/b&gt; that includes following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Affichage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFQH001&lt;a name=\&quot;ccam-DFQH001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artériographie sélective du tronc et/ou des branches de l'artère pulmonaire, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFQH002&lt;a name=\&quot;ccam-DFQH002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artériographie hypersélective des artères pulmonaires, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DGQH004&lt;a name=\&quot;ccam-DGQH004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artériographie de l'aorte et de ses branches, par injection intraveineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DGQH006&lt;a name=\&quot;ccam-DGQH006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artériographie globale de l'aorte thoracique, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DAAF001&lt;a name=\&quot;ccam-DAAF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DAAF002&lt;a name=\&quot;ccam-DAAF002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de la voie d'éjection infraaortique, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFAF001&lt;a name=\&quot;ccam-DFAF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de plusieurs branches de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFAF002&lt;a name=\&quot;ccam-DFAF002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale d'une branche de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFAF003&lt;a name=\&quot;ccam-DFAF003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale d'une branche de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFAF004&lt;a name=\&quot;ccam-DFAF004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de plusieurs branches de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DGAF001&lt;a name=\&quot;ccam-DGAF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DGAF004&lt;a name=\&quot;ccam-DGAF004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale d'une coarctation de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DGAF006&lt;a name=\&quot;ccam-DGAF006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale d'une coarctation de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DGAF007&lt;a name=\&quot;ccam-DGAF007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DGLF003&lt;a name=\&quot;ccam-DGLF003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pose d'endoprothèse couverte dans l'aorte thoracique, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EZGF001&lt;a name=\&quot;ccam-EZGF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ablation d'une endoprothèse vasculaire ou d'un filtre cave ayant migré en position intracardiaque ou intravasculaire, par voie vasculaire transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DASF002&lt;a name=\&quot;ccam-DASF002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fermeture d'une déhiscence d'une prothèse de cloisonnement intraatrial, par voie vasculaire transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DASF003&lt;a name=\&quot;ccam-DASF003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fermeture de communication interventriculaire, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DASF004&lt;a name=\&quot;ccam-DASF004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fermeture d'une communication interatriale, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DASF005&lt;a name=\&quot;ccam-DASF005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fermeture d'un foramen ovale perméable, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBSF001&lt;a name=\&quot;ccam-DBSF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fermeture d'une déhiscence par désinsertion de prothèse orificielle cardiaque, par voie vasculaire transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFSF001&lt;a name=\&quot;ccam-DFSF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oblitération d'anévrisme sacculaire de l'artère pulmonaire, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQLF004&lt;a name=\&quot;ccam-EQLF004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pose de dispositif de mesure des pressions du cœur droit et du débit cardiaque, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQF001&lt;a name=\&quot;ccam-EQQF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQF002&lt;a name=\&quot;ccam-EQQF002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur gauche et de l'aorte, sans injection de produit de contraste, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQF003&lt;a name=\&quot;ccam-EQQF003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions intravasculaires pulmonaires et systémiques et des différences artérioveineuses des contenus artériels en oxygène, à l'état basal et après administration d'agent pharmacologique vasodilatateur, par voie vasculaire transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQF004&lt;a name=\&quot;ccam-EQQF004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQF006&lt;a name=\&quot;ccam-EQQF006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, sans injection de produit de contraste, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQH001&lt;a name=\&quot;ccam-EQQH001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, avec injection de produit de contraste, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQH002&lt;a name=\&quot;ccam-EQQH002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur gauche et de l'aorte, avec injection de produit de contraste, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQH004&lt;a name=\&quot;ccam-EQQH004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQH005&lt;a name=\&quot;ccam-EQQH005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, avant l'âge de 24 mois&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;EQQH006&lt;a name=\&quot;ccam-EQQH006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, à l'âge de 24 mois ou plus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DAGF001&lt;a name=\&quot;ccam-DAGF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ablation de corps étranger intracardiaque ou intravasculaire, par voie vasculaire transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DAAF003&lt;a name=\&quot;ccam-DAAF003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Agrandissement d'une communication interatriale, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DAMF001&lt;a name=\&quot;ccam-DAMF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Création d'une communication interatriale, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFNF001&lt;a name=\&quot;ccam-DFNF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fibrinolyse in situ de l'artère pulmonaire, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DFNF002&lt;a name=\&quot;ccam-DFNF002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Thrombolyse mécanique ou thromboaspiration de l'artère pulmonaire, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBLF001&lt;a name=\&quot;ccam-DBLF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pose d'une bioprothèse de la valve aortique, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBLF009&lt;a name=\&quot;ccam-DBLF009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pose d'une bioprothèse de la valve pulmonaire par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBAF001&lt;a name=\&quot;ccam-DBAF001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de l'orifice aortique, par voie artérielle transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBAF002&lt;a name=\&quot;ccam-DBAF002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de l'orifice pulmonaire sans perforation de la valve atrésique, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBAF003&lt;a name=\&quot;ccam-DBAF003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de l'orifice atrioventriculaire droit, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBAF004&lt;a name=\&quot;ccam-DBAF004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de l'orifice atrioventriculaire gauche, par voie veineuse transcutanée avec perforation du septum interatrial&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DBAF005&lt;a name=\&quot;ccam-DBAF005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation intraluminale de l'orifice pulmonaire avec perforation de la valve atrésique, par voie veineuse transcutanée&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.6.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "TaussigCcam",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "TAUSSIG — CCAM (sous-ensemble cath congénital)",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-10-30T22:35:46+01:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Projet TAUSSIG",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé).",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "FR"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">copyright</a>" : "CCAM © CNAM. Réutilisation des libellés à usage de recherche.",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "fragment",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 45,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFQH001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artériographie sélective du tronc et/ou des branches de l'artère pulmonaire, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFQH002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artériographie hypersélective des artères pulmonaires, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DGQH004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artériographie de l'aorte et de ses branches, par injection intraveineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DGQH006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artériographie globale de l'aorte thoracique, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DAAF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DAAF002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de la voie d'éjection infraaortique, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFAF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de plusieurs branches de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFAF002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale d'une branche de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFAF003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale d'une branche de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFAF004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de plusieurs branches de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DGAF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DGAF004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale d'une coarctation de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DGAF006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale d'une coarctation de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DGAF007",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DGLF003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pose d'endoprothèse couverte dans l'aorte thoracique, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EZGF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ablation d'une endoprothèse vasculaire ou d'un filtre cave ayant migré en position intracardiaque ou intravasculaire, par voie vasculaire transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DASF002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fermeture d'une déhiscence d'une prothèse de cloisonnement intraatrial, par voie vasculaire transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DASF003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fermeture de communication interventriculaire, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DASF004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fermeture d'une communication interatriale, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DASF005",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fermeture d'un foramen ovale perméable, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBSF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fermeture d'une déhiscence par désinsertion de prothèse orificielle cardiaque, par voie vasculaire transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFSF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Oblitération d'anévrisme sacculaire de l'artère pulmonaire, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQLF004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pose de dispositif de mesure des pressions du cœur droit et du débit cardiaque, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQF002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur gauche et de l'aorte, sans injection de produit de contraste, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQF003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions intravasculaires pulmonaires et systémiques et des différences artérioveineuses des contenus artériels en oxygène, à l'état basal et après administration d'agent pharmacologique vasodilatateur, par voie vasculaire transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQF004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQF006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, sans injection de produit de contraste, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQH001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, avec injection de produit de contraste, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQH002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur gauche et de l'aorte, avec injection de produit de contraste, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQH004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQH005",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, avant l'âge de 24 mois"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "EQQH006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, à l'âge de 24 mois ou plus"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DAGF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Ablation de corps étranger intracardiaque ou intravasculaire, par voie vasculaire transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DAAF003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Agrandissement d'une communication interatriale, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DAMF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Création d'une communication interatriale, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFNF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fibrinolyse in situ de l'artère pulmonaire, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DFNF002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Thrombolyse mécanique ou thromboaspiration de l'artère pulmonaire, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBLF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pose d'une bioprothèse de la valve aortique, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBLF009",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pose d'une bioprothèse de la valve pulmonaire par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBAF001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de l'orifice aortique, par voie artérielle transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBAF002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de l'orifice pulmonaire sans perforation de la valve atrésique, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBAF003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de l'orifice atrioventriculaire droit, par voie veineuse transcutanée"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBAF004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de l'orifice atrioventriculaire gauche, par voie veineuse transcutanée avec perforation du septum interatrial"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DBAF005",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation intraluminale de l'orifice pulmonaire avec perforation de la valve atrésique, par voie veineuse transcutanée"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-10-30 22:35:00 +0100">
+    2026-10-30
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

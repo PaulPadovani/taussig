@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Profils et extensions - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - trial-use
+
+
+
+  France
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Profils et extensions</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Profils et extensions</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#profils-20" id="markdown-toc-profils-20">Profils (20)</a></li>
+  <li><a href="#extensions-20" id="markdown-toc-extensions-20">Extensions (20)</a></li>
+</ul>
+
+</div>
+<p>TAUSSIG n’ajoute aucune obligation de présence de données métier. Les contraintes héritées de FHIR R4 et FR Core restent applicables.</p>
+
+<h3 id="profils-20">Profils (20)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-taussig-vascular-access.html">TAUSSIG — Abord vasculaire</a></td>
+      <td>Abord vasculaire du cathétérisme. Voie d'abord (enum TAUSSIG) en code ; calibre d'introducteur, écho-guidage et latéralité en extensions/bodySite.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-periprocedural-medication-administration.html">TAUSSIG — Administration médicamenteuse péri-procédurale</a></td>
+      <td>Antibioprophylaxie et anticoagulation administrées pendant le cathétérisme, codables en ATC quand disponible.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-cath-anthropometry-observation.html">TAUSSIG — Anthropométrie au cathétérisme</a></td>
+      <td>Poids, taille et surface corporelle au moment du cathétérisme, portés par des Observations liées à la Procedure.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-catheterization.html">TAUSSIG — Cathétérisme cardiaque (acte pivot)</a></td>
+      <td>Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; codage SNOMED (interop) + CCAM (administratif FR) + ECHSA (registre). Dosimétrie/anthropométrie portées par Observations liées.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-cardiac-condition-profile.html">TAUSSIG — Condition cardiaque évolutive</a></td>
+      <td>Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-cardiac-diagnosis.html">TAUSSIG — Diagnostic cardiaque congénital</a></td>
+      <td>Diagnostic congénital (substrat figé). Double codage CIM-11 (classification, primaire) + IPCCC (précision clinique) ; CIM-10 dérivé, ECHSA optionnel. Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-procedure-exposure-observation.html">TAUSSIG — Exposition et contraste de procédure</a></td>
+      <td>Temps de fluoroscopie, produit dose-surface et volume de contraste portés par des Observations quantitatives liées au cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-interventional-gesture.html">TAUSSIG — Geste interventionnel</a></td>
+      <td>Geste interventionnel ciblé (unité de l'effet pre/post). Quadruple codage IPCCC (pivot) + SNOMED (interop) + CCAM + ECHSA ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-anesthesia-management.html">TAUSSIG — Gestion anesthésique</a></td>
+      <td>Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (SNOMED) ; ventilation &amp; ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-cardiac-implant.html">TAUSSIG — Implant cardiaque (substrat longitudinal)</a></td>
+      <td>Dispositif implanté persistant (conduit, valve, stent, occluder…). État clinique courant en extension (Device.status ne couvre pas functional/degenerated/…) ; chaînage valve-in-valve ; site anatomique SNOMED ; UDI.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-material-used.html">TAUSSIG — Matériel utilisé (consommable de geste)</a></td>
+      <td>Matériel consommé pendant un geste (ballon, stent, dispositif, consommable). Catégorie en type ; caractéristiques techniques (diamètre, longueur…) en Device.property (LOINC/UCUM) ; UDI ; séquence/tentative d'usage en extensions sur Procedure.usedReference.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-clinical-measurement.html">TAUSSIG — Mesure clinique (delta pre/post)</a></td>
+      <td>Mesure hémodynamique/fonctionnelle. Modèle post-coordonné : propriété (CodeSystem TAUSSIG) = la grandeur, site SNOMED = le lieu. Phase procédurale + geste lié = mécanisme du gradient pre/post (cœur du POC). Modalité en method ; condition &amp; dérivation en extensions. VALEUR ATTENDUE : elle dépend de la propriété, pas du profil. Chaque concept du CodeSystem measurement-property porte une propriété <code class="language-plaintext highlighter-rouge">value_type</code> (Quantity | CodeableConcept) et, pour les grandeurs qualitatives, une propriété <code class="language-plaintext highlighter-rouge">value_set</code> donnant le ValueSet canonique des valeurs admises — p. ex. <code class="language-plaintext highlighter-rouge">regurgitation_grade</code> -&gt; https://taussig/fhir/ValueSet/taussig-regurgitation-grade (grades SNOMED trace / légère / modérée / sévère). Ce contrat est déclaré au niveau de la propriété et non par un binding FHIR sur <code class="language-plaintext highlighter-rouge">value[x]</code> : en R4, un binding sur ce choix s'appliquerait aussi aux Quantity et imposerait à toutes les propriétés le jeu de valeurs d'une seule d'entre elles.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-organization.html">TAUSSIG — Organisation</a></td>
+      <td>Établissement de santé, dérivé de FR Core Organization (établissement). FINESS porté par les slices FR Core idNatSt (urn:oid:1.2.250.1.71.4.2.2) et finess (https://finess.esante.gouv.fr).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-patient.html">TAUSSIG — Patient</a></td>
+      <td>Patient de cardiopathie congénitale, dérivé de FR Core Patient (identifiants/extensions FR hérités). Les slices d'identité nationale (INS-NIR/NIA) sont portées par FR Core ; pour une identité INS <em>qualifiée</em>, utiliser le profil strict fr-core-patient-ins. Poids de naissance porté par une Observation dédiée (LOINC 8339-4).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-birth-weight-observation.html">TAUSSIG — Poids de naissance</a></td>
+      <td>Poids de naissance porté par une Observation dédiée (LOINC 8339-4), liée au patient.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-practitioner.html">TAUSSIG — Praticien</a></td>
+      <td>Praticien (opérateur, valideur), dérivé de FR Core Practitioner. L'identifiant RPPS est porté par la slice FR Core idNatPs (urn:oid:1.2.250.1.71.4.2.1) — plus besoin de la redéclarer.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-procedure-outcome.html">TAUSSIG — Résultat global de procédure</a></td>
+      <td>Synthèse du résultat procédural : succès hémodynamique, lésion résiduelle, imputabilité d'un décès péri-procédural (component). NB : succès TECHNIQUE porté par Procedure.outcome (geste/cathétérisme) ; décès porté par Patient.deceased[x].</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-genetic-syndrome-profile.html">TAUSSIG — Syndrome génétique (covariable de contexte)</a></td>
+      <td>Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-care-episode.html">TAUSSIG — Épisode de soins</a></td>
+      <td>Épisode de soins (hospitalisation ou ambulatoire) englobant le cathétérisme, dérivé de FR Core Encounter.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-taussig-adverse-event.html">TAUSSIG — Événement indésirable</a></td>
+      <td>Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution &amp; prise en charge en extensions (réalisation R4).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="extensions-20">Extensions (20)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ecmoSupport.html">Assistance ECMO</a></td>
+      <td>Assistance ECMO pendant la procédure.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-adverseEventAttribution.html">Attribution de l'EI</a></td>
+      <td>Cause suspectée d'un événement indésirable (dispositif, abord, anesthésie…).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-measurementCondition.html">Condition de mesure</a></td>
+      <td>Condition physiologique/pharmacologique pendant la mesure.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-relatedDiagnosis.html">Diagnostic congénital d'origine</a></td>
+      <td>Rattachement d'une condition évolutive à son diagnostic congénital.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-derivationMethod.html">Dérivation de la mesure</a></td>
+      <td>Mesure directe ou valeur calculée.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-previousImplant.html">Implant précédent</a></td>
+      <td>Chaînage valve-in-valve / stent-in-stent vers l'implant précédent.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ventilationType.html">Mode ventilatoire</a></td>
+      <td>Mode de ventilation pendant l'anesthésie.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-severityLevel.html">Niveau de gravité (1-5)</a></td>
+      <td>Grade numérique de gravité selon l'échelle (1 à 5).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-attemptNumber.html">Numéro de tentative</a></td>
+      <td>Numéro de tentative avec ce matériel.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-usageSequence.html">Ordre d'usage</a></td>
+      <td>Ordre d'utilisation du matériel dans le geste.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-procedurePhase.html">Phase procédurale (mesure)</a></td>
+      <td>Phase de la procédure à laquelle la mesure est faite (baseline/pre/post).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-implantedExternally.html">Posé en externe</a></td>
+      <td>Dispositif posé en chirurgie ou dans un autre centre (hors cathé TAUSSIG).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-adverseEventManagement.html">Prise en charge de l'EI</a></td>
+      <td>Action de prise en charge de l'événement indésirable pendant le cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-contrastUsed.html">Produit de contraste utilisé</a></td>
+      <td>Indique si un produit de contraste iodé a été injecté pendant le cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-indicationRole.html">Rôle de l'indication</a></td>
+      <td>Rôle d'une condition évolutive comme indication d'un cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-diagnosisRole.html">Rôle du diagnostic</a></td>
+      <td>Rôle d'un diagnostic congénital comme indication d'un cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-introducerSize.html">Taille d'introducteur</a></td>
+      <td>Calibre de l'introducteur (French/Charrière).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-severityScale.html">Échelle de gravité</a></td>
+      <td>Échelle de gradation utilisée (Bergersen/C3PO, NCDR-IMPACT…).</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-echoGuided.html">Écho-guidage</a></td>
+      <td>Ponction vasculaire écho-guidée.</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-implantClinicalStatus.html">État clinique de l'implant</a></td>
+      <td>État clinique courant (Device.status ne couvre pas functional/degenerated/…).</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-10-30 22:35:00 +0100">
+    2026-10-30
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

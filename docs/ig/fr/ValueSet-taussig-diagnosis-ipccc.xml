@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="taussig-diagnosis-ipccc"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs taussig-diagnosis-ipccc</b></p><a name="taussig-diagnosis-ipccc"> </a><a name="hctaussig-diagnosis-ipccc"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href="CodeSystem-ipccc.html"><code>https://taussig/fhir/CodeSystem/ipccc</code></a><span title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification"> version &#x1F4E6;0.6.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-02.4601.4609">02.01.09</a></td><td>Anomalie de position-orientation du cœur</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-02.4601.4603">02.01.03</a></td><td>Lévocardie</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-02.4601.4602">02.01.02</a></td><td>Dextrocardie</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-02.4601.4604">02.01.04</a></td><td>Mésocardie</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-03.4601.4603">03.01.03</a></td><td>Image en miroir complète</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-03.4601.4604">03.01.04</a></td><td>Isomérisme droit</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-03.4601.4605">03.01.05</a></td><td>Isomérisme gauche</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4603.4609">01.03.09</a></td><td>Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4604.4601">01.04.01</a></td><td>Connexions atrioventriculaires discordantes</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4603">01.01.03</a></td><td>Transposition congénitalement corrigée des grandes artères</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4605.4601">01.05.01</a></td><td>Transposition des gros vaisseaux</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4604">01.01.04</a></td><td>Ventricule droit à double issue</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4618">01.01.18</a></td><td>Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4619">01.01.19</a></td><td>Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4640">01.01.40</a></td><td>Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4617">01.01.17</a></td><td>Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4605.4603">01.05.03</a></td><td>Ventricule gauche à double issue</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4601.4601">09.01.01</a></td><td>Tronc artériel commun</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4601.4615">09.01.15</a></td><td>Tronc artériel commun à dominance aortique</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4601.4618">09.01.18</a></td><td>Tronc artériel commun à dominance pulmonaire et arc aortique interrompue</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-04.4600.4607">04.00.07</a></td><td>Anomalie congénitale de la veine médiastinale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-04.4601.4625">04.01.25</a></td><td>Veine cave supérieure gauche</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-04.4604.4613">04.04.13</a></td><td>Absence de toit du sinus coronaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-04.4608.4607">04.08.07</a></td><td>Anomalie du retour veineux pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-04.4608.4605">04.08.05</a></td><td>Connexion veineuse pulmonaire totale anormale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-04.4607.4601">04.07.01</a></td><td>Connexion veineuse pulmonaire partielle anormale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-03.4602.4623">03.02.23</a></td><td>Syndrome du cimeterre</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-04.4608.4631">04.08.31</a></td><td>Sténose ou hypoplasie veineuse pulmonaire congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4600.4615">06.00.15</a></td><td>Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4601.4611">06.01.11</a></td><td>Anomalie congénitale de la valve tricuspide</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4601.4625">06.01.25</a></td><td>Insuffisance tricuspide congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4601.4607">06.01.07</a></td><td>Sténose congénitale de la valve tricuspide</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4601.4603">06.01.03</a></td><td>Dysplasie de la valve tricuspide</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4601.4634">06.01.34</a></td><td>Malformation d'Ebstein de la valve tricuspide</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4602.4611">06.02.11</a></td><td>Anomalie congénitale de la valve mitrale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4602.4625">06.02.25</a></td><td>Insuffisance mitrale congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4602.4607">06.02.07</a></td><td>Sténose valvulaire mitrale congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4602.4603">06.02.03</a></td><td>Dysplasie de la valve mitrale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4602.4621">06.02.21</a></td><td>Anomalie congénitale de l'appareil mitral sousvalvaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4607.4628">06.07.28</a></td><td>Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4606.4600">06.06.00</a></td><td>Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4606.4601">06.06.01</a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4606.4608">06.06.08</a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4606.4610">06.06.10</a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4606.4609">06.06.09</a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4607.4626">06.07.26</a></td><td>Communication septale auriculoventriculaire avec déséquilibre ventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4620">01.01.20</a></td><td>Anomalie septal auriculoventriculaire et tétralogie de Fallot</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4600.4600">07.00.00</a></td><td>Anomalie congénitale du ventricule ou du septum ventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4605.4620">07.05.20</a></td><td>Obstruction congénitale de la voie de sortie du ventricule droit</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4603.4601">07.03.01</a></td><td>Ventricule droit à double chambre</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4601">01.01.01</a></td><td>Tétralogie de Fallot</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4605.4625">09.05.25</a></td><td>Tétralogie de Fallot avec syndrome de valve pulmonaire absente</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4626">01.01.26</a></td><td>Tétralogie de Fallot avec atrésie pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4657">01.01.57</a></td><td>Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4609.4628">07.09.28</a></td><td>Obstruction congénitale de la voie de sortie du ventricule gauche</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4610.4600">07.10.00</a></td><td>Communication interventriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4611.4601">07.11.01</a></td><td>Communication interventriculaire musculaire trabéculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4610.4601">07.10.01</a></td><td>Communication interventriculaire centrale périmembraneuse</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4615.4601">07.15.01</a></td><td>Communication interventriculaire non significatif sur le plan hémodynamique</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4622">01.01.22</a></td><td>Cœur fonctionnellement univentriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4614">01.01.14</a></td><td>Connexion auriculoventriculaire à double entrée</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4601.4601">06.01.01</a></td><td>Atrésie de la valve tricuspide</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-06.4602.4601">06.02.01</a></td><td>Atrésie mitrale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4609">01.01.09</a></td><td>Syndrome d'hypoplasie du cœur gauche</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4604.4629">09.04.29</a></td><td>Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4605.4629">09.05.29</a></td><td>Anomalie congénitale de la valve pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4605.4604">09.05.04</a></td><td>Sténose congénitale de la valve pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4605.4622">09.05.22</a></td><td>Insuffisance congénitale de la valve pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4605.4616">09.05.16</a></td><td>Atrésie pulmonaire congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-01.4601.4607">01.01.07</a></td><td>Atrésie pulmonaire avec septum ventriculaire intact</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4615.4619">09.15.19</a></td><td>Anomalie congénitale de la valve aortique</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4615.4601">09.15.01</a></td><td>Sténose congénitale de la valve aortique</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4615.4607">09.15.07</a></td><td>Insuffisance aortique congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4615.4622">09.15.22</a></td><td>Valve aortique bicuspide</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4615.4606">09.15.06</a></td><td>Atrésie de la valve aortique</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4615.4621">09.15.21</a></td><td>Valve aortique unicuspide</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4616.4618">09.16.18</a></td><td>Sténose supravalvulaire aortique congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4618.4601">09.18.01</a></td><td>Anévrisme du sinus aortique de Valsalva</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4609.4650">07.09.50</a></td><td>Sténose sous-aortique congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4605.4632">07.05.32</a></td><td>Sténose sous-pulmonaire congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4604.4628">09.04.28</a></td><td>Anomalie congénitale des grandes artères, y compris le canal artériel</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4604.4607">09.04.07</a></td><td>Fenêtre aortopulmonaire congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4607.4616">09.07.16</a></td><td>Anomalie congénitale de l'arbre artériel pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-07.4609.4634">07.09.34</a></td><td>Anomalie congénitale de l'aorte ou de ses branches</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4629.4601">09.29.01</a></td><td>Coarctation de l'aorte</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4629.4631">09.29.31</a></td><td>Interruption de la crosse aortique</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4628.4647">09.28.47</a></td><td>Anomalie congénitale de l'aorte thoracique descendante ou abdominale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4630.4617">09.30.17</a></td><td>Anomalie congénitale de la branche de l'arc aortique</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4631.4640">09.31.40</a></td><td>Syndrome de compression trachéo-œsophagienne</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4627.4621">09.27.21</a></td><td>Persistance du canal artériel</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4646.4603">09.46.03</a></td><td>Anomalie congénitale des artères coronaires</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4641.4601">09.41.01</a></td><td>Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4642.4600">09.42.00</a></td><td>Origine aortique anormale ou trajet anormal de l'artère coronaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-09.4645.4616">09.45.16</a></td><td>Fistule artérielle coronaire congénitale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-10.4601.4605">10.01.05</a></td><td>Malformation congénitale du péricarde</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4607.4601">05.07.01</a></td><td>Anomalie congénitale du septum auriculaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4603.4601">05.03.01</a></td><td>Foramen ovale perméable</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4604.4602">05.04.02</a></td><td>Communication interauriculaire dans la fosse ovale</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4605.4600">05.05.00</a></td><td>Anomalie du sinus veineux</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4605.4603">05.05.03</a></td><td>Communication interauriculaire par l'orifice du sinus coronaire</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4601.4613">05.01.13</a></td><td>Anomalie congénitale de l'oreillette droite</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4602.4611">05.02.11</a></td><td>Anomalie congénitale de l'oreillette gauche</td></tr><tr><td><a href="CodeSystem-ipccc.html#ipccc-05.4602.4601">05.02.01</a></td><td>Oreillette gauche divisée</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://taussig/fhir/ValueSet/taussig-diagnosis-ipccc"/>
+  <version value="0.6.0"/>
+  <name value="TaussigDiagnosisIpccc"/>
+  <title value="TAUSSIG — Diagnostics congénitaux (IPCCC)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Équivalents IPCCC des diagnostics congénitaux du working set CIM-11 (codage parallèle de précision clinique). Un même code IPCCC peut répondre à plusieurs entités CIM-11."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+      <concept>
+        <code value="02.01.09"/>
+        <display value="Anomalie de position-orientation du cœur"/>
+      </concept>
+      <concept>
+        <code value="02.01.03"/>
+        <display value="Lévocardie"/>
+      </concept>
+      <concept>
+        <code value="02.01.02"/>
+        <display value="Dextrocardie"/>
+      </concept>
+      <concept>
+        <code value="02.01.04"/>
+        <display value="Mésocardie"/>
+      </concept>
+      <concept>
+        <code value="03.01.03"/>
+        <display value="Image en miroir complète"/>
+      </concept>
+      <concept>
+        <code value="03.01.04"/>
+        <display value="Isomérisme droit"/>
+      </concept>
+      <concept>
+        <code value="03.01.05"/>
+        <display value="Isomérisme gauche"/>
+      </concept>
+      <concept>
+        <code value="01.03.09"/>
+        <display value="Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle"/>
+      </concept>
+      <concept>
+        <code value="01.04.01"/>
+        <display value="Connexions atrioventriculaires discordantes"/>
+      </concept>
+      <concept>
+        <code value="01.01.03"/>
+        <display value="Transposition congénitalement corrigée des grandes artères"/>
+      </concept>
+      <concept>
+        <code value="01.05.01"/>
+        <display value="Transposition des gros vaisseaux"/>
+      </concept>
+      <concept>
+        <code value="01.01.04"/>
+        <display value="Ventricule droit à double issue"/>
+      </concept>
+      <concept>
+        <code value="01.01.18"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition"/>
+      </concept>
+      <concept>
+        <code value="01.01.19"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux"/>
+      </concept>
+      <concept>
+        <code value="01.01.40"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire"/>
+      </concept>
+      <concept>
+        <code value="01.01.17"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot"/>
+      </concept>
+      <concept>
+        <code value="01.05.03"/>
+        <display value="Ventricule gauche à double issue"/>
+      </concept>
+      <concept>
+        <code value="09.01.01"/>
+        <display value="Tronc artériel commun"/>
+      </concept>
+      <concept>
+        <code value="09.01.15"/>
+        <display value="Tronc artériel commun à dominance aortique"/>
+      </concept>
+      <concept>
+        <code value="09.01.18"/>
+        <display value="Tronc artériel commun à dominance pulmonaire et arc aortique interrompue"/>
+      </concept>
+      <concept>
+        <code value="04.00.07"/>
+        <display value="Anomalie congénitale de la veine médiastinale"/>
+      </concept>
+      <concept>
+        <code value="04.01.25"/>
+        <display value="Veine cave supérieure gauche"/>
+      </concept>
+      <concept>
+        <code value="04.04.13"/>
+        <display value="Absence de toit du sinus coronaire"/>
+      </concept>
+      <concept>
+        <code value="04.08.07"/>
+        <display value="Anomalie du retour veineux pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="04.08.05"/>
+        <display value="Connexion veineuse pulmonaire totale anormale"/>
+      </concept>
+      <concept>
+        <code value="04.07.01"/>
+        <display value="Connexion veineuse pulmonaire partielle anormale"/>
+      </concept>
+      <concept>
+        <code value="03.02.23"/>
+        <display value="Syndrome du cimeterre"/>
+      </concept>
+      <concept>
+        <code value="04.08.31"/>
+        <display value="Sténose ou hypoplasie veineuse pulmonaire congénitale"/>
+      </concept>
+      <concept>
+        <code value="06.00.15"/>
+        <display value="Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire"/>
+      </concept>
+      <concept>
+        <code value="06.01.11"/>
+        <display value="Anomalie congénitale de la valve tricuspide"/>
+      </concept>
+      <concept>
+        <code value="06.01.25"/>
+        <display value="Insuffisance tricuspide congénitale"/>
+      </concept>
+      <concept>
+        <code value="06.01.07"/>
+        <display value="Sténose congénitale de la valve tricuspide"/>
+      </concept>
+      <concept>
+        <code value="06.01.03"/>
+        <display value="Dysplasie de la valve tricuspide"/>
+      </concept>
+      <concept>
+        <code value="06.01.34"/>
+        <display value="Malformation d'Ebstein de la valve tricuspide"/>
+      </concept>
+      <concept>
+        <code value="06.02.11"/>
+        <display value="Anomalie congénitale de la valve mitrale"/>
+      </concept>
+      <concept>
+        <code value="06.02.25"/>
+        <display value="Insuffisance mitrale congénitale"/>
+      </concept>
+      <concept>
+        <code value="06.02.07"/>
+        <display value="Sténose valvulaire mitrale congénitale"/>
+      </concept>
+      <concept>
+        <code value="06.02.03"/>
+        <display value="Dysplasie de la valve mitrale"/>
+      </concept>
+      <concept>
+        <code value="06.02.21"/>
+        <display value="Anomalie congénitale de l'appareil mitral sousvalvaire"/>
+      </concept>
+      <concept>
+        <code value="06.07.28"/>
+        <display value="Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire"/>
+      </concept>
+      <concept>
+        <code value="06.06.00"/>
+        <display value="Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire"/>
+      </concept>
+      <concept>
+        <code value="06.06.01"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement"/>
+      </concept>
+      <concept>
+        <code value="06.06.08"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement"/>
+      </concept>
+      <concept>
+        <code value="06.06.10"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire"/>
+      </concept>
+      <concept>
+        <code value="06.06.09"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire"/>
+      </concept>
+      <concept>
+        <code value="06.07.26"/>
+        <display value="Communication septale auriculoventriculaire avec déséquilibre ventriculaire"/>
+      </concept>
+      <concept>
+        <code value="01.01.20"/>
+        <display value="Anomalie septal auriculoventriculaire et tétralogie de Fallot"/>
+      </concept>
+      <concept>
+        <code value="07.00.00"/>
+        <display value="Anomalie congénitale du ventricule ou du septum ventriculaire"/>
+      </concept>
+      <concept>
+        <code value="07.05.20"/>
+        <display value="Obstruction congénitale de la voie de sortie du ventricule droit"/>
+      </concept>
+      <concept>
+        <code value="07.03.01"/>
+        <display value="Ventricule droit à double chambre"/>
+      </concept>
+      <concept>
+        <code value="01.01.01"/>
+        <display value="Tétralogie de Fallot"/>
+      </concept>
+      <concept>
+        <code value="09.05.25"/>
+        <display value="Tétralogie de Fallot avec syndrome de valve pulmonaire absente"/>
+      </concept>
+      <concept>
+        <code value="01.01.26"/>
+        <display value="Tétralogie de Fallot avec atrésie pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="01.01.57"/>
+        <display value="Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="07.09.28"/>
+        <display value="Obstruction congénitale de la voie de sortie du ventricule gauche"/>
+      </concept>
+      <concept>
+        <code value="07.10.00"/>
+        <display value="Communication interventriculaire"/>
+      </concept>
+      <concept>
+        <code value="07.11.01"/>
+        <display value="Communication interventriculaire musculaire trabéculaire"/>
+      </concept>
+      <concept>
+        <code value="07.10.01"/>
+        <display value="Communication interventriculaire centrale périmembraneuse"/>
+      </concept>
+      <concept>
+        <code value="07.15.01"/>
+        <display value="Communication interventriculaire non significatif sur le plan hémodynamique"/>
+      </concept>
+      <concept>
+        <code value="01.01.22"/>
+        <display value="Cœur fonctionnellement univentriculaire"/>
+      </concept>
+      <concept>
+        <code value="01.01.14"/>
+        <display value="Connexion auriculoventriculaire à double entrée"/>
+      </concept>
+      <concept>
+        <code value="06.01.01"/>
+        <display value="Atrésie de la valve tricuspide"/>
+      </concept>
+      <concept>
+        <code value="06.02.01"/>
+        <display value="Atrésie mitrale"/>
+      </concept>
+      <concept>
+        <code value="01.01.09"/>
+        <display value="Syndrome d'hypoplasie du cœur gauche"/>
+      </concept>
+      <concept>
+        <code value="09.04.29"/>
+        <display value="Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes"/>
+      </concept>
+      <concept>
+        <code value="09.05.29"/>
+        <display value="Anomalie congénitale de la valve pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="09.05.04"/>
+        <display value="Sténose congénitale de la valve pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="09.05.22"/>
+        <display value="Insuffisance congénitale de la valve pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="09.05.16"/>
+        <display value="Atrésie pulmonaire congénitale"/>
+      </concept>
+      <concept>
+        <code value="01.01.07"/>
+        <display value="Atrésie pulmonaire avec septum ventriculaire intact"/>
+      </concept>
+      <concept>
+        <code value="09.15.19"/>
+        <display value="Anomalie congénitale de la valve aortique"/>
+      </concept>
+      <concept>
+        <code value="09.15.01"/>
+        <display value="Sténose congénitale de la valve aortique"/>
+      </concept>
+      <concept>
+        <code value="09.15.07"/>
+        <display value="Insuffisance aortique congénitale"/>
+      </concept>
+      <concept>
+        <code value="09.15.22"/>
+        <display value="Valve aortique bicuspide"/>
+      </concept>
+      <concept>
+        <code value="09.15.06"/>
+        <display value="Atrésie de la valve aortique"/>
+      </concept>
+      <concept>
+        <code value="09.15.21"/>
+        <display value="Valve aortique unicuspide"/>
+      </concept>
+      <concept>
+        <code value="09.16.18"/>
+        <display value="Sténose supravalvulaire aortique congénitale"/>
+      </concept>
+      <concept>
+        <code value="09.18.01"/>
+        <display value="Anévrisme du sinus aortique de Valsalva"/>
+      </concept>
+      <concept>
+        <code value="07.09.50"/>
+        <display value="Sténose sous-aortique congénitale"/>
+      </concept>
+      <concept>
+        <code value="07.05.32"/>
+        <display value="Sténose sous-pulmonaire congénitale"/>
+      </concept>
+      <concept>
+        <code value="09.04.28"/>
+        <display value="Anomalie congénitale des grandes artères, y compris le canal artériel"/>
+      </concept>
+      <concept>
+        <code value="09.04.07"/>
+        <display value="Fenêtre aortopulmonaire congénitale"/>
+      </concept>
+      <concept>
+        <code value="09.07.16"/>
+        <display value="Anomalie congénitale de l'arbre artériel pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="07.09.34"/>
+        <display value="Anomalie congénitale de l'aorte ou de ses branches"/>
+      </concept>
+      <concept>
+        <code value="09.29.01"/>
+        <display value="Coarctation de l'aorte"/>
+      </concept>
+      <concept>
+        <code value="09.29.31"/>
+        <display value="Interruption de la crosse aortique"/>
+      </concept>
+      <concept>
+        <code value="09.28.47"/>
+        <display value="Anomalie congénitale de l'aorte thoracique descendante ou abdominale"/>
+      </concept>
+      <concept>
+        <code value="09.30.17"/>
+        <display value="Anomalie congénitale de la branche de l'arc aortique"/>
+      </concept>
+      <concept>
+        <code value="09.31.40"/>
+        <display value="Syndrome de compression trachéo-œsophagienne"/>
+      </concept>
+      <concept>
+        <code value="09.27.21"/>
+        <display value="Persistance du canal artériel"/>
+      </concept>
+      <concept>
+        <code value="09.46.03"/>
+        <display value="Anomalie congénitale des artères coronaires"/>
+      </concept>
+      <concept>
+        <code value="09.41.01"/>
+        <display value="Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire"/>
+      </concept>
+      <concept>
+        <code value="09.42.00"/>
+        <display value="Origine aortique anormale ou trajet anormal de l'artère coronaire"/>
+      </concept>
+      <concept>
+        <code value="09.45.16"/>
+        <display value="Fistule artérielle coronaire congénitale"/>
+      </concept>
+      <concept>
+        <code value="10.01.05"/>
+        <display value="Malformation congénitale du péricarde"/>
+      </concept>
+      <concept>
+        <code value="05.07.01"/>
+        <display value="Anomalie congénitale du septum auriculaire"/>
+      </concept>
+      <concept>
+        <code value="05.03.01"/>
+        <display value="Foramen ovale perméable"/>
+      </concept>
+      <concept>
+        <code value="05.04.02"/>
+        <display value="Communication interauriculaire dans la fosse ovale"/>
+      </concept>
+      <concept>
+        <code value="05.05.00"/>
+        <display value="Anomalie du sinus veineux"/>
+      </concept>
+      <concept>
+        <code value="05.05.03"/>
+        <display value="Communication interauriculaire par l'orifice du sinus coronaire"/>
+      </concept>
+      <concept>
+        <code value="05.01.13"/>
+        <display value="Anomalie congénitale de l'oreillette droite"/>
+      </concept>
+      <concept>
+        <code value="05.02.11"/>
+        <display value="Anomalie congénitale de l'oreillette gauche"/>
+      </concept>
+      <concept>
+        <code value="05.02.01"/>
+        <display value="Oreillette gauche divisée"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminologies - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - trial-use
+
+
+
+  France
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminologies</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Terminologies</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#systèmes-de-codes-30" id="markdown-toc-systèmes-de-codes-30">Systèmes de codes (30)</a></li>
+  <li><a href="#jeux-de-valeurs-36" id="markdown-toc-jeux-de-valeurs-36">Jeux de valeurs (36)</a></li>
+  <li><a href="#tables-de-correspondance-6" id="markdown-toc-tables-de-correspondance-6">Tables de correspondance (6)</a></li>
+</ul>
+
+</div>
+<p>Les systèmes et classifications tiers conservent leurs conditions de réutilisation. Les cinq catégories fines de dispositifs de fermeture utilisent des codes locaux TAUSSIG. La validation technique ne remplace pas la validation clinique des correspondances.</p>
+
+<h3 id="systèmes-de-codes-30">Systèmes de codes (30)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ipccc.html">IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ae-attribution.html">TAUSSIG — Attribution d'un EI</a></td>
+      <td>Cause suspectée d'un événement indésirable.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-death-attribution.html">TAUSSIG — Attribution du décès péri-procédural</a></td>
+      <td>Imputabilité d'un décès survenu en péri-procédure (ProcedureOutcome).</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-condition-axis.html">TAUSSIG — Axe d'une condition cardiaque</a></td>
+      <td>Distingue le diagnostic congénital des conditions évolutives.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-genetic-syndrome-category.html">TAUSSIG — Catégorie de syndrome génétique</a></td>
+      <td>Catégorie étiologique d'un syndrome génétique.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ccam.html">TAUSSIG — CCAM (sous-ensemble cath congénital)</a></td>
+      <td>Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé).</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-taussig-local.html">TAUSSIG — Concepts locaux (sans équivalent de référence)</a></td>
+      <td>Concepts nécessaires au modèle et vérifiés absents des terminologies de référence. Chaque code documente l'absence constatée.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-measurement-condition.html">TAUSSIG — Condition de mesure</a></td>
+      <td>Condition physiologique/pharmacologique pendant la mesure.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-closure-device-type.html">TAUSSIG — Dispositifs de fermeture par cible</a></td>
+      <td>Catégories de dispositifs de fermeture distinguées par cible. Codes locaux TAUSSIG ; aucune équivalence SNOMED spécifique n'est affirmée.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-derivation-method.html">TAUSSIG — Dérivation d'une mesure</a></td>
+      <td>Mesure directe ou valeur calculée.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-echsa.html">TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)</a></td>
+      <td>Représentation FHIR, pour le POC TAUSSIG, de la nomenclature de la base ECHSA (European Congenital Heart Surgeons Association, dérivée EACTS-STS/IPCCC). Codes extraits du dictionnaire maître <code class="language-plaintext highlighter-rouge">fields-dicts.xls</code> (onglet factors). Classes : diagnosis, procedure, status post, complication, aae, nca, gprf. Usage recherche ; codes candidats à valider cliniquement.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ae-management.html">TAUSSIG — Gestion de la complication (prise en charge péri-procédurale)</a></td>
+      <td>Variable de prise en charge d'un événement indésirable de cathétérisme congénital (échelle d'escalade). Ancrage IPCCC/EPCC chap. 15 + SNOMED procédure. À valider cliniquement.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-cath-intent.html">TAUSSIG — Intention du cathétérisme</a></td>
+      <td>Intention globale de la procédure de cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-measurement-modality.html">TAUSSIG — Modalité de mesure</a></td>
+      <td>Modalité d'acquisition d'une mesure.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ventilation-type.html">TAUSSIG — Mode ventilatoire</a></td>
+      <td>Mode de ventilation pendant l'anesthésie.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-bsa-method.html">TAUSSIG — Méthode de calcul de surface corporelle</a></td>
+      <td>Formule utilisée pour calculer la surface corporelle (BSA).</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-genetic-method.html">TAUSSIG — Méthode de confirmation génétique</a></td>
+      <td>Méthode ayant confirmé/écarté le syndrome (Observation.method).</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-procedure-observation-code.html">TAUSSIG — Observations liées au cathétérisme</a></td>
+      <td>Codes locaux transitoires pour les observations de procédure dont le code LOINC reste à vérifier.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-procedure-phase.html">TAUSSIG — Phase procédurale d'une mesure</a></td>
+      <td>Référentiel temporel pour le delta pre/post (cœur de la POC).</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-measurement-property.html">TAUSSIG — Propriétés de mesure hémodynamique</a></td>
+      <td>Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-gesture-result.html">TAUSSIG — Résultat d'un geste / d'un matériel</a></td>
+      <td>Résultat au niveau geste et tentative matériel.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-diagnosis-role.html">TAUSSIG — Rôle d'une indication/diagnostic</a></td>
+      <td>Rôle de l'indication d'un cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-periprocedural-medication-purpose.html">TAUSSIG — Rôle du médicament péri-procédural</a></td>
+      <td>Rôle clinique d'une administration médicamenteuse pendant le cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-technical-success.html">TAUSSIG — Succès technique de la procédure</a></td>
+      <td>Niveau de succès technique au niveau procédure.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-access-type.html">TAUSSIG — Type d'abord vasculaire</a></td>
+      <td>Voie d'abord vasculaire.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-implant-device-type.html">TAUSSIG — Type d'implant</a></td>
+      <td>Type de dispositif/substrat longitudinal.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-condition-type.html">TAUSSIG — Type de condition évolutive</a></td>
+      <td>Catégorie d'une lésion évolutive.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-material-type.html">TAUSSIG — Type de matériel</a></td>
+      <td>Catégorie de matériel utilisé pendant un geste.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-severity-scale.html">TAUSSIG — Échelle de gravité d'un EI</a></td>
+      <td>Échelle de gradation validée par la littérature.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-implant-status.html">TAUSSIG — État clinique d'un implant</a></td>
+      <td>État clinique courant d'un implant (porté en extension de Device).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="jeux-de-valeurs-36">Jeux de valeurs (36)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ipccc-short-list.html">IPCCC Short List v5.0 (sous-ensemble de saisie)</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ae-attribution-vs.html">TAUSSIG — Attributions d'EI</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-death-attribution-vs.html">TAUSSIG — Attributions du décès</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-cardiac-condition.html">TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)</a></td>
+      <td>Working set des conditions cardiaques évolutives de la POC (distinct du diagnostic congénital figé) : 61 lésions résiduelles/acquises codées en IPCCC, plus 13 états d'étape chirurgicale codés en ECHSA — l'IPCCC ne code pas l'état « status post » d'un montage (Fontan, Glenn, MBTS…), d'où un ValueSet multi-systèmes. ICD-10 = donnée dérivée (crossmap IPCCC). Le typage residual/acquired/post-chir est un choix clinicien à la saisie (CardiacCondition.condition_type), pas une propriété du code.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-anthropometry-observation-code-vs.html">TAUSSIG — Codes d'anthropométrie per-cathétérisme</a></td>
+      <td>Codes LOINC utilisés pour poids, taille et surface corporelle au moment du cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-procedure-exposure-observation-code-vs.html">TAUSSIG — Codes d'exposition et contraste</a></td>
+      <td>Codes des observations quantitatives liées à l'exposition radiologique et au contraste.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-adverse-event-snomed.html">TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)</a></td>
+      <td>Working set SNOMED CT des complications péri-procédurales du cathétérisme congénital (couche d'interopérabilité FHIR AdverseEvent.event / Condition.code). Résolu sur le SMT depuis les complications IPCCC/EPCC retenues. À valider cliniquement.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-adverse-event-ipccc.html">TAUSSIG — Complications péri-procédurales (IPCCC)</a></td>
+      <td>Axe IPCCC des événements indésirables du cathétérisme congénital retenus pour la POC. La granularité IPCCC est plus grossière que la curation française : plusieurs libellés cliniques peuvent partager un même code (regroupés ici sous le libellé IPCCC officiel).</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-measurement-condition-vs.html">TAUSSIG — Conditions de mesure</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-diagnosis-icd11.html">TAUSSIG — Diagnostics congénitaux (CIM-11 MMS)</a></td>
+      <td>Axe de classification diagnostique de la POC : énumération des entités CIM-11 MMS retenues pour les cardiopathies congénitales, avec le libellé français officiel de l'OMS. Liaison extensible : un code CIM-11 hors liste reste admis, mais l'autocomplétion et les statistiques se font sur ce working set curé.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-diagnosis-ipccc.html">TAUSSIG — Diagnostics congénitaux (IPCCC)</a></td>
+      <td>Équivalents IPCCC des diagnostics congénitaux du working set CIM-11 (codage parallèle de précision clinique). Un même code IPCCC peut répondre à plusieurs entités CIM-11.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-derivation-method-vs.html">TAUSSIG — Dérivation</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-procedure-ipccc.html">TAUSSIG — Gestes de cathétérisme (IPCCC)</a></td>
+      <td>Axe IPCCC des gestes de cathétérisme congénital retenus pour la POC (gestes diagnostiques, interventionnels et hybrides). Remplace, pour l'autocomplétion, la liaison à la short list IPCCC de 1 822 codes, inexploitable comme menu.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-regurgitation-grade.html">TAUSSIG — Grade de régurgitation (valeurs codées)</a></td>
+      <td>Échelle qualitative de la régurgitation valvulaire, valeur de la propriété de mesure regurgitation_grade (Observation.valueCodeableConcept). Qualifier values SNOMED CT dont l'existence et le libellé FR ont été vérifiés sur le SMT ; le choix de l'échelle reste à valider cliniquement.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-cath-intent-vs.html">TAUSSIG — Intentions de cathétérisme</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-laterality-vs.html">TAUSSIG — Latéralité (gauche/droite)</a></td>
+      <td>Côté anatomique de l'abord vasculaire (SNOMED CT).</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-measurement-modality-vs.html">TAUSSIG — Modalités de mesure</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ventilation-type-vs.html">TAUSSIG — Modes ventilatoires</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-bsa-method-vs.html">TAUSSIG — Méthodes de calcul BSA</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-procedure-phase-vs.html">TAUSSIG — Phases procédurales</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-ae-management.html">TAUSSIG — Prise en charge d'un événement indésirable</a></td>
+      <td>Modes de prise en charge d'un EI pendant le cathétérisme (CodeSystem TAUSSIG ae-management).</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-procedure-snomed.html">TAUSSIG — Procédures (SNOMED CT, interopérabilité)</a></td>
+      <td>Working set SNOMED CT des gestes de cathétérisme congénital (couche d'interopérabilité FHIR Procedure.code). Résolu sur le SMT depuis les gestes IPCCC retenus. À valider cliniquement.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-measurement-property.html">TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept)</a></td>
+      <td>Working set POC des propriétés de mesure hémodynamique de cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-gesture-result-vs.html">TAUSSIG — Résultats de geste</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-diagnosis-role-vs.html">TAUSSIG — Rôles d'indication</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-periprocedural-medication-purpose-vs.html">TAUSSIG — Rôles des médicaments péri-procéduraux</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-sites-mesure.html">TAUSSIG — Sites anatomiques de mesure/geste (validé)</a></td>
+      <td>Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED).</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-technical-success-vs.html">TAUSSIG — Succès technique</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-genetic-syndrome.html">TAUSSIG — Syndromes génétiques (Orphanet)</a></td>
+      <td>Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-access-type-vs.html">TAUSSIG — Types d'abord vasculaire</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-implant-device-type-vs.html">TAUSSIG — Types d'implant</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-condition-type-vs.html">TAUSSIG — Types de condition évolutive</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-taussig-materiel-types.html">TAUSSIG — Types de dispositifs interventionnels</a></td>
+      <td>Working set de matériel ; catégories de fermeture distinguées par cible selon la décision clinique du 30 octobre 2026. Les catégories fines de fermeture utilisent des codes TAUSSIG locaux.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-material-type-vs.html">TAUSSIG — Types de matériel (catégories)</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-severity-scale-vs.html">TAUSSIG — Échelles de gravité</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-implant-status-vs.html">TAUSSIG — États d'implant</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tables-de-correspondance-6">Tables de correspondance (6)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ressource</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="ConceptMap-access-type-to-snomed.html">AccessTypeToSnomed</a></td>
+      <td>Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-ipccc-to-icd10.html">Crossmap IPCCC -&gt; ICD-10 (v5.0)</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-genetic-syndrome-to-icd11.html">GeneticSyndromeToIcd11</a></td>
+      <td>Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1).</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-measurement-condition-to-snomed.html">TAUSSIG — Condition de mesure -&gt; SNOMED</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-measurement-modality-to-snomed.html">TAUSSIG — Modalité de mesure -&gt; SNOMED (Observation.method)</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-measurement-phase-to-snomed.html">TAUSSIG — Phase de mesure -&gt; SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-10-30 22:35:00 +0100">
+    2026-10-30
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

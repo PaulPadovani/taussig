@@ -1,0 +1,327 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "taussig-cardiac-condition",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-cardiac-condition</b></p><a name=\"taussig-cardiac-condition\"> </a><a name=\"hctaussig-cardiac-condition\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-ipccc.html\"><code>https://taussig/fhir/CodeSystem/ipccc</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;0.6.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4606.4601\">10.06.01</a></td><td>Infective endocarditis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4601\">10.31.01</a></td><td>Acquired superior caval vein (SVC) abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4621\">10.31.21</a></td><td>Acquired inferior caval vein (IVC) abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4630.4616\">10.30.16</a></td><td>Acquired coronary sinus abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4624.4600\">10.24.00</a></td><td>Acquired pulmonary venous abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4610\">15.10.10</a></td><td>Acquired right atrial abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4620\">15.10.20</a></td><td>Acquired left atrial abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4663\">15.10.63</a></td><td>Residual interatrial communication ('ASD')</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4611.4603\">15.11.03</a></td><td>Residual tricuspid regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4601\">15.12.01</a></td><td>Residual mitral stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4603\">15.12.03</a></td><td>Residual mitral regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4603\">15.25.03</a></td><td>Residual truncal regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4601\">15.30.01</a></td><td>Residual pulmonary valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4603\">15.30.03</a></td><td>Residual pulmonary regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4609\">15.30.09</a></td><td>Neopulmonary valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4610\">15.30.10</a></td><td>Neopulmonary valvar regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4601\">15.35.01</a></td><td>Residual aortic valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4603\">15.35.03</a></td><td>Residual aortic regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4609\">15.35.09</a></td><td>Stenosis of the neo-aortic valve of pulmonary origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4610\">15.35.10</a></td><td>Regurgitation of the neo-aortic valve of pulmonary origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4612\">15.25.12</a></td><td>Acquired stenosis of the neo-aortic valve of truncal origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4613\">15.25.13</a></td><td>Acquired regurgitation of the neo-aortic valve of truncal origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4616.4602\">15.16.02</a></td><td>Residual ventricular component of atrioventricular septal defect</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4613.4602\">15.13.02</a></td><td>Residual common atrioventricular valvar regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4634.4656\">10.34.56</a></td><td>Acquired stenosis of the common atrioventricular valve in biventricular connections</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4622\">10.16.22</a></td><td>Acquired right ventricular dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4623\">10.16.23</a></td><td>Acquired right ventricular hypertrophy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4602\">10.16.02</a></td><td>Acquired right ventricular aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-07.4601.4611\">07.01.11</a></td><td>Right ventricular dysfunction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4620.4623\">15.20.23</a></td><td>Residual right ventricular outflow tract obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4676\">10.16.76</a></td><td>Acquired left ventricular dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4677\">10.16.77</a></td><td>Acquired left ventricular hypertrophy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4642\">10.16.42</a></td><td>Acquired left ventricular aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4647\">10.16.47</a></td><td>Left ventricular failure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4621.4621\">15.21.21</a></td><td>Postprocedural left ventricular outflow tract complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4686\">10.16.86</a></td><td>Acquired subaortic stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4688\">10.16.88</a></td><td>Acquired subpulmonary stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4622.4602\">15.22.02</a></td><td>Residual ventricular septal defect (VSD)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4610\">10.10.10</a></td><td>Restrictive cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4659\">10.13.59</a></td><td>Acquired pulmonary arterial tree abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4602\">15.32.02</a></td><td>Postprocedural pulmonary trunk stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4623\">15.32.23</a></td><td>Residual right pulmonary artery stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4643\">15.32.43</a></td><td>Residual left pulmonary artery stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4601\">10.13.01</a></td><td>Pulmonary arterial hypertension</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4651\">10.13.51</a></td><td>Pulmonary embolism</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4677\">10.14.77</a></td><td>Acquired supravalvar aortic stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4682\">10.14.82</a></td><td>Acquired dilation of ascending aorta and/or aortic root</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-09.4616.4613\">09.16.13</a></td><td>Aortic root dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4651\">10.14.51</a></td><td>Aortic dissection</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4650\">10.14.50</a></td><td>Aortic aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4637.4605\">15.37.05</a></td><td>Residual aortic coarctation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4641.4600\">15.41.00</a></td><td>Postprocedural coronary arterial complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4639.4602\">15.39.02</a></td><td>Residual arterial duct (PDA) patency</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4600\">15.55.00</a></td><td>Cardiac conduit related complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4627\">15.56.27</a></td><td>Systemic-to-pulmonary arterial shunt obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4601\">15.56.01</a></td><td>Systemic-to-pulmonary arterial shunt partial obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4602\">15.56.02</a></td><td>Systemic-to-pulmonary arterial shunt complete obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4624\">15.55.24</a></td><td>Pulmonary autograft failure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4690.4660\">15.90.60</a></td><td>'Failed' Fontan type circulation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4608.4631\">10.08.31</a></td><td>Pericardial effusion</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4695.4600\">15.95.00</a></td><td>Complication after heart or lung transplant</td></tr></table></li><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-echsa.html\"><code>https://taussig/fhir/CodeSystem/echsa</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;0.6.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4060\">SP-2010-4060</a></td><td>Création/agrandissement de communication interatriale</td><td>Creation of an atrial septal defect or enlargement of an existing atrial septal defect using a variety of modalities including balloon septostomy, blade septostomy, or surgical septectomy. Creation may be accomplished with or without use of cardiopulmonary bypass.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5640\">SP-2010-5640</a></td><td>Cerclage de l'artère pulmonaire</td><td>Placement of a pulmonary artery band, any type.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5590\">SP-2010-5590</a></td><td>Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)</td><td>Placement of a tube graft from a branch of the aortic arch to the pulmonary artery with or without bypass, from any approach (thoracotomy, sternotomy).</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4870\">SP-2010-4870</a></td><td>Intervention de Norwood</td><td>The Norwood operation is synonymous with the term 'Norwood (Stage 1)' and is defined as an aortopulmonary connection and neoaortic arch construction resulting in univentricular physiology and pulmonary blood flow controlled with a calibrated systemic-to-pulmonary artery shunt, or a right ventricle to pulmonary artery conduit, or rarely, a cavopulmonary connection.  When coding the procedure 'Norwood procedure', the primary procedure of the operation should be 'Norwood procedure'. The second procedure (Procedure 2 after the Norwood procedure) must then document the source of pulmonary blood flow and be chosen from the following eight choices: 1. Shunt, Systemic to pulmonary, Modified Blalock- Taussig Shunt (MBTS) 2. Shunt, Systemic to pulmonary, Central (from aorta or to main pulmonary artery) 3. Shunt, Systemic to pulmonary, Other 4. Conduit placement, RV to PA 5. Bidirectional cavopulmonary anastomosis (BDCPA) (bidirectional Glenn) 6. Glenn (unidirectional cavopulmonary anastomosis) (unidirectional Glenn) 7. Bilateral bidirectional cavopulmonary anastomosis (BBDCPA) (bilateral bidirectional Glenn) 8. HemiFontan</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5680\">SP-2010-5680</a></td><td>Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)</td><td>Superior vena cava to ipsilateral pulmonary artery anastomosis (i.e., LSVC to LPA, RSVC to RPA).</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5670\">SP-2010-5670</a></td><td>Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)</td><td>Superior vena cava to pulmonary artery anastomosis allowing flow to both pulmonary arteries with an end-to-side superior vena-to-pulmonary artery anastomosis.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5690\">SP-2010-5690</a></td><td>Anastomose cavopulmonaire bidirectionnelle bilatérale</td><td>Bilateral superior vena cava-to-pulmonary artery anastomoses (requires bilateral SVCs).</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5000\">SP-2010-5000</a></td><td>Fontan (TCPC), conduit extracardiaque, fenestré</td><td>Total cavopulmonary connection using an external conduit to connect the infradiaphragmatic systemic venous return to the pulmonary artery, with fenestration.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5010\">SP-2010-5010</a></td><td>Fontan (TCPC), conduit extracardiaque, non fenestré</td><td>Total cavopulmonary connection using an external conduit to connect the infradiaphragmatic systemic venous return to the pulmonary artery, with no fenestration.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4970\">SP-2010-4970</a></td><td>Fontan (TCPC), tunnel latéral, fenestré</td><td>Total cavopulmonary connection using an intraatrial lateral tunnel construction, with fenestration.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4980\">SP-2010-4980</a></td><td>Fontan (TCPC), tunnel latéral, non fenestré</td><td>Total cavopulmonary connection using an intraatrial lateral tunnel construction, with no fenestration.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4520\">SP-2010-4520</a></td><td>Réparation à un ventricule et demi</td><td>Partial biventricular repair; includes intracardiac repair with bidirectional cavopulmonary anastomosis to volume unload a small ventricle or poorly functioning ventricle.</td></tr><tr><td><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5710\">SP-2010-5710</a></td><td>Palliation, autre</td><td>Any other palliative procedure not specifically listed.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/taussig-cardiac-condition",
+  "version" : "0.6.0",
+  "name" : "taussig_cardiac_condition",
+  "title" : "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Working set des conditions cardiaques évolutives de la POC (distinct du diagnostic congénital figé) : 61 lésions résiduelles/acquises codées en IPCCC, plus 13 états d'étape chirurgicale codés en ECHSA — l'IPCCC ne code pas l'état « status post » d'un montage (Fontan, Glenn, MBTS…), d'où un ValueSet multi-systèmes. ICD-10 = donnée dérivée (crossmap IPCCC). Le typage residual/acquired/post-chir est un choix clinicien à la saisie (CardiacCondition.condition_type), pas une propriété du code.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://taussig/fhir/CodeSystem/ipccc",
+      "concept" : [{
+        "code" : "10.06.01",
+        "display" : "Infective endocarditis"
+      },
+      {
+        "code" : "10.31.01",
+        "display" : "Acquired superior caval vein (SVC) abnormality"
+      },
+      {
+        "code" : "10.31.21",
+        "display" : "Acquired inferior caval vein (IVC) abnormality"
+      },
+      {
+        "code" : "10.30.16",
+        "display" : "Acquired coronary sinus abnormality"
+      },
+      {
+        "code" : "10.24.00",
+        "display" : "Acquired pulmonary venous abnormality"
+      },
+      {
+        "code" : "15.10.10",
+        "display" : "Acquired right atrial abnormality"
+      },
+      {
+        "code" : "15.10.20",
+        "display" : "Acquired left atrial abnormality"
+      },
+      {
+        "code" : "15.10.63",
+        "display" : "Residual interatrial communication ('ASD')"
+      },
+      {
+        "code" : "15.11.03",
+        "display" : "Residual tricuspid regurgitation"
+      },
+      {
+        "code" : "15.12.01",
+        "display" : "Residual mitral stenosis"
+      },
+      {
+        "code" : "15.12.03",
+        "display" : "Residual mitral regurgitation"
+      },
+      {
+        "code" : "15.25.03",
+        "display" : "Residual truncal regurgitation"
+      },
+      {
+        "code" : "15.30.01",
+        "display" : "Residual pulmonary valvar stenosis"
+      },
+      {
+        "code" : "15.30.03",
+        "display" : "Residual pulmonary regurgitation"
+      },
+      {
+        "code" : "15.30.09",
+        "display" : "Neopulmonary valvar stenosis"
+      },
+      {
+        "code" : "15.30.10",
+        "display" : "Neopulmonary valvar regurgitation"
+      },
+      {
+        "code" : "15.35.01",
+        "display" : "Residual aortic valvar stenosis"
+      },
+      {
+        "code" : "15.35.03",
+        "display" : "Residual aortic regurgitation"
+      },
+      {
+        "code" : "15.35.09",
+        "display" : "Stenosis of the neo-aortic valve of pulmonary origin"
+      },
+      {
+        "code" : "15.35.10",
+        "display" : "Regurgitation of the neo-aortic valve of pulmonary origin"
+      },
+      {
+        "code" : "15.25.12",
+        "display" : "Acquired stenosis of the neo-aortic valve of truncal origin"
+      },
+      {
+        "code" : "15.25.13",
+        "display" : "Acquired regurgitation of the neo-aortic valve of truncal origin"
+      },
+      {
+        "code" : "15.16.02",
+        "display" : "Residual ventricular component of atrioventricular septal defect"
+      },
+      {
+        "code" : "15.13.02",
+        "display" : "Residual common atrioventricular valvar regurgitation"
+      },
+      {
+        "code" : "10.34.56",
+        "display" : "Acquired stenosis of the common atrioventricular valve in biventricular connections"
+      },
+      {
+        "code" : "10.16.22",
+        "display" : "Acquired right ventricular dilation"
+      },
+      {
+        "code" : "10.16.23",
+        "display" : "Acquired right ventricular hypertrophy"
+      },
+      {
+        "code" : "10.16.02",
+        "display" : "Acquired right ventricular aneurysm"
+      },
+      {
+        "code" : "07.01.11",
+        "display" : "Right ventricular dysfunction"
+      },
+      {
+        "code" : "15.20.23",
+        "display" : "Residual right ventricular outflow tract obstruction"
+      },
+      {
+        "code" : "10.16.76",
+        "display" : "Acquired left ventricular dilation"
+      },
+      {
+        "code" : "10.16.77",
+        "display" : "Acquired left ventricular hypertrophy"
+      },
+      {
+        "code" : "10.16.42",
+        "display" : "Acquired left ventricular aneurysm"
+      },
+      {
+        "code" : "10.16.47",
+        "display" : "Left ventricular failure"
+      },
+      {
+        "code" : "15.21.21",
+        "display" : "Postprocedural left ventricular outflow tract complication"
+      },
+      {
+        "code" : "10.16.86",
+        "display" : "Acquired subaortic stenosis"
+      },
+      {
+        "code" : "10.16.88",
+        "display" : "Acquired subpulmonary stenosis"
+      },
+      {
+        "code" : "15.22.02",
+        "display" : "Residual ventricular septal defect (VSD)"
+      },
+      {
+        "code" : "10.10.10",
+        "display" : "Restrictive cardiomyopathy"
+      },
+      {
+        "code" : "10.13.59",
+        "display" : "Acquired pulmonary arterial tree abnormality"
+      },
+      {
+        "code" : "15.32.02",
+        "display" : "Postprocedural pulmonary trunk stenosis"
+      },
+      {
+        "code" : "15.32.23",
+        "display" : "Residual right pulmonary artery stenosis"
+      },
+      {
+        "code" : "15.32.43",
+        "display" : "Residual left pulmonary artery stenosis"
+      },
+      {
+        "code" : "10.13.01",
+        "display" : "Pulmonary arterial hypertension"
+      },
+      {
+        "code" : "10.13.51",
+        "display" : "Pulmonary embolism"
+      },
+      {
+        "code" : "10.14.77",
+        "display" : "Acquired supravalvar aortic stenosis"
+      },
+      {
+        "code" : "10.14.82",
+        "display" : "Acquired dilation of ascending aorta and/or aortic root"
+      },
+      {
+        "code" : "09.16.13",
+        "display" : "Aortic root dilation"
+      },
+      {
+        "code" : "10.14.51",
+        "display" : "Aortic dissection"
+      },
+      {
+        "code" : "10.14.50",
+        "display" : "Aortic aneurysm"
+      },
+      {
+        "code" : "15.37.05",
+        "display" : "Residual aortic coarctation"
+      },
+      {
+        "code" : "15.41.00",
+        "display" : "Postprocedural coronary arterial complication"
+      },
+      {
+        "code" : "15.39.02",
+        "display" : "Residual arterial duct (PDA) patency"
+      },
+      {
+        "code" : "15.55.00",
+        "display" : "Cardiac conduit related complication"
+      },
+      {
+        "code" : "15.56.27",
+        "display" : "Systemic-to-pulmonary arterial shunt obstruction"
+      },
+      {
+        "code" : "15.56.01",
+        "display" : "Systemic-to-pulmonary arterial shunt partial obstruction"
+      },
+      {
+        "code" : "15.56.02",
+        "display" : "Systemic-to-pulmonary arterial shunt complete obstruction"
+      },
+      {
+        "code" : "15.55.24",
+        "display" : "Pulmonary autograft failure"
+      },
+      {
+        "code" : "15.90.60",
+        "display" : "'Failed' Fontan type circulation"
+      },
+      {
+        "code" : "10.08.31",
+        "display" : "Pericardial effusion"
+      },
+      {
+        "code" : "15.95.00",
+        "display" : "Complication after heart or lung transplant"
+      }]
+    },
+    {
+      "system" : "https://taussig/fhir/CodeSystem/echsa",
+      "concept" : [{
+        "code" : "SP-2010-4060",
+        "display" : "Création/agrandissement de communication interatriale"
+      },
+      {
+        "code" : "SP-2010-5640",
+        "display" : "Cerclage de l'artère pulmonaire"
+      },
+      {
+        "code" : "SP-2010-5590",
+        "display" : "Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)"
+      },
+      {
+        "code" : "SP-2010-4870",
+        "display" : "Intervention de Norwood"
+      },
+      {
+        "code" : "SP-2010-5680",
+        "display" : "Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)"
+      },
+      {
+        "code" : "SP-2010-5670",
+        "display" : "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)"
+      },
+      {
+        "code" : "SP-2010-5690",
+        "display" : "Anastomose cavopulmonaire bidirectionnelle bilatérale"
+      },
+      {
+        "code" : "SP-2010-5000",
+        "display" : "Fontan (TCPC), conduit extracardiaque, fenestré"
+      },
+      {
+        "code" : "SP-2010-5010",
+        "display" : "Fontan (TCPC), conduit extracardiaque, non fenestré"
+      },
+      {
+        "code" : "SP-2010-4970",
+        "display" : "Fontan (TCPC), tunnel latéral, fenestré"
+      },
+      {
+        "code" : "SP-2010-4980",
+        "display" : "Fontan (TCPC), tunnel latéral, non fenestré"
+      },
+      {
+        "code" : "SP-2010-4520",
+        "display" : "Réparation à un ventricule et demi"
+      },
+      {
+        "code" : "SP-2010-5710",
+        "display" : "Palliation, autre"
+      }]
+    }]
+  }
+}

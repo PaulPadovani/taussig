@@ -1,0 +1,626 @@
+// =====================================================================
+// TAUSSIG — Modèle de données cathétérisme / cardiopathies congénitales
+// Version 4 — "Jumeau numérique du KT" (POC) + alignement FHIR
+// Cible : dbdiagram.io (DBML)
+//
+// Révision 2026-07-03 — ALIGNEMENT sur le dictionnaire livrable (MDS, 115 data elements) :
+//   • Diagnostic congénital : axe SNOMED abandonné -> icd11_code (classif. primaire) +
+//     ipccc_code (granularité) + cim10_code (dérivé PMSI) + echsa_code (registre).
+//   • echsa_code ajouté à CardiacDiagnosis / CardiacCondition / InterventionalGesture / AdverseEvent.
+//   • AdverseEvent : multi-codage ipccc/icd10/snomed/echsa ; management typé (enum ae_management) ;
+//     retrait de ae_meddra_code, onset_datetime, preventable ; ae_label->label, ae_snomed_code->snomed_code.
+//   • ClinicalMeasurement.concept_loinc -> measurement_property (CodeSystem TAUSSIG, LOINC abandonné).
+//   • CardiacCondition.clinical_status retiré (porté par FHIR Condition.clinicalStatus, hors MDS).
+//   • ProcedureOutcome.followup_through retiré (suivi longitudinal -> v5).
+//   • GeneticSyndrome simplifié : label + orpha_code + icd11_code (condition_type/confirmation/date retirés).
+//   • Enums morts supprimés : zygosity, syndrome_category, syndrome_confirmation, condition_clinical_status.
+//
+// Périmètre v4 (POC) : modéliser FINEMENT un acte de cathétérisme et son
+// effet immédiat (delta hémodynamique pre/post), PAS la trajectoire
+// longitudinale multi-années (reportée en v5).
+//
+// Nouveautés v4 (par rapport à v3) :
+//   • [CŒUR POC] ClinicalMeasurement gagne une dimension TEMPS + PHASE :
+//       measured_at, procedure_phase (baseline/pre/post), related_gesture_id
+//       => le gradient AVANT vs APRÈS un geste devient calculable & auditable.
+//       + résultats non numériques : value_coded (SNOMED) / value_text.
+//   • [FHIR-aware] Bloc méta léger (3 colonnes) sur les tables "autorées" :
+//       data_source / recorded_at / validation_status
+//       => mappe vers FHIR meta.source / Provenance / meta.tag.
+//       (Volontairement léger : FHIR porte l'audit complet via Provenance.)
+//   • [INTÉGRITÉ] Contraintes exprimées :, [unique] sur identifiants,
+//       + index sur patient_id / catheterization_id / dates.
+//   • [PONT v5] CardiacImplant.status_source_catheterization_id : on sait QUEL
+//       KT a constaté l'état courant (amorce d'historique sans table lourde).
+//
+// Décisions de périmètre POC (assumées) :
+//   • Le décès reste porté par ProcedureOutcome (mort péri-procédurale).
+//     Le statut vital PATIENT longitudinal est HORS POC -> v5.
+//   • Pas de table d'historique d'état (ImplantStatusEvent...) -> v5.
+//
+// Convention FHIR : chaque table indique sa ressource FHIR cible en commentaire
+// "FHIR: <ResourceType>" pour préparer la FHIRisation des variables.
+// =====================================================================
+
+
+// --------------------------- ACTEURS / CONTEXTE ----------------------
+
+Table Patient {                                   // FHIR: Patient
+  id varchar [pk]
+  ins_qualified_identifier varchar [unique]       // INS qualifié -> identifiant national unique
+  sex varchar
+  birth_date date
+  birth_weight_g int
+}
+
+Table Practitioner {                              // FHIR: Practitioner
+  id varchar [pk]
+  rpps varchar [unique]
+  display_name varchar
+}
+
+Table Organization {                              // FHIR: Organization
+  id varchar [pk]
+  finess varchar [unique]
+  name varchar
+}
+
+Table CareEpisode {                               // FHIR: Encounter / EpisodeOfCare
+  id varchar [pk]
+  patient_id varchar
+  organization_id varchar
+  episode_class episode_class
+  start_date datetime
+  end_date datetime
+  Indexes {
+    patient_id
+  }
+}
+
+
+// --------------------------- DIAGNOSTIC CONGÉNITAL -------------------
+// Substrat morphologique stable (« ce avec quoi le patient est né »).
+// Verrouillable par patient : une fois validé, figé (gouvernance).
+
+Table CardiacDiagnosis {                          // FHIR: Condition (congénital)
+  id varchar [pk]
+  patient_id varchar
+  // --- codages du diagnostic congénital (multi-codage CodeableConcept) ---
+  icd11_code varchar       // PRIMAIRE : classification CIM-11 (chapitre CC dérivé IPCCC ; licence OMS ouverte)
+  ipccc_code varchar       // granularité congénitale de référence (IPCCC)
+  cim10_code varchar       // DÉRIVÉ : administratif PMSI (crossmap IPCCC->CIM-10)
+  echsa_code varchar       // registre chirurgical congénital (ECHSA-CD, diagnosis)
+  diagnosis_label varchar  // libellé lisible (= display du codage)
+  is_locked boolean        // verrou du diagnostic congénital au niveau patient
+  locked_date date         // date de verrouillage
+  locked_by varchar        // v4 — qui a verrouillé (gouvernance)
+  // --- méta FHIR-aware ---
+  data_source data_source
+  recorded_at datetime
+  validation_status validation_status
+  Indexes {
+    patient_id
+  }
+}
+
+// jonction cathé <-> diagnostic CONGÉNITAL (contexte / indication)
+Table CatheterizationDiagnosis {                  // FHIR: Procedure.reasonReference
+  id varchar [pk]
+  catheterization_id varchar
+  cardiac_diagnosis_id varchar
+  diagnosis_role diagnosis_role
+}
+
+
+// --------------------------- CONDITIONS ÉVOLUTIVES -------------------
+// Lésions qui ne sont PAS le diagnostic congénital : résiduelles (post-geste),
+// acquises (dans le temps), ou états créés par la chirurgie.
+
+Table CardiacCondition {                          // FHIR: Condition
+  id varchar [pk]
+  patient_id varchar
+  condition_type condition_category      // residual / acquired / post_surgical_state
+  ipccc_code varchar                     // codage de la lésion (IPCCC)
+  cim10_code varchar                     // administratif (si pertinent PMSI)
+  echsa_code varchar                     // ECHSA-CD : 'status post' (étape chir) OU 'diagnosis' (lésion résiduelle/acquise)
+  snomed_code varchar                    // codage SNOMED (secondaire)
+  label varchar
+  related_diagnosis_id varchar           // optionnel : rattachement au congénital d'origine
+  onset_date date
+  // --- méta FHIR-aware ---
+  data_source data_source
+  recorded_at datetime
+  validation_status validation_status
+  Note: 'Lésion résiduelle/acquise/post-chirurgicale ou état consécutif à une étape chirurgicale. Distincte du diagnostic congénital. Statut clinique (active/resolved) porté par FHIR Condition.clinicalStatus, hors MDS ; historique complet en v5.'
+  Indexes {
+    patient_id
+  }
+}
+
+// jonction cathé <-> condition évolutive (indication d'un KT sur lésion résiduelle, etc.)
+Table CatheterizationCondition {                  // FHIR: Procedure.reasonReference
+  id varchar [pk]
+  catheterization_id varchar
+  cardiac_condition_id varchar
+  indication_role diagnosis_role         // réutilise l'enum de rôle
+}
+
+
+// --------------------------- REGISTRE D'IMPLANTS --------------------
+// Substrat longitudinal du patient : tout dispositif/structure créé(e) lors
+// d'un acte antérieur (chirurgical OU transcathéter) et potentiellement
+// re-ciblé(e). C'est le pivot des RÉ-INTERVENTIONS.
+
+Table CardiacImplant {                            // FHIR: Device (+ Procedure.focalDevice)
+  id varchar [pk]
+  patient_id varchar
+  device_type implant_device_type
+  anatomical_site_snomed varchar
+  brand_model varchar
+  udi varchar
+  implanted_on date
+  implanted_externally boolean           // posé en chirurgie / autre centre (hors MaterialUsed)
+  source_material_used_id varchar        // pont : matériel posé lors d'un cathé TAUSSIG tracé
+  previous_implant_id varchar            // chaînage valve-in-valve / stent-in-stent
+  status implant_status                  // état COURANT (dernier connu) : functional/degenerated/...
+  status_date date
+  status_source_catheterization_id varchar  // v4 — QUEL KT a constaté cet état (amorce historique v5)
+  // --- méta FHIR-aware ---
+  data_source data_source
+  recorded_at datetime
+  validation_status validation_status
+  Note: 'Un MaterialUsed implanté au cathé N devient un substrat-cible au cathé N+k. status = dernier état connu (POC) ; ImplantStatusEvent en v5.'
+  Indexes {
+    patient_id
+  }
+}
+
+
+// --------------------------- PROCÉDURE -------------------------------
+
+Table Catheterization {                           // FHIR: Procedure
+  id varchar [pk]
+  patient_id varchar
+  care_episode_id varchar
+  primary_operator_id varchar
+  intent cath_intent
+  procedure_datetime datetime
+  weight_kg float
+  height_cm float
+  bsa_m2 float
+  bsa_method bsa_method
+  fluoroscopy_time_min float
+  dose_area_product float
+  contrast_used boolean
+  contrast_volume_ml float
+  snomed_code varchar
+  ccam_code varchar
+  echsa_procedure_code varchar
+  // --- méta FHIR-aware ---
+  data_source data_source
+  recorded_at datetime
+  validation_status validation_status
+  Indexes {
+    patient_id
+    (patient_id, procedure_datetime)
+  }
+}
+
+Table AnesthesiaManagement {                      // FHIR: Procedure (anesthésie)
+  id varchar [pk]
+  catheterization_id varchar [unique]   // 1:1
+  anesthesia_type anesthesia_type
+  ventilation_type ventilation_type
+  ecmo_support boolean
+  antibioprophylaxis_given boolean
+  antibioprophylaxis_detail varchar
+  anticoagulant_given boolean
+  anticoagulant_type varchar
+  anticoagulant_dose_numeric float
+}
+
+Table VascularAccess {                            // FHIR: Procedure (abord vasculaire)
+  id varchar [pk]
+  catheterization_id varchar
+  access_type access_type
+  side laterality
+  puncture_success boolean
+  introducer_size_fr float
+  echo_guided boolean
+  Indexes {
+    catheterization_id
+  }
+}
+
+
+// --------------------------- GESTES / MATÉRIEL -----------------------
+// Hiérarchie du succès (rappel) : MaterialUsed.attempt_result (matériel)
+//   < InterventionalGesture.result (geste) < ProcedureOutcome.technical_success (procédure).
+
+Table InterventionalGesture {                     // FHIR: Procedure (sous-acte, partOf)
+  id varchar [pk]
+  catheterization_id varchar
+  // --- cible du geste sur 3 axes (≥1 renseigné) ---
+  target_diagnosis_id varchar     // OÙ/POURQUOI : lésion congénitale native (ex CIA, coarctation native)
+  target_condition_id varchar     // POURQUOI : lésion résiduelle/acquise/post-chir
+  target_substrate_id varchar     // SUR QUOI : dispositif/substrat préexistant (ré-intervention)
+  target_structure_label varchar  // OÙ : libellé structure anatomique
+  target_structure_snomed varchar // OÙ : structure anatomique (SNOMED body structure)
+  gesture_type varchar
+  ipccc_code varchar       // codage du geste (IPCCC thérapeutique)
+  snomed_code varchar      // interopérabilité (SNOMED Procedure.code)
+  ccam_code varchar        // administratif PMSI français
+  echsa_code varchar       // registre EACTS-STS (section interventionnelle PROC)
+  result gesture_result
+  failure_reason varchar
+  // --- méta FHIR-aware ---
+  data_source data_source
+  recorded_at datetime
+  validation_status validation_status
+  Note: 'RÈGLE MÉTIER (CHECK à la conversion SQL) : au moins une des cibles target_diagnosis_id / target_condition_id / target_substrate_id doit être renseignée.'
+  Indexes {
+    catheterization_id
+  }
+}
+
+Table MaterialUsed {                              // FHIR: Device (+ Procedure.usedReference)
+  id varchar [pk]
+  gesture_id varchar
+  material_type material_type
+  name varchar
+  brand_model varchar
+  usage_sequence int
+  attempt_number int
+  attempt_result gesture_result
+  udi varchar
+  Indexes {
+    gesture_id
+  }
+}
+
+Table MaterialParameter {                         // FHIR: Device.property
+  id varchar [pk]
+  material_used_id varchar
+  concept varchar
+  loinc_code varchar
+  value_numeric float
+  unit_ucum varchar
+  Indexes {
+    material_used_id
+  }
+}
+
+
+// --------------------------- MESURES ---------------------------------
+// [CŒUR DE LA POC] Dimension temps + phase pour calculer le delta pre/post.
+
+Table ClinicalMeasurement {                       // FHIR: Observation
+  id varchar [pk]
+  patient_id varchar
+  catheterization_id varchar             // nullable : mesure hors KT (écho/IRM de contexte)
+  related_gesture_id varchar             // v4 — mesure rattachée à un geste précis (delta par geste)
+  procedure_phase measurement_phase      // v4 — baseline / pre_intervention / post_intervention
+  measured_at datetime                   // v4 — temps clinique (FHIR Observation.effective[x])
+  measurement_property varchar           // v4 — CodeSystem TAUSSIG (19 propriétés) ; ex concept_loinc (LOINC abandonné)
+  concept_label varchar
+  body_site_snomed varchar
+  modality measurement_modality
+  value_numeric float                    // résultat quantitatif
+  value_coded varchar                    // v4 — résultat codé SNOMED (qualitatif, ex. shunt modéré)
+  value_text varchar                     // v4 — résultat texte libre
+  unit_ucum varchar
+  measurement_condition measurement_condition  // v4 — désormais enum (repos/effort/O2/NO...)
+  derivation measurement_derivation
+  Indexes {
+    patient_id
+    catheterization_id
+    (catheterization_id, procedure_phase)
+  }
+}
+
+
+// --------------------------- OUTCOMES --------------------------------
+
+Table ProcedureOutcome {                          // FHIR: Observation / Procedure.outcome
+  id varchar [pk]
+  catheterization_id varchar [unique]   // 1:1
+  technical_success technical_success
+  hemodynamic_success boolean
+  residual_lesion_present boolean        // flag de synthèse (le détail vit dans CardiacCondition)
+  death boolean                          // décès PÉRI-procédural (POC). Statut vital patient -> v5.
+  death_datetime datetime
+  death_attribution death_attribution
+}
+
+Table AdverseEvent {                              // FHIR: AdverseEvent
+  id varchar [pk]
+  catheterization_id varchar
+  gesture_id varchar
+  label varchar                          // libellé lisible (= display du codage)
+  ipccc_code varchar                     // PRIMAIRE : IPCCC/EPCC (ch.15 complications, ch.11 arythmies)
+  icd10_code varchar                     // DÉRIVÉ : crossmap IPCCC (codes T/Y péri-procéduraux)
+  snomed_code varchar                    // interopérabilité (SNOMED AdverseEvent.event)
+  echsa_code varchar                     // ECHSA-CD : complication (CP) / adverse anesthetic event (AAE)
+  attribution ae_attribution             // origine imputée (dispositif/abord/anesthésie/technique...)
+  management ae_management               // v4 — prise en charge (escalade thérapeutique)
+  outcome ae_outcome
+  severity_scale severity_scale
+  severity_level int
+  // --- méta FHIR-aware ---
+  data_source data_source
+  recorded_at datetime
+  validation_status validation_status
+  Indexes {
+    catheterization_id
+  }
+}
+
+
+// --------------------------- GÉNÉTIQUE / SYNDROMES -------------------
+
+Table GeneticSyndrome {                           // FHIR: Condition (covariable de contexte)
+  id varchar [pk]
+  patient_id varchar
+  label varchar
+  orpha_code varchar                     // PRIMAIRE : Orphanet (réf. maladies rares, CC-BY)
+  icd11_code varchar                     // classification ICD-11 (crossmap Orphanet) ; ICD-10 = dérivé
+  // GeneticSyndrome SIMPLIFIÉ (POC) = covariable de contexte : label + orpha + icd11.
+  // Niveau moléculaire/statut (condition_type, confirmation, OMIM, gène HGNC, variant HGVS,
+  // zygosité, SNOMED) hors périmètre POC, reporté v5.
+  Indexes {
+    patient_id
+  }
+}
+
+
+// =====================================================================
+// RELATIONS
+// =====================================================================
+
+Ref: CareEpisode.patient_id > Patient.id
+Ref: CareEpisode.organization_id > Organization.id
+
+Ref: CardiacDiagnosis.patient_id > Patient.id
+Ref: CatheterizationDiagnosis.catheterization_id > Catheterization.id
+Ref: CatheterizationDiagnosis.cardiac_diagnosis_id > CardiacDiagnosis.id
+
+Ref: CardiacCondition.patient_id > Patient.id
+Ref: CardiacCondition.related_diagnosis_id > CardiacDiagnosis.id
+Ref: CatheterizationCondition.catheterization_id > Catheterization.id
+Ref: CatheterizationCondition.cardiac_condition_id > CardiacCondition.id
+
+Ref: CardiacImplant.patient_id > Patient.id
+Ref: CardiacImplant.source_material_used_id > MaterialUsed.id
+Ref: CardiacImplant.previous_implant_id > CardiacImplant.id           // self (valve-in-valve)
+Ref: CardiacImplant.status_source_catheterization_id > Catheterization.id  // v4
+
+Ref: Catheterization.patient_id > Patient.id
+Ref: Catheterization.care_episode_id > CareEpisode.id
+Ref: Catheterization.primary_operator_id > Practitioner.id
+
+Ref: AnesthesiaManagement.catheterization_id - Catheterization.id     // 1:1
+Ref: VascularAccess.catheterization_id > Catheterization.id
+
+Ref: InterventionalGesture.catheterization_id > Catheterization.id
+Ref: InterventionalGesture.target_diagnosis_id > CardiacDiagnosis.id
+Ref: InterventionalGesture.target_condition_id > CardiacCondition.id
+Ref: InterventionalGesture.target_substrate_id > CardiacImplant.id
+
+Ref: MaterialUsed.gesture_id > InterventionalGesture.id
+Ref: MaterialParameter.material_used_id > MaterialUsed.id
+
+Ref: ClinicalMeasurement.patient_id > Patient.id
+Ref: ClinicalMeasurement.catheterization_id > Catheterization.id
+Ref: ClinicalMeasurement.related_gesture_id > InterventionalGesture.id   // v4
+
+Ref: ProcedureOutcome.catheterization_id - Catheterization.id         // 1:1
+Ref: AdverseEvent.catheterization_id > Catheterization.id
+Ref: AdverseEvent.gesture_id > InterventionalGesture.id
+
+Ref: GeneticSyndrome.patient_id > Patient.id
+
+
+// =====================================================================
+// ENUMS
+// =====================================================================
+
+Enum cath_intent {
+  diagnostic
+  interventional
+  hybrid
+}
+
+Enum access_type {
+  arterial_femoral
+  venous_femoral
+  arterial_humeral
+  venous_humeral
+  arterial_carotid
+  venous_jugular
+  transhepatic
+  umbilical
+  surgical_hybrid
+}
+
+Enum laterality {
+  left
+  right
+  not_applicable
+}
+
+Enum measurement_modality {
+  catheterization
+  echocardiography
+  cardiac_mri
+  ct
+  ecg
+}
+
+Enum measurement_derivation {
+  measured
+  calculated
+}
+
+Enum gesture_result {
+  success
+  partial
+  failure_repositioned
+  failure_abandoned
+}
+
+Enum episode_class {
+  hospitalisation
+  consultation
+  urgence
+}
+
+Enum material_type {
+  balloon
+  stent
+  device_implant
+  consumable
+  "TAUSSIG-OCCLUDER-CIA"
+  "TAUSSIG-OCCLUDER-CIV"
+  "TAUSSIG-OCCLUDER-CANAL"
+  "TAUSSIG-OCCLUDER-VASCULAR"
+  "TAUSSIG-OCCLUDER-FOP"
+}
+
+Enum anesthesia_type {
+  general
+  sedation
+  local
+  none
+}
+
+Enum ventilation_type {
+  invasive
+  non_invasive
+  spontaneous
+}
+
+Enum diagnosis_role {
+  primary_indication
+  associated_lesion
+  incidental
+}
+
+Enum bsa_method {
+  haycock
+  dubois
+  mosteller
+  boyd
+}
+
+Enum technical_success {
+  complete
+  partial
+  failed
+  aborted
+}
+
+Enum death_attribution {
+  procedure_related
+  procedure_possibly_related
+  unrelated
+  unknown
+}
+
+Enum severity_scale {
+  bergersen_c3po
+  ncdr_impact
+  ctcae_v5
+  clavien_dindo
+  other
+}
+
+Enum ae_attribution {
+  device
+  vascular_access
+  anesthesia
+  procedure_technique
+  patient_condition
+  contrast
+  unknown
+}
+
+Enum ae_outcome {
+  resolved_no_sequelae
+  resolved_sequelae
+  ongoing
+  death
+}
+
+Enum ae_management {               // v4 — AdverseEvent.management (escalade thérapeutique)
+  no_treatment
+  medical_treatment
+  transfusion
+  thrombolysis
+  surgical_intervention
+  transcatheter_bailout
+  surgical_bailout
+}
+
+Enum condition_category {          // CardiacCondition.condition_type
+  residual_lesion
+  acquired_lesion
+  post_surgical_state
+}
+
+Enum implant_device_type {         // CardiacImplant.device_type
+  conduit
+  shunt
+  valve
+  stent
+  occluder
+  baffle
+  fenestration
+  coil
+  other
+  "TAUSSIG-OCCLUDER-CIA"
+  "TAUSSIG-OCCLUDER-CIV"
+  "TAUSSIG-OCCLUDER-CANAL"
+  "TAUSSIG-OCCLUDER-VASCULAR"
+  "TAUSSIG-OCCLUDER-FOP"
+}
+
+Enum implant_status {              // CardiacImplant.status
+  functional
+  degenerated
+  stenotic
+  occluded
+  explanted
+  embolized
+}
+
+// --------------------------- ENUMS v4 -------------------------------
+
+Enum measurement_phase {           // v4 — ClinicalMeasurement.procedure_phase
+  baseline                          // état de base (sous AG, avant tout geste)
+  pre_intervention                  // juste avant le geste
+  post_intervention                 // juste après le geste (=> delta)
+  not_applicable
+}
+
+Enum measurement_condition {       // v4 — ClinicalMeasurement.measurement_condition
+  resting
+  exercise
+  pharmacologic_stress
+  supplemental_o2
+  nitric_oxide
+  room_air
+  other
+}
+
+Enum data_source {                 // v4 — méta FHIR-aware (-> Provenance / meta.source)
+  ehr_extract
+  manual_entry
+  nlp_pipeline
+  device_export
+}
+
+Enum validation_status {           // v4 — méta FHIR-aware (-> meta.tag)
+  raw
+  reviewed
+  validated
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "technical-success",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem technical-success</b></p><a name=\"technical-success\"> </a><a name=\"hctechnical-success\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/technical-success</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">complete<a name=\"technical-success-complete\"> </a></td><td>Complet</td></tr><tr><td style=\"white-space:nowrap\">partial<a name=\"technical-success-partial\"> </a></td><td>Partiel</td></tr><tr><td style=\"white-space:nowrap\">failed<a name=\"technical-success-failed\"> </a></td><td>Échec</td></tr><tr><td style=\"white-space:nowrap\">aborted<a name=\"technical-success-aborted\"> </a></td><td>Interrompu</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/technical-success",
+  "version" : "0.6.0",
+  "name" : "TechnicalSuccess",
+  "title" : "TAUSSIG — Succès technique de la procédure",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Niveau de succès technique au niveau procédure.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "complete",
+    "display" : "Complet"
+  },
+  {
+    "code" : "partial",
+    "display" : "Partiel"
+  },
+  {
+    "code" : "failed",
+    "display" : "Échec"
+  },
+  {
+    "code" : "aborted",
+    "display" : "Interrompu"
+  }]
+}

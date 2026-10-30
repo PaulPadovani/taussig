@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/measurement-condition> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "measurement-condition"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem measurement-condition</b></p><a name=\"measurement-condition\"> </a><a name=\"hcmeasurement-condition\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-condition</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">resting<a name=\"measurement-condition-resting\"> </a></td><td>Repos</td></tr><tr><td style=\"white-space:nowrap\">exercise<a name=\"measurement-condition-exercise\"> </a></td><td>Effort</td></tr><tr><td style=\"white-space:nowrap\">pharmacologic_stress<a name=\"measurement-condition-pharmacologic_stress\"> </a></td><td>Stress pharmacologique</td></tr><tr><td style=\"white-space:nowrap\">supplemental_o2<a name=\"measurement-condition-supplemental_o2\"> </a></td><td>Oxygène</td></tr><tr><td style=\"white-space:nowrap\">nitric_oxide<a name=\"measurement-condition-nitric_oxide\"> </a></td><td>Monoxyde d'azote</td></tr><tr><td style=\"white-space:nowrap\">room_air<a name=\"measurement-condition-room_air\"> </a></td><td>Air ambiant</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"measurement-condition-other\"> </a></td><td>Autre</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/measurement-condition"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "MeasurementCondition"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Condition de mesure"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Condition physiologique/pharmacologique pendant la mesure."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "resting" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Repos" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "exercise" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Effort" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "pharmacologic_stress" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Stress pharmacologique" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "supplemental_o2" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oxygène" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nitric_oxide" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Monoxyde d'azote" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "room_air" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Air ambiant" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Autre" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/measurement-condition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

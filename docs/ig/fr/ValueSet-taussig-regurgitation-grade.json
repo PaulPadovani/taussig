@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "taussig-regurgitation-grade",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-regurgitation-grade</b></p><a name=\"taussig-regurgitation-grade\"> </a><a name=\"hctaussig-regurgitation-grade\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/260405006\">260405006</a></td><td>trace</td></tr><tr><td><a href=\"http://snomed.info/id/255604002\">255604002</a></td><td>gravité légère</td></tr><tr><td><a href=\"http://snomed.info/id/6736007\">6736007</a></td><td>gravité modérée</td></tr><tr><td><a href=\"http://snomed.info/id/24484000\">24484000</a></td><td>gravité sévère</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/taussig-regurgitation-grade",
+  "version" : "0.6.0",
+  "name" : "TaussigRegurgitationGrade",
+  "title" : "TAUSSIG — Grade de régurgitation (valeurs codées)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Échelle qualitative de la régurgitation valvulaire, valeur de la propriété de mesure regurgitation_grade (Observation.valueCodeableConcept). Qualifier values SNOMED CT dont l'existence et le libellé FR ont été vérifiés sur le SMT ; le choix de l'échelle reste à valider cliniquement.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "260405006",
+        "display" : "trace"
+      },
+      {
+        "code" : "255604002",
+        "display" : "gravité légère"
+      },
+      {
+        "code" : "6736007",
+        "display" : "gravité modérée"
+      },
+      {
+        "code" : "24484000",
+        "display" : "gravité sévère"
+      }]
+    }]
+  }
+}

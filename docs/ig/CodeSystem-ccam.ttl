@@ -1,0 +1,224 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/ccam> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ccam"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem ccam</b></p><a name=\"ccam\"> </a><a name=\"hcccam\"> </a><p>This case-sensitive code system <code>https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM</code> provides <b>a fragment</b> that includes following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">DFQH001<a name=\"ccam-DFQH001\"> </a></td><td>Artériographie sélective du tronc et/ou des branches de l'artère pulmonaire, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFQH002<a name=\"ccam-DFQH002\"> </a></td><td>Artériographie hypersélective des artères pulmonaires, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DGQH004<a name=\"ccam-DGQH004\"> </a></td><td>Artériographie de l'aorte et de ses branches, par injection intraveineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DGQH006<a name=\"ccam-DGQH006\"> </a></td><td>Artériographie globale de l'aorte thoracique, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DAAF001<a name=\"ccam-DAAF001\"> </a></td><td>Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DAAF002<a name=\"ccam-DAAF002\"> </a></td><td>Dilatation intraluminale de la voie d'éjection infraaortique, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFAF001<a name=\"ccam-DFAF001\"> </a></td><td>Dilatation intraluminale de plusieurs branches de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFAF002<a name=\"ccam-DFAF002\"> </a></td><td>Dilatation intraluminale d'une branche de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFAF003<a name=\"ccam-DFAF003\"> </a></td><td>Dilatation intraluminale d'une branche de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFAF004<a name=\"ccam-DFAF004\"> </a></td><td>Dilatation intraluminale de plusieurs branches de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DGAF001<a name=\"ccam-DGAF001\"> </a></td><td>Dilatation intraluminale de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DGAF004<a name=\"ccam-DGAF004\"> </a></td><td>Dilatation intraluminale d'une coarctation de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DGAF006<a name=\"ccam-DGAF006\"> </a></td><td>Dilatation intraluminale d'une coarctation de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DGAF007<a name=\"ccam-DGAF007\"> </a></td><td>Dilatation intraluminale de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DGLF003<a name=\"ccam-DGLF003\"> </a></td><td>Pose d'endoprothèse couverte dans l'aorte thoracique, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EZGF001<a name=\"ccam-EZGF001\"> </a></td><td>Ablation d'une endoprothèse vasculaire ou d'un filtre cave ayant migré en position intracardiaque ou intravasculaire, par voie vasculaire transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DASF002<a name=\"ccam-DASF002\"> </a></td><td>Fermeture d'une déhiscence d'une prothèse de cloisonnement intraatrial, par voie vasculaire transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DASF003<a name=\"ccam-DASF003\"> </a></td><td>Fermeture de communication interventriculaire, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DASF004<a name=\"ccam-DASF004\"> </a></td><td>Fermeture d'une communication interatriale, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DASF005<a name=\"ccam-DASF005\"> </a></td><td>Fermeture d'un foramen ovale perméable, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DBSF001<a name=\"ccam-DBSF001\"> </a></td><td>Fermeture d'une déhiscence par désinsertion de prothèse orificielle cardiaque, par voie vasculaire transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFSF001<a name=\"ccam-DFSF001\"> </a></td><td>Oblitération d'anévrisme sacculaire de l'artère pulmonaire, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EQLF004<a name=\"ccam-EQLF004\"> </a></td><td>Pose de dispositif de mesure des pressions du cœur droit et du débit cardiaque, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EQQF001<a name=\"ccam-EQQF001\"> </a></td><td>Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale</td></tr><tr><td style=\"white-space:nowrap\">EQQF002<a name=\"ccam-EQQF002\"> </a></td><td>Mesure et enregistrement des pressions du cœur gauche et de l'aorte, sans injection de produit de contraste, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EQQF003<a name=\"ccam-EQQF003\"> </a></td><td>Mesure et enregistrement des pressions intravasculaires pulmonaires et systémiques et des différences artérioveineuses des contenus artériels en oxygène, à l'état basal et après administration d'agent pharmacologique vasodilatateur, par voie vasculaire transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EQQF004<a name=\"ccam-EQQF004\"> </a></td><td>Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial</td></tr><tr><td style=\"white-space:nowrap\">EQQF006<a name=\"ccam-EQQF006\"> </a></td><td>Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, sans injection de produit de contraste, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EQQH001<a name=\"ccam-EQQH001\"> </a></td><td>Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, avec injection de produit de contraste, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EQQH002<a name=\"ccam-EQQH002\"> </a></td><td>Mesure et enregistrement des pressions du cœur gauche et de l'aorte, avec injection de produit de contraste, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">EQQH004<a name=\"ccam-EQQH004\"> </a></td><td>Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial</td></tr><tr><td style=\"white-space:nowrap\">EQQH005<a name=\"ccam-EQQH005\"> </a></td><td>Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, avant l'âge de 24 mois</td></tr><tr><td style=\"white-space:nowrap\">EQQH006<a name=\"ccam-EQQH006\"> </a></td><td>Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, à l'âge de 24 mois ou plus</td></tr><tr><td style=\"white-space:nowrap\">DAGF001<a name=\"ccam-DAGF001\"> </a></td><td>Ablation de corps étranger intracardiaque ou intravasculaire, par voie vasculaire transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DAAF003<a name=\"ccam-DAAF003\"> </a></td><td>Agrandissement d'une communication interatriale, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DAMF001<a name=\"ccam-DAMF001\"> </a></td><td>Création d'une communication interatriale, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFNF001<a name=\"ccam-DFNF001\"> </a></td><td>Fibrinolyse in situ de l'artère pulmonaire, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DFNF002<a name=\"ccam-DFNF002\"> </a></td><td>Thrombolyse mécanique ou thromboaspiration de l'artère pulmonaire, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DBLF001<a name=\"ccam-DBLF001\"> </a></td><td>Pose d'une bioprothèse de la valve aortique, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DBLF009<a name=\"ccam-DBLF009\"> </a></td><td>Pose d'une bioprothèse de la valve pulmonaire par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DBAF001<a name=\"ccam-DBAF001\"> </a></td><td>Dilatation intraluminale de l'orifice aortique, par voie artérielle transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DBAF002<a name=\"ccam-DBAF002\"> </a></td><td>Dilatation intraluminale de l'orifice pulmonaire sans perforation de la valve atrésique, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DBAF003<a name=\"ccam-DBAF003\"> </a></td><td>Dilatation intraluminale de l'orifice atrioventriculaire droit, par voie veineuse transcutanée</td></tr><tr><td style=\"white-space:nowrap\">DBAF004<a name=\"ccam-DBAF004\"> </a></td><td>Dilatation intraluminale de l'orifice atrioventriculaire gauche, par voie veineuse transcutanée avec perforation du septum interatrial</td></tr><tr><td style=\"white-space:nowrap\">DBAF005<a name=\"ccam-DBAF005\"> </a></td><td>Dilatation intraluminale de l'orifice pulmonaire avec perforation de la valve atrésique, par voie veineuse transcutanée</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.name [ fhir:value "TaussigCcam"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — CCAM (sous-ensemble cath congénital)"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "CCAM © CNAM. Réutilisation des libellés à usage de recherche."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "fragment"] ;
+  fhir:CodeSystem.count [ fhir:value "45"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFQH001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artériographie sélective du tronc et/ou des branches de l'artère pulmonaire, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFQH002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artériographie hypersélective des artères pulmonaires, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DGQH004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artériographie de l'aorte et de ses branches, par injection intraveineuse transcutanée" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DGQH006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artériographie globale de l'aorte thoracique, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAAF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAAF002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de la voie d'éjection infraaortique, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFAF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de plusieurs branches de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFAF002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale d'une branche de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFAF003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale d'une branche de l'artère pulmonaire avec pose d'endoprothèse, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFAF004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de plusieurs branches de l'artère pulmonaire sans pose d'endoprothèse, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DGAF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DGAF004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale d'une coarctation de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DGAF006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale d'une coarctation de l'aorte thoracique sans pose d'endoprothèse, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DGAF007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de l'aorte thoracique avec pose d'endoprothèse, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DGLF003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pose d'endoprothèse couverte dans l'aorte thoracique, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EZGF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ablation d'une endoprothèse vasculaire ou d'un filtre cave ayant migré en position intracardiaque ou intravasculaire, par voie vasculaire transcutanée" ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DASF002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fermeture d'une déhiscence d'une prothèse de cloisonnement intraatrial, par voie vasculaire transcutanée" ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DASF003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fermeture de communication interventriculaire, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DASF004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fermeture d'une communication interatriale, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DASF005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fermeture d'un foramen ovale perméable, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBSF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fermeture d'une déhiscence par désinsertion de prothèse orificielle cardiaque, par voie vasculaire transcutanée" ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFSF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oblitération d'anévrisme sacculaire de l'artère pulmonaire, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQLF004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pose de dispositif de mesure des pressions du cœur droit et du débit cardiaque, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale" ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQF002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur gauche et de l'aorte, sans injection de produit de contraste, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQF003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions intravasculaires pulmonaires et systémiques et des différences artérioveineuses des contenus artériels en oxygène, à l'état basal et après administration d'agent pharmacologique vasodilatateur, par voie vasculaire transcutanée" ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQF004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, sans injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial" ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQF006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, sans injection de produit de contraste, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQH001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur droit et de l'artère pulmonaire, avec injection de produit de contraste, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQH002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur gauche et de l'aorte, avec injection de produit de contraste, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQH004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée avec perforation du septum interatrial" ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQH005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, avant l'âge de 24 mois" ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "EQQH006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mesure et enregistrement des pressions du cœur droit, de l'artère pulmonaire et du cœur gauche, avec injection de produit de contraste, par voie veineuse transcutanée et par voie artérielle transcutanée ou cathétérisme du foramen ovale, à l'âge de 24 mois ou plus" ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAGF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ablation de corps étranger intracardiaque ou intravasculaire, par voie vasculaire transcutanée" ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAAF003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Agrandissement d'une communication interatriale, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DAMF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Création d'une communication interatriale, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFNF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fibrinolyse in situ de l'artère pulmonaire, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DFNF002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Thrombolyse mécanique ou thromboaspiration de l'artère pulmonaire, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBLF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pose d'une bioprothèse de la valve aortique, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBLF009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Pose d'une bioprothèse de la valve pulmonaire par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBAF001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de l'orifice aortique, par voie artérielle transcutanée" ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBAF002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de l'orifice pulmonaire sans perforation de la valve atrésique, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBAF003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de l'orifice atrioventriculaire droit, par voie veineuse transcutanée" ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBAF004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de l'orifice atrioventriculaire gauche, par voie veineuse transcutanée avec perforation du septum interatrial" ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "DBAF005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dilatation intraluminale de l'orifice pulmonaire avec perforation de la valve atrésique, par voie veineuse transcutanée" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/ccam.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

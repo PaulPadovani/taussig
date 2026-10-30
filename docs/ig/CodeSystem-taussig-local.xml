@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="taussig-local"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem taussig-local</b></p><a name="taussig-local"> </a><a name="hctaussig-local"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/taussig-local</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style="white-space:nowrap">TAUSSIG-CAVOPULM-INF<a name="taussig-local-TAUSSIG-CAVOPULM-INF"> </a></td><td>Dérivation cavopulmonaire inférieure (VCI vers artère pulmonaire)</td><td><div><p>Anastomose entre la veine cave inférieure et l'artère pulmonaire, isolée. SNOMED CT ne
+fournit de concept que pour la dérivation supérieure (443327008) et pour la dérivation
+totale (443298009), et aucune structure corporelle pour la composante inférieure seule.</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/taussig-local"/>
+  <version value="0.6.0"/>
+  <name value="TaussigLocal"/>
+  <title value="TAUSSIG — Concepts locaux (sans équivalent de référence)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Concepts nécessaires au modèle et vérifiés absents des terminologies de référence. Chaque code documente l'absence constatée."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="TAUSSIG-CAVOPULM-INF"/>
+    <display value="Dérivation cavopulmonaire inférieure (VCI vers artère pulmonaire)"/>
+    <definition value="Anastomose entre la veine cave inférieure et l'artère pulmonaire, isolée. SNOMED CT ne&#xA;    fournit de concept que pour la dérivation supérieure (443327008) et pour la dérivation&#xA;    totale (443298009), et aucune structure corporelle pour la composante inférieure seule."/>
+  </concept>
+</CodeSystem>

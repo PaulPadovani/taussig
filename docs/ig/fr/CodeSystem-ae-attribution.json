@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ae-attribution",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem ae-attribution</b></p><a name=\"ae-attribution\"> </a><a name=\"hcae-attribution\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/ae-attribution</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">device<a name=\"ae-attribution-device\"> </a></td><td>Dispositif</td></tr><tr><td style=\"white-space:nowrap\">vascular_access<a name=\"ae-attribution-vascular_access\"> </a></td><td>Abord vasculaire</td></tr><tr><td style=\"white-space:nowrap\">anesthesia<a name=\"ae-attribution-anesthesia\"> </a></td><td>Anesthésie</td></tr><tr><td style=\"white-space:nowrap\">procedure_technique<a name=\"ae-attribution-procedure_technique\"> </a></td><td>Technique procédurale</td></tr><tr><td style=\"white-space:nowrap\">patient_condition<a name=\"ae-attribution-patient_condition\"> </a></td><td>État du patient</td></tr><tr><td style=\"white-space:nowrap\">contrast<a name=\"ae-attribution-contrast\"> </a></td><td>Produit de contraste</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"ae-attribution-unknown\"> </a></td><td>Inconnu</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/ae-attribution",
+  "version" : "0.6.0",
+  "name" : "AeAttribution",
+  "title" : "TAUSSIG — Attribution d'un EI",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Cause suspectée d'un événement indésirable.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "device",
+    "display" : "Dispositif"
+  },
+  {
+    "code" : "vascular_access",
+    "display" : "Abord vasculaire"
+  },
+  {
+    "code" : "anesthesia",
+    "display" : "Anesthésie"
+  },
+  {
+    "code" : "procedure_technique",
+    "display" : "Technique procédurale"
+  },
+  {
+    "code" : "patient_condition",
+    "display" : "État du patient"
+  },
+  {
+    "code" : "contrast",
+    "display" : "Produit de contraste"
+  },
+  {
+    "code" : "unknown",
+    "display" : "Inconnu"
+  }]
+}

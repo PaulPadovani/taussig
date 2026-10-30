@@ -1,0 +1,53 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ae-management",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem ae-management</b></p><a name=\"ae-management\"> </a><a name=\"hcae-management\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/ae-management</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">transcatheter_bailout<a name=\"ae-management-transcatheter_bailout\"> </a></td><td>Geste de rattrapage transcathéter</td></tr><tr><td style=\"white-space:nowrap\">surgical_bailout<a name=\"ae-management-surgical_bailout\"> </a></td><td>Geste de rattrapage chirurgical</td></tr><tr><td style=\"white-space:nowrap\">no_treatment<a name=\"ae-management-no_treatment\"> </a></td><td>Aucun traitement requis</td></tr><tr><td style=\"white-space:nowrap\">medical_treatment<a name=\"ae-management-medical_treatment\"> </a></td><td>Traitement médical</td></tr><tr><td style=\"white-space:nowrap\">transfusion<a name=\"ae-management-transfusion\"> </a></td><td>Transfusion</td></tr><tr><td style=\"white-space:nowrap\">thrombolysis<a name=\"ae-management-thrombolysis\"> </a></td><td>Thrombolyse</td></tr><tr><td style=\"white-space:nowrap\">surgical_intervention<a name=\"ae-management-surgical_intervention\"> </a></td><td>Intervention chirurgicale</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/ae-management",
+  "version" : "0.6.0",
+  "name" : "TaussigAeManagement",
+  "title" : "TAUSSIG — Gestion de la complication (prise en charge péri-procédurale)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Variable de prise en charge d'un événement indésirable de cathétérisme congénital (échelle d'escalade). Ancrage IPCCC/EPCC chap. 15 + SNOMED procédure. À valider cliniquement.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "transcatheter_bailout",
+    "display" : "Geste de rattrapage transcathéter"
+  },
+  {
+    "code" : "surgical_bailout",
+    "display" : "Geste de rattrapage chirurgical"
+  },
+  {
+    "code" : "no_treatment",
+    "display" : "Aucun traitement requis"
+  },
+  {
+    "code" : "medical_treatment",
+    "display" : "Traitement médical"
+  },
+  {
+    "code" : "transfusion",
+    "display" : "Transfusion"
+  },
+  {
+    "code" : "thrombolysis",
+    "display" : "Thrombolyse"
+  },
+  {
+    "code" : "surgical_intervention",
+    "display" : "Intervention chirurgicale"
+  }]
+}

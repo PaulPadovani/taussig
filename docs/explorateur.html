@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TAUSSIG — Explorateur du modèle</title>
+<link rel="stylesheet" href="assets/taussig/styles.css">
+<style>
+/* ————— chrome ————— */
+.entete{display:flex;align-items:center;gap:28px;padding:0 40px;height:60px;border-bottom:var(--trait-fin) solid var(--ligne-1);background:var(--papier-0);position:sticky;top:0;z-index:20}
+.marque{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--encre-1)}
+.marque b{font:var(--graisse-demi) 19px/1 var(--police-titre);letter-spacing:.04em}
+.marque span{font-size:var(--taille-2xs);letter-spacing:var(--approche-caps);text-transform:uppercase;color:var(--encre-3)}
+.entete nav{display:flex;gap:22px;margin-left:auto}
+.nav-lien{font-size:var(--taille-md);color:var(--encre-2);text-decoration:none;padding:19px 1px;border-bottom:var(--trait-fort) solid transparent}
+.nav-lien:hover{color:var(--primaire)}
+.nav-lien[aria-current="page"]{color:var(--encre-1);font-weight:var(--graisse-moyenne);border-bottom-color:var(--primaire)}
+.ariane{display:flex;align-items:center;gap:9px;font-size:var(--taille-sm);padding:12px 40px 0;color:var(--encre-3);flex-wrap:wrap}
+.ariane a{color:var(--encre-3);text-decoration:none;cursor:pointer}.ariane a:hover{color:var(--primaire);text-decoration:underline}
+.ariane .sep{color:var(--encre-4)}.ariane [aria-current]{color:var(--encre-1);font-weight:var(--graisse-moyenne)}
+main{max-width:1760px;margin:0 auto;padding:4px 40px 72px}
+.tete-page{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:10px 0 4px}
+.tete-page h1{font-size:var(--taille-3xl)}
+.tete-page .sous{font-size:var(--taille-md);color:var(--encre-3)}
+.intro{max-width:var(--mesure-prose);font-size:var(--taille-prose);line-height:var(--interligne-texte);color:var(--encre-2);margin:6px 0 14px}
+.barre-outils{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.bouton{min-height:40px;font:var(--graisse-moyenne) var(--taille-sm)/1 var(--police-texte);color:var(--primaire);background:var(--papier-0);border:var(--trait-fin) solid var(--ligne-2);border-radius:var(--rayon-sm);padding:8px 14px;cursor:pointer;transition:background var(--duree-1),border-color var(--duree-1),color var(--duree-1)}
+.bouton:hover{background:var(--primaire-fond);border-color:var(--primaire-bord)}
+.bouton:active{background:var(--papier-2)}
+.legende{display:flex;gap:16px;align-items:center;font-size:var(--taille-xs);color:var(--encre-3);flex-wrap:wrap;margin-left:auto}
+.legende span{display:inline-flex;align-items:center;gap:6px}
+.pastille-info{width:16px;height:16px;border-radius:50%;border:1px solid var(--relationnel-bord);font:600 italic 10px/14px var(--police-titre);text-align:center;color:var(--relationnel)}
+
+/* ————— scène ————— */
+.scene{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;align-items:start}
+.scene.avec-panneau{grid-template-columns:minmax(0,1fr) 360px}
+.canevas-cadre{border:var(--trait-fin) solid var(--relationnel-bord);border-top:var(--trait-accent) solid var(--relationnel-vif);border-radius:var(--rayon-vif);background:var(--papier-0);overflow:auto;max-height:78vh}
+.p-tete{display:flex;align-items:center;gap:10px;padding:10px 16px;position:sticky;top:0;left:0;z-index:5;background:color-mix(in oklch,var(--papier-0) 94%,transparent);border-bottom:var(--trait-fin) solid var(--ligne-1);backdrop-filter:blur(6px)}
+.puce{display:inline-block;font-size:11px;font-weight:var(--graisse-demi);letter-spacing:.05em;padding:3px 10px;line-height:1.2;background:var(--relationnel-fond);color:var(--relationnel);border:1px solid var(--relationnel-bord);border-radius:var(--rayon-vif);text-transform:uppercase}
+.p-tete .aide{font-size:var(--taille-xs);color:var(--encre-3)}
+.canevas{position:relative;min-width:1312px;padding:10px 24px 32px;background:radial-gradient(circle, var(--ligne-1) 1px, transparent 1px);background-size:24px 24px}
+.liens{position:absolute;top:0;left:0;pointer-events:none;overflow:visible;z-index:1}
+.lien{fill:none;stroke:var(--relationnel-vif);stroke-width:var(--trait-fin);opacity:.3;vector-effect:non-scaling-stroke;transition:opacity var(--duree-1),stroke-width var(--duree-1)}
+.lien.actif{opacity:1;stroke-width:var(--trait-fort)}
+.ancre-lien{fill:var(--papier-0);stroke:var(--relationnel-vif);stroke-width:1.5;opacity:.62;vector-effect:non-scaling-stroke;transition:opacity var(--duree-1),fill var(--duree-1)}
+.ancre-lien.actif{fill:var(--relationnel-vif);opacity:1}
+.lanes{position:relative;display:flex;gap:40px;align-items:flex-start;z-index:2}
+.lane{display:flex;flex-direction:column;gap:16px;width:216px;flex:0 0 216px}
+.lane-tete{font-family:var(--police-titre);font-size:var(--taille-sm);color:var(--encre-3);text-align:center;padding:6px 8px;background:var(--papier-2);border:var(--trait-fin) solid var(--ligne-1);border-radius:var(--rayon-md);position:sticky;top:52px;z-index:3}
+
+/* ————— carte-table ————— */
+.table-bloc{border:var(--trait-moyen) solid var(--relationnel-bord);border-radius:var(--rayon-vif);background:var(--papier-0);box-shadow:var(--ombre-1);transition:box-shadow var(--duree-1),border-color var(--duree-1),opacity var(--duree-1);scroll-margin:80px}
+.table-bloc.voisin{border-color:var(--relationnel-vif)}
+.table-bloc.actif{border-color:var(--relationnel-vif);box-shadow:var(--ombre-2)}
+.table-bloc.estompe{opacity:.4}
+.tb-tete{display:flex;align-items:center;gap:6px;min-height:38px;padding:5px 8px 5px 10px;background:var(--relationnel-fond);border-bottom:var(--trait-fin) solid var(--relationnel-bord);font-family:var(--police-code);font-size:var(--taille-xs);font-weight:var(--graisse-demi);color:var(--relationnel);user-select:none}
+.tb-tete:hover{background:color-mix(in oklch,var(--relationnel-fond) 72%,var(--relationnel-bord))}
+.tb-basculer{display:flex;align-items:center;gap:6px;min-width:0;flex:1;padding:0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer}
+.tb-tete .pli{font-size:9px;color:var(--relationnel-vif);transition:transform var(--duree-2) var(--ease-sortie)}
+.table-bloc.ouverte .pli{transform:rotate(90deg)}
+.tb-tete .nom{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tb-tete .info{margin-left:auto;flex:0 0 auto;width:26px;height:26px;padding:0;border-radius:50%;border:var(--trait-fin) solid var(--relationnel-bord);background:var(--papier-0);color:var(--relationnel);font:600 italic 11px/24px var(--police-titre);text-align:center;cursor:pointer;transition:background var(--duree-1),color var(--duree-1)}
+.tb-tete .info:hover,.tb-tete .info.actif{background:var(--relationnel);color:var(--papier-0);border-color:var(--relationnel)}
+.tb-cols{display:grid;grid-template-rows:0fr;transition:grid-template-rows var(--duree-2) var(--ease-sortie)}
+.table-bloc.ouverte .tb-cols{grid-template-rows:1fr}
+.tb-cols>div{overflow:hidden}
+.tb-col{display:flex;align-items:center;gap:6px;padding:3.5px 10px;font-size:var(--taille-2xs);border-top:var(--trait-fin) solid var(--ligne-1)}
+.tb-col:first-child{border-top:none}
+.tb-col.cliquable{cursor:pointer}
+.tb-col.cliquable:hover{background:var(--relationnel-fond)}
+.tb-col.selectionnee{background:var(--relationnel-fond);box-shadow:inset 2px 0 0 var(--relationnel-vif)}
+.tb-col.reliee{background:var(--relationnel-fond);box-shadow:inset 3px 0 0 var(--relationnel-vif)}
+.tb-col .n{font-family:var(--police-code);color:var(--encre-2)}
+.tb-col.cliquable .n{color:var(--relationnel);text-decoration:underline;text-decoration-color:var(--relationnel-bord);text-underline-offset:2px}
+.tb-col .t{margin-left:auto;color:var(--encre-4);font-size:10px;font-family:var(--police-code);white-space:nowrap}
+.tb-col .t.fk{color:var(--relationnel)}
+.cle{font:var(--graisse-demi) 8.5px var(--police-code);letter-spacing:.03em;padding:1px 4px;border-radius:var(--rayon-vif);background:var(--relationnel-fond);color:var(--relationnel);border:1px solid var(--relationnel-bord);flex:0 0 auto}
+.tb-resume{padding:5px 10px 6px;font-size:10.5px;color:var(--encre-4);font-variant-numeric:tabular-nums;display:flex;justify-content:space-between}
+
+/* ————— panneau latéral (choix de conception) ————— */
+.panneau-lateral{border:var(--trait-fin) solid var(--ligne-2);border-radius:var(--rayon-lg);background:var(--papier-0);box-shadow:var(--ombre-3);overflow:hidden;position:sticky;top:76px;transition:opacity var(--duree-2),transform var(--duree-3) var(--ease-entree-sortie)}
+.panneau-lateral.cache{display:none}
+.pl-tete{display:flex;align-items:center;gap:8px;padding:12px 18px;border-bottom:var(--trait-fin) solid var(--ligne-1)}
+.pl-tete .etiquette{color:var(--primaire)}
+.pl-tete .fermer{margin-left:auto;width:36px;height:36px;border:none;border-radius:var(--rayon-sm);background:none;font-size:18px;color:var(--encre-3);cursor:pointer;line-height:1}
+.pl-tete .fermer:hover{color:var(--danger)}
+.pl-corps{padding:16px 18px;font-size:var(--taille-sm);line-height:var(--interligne-texte);color:var(--encre-2)}
+.pl-corps h4{font-size:var(--taille-lg);color:var(--encre-1);margin-bottom:10px}
+.pl-corps p+p{margin-top:9px}
+.pl-corps code{font-size:.9em;background:var(--relationnel-fond);color:var(--relationnel);padding:0 3px;border-radius:var(--rayon-vif)}
+.pl-corps .decision{border-top:var(--trait-fin) solid var(--ligne-1);margin-top:14px;padding-top:10px;font-size:var(--taille-xs);color:var(--encre-3)}
+
+/* ————— overlay colonne : DOUBLE FOCALE relationnel ↔ FHIR ————— */
+.voile{position:fixed;inset:0;background:oklch(24% .01 250 / .38);z-index:40;opacity:0;pointer-events:none;transition:opacity var(--duree-2)}
+.voile.ouvert{opacity:1;pointer-events:auto}
+.detail{position:fixed;z-index:41;top:50%;left:50%;transform:translate(-50%,-48%) scale(.98);width:min(980px,92vw);max-height:88vh;background:var(--papier-0);border:var(--trait-fin) solid var(--ligne-2);border-radius:var(--rayon-lg);box-shadow:var(--ombre-3);display:flex;flex-direction:column;opacity:0;pointer-events:none;transition:opacity var(--duree-2),transform var(--duree-3) var(--ease-sortie)}
+.detail.ouvert{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+.d-tete{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:var(--trait-fin) solid var(--ligne-1)}
+.d-tete .chemin{font-family:var(--police-code);font-size:var(--taille-md);color:var(--encre-1)}
+.d-tete .chemin b{color:var(--relationnel)}
+.d-tete .typ{font-size:var(--taille-xs);color:var(--encre-3);padding:2px 8px;border:1px solid var(--ligne-2);border-radius:var(--rayon-plein)}
+.d-tete .fermer{margin-left:auto;width:40px;height:40px;border:none;border-radius:var(--rayon-sm);background:none;font-size:21px;color:var(--encre-3);cursor:pointer;line-height:1}
+.d-tete .fermer:hover{color:var(--danger)}
+.d-def{padding:14px 20px;font-size:var(--taille-md);line-height:var(--interligne-texte);color:var(--encre-2);border-bottom:var(--trait-fin) solid var(--ligne-1)}
+.d-panes{display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden;flex:1;min-height:0}
+.pane{padding:16px 20px;overflow:auto;min-height:0}
+.pane.rel{border-top:var(--trait-accent) solid var(--relationnel-vif)}
+.pane.fhir{border-top:var(--trait-accent) solid var(--fhir-vif);border-left:var(--trait-fin) solid var(--ligne-1)}
+.pane-titre{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.pane-titre .reg{font-size:var(--taille-2xs);letter-spacing:var(--approche-caps);text-transform:uppercase;font-weight:var(--graisse-demi)}
+.pane.rel .reg{color:var(--relationnel)}.pane.fhir .reg{color:var(--fhir)}
+.faits{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.fait{font-size:var(--taille-xs);color:var(--encre-2);background:var(--papier-1);border:var(--trait-fin) solid var(--ligne-1);border-radius:var(--rayon-sm);padding:3px 9px}
+.fait b{color:var(--encre-1);font-weight:var(--graisse-demi)}
+.vs-tete{font-size:var(--taille-xs);color:var(--encre-3);margin-bottom:8px}
+.vs-tete b{color:var(--relationnel);font-variant-numeric:tabular-nums}
+.vs-liste{border:var(--trait-fin) solid var(--ligne-1);border-radius:var(--rayon-sm);overflow:hidden;font-variant-numeric:tabular-nums}
+.vs-ligne{display:flex;gap:10px;padding:4px 10px;font-size:var(--taille-xs);border-top:var(--trait-fin) solid var(--ligne-1)}
+.vs-ligne:first-child{border-top:none}
+.vs-ligne:nth-child(even){background:var(--papier-1)}
+.vs-ligne .lib{color:var(--encre-2);flex:1;min-width:0}
+.vs-ligne .cod{font-family:var(--police-code);color:var(--relationnel);white-space:nowrap}
+.enum-puces{display:flex;flex-wrap:wrap;gap:6px}
+.enum-puce{font:var(--graisse-normale) var(--taille-xs)/1.3 var(--police-code);color:var(--relationnel);background:var(--relationnel-fond);border:1px solid var(--relationnel-bord);border-radius:var(--rayon-vif);padding:2px 7px}
+.chemin-fhir{font-family:var(--police-code);font-size:var(--taille-sm);color:var(--fhir);background:var(--fhir-fond);border:1px solid var(--fhir-bord);border-radius:var(--rayon-sm);padding:8px 10px;margin-bottom:12px;word-break:break-all}
+.ex-tete{font-size:var(--taille-xs);color:var(--encre-3);margin:6px 0 6px}
+pre.json{margin:0;background:var(--ilot-fond);color:var(--ilot-texte);border-radius:var(--rayon-md);padding:12px 14px;font-size:var(--taille-sm);line-height:1.5;overflow:auto;max-height:340px;white-space:pre}
+pre.json .k{color:var(--syn-cle)}pre.json .s{color:var(--syn-chaine)}pre.json .num{color:var(--syn-nombre)}pre.json .p{color:var(--syn-ponct)}
+.aucun{font-size:var(--taille-sm);color:var(--encre-3)}
+
+@media (max-width:1180px){
+  .scene.avec-panneau{grid-template-columns:minmax(0,1fr)}
+  .panneau-lateral{position:fixed;z-index:30;top:76px;right:16px;bottom:16px;width:min(400px,calc(100vw - 32px));overflow:auto}
+  .d-panes{grid-template-columns:1fr}.pane.fhir{border-left:none;border-top:var(--trait-accent) solid var(--fhir-vif)}
+}
+@media (max-width:760px){
+  .entete{height:auto;min-height:60px;padding:8px 20px;gap:8px 18px;flex-wrap:wrap}
+  .marque span{display:none}.entete nav{order:2;width:100%;gap:18px;overflow-x:auto;margin-left:0}.nav-lien{padding:8px 1px 10px;white-space:nowrap}
+  .ariane{padding-left:20px;padding-right:20px}main{padding-left:20px;padding-right:20px}.tete-page h1{font-size:var(--taille-2xl)}
+  .legende{width:100%;margin-left:0}.canevas-cadre{max-height:72vh}.panneau-lateral{top:116px}
+}
+@media (prefers-reduced-motion:reduce){.tb-cols,.tb-tete .pli,.panneau-lateral,.lien,.ancre-lien{transition:none}}
+</style>
+<link rel="stylesheet" href="assets/public.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><meta name="description" content="TAUSSIG — modèle de données, dictionnaire et ressources de recherche en cathétérisme cardiaque congénital."></head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a><header class="entete"><a class="marque" href="index.html"><b>TAUSSIG</b><span class="brand-acronym"><strong>T</strong>ranslational <strong>A</strong>rchitecture for <strong>U</strong>nified <strong>S</strong>emantic, <strong>S</strong>tructuring and <strong>I</strong>nteroperable data <strong>G</strong>eneration in Pediatric Cardiology</span></a><nav aria-label="Navigation principale"><a class="nav-lien" href="index.html">Accueil</a><a class="nav-lien" href="methode.html">Méthode</a><a class="nav-lien" href="explorateur.html" aria-current="page">Modèle</a><a class="nav-lien" href="dictionnaire.html">Dictionnaire</a><a class="nav-lien" href="couverture.html">Terminologie</a><a class="nav-lien" href="profils-fhir.html">Profil FHIR</a><a class="nav-lien" href="trajectoires.html">Trajectoire</a><a class="nav-lien" href="telechargements.html">Téléchargements</a></nav></header>
+<nav class="ariane" id="ariane" aria-label="Fil d’Ariane"></nav>
+
+<main id="contenu" class="page-tool page-explorateur">
+  <div class="tete-page"><h1>Explorateur du modèle</h1><span class="sous" id="sousTitre"></span></div>
+  <p class="intro">Le modèle se lit de gauche à droite, comme une histoire clinique : le <b>contexte</b>, les <b>trois substrats</b> (ce que le patient est, traverse, porte), l’<b>acte</b> de cathétérisme, ses <b>gestes</b>, puis ses <b>mesures et résultats</b>. Dépliez une table pour ses colonnes ; cliquez une colonne <span style="color:var(--relationnel);text-decoration:underline;text-decoration-color:var(--relationnel-bord)">soulignée</span> pour sa définition, ses valeurs et sa correspondance FHIR ; ouvrez une pastille <span class="pastille-info">i</span> pour le choix de conception.</p>
+
+  <div class="barre-outils">
+    <button class="bouton" id="btnDeplier" type="button">Tout déplier</button>
+    <button class="bouton" id="btnReplier" type="button">Tout replier</button>
+    <div class="legende">
+      <span><i style="display:inline-block;width:14px;height:14px;border-radius:2px;background:var(--papier-0);border:1.5px solid var(--relationnel-bord)"></i> table</span>
+      <span><i style="display:inline-block;width:22px;height:1.5px;background:var(--relationnel-vif)"></i> clé étrangère</span>
+      <span><span class="cle">PK</span>/<span class="cle">FK</span> clés</span>
+      <span><span class="pastille-info">i</span> choix de conception</span>
+    </div>
+  </div>
+
+  <div class="scene" id="scene">
+    <section class="canevas-cadre" aria-label="Vue relationnelle du modèle">
+      <div class="p-tete"><span class="puce">Vue relationnelle</span><span class="aide" id="aideVue" aria-live="polite">19 tables · survolez pour les liens · cliquez une colonne soulignée</span></div>
+      <div class="canevas" id="canevas">
+        <svg class="liens" id="liens" aria-hidden="true"></svg>
+        <div class="lanes" id="lanes"></div>
+      </div>
+    </section>
+
+    <aside class="panneau-lateral cache" id="panneau" aria-label="Choix de conception" aria-hidden="true">
+      <div class="pl-tete"><span class="etiquette">Choix de conception</span><button class="fermer" id="plFermer" type="button" title="Fermer" aria-label="Fermer le choix de conception">×</button></div>
+      <div class="pl-corps" id="plCorps"></div>
+    </aside>
+  </div>
+</main>
+
+<div class="voile" id="voile"></div>
+<div class="detail" id="detail" role="dialog" aria-modal="true" aria-label="Détail de colonne" aria-hidden="true"></div>
+
+<script src="data/schema.js"></script>
+<script src="data/dict.js"></script>
+<script>
+const S = window.TAUSSIG_SCHEMA, D = window.TAUSSIG_DICT;
+const lanes = document.getElementById('lanes'), svg = document.getElementById('liens');
+const canevas = document.getElementById('canevas'), panneau = document.getElementById('panneau');
+const plCorps = document.getElementById('plCorps'), ariane = document.getElementById('ariane');
+const voile = document.getElementById('voile'), detail = document.getElementById('detail');
+const scene = document.getElementById('scene'), aideVue = document.getElementById('aideVue');
+const aideVueDefaut = `${S.meta.nbTables} tables · survolez pour les liens · cliquez une colonne soulignée`;
+let dernierFocus = null;
+
+document.getElementById('sousTitre').textContent =
+  `${S.meta.nbTables} tables · ${S.meta.nbRefs} relations · ${S.meta.nbEnums} listes de valeurs`;
+
+const liensParTable = {};
+S.refs.forEach(r => { liensParTable[r.from]=(liensParTable[r.from]||0)+1; liensParTable[r.to]=(liensParTable[r.to]||0)+1; });
+const carteDe = {}, tableDe = {};
+S.tables.forEach(t => tableDe[t.name] = t);
+const enumsFR = S.enums;
+const el = k => D.elements[k];
+
+// ————— rendu des lanes —————
+S.zones.forEach(z => {
+  const lane = document.createElement('div'); lane.className = 'lane';
+  lane.innerHTML = `<div class="lane-tete">${z.titre}</div>`;
+  S.tables.filter(t => t.zone === z.id).forEach(t => lane.appendChild(carteTable(t)));
+  lanes.appendChild(lane);
+});
+
+function carteTable(t){
+  const wrap = document.createElement('div');
+  wrap.className = 'table-bloc'; wrap.dataset.table = t.name;
+  const cols = t.columns.map(c => {
+    const cle = c.pk ? '<span class="cle">PK</span>' : (c.fk ? '<span class="cle">FK</span>' : '');
+    const tcls = c.fk ? 't fk' : 't';
+    const cliq = el(`${t.name}.${c.name}`) ? ' cliquable' : '';
+    const attrs = cliq ? ' role="button" tabindex="0" aria-haspopup="dialog"' : '';
+    return `<div class="tb-col${cliq}" data-col="${c.name}" data-rt="${c.rawtype}"${attrs}>${cle}<span class="n">${c.name}</span><span class="${tcls}">${c.type}</span></div>`;
+  }).join('');
+  const info = t.rationale ? `<button class="info" type="button" title="Choix de conception" aria-label="Voir le choix de conception pour ${t.name}">i</button>` : '';
+  const colsId = `cols-${t.name}`;
+  wrap.innerHTML =
+    `<div class="tb-tete"><button class="tb-basculer" type="button" aria-expanded="false" aria-controls="${colsId}"><span class="pli" aria-hidden="true">▶</span><span class="nom">${t.name}</span></button>${info}</div>
+     <div class="tb-cols" id="${colsId}"><div>${cols}</div></div>
+     <div class="tb-resume"><span>${t.columns.length} colonnes</span><span>${liensParTable[t.name]||0} liens</span></div>`;
+  carteDe[t.name] = wrap;
+  const bascule = wrap.querySelector('.tb-basculer');
+  const basculer = () => { wrap.classList.toggle('ouverte'); bascule.setAttribute('aria-expanded', wrap.classList.contains('ouverte')); apresLayout(); };
+  bascule.addEventListener('click', basculer);
+  wrap.querySelector('.info')?.addEventListener('click', e => { e.stopPropagation(); ouvrirChoix(t.name); });
+  wrap.querySelectorAll('.tb-col.cliquable').forEach(cd => {
+    cd.addEventListener('click', () => ouvrirColonne(t.name, cd.dataset.col));
+    cd.addEventListener('keydown', e => { if (e.key==='Enter' || e.key===' '){ e.preventDefault(); ouvrirColonne(t.name, cd.dataset.col); } });
+  });
+  wrap.addEventListener('mouseenter', () => surligner(t.name));
+  wrap.addEventListener('mouseleave', eteindre);
+  wrap.addEventListener('focusin', () => surligner(t.name));
+  wrap.addEventListener('focusout', e => { if (!wrap.contains(e.relatedTarget)) eteindre(); });
+  return wrap;
+}
+
+// ————— connecteurs SVG —————
+let chemins = [], ancres = [], dessinFrame;
+const nsSVG = 'http://www.w3.org/2000/svg';
+
+function elementAncre(nom, colonne){
+  const carte = carteDe[nom];
+  if (!carte) return null;
+  return carte.classList.contains('ouverte')
+    ? (carte.querySelector(`.tb-col[data-col="${colonne}"]`) || carte.querySelector('.tb-tete'))
+    : carte.querySelector('.tb-tete');
+}
+
+function dessinerLiens(){
+  svg.innerHTML = ''; chemins = []; ancres = [];
+  const W = canevas.scrollWidth, H = canevas.scrollHeight;
+  svg.setAttribute('width', W); svg.setAttribute('height', H); svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const base = svg.getBoundingClientRect();
+  const rect = e => { const r = e.getBoundingClientRect();
+    return {l:r.left-base.left, t:r.top-base.top, w:r.width, h:r.height, cx:r.left-base.left+r.width/2, cy:r.top-base.top+r.height/2}; };
+  const cercle = (x, y, r, i) => {
+    const c = document.createElementNS(nsSVG,'circle');
+    c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r','2.6'); c.setAttribute('class','ancre-lien');
+    c.dataset.from=r.from; c.dataset.to=r.to; c.dataset.relation=String(i); svg.appendChild(c); ancres.push(c);
+  };
+  S.refs.forEach((r, i) => {
+    const a = carteDe[r.from], b = carteDe[r.to]; if (!a || !b) return;
+    const p = document.createElementNS(nsSVG,'path'); let d, x1, y1, x2, y2;
+    const g = rect(a), h = rect(b), source = rect(elementAncre(r.from,r.fromCol)), cible = rect(elementAncre(r.to,r.toCol));
+    if (r.from === r.to){
+      x1 = x2 = g.l+g.w;
+      if (a.classList.contains('ouverte')) { y1 = source.cy; y2 = cible.cy; }
+      else { const tete = rect(a.querySelector('.tb-tete')); y1 = tete.t+tete.h*.34; y2 = tete.t+tete.h*.7; }
+      if (Math.abs(y2-y1)<8) y2 = y1+12;
+      const sortie = 30+((i%3)*6);
+      d = `M ${x1} ${y1} C ${x1+sortie} ${y1}, ${x2+sortie} ${y2}, ${x2} ${y2}`;
+    } else { const droite = h.cx >= g.cx;
+      x1 = droite ? g.l+g.w : g.l; y1 = source.cy; x2 = droite ? h.l : h.l+h.w; y2 = cible.cy;
+      const dx = Math.max(36, Math.abs(x2-x1)/2), c1 = droite ? x1+dx : x1-dx, c2 = droite ? x2-dx : x2+dx;
+      d = `M ${x1} ${y1} C ${c1} ${y1}, ${c2} ${y2}, ${x2} ${y2}`;
+    }
+    p.setAttribute('d', d); p.setAttribute('class','lien'); p.dataset.from = r.from; p.dataset.to = r.to;
+    p.dataset.fromCol = r.fromCol; p.dataset.toCol = r.toCol; p.dataset.relation = String(i);
+    svg.appendChild(p); chemins.push(p); cercle(x1,y1,r,i); cercle(x2,y2,r,i);
+  });
+}
+function planifierLiens(){ cancelAnimationFrame(dessinFrame); dessinFrame = requestAnimationFrame(dessinerLiens); }
+const apresLayout = planifierLiens;
+
+const observateurTaille = new ResizeObserver(planifierLiens);
+observateurTaille.observe(lanes);
+Object.values(carteDe).forEach(carte => observateurTaille.observe(carte));
+
+// ————— survol —————
+function surligner(nom){
+  const voisins = new Set([nom]);
+  chemins.forEach(p => { const lie = p.dataset.from===nom || p.dataset.to===nom;
+    p.classList.toggle('actif', lie); if (lie){ voisins.add(p.dataset.from); voisins.add(p.dataset.to); } });
+  ancres.forEach(c => c.classList.toggle('actif', c.dataset.from===nom || c.dataset.to===nom));
+  document.querySelectorAll('.tb-col.reliee').forEach(c => c.classList.remove('reliee'));
+  S.refs.filter(r => r.from===nom || r.to===nom).forEach(r => {
+    carteDe[r.from]?.querySelector(`.tb-col[data-col="${r.fromCol}"]`)?.classList.add('reliee');
+    carteDe[r.to]?.querySelector(`.tb-col[data-col="${r.toCol}"]`)?.classList.add('reliee');
+  });
+  Object.entries(carteDe).forEach(([n,e]) => {
+    e.classList.toggle('actif', n===nom); e.classList.toggle('voisin', voisins.has(n)&&n!==nom); e.classList.toggle('estompe', !voisins.has(n)); });
+  const n = liensParTable[nom] || 0;
+  aideVue.textContent = `${nom} · ${n} relation${n>1?'s':''} · les colonnes reliées sont surlignées`;
+}
+function eteindre(){
+  chemins.forEach(p => p.classList.remove('actif')); ancres.forEach(c => c.classList.remove('actif'));
+  Object.values(carteDe).forEach(e => e.classList.remove('actif','voisin','estompe'));
+  document.querySelectorAll('.tb-col.reliee').forEach(c => c.classList.remove('reliee'));
+  aideVue.textContent = aideVueDefaut;
+}
+
+// ————— fil d'Ariane —————
+function majAriane(table, col){
+  let h = `<a data-nav="accueil">Accueil</a><span class="sep">›</span><a data-nav="explorateur">Explorateur du modèle</a>`;
+  if (table) h += `<span class="sep">›</span>${col?`<a data-nav="table" data-t="${table}">${table}</a>`:`<span aria-current="page">${table}</span>`}`;
+  if (col) h += `<span class="sep">›</span><span aria-current="page">${col}</span>`;
+  ariane.innerHTML = h;
+  ariane.querySelectorAll('[data-nav]').forEach(a => a.addEventListener('click', () => {
+    const nav = a.dataset.nav;
+    if (nav==='explorateur' || nav==='accueil'){ fermerDetail(); fermerChoix(); setHash(); }
+    else if (nav==='table'){ fermerDetail(); ouvrirChoix(a.dataset.t); }
+  }));
+}
+
+// ————— panneau « choix de conception » —————
+function ouvrirChoix(nom){
+  const t = tableDe[nom]; if (!t || !t.rationale) return;
+  const r = t.rationale;
+  plCorps.innerHTML = `<h4>${r.titre}</h4>${r.corps}<p class="decision">${r.note}</p>`;
+  panneau.classList.remove('cache');
+  panneau.setAttribute('aria-hidden','false'); scene.classList.add('avec-panneau');
+  document.querySelectorAll('.info').forEach(i => i.classList.toggle('actif', i.closest('.table-bloc').dataset.table===nom));
+  majAriane(nom, null); setHash(nom); apresLayout();
+}
+function fermerChoix(){
+  panneau.classList.add('cache'); panneau.setAttribute('aria-hidden','true'); scene.classList.remove('avec-panneau');
+  document.querySelectorAll('.info').forEach(i => i.classList.remove('actif')); apresLayout();
+}
+document.getElementById('plFermer').addEventListener('click', () => { fermerChoix(); majAriane(null,null); setHash(); });
+
+// ————— overlay colonne : double focale —————
+function surlignerJSON(obj){
+  let j = JSON.stringify(obj, null, 1)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  j = j.replace(/"([^"]+)":/g, '<span class="k">"$1"</span><span class="p">:</span>')
+       .replace(/: "([^"]*)"/g, ': <span class="s">"$1"</span>')
+       .replace(/: (-?\d+\.?\d*)/g, ': <span class="num">$1</span>');
+  return j;
+}
+function ouvrirColonne(table, col){
+  if (!tableDe[table]) return;
+  const key = `${table}.${col}`, e = el(key); if (!e) return;
+  dernierFocus = document.activeElement;
+  const c = tableDe[table].columns.find(x => x.name===col);
+  // — pane RELATIONNEL —
+  let valeursHTML = '';
+  if (e.axis && D.valuesets[e.axis] && e.termCol!=null){
+    const vs = D.valuesets[e.axis], ci = e.termCol;
+    const lignes = vs.lignes.filter(l => (l[ci]||'').trim());
+    valeursHTML = `<div class="vs-tete"><b>${lignes.length}</b> codes · value set <code>${e.vs}</code> — proposé pour validation communautaire</div>
+      <div class="vs-liste">${lignes.map(l =>
+        `<div class="vs-ligne"><span class="lib">${l[0]}</span><span class="cod">${l[ci]}</span></div>`).join('')}</div>`;
+  } else if (enumsFR[c.rawtype]){
+    valeursHTML = `<div class="vs-tete"><b>${enumsFR[c.rawtype].length}</b> valeurs · liste maison TAUSSIG</div>
+      <div class="enum-puces">${enumsFR[c.rawtype].map(v => `<span class="enum-puce">${v}</span>`).join('')}</div>`;
+  } else if (e.vs){
+    valeursHTML = `<p class="aucun">Terminologie externe : <code>${e.cs||e.vs}</code>.</p>`;
+  } else {
+    valeursHTML = `<p class="aucun">Pas de liste de valeurs (donnée libre).</p>`;
+  }
+  const faits = `<div class="faits">
+    <span class="fait"><b>Type</b> ${e.type||c.type}</span>
+    <span class="fait"><b>Cardinalité</b> ${e.card||'—'}</span>
+    <span class="fait"><b>Obligatoire</b> ${e.req||'—'}</span></div>`;
+  // — pane FHIR —
+
+  const fhirHTML = `
+    <div class="chemin-fhir">${e.path||'—'}</div>
+    <div class="faits">
+      <span class="fait"><b>Type FHIR</b> ${e.dt||'—'}</span>
+      <span class="fait"><b>Binding</b> ${e.bind||'—'}</span>
+      <span class="fait"><b>Ressource</b> ${e.res||'—'}</span></div>
+    ${e.cs?`<div class="vs-tete" style="margin-top:6px">Système : <code>${e.cs}</code></div>`:''}
+    `;
+
+  detail.innerHTML = `
+    <div class="d-tete">
+      <span class="chemin"><b>${table}</b>.${col}</span>
+      <span class="typ">${c.type}</span>
+      <button class="fermer" type="button" title="Fermer" aria-label="Fermer le détail de la colonne" id="dFermer">×</button>
+    </div>
+    <div class="d-def">${e.def || 'Définition à rédiger.'}</div>
+    <div class="d-panes">
+      <div class="pane rel"><div class="pane-titre"><span class="reg">Vue relationnelle</span></div>${faits}${valeursHTML}</div>
+      <div class="pane fhir"><div class="pane-titre"><span class="reg">Vue FHIR</span></div>${fhirHTML}</div>
+    </div>`;
+  detail.querySelector('#dFermer').addEventListener('click', fermerDetail);
+  voile.classList.add('ouvert'); detail.classList.add('ouvert'); detail.setAttribute('aria-hidden','false');
+
+  // contexte : déplier la table + marquer la colonne
+  const carte = carteDe[table]; carte.classList.add('ouverte'); carte.querySelector('.tb-basculer')?.setAttribute('aria-expanded','true');
+  document.querySelectorAll('.tb-col.selectionnee').forEach(x => x.classList.remove('selectionnee'));
+  carte.querySelector(`.tb-col[data-col="${col}"]`)?.classList.add('selectionnee');
+  carte.scrollIntoView({block:'nearest', behavior:'smooth'});
+  majAriane(table, col); setHash(table, col); apresLayout();
+  requestAnimationFrame(() => detail.querySelector('#dFermer')?.focus());
+}
+function fermerDetail(){
+  const etaitOuvert = detail.classList.contains('ouvert');
+  voile.classList.remove('ouvert'); detail.classList.remove('ouvert'); detail.setAttribute('aria-hidden','true');
+  document.querySelectorAll('.tb-col.selectionnee').forEach(x => x.classList.remove('selectionnee'));
+  if (etaitOuvert && dernierFocus instanceof HTMLElement) dernierFocus.focus();
+  if (!panneau.classList.contains('cache')) return; majAriane(null,null); setHash();
+}
+voile.addEventListener('click', () => { fermerDetail(); majAriane(null,null); setHash(); });
+document.addEventListener('keydown', e => { if (e.key==='Escape'){ fermerDetail(); fermerChoix(); majAriane(null,null); setHash(); } });
+
+// ————— déplier / replier —————
+document.getElementById('btnDeplier').addEventListener('click', () => {
+  Object.values(carteDe).forEach(e => { e.classList.add('ouverte'); e.querySelector('.tb-basculer')?.setAttribute('aria-expanded','true'); }); apresLayout();
+});
+document.getElementById('btnReplier').addEventListener('click', () => {
+  Object.values(carteDe).forEach(e => { e.classList.remove('ouverte'); e.querySelector('.tb-basculer')?.setAttribute('aria-expanded','false'); }); apresLayout();
+});
+
+// ————— URL adressable —————
+function setHash(table, col){
+  const h = table ? (col ? `#t=${table}&c=${col}` : `#t=${table}`) : '#';
+  history.replaceState(null, '', h);
+}
+function lireHash(){
+  const m = location.hash.match(/t=(\w+)(?:&c=(\w+))?/);
+  if (!m) return false;
+  if (m[2]) { ouvrirColonne(m[1], m[2]); return true; }
+  if (tableDe[m[1]]) { ouvrirChoix(m[1]); return true; }
+  return false;
+}
+
+// ————— init —————
+majAriane(null, null);
+window.addEventListener('load', () => { dessinerLiens(); lireHash(); });
+window.addEventListener('resize', () => { clearTimeout(window.__t); window.__t = setTimeout(planifierLiens, 120); });
+dessinerLiens();
+</script>
+<footer class="site-footer"><div><a class="footer-brand" href="index.html">TAUSSIG</a><p>Un modèle commun pour la recherche en cathétérisme cardiaque congénital.</p></div><nav aria-label="Informations du site"><a href="methode.html">À propos & méthode</a><a href="licences.html">Réutilisation & citation</a><a href="telechargements.html">Ressources</a></nav><p class="footer-note">Modèle v4 · Recherche en cours · Aucun compte rendu hébergé sur ce site.</p></footer><noscript><p class="noscript-note">Les outils interactifs nécessitent JavaScript. Les fichiers du modèle restent accessibles sur la <a href="telechargements.html">page des téléchargements</a>.</p></noscript></body>
+</html>

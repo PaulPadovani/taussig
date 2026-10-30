@@ -1,0 +1,16 @@
+/* ============================================================
+   TAUSSIG — Mouvement
+   Doctrine : transitions brèves et orientantes uniquement.
+   Rien ne bouge sans action de l'utilisateur ; jamais
+   d'animation décorative, jamais de boucle infinie.
+   ============================================================ */
+:root {
+  --duree-1: 120ms;   /* survols, focus, halo synchronisé     */
+  --duree-2: 200ms;   /* dépliage, interrupteurs, tooltips    */
+  --duree-3: 320ms;   /* panneaux latéraux, overlays          */
+  --duree-zoom: 420ms;/* zoom sémantique (années → minutes)   */
+
+  --ease-sortie:  cubic-bezier(0.2, 0, 0, 1);   /* décélération franche */
+  --ease-entree-sortie: cubic-bezier(0.45, 0, 0.15, 1);
+  --ease-zoom:    cubic-bezier(0.3, 0, 0.1, 1); /* changement d'échelle */
+}

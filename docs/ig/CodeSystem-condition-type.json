@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "condition-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem condition-type</b></p><a name=\"condition-type\"> </a><a name=\"hccondition-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/condition-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">residual_lesion<a name=\"condition-type-residual_lesion\"> </a></td><td>Lésion résiduelle</td></tr><tr><td style=\"white-space:nowrap\">acquired_lesion<a name=\"condition-type-acquired_lesion\"> </a></td><td>Lésion acquise</td></tr><tr><td style=\"white-space:nowrap\">post_surgical_state<a name=\"condition-type-post_surgical_state\"> </a></td><td>État post-chirurgical</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/condition-type",
+  "version" : "0.6.0",
+  "name" : "ConditionType",
+  "title" : "TAUSSIG — Type de condition évolutive",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Catégorie d'une lésion évolutive.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "residual_lesion",
+    "display" : "Lésion résiduelle"
+  },
+  {
+    "code" : "acquired_lesion",
+    "display" : "Lésion acquise"
+  },
+  {
+    "code" : "post_surgical_state",
+    "display" : "État post-chirurgical"
+  }]
+}

@@ -1,0 +1,218 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-sites-mesure> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-sites-mesure"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-sites-mesure</b></p><a name=\"taussig-sites-mesure\"> </a><a name=\"hctaussig-sites-mesure\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/73829009\">73829009</a></td><td>oreillette droite</td></tr><tr><td><a href=\"http://snomed.info/id/82471001\">82471001</a></td><td>oreillette gauche</td></tr><tr><td><a href=\"http://snomed.info/id/53085002\">53085002</a></td><td>ventricule cardiaque droit</td></tr><tr><td><a href=\"http://snomed.info/id/87878005\">87878005</a></td><td>ventricule cardiaque gauche</td></tr><tr><td><a href=\"http://snomed.info/id/46030003\">46030003</a></td><td>valve tricuspide</td></tr><tr><td><a href=\"http://snomed.info/id/91134007\">91134007</a></td><td>valve mitrale</td></tr><tr><td><a href=\"http://snomed.info/id/39057004\">39057004</a></td><td>valve pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/34202007\">34202007</a></td><td>valve aortique</td></tr><tr><td><a href=\"http://snomed.info/id/58095006\">58095006</a></td><td>septum interauriculaire</td></tr><tr><td><a href=\"http://snomed.info/id/589001\">589001</a></td><td>septum interventriculaire</td></tr><tr><td><a href=\"http://snomed.info/id/54247002\">54247002</a></td><td>aorte ascendante</td></tr><tr><td><a href=\"http://snomed.info/id/57034009\">57034009</a></td><td>arc aortique</td></tr><tr><td><a href=\"http://snomed.info/id/32672002\">32672002</a></td><td>aorte thoracique descendante</td></tr><tr><td><a href=\"http://snomed.info/id/88593004\">88593004</a></td><td>isthme aortique</td></tr><tr><td><a href=\"http://snomed.info/id/45341000\">45341000</a></td><td>tronc de l'artère pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/78480002\">78480002</a></td><td>artère pulmonaire droite</td></tr><tr><td><a href=\"http://snomed.info/id/50408007\">50408007</a></td><td>artère pulmonaire gauche</td></tr><tr><td><a href=\"http://snomed.info/id/122972007\">122972007</a></td><td>veine pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/48345005\">48345005</a></td><td>veine cave supérieure</td></tr><tr><td><a href=\"http://snomed.info/id/9642004\">9642004</a></td><td>veine cave supérieure gauche</td></tr><tr><td><a href=\"http://snomed.info/id/64131007\">64131007</a></td><td>veine cave inférieure</td></tr><tr><td><a href=\"http://snomed.info/id/4432005\">4432005</a></td><td>canal artériel</td></tr><tr><td><a href=\"http://snomed.info/id/50018008\">50018008</a></td><td>artère coronaire gauche</td></tr><tr><td><a href=\"http://snomed.info/id/13647002\">13647002</a></td><td>artère coronaire droite</td></tr><tr><td><a href=\"http://snomed.info/id/12691009\">12691009</a></td><td>tronc artériel brachiocéphalique</td></tr><tr><td><a href=\"http://snomed.info/id/7657000\">7657000</a></td><td>artère fémorale</td></tr><tr><td><a href=\"http://snomed.info/id/83419000\">83419000</a></td><td>veine fémorale</td></tr><tr><td><a href=\"http://snomed.info/id/12123001\">12123001</a></td><td>veine jugulaire interne</td></tr><tr><td><a href=\"http://snomed.info/id/9454009\">9454009</a></td><td>veine subclavière</td></tr><tr><td><a href=\"http://snomed.info/id/45631007\">45631007</a></td><td>artère radiale</td></tr><tr><td><a href=\"http://snomed.info/id/367567000\">367567000</a></td><td>veine ombilicale</td></tr><tr><td><a href=\"http://snomed.info/id/264824009\">264824009</a></td><td>conduit cardiaque</td></tr><tr><td><a href=\"http://snomed.info/id/443327008\">443327008</a></td><td>voie d'Hémi-Fontan</td></tr><tr><td><a href=\"http://snomed.info/id/443298009\">443298009</a></td><td>circulation de Fontan</td></tr><tr><td><a href=\"http://snomed.info/id/443724003\">443724003</a></td><td>fenestration de Fontan</td></tr><tr><td><a href=\"http://snomed.info/id/253689007\">253689007</a></td><td>artère collatérale aortopulmonaire majeure</td></tr><tr><td><a href=\"http://snomed.info/id/253690003\">253690003</a></td><td>artère collatérale systémicopulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/17137000\">17137000</a></td><td>artère brachiale</td></tr><tr><td><a href=\"http://snomed.info/id/20115005\">20115005</a></td><td>veine brachiale</td></tr><tr><td><a href=\"http://snomed.info/id/32062004\">32062004</a></td><td>artère carotide commune</td></tr><tr><td><a href=\"http://snomed.info/id/8993003\">8993003</a></td><td>veine hépatique</td></tr></table></li><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-taussig-local.html\"><code>https://taussig/fhir/CodeSystem/taussig-local</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td><a href=\"CodeSystem-taussig-local.html#taussig-local-TAUSSIG-CAVOPULM-INF\">TAUSSIG-CAVOPULM-INF</a></td><td>dérivation cavopulmonaire inférieure (VCI→AP)</td><td>Anastomose entre la veine cave inférieure et l'artère pulmonaire, isolée. SNOMED CT ne<br/>    fournit de concept que pour la dérivation supérieure (443327008) et pour la dérivation<br/>    totale (443298009), et aucune structure corporelle pour la composante inférieure seule.</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-sites-mesure"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.0"] ;
+  fhir:ValueSet.name [ fhir:value "taussig_sites_mesure"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Sites anatomiques de mesure/geste (validé)"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73829009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "oreillette droite" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82471001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "oreillette gauche" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "53085002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ventricule cardiaque droit" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "87878005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "ventricule cardiaque gauche" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46030003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valve tricuspide" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "91134007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valve mitrale" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "39057004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valve pulmonaire" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34202007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valve aortique" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "58095006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "septum interauriculaire" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "589001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "septum interventriculaire" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "54247002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "aorte ascendante" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "57034009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "arc aortique" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32672002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "aorte thoracique descendante" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "88593004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "isthme aortique" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45341000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "tronc de l'artère pulmonaire" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "78480002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère pulmonaire droite" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50408007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère pulmonaire gauche" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "122972007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine pulmonaire" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48345005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine cave supérieure" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9642004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine cave supérieure gauche" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "64131007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine cave inférieure" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4432005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "canal artériel" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50018008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère coronaire gauche" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13647002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère coronaire droite" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12691009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "tronc artériel brachiocéphalique" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7657000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère fémorale" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "83419000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine fémorale" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12123001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine jugulaire interne" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9454009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine subclavière" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45631007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère radiale" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "367567000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine ombilicale" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "264824009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "conduit cardiaque" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "443327008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "voie d'Hémi-Fontan" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "443298009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "circulation de Fontan" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "443724003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fenestration de Fontan" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "253689007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère collatérale aortopulmonaire majeure" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "253690003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère collatérale systémicopulmonaire" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17137000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère brachiale" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20115005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine brachiale" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32062004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "artère carotide commune" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8993003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "veine hépatique" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/taussig-local" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-CAVOPULM-INF" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dérivation cavopulmonaire inférieure (VCI→AP)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-sites-mesure.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

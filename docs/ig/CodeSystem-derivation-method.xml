@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="derivation-method"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem derivation-method</b></p><a name="derivation-method"> </a><a name="hcderivation-method"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/derivation-method</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">measured<a name="derivation-method-measured"> </a></td><td>Mesuré</td></tr><tr><td style="white-space:nowrap">calculated<a name="derivation-method-calculated"> </a></td><td>Calculé</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/derivation-method"/>
+  <version value="0.6.0"/>
+  <name value="DerivationMethod"/>
+  <title value="TAUSSIG — Dérivation d'une mesure"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Mesure directe ou valeur calculée."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="measured"/>
+    <display value="Mesuré"/>
+  </concept>
+  <concept>
+    <code value="calculated"/>
+    <display value="Calculé"/>
+  </concept>
+</CodeSystem>

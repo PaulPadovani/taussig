@@ -1,0 +1,527 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TAUSSIG — Propriétés de mesure hémodynamique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.96"}
+    h3,h4,h5,h6{--heading-prefix:"4.96"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - trial-use
+
+
+
+  France
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — Propriétés de mesure hémodynamique</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-codesystem -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Contenu narratif</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-measurement-property.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-measurement-property.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-measurement-property.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CodeSystem: TAUSSIG — Propriétés de mesure hémodynamique
+(Expérimental)
+  </h2>
+
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/CodeSystem/measurement-property<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/CodeSystem/measurement-property"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.6.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/CodeSystem/measurement-property|0.6.0"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            à date du 
+2026-10-30
+
+          
+        
+      </td>
+
+
+
+      <td><i>Nom computable</i>: <span style="font-family: monospace;">TaussigMeasurementProperty</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<div data-fhir="generated">
+<p>Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe.</p>
+
+</div>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :</p>
+
+  
+<ul>
+ <li><a href="ValueSet-taussig-measurement-property.html">TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept)</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="measurement-property"> </a><a name="hcmeasurement-property"> </a><p><b>Propriétés</b></p><p><b>Cette terminologie de référence (CodeSystem) définit les propriétés suivantes pour ses concepts</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Nom</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>unit_ucum</td>
+<td>unit_ucum</td>
+<td>string</td>
+<td>Unité UCUM canonique</td></tr>
+<tr><td>derivation</td>
+<td>derivation</td>
+<td>string</td>
+<td>mesuré ou calculé</td></tr>
+<tr><td>site_dependent</td>
+<td>site_dependent</td>
+<td>boolean</td>
+<td>Requiert un body_site SNOMED</td></tr>
+<tr><td>snomed_secondary</td>
+<td>snomed_secondary</td>
+<td>Coding</td>
+<td>Codage SNOMED secondaire générique</td></tr>
+<tr><td>family</td>
+<td>family</td>
+<td>string</td>
+<td>Famille physiologique</td></tr>
+<tr><td>value_type</td>
+<td>value_type</td>
+<td>string</td>
+<td>Type FHIR de la valeur attendue (Quantity | CodeableConcept)</td></tr>
+<tr><td>value_set</td>
+<td>value_set</td>
+<td>string</td>
+<td>ValueSet canonique des valeurs admises (propriétés qualitatives)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-property</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>unit_ucum</b></td><td><b>derivation</b></td><td><b>site_dependent</b></td><td><b>snomed_secondary</b></td><td><b>family</b></td><td><b>value_type</b></td><td><b>value_set</b></td></tr>
+<tr><td style="white-space:nowrap">pressure_systolic<a name="measurement-property-pressure_systolic"> </a></td>
+<td>Pression systolique</td>
+<td>mm[Hg]</td>
+<td>mesuré</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td>
+<td>Pression</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">pressure_diastolic<a name="measurement-property-pressure_diastolic"> </a></td>
+<td>Pression diastolique</td>
+<td>mm[Hg]</td>
+<td>mesuré</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td>
+<td>Pression</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">pressure_mean<a name="measurement-property-pressure_mean"> </a></td>
+<td>Pression moyenne</td>
+<td>mm[Hg]</td>
+<td>mesuré</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td>
+<td>Pression</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">pressure_end_diastolic<a name="measurement-property-pressure_end_diastolic"> </a></td>
+<td>Pression télédiastolique (ventricule)</td>
+<td>mm[Hg]</td>
+<td>mesuré</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td>
+<td>Pression</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">pressure_wedge<a name="measurement-property-pressure_wedge"> </a></td>
+<td>Pression capillaire pulmonaire bloquée (wedge)</td>
+<td>mm[Hg]</td>
+<td>mesuré</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251067001}">Cardiovascular pressure</a></td>
+<td>Pression</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">oxygen_saturation<a name="measurement-property-oxygen_saturation"> </a></td>
+<td>Saturation en oxygène</td>
+<td>%</td>
+<td>mesuré</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 103228002}">saturation de l'hémoglobine en oxygène</a></td>
+<td>Oxymétrie</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">flow_pulmonary<a name="measurement-property-flow_pulmonary"> </a></td>
+<td>Débit pulmonaire (Qp)</td>
+<td>L/min</td>
+<td>calculé</td>
+<td>false</td>
+<td></td>
+<td>Débit</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">flow_systemic<a name="measurement-property-flow_systemic"> </a></td>
+<td>Débit systémique (Qs)</td>
+<td>L/min</td>
+<td>calculé</td>
+<td>false</td>
+<td></td>
+<td>Débit</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">flow_ratio_qp_qs<a name="measurement-property-flow_ratio_qp_qs"> </a></td>
+<td>Rapport Qp/Qs</td>
+<td>{ratio}</td>
+<td>calculé</td>
+<td>false</td>
+<td></td>
+<td>Débit</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">cardiac_output<a name="measurement-property-cardiac_output"> </a></td>
+<td>Débit cardiaque</td>
+<td>L/min</td>
+<td>calculé</td>
+<td>false</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 82799009}">DC - débit cardiaque</a></td>
+<td>Débit</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">cardiac_index<a name="measurement-property-cardiac_index"> </a></td>
+<td>Index cardiaque</td>
+<td>L/min/m2</td>
+<td>calculé</td>
+<td>false</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 54993008}">IC - index cardiaque</a></td>
+<td>Débit</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">resistance_pulmonary<a name="measurement-property-resistance_pulmonary"> </a></td>
+<td>Résistance vasculaire pulmonaire (RVP)</td>
+<td>mm[Hg].min/L</td>
+<td>calculé</td>
+<td>false</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 88619007}">résistance vasculaire</a></td>
+<td>Résistance</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">resistance_pulmonary_indexed<a name="measurement-property-resistance_pulmonary_indexed"> </a></td>
+<td>RVP indexée (RVPi)</td>
+<td>mm[Hg].min/L/m2</td>
+<td>calculé</td>
+<td>false</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 88619007}">résistance vasculaire</a></td>
+<td>Résistance</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">resistance_systemic<a name="measurement-property-resistance_systemic"> </a></td>
+<td>Résistance vasculaire systémique (RVS)</td>
+<td>mm[Hg].min/L</td>
+<td>calculé</td>
+<td>false</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 88619007}">résistance vasculaire</a></td>
+<td>Résistance</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">resistance_ratio_pvr_svr<a name="measurement-property-resistance_ratio_pvr_svr"> </a></td>
+<td>Rapport RVP/RVS</td>
+<td>{ratio}</td>
+<td>calculé</td>
+<td>false</td>
+<td></td>
+<td>Résistance</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">gradient_peak_to_peak<a name="measurement-property-gradient_peak_to_peak"> </a></td>
+<td>Gradient pic-à-pic</td>
+<td>mm[Hg]</td>
+<td>calculé</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251081004}">Cardiovascular pressure gradient</a></td>
+<td>Gradient</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">gradient_mean<a name="measurement-property-gradient_mean"> </a></td>
+<td>Gradient moyen</td>
+<td>mm[Hg]</td>
+<td>calculé</td>
+<td>true</td>
+<td><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html" title="{http://snomed.info/sct 251081004}">Cardiovascular pressure gradient</a></td>
+<td>Gradient</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">oxygen_consumption<a name="measurement-property-oxygen_consumption"> </a></td>
+<td>Consommation d'oxygène (VO2)</td>
+<td>mL/min/m2</td>
+<td>mesuré/estimé</td>
+<td>false</td>
+<td></td>
+<td>Autre</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">regurgitation_grade<a name="measurement-property-regurgitation_grade"> </a></td>
+<td>Grade de régurgitation</td>
+<td></td>
+<td>mesuré</td>
+<td>true</td>
+<td></td>
+<td>Qualitatif</td>
+<td>CodeableConcept</td>
+<td><code>https://taussig/fhir/ValueSet/taussig-regurgitation-grade</code></td></tr></table></div>
+
+  <hr/>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology">Description du (des) tableau(x) ci-dessus</a>.
+  </p>
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-10-30 22:35:00 +0100">
+    2026-10-30
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

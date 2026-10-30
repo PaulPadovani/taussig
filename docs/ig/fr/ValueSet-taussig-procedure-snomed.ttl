@@ -1,0 +1,235 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-procedure-snomed> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-procedure-snomed"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-procedure-snomed</b></p><a name=\"taussig-procedure-snomed\"> </a><a name=\"hctaussig-procedure-snomed\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/112811009\">112811009</a></td><td>fermeture d'une communication interatriale</td></tr><tr><td><a href=\"http://snomed.info/id/1231783006\">1231783006</a></td><td>Percutaneous closure of prosthetic cardiac paravalvular leak using device</td></tr><tr><td><a href=\"http://snomed.info/id/1344914001\">1344914001</a></td><td>Open occlusion of left atrial appendage</td></tr><tr><td><a href=\"http://snomed.info/id/1357782001\">1357782001</a></td><td>Fluoroscopy guided percutaneous embolization of lymphatic vessel with contrast</td></tr><tr><td><a href=\"http://snomed.info/id/175268008\">175268008</a></td><td>embolectomie percutanée de l'artère pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/232770003\">232770003</a></td><td>dilatation par ballonnet d'une prothèse de valve mitrale</td></tr><tr><td><a href=\"http://snomed.info/id/232810003\">232810003</a></td><td>dilatation par ballonnet d'une prothèse de valve tricuspidienne</td></tr><tr><td><a href=\"http://snomed.info/id/232869005\">232869005</a></td><td>dilatation par ballonnet d'une prothèse de valve pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/232978003\">232978003</a></td><td>insertion d'endoprothèse dans une veine pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/233003002\">233003002</a></td><td>insertion d'endoprothèse dans une voie veineuse systémique</td></tr><tr><td><a href=\"http://snomed.info/id/233043007\">233043007</a></td><td>septostomie atriale</td></tr><tr><td><a href=\"http://snomed.info/id/233044001\">233044001</a></td><td>septostomie auriculaire par ballonnet par retrait</td></tr><tr><td><a href=\"http://snomed.info/id/233067004\">233067004</a></td><td>dilatation par ballonnet de la chambre de chasse du ventricule droit</td></tr><tr><td><a href=\"http://snomed.info/id/233100002\">233100002</a></td><td>fermeture transluminale percutanée de communication interventriculaire avec prothèse</td></tr><tr><td><a href=\"http://snomed.info/id/233202003\">233202003</a></td><td>dilatation par ballonnet du canal artériel</td></tr><tr><td><a href=\"http://snomed.info/id/233214006\">233214006</a></td><td>angioplastie de l'artère pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/233215007\">233215007</a></td><td>mise en place d'endoprothèse dans l'artère pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/252425004\">252425004</a></td><td>électrophysiologie cardiaque</td></tr><tr><td><a href=\"http://snomed.info/id/261562001\">261562001</a></td><td>angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/276892002\">276892002</a></td><td>angioplastie percutanée par ballonnet d'une veine pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/276896004\">276896004</a></td><td>angioplastie transluminale percutanée par ballonnet de la voie veineuse systémique guidée par radioscopie avec produit de contraste</td></tr><tr><td><a href=\"http://snomed.info/id/308683001\">308683001</a></td><td>biopsie transluminale ventriculaire droite après transplantation cardiaque</td></tr><tr><td><a href=\"http://snomed.info/id/308696000\">308696000</a></td><td>angioplastie de coarctation</td></tr><tr><td><a href=\"http://snomed.info/id/34945008\">34945008</a></td><td>angiocardiographie</td></tr><tr><td><a href=\"http://snomed.info/id/384642005\">384642005</a></td><td>valvuloplastie de la valve mitrale</td></tr><tr><td><a href=\"http://snomed.info/id/41817002\">41817002</a></td><td>fermeture d'un foramen ovale perméable</td></tr><tr><td><a href=\"http://snomed.info/id/41976001\">41976001</a></td><td>cathétérisme cardiaque</td></tr><tr><td><a href=\"http://snomed.info/id/428280004\">428280004</a></td><td>insertion d'une endoprothèse dans le canal artériel</td></tr><tr><td><a href=\"http://snomed.info/id/428394001\">428394001</a></td><td>péricardiocentèse transluminale percutanée</td></tr><tr><td><a href=\"http://snomed.info/id/432394003\">432394003</a></td><td>réparation de la valve mitrale guidée par radioscopie</td></tr><tr><td><a href=\"http://snomed.info/id/442188002\">442188002</a></td><td>valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie</td></tr><tr><td><a href=\"http://snomed.info/id/448779009\">448779009</a></td><td>Occlusion of systemic to pulmonary artery shunt using transluminal embolic device</td></tr><tr><td><a href=\"http://snomed.info/id/448785002\">448785002</a></td><td>mise en place d'endoprothèse au site de coarctation aortique</td></tr><tr><td><a href=\"http://snomed.info/id/448949007\">448949007</a></td><td>mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/449033003\">449033003</a></td><td>dilatation par ballonnet d'un conduit cardiaque</td></tr><tr><td><a href=\"http://snomed.info/id/449227002\">449227002</a></td><td>dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/449389000\">449389000</a></td><td>pose d'une endoprothèse dans un conduit cardiaque</td></tr><tr><td><a href=\"http://snomed.info/id/46897002\">46897002</a></td><td>valvuloplastie percutanée par ballonnet de la valve pulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/61192001\">61192001</a></td><td>fermeture d'une fistule ou fenestration aorticopulmonaire</td></tr><tr><td><a href=\"http://snomed.info/id/698642008\">698642008</a></td><td>fermeture par voie percutanée du ligament artériel persistant</td></tr><tr><td><a href=\"http://snomed.info/id/707813002\">707813002</a></td><td>dilatation transluminale percutanée par ballonnet d'un conduit cardiaque</td></tr><tr><td><a href=\"http://snomed.info/id/707823006\">707823006</a></td><td>Percutaneous transluminal embolization for major systemic to pulmonary collateral artery</td></tr><tr><td><a href=\"http://snomed.info/id/708810002\">708810002</a></td><td>Endovascular retrieval of foreign body from aorta</td></tr><tr><td><a href=\"http://snomed.info/id/71330003\">71330003</a></td><td>réparation d'une fistule artérioveineuse par occlusion</td></tr><tr><td><a href=\"http://snomed.info/id/77166000\">77166000</a></td><td>valvuloplastie aortique percutanée par ballonnet</td></tr><tr><td><a href=\"http://snomed.info/id/773996000\">773996000</a></td><td>implantation d'une valve aortique transcathéter</td></tr><tr><td><a href=\"http://snomed.info/id/787162002\">787162002</a></td><td>implantation d'une prothèse de valve pulmonaire, par voie percutanée</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-procedure-snomed"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.0"] ;
+  fhir:ValueSet.name [ fhir:value "taussig_procedure_snomed"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Procédures (SNOMED CT, interopérabilité)"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Working set SNOMED CT des gestes de cathétérisme congénital (couche d'interopérabilité FHIR Procedure.code). Résolu sur le SMT depuis les gestes IPCCC retenus. À valider cliniquement."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "112811009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture d'une communication interatriale" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1231783006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Percutaneous closure of prosthetic cardiac paravalvular leak using device" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1344914001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Open occlusion of left atrial appendage" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1357782001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fluoroscopy guided percutaneous embolization of lymphatic vessel with contrast" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "175268008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "embolectomie percutanée de l'artère pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "232770003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une prothèse de valve mitrale" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "232810003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une prothèse de valve tricuspidienne" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "232869005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une prothèse de valve pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "232978003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "insertion d'endoprothèse dans une veine pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233003002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "insertion d'endoprothèse dans une voie veineuse systémique" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233043007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "septostomie atriale" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233044001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "septostomie auriculaire par ballonnet par retrait" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233067004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet de la chambre de chasse du ventricule droit" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233100002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture transluminale percutanée de communication interventriculaire avec prothèse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233202003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet du canal artériel" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233214006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie de l'artère pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233215007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse dans l'artère pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "252425004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "électrophysiologie cardiaque" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "261562001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "276892002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie percutanée par ballonnet d'une veine pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "276896004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie transluminale percutanée par ballonnet de la voie veineuse systémique guidée par radioscopie avec produit de contraste" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "308683001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "biopsie transluminale ventriculaire droite après transplantation cardiaque" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "308696000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angioplastie de coarctation" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34945008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "angiocardiographie" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "384642005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvuloplastie de la valve mitrale" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41817002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture d'un foramen ovale perméable" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41976001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cathétérisme cardiaque" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "428280004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "insertion d'une endoprothèse dans le canal artériel" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "428394001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "péricardiocentèse transluminale percutanée" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "432394003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "réparation de la valve mitrale guidée par radioscopie" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "442188002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "448779009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Occlusion of systemic to pulmonary artery shunt using transluminal embolic device" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "448785002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse au site de coarctation aortique" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "448949007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "449033003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'un conduit cardiaque" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "449227002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "449389000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "pose d'une endoprothèse dans un conduit cardiaque" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46897002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvuloplastie percutanée par ballonnet de la valve pulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "61192001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture d'une fistule ou fenestration aorticopulmonaire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "698642008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "fermeture par voie percutanée du ligament artériel persistant" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "707813002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "dilatation transluminale percutanée par ballonnet d'un conduit cardiaque" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "707823006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Percutaneous transluminal embolization for major systemic to pulmonary collateral artery" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "708810002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endovascular retrieval of foreign body from aorta" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "71330003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "réparation d'une fistule artérioveineuse par occlusion" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "77166000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "valvuloplastie aortique percutanée par ballonnet" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "773996000" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "implantation d'une valve aortique transcathéter" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "787162002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "implantation d'une prothèse de valve pulmonaire, par voie percutanée" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-procedure-snomed.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

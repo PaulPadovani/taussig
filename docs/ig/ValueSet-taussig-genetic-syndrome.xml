@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="taussig-genetic-syndrome"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs taussig-genetic-syndrome</b></p><a name="taussig-genetic-syndrome"> </a><a name="hctaussig-genetic-syndrome"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <code>http://www.orpha.net</code><span title="La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td>870</td><td>Trisomie 21</td></tr><tr><td>881</td><td>Syndrome de Turner</td></tr><tr><td>567</td><td>Syndrome de délétion 22q11.2</td></tr><tr><td>3380</td><td>Syndrome de trisomie 18</td></tr><tr><td>3378</td><td>Syndrome de trisomie 13</td></tr><tr><td>365</td><td>Glycogénose par déficit en maltase acide</td></tr><tr><td>95</td><td>Ataxie de Friedreich</td></tr><tr><td>98896</td><td>Dystrophie musculaire de Duchenne</td></tr><tr><td>558</td><td>Syndrome de Marfan</td></tr><tr><td>98249</td><td>Syndrome d'Ehlers-Danlos</td></tr><tr><td>60030</td><td>Syndrome de Loeys-Dietz</td></tr><tr><td>648</td><td>Syndrome de Noonan</td></tr><tr><td>805</td><td>Sclérose tubéreuse de Bourneville</td></tr><tr><td>904</td><td>Syndrome de Williams</td></tr><tr><td>52</td><td>Syndrome d'Alagille</td></tr><tr><td>290</td><td>Syndrome de rubéole congénitale</td></tr><tr><td>68341</td><td>Anomalies congénitales multiples/syndrome dysmorphique</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://taussig/fhir/ValueSet/taussig-genetic-syndrome"/>
+  <version value="0.6.0"/>
+  <name value="taussig_genetic_syndrome"/>
+  <title value="TAUSSIG — Syndromes génétiques (Orphanet)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Orphanet (c) 2025, CC-BY-4.0."/>
+  <compose>
+    <include>
+      <system value="http://www.orpha.net"/>
+      <concept>
+        <code value="870"/>
+        <display value="Trisomie 21"/>
+      </concept>
+      <concept>
+        <code value="881"/>
+        <display value="Syndrome de Turner"/>
+      </concept>
+      <concept>
+        <code value="567"/>
+        <display value="Syndrome de délétion 22q11.2"/>
+      </concept>
+      <concept>
+        <code value="3380"/>
+        <display value="Syndrome de trisomie 18"/>
+      </concept>
+      <concept>
+        <code value="3378"/>
+        <display value="Syndrome de trisomie 13"/>
+      </concept>
+      <concept>
+        <code value="365"/>
+        <display value="Glycogénose par déficit en maltase acide"/>
+      </concept>
+      <concept>
+        <code value="95"/>
+        <display value="Ataxie de Friedreich"/>
+      </concept>
+      <concept>
+        <code value="98896"/>
+        <display value="Dystrophie musculaire de Duchenne"/>
+      </concept>
+      <concept>
+        <code value="558"/>
+        <display value="Syndrome de Marfan"/>
+      </concept>
+      <concept>
+        <code value="98249"/>
+        <display value="Syndrome d'Ehlers-Danlos"/>
+      </concept>
+      <concept>
+        <code value="60030"/>
+        <display value="Syndrome de Loeys-Dietz"/>
+      </concept>
+      <concept>
+        <code value="648"/>
+        <display value="Syndrome de Noonan"/>
+      </concept>
+      <concept>
+        <code value="805"/>
+        <display value="Sclérose tubéreuse de Bourneville"/>
+      </concept>
+      <concept>
+        <code value="904"/>
+        <display value="Syndrome de Williams"/>
+      </concept>
+      <concept>
+        <code value="52"/>
+        <display value="Syndrome d'Alagille"/>
+      </concept>
+      <concept>
+        <code value="290"/>
+        <display value="Syndrome de rubéole congénitale"/>
+      </concept>
+      <concept>
+        <code value="68341"/>
+        <display value="Anomalies congénitales multiples/syndrome dysmorphique"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

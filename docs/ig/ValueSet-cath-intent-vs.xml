@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cath-intent-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs cath-intent-vs</b></p><a name="cath-intent-vs"> </a><a name="hccath-intent-vs"> </a><ul><li>Include tous les codes définis dans <a href="CodeSystem-cath-intent.html"><code>https://taussig/fhir/CodeSystem/cath-intent</code></a><span title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification"> version &#x1F4E6;0.6.0</span></li></ul></div>
+  </text>
+  <url value="https://taussig/fhir/ValueSet/cath-intent-vs"/>
+  <version value="0.6.0"/>
+  <name value="CathIntentVS"/>
+  <title value="TAUSSIG — Intentions de cathétérisme"/>
+  <status value="active"/>
+  <date value="2026-10-30T22:35:46+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://taussig/fhir/CodeSystem/cath-intent"/>
+    </include>
+  </compose>
+</ValueSet>

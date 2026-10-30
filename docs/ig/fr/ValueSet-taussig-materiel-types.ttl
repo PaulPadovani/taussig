@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-materiel-types> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-materiel-types"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-materiel-types</b></p><a name=\"taussig-materiel-types\"> </a><a name=\"hctaussig-materiel-types\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/705924003\">705924003</a></td><td>Cardiac balloon catheter</td></tr><tr><td><a href=\"http://snomed.info/id/65818007\">65818007</a></td><td>endoprothèse</td></tr><tr><td><a href=\"http://snomed.info/id/19923001\">19923001</a></td><td>cathéter</td></tr><tr><td><a href=\"http://snomed.info/id/102317008\">102317008</a></td><td>Guiding catheter</td></tr><tr><td><a href=\"http://snomed.info/id/1137638009\">1137638009</a></td><td>Cardiac catheter guidewire</td></tr><tr><td><a href=\"http://snomed.info/id/467764008\">467764008</a></td><td>Catheter introducer</td></tr><tr><td><a href=\"http://snomed.info/id/25005004\">25005004</a></td><td>anse</td></tr><tr><td><a href=\"http://snomed.info/id/860585001\">860585001</a></td><td>Transcatheter pulmonary valve bioprosthesis</td></tr><tr><td><a href=\"http://snomed.info/id/1362137001\">1362137001</a></td><td>Aortic transcatheter heart valve bioprosthesis, stent framework</td></tr><tr><td><a href=\"http://snomed.info/id/1141607002\">1141607002</a></td><td>Transcatheter biologic tricuspid valve prosthesis</td></tr></table></li><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-closure-device-type.html\"><code>https://taussig/fhir/CodeSystem/closure-device-type</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-CIA\">TAUSSIG-OCCLUDER-CIA</a></td><td>Dispositif de fermeture de CIA</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-CIV\">TAUSSIG-OCCLUDER-CIV</a></td><td>Dispositif de fermeture de CIV</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-CANAL\">TAUSSIG-OCCLUDER-CANAL</a></td><td>Dispositif de fermeture de canal artériel</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-VASCULAR\">TAUSSIG-OCCLUDER-VASCULAR</a></td><td>Dispositif de fermeture d’un autre vaisseau</td></tr><tr><td><a href=\"CodeSystem-closure-device-type.html#closure-device-type-TAUSSIG-OCCLUDER-FOP\">TAUSSIG-OCCLUDER-FOP</a></td><td>Dispositif de fermeture de FOP</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-materiel-types"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.0"] ;
+  fhir:ValueSet.name [ fhir:value "taussig_materiel_types"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Types de dispositifs interventionnels"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Working set de matériel ; catégories de fermeture distinguées par cible selon la décision clinique du 30 octobre 2026. Les catégories fines de fermeture utilisent des codes TAUSSIG locaux."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "705924003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac balloon catheter" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "65818007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "endoprothèse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19923001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cathéter" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "102317008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Guiding catheter" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1137638009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac catheter guidewire" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "467764008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Catheter introducer" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "25005004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "anse" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "860585001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transcatheter pulmonary valve bioprosthesis" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1362137001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aortic transcatheter heart valve bioprosthesis, stent framework" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1141607002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transcatheter biologic tricuspid valve prosthesis" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/closure-device-type" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-OCCLUDER-CIA" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispositif de fermeture de CIA" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-OCCLUDER-CIV" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispositif de fermeture de CIV" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-OCCLUDER-CANAL" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispositif de fermeture de canal artériel" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-OCCLUDER-VASCULAR" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispositif de fermeture d’un autre vaisseau" ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-OCCLUDER-FOP" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispositif de fermeture de FOP" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-materiel-types.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

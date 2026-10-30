@@ -1,0 +1,331 @@
+{
+  "codeSystems" : [{
+    "url" : "https://taussig/fhir/ValueSet/access-type-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "AccessTypeVS",
+    "title" : "TAUSSIG — Types d'abord vasculaire",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/access-type"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/ae-attribution-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "AeAttributionVS",
+    "title" : "TAUSSIG — Attributions d'EI",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/ae-attribution"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/bsa-method-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "BsaMethodVS",
+    "title" : "TAUSSIG — Méthodes de calcul BSA",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/bsa-method"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/cath-intent-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "CathIntentVS",
+    "title" : "TAUSSIG — Intentions de cathétérisme",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/cath-intent"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/condition-type-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "ConditionTypeVS",
+    "title" : "TAUSSIG — Types de condition évolutive",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/condition-type"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/death-attribution-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "DeathAttributionVS",
+    "title" : "TAUSSIG — Attributions du décès",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/death-attribution"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/derivation-method-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "DerivationMethodVS",
+    "title" : "TAUSSIG — Dérivation",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/derivation-method"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/diagnosis-role-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "DiagnosisRoleVS",
+    "title" : "TAUSSIG — Rôles d'indication",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/diagnosis-role"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/gesture-result-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "GestureResultVS",
+    "title" : "TAUSSIG — Résultats de geste",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/gesture-result"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/implant-device-type-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "ImplantDeviceTypeVS",
+    "title" : "TAUSSIG — Types d'implant",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/closure-device-type",
+    "https://taussig/fhir/CodeSystem/implant-device-type"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/implant-status-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "ImplantStatusVS",
+    "title" : "TAUSSIG — États d'implant",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/implant-status"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/ipccc-short-list",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "IPCCCShortList",
+    "title" : "IPCCC Short List v5.0 (sous-ensemble de saisie)",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/ipccc"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/laterality-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "LateralityVS",
+    "title" : "TAUSSIG — Latéralité (gauche/droite)",
+    "description" : "Côté anatomique de l'abord vasculaire (SNOMED CT).",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/material-type-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "MaterialTypeVS",
+    "title" : "TAUSSIG — Types de matériel (catégories)",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/closure-device-type",
+    "https://taussig/fhir/CodeSystem/material-type"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/measurement-condition-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "MeasurementConditionVS",
+    "title" : "TAUSSIG — Conditions de mesure",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/measurement-condition"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/measurement-modality-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "MeasurementModalityVS",
+    "title" : "TAUSSIG — Modalités de mesure",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/measurement-modality"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "PeriproceduralMedicationPurposeVS",
+    "title" : "TAUSSIG — Rôles des médicaments péri-procéduraux",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/periprocedural-medication-purpose"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/procedure-phase-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "ProcedurePhaseVS",
+    "title" : "TAUSSIG — Phases procédurales",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/procedure-phase"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/severity-scale-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "SeverityScaleVS",
+    "title" : "TAUSSIG — Échelles de gravité",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/severity-scale"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-adverse-event-ipccc",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "TaussigAdverseEventIpccc",
+    "title" : "TAUSSIG — Complications péri-procédurales (IPCCC)",
+    "description" : "Axe IPCCC des événements indésirables du cathétérisme congénital retenus pour la POC. La granularité IPCCC est plus grossière que la curation française : plusieurs libellés cliniques peuvent partager un même code (regroupés ici sous le libellé IPCCC officiel).",
+    "systems" : ["https://taussig/fhir/CodeSystem/ipccc"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-adverse-event-snomed",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "taussig_adverse_event_snomed",
+    "title" : "TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)",
+    "description" : "Working set SNOMED CT des complications péri-procédurales du cathétérisme congénital (couche d'interopérabilité FHIR AdverseEvent.event / Condition.code). Résolu sur le SMT depuis les complications IPCCC/EPCC retenues. À valider cliniquement.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-ae-management",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "TaussigAeManagement",
+    "title" : "TAUSSIG — Prise en charge d'un événement indésirable",
+    "description" : "Modes de prise en charge d'un EI pendant le cathétérisme (CodeSystem TAUSSIG ae-management).",
+    "systems" : ["https://taussig/fhir/CodeSystem/ae-management"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-anthropometry-observation-code-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "TaussigAnthropometryObservationCodeVS",
+    "title" : "TAUSSIG — Codes d'anthropométrie per-cathétérisme",
+    "description" : "Codes LOINC utilisés pour poids, taille et surface corporelle au moment du cathétérisme.",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-cardiac-condition",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "taussig_cardiac_condition",
+    "title" : "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)",
+    "description" : "Working set des conditions cardiaques évolutives de la POC (distinct du diagnostic congénital figé) : 61 lésions résiduelles/acquises codées en IPCCC, plus 13 états d'étape chirurgicale codés en ECHSA — l'IPCCC ne code pas l'état « status post » d'un montage (Fontan, Glenn, MBTS…), d'où un ValueSet multi-systèmes. ICD-10 = donnée dérivée (crossmap IPCCC). Le typage residual/acquired/post-chir est un choix clinicien à la saisie (CardiacCondition.condition_type), pas une propriété du code.",
+    "systems" : ["https://taussig/fhir/CodeSystem/echsa",
+    "https://taussig/fhir/CodeSystem/ipccc"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-diagnosis-icd11",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "TaussigDiagnosisIcd11",
+    "title" : "TAUSSIG — Diagnostics congénitaux (CIM-11 MMS)",
+    "description" : "Axe de classification diagnostique de la POC : énumération des entités CIM-11 MMS retenues pour les cardiopathies congénitales, avec le libellé français officiel de l'OMS. Liaison extensible : un code CIM-11 hors liste reste admis, mais l'autocomplétion et les statistiques se font sur ce working set curé.",
+    "systems" : ["http://id.who.int/icd/release/11/mms"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-diagnosis-ipccc",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "TaussigDiagnosisIpccc",
+    "title" : "TAUSSIG — Diagnostics congénitaux (IPCCC)",
+    "description" : "Équivalents IPCCC des diagnostics congénitaux du working set CIM-11 (codage parallèle de précision clinique). Un même code IPCCC peut répondre à plusieurs entités CIM-11.",
+    "systems" : ["https://taussig/fhir/CodeSystem/ipccc"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-genetic-syndrome",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "taussig_genetic_syndrome",
+    "title" : "TAUSSIG — Syndromes génétiques (Orphanet)",
+    "description" : "Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé.",
+    "systems" : ["http://www.orpha.net"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-materiel-types",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "taussig_materiel_types",
+    "title" : "TAUSSIG — Types de dispositifs interventionnels",
+    "description" : "Working set de matériel ; catégories de fermeture distinguées par cible selon la décision clinique du 30 octobre 2026. Les catégories fines de fermeture utilisent des codes TAUSSIG locaux.",
+    "systems" : ["https://taussig/fhir/CodeSystem/closure-device-type",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-measurement-property",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "TaussigMeasurementProperty",
+    "title" : "TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept)",
+    "description" : "Working set POC des propriétés de mesure hémodynamique de cathétérisme.",
+    "systems" : ["https://taussig/fhir/CodeSystem/measurement-property"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-procedure-exposure-observation-code-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "TaussigProcedureExposureObservationCodeVS",
+    "title" : "TAUSSIG — Codes d'exposition et contraste",
+    "description" : "Codes des observations quantitatives liées à l'exposition radiologique et au contraste.",
+    "systems" : ["https://taussig/fhir/CodeSystem/procedure-observation-code"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-procedure-ipccc",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "TaussigProcedureIpccc",
+    "title" : "TAUSSIG — Gestes de cathétérisme (IPCCC)",
+    "description" : "Axe IPCCC des gestes de cathétérisme congénital retenus pour la POC (gestes diagnostiques, interventionnels et hybrides). Remplace, pour l'autocomplétion, la liaison à la short list IPCCC de 1 822 codes, inexploitable comme menu.",
+    "systems" : ["https://taussig/fhir/CodeSystem/ipccc"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-procedure-snomed",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "taussig_procedure_snomed",
+    "title" : "TAUSSIG — Procédures (SNOMED CT, interopérabilité)",
+    "description" : "Working set SNOMED CT des gestes de cathétérisme congénital (couche d'interopérabilité FHIR Procedure.code). Résolu sur le SMT depuis les gestes IPCCC retenus. À valider cliniquement.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-regurgitation-grade",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "TaussigRegurgitationGrade",
+    "title" : "TAUSSIG — Grade de régurgitation (valeurs codées)",
+    "description" : "Échelle qualitative de la régurgitation valvulaire, valeur de la propriété de mesure regurgitation_grade (Observation.valueCodeableConcept). Qualifier values SNOMED CT dont l'existence et le libellé FR ont été vérifiés sur le SMT ; le choix de l'échelle reste à valider cliniquement.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/taussig-sites-mesure",
+    "version" : "0.6.0",
+    "status" : "draft",
+    "name" : "taussig_sites_mesure",
+    "title" : "TAUSSIG — Sites anatomiques de mesure/geste (validé)",
+    "description" : "Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED).",
+    "systems" : ["https://taussig/fhir/CodeSystem/taussig-local",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/technical-success-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "TechnicalSuccessVS",
+    "title" : "TAUSSIG — Succès technique",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/technical-success"]
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/ventilation-type-vs",
+    "version" : "0.6.0",
+    "status" : "active",
+    "name" : "VentilationTypeVS",
+    "title" : "TAUSSIG — Modes ventilatoires",
+    "description" : "",
+    "systems" : ["https://taussig/fhir/CodeSystem/ventilation-type"]
+  }]
+}

@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/measurement-phase-to-snomed> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "measurement-phase-to-snomed"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts measurement-phase-to-snomed</b></p><a name=\"measurement-phase-to-snomed\"> </a><a name=\"hcmeasurement-phase-to-snomed\"> </a><p>Mapping de <a href=\"ValueSet-procedure-phase-vs.html\">TAUSSIG — Phases procédurales</a> vers <a href=\"https://browser.ihtsdotools.org/\">All Codes SCT ValueSet</a></p><br/><p>Mapping de <a href=\"CodeSystem-procedure-phase.html\">TAUSSIG — Phase procédurale d'une mesure</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>baseline (État de base)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>128974000 (état basal)</td><td/></tr><tr><td>pre_intervention (Avant le geste)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>72077002 (état préopératoire)</td><td/></tr><tr><td>post_intervention (Après le geste)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>303110006 (période postopératoire)</td><td/></tr><tr><td>not_applicable (Non applicable)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">pas de concept SNOMED</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://taussig/fhir/ConceptMap/measurement-phase-to-snomed"] ;
+  fhir:ConceptMap.version [ fhir:value "0.6.0"] ;
+  fhir:ConceptMap.name [ fhir:value "MeasurementPhaseToSnomed"] ;
+  fhir:ConceptMap.title [ fhir:value "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceUri [ fhir:value "https://taussig/fhir/ValueSet/procedure-phase-vs"] ;
+  fhir:ConceptMap.targetUri [ fhir:value "http://snomed.info/sct?fhir_vs"] ;
+  fhir:ConceptMap.group [
+     fhir:index -1 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://taussig/fhir/CodeSystem/procedure-phase" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://snomed.info/sct" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "baseline" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "128974000" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "état basal" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "pre_intervention" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "72077002" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "état préopératoire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "post_intervention" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "303110006" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "période postopératoire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "not_applicable" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "pas de concept SNOMED" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/measurement-phase-to-snomed.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

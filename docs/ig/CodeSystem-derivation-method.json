@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "derivation-method",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem derivation-method</b></p><a name=\"derivation-method\"> </a><a name=\"hcderivation-method\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/derivation-method</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">measured<a name=\"derivation-method-measured\"> </a></td><td>Mesuré</td></tr><tr><td style=\"white-space:nowrap\">calculated<a name=\"derivation-method-calculated\"> </a></td><td>Calculé</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/derivation-method",
+  "version" : "0.6.0",
+  "name" : "DerivationMethod",
+  "title" : "TAUSSIG — Dérivation d'une mesure",
+  "status" : "active",
+  "date" : "2026-10-30T22:35:46+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Mesure directe ou valeur calculée.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "measured",
+    "display" : "Mesuré"
+  },
+  {
+    "code" : "calculated",
+    "display" : "Calculé"
+  }]
+}
