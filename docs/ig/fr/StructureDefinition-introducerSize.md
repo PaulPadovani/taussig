@@ -1,6 +1,6 @@
-# Taille d'introducteur - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# Taille d'introducteur - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: Taille d'introducteur 
+## Extension: Taille d'introducteur (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Abord vasculaire](StructureDefinition-taussig-vascular-access.md)
+* Exemples pour ce/t/te Extension: [Procedure/ex-taussig-vascular-access](Procedure-ex-taussig-vascular-access.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/introducerSize)
 
@@ -50,11 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-introducerSize.
   "resourceType" : "StructureDefinition",
   "id" : "introducerSize",
   "url" : "https://taussig/fhir/StructureDefinition/introducerSize",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "IntroducerSize",
   "title" : "Taille d'introducteur",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Calibre de l'introducteur (French/Charrière).",
   "jurisdiction" : [{

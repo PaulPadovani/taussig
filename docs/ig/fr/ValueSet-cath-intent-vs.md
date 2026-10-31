@@ -1,6 +1,6 @@
-# TAUSSIG — Intentions de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Intentions de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ValueSet: TAUSSIG — Intentions de cathétérisme 
+## ValueSet: TAUSSIG — Intentions de cathétérisme (Expérimental) 
 
  **References** 
 
@@ -25,12 +25,14 @@
   "resourceType" : "ValueSet",
   "id" : "cath-intent-vs",
   "url" : "https://taussig/fhir/ValueSet/cath-intent-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "CathIntentVS",
   "title" : "TAUSSIG — Intentions de cathétérisme",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
+  "description" : "Jeu de valeurs « TAUSSIG — Intentions de cathétérisme » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

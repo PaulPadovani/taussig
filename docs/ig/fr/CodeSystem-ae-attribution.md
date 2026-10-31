@@ -1,6 +1,6 @@
-# TAUSSIG — Attribution d'un EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Attribution d'un EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## CodeSystem: TAUSSIG — Attribution d'un EI 
+## CodeSystem: TAUSSIG — Attribution d'un EI (Expérimental) 
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
@@ -19,11 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "ae-attribution",
   "url" : "https://taussig/fhir/CodeSystem/ae-attribution",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AeAttribution",
   "title" : "TAUSSIG — Attribution d'un EI",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Cause suspectée d'un événement indésirable.",
   "jurisdiction" : [{

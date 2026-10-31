@@ -1,6 +1,6 @@
-# GeneticSyndromeToIcd11 - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — GeneticSyndromeToIcd11 - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ConceptMap: GeneticSyndromeToIcd11 (Expérimental) 
+## ConceptMap: TAUSSIG — GeneticSyndromeToIcd11 (Expérimental) 
 
 
 
@@ -11,11 +11,12 @@
   "resourceType" : "ConceptMap",
   "id" : "genetic-syndrome-to-icd11",
   "url" : "https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "GeneticSyndromeToIcd11",
+  "title" : "TAUSSIG — GeneticSyndromeToIcd11",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Crossmap Orphanet -> ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1).",
   "jurisdiction" : [{

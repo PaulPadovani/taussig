@@ -1,4 +1,4 @@
-# TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ValueSet: TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité) (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "taussig-adverse-event-snomed",
   "url" : "https://taussig/fhir/ValueSet/taussig-adverse-event-snomed",
-  "version" : "0.6.0",
-  "name" : "taussig_adverse_event_snomed",
+  "version" : "0.1.0",
+  "name" : "TaussigAdverseEventSnomed",
   "title" : "TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set SNOMED CT des complications péri-procédurales du cathétérisme congénital (couche d'interopérabilité FHIR AdverseEvent.event / Condition.code). Résolu sur le SMT depuis les complications IPCCC/EPCC retenues. À valider cliniquement.",
   "jurisdiction" : [{

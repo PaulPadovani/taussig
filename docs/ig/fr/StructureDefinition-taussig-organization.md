@@ -1,10 +1,10 @@
-# TAUSSIG — Organisation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Organisation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Organisation 
+## Profil de ressource: TAUSSIG — Organisation ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Établissement fictif — exemple technique](Organization-ex-taussig-organization.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-organization)
 
@@ -61,11 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-organiz
   "resourceType" : "StructureDefinition",
   "id" : "taussig-organization",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-organization",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigOrganization",
   "title" : "TAUSSIG — Organisation",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Établissement de santé, dérivé de FR Core Organization (établissement). FINESS porté par les slices FR Core idNatSt (urn:oid:1.2.250.1.71.4.2.2) et finess (https://finess.esante.gouv.fr).",
   "jurisdiction" : [{

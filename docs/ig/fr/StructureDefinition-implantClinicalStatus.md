@@ -1,6 +1,6 @@
-# État clinique de l'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# État clinique de l'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: État clinique de l'implant 
+## Extension: État clinique de l'implant (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Implant cardiaque (substrat longitudinal)](StructureDefinition-taussig-cardiac-implant.md)
+* Exemples pour ce/t/te Extension: [Device/ex-taussig-cardiac-implant](Device-ex-taussig-cardiac-implant.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/implantClinicalStatus)
 
@@ -58,11 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-implantClinical
   "resourceType" : "StructureDefinition",
   "id" : "implantClinicalStatus",
   "url" : "https://taussig/fhir/StructureDefinition/implantClinicalStatus",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantClinicalStatus",
   "title" : "État clinique de l'implant",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "État clinique courant (Device.status ne couvre pas functional/degenerated/…).",
   "jurisdiction" : [{

@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/Patient/ex-taussig-patient> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-taussig-patient"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://taussig/fhir/StructureDefinition/taussig-patient" ;
+       fhir:index -1 ;
+       fhir:link <https://taussig/fhir/StructureDefinition/taussig-patient>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/tags" ] ;
+       fhir:Coding.code [ fhir:value "synthetic-technical-example" ]
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Patient ex-taussig-patient</b></p><a name=\"ex-taussig-patient\"> </a><a name=\"hcex-taussig-patient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-patient.html\">TAUSSIG — Patient</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</p><hr/></div>"
+  ] ;
+  fhir:Patient.name [
+     fhir:index -1 ;
+     fhir:HumanName.text [ fhir:value "Patient fictif — exemple technique" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "unknown"] ;
+  fhir:Patient.birthDate [ fhir:value "2020-01-01"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/Patient/ex-taussig-patient.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# TAUSSIG — Condition de mesure -> SNOMED - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Condition de mesure -> SNOMED - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ConceptMap: TAUSSIG — Condition de mesure -> SNOMED (Expérimental) 
 
@@ -11,13 +11,14 @@
   "resourceType" : "ConceptMap",
   "id" : "measurement-condition-to-snomed",
   "url" : "https://taussig/fhir/ConceptMap/measurement-condition-to-snomed",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "MeasurementConditionToSnomed",
   "title" : "TAUSSIG — Condition de mesure -> SNOMED",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
+  "description" : "Représentation FHIR « TAUSSIG — Condition de mesure -> SNOMED » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

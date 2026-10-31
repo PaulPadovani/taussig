@@ -1,6 +1,6 @@
-# TAUSSIG — Attributions d'EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Attributions d'EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ValueSet: TAUSSIG — Attributions d'EI 
+## ValueSet: TAUSSIG — Attributions d'EI (Expérimental) 
 
  **References** 
 
@@ -25,12 +25,14 @@
   "resourceType" : "ValueSet",
   "id" : "ae-attribution-vs",
   "url" : "https://taussig/fhir/ValueSet/ae-attribution-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AeAttributionVS",
   "title" : "TAUSSIG — Attributions d'EI",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
+  "description" : "Jeu de valeurs « TAUSSIG — Attributions d'EI » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

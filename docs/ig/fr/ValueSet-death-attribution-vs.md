@@ -1,6 +1,6 @@
-# TAUSSIG — Attributions du décès - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Attributions du décès - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ValueSet: TAUSSIG — Attributions du décès 
+## ValueSet: TAUSSIG — Attributions du décès (Expérimental) 
 
  **References** 
 
@@ -25,12 +25,14 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "resourceType" : "ValueSet",
   "id" : "death-attribution-vs",
   "url" : "https://taussig/fhir/ValueSet/death-attribution-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DeathAttributionVS",
   "title" : "TAUSSIG — Attributions du décès",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
+  "description" : "Jeu de valeurs « TAUSSIG — Attributions du décès » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

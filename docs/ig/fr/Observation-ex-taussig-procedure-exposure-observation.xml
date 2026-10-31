@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-taussig-procedure-exposure-observation"/>
+  <meta>
+    <profile value="https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation"/>
+    <tag>
+      <system value="https://taussig/fhir/tags"/>
+      <code value="synthetic-technical-example"/>
+    </tag>
+  </meta>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Observation ex-taussig-procedure-exposure-observation</b></p><a name="ex-taussig-procedure-exposure-observation"> </a><a name="hcex-taussig-procedure-exposure-observation"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-taussig-procedure-exposure-observation.html">TAUSSIG — Exposition et contraste de procédure</a></p><p style="margin-bottom: 0px">Balise: </p></div><p><b>partOf</b>: <a href="Procedure-ex-taussig-catheterization.html">Procedure : extension = false; status = unknown; performed[x] = 2026-01-01</a></p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title="Codes :{https://taussig/fhir/CodeSystem/procedure-observation-code fluoroscopy-time}">Temps de fluoroscopie</span></p><p><b>subject</b>: <a href="Patient-ex-taussig-patient.html">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>effective</b>: 2026-01-01</p><p><b>value</b>: 5 min<span style="background: LightGoldenRodYellow"> (Détails : code UCUMmin = 'min')</span></p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/ex-taussig-catheterization"/>
+  </partOf>
+  <status value="unknown"/>
+  <code>
+    <coding>
+      <system value="https://taussig/fhir/CodeSystem/procedure-observation-code"/>
+      <code value="fluoroscopy-time"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-taussig-patient"/>
+  </subject>
+  <effectiveDateTime value="2026-01-01"/>
+  <valueQuantity>
+    <value value="5"/>
+    <unit value="min"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="min"/>
+  </valueQuantity>
+</Observation>

@@ -1,6 +1,6 @@
-# TAUSSIG — Rôle d'une indication/diagnostic - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Rôle d'une indication/diagnostic - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## CodeSystem: TAUSSIG — Rôle d'une indication/diagnostic 
+## CodeSystem: TAUSSIG — Rôle d'une indication/diagnostic (Expérimental) 
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
@@ -19,11 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "diagnosis-role",
   "url" : "https://taussig/fhir/CodeSystem/diagnosis-role",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DiagnosisRole",
   "title" : "TAUSSIG — Rôle d'une indication/diagnostic",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rôle de l'indication d'un cathétérisme.",
   "jurisdiction" : [{

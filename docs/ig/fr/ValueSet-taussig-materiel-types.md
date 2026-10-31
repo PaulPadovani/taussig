@@ -1,4 +1,4 @@
-# TAUSSIG — Types de dispositifs interventionnels - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Types de dispositifs interventionnels - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ValueSet: TAUSSIG — Types de dispositifs interventionnels (Expérimental) 
 
@@ -25,12 +25,12 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "resourceType" : "ValueSet",
   "id" : "taussig-materiel-types",
   "url" : "https://taussig/fhir/ValueSet/taussig-materiel-types",
-  "version" : "0.6.0",
-  "name" : "taussig_materiel_types",
+  "version" : "0.1.0",
+  "name" : "TaussigMaterielTypes",
   "title" : "TAUSSIG — Types de dispositifs interventionnels",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set de matériel ; catégories de fermeture distinguées par cible selon la décision clinique du 30 octobre 2026. Les catégories fines de fermeture utilisent des codes TAUSSIG locaux.",
   "jurisdiction" : [{

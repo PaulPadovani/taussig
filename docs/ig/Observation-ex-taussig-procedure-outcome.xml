@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-taussig-procedure-outcome"/>
+  <meta>
+    <profile value="https://taussig/fhir/StructureDefinition/taussig-procedure-outcome"/>
+    <tag>
+      <system value="https://taussig/fhir/tags"/>
+      <code value="synthetic-technical-example"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Observation ex-taussig-procedure-outcome</b></p><a name="ex-taussig-procedure-outcome"> </a><a name="hcex-taussig-procedure-outcome"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-taussig-procedure-outcome.html">TAUSSIG — Résultat global de procédure</a></p><p style="margin-bottom: 0px">Balise: </p></div><p><b>partOf</b>: <a href="Procedure-ex-taussig-catheterization.html">Procedure : extension = false; status = unknown; performed[x] = 2026-01-01</a></p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title="Codes :">Exemple technique de résultat — valeur non renseignée</span></p><p><b>subject</b>: <a href="Patient-ex-taussig-patient.html">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/ex-taussig-catheterization"/>
+  </partOf>
+  <status value="unknown"/>
+  <code>
+    <text value="Exemple technique de résultat — valeur non renseignée"/>
+  </code>
+  <subject>
+    <reference value="Patient/ex-taussig-patient"/>
+  </subject>
+</Observation>

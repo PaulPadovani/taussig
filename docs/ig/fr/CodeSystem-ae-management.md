@@ -1,4 +1,4 @@
-# TAUSSIG — Gestion de la complication (prise en charge péri-procédurale) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Gestion de la complication (prise en charge péri-procédurale) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## CodeSystem: TAUSSIG — Gestion de la complication (prise en charge péri-procédurale) (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "ae-management",
   "url" : "https://taussig/fhir/CodeSystem/ae-management",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigAeManagement",
   "title" : "TAUSSIG — Gestion de la complication (prise en charge péri-procédurale)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Variable de prise en charge d'un événement indésirable de cathétérisme congénital (échelle d'escalade). Ancrage IPCCC/EPCC chap. 15 + SNOMED procédure. À valider cliniquement.",
   "jurisdiction" : [{

@@ -1,6 +1,6 @@
-# Phase procédurale (mesure) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# Phase procédurale (mesure) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: Phase procédurale (mesure) 
+## Extension: Phase procédurale (mesure) (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Mesure clinique (delta pre/post)](StructureDefinition-taussig-clinical-measurement.md)
+* Exemples pour ce/t/te Extension: [Observation/ex-taussig-clinical-measurement](Observation-ex-taussig-clinical-measurement.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/procedurePhase)
 
@@ -58,11 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-procedurePhase.
   "resourceType" : "StructureDefinition",
   "id" : "procedurePhase",
   "url" : "https://taussig/fhir/StructureDefinition/procedurePhase",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedurePhase",
   "title" : "Phase procédurale (mesure)",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Phase de la procédure à laquelle la mesure est faite (baseline/pre/post).",
   "jurisdiction" : [{

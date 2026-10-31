@@ -1,6 +1,6 @@
-# Posé en externe - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# Posé en externe - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: Posé en externe 
+## Extension: Posé en externe (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Implant cardiaque (substrat longitudinal)](StructureDefinition-taussig-cardiac-implant.md)
+* Exemples pour ce/t/te Extension: [Device/ex-taussig-cardiac-implant](Device-ex-taussig-cardiac-implant.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/implantedExternally)
 
@@ -50,11 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-implantedExtern
   "resourceType" : "StructureDefinition",
   "id" : "implantedExternally",
   "url" : "https://taussig/fhir/StructureDefinition/implantedExternally",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantedExternally",
   "title" : "Posé en externe",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Dispositif posé en chirurgie ou dans un autre centre (hors cathé TAUSSIG).",
   "jurisdiction" : [{

@@ -10,7 +10,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>GeneticSyndromeToIcd11 - JSON Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+    <title>TAUSSIG — GeneticSyndromeToIcd11 - JSON Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -51,8 +51,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.109"}
-    h3,h4,h5,h6{--heading-prefix:"4.109"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.112"}
+    h3,h4,h5,h6{--heading-prefix:"4.112"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -62,11 +62,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.0 - trial-use
+            <span style="display:inline-block;">0.6.1 - trial-use
 
 
 
-  France
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -121,7 +121,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>GeneticSyndromeToIcd11</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — GeneticSyndromeToIcd11</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -135,7 +135,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -184,7 +184,7 @@
 
 
 
-<h2 id="root">: GeneticSyndromeToIcd11</h2>
+<h2 id="root">: TAUSSIG — GeneticSyndromeToIcd11</h2>
 
   <table class="colsd" data-fhir="generated">
     <tr>
@@ -195,7 +195,7 @@
           
 
             à date du 
-2026-10-30
+2026-10-31
 
           
         
@@ -218,14 +218,15 @@
   "<a href="http://hl7.org/fhir/R4/resource.html#ConceptMap.language">language</a>" : "fr",
   "<a href="http://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CarteDeConcepts genetic-syndrome-to-icd11&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;genetic-syndrome-to-icd11\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcgenetic-syndrome-to-icd11\&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping de &lt;code&gt;http://www.orpha.net&lt;/code&gt; to &lt;code&gt;http://id.who.int/icd/release/11/mms&lt;/code&gt; (International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS))&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code source&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;relation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code cible&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;870 (Trisomie 21)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD40.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;881 (Syndrome de Turner)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD50.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;567 (Syndrome de délétion 22q11.2)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD44.N0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3380 (Syndrome de trisomie 18)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD40.2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3378 (Syndrome de trisomie 13)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD40.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;365 (Glycogénose par déficit en maltase acide)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;5C51.3&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;95 (Ataxie de Friedreich)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;8A03.10&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;98896 (Dystrophie musculaire de Duchenne)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;8C70.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;558 (Syndrome de Marfan)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD28.01&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;98249 (Syndrome d'Ehlers-Danlos)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD28.1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;60030 (Syndrome de Loeys-Dietz)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;BD50.Z&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;648 (Syndrome de Noonan)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD2F.15&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;805 (Sclérose tubéreuse de Bourneville)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD2D.2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;904 (Syndrome de Williams)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD44.70&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;52 (Syndrome d'Alagille)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LB20.0Y&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;290 (Syndrome de rubéole congénitale)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;KA62.8&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;68341 (Anomalies congénitales multiples/syndrome dysmorphique)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD2F&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CarteDeConcepts genetic-syndrome-to-icd11&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;genetic-syndrome-to-icd11\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcgenetic-syndrome-to-icd11\&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping de &lt;code&gt;http://www.orpha.net&lt;/code&gt; to &lt;code&gt;http://id.who.int/icd/release/11/mms&lt;/code&gt; (International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS))&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code source&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;relation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code cible&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;870 (Trisomie 21)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD40.0 (Complete trisomy 21)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;881 (Syndrome de Turner)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD50.0 (Turner syndrome)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;567 (Syndrome de délétion 22q11.2)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD44.N0 (CATCH 22 phenotype)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3380 (Syndrome de trisomie 18)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD40.2 (Complete trisomy 18)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3378 (Syndrome de trisomie 13)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD40.1 (Complete trisomy 13)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;365 (Glycogénose par déficit en maltase acide)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;5C51.3 (Glycogen storage disease)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;95 (Ataxie de Friedreich)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;8A03.10 (Friedreich ataxia)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;98896 (Dystrophie musculaire de Duchenne)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;8C70.1 (Duchenne muscular dystrophy)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;558 (Syndrome de Marfan)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD28.01 (Marfan syndrome)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;98249 (Syndrome d'Ehlers-Danlos)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD28.1 (Ehlers-Danlos syndrome)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;60030 (Syndrome de Loeys-Dietz)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;BD50.Z (Aortic aneurysm or dissection, unspecified)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;648 (Syndrome de Noonan)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD2F.15 (Noonan syndrome)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;805 (Sclérose tubéreuse de Bourneville)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD2D.2 (Tuberous sclerosis)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;904 (Syndrome de Williams)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD44.70 (Deletions of the long arm of chromosome 7)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;52 (Syndrome d'Alagille)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LB20.0Y (Other specified structural developmental anomalies of liver)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;290 (Syndrome de rubéole congénitale)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;KA62.8 (Congenital rubella syndrome)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;68341 (Anomalies congénitales multiples/syndrome dysmorphique)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;LD2F (Syndromes with multiple structural anomalies, without predominant body system involvement)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">url</a>" : "https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11",
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a>" : "0.6.0",
+  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a>" : "0.1.0",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">name</a>" : "GeneticSyndromeToIcd11",
+  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">title</a>" : "TAUSSIG — GeneticSyndromeToIcd11",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">date</a>" : "2026-10-30T22:35:46+01:00",
+  "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">date</a>" : "2026-10-31T15:29:53+01:00",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">publisher</a>" : "Projet TAUSSIG",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.description">description</a>" : "Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1).",
   "<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.jurisdiction">jurisdiction</a>" : [
@@ -447,10 +448,10 @@
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-30 22:35:00 +0100">
-    2026-10-30
+  <span title="2026-10-31 15:29:00 +0100">
+    2026-10-31
   </span>
 
           <br/>

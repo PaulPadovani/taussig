@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "ex-taussig-anesthesia-management",
+  "meta" : {
+    "profile" : ["https://taussig/fhir/StructureDefinition/taussig-anesthesia-management"],
+    "tag" : [{
+      "system" : "https://taussig/fhir/tags",
+      "code" : "synthetic-technical-example"
+    }]
+  },
+  "language" : "fr",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Procédure ex-taussig-anesthesia-management</b></p><a name=\"ex-taussig-anesthesia-management\"> </a><a name=\"hcex-taussig-anesthesia-management\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-anesthesia-management.html\">TAUSSIG — Gestion anesthésique</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Mode ventilatoire</b>: spontaneous</p><p><b>Assistance ECMO</b>: false</p><p><b>partOf</b>: <a href=\"Procedure-ex-taussig-catheterization.html\">Procedure : extension = false; status = unknown; performed[x] = 2026-01-01</a></p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title=\"Codes :{http://snomed.info/sct 50697003}\">administration d'un anesthésique général</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://taussig/fhir/StructureDefinition/ventilationType",
+    "valueCode" : "spontaneous"
+  },
+  {
+    "url" : "https://taussig/fhir/StructureDefinition/ecmoSupport",
+    "valueBoolean" : false
+  }],
+  "partOf" : [{
+    "reference" : "Procedure/ex-taussig-catheterization"
+  }],
+  "status" : "unknown",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "50697003"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ex-taussig-patient"
+  }
+}

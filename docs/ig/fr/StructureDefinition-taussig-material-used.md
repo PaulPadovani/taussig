@@ -1,10 +1,10 @@
-# TAUSSIG — Matériel utilisé (consommable de geste) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Matériel utilisé (consommable de geste) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Matériel utilisé (consommable de geste) 
+## Profil de ressource: TAUSSIG — Matériel utilisé (consommable de geste) ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Device/ex-taussig-material-used](Device-ex-taussig-material-used.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-material-used)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-materia
   "resourceType" : "StructureDefinition",
   "id" : "taussig-material-used",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-material-used",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigMaterialUsed",
   "title" : "TAUSSIG — Matériel utilisé (consommable de geste)",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Matériel consommé pendant un geste (ballon, stent, dispositif, consommable). Catégorie en type ; caractéristiques techniques (diamètre, longueur…) en Device.property (LOINC/UCUM) ; UDI ; séquence/tentative d'usage en extensions sur Procedure.usedReference.",
   "jurisdiction" : [{

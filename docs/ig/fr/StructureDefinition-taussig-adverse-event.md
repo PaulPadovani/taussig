@@ -1,10 +1,10 @@
-# TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Événement indésirable 
+## Profil de ressource: TAUSSIG — Événement indésirable ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [AdverseEvent/ex-taussig-adverse-event](AdverseEvent-ex-taussig-adverse-event.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-adverse-event)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
   "resourceType" : "StructureDefinition",
   "id" : "taussig-adverse-event",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-adverse-event",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigAdverseEvent",
   "title" : "TAUSSIG — Événement indésirable",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4).",
   "jurisdiction" : [{

@@ -1,10 +1,10 @@
-# TAUSSIG — Épisode de soins - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Épisode de soins - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Épisode de soins 
+## Profil de ressource: TAUSSIG — Épisode de soins ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Encounter/ex-taussig-care-episode](Encounter-ex-taussig-care-episode.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-care-episode)
 
@@ -61,11 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-care-ep
   "resourceType" : "StructureDefinition",
   "id" : "taussig-care-episode",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-care-episode",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCareEpisode",
   "title" : "TAUSSIG — Épisode de soins",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Épisode de soins (hospitalisation ou ambulatoire) englobant le cathétérisme, dérivé de FR Core Encounter.",
   "jurisdiction" : [{

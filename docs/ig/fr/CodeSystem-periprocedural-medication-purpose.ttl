@@ -14,11 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem periprocedural-medication-purpose</b></p><a name=\"periprocedural-medication-purpose\"> </a><a name=\"hcperiprocedural-medication-purpose\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/periprocedural-medication-purpose</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">antibioprophylaxis<a name=\"periprocedural-medication-purpose-antibioprophylaxis\"> </a></td><td>Antibioprophylaxie</td></tr><tr><td style=\"white-space:nowrap\">anticoagulation<a name=\"periprocedural-medication-purpose-anticoagulation\"> </a></td><td>Anticoagulation per-procédurale</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/periprocedural-medication-purpose"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
   fhir:CodeSystem.name [ fhir:value "PeriproceduralMedicationPurpose"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Rôle du médicament péri-procédural"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Rôle clinique d'une administration médicamenteuse pendant le cathétérisme."] ;
   fhir:CodeSystem.jurisdiction [

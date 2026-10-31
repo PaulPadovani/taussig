@@ -6,11 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem procedure-observation-code</b></p><a name=\"procedure-observation-code\"> </a><a name=\"hcprocedure-observation-code\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/procedure-observation-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">fluoroscopy-time<a name=\"procedure-observation-code-fluoroscopy-time\"> </a></td><td>Temps de fluoroscopie</td></tr><tr><td style=\"white-space:nowrap\">dose-area-product<a name=\"procedure-observation-code-dose-area-product\"> </a></td><td>Produit dose-surface</td></tr><tr><td style=\"white-space:nowrap\">contrast-volume<a name=\"procedure-observation-code-contrast-volume\"> </a></td><td>Volume de produit de contraste</td></tr></table></div>"
   },
   "url" : "https://taussig/fhir/CodeSystem/procedure-observation-code",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedureObservationCode",
   "title" : "TAUSSIG — Observations liées au cathétérisme",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Codes locaux transitoires pour les observations de procédure dont le code LOINC reste à vérifier.",
   "jurisdiction" : [{

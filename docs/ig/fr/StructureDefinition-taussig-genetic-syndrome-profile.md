@@ -1,10 +1,10 @@
-# TAUSSIG — Syndrome génétique (covariable de contexte) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Syndrome génétique (covariable de contexte) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Syndrome génétique (covariable de contexte) 
+## Profil de ressource: TAUSSIG — Syndrome génétique (covariable de contexte) ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Condition/ex-taussig-genetic-syndrome-profile](Condition-ex-taussig-genetic-syndrome-profile.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-genetic-syndrome-profile)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
   "resourceType" : "StructureDefinition",
   "id" : "taussig-genetic-syndrome-profile",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigGeneticSyndrome",
   "title" : "TAUSSIG — Syndrome génétique (covariable de contexte)",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé.",
   "jurisdiction" : [{

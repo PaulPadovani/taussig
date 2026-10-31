@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/anesthesia-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "anesthesia-type-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs anesthesia-type-vs</b></p><a name=\"anesthesia-type-vs\"> </a><a name=\"hcanesthesia-type-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/50697003\">50697003</a></td><td>administration d'un anesthésique général</td></tr><tr><td><a href=\"http://snomed.info/id/72641008\">72641008</a></td><td>sédation</td></tr><tr><td><a href=\"http://snomed.info/id/386761002\">386761002</a></td><td>anesthésie locale</td></tr></table></li><li>Inclut ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-anesthesia-type.html\"><code>https://taussig/fhir/CodeSystem/anesthesia-type</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-anesthesia-type.html#anesthesia-type-none\">none</a></td><td>Aucune anesthésie</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/anesthesia-type-vs"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.1"] ;
+  fhir:ValueSet.name [ fhir:value "TaussigAnesthesiaTypeVS"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Types d’anesthésie"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Quatre catégories du modèle : anesthésie générale, sédation et anesthésie locale en SNOMED CT, et aucune anesthésie explicite en code TAUSSIG. Sans distinction du niveau de sédation ni des techniques locorégionales."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "50697003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "administration d'un anesthésique général" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "72641008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "sédation" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "386761002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "anesthésie locale" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/anesthesia-type" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "none" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aucune anesthésie" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/anesthesia-type-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

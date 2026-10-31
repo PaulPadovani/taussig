@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/Device/ex-taussig-cardiac-implant> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-taussig-cardiac-implant"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://taussig/fhir/StructureDefinition/taussig-cardiac-implant" ;
+       fhir:index 0 ;
+       fhir:link <https://taussig/fhir/StructureDefinition/taussig-cardiac-implant>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/tags" ] ;
+       fhir:Coding.code [ fhir:value "synthetic-technical-example" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif ex-taussig-cardiac-implant</b></p><a name=\"ex-taussig-cardiac-implant\"> </a><a name=\"hcex-taussig-cardiac-implant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-implant.html\">TAUSSIG — Implant cardiaque (substrat longitudinal)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>État clinique de l'implant</b>: <a href=\"CodeSystem-implant-status.html#implant-status-functional\">TAUSSIG — État clinique d'un implant: functional</a> (Fonctionnel)</p><p><b>Posé en externe</b>: true</p><p><b>Implant précédent</b>: <a href=\"Device-ex-prior-implant.html\">Device</a></p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Dispositif fictif — exemple technique</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/implant-device-type stent}\">Stent</span></p><p><b>patient</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/implantClinicalStatus" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/implant-status" ] ;
+       fhir:Coding.code [ fhir:value "functional" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/implantedExternally" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/previousImplant" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <https://taussig/fhir/Device/ex-prior-implant> ;
+       fhir:Reference.reference [ fhir:value "Device/ex-prior-implant" ]
+     ]
+  ] ;
+  fhir:Device.deviceName [
+     fhir:index 0 ;
+     fhir:Device.deviceName.name [ fhir:value "Dispositif fictif — exemple technique" ] ;
+     fhir:Device.deviceName.type [ fhir:value "user-friendly-name" ]
+  ] ;
+  fhir:Device.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/implant-device-type" ] ;
+       fhir:Coding.code [ fhir:value "stent" ]
+     ]
+  ] ;
+  fhir:Device.patient [
+     fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/Device/ex-taussig-cardiac-implant.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

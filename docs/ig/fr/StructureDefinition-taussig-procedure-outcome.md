@@ -1,10 +1,10 @@
-# TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Résultat global de procédure 
+## Profil de ressource: TAUSSIG — Résultat global de procédure ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Observation/ex-taussig-procedure-outcome](Observation-ex-taussig-procedure-outcome.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-procedure-outcome)
 
@@ -61,11 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
   "resourceType" : "StructureDefinition",
   "id" : "taussig-procedure-outcome",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-procedure-outcome",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigProcedureOutcome",
   "title" : "TAUSSIG — Résultat global de procédure",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Synthèse du résultat procédural : succès hémodynamique, lésion résiduelle, imputabilité d'un décès péri-procédural (component). NB : succès TECHNIQUE porté par Procedure.outcome (geste/cathétérisme) ; décès porté par Patient.deceased[x].",
   "jurisdiction" : [{

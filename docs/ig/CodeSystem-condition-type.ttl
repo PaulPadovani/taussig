@@ -13,11 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem condition-type</b></p><a name=\"condition-type\"> </a><a name=\"hccondition-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/condition-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">residual_lesion<a name=\"condition-type-residual_lesion\"> </a></td><td>Lésion résiduelle</td></tr><tr><td style=\"white-space:nowrap\">acquired_lesion<a name=\"condition-type-acquired_lesion\"> </a></td><td>Lésion acquise</td></tr><tr><td style=\"white-space:nowrap\">post_surgical_state<a name=\"condition-type-post_surgical_state\"> </a></td><td>État post-chirurgical</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/condition-type"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
   fhir:CodeSystem.name [ fhir:value "ConditionType"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Type de condition évolutive"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Catégorie d'une lésion évolutive."] ;
   fhir:CodeSystem.jurisdiction [

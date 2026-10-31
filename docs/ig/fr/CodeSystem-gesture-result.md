@@ -1,6 +1,6 @@
-# TAUSSIG — Résultat d'un geste / d'un matériel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Résultat d'un geste / d'un matériel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## CodeSystem: TAUSSIG — Résultat d'un geste / d'un matériel 
+## CodeSystem: TAUSSIG — Résultat d'un geste / d'un matériel (Expérimental) 
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
@@ -19,11 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "gesture-result",
   "url" : "https://taussig/fhir/CodeSystem/gesture-result",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "GestureResult",
   "title" : "TAUSSIG — Résultat d'un geste / d'un matériel",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Résultat au niveau geste et tentative matériel.",
   "jurisdiction" : [{

@@ -14,11 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem procedure-observation-code</b></p><a name=\"procedure-observation-code\"> </a><a name=\"hcprocedure-observation-code\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/procedure-observation-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">fluoroscopy-time<a name=\"procedure-observation-code-fluoroscopy-time\"> </a></td><td>Temps de fluoroscopie</td></tr><tr><td style=\"white-space:nowrap\">dose-area-product<a name=\"procedure-observation-code-dose-area-product\"> </a></td><td>Produit dose-surface</td></tr><tr><td style=\"white-space:nowrap\">contrast-volume<a name=\"procedure-observation-code-contrast-volume\"> </a></td><td>Volume de produit de contraste</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/procedure-observation-code"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
   fhir:CodeSystem.name [ fhir:value "ProcedureObservationCode"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Observations liées au cathétérisme"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Codes locaux transitoires pour les observations de procédure dont le code LOINC reste à vérifier."] ;
   fhir:CodeSystem.jurisdiction [

@@ -1,10 +1,10 @@
-# TAUSSIG — Anthropométrie au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Anthropométrie au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Anthropométrie au cathétérisme 
+## Profil de ressource: TAUSSIG — Anthropométrie au cathétérisme ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Observation/ex-taussig-cath-anthropometry-observation](Observation-ex-taussig-cath-anthropometry-observation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-cath-anthropometry-observation)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cath-an
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cath-anthropometry-observation",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cath-anthropometry-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCathAnthropometryObservation",
   "title" : "TAUSSIG — Anthropométrie au cathétérisme",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Poids, taille et surface corporelle au moment du cathétérisme, portés par des Observations liées à la Procedure.",
   "jurisdiction" : [{

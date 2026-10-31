@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/Observation/ex-taussig-procedure-outcome> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-taussig-procedure-outcome"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://taussig/fhir/StructureDefinition/taussig-procedure-outcome" ;
+       fhir:index 0 ;
+       fhir:link <https://taussig/fhir/StructureDefinition/taussig-procedure-outcome>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/tags" ] ;
+       fhir:Coding.code [ fhir:value "synthetic-technical-example" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation ex-taussig-procedure-outcome</b></p><a name=\"ex-taussig-procedure-outcome\"> </a><a name=\"hcex-taussig-procedure-outcome\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-procedure-outcome.html\">TAUSSIG — Résultat global de procédure</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>partOf</b>: <a href=\"Procedure-ex-taussig-catheterization.html\">Procedure : extension = false; status = unknown; performed[x] = 2026-01-01</a></p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title=\"Codes :\">Exemple technique de résultat — valeur non renseignée</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+  ] ;
+  fhir:Observation.partOf [
+     fhir:index 0 ;
+     fhir:link <https://taussig/fhir/Procedure/ex-taussig-catheterization> ;
+     fhir:Reference.reference [ fhir:value "Procedure/ex-taussig-catheterization" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "unknown"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.text [ fhir:value "Exemple technique de résultat — valeur non renseignée" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/Observation/ex-taussig-procedure-outcome.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

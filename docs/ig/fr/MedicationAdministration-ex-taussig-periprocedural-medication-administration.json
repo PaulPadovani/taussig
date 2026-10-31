@@ -1,0 +1,24 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "ex-taussig-periprocedural-medication-administration",
+  "meta" : {
+    "profile" : ["https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration"],
+    "tag" : [{
+      "system" : "https://taussig/fhir/tags",
+      "code" : "synthetic-technical-example"
+    }]
+  },
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : AdministrationMédicaments ex-taussig-periprocedural-medication-administration</b></p><a name=\"ex-taussig-periprocedural-medication-administration\"> </a><a name=\"hcex-taussig-periprocedural-medication-administration\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-periprocedural-medication-administration.html\">TAUSSIG — Administration médicamenteuse péri-procédurale</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>status</b>: Unknown</p><p><b>medication</b>: <span title=\"Codes :\">Médicament non précisé — exemple technique</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>effective</b>: 2026-01-01</p></div>"
+  },
+  "status" : "unknown",
+  "medicationCodeableConcept" : {
+    "text" : "Médicament non précisé — exemple technique"
+  },
+  "subject" : {
+    "reference" : "Patient/ex-taussig-patient"
+  },
+  "effectiveDateTime" : "2026-01-01"
+}

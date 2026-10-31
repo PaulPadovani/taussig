@@ -1,10 +1,10 @@
-# TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Condition cardiaque évolutive 
+## Profil de ressource: TAUSSIG — Condition cardiaque évolutive ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Condition/ex-taussig-cardiac-condition-profile](Condition-ex-taussig-cardiac-condition-profile.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-cardiac-condition-profile)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cardiac-condition-profile",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCardiacCondition",
   "title" : "TAUSSIG — Condition cardiaque évolutive",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance.",
   "jurisdiction" : [{

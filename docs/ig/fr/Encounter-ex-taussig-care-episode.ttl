@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/Encounter/ex-taussig-care-episode> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-taussig-care-episode"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://taussig/fhir/StructureDefinition/taussig-care-episode" ;
+       fhir:index -1 ;
+       fhir:link <https://taussig/fhir/StructureDefinition/taussig-care-episode>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/tags" ] ;
+       fhir:Coding.code [ fhir:value "synthetic-technical-example" ]
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Venue ex-taussig-care-episode</b></p><a name=\"ex-taussig-care-episode\"> </a><a name=\"hcex-taussig-care-episode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-care-episode.html\">TAUSSIG — Épisode de soins</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>identifier</b>: Visit number/EX-ENCOUNTER-01</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>period</b>: 2026-01-01 --&gt; 2026-01-01</p></div>"
+  ] ;
+  fhir:Encounter.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+         fhir:Coding.code [ fhir:value "VN" ]
+       ]
+     ] ;
+     fhir:Identifier.system [ fhir:value "https://taussig/fhir/identifiers/technical-encounter" ] ;
+     fhir:Identifier.value [ fhir:value "EX-ENCOUNTER-01" ]
+  ] ;
+  fhir:Encounter.status [ fhir:value "finished"] ;
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ] ;
+     fhir:Coding.code [ fhir:value "AMB" ]
+  ] ;
+  fhir:Encounter.subject [
+     fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+  ] ;
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2026-01-01"^^xsd:date ] ;
+     fhir:Period.end [ fhir:value "2026-01-01"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/Encounter/ex-taussig-care-episode.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

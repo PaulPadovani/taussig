@@ -6,11 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem procedure-phase</b></p><a name=\"procedure-phase\"> </a><a name=\"hcprocedure-phase\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/procedure-phase</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">baseline<a name=\"procedure-phase-baseline\"> </a></td><td>État de base</td></tr><tr><td style=\"white-space:nowrap\">pre_intervention<a name=\"procedure-phase-pre_intervention\"> </a></td><td>Avant le geste</td></tr><tr><td style=\"white-space:nowrap\">post_intervention<a name=\"procedure-phase-post_intervention\"> </a></td><td>Après le geste</td></tr><tr><td style=\"white-space:nowrap\">not_applicable<a name=\"procedure-phase-not_applicable\"> </a></td><td>Non applicable</td></tr></table></div>"
   },
   "url" : "https://taussig/fhir/CodeSystem/procedure-phase",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedurePhase",
   "title" : "TAUSSIG — Phase procédurale d'une mesure",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Référentiel temporel pour le delta pre/post (cœur de la POC).",
   "jurisdiction" : [{

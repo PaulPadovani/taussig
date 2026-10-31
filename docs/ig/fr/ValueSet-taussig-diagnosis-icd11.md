@@ -1,4 +1,4 @@
-# TAUSSIG — Diagnostics congénitaux (CIM-11 MMS) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Diagnostics congénitaux (CIM-11 MMS) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ValueSet: TAUSSIG — Diagnostics congénitaux (CIM-11 MMS) (Expérimental) 
 
@@ -11,8 +11,6 @@
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -27,12 +25,12 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "taussig-diagnosis-icd11",
   "url" : "https://taussig/fhir/ValueSet/taussig-diagnosis-icd11",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigDiagnosisIcd11",
   "title" : "TAUSSIG — Diagnostics congénitaux (CIM-11 MMS)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Axe de classification diagnostique de la POC : énumération des entités CIM-11 MMS retenues pour les cardiopathies congénitales, avec le libellé français officiel de l'OMS. Liaison extensible : un code CIM-11 hors liste reste admis, mais l'autocomplétion et les statistiques se font sur ce working set curé.",
   "jurisdiction" : [{

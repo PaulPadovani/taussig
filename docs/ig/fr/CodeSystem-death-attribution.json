@@ -7,11 +7,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem death-attribution</b></p><a name=\"death-attribution\"> </a><a name=\"hcdeath-attribution\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/death-attribution</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">procedure_related<a name=\"death-attribution-procedure_related\"> </a></td><td>Lié à la procédure</td></tr><tr><td style=\"white-space:nowrap\">procedure_possibly_related<a name=\"death-attribution-procedure_possibly_related\"> </a></td><td>Possiblement lié à la procédure</td></tr><tr><td style=\"white-space:nowrap\">unrelated<a name=\"death-attribution-unrelated\"> </a></td><td>Non lié</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"death-attribution-unknown\"> </a></td><td>Inconnu</td></tr></table></div>"
   },
   "url" : "https://taussig/fhir/CodeSystem/death-attribution",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DeathAttribution",
   "title" : "TAUSSIG — Attribution du décès péri-procédural",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Imputabilité d'un décès survenu en péri-procédure (ProcedureOutcome).",
   "jurisdiction" : [{

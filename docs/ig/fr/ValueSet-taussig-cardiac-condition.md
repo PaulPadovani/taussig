@@ -1,4 +1,4 @@
-# TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ValueSet: TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir) (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "taussig-cardiac-condition",
   "url" : "https://taussig/fhir/ValueSet/taussig-cardiac-condition",
-  "version" : "0.6.0",
-  "name" : "taussig_cardiac_condition",
+  "version" : "0.1.0",
+  "name" : "TaussigCardiacCondition",
   "title" : "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set des conditions cardiaques évolutives de la POC (distinct du diagnostic congénital figé) : 61 lésions résiduelles/acquises codées en IPCCC, plus 13 états d'étape chirurgicale codés en ECHSA — l'IPCCC ne code pas l'état « status post » d'un montage (Fontan, Glenn, MBTS…), d'où un ValueSet multi-systèmes. ICD-10 = donnée dérivée (crossmap IPCCC). Le typage residual/acquired/post-chir est un choix clinicien à la saisie (CardiacCondition.condition_type), pas une propriété du code.",
   "jurisdiction" : [{

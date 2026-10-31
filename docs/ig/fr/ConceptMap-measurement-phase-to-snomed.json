@@ -7,13 +7,14 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts measurement-phase-to-snomed</b></p><a name=\"measurement-phase-to-snomed\"> </a><a name=\"hcmeasurement-phase-to-snomed\"> </a><p>Mapping de <a href=\"ValueSet-procedure-phase-vs.html\">TAUSSIG — Phases procédurales</a> vers <a href=\"https://browser.ihtsdotools.org/\">All Codes SCT ValueSet</a></p><br/><p>Mapping de <a href=\"CodeSystem-procedure-phase.html\">TAUSSIG — Phase procédurale d'une mesure</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>baseline (État de base)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>128974000 (état basal)</td><td/></tr><tr><td>pre_intervention (Avant le geste)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>72077002 (état préopératoire)</td><td/></tr><tr><td>post_intervention (Après le geste)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>303110006 (période postopératoire)</td><td/></tr><tr><td>not_applicable (Non applicable)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td><td style=\"background-color: #efefef\">pas de concept SNOMED</td></tr></table></div>"
   },
   "url" : "https://taussig/fhir/ConceptMap/measurement-phase-to-snomed",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "MeasurementPhaseToSnomed",
   "title" : "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
+  "description" : "Représentation FHIR « TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

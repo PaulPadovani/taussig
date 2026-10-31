@@ -1,6 +1,6 @@
-# TAUSSIG — Phases procédurales - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Phases procédurales - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ValueSet: TAUSSIG — Phases procédurales 
+## ValueSet: TAUSSIG — Phases procédurales (Expérimental) 
 
  **References** 
 
@@ -25,12 +25,14 @@
   "resourceType" : "ValueSet",
   "id" : "procedure-phase-vs",
   "url" : "https://taussig/fhir/ValueSet/procedure-phase-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedurePhaseVS",
   "title" : "TAUSSIG — Phases procédurales",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
+  "description" : "Jeu de valeurs « TAUSSIG — Phases procédurales » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

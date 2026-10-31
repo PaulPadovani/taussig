@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem ae-management</b></p><a name=\"ae-management\"> </a><a name=\"hcae-management\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/ae-management</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">transcatheter_bailout<a name=\"ae-management-transcatheter_bailout\"> </a></td><td>Geste de rattrapage transcathéter</td></tr><tr><td style=\"white-space:nowrap\">surgical_bailout<a name=\"ae-management-surgical_bailout\"> </a></td><td>Geste de rattrapage chirurgical</td></tr><tr><td style=\"white-space:nowrap\">no_treatment<a name=\"ae-management-no_treatment\"> </a></td><td>Aucun traitement requis</td></tr><tr><td style=\"white-space:nowrap\">medical_treatment<a name=\"ae-management-medical_treatment\"> </a></td><td>Traitement médical</td></tr><tr><td style=\"white-space:nowrap\">transfusion<a name=\"ae-management-transfusion\"> </a></td><td>Transfusion</td></tr><tr><td style=\"white-space:nowrap\">thrombolysis<a name=\"ae-management-thrombolysis\"> </a></td><td>Thrombolyse</td></tr><tr><td style=\"white-space:nowrap\">surgical_intervention<a name=\"ae-management-surgical_intervention\"> </a></td><td>Intervention chirurgicale</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/ae-management"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "TaussigAeManagement"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Gestion de la complication (prise en charge péri-procédurale)"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Variable de prise en charge d'un événement indésirable de cathétérisme congénital (échelle d'escalade). Ancrage IPCCC/EPCC chap. 15 + SNOMED procédure. À valider cliniquement."] ;
   fhir:CodeSystem.jurisdiction [

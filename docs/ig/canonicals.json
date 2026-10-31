@@ -2,790 +2,811 @@
   "id" : "ccam",
   "type" : "CodeSystem",
   "url" : "https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigCcam"
 },
 {
   "id" : "access-type",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/access-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AccessType"
 },
 {
   "id" : "ae-attribution",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/ae-attribution",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AeAttribution"
 },
 {
   "id" : "ae-management",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/ae-management",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigAeManagement"
+},
+{
+  "id" : "anesthesia-type",
+  "type" : "CodeSystem",
+  "url" : "https://taussig/fhir/CodeSystem/anesthesia-type",
+  "version" : "0.6.1",
+  "name" : "TaussigAnesthesiaType"
 },
 {
   "id" : "bsa-method",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/bsa-method",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "BsaMethod"
 },
 {
   "id" : "cath-intent",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/cath-intent",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "CathIntent"
 },
 {
   "id" : "closure-device-type",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/closure-device-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ClosureDeviceType"
 },
 {
   "id" : "condition-axis",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/condition-axis",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ConditionAxis"
 },
 {
   "id" : "condition-type",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/condition-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ConditionType"
 },
 {
   "id" : "death-attribution",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/death-attribution",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DeathAttribution"
 },
 {
   "id" : "derivation-method",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/derivation-method",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DerivationMethod"
 },
 {
   "id" : "diagnosis-role",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/diagnosis-role",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DiagnosisRole"
 },
 {
   "id" : "echsa",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/echsa",
-  "version" : "0.6.0",
+  "version" : "0.4.1",
   "name" : "TaussigEchsa"
 },
 {
   "id" : "genetic-method",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/genetic-method",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "GeneticMethod"
 },
 {
   "id" : "genetic-syndrome-category",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/genetic-syndrome-category",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "GeneticSyndromeCategory"
 },
 {
   "id" : "gesture-result",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/gesture-result",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "GestureResult"
 },
 {
   "id" : "implant-device-type",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/implant-device-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantDeviceType"
 },
 {
   "id" : "implant-status",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/implant-status",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantStatus"
 },
 {
   "id" : "ipccc",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/ipccc",
-  "version" : "0.6.0",
+  "version" : "5.0",
   "name" : "IPCCC"
 },
 {
   "id" : "material-type",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/material-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MaterialType"
 },
 {
   "id" : "measurement-condition",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/measurement-condition",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MeasurementCondition"
 },
 {
   "id" : "measurement-modality",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/measurement-modality",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MeasurementModality"
 },
 {
   "id" : "measurement-property",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/measurement-property",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigMeasurementProperty"
 },
 {
   "id" : "periprocedural-medication-purpose",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/periprocedural-medication-purpose",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "PeriproceduralMedicationPurpose"
 },
 {
   "id" : "procedure-observation-code",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/procedure-observation-code",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedureObservationCode"
 },
 {
   "id" : "procedure-phase",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/procedure-phase",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedurePhase"
 },
 {
   "id" : "severity-scale",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/severity-scale",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "SeverityScale"
 },
 {
   "id" : "taussig-local",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/taussig-local",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigLocal"
 },
 {
   "id" : "technical-success",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/technical-success",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TechnicalSuccess"
 },
 {
   "id" : "ventilation-type",
   "type" : "CodeSystem",
   "url" : "https://taussig/fhir/CodeSystem/ventilation-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "VentilationType"
 },
 {
   "id" : "access-type-to-snomed",
   "type" : "ConceptMap",
   "url" : "https://taussig/fhir/ConceptMap/access-type-to-snomed",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "AccessTypeToSnomed"
 },
 {
   "id" : "genetic-syndrome-to-icd11",
   "type" : "ConceptMap",
   "url" : "https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "GeneticSyndromeToIcd11"
 },
 {
   "id" : "ipccc-to-icd10",
   "type" : "ConceptMap",
   "url" : "https://taussig/fhir/ConceptMap/ipccc-to-icd10",
-  "version" : "0.6.0",
+  "version" : "5.0-taussig.1",
   "name" : "IPCCCtoICD10"
 },
 {
   "id" : "measurement-condition-to-snomed",
   "type" : "ConceptMap",
   "url" : "https://taussig/fhir/ConceptMap/measurement-condition-to-snomed",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "MeasurementConditionToSnomed"
 },
 {
   "id" : "measurement-modality-to-snomed",
   "type" : "ConceptMap",
   "url" : "https://taussig/fhir/ConceptMap/measurement-modality-to-snomed",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "MeasurementModalityToSnomed"
 },
 {
   "id" : "measurement-phase-to-snomed",
   "type" : "ConceptMap",
   "url" : "https://taussig/fhir/ConceptMap/measurement-phase-to-snomed",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "MeasurementPhaseToSnomed"
 },
 {
   "id" : "taussig.poc",
   "type" : "ImplementationGuide",
   "url" : "https://taussig/fhir/ImplementationGuide/taussig.poc",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TAUSSIGPOC"
 },
 {
   "id" : "adverseEventAttribution",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/adverseEventAttribution",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AdverseEventAttribution"
 },
 {
   "id" : "adverseEventManagement",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/adverseEventManagement",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AdverseEventManagement"
 },
 {
   "id" : "attemptNumber",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/attemptNumber",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AttemptNumber"
 },
 {
   "id" : "contrastUsed",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/contrastUsed",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ContrastUsed"
 },
 {
   "id" : "derivationMethod",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/derivationMethod",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DerivationMethod"
 },
 {
   "id" : "diagnosisRole",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/diagnosisRole",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DiagnosisRole"
 },
 {
   "id" : "echoGuided",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/echoGuided",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "EchoGuided"
 },
 {
   "id" : "ecmoSupport",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/ecmoSupport",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "EcmoSupport"
 },
 {
   "id" : "implantClinicalStatus",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/implantClinicalStatus",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantClinicalStatus"
 },
 {
   "id" : "implantedExternally",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/implantedExternally",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantedExternally"
 },
 {
   "id" : "indicationRole",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/indicationRole",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "IndicationRole"
 },
 {
   "id" : "introducerSize",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/introducerSize",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "IntroducerSize"
 },
 {
   "id" : "measurementCondition",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/measurementCondition",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MeasurementCondition"
 },
 {
   "id" : "previousImplant",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/previousImplant",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "PreviousImplant"
 },
 {
   "id" : "procedurePhase",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/procedurePhase",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedurePhase"
 },
 {
   "id" : "relatedDiagnosis",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/relatedDiagnosis",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "RelatedDiagnosis"
 },
 {
   "id" : "severityLevel",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/severityLevel",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "SeverityLevel"
 },
 {
   "id" : "severityScale",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/severityScale",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "SeverityScale"
 },
 {
   "id" : "taussig-adverse-event",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-adverse-event",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigAdverseEvent"
 },
 {
   "id" : "taussig-anesthesia-management",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-anesthesia-management",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigAnesthesiaManagement"
 },
 {
   "id" : "taussig-birth-weight-observation",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigBirthWeightObservation"
 },
 {
   "id" : "taussig-cardiac-condition-profile",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCardiacCondition"
 },
 {
   "id" : "taussig-cardiac-diagnosis",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-diagnosis",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCardiacDiagnosis"
 },
 {
   "id" : "taussig-cardiac-implant",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-implant",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCardiacImplant"
 },
 {
   "id" : "taussig-care-episode",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-care-episode",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCareEpisode"
 },
 {
   "id" : "taussig-cath-anthropometry-observation",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cath-anthropometry-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCathAnthropometryObservation"
 },
 {
   "id" : "taussig-catheterization",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-catheterization",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCatheterization"
 },
 {
   "id" : "taussig-clinical-measurement",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-clinical-measurement",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigClinicalMeasurement"
 },
 {
   "id" : "taussig-genetic-syndrome-profile",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigGeneticSyndrome"
 },
 {
   "id" : "taussig-interventional-gesture",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-interventional-gesture",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigInterventionalGesture"
 },
 {
   "id" : "taussig-material-used",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-material-used",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigMaterialUsed"
 },
 {
   "id" : "taussig-organization",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-organization",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigOrganization"
 },
 {
   "id" : "taussig-patient",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-patient",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigPatient"
 },
 {
   "id" : "taussig-periprocedural-medication-administration",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigPeriproceduralMedicationAdministration"
 },
 {
   "id" : "taussig-practitioner",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-practitioner",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigPractitioner"
 },
 {
   "id" : "taussig-procedure-exposure-observation",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigProcedureExposureObservation"
 },
 {
   "id" : "taussig-procedure-outcome",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-procedure-outcome",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigProcedureOutcome"
 },
 {
   "id" : "taussig-vascular-access",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-vascular-access",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigVascularAccess"
 },
 {
   "id" : "usageSequence",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/usageSequence",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "UsageSequence"
 },
 {
   "id" : "ventilationType",
   "type" : "StructureDefinition",
   "url" : "https://taussig/fhir/StructureDefinition/ventilationType",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "VentilationType"
 },
 {
   "id" : "access-type-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/access-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AccessTypeVS"
 },
 {
   "id" : "ae-attribution-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/ae-attribution-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AeAttributionVS"
+},
+{
+  "id" : "anesthesia-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://taussig/fhir/ValueSet/anesthesia-type-vs",
+  "version" : "0.6.1",
+  "name" : "TaussigAnesthesiaTypeVS"
 },
 {
   "id" : "bsa-method-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/bsa-method-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "BsaMethodVS"
 },
 {
   "id" : "cath-intent-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/cath-intent-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "CathIntentVS"
 },
 {
   "id" : "condition-type-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/condition-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ConditionTypeVS"
 },
 {
   "id" : "death-attribution-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/death-attribution-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DeathAttributionVS"
 },
 {
   "id" : "derivation-method-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/derivation-method-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DerivationMethodVS"
 },
 {
   "id" : "diagnosis-role-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/diagnosis-role-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "DiagnosisRoleVS"
 },
 {
   "id" : "gesture-result-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/gesture-result-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "GestureResultVS"
 },
 {
   "id" : "implant-device-type-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/implant-device-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantDeviceTypeVS"
 },
 {
   "id" : "implant-status-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/implant-status-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ImplantStatusVS"
+},
+{
+  "id" : "ipccc-icd10-targets",
+  "type" : "ValueSet",
+  "url" : "https://taussig/fhir/ValueSet/ipccc-icd10-targets",
+  "version" : "0.6.1",
+  "name" : "TaussigIpcccIcd10Targets"
 },
 {
   "id" : "ipccc-short-list",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/ipccc-short-list",
-  "version" : "0.6.0",
+  "version" : "5.0",
   "name" : "IPCCCShortList"
 },
 {
   "id" : "laterality-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/laterality-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "LateralityVS"
 },
 {
   "id" : "material-type-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/material-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MaterialTypeVS"
 },
 {
   "id" : "measurement-condition-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/measurement-condition-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MeasurementConditionVS"
 },
 {
   "id" : "measurement-modality-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/measurement-modality-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MeasurementModalityVS"
 },
 {
   "id" : "periprocedural-medication-purpose-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "PeriproceduralMedicationPurposeVS"
 },
 {
   "id" : "procedure-phase-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/procedure-phase-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ProcedurePhaseVS"
 },
 {
   "id" : "severity-scale-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/severity-scale-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "SeverityScaleVS"
 },
 {
   "id" : "taussig-adverse-event-ipccc",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-adverse-event-ipccc",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigAdverseEventIpccc"
 },
 {
   "id" : "taussig-adverse-event-snomed",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-adverse-event-snomed",
-  "version" : "0.6.0",
-  "name" : "taussig_adverse_event_snomed"
+  "version" : "0.1.0",
+  "name" : "TaussigAdverseEventSnomed"
 },
 {
   "id" : "taussig-ae-management",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-ae-management",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigAeManagement"
 },
 {
   "id" : "taussig-anthropometry-observation-code-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-anthropometry-observation-code-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigAnthropometryObservationCodeVS"
 },
 {
   "id" : "taussig-cardiac-condition",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-cardiac-condition",
-  "version" : "0.6.0",
-  "name" : "taussig_cardiac_condition"
+  "version" : "0.1.0",
+  "name" : "TaussigCardiacCondition"
 },
 {
   "id" : "taussig-diagnosis-icd11",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-diagnosis-icd11",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigDiagnosisIcd11"
 },
 {
   "id" : "taussig-diagnosis-ipccc",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-diagnosis-ipccc",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigDiagnosisIpccc"
 },
 {
   "id" : "taussig-genetic-syndrome",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-genetic-syndrome",
-  "version" : "0.6.0",
-  "name" : "taussig_genetic_syndrome"
+  "version" : "0.1.0",
+  "name" : "TaussigGeneticSyndrome"
 },
 {
   "id" : "taussig-materiel-types",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-materiel-types",
-  "version" : "0.6.0",
-  "name" : "taussig_materiel_types"
+  "version" : "0.1.0",
+  "name" : "TaussigMaterielTypes"
 },
 {
   "id" : "taussig-measurement-property",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-measurement-property",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigMeasurementProperty"
 },
 {
   "id" : "taussig-procedure-exposure-observation-code-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-procedure-exposure-observation-code-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigProcedureExposureObservationCodeVS"
 },
 {
   "id" : "taussig-procedure-ipccc",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-procedure-ipccc",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigProcedureIpccc"
 },
 {
   "id" : "taussig-procedure-snomed",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-procedure-snomed",
-  "version" : "0.6.0",
-  "name" : "taussig_procedure_snomed"
+  "version" : "0.1.0",
+  "name" : "TaussigProcedureSnomed"
 },
 {
   "id" : "taussig-regurgitation-grade",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-regurgitation-grade",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigRegurgitationGrade"
 },
 {
   "id" : "taussig-sites-mesure",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/taussig-sites-mesure",
-  "version" : "0.6.0",
-  "name" : "taussig_sites_mesure"
+  "version" : "0.1.0",
+  "name" : "TaussigSitesMesure"
 },
 {
   "id" : "technical-success-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/technical-success-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TechnicalSuccessVS"
 },
 {
   "id" : "ventilation-type-vs",
   "type" : "ValueSet",
   "url" : "https://taussig/fhir/ValueSet/ventilation-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "VentilationTypeVS"
 }]

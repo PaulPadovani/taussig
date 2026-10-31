@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ex-taussig-catheterization"/>
+  <meta>
+    <profile value="https://taussig/fhir/StructureDefinition/taussig-catheterization"/>
+    <tag>
+      <system value="https://taussig/fhir/tags"/>
+      <code value="synthetic-technical-example"/>
+    </tag>
+  </meta>
+  <language value="fr"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Procédure ex-taussig-catheterization</b></p><a name="ex-taussig-catheterization"> </a><a name="hcex-taussig-catheterization"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-taussig-catheterization.html">TAUSSIG — Cathétérisme cardiaque (acte pivot)</a></p><p style="margin-bottom: 0px">Balise: </p></div><p><b>Produit de contraste utilisé</b>: false</p><p><b>status</b>: Unknown</p><p><b>subject</b>: <a href="Patient-ex-taussig-patient.html">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>performed</b>: 2026-01-01</p><p><b>reasonReference</b>: </p><ul><li><a href="Condition-ex-taussig-cardiac-diagnosis.html">Condition</a></li><li><a href="Condition-ex-taussig-cardiac-condition-profile.html">Condition : extension = -&gt;Condition; category = Lésion résiduelle</a></li></ul></div>
+  </text>
+  <extension url="https://taussig/fhir/StructureDefinition/contrastUsed">
+    <valueBoolean value="false"/>
+  </extension>
+  <status value="unknown"/>
+  <subject>
+    <reference value="Patient/ex-taussig-patient"/>
+  </subject>
+  <performedDateTime value="2026-01-01"/>
+  <reasonReference>
+    <extension url="https://taussig/fhir/StructureDefinition/diagnosisRole">
+      <valueCode value="primary_indication"/>
+    </extension>
+    <reference value="Condition/ex-taussig-cardiac-diagnosis"/>
+  </reasonReference>
+  <reasonReference>
+    <extension url="https://taussig/fhir/StructureDefinition/indicationRole">
+      <valueCode value="primary_indication"/>
+    </extension>
+    <reference value="Condition/ex-taussig-cardiac-condition-profile"/>
+  </reasonReference>
+</Procedure>

@@ -1,10 +1,10 @@
-# TAUSSIG — Gestion anesthésique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Gestion anesthésique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Gestion anesthésique 
+## Profil de ressource: TAUSSIG — Gestion anesthésique ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Procedure/ex-taussig-anesthesia-management](Procedure-ex-taussig-anesthesia-management.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-anesthesia-management)
 
@@ -65,13 +65,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-anesthe
   "resourceType" : "StructureDefinition",
   "id" : "taussig-anesthesia-management",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-anesthesia-management",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigAnesthesiaManagement",
   "title" : "TAUSSIG — Gestion anesthésique",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
-  "description" : "Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (SNOMED) ; ventilation & ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC).",
+  "description" : "Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (générale, sédation, locale : SNOMED CT ; aucune anesthésie explicite : complément TAUSSIG) ; ventilation & ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -151,7 +152,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-anesthe
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://snomed.info/sct?fhir_vs"
+        "valueSet" : "https://taussig/fhir/ValueSet/anesthesia-type-vs"
       }
     }]
   }

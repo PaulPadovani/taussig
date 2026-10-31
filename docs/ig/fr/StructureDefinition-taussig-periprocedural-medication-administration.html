@@ -8,7 +8,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+    <title>TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,11 +60,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.0 - trial-use
+            <span style="display:inline-block;">0.6.1 - trial-use
 
 
 
-  France
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -133,7 +133,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -172,6 +172,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-taussig-periprocedural-medication-administration-examples.html">Exemples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -203,10 +213,10 @@
 
 TAUSSIG — Administration médicamenteuse péri-procédurale
 
+(
 
-
-
-
+Expérimental
+)
   </h2>
 
   <table class="colsi" data-fhir="generated">
@@ -215,7 +225,7 @@ TAUSSIG — Administration médicamenteuse péri-procédurale
       <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration|0.6.0"/></span>
+      <span class="copy-text">0.6.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration|0.6.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
@@ -240,7 +250,7 @@ TAUSSIG — Administration médicamenteuse péri-procédurale
           
 
             à date du 
-2026-10-30
+2026-10-31
 
           
         
@@ -269,7 +279,7 @@ TAUSSIG — Administration médicamenteuse péri-procédurale
 
 <p><b>Utilisations:</b></p>
 <ul>
- <li>Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation</li>
+ <li>Exemples pour ce/t/te Profil: <a href="MedicationAdministration-ex-taussig-periprocedural-medication-administration.html">MedicationAdministration/ex-taussig-periprocedural-medication-administration</a></li>
 </ul>
 <p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-periprocedural-medication-administration">les usages dans le FHIR IG Statistics</a></p>
 
@@ -393,7 +403,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.0.1)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Amount of medication per dose<br class="constraint"/><span class="constraint">Constraints: </span><span title="The comparator is not used on a SimpleQuantity" class="xhtPieceBold constraint">sqty-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-periprocedural-medication-administrationK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-periprocedural-medication-administrationK'), 'binding', document.getElementById('cbtaussig-periprocedural-medication-administrationK-binding').checked, document.getElementById('pptaussig-periprocedural-medication-administrationK'));
 document.getElementById('cbtaussig-periprocedural-medication-administrationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -451,7 +461,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
       <a style="opacity: 1.0" href="ValueSet-periprocedural-medication-purpose-vs.html">TAUSSIG — Rôles des médicaments péri-procéduraux</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -646,7 +656,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="Quantity" class="xhtPieceDeEmphasized">SimpleQuantity(4.0.1)</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Amount of medication per dose</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-periprocedural-medication-administrationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-periprocedural-medication-administrationD'), 'binding', document.getElementById('cbtaussig-periprocedural-medication-administrationD-binding').checked, document.getElementById('pptaussig-periprocedural-medication-administrationD'));
 document.getElementById('cbtaussig-periprocedural-medication-administrationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -691,7 +701,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
       <a style="opacity: 0.50" href="ValueSet-periprocedural-medication-purpose-vs.html">TAUSSIG — Rôles des médicaments péri-procéduraux</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -937,7 +947,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">A list of events of interest in the lifecycle<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-periprocedural-medication-administrationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-periprocedural-medication-administrationS'), 'binding', document.getElementById('cbtaussig-periprocedural-medication-administrationS-binding').checked, document.getElementById('pptaussig-periprocedural-medication-administrationS'));
 document.getElementById('cbtaussig-periprocedural-medication-administrationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1026,7 +1036,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
       <a style="opacity: 1.0" href="ValueSet-periprocedural-medication-purpose-vs.html">TAUSSIG — Rôles des médicaments péri-procéduraux</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1413,7 +1423,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="Quantity">SimpleQuantity(4.0.1)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Amount of medication per dose<br class="constraint"/><span class="constraint">Constraints: </span><span title="The comparator is not used on a SimpleQuantity" class="xhtPieceBold constraint">sqty-1</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-periprocedural-medication-administrationKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-periprocedural-medication-administrationKA'), 'binding', document.getElementById('cbtaussig-periprocedural-medication-administrationKA-binding').checked, document.getElementById('pptaussig-periprocedural-medication-administrationKA'));
 document.getElementById('cbtaussig-periprocedural-medication-administrationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1470,7 +1480,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
       <a style="opacity: 1.0" href="ValueSet-periprocedural-medication-purpose-vs.html">TAUSSIG — Rôles des médicaments péri-procéduraux</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1665,7 +1675,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#SimpleQuantity" title="Quantity" class="xhtPieceDeEmphasized">SimpleQuantity(4.0.1)</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Amount of medication per dose</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-periprocedural-medication-administrationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-periprocedural-medication-administrationDA'), 'binding', document.getElementById('cbtaussig-periprocedural-medication-administrationDA-binding').checked, document.getElementById('pptaussig-periprocedural-medication-administrationDA'));
 document.getElementById('cbtaussig-periprocedural-medication-administrationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1707,7 +1717,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
       <a style="opacity: 0.50" href="ValueSet-periprocedural-medication-purpose-vs.html">TAUSSIG — Rôles des médicaments péri-procéduraux</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -1953,7 +1963,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>)</td>
 <td style="" class="hierarchy xhtCellBorder0">A list of events of interest in the lifecycle<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-periprocedural-medication-administrationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-periprocedural-medication-administrationSA'), 'binding', document.getElementById('cbtaussig-periprocedural-medication-administrationSA-binding').checked, document.getElementById('pptaussig-periprocedural-medication-administrationSA'));
 document.getElementById('cbtaussig-periprocedural-medication-administrationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2040,7 +2050,7 @@ filterDesc(document.getElementById('taussig-periprocedural-medication-administra
       <a style="opacity: 1.0" href="ValueSet-periprocedural-medication-purpose-vs.html">TAUSSIG — Rôles des médicaments péri-procéduraux</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2384,10 +2394,10 @@ Résumé
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-30 22:35:00 +0100">
-    2026-10-30
+  <span title="2026-10-31 15:29:00 +0100">
+    2026-10-31
   </span>
 
           <br/>

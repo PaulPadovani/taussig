@@ -1,6 +1,6 @@
-# Assistance ECMO - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# Assistance ECMO - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: Assistance ECMO 
+## Extension: Assistance ECMO (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Gestion anesthésique](StructureDefinition-taussig-anesthesia-management.md)
+* Exemples pour ce/t/te Extension: [Procedure/ex-taussig-anesthesia-management](Procedure-ex-taussig-anesthesia-management.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/ecmoSupport)
 
@@ -50,11 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-ecmoSupport.csv
   "resourceType" : "StructureDefinition",
   "id" : "ecmoSupport",
   "url" : "https://taussig/fhir/StructureDefinition/ecmoSupport",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "EcmoSupport",
   "title" : "Assistance ECMO",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Assistance ECMO pendant la procédure.",
   "jurisdiction" : [{

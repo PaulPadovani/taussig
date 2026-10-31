@@ -1,6 +1,6 @@
-# TAUSSIG — Type d'abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Type d'abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## CodeSystem: TAUSSIG — Type d'abord vasculaire 
+## CodeSystem: TAUSSIG — Type d'abord vasculaire (Expérimental) 
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
@@ -19,11 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "access-type",
   "url" : "https://taussig/fhir/CodeSystem/access-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "AccessType",
   "title" : "TAUSSIG — Type d'abord vasculaire",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Voie d'abord vasculaire.",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# TAUSSIG — Grade de régurgitation (valeurs codées) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Grade de régurgitation (valeurs codées) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ValueSet: TAUSSIG — Grade de régurgitation (valeurs codées) (Expérimental) 
 
@@ -25,12 +25,12 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "resourceType" : "ValueSet",
   "id" : "taussig-regurgitation-grade",
   "url" : "https://taussig/fhir/ValueSet/taussig-regurgitation-grade",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigRegurgitationGrade",
   "title" : "TAUSSIG — Grade de régurgitation (valeurs codées)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Échelle qualitative de la régurgitation valvulaire, valeur de la propriété de mesure regurgitation_grade (Observation.valueCodeableConcept). Qualifier values SNOMED CT dont l'existence et le libellé FR ont été vérifiés sur le SMT ; le choix de l'échelle reste à valider cliniquement.",
   "jurisdiction" : [{

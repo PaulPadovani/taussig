@@ -7,7 +7,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Dérivation de la mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+    <title>Dérivation de la mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -59,11 +59,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.0 - trial-use
+            <span style="display:inline-block;">0.6.1 - trial-use
 
 
 
-  France
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -132,7 +132,7 @@
 
 <!-- layouts\layout-ext -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -197,7 +197,7 @@
 
   <a name="root"> </a>
   <h2 id="root">Extension: Dérivation de la mesure
-
+(Expérimental)
   </h2>
 
   <table class="colsi" data-fhir="generated">
@@ -206,7 +206,7 @@
       <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/StructureDefinition/derivationMethod<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/derivationMethod"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/derivationMethod|0.6.0"/></span>
+      <span class="copy-text">0.6.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/derivationMethod|0.6.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
@@ -231,7 +231,7 @@
           
 
             à date du 
-2026-10-30
+2026-10-31
 
           
         
@@ -272,6 +272,7 @@ ID d'élément:     <code>
   <p><b>Utilisations:</b></p>
 <ul>
  <li>Utilise ce/t/te Extension: <a href="StructureDefinition-taussig-clinical-measurement.html">TAUSSIG — Mesure clinique (delta pre/post)</a></li>
+ <li>Exemples pour ce/t/te Extension: <a href="Observation-ex-taussig-clinical-measurement.html">Observation/ex-taussig-clinical-measurement</a></li>
 </ul>
 <p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/derivationMethod">les usages dans le FHIR IG Statistics</a></p>
 
@@ -341,7 +342,7 @@ ID d'élément:     <code>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Value of extension</span><br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-derivation-method-vs.html" title="https://taussig/fhir/ValueSet/derivation-method-vs" class="binding">TAUSSIG — Dérivation</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbderivationMethodD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('derivationMethodD'), 'binding', document.getElementById('cbderivationMethodD-binding').checked, document.getElementById('ppderivationMethodD'));
 document.getElementById('cbderivationMethodD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -386,7 +387,7 @@ filterDesc(document.getElementById('derivationMethodD'), 'obligation', document.
       <a style="opacity: 0.50" href="ValueSet-derivation-method-vs.html">TAUSSIG — Dérivation</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/derivation-method-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -429,7 +430,7 @@ filterDesc(document.getElementById('derivationMethodD'), 'obligation', document.
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Value of extension<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-derivation-method-vs.html" title="https://taussig/fhir/ValueSet/derivation-method-vs" class="binding">TAUSSIG — Dérivation</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbderivationMethodS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('derivationMethodS'), 'binding', document.getElementById('cbderivationMethodS-binding').checked, document.getElementById('ppderivationMethodS'));
 document.getElementById('cbderivationMethodS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -473,7 +474,7 @@ filterDesc(document.getElementById('derivationMethodS'), 'obligation', document.
       <a style="opacity: 1.0" href="ValueSet-derivation-method-vs.html">TAUSSIG — Dérivation</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/derivation-method-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -617,7 +618,7 @@ Résumé
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Value of extension</span><br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-derivation-method-vs.html" title="https://taussig/fhir/ValueSet/derivation-method-vs" class="binding">TAUSSIG — Dérivation</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbderivationMethodDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('derivationMethodDA'), 'binding', document.getElementById('cbderivationMethodDA-binding').checked, document.getElementById('ppderivationMethodDA'));
 document.getElementById('cbderivationMethodDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -659,7 +660,7 @@ filterDesc(document.getElementById('derivationMethodDA'), 'obligation', document
       <a style="opacity: 0.50" href="ValueSet-derivation-method-vs.html">TAUSSIG — Dérivation</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/derivation-method-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -701,7 +702,7 @@ filterDesc(document.getElementById('derivationMethodDA'), 'obligation', document
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Value of extension<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="ValueSet-derivation-method-vs.html" title="https://taussig/fhir/ValueSet/derivation-method-vs" class="binding">TAUSSIG — Dérivation</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbderivationMethodSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('derivationMethodSA'), 'binding', document.getElementById('cbderivationMethodSA-binding').checked, document.getElementById('ppderivationMethodSA'));
 document.getElementById('cbderivationMethodSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -743,7 +744,7 @@ filterDesc(document.getElementById('derivationMethodSA'), 'obligation', document
       <a style="opacity: 1.0" href="ValueSet-derivation-method-vs.html">TAUSSIG — Dérivation</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/derivation-method-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -888,10 +889,10 @@ Résumé
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-30 22:35:00 +0100">
-    2026-10-30
+  <span title="2026-10-31 15:29:00 +0100">
+    2026-10-31
   </span>
 
           <br/>

@@ -1,10 +1,10 @@
-# TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Cathétérisme cardiaque (acte pivot) 
+## Profil de ressource: TAUSSIG — Cathétérisme cardiaque (acte pivot) ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Procedure/ex-taussig-catheterization](Procedure-ex-taussig-catheterization.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-catheterization)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cathete
   "resourceType" : "StructureDefinition",
   "id" : "taussig-catheterization",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-catheterization",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCatheterization",
   "title" : "TAUSSIG — Cathétérisme cardiaque (acte pivot)",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; codage SNOMED (interop) + CCAM (administratif FR) + ECHSA (registre). Dosimétrie/anthropométrie portées par Observations liées.",
   "jurisdiction" : [{

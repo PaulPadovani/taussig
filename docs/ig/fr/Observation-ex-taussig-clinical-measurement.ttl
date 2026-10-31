@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/Observation/ex-taussig-clinical-measurement> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-taussig-clinical-measurement"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://taussig/fhir/StructureDefinition/taussig-clinical-measurement" ;
+       fhir:index -1 ;
+       fhir:link <https://taussig/fhir/StructureDefinition/taussig-clinical-measurement>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/tags" ] ;
+       fhir:Coding.code [ fhir:value "synthetic-technical-example" ]
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Observation ex-taussig-clinical-measurement</b></p><a name=\"ex-taussig-clinical-measurement\"> </a><a name=\"hcex-taussig-clinical-measurement\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-clinical-measurement.html\">TAUSSIG — Mesure clinique (delta pre/post)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Phase procédurale (mesure)</b>: baseline</p><p><b>Condition de mesure</b>: resting</p><p><b>Dérivation de la mesure</b>: measured</p><p><b>partOf</b>: <a href=\"Procedure-ex-taussig-catheterization.html\">Procedure : extension = false; status = unknown; performed[x] = 2026-01-01</a></p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/measurement-property pressure_systolic}\">Pression systolique</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>effective</b>: 2026-01-01</p><p><b>value</b>: 20 mmHg<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUMmm[Hg] = 'mm[Hg]')</span></p><p><b>method</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/measurement-modality catheterization}\">Cathétérisme</span></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/procedurePhase" ] ;
+     fhir:Extension.valueCode [ fhir:value "baseline" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/measurementCondition" ] ;
+     fhir:Extension.valueCode [ fhir:value "resting" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/derivationMethod" ] ;
+     fhir:Extension.valueCode [ fhir:value "measured" ]
+  ] ;
+  fhir:Observation.partOf [
+     fhir:index -1 ;
+     fhir:link <https://taussig/fhir/Procedure/ex-taussig-catheterization> ;
+     fhir:Reference.reference [ fhir:value "Procedure/ex-taussig-catheterization" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "unknown"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/measurement-property" ] ;
+       fhir:Coding.code [ fhir:value "pressure_systolic" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-01-01"^^xsd:date] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "mmHg" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+  ] ;
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/measurement-modality" ] ;
+       fhir:Coding.code [ fhir:value "catheterization" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/Observation/ex-taussig-clinical-measurement.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

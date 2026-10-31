@@ -1,6 +1,6 @@
 {
   "package": "taussig.poc",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -321,11 +321,17 @@
     "https://taussig/fhir/StructureDefinition/adverseEventManagement": [
       "AdverseEvent"
     ],
+    "https://taussig/fhir/StructureDefinition/attemptNumber": [
+      "Procedure.usedReference"
+    ],
     "https://taussig/fhir/StructureDefinition/contrastUsed": [
       "Procedure"
     ],
     "https://taussig/fhir/StructureDefinition/derivationMethod": [
       "Observation"
+    ],
+    "https://taussig/fhir/StructureDefinition/diagnosisRole": [
+      "Procedure.reasonReference"
     ],
     "https://taussig/fhir/StructureDefinition/echoGuided": [
       "Procedure"
@@ -338,6 +344,9 @@
     ],
     "https://taussig/fhir/StructureDefinition/implantedExternally": [
       "Device"
+    ],
+    "https://taussig/fhir/StructureDefinition/indicationRole": [
+      "Procedure.reasonReference"
     ],
     "https://taussig/fhir/StructureDefinition/introducerSize": [
       "Procedure"
@@ -359,6 +368,9 @@
     ],
     "https://taussig/fhir/StructureDefinition/severityScale": [
       "AdverseEvent"
+    ],
+    "https://taussig/fhir/StructureDefinition/usageSequence": [
+      "Procedure.usedReference"
     ],
     "https://taussig/fhir/StructureDefinition/ventilationType": [
       "Procedure"

@@ -121,6 +121,7 @@ document.getElementById('sous').textContent =
 // —— raccourcis de systèmes de codage (affichage clinicien) ——
 function csCourt(cs){
   if(!cs) return '';
+  if(/snomed/.test(cs)&&/taussig/.test(cs)) return 'SNOMED CT + TAUSSIG';
   const m = [[/loinc/,'LOINC'],[/snomed/,'SNOMED CT'],[/icd.*11|id\.who/,'ICD-11'],[/icd.*10|cim.*10/,'CIM-10'],
     [/orpha/,'Orphanet'],[/ucum/,'UCUM'],[/ccam/,'CCAM'],[/echsa/,'ECHSA'],[/ipccc/,'IPCCC'],
     [/administrative-gender/,'HL7 genre'],[/taussig/,'TAUSSIG']];

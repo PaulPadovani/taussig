@@ -1,4 +1,4 @@
-# TAUSSIG — Procédures (SNOMED CT, interopérabilité) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Procédures (SNOMED CT, interopérabilité) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ValueSet: TAUSSIG — Procédures (SNOMED CT, interopérabilité) (Expérimental) 
 
@@ -26,12 +26,12 @@
   "resourceType" : "ValueSet",
   "id" : "taussig-procedure-snomed",
   "url" : "https://taussig/fhir/ValueSet/taussig-procedure-snomed",
-  "version" : "0.6.0",
-  "name" : "taussig_procedure_snomed",
+  "version" : "0.1.0",
+  "name" : "TaussigProcedureSnomed",
   "title" : "TAUSSIG — Procédures (SNOMED CT, interopérabilité)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set SNOMED CT des gestes de cathétérisme congénital (couche d'interopérabilité FHIR Procedure.code). Résolu sur le SMT depuis les gestes IPCCC retenus. À valider cliniquement.",
   "jurisdiction" : [{

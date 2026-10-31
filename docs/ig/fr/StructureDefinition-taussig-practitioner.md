@@ -1,10 +1,10 @@
-# TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Praticien 
+## Profil de ressource: TAUSSIG — Praticien ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Practitioner/ex-taussig-practitioner](Practitioner-ex-taussig-practitioner.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-practitioner)
 
@@ -61,11 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-practit
   "resourceType" : "StructureDefinition",
   "id" : "taussig-practitioner",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-practitioner",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigPractitioner",
   "title" : "TAUSSIG — Praticien",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Praticien (opérateur, valideur), dérivé de FR Core Practitioner. L'identifiant RPPS est porté par la slice FR Core idNatPs (urn:oid:1.2.250.1.71.4.2.1) — plus besoin de la redéclarer.",
   "jurisdiction" : [{

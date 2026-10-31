@@ -1,10 +1,10 @@
-# TAUSSIG — Geste interventionnel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Geste interventionnel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Geste interventionnel 
+## Profil de ressource: TAUSSIG — Geste interventionnel ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Procedure/ex-taussig-interventional-gesture](Procedure-ex-taussig-interventional-gesture.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-interventional-gesture)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-interve
   "resourceType" : "StructureDefinition",
   "id" : "taussig-interventional-gesture",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-interventional-gesture",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigInterventionalGesture",
   "title" : "TAUSSIG — Geste interventionnel",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Geste interventionnel ciblé (unité de l'effet pre/post). Quadruple codage IPCCC (pivot) + SNOMED (interop) + CCAM + ECHSA ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome.",
   "jurisdiction" : [{

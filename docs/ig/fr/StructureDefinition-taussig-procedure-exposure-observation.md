@@ -1,10 +1,10 @@
-# TAUSSIG — Exposition et contraste de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Exposition et contraste de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Exposition et contraste de procédure 
+## Profil de ressource: TAUSSIG — Exposition et contraste de procédure ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Observation/ex-taussig-procedure-exposure-observation](Observation-ex-taussig-procedure-exposure-observation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-procedure-exposure-observation)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
   "resourceType" : "StructureDefinition",
   "id" : "taussig-procedure-exposure-observation",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigProcedureExposureObservation",
   "title" : "TAUSSIG — Exposition et contraste de procédure",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Temps de fluoroscopie, produit dose-surface et volume de contraste portés par des Observations quantitatives liées au cathétérisme.",
   "jurisdiction" : [{

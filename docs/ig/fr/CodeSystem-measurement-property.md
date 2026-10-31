@@ -1,4 +1,4 @@
-# TAUSSIG — Propriétés de mesure hémodynamique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Propriétés de mesure hémodynamique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## CodeSystem: TAUSSIG — Propriétés de mesure hémodynamique (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "measurement-property",
   "url" : "https://taussig/fhir/CodeSystem/measurement-property",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigMeasurementProperty",
   "title" : "TAUSSIG — Propriétés de mesure hémodynamique",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe.",
   "jurisdiction" : [{

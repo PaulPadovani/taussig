@@ -11,14 +11,15 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-procedure-exposure-observation-code-vs</b></p><a name=\"taussig-procedure-exposure-observation-code-vs\"> </a><a name=\"hctaussig-procedure-exposure-observation-code-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-procedure-observation-code.html\"><code>https://taussig/fhir/CodeSystem/procedure-observation-code</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.0</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-procedure-exposure-observation-code-vs</b></p><a name=\"taussig-procedure-exposure-observation-code-vs\"> </a><a name=\"hctaussig-procedure-exposure-observation-code-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-procedure-observation-code.html\"><code>https://taussig/fhir/CodeSystem/procedure-observation-code</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.1</span></li></ul></div>"
   ] ;
   fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-procedure-exposure-observation-code-vs"] ;
-  fhir:ValueSet.version [ fhir:value "0.6.0"] ;
+  fhir:ValueSet.version [ fhir:value "0.6.1"] ;
   fhir:ValueSet.name [ fhir:value "TaussigProcedureExposureObservationCodeVS"] ;
   fhir:ValueSet.title [ fhir:value "TAUSSIG — Codes d'exposition et contraste"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
-  fhir:ValueSet.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:ValueSet.description [ fhir:value "Codes des observations quantitatives liées à l'exposition radiologique et au contraste."] ;
   fhir:ValueSet.jurisdiction [

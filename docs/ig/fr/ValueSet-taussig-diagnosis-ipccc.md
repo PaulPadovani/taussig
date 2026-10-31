@@ -1,4 +1,4 @@
-# TAUSSIG — Diagnostics congénitaux (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Diagnostics congénitaux (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## ValueSet: TAUSSIG — Diagnostics congénitaux (IPCCC) (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "taussig-diagnosis-ipccc",
   "url" : "https://taussig/fhir/ValueSet/taussig-diagnosis-ipccc",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigDiagnosisIpccc",
   "title" : "TAUSSIG — Diagnostics congénitaux (IPCCC)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Équivalents IPCCC des diagnostics congénitaux du working set CIM-11 (codage parallèle de précision clinique). Un même code IPCCC peut répondre à plusieurs entités CIM-11.",
   "jurisdiction" : [{

@@ -8,7 +8,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+    <title>TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,11 +60,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.0 - trial-use
+            <span style="display:inline-block;">0.6.1 - trial-use
 
 
 
-  France
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -133,7 +133,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -172,6 +172,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-taussig-procedure-outcome-examples.html">Exemples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -203,10 +213,10 @@
 
 TAUSSIG — Résultat global de procédure
 
+(
 
-
-
-
+Expérimental
+)
   </h2>
 
   <table class="colsi" data-fhir="generated">
@@ -215,7 +225,7 @@ TAUSSIG — Résultat global de procédure
       <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/StructureDefinition/taussig-procedure-outcome<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-procedure-outcome"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-procedure-outcome|0.6.0"/></span>
+      <span class="copy-text">0.6.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-procedure-outcome|0.6.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
@@ -240,7 +250,7 @@ TAUSSIG — Résultat global de procédure
           
 
             à date du 
-2026-10-30
+2026-10-31
 
           
         
@@ -269,7 +279,7 @@ TAUSSIG — Résultat global de procédure
 
 <p><b>Utilisations:</b></p>
 <ul>
- <li>Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation</li>
+ <li>Exemples pour ce/t/te Profil: <a href="Observation-ex-taussig-procedure-outcome.html">Observation/ex-taussig-procedure-outcome</a></li>
 </ul>
 <p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-procedure-outcome">les usages dans le FHIR IG Statistics</a></p>
 
@@ -443,7 +453,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-procedure-outcomeK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-procedure-outcomeK'), 'binding', document.getElementById('cbtaussig-procedure-outcomeK-binding').checked, document.getElementById('pptaussig-procedure-outcomeK'));
 document.getElementById('cbtaussig-procedure-outcomeK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -688,7 +698,7 @@ filterDesc(document.getElementById('taussig-procedure-outcomeK'), 'obligation', 
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity" class="xhtPieceDeEmphasized">Quantity</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#string" class="xhtPieceDeEmphasized">string</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#boolean" class="xhtPieceDeEmphasized">boolean</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#integer" class="xhtPieceDeEmphasized">integer</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Range" class="xhtPieceDeEmphasized">Range</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio" class="xhtPieceDeEmphasized">Ratio</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#SampledData" class="xhtPieceDeEmphasized">SampledData</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#time" class="xhtPieceDeEmphasized">time</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Period" class="xhtPieceDeEmphasized">Period</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Actual component result</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-procedure-outcomeD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-procedure-outcomeD'), 'binding', document.getElementById('cbtaussig-procedure-outcomeD-binding').checked, document.getElementById('pptaussig-procedure-outcomeD'));
 document.getElementById('cbtaussig-procedure-outcomeD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1058,7 +1068,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0">Voir <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-procedure-outcomeS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-procedure-outcomeS'), 'binding', document.getElementById('cbtaussig-procedure-outcomeS-binding').checked, document.getElementById('pptaussig-procedure-outcomeS'));
 document.getElementById('cbtaussig-procedure-outcomeS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1672,7 +1682,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-procedure-outcomeKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-procedure-outcomeKA'), 'binding', document.getElementById('cbtaussig-procedure-outcomeKA-binding').checked, document.getElementById('pptaussig-procedure-outcomeKA'));
 document.getElementById('cbtaussig-procedure-outcomeKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1916,7 +1926,7 @@ filterDesc(document.getElementById('taussig-procedure-outcomeKA'), 'obligation',
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity" class="xhtPieceDeEmphasized">Quantity</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#string" class="xhtPieceDeEmphasized">string</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#boolean" class="xhtPieceDeEmphasized">boolean</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#integer" class="xhtPieceDeEmphasized">integer</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Range" class="xhtPieceDeEmphasized">Range</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Ratio" class="xhtPieceDeEmphasized">Ratio</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#SampledData" class="xhtPieceDeEmphasized">SampledData</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#time" class="xhtPieceDeEmphasized">time</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Period" class="xhtPieceDeEmphasized">Period</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Actual component result</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-procedure-outcomeDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-procedure-outcomeDA'), 'binding', document.getElementById('cbtaussig-procedure-outcomeDA-binding').checked, document.getElementById('pptaussig-procedure-outcomeDA'));
 document.getElementById('cbtaussig-procedure-outcomeDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2283,7 +2293,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0">Voir <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-procedure-outcomeSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-procedure-outcomeSA'), 'binding', document.getElementById('cbtaussig-procedure-outcomeSA-binding').checked, document.getElementById('pptaussig-procedure-outcomeSA'));
 document.getElementById('cbtaussig-procedure-outcomeSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2802,10 +2812,10 @@ Résumé
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-30 22:35:00 +0100">
-    2026-10-30
+  <span title="2026-10-31 15:29:00 +0100">
+    2026-10-31
   </span>
 
           <br/>

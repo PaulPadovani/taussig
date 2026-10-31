@@ -1,6 +1,6 @@
-# TAUSSIG — Échelles de gravité - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Échelles de gravité - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ValueSet: TAUSSIG — Échelles de gravité 
+## ValueSet: TAUSSIG — Échelles de gravité (Expérimental) 
 
  **References** 
 
@@ -25,12 +25,14 @@
   "resourceType" : "ValueSet",
   "id" : "severity-scale-vs",
   "url" : "https://taussig/fhir/ValueSet/severity-scale-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "SeverityScaleVS",
   "title" : "TAUSSIG — Échelles de gravité",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
+  "description" : "Jeu de valeurs « TAUSSIG — Échelles de gravité » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

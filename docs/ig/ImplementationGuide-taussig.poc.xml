@@ -4,16 +4,18 @@
   <id value="taussig.poc"/>
   <language value="fr"/>
   <text>
-    <status value="generated"/><div xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr"><p class="res-header-id"><b>Narratif généré : ImplementationGuide taussig.poc</b></p><a name="taussig.poc"> </a><a name="hctaussig.poc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2>TAUSSIGPOC</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://taussig/fhir/ImplementationGuide/taussig.poc</pre></div>
+    <status value="generated"/><div xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr"><p class="res-header-id"><b>Narratif généré : ImplementationGuide taussig.poc</b></p><a name="taussig.poc"> </a><a name="hctaussig.poc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><h2>TAUSSIGPOC</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://taussig/fhir/ImplementationGuide/taussig.poc</pre><div><p>Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG.</p>
+</div></div>
   </text>
   <url value="https://taussig/fhir/ImplementationGuide/taussig.poc"/>
-  <version value="0.6.0"/>
+  <version value="0.6.1"/>
   <name value="TAUSSIGPOC"/>
   <title value="TAUSSIG — Implementation Guide (POC Cathétérisme)"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-10-30T22:35:46+01:00"/>
+  <date value="2026-10-31T15:29:53+01:00"/>
   <publisher value="Projet TAUSSIG"/>
+  <description value="Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -70,6 +72,22 @@
       </extension>
       <extension url="value">
         <valueString value="fr"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="default-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -210,14 +228,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="apply-version"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="apply-wg"/>
       </extension>
       <extension url="value">
@@ -266,17 +276,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/access-type-to-snomed"/>
-      </reference>
-      <name value="AccessTypeToSnomed"/>
-      <description value="Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -310,16 +309,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/ipccc-to-icd10"/>
-      </reference>
-      <name value="Crossmap IPCCC -&gt; ICD-10 (v5.0)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -328,6 +317,17 @@
       <name value="Diagnostic congénital d'origine"/>
       <description value="Rattachement d'une condition évolutive à son diagnostic congénital."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ex-prior-implant"/>
+      </reference>
+      <name value="Dispositif antérieur fictif — exemple technique"/>
+      <description value="Cible distincte du lien previousImplant ; illustre uniquement le chaînage de deux identités de dispositif."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -342,14 +342,223 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="Procedure"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/genetic-syndrome-to-icd11"/>
+        <reference value="Procedure/ex-taussig-vascular-access"/>
       </reference>
-      <name value="GeneticSyndromeToIcd11"/>
-      <description value="Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1)."/>
-      <exampleBoolean value="false"/>
+      <name value="Exemple technique — TAUSSIG — Abord vasculaire"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-vascular-access"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/ex-taussig-periprocedural-medication-administration"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Administration médicamenteuse péri-procédurale"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-taussig-cath-anthropometry-observation"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Anthropométrie au cathétérisme"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-cath-anthropometry-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ex-taussig-catheterization"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Cathétérisme cardiaque (acte pivot)"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-catheterization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ex-taussig-cardiac-condition-profile"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Condition cardiaque évolutive"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ex-taussig-cardiac-diagnosis"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Diagnostic cardiaque congénital"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-cardiac-diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-taussig-procedure-exposure-observation"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Exposition et contraste de procédure"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ex-taussig-interventional-gesture"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Geste interventionnel"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-interventional-gesture"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ex-taussig-anesthesia-management"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Gestion anesthésique"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-anesthesia-management"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ex-taussig-cardiac-implant"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Implant cardiaque (substrat longitudinal)"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-cardiac-implant"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ex-taussig-material-used"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Matériel utilisé (consommable de geste)"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-material-used"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-taussig-clinical-measurement"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Mesure clinique (delta pre/post)"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-clinical-measurement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/ex-taussig-organization"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Organisation"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ex-taussig-patient"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Patient"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-taussig-birth-weight-observation"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Poids de naissance"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/ex-taussig-practitioner"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Praticien"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ex-taussig-procedure-outcome"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Résultat global de procédure"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-procedure-outcome"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ex-taussig-genetic-syndrome-profile"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Syndrome génétique (covariable de contexte)"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ex-taussig-care-episode"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Épisode de soins"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-care-episode"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AdverseEvent"/>
+      </extension>
+      <reference>
+        <reference value="AdverseEvent/ex-taussig-adverse-event"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Événement indésirable"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-adverse-event"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -370,6 +579,7 @@
         <reference value="ValueSet/ipccc-short-list"/>
       </reference>
       <name value="IPCCC Short List v5.0 (sous-ensemble de saisie)"/>
+      <description value="Représentation FHIR « IPCCC Short List v5.0 (sous-ensemble de saisie) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -380,6 +590,7 @@
         <reference value="CodeSystem/ipccc"/>
       </reference>
       <name value="IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)"/>
+      <description value="Représentation FHIR des codes, libellés et définitions IPCCC importés dans TAUSSIG ; contenu source conservé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -516,6 +727,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/access-type-to-snomed"/>
+      </reference>
+      <name value="TAUSSIG — AccessTypeToSnomed"/>
+      <description value="Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -566,6 +788,7 @@
         <reference value="ValueSet/ae-attribution-vs"/>
       </reference>
       <name value="TAUSSIG — Attributions d'EI"/>
+      <description value="Jeu de valeurs « TAUSSIG — Attributions d'EI » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -576,6 +799,7 @@
         <reference value="ValueSet/death-attribution-vs"/>
       </reference>
       <name value="TAUSSIG — Attributions du décès"/>
+      <description value="Jeu de valeurs « TAUSSIG — Attributions du décès » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -638,6 +862,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/ipccc-icd10-targets"/>
+      </reference>
+      <name value="TAUSSIG — Cibles CIM-10 de la correspondance IPCCC"/>
+      <description value="Codes principaux et produits complémentaires de la table de correspondance normalisée. Leur existence est contrôlée contre le service terminologique ; cela ne prouve pas une équivalence clinique exacte."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/taussig-anthropometry-observation-code-vs"/>
       </reference>
       <name value="TAUSSIG — Codes d'anthropométrie per-cathétérisme"/>
@@ -682,6 +917,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/anesthesia-type"/>
+      </reference>
+      <name value="TAUSSIG — Complément pour le type d’anesthésie"/>
+      <description value="Code local pour l’absence explicite d’anesthésie. Une donnée manquante ne signifie pas aucune anesthésie. Aucune absence d’équivalent SNOMED n’est affirmée."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/taussig-local"/>
       </reference>
       <name value="TAUSSIG — Concepts locaux (sans équivalent de référence)"/>
@@ -718,6 +964,7 @@
         <reference value="ConceptMap/measurement-condition-to-snomed"/>
       </reference>
       <name value="TAUSSIG — Condition de mesure -&gt; SNOMED"/>
+      <description value="Représentation FHIR « TAUSSIG — Condition de mesure -&gt; SNOMED » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -728,6 +975,7 @@
         <reference value="ValueSet/measurement-condition-vs"/>
       </reference>
       <name value="TAUSSIG — Conditions de mesure"/>
+      <description value="Jeu de valeurs « TAUSSIG — Conditions de mesure » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -782,6 +1030,7 @@
         <reference value="ValueSet/derivation-method-vs"/>
       </reference>
       <name value="TAUSSIG — Dérivation"/>
+      <description value="Jeu de valeurs « TAUSSIG — Dérivation » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -819,6 +1068,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/genetic-syndrome-to-icd11"/>
+      </reference>
+      <name value="TAUSSIG — GeneticSyndromeToIcd11"/>
+      <description value="Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -847,7 +1107,7 @@
         <reference value="StructureDefinition/taussig-anesthesia-management"/>
       </reference>
       <name value="TAUSSIG — Gestion anesthésique"/>
-      <description value="Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (SNOMED) ; ventilation &amp; ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC)."/>
+      <description value="Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (générale, sédation, locale : SNOMED CT ; aucune anesthésie explicite : complément TAUSSIG) ; ventilation &amp; ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -902,6 +1162,18 @@
         <reference value="ValueSet/cath-intent-vs"/>
       </reference>
       <name value="TAUSSIG — Intentions de cathétérisme"/>
+      <description value="Jeu de valeurs « TAUSSIG — Intentions de cathétérisme » utilisé par les profils TAUSSIG."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/ipccc-to-icd10"/>
+      </reference>
+      <name value="TAUSSIG — IPCCC vers CIM-10, normalisation de la source AEPC 5.0"/>
+      <description value="Correspondances de classification issues de la Long List AEPC 5.0 du 1er mai 2025, normalisées pour l’édition OMS 2019-covid-expanded. Les notations source et les colonnes additionnelles sont conservées dans les commentaires. Les signes dagger/asterisk ne sont pas incorporés au code exporté. Les rapprochements restent relatedto, sans équivalence exacte présumée. Les produits additional-code doivent être conservés comme codes complémentaires distincts, et non comme synonymes interchangeables. La dépendance documented-kidney-disease désigne une condition rénale déjà documentée avant conversion ; elle ne crée aucune obligation de saisie ni aucun stade rénal par défaut. Les colonnes additionnelles historiques non structurées ne déclenchent pas de conversion automatique."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -956,6 +1228,7 @@
         <reference value="ConceptMap/measurement-modality-to-snomed"/>
       </reference>
       <name value="TAUSSIG — Modalité de mesure -&gt; SNOMED (Observation.method)"/>
+      <description value="Représentation FHIR « TAUSSIG — Modalité de mesure -&gt; SNOMED (Observation.method) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -966,6 +1239,7 @@
         <reference value="ValueSet/measurement-modality-vs"/>
       </reference>
       <name value="TAUSSIG — Modalités de mesure"/>
+      <description value="Jeu de valeurs « TAUSSIG — Modalités de mesure » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -987,6 +1261,7 @@
         <reference value="ValueSet/ventilation-type-vs"/>
       </reference>
       <name value="TAUSSIG — Modes ventilatoires"/>
+      <description value="Jeu de valeurs « TAUSSIG — Modes ventilatoires » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1019,6 +1294,7 @@
         <reference value="ValueSet/bsa-method-vs"/>
       </reference>
       <name value="TAUSSIG — Méthodes de calcul BSA"/>
+      <description value="Jeu de valeurs « TAUSSIG — Méthodes de calcul BSA » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1062,6 +1338,7 @@
         <reference value="ConceptMap/measurement-phase-to-snomed"/>
       </reference>
       <name value="TAUSSIG — Phase de mesure -&gt; SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)"/>
+      <description value="Représentation FHIR « TAUSSIG — Phase de mesure -&gt; SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1083,6 +1360,7 @@
         <reference value="ValueSet/procedure-phase-vs"/>
       </reference>
       <name value="TAUSSIG — Phases procédurales"/>
+      <description value="Jeu de valeurs « TAUSSIG — Phases procédurales » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1181,6 +1459,7 @@
         <reference value="ValueSet/gesture-result-vs"/>
       </reference>
       <name value="TAUSSIG — Résultats de geste"/>
+      <description value="Jeu de valeurs « TAUSSIG — Résultats de geste » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1213,6 +1492,7 @@
         <reference value="ValueSet/diagnosis-role-vs"/>
       </reference>
       <name value="TAUSSIG — Rôles d'indication"/>
+      <description value="Jeu de valeurs « TAUSSIG — Rôles d'indication » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1223,6 +1503,7 @@
         <reference value="ValueSet/periprocedural-medication-purpose-vs"/>
       </reference>
       <name value="TAUSSIG — Rôles des médicaments péri-procéduraux"/>
+      <description value="Jeu de valeurs « TAUSSIG — Rôles des médicaments péri-procéduraux » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1244,6 +1525,7 @@
         <reference value="ValueSet/technical-success-vs"/>
       </reference>
       <name value="TAUSSIG — Succès technique"/>
+      <description value="Jeu de valeurs « TAUSSIG — Succès technique » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1331,6 +1613,7 @@
         <reference value="ValueSet/access-type-vs"/>
       </reference>
       <name value="TAUSSIG — Types d'abord vasculaire"/>
+      <description value="Jeu de valeurs « TAUSSIG — Types d'abord vasculaire » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1341,6 +1624,7 @@
         <reference value="ValueSet/implant-device-type-vs"/>
       </reference>
       <name value="TAUSSIG — Types d'implant"/>
+      <description value="Jeu de valeurs « TAUSSIG — Types d'implant » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1351,6 +1635,7 @@
         <reference value="ValueSet/condition-type-vs"/>
       </reference>
       <name value="TAUSSIG — Types de condition évolutive"/>
+      <description value="Jeu de valeurs « TAUSSIG — Types de condition évolutive » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1372,6 +1657,18 @@
         <reference value="ValueSet/material-type-vs"/>
       </reference>
       <name value="TAUSSIG — Types de matériel (catégories)"/>
+      <description value="Jeu de valeurs « TAUSSIG — Types de matériel (catégories) » utilisé par les profils TAUSSIG."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/anesthesia-type-vs"/>
+      </reference>
+      <name value="TAUSSIG — Types d’anesthésie"/>
+      <description value="Quatre catégories du modèle : anesthésie générale, sédation et anesthésie locale en SNOMED CT, et aucune anesthésie explicite en code TAUSSIG. Sans distinction du niveau de sédation ni des techniques locorégionales."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1393,6 +1690,7 @@
         <reference value="ValueSet/severity-scale-vs"/>
       </reference>
       <name value="TAUSSIG — Échelles de gravité"/>
+      <description value="Jeu de valeurs « TAUSSIG — Échelles de gravité » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1425,6 +1723,7 @@
         <reference value="ValueSet/implant-status-vs"/>
       </reference>
       <name value="TAUSSIG — États d'implant"/>
+      <description value="Jeu de valeurs « TAUSSIG — États d'implant » utilisé par les profils TAUSSIG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

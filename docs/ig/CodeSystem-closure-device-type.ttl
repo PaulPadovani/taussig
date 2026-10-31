@@ -13,11 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem closure-device-type</b></p><a name=\"closure-device-type\"> </a><a name=\"hcclosure-device-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/closure-device-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-OCCLUDER-CIA<a name=\"closure-device-type-TAUSSIG-OCCLUDER-CIA\"> </a></td><td>Dispositif de fermeture de CIA</td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-OCCLUDER-CIV<a name=\"closure-device-type-TAUSSIG-OCCLUDER-CIV\"> </a></td><td>Dispositif de fermeture de CIV</td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-OCCLUDER-CANAL<a name=\"closure-device-type-TAUSSIG-OCCLUDER-CANAL\"> </a></td><td>Dispositif de fermeture de canal artériel</td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-OCCLUDER-VASCULAR<a name=\"closure-device-type-TAUSSIG-OCCLUDER-VASCULAR\"> </a></td><td>Dispositif de fermeture d’un autre vaisseau</td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-OCCLUDER-FOP<a name=\"closure-device-type-TAUSSIG-OCCLUDER-FOP\"> </a></td><td>Dispositif de fermeture de FOP</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/closure-device-type"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
   fhir:CodeSystem.name [ fhir:value "ClosureDeviceType"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Dispositifs de fermeture par cible"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Catégories de dispositifs de fermeture distinguées par cible. Codes locaux TAUSSIG ; aucune équivalence SNOMED spécifique n'est affirmée."] ;
   fhir:CodeSystem.jurisdiction [

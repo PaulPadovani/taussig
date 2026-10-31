@@ -1,10 +1,10 @@
-# TAUSSIG — Implant cardiaque (substrat longitudinal) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Implant cardiaque (substrat longitudinal) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Implant cardiaque (substrat longitudinal) 
+## Profil de ressource: TAUSSIG — Implant cardiaque (substrat longitudinal) ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Device/ex-taussig-cardiac-implant](Device-ex-taussig-cardiac-implant.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-cardiac-implant)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cardiac-implant",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-implant",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCardiacImplant",
   "title" : "TAUSSIG — Implant cardiaque (substrat longitudinal)",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Dispositif implanté persistant (conduit, valve, stent, occluder…). État clinique courant en extension (Device.status ne couvre pas functional/degenerated/…) ; chaînage valve-in-valve ; site anatomique SNOMED ; UDI.",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# taussig.poc#0.6.0: TAUSSIG — Implementation Guide (POC Cathétérisme)(fr)
+# taussig.poc#0.6.1: TAUSSIG — Implementation Guide (POC Cathétérisme)(fr)
 
 ## Pages
 
@@ -14,6 +14,7 @@
 * [TAUSSIG — Type d'abord vasculaire](fr/CodeSystem-access-type.md)
 * [TAUSSIG — Attribution d'un EI](fr/CodeSystem-ae-attribution.md)
 * [TAUSSIG — Gestion de la complication (prise en charge péri-procédurale)](fr/CodeSystem-ae-management.md)
+* [TAUSSIG — Complément pour le type d’anesthésie](fr/CodeSystem-anesthesia-type.md)
 * [TAUSSIG — Méthode de calcul de surface corporelle](fr/CodeSystem-bsa-method.md)
 * [TAUSSIG — Intention du cathétérisme](fr/CodeSystem-cath-intent.md)
 * [TAUSSIG — CCAM (sous-ensemble cath congénital)](fr/CodeSystem-ccam.md)
@@ -46,6 +47,7 @@
 
 * [TAUSSIG — Types d'abord vasculaire](fr/ValueSet-access-type-vs.md)
 * [TAUSSIG — Attributions d'EI](fr/ValueSet-ae-attribution-vs.md)
+* [TAUSSIG — Types d’anesthésie](fr/ValueSet-anesthesia-type-vs.md)
 * [TAUSSIG — Méthodes de calcul BSA](fr/ValueSet-bsa-method-vs.md)
 * [TAUSSIG — Intentions de cathétérisme](fr/ValueSet-cath-intent-vs.md)
 * [TAUSSIG — Types de condition évolutive](fr/ValueSet-condition-type-vs.md)
@@ -55,6 +57,7 @@
 * [TAUSSIG — Résultats de geste](fr/ValueSet-gesture-result-vs.md)
 * [TAUSSIG — Types d'implant](fr/ValueSet-implant-device-type-vs.md)
 * [TAUSSIG — États d'implant](fr/ValueSet-implant-status-vs.md)
+* [TAUSSIG — Cibles CIM-10 de la correspondance IPCCC](fr/ValueSet-ipccc-icd10-targets.md)
 * [IPCCC Short List v5.0 (sous-ensemble de saisie)](fr/ValueSet-ipccc-short-list.md)
 * [TAUSSIG — Latéralité (gauche/droite)](fr/ValueSet-laterality-vs.md)
 * [TAUSSIG — Types de matériel (catégories)](fr/ValueSet-material-type-vs.md)
@@ -129,9 +132,9 @@
 
 ### ConceptMaps
 
-* [AccessTypeToSnomed](fr/ConceptMap-access-type-to-snomed.md)
-* [GeneticSyndromeToIcd11](fr/ConceptMap-genetic-syndrome-to-icd11.md)
-* [Crossmap IPCCC -> ICD-10 (v5.0)](fr/ConceptMap-ipccc-to-icd10.md)
+* [TAUSSIG — AccessTypeToSnomed](fr/ConceptMap-access-type-to-snomed.md)
+* [TAUSSIG — GeneticSyndromeToIcd11](fr/ConceptMap-genetic-syndrome-to-icd11.md)
+* [TAUSSIG — IPCCC vers CIM-10, normalisation de la source AEPC 5.0](fr/ConceptMap-ipccc-to-icd10.md)
 * [TAUSSIG — Condition de mesure -> SNOMED](fr/ConceptMap-measurement-condition-to-snomed.md)
 * [TAUSSIG — Modalité de mesure -> SNOMED (Observation.method)](fr/ConceptMap-measurement-modality-to-snomed.md)
 * [TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)](fr/ConceptMap-measurement-phase-to-snomed.md)
@@ -139,3 +142,27 @@
 ### ImplementationGuides
 
 * [TAUSSIG — Implementation Guide (POC Cathétérisme)](fr/ImplementationGuide-taussig.poc.md)
+
+### Examples
+
+* [ex-taussig-adverse-event (AdverseEvent)](fr/AdverseEvent-ex-taussig-adverse-event.md)
+* [ex-taussig-cardiac-condition-profile (Condition)](fr/Condition-ex-taussig-cardiac-condition-profile.md)
+* [ex-taussig-cardiac-diagnosis (Condition)](fr/Condition-ex-taussig-cardiac-diagnosis.md)
+* [ex-taussig-genetic-syndrome-profile (Condition)](fr/Condition-ex-taussig-genetic-syndrome-profile.md)
+* [ex-prior-implant (Device)](fr/Device-ex-prior-implant.md)
+* [ex-taussig-cardiac-implant (Device)](fr/Device-ex-taussig-cardiac-implant.md)
+* [ex-taussig-material-used (Device)](fr/Device-ex-taussig-material-used.md)
+* [ex-taussig-care-episode (Encounter)](fr/Encounter-ex-taussig-care-episode.md)
+* [ex-taussig-periprocedural-medication-administration (MedicationAdministration)](fr/MedicationAdministration-ex-taussig-periprocedural-medication-administration.md)
+* [ex-taussig-birth-weight-observation (Observation)](fr/Observation-ex-taussig-birth-weight-observation.md)
+* [ex-taussig-cath-anthropometry-observation (Observation)](fr/Observation-ex-taussig-cath-anthropometry-observation.md)
+* [ex-taussig-clinical-measurement (Observation)](fr/Observation-ex-taussig-clinical-measurement.md)
+* [ex-taussig-procedure-exposure-observation (Observation)](fr/Observation-ex-taussig-procedure-exposure-observation.md)
+* [ex-taussig-procedure-outcome (Observation)](fr/Observation-ex-taussig-procedure-outcome.md)
+* [Établissement fictif — exemple technique (Organization)](fr/Organization-ex-taussig-organization.md)
+* [ex-taussig-patient (Patient)](fr/Patient-ex-taussig-patient.md)
+* [ex-taussig-practitioner (Practitioner)](fr/Practitioner-ex-taussig-practitioner.md)
+* [ex-taussig-anesthesia-management (Procedure)](fr/Procedure-ex-taussig-anesthesia-management.md)
+* [ex-taussig-catheterization (Procedure)](fr/Procedure-ex-taussig-catheterization.md)
+* [ex-taussig-interventional-gesture (Procedure)](fr/Procedure-ex-taussig-interventional-gesture.md)
+* [ex-taussig-vascular-access (Procedure)](fr/Procedure-ex-taussig-vascular-access.md)

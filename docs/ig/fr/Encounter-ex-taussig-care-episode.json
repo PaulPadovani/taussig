@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "ex-taussig-care-episode",
+  "meta" : {
+    "profile" : ["https://taussig/fhir/StructureDefinition/taussig-care-episode"],
+    "tag" : [{
+      "system" : "https://taussig/fhir/tags",
+      "code" : "synthetic-technical-example"
+    }]
+  },
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Venue ex-taussig-care-episode</b></p><a name=\"ex-taussig-care-episode\"> </a><a name=\"hcex-taussig-care-episode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-care-episode.html\">TAUSSIG — Épisode de soins</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>identifier</b>: Visit number/EX-ENCOUNTER-01</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>period</b>: 2026-01-01 --&gt; 2026-01-01</p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "VN"
+      }]
+    },
+    "system" : "https://taussig/fhir/identifiers/technical-encounter",
+    "value" : "EX-ENCOUNTER-01"
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "AMB"
+  },
+  "subject" : {
+    "reference" : "Patient/ex-taussig-patient"
+  },
+  "period" : {
+    "start" : "2026-01-01",
+    "end" : "2026-01-01"
+  }
+}

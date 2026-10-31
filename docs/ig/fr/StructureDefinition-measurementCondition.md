@@ -1,6 +1,6 @@
-# Condition de mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# Condition de mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: Condition de mesure 
+## Extension: Condition de mesure (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Mesure clinique (delta pre/post)](StructureDefinition-taussig-clinical-measurement.md)
+* Exemples pour ce/t/te Extension: [Observation/ex-taussig-clinical-measurement](Observation-ex-taussig-clinical-measurement.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/measurementCondition)
 
@@ -58,11 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-measurementCond
   "resourceType" : "StructureDefinition",
   "id" : "measurementCondition",
   "url" : "https://taussig/fhir/StructureDefinition/measurementCondition",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "MeasurementCondition",
   "title" : "Condition de mesure",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Condition physiologique/pharmacologique pendant la mesure.",
   "jurisdiction" : [{

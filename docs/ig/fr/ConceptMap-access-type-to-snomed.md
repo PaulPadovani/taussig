@@ -1,6 +1,6 @@
-# AccessTypeToSnomed - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — AccessTypeToSnomed - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ConceptMap: AccessTypeToSnomed (Expérimental) 
+## ConceptMap: TAUSSIG — AccessTypeToSnomed (Expérimental) 
 
 
 
@@ -11,11 +11,12 @@
   "resourceType" : "ConceptMap",
   "id" : "access-type-to-snomed",
   "url" : "https://taussig/fhir/ConceptMap/access-type-to-snomed",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "AccessTypeToSnomed",
+  "title" : "TAUSSIG — AccessTypeToSnomed",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT.",
   "jurisdiction" : [{

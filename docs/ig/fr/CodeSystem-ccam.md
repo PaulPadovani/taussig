@@ -1,4 +1,4 @@
-# TAUSSIG — CCAM (sous-ensemble cath congénital) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — CCAM (sous-ensemble cath congénital) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
 ## CodeSystem: TAUSSIG — CCAM (sous-ensemble cath congénital) (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "ccam",
   "url" : "https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM",
-  "version" : "0.6.0",
+  "version" : "0.1.0",
   "name" : "TaussigCcam",
   "title" : "TAUSSIG — CCAM (sous-ensemble cath congénital)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-30T22:35:46+01:00",
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé).",
   "jurisdiction" : [{
@@ -36,7 +36,6 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "copyright" : "CCAM © CNAM. Réutilisation des libellés à usage de recherche.",
   "caseSensitive" : true,
   "content" : "fragment",
-  "count" : 45,
   "concept" : [{
     "code" : "DFQH001",
     "display" : "Artériographie sélective du tronc et/ou des branches de l'artère pulmonaire, par voie veineuse transcutanée"

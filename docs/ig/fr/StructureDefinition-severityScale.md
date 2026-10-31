@@ -1,6 +1,6 @@
-# Échelle de gravité - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# Échelle de gravité - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: Échelle de gravité 
+## Extension: Échelle de gravité (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Événement indésirable](StructureDefinition-taussig-adverse-event.md)
+* Exemples pour ce/t/te Extension: [AdverseEvent/ex-taussig-adverse-event](AdverseEvent-ex-taussig-adverse-event.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/severityScale)
 
@@ -58,11 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-severityScale.c
   "resourceType" : "StructureDefinition",
   "id" : "severityScale",
   "url" : "https://taussig/fhir/StructureDefinition/severityScale",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "SeverityScale",
   "title" : "Échelle de gravité",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Échelle de gradation utilisée (Bergersen/C3PO, NCDR-IMPACT…).",
   "jurisdiction" : [{

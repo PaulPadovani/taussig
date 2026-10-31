@@ -1,10 +1,10 @@
-# TAUSSIG — Diagnostic cardiaque congénital - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Diagnostic cardiaque congénital - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Diagnostic cardiaque congénital 
+## Profil de ressource: TAUSSIG — Diagnostic cardiaque congénital ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Condition/ex-taussig-cardiac-diagnosis](Condition-ex-taussig-cardiac-diagnosis.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-cardiac-diagnosis)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cardiac-diagnosis",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-diagnosis",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigCardiacDiagnosis",
   "title" : "TAUSSIG — Diagnostic cardiaque congénital",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Diagnostic congénital (substrat figé). Double codage CIM-11 (classification, primaire) + IPCCC (précision clinique) ; CIM-10 dérivé, ECHSA optionnel. Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded.",
   "jurisdiction" : [{

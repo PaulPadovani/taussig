@@ -14,11 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem implant-status</b></p><a name=\"implant-status\"> </a><a name=\"hcimplant-status\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/implant-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">functional<a name=\"implant-status-functional\"> </a></td><td>Fonctionnel</td></tr><tr><td style=\"white-space:nowrap\">degenerated<a name=\"implant-status-degenerated\"> </a></td><td>Dégénéré</td></tr><tr><td style=\"white-space:nowrap\">stenotic<a name=\"implant-status-stenotic\"> </a></td><td>Sténosé</td></tr><tr><td style=\"white-space:nowrap\">occluded<a name=\"implant-status-occluded\"> </a></td><td>Occlus</td></tr><tr><td style=\"white-space:nowrap\">explanted<a name=\"implant-status-explanted\"> </a></td><td>Explanté</td></tr><tr><td style=\"white-space:nowrap\">embolized<a name=\"implant-status-embolized\"> </a></td><td>Embolisé</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/implant-status"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
   fhir:CodeSystem.name [ fhir:value "ImplantStatus"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — État clinique d'un implant"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "État clinique courant d'un implant (porté en extension de Device)."] ;
   fhir:CodeSystem.jurisdiction [

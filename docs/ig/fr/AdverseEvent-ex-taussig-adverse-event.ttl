@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/AdverseEvent/ex-taussig-adverse-event> a fhir:AdverseEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-taussig-adverse-event"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://taussig/fhir/StructureDefinition/taussig-adverse-event" ;
+       fhir:index -1 ;
+       fhir:link <https://taussig/fhir/StructureDefinition/taussig-adverse-event>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/tags" ] ;
+       fhir:Coding.code [ fhir:value "synthetic-technical-example" ]
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : AdverseEvent ex-taussig-adverse-event</b></p><a name=\"ex-taussig-adverse-event\"> </a><a name=\"hcex-taussig-adverse-event\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-adverse-event.html\">TAUSSIG — Événement indésirable</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Échelle de gravité</b>: <a href=\"CodeSystem-severity-scale.html#severity-scale-bergersen_c3po\">TAUSSIG — Échelle de gravité d'un EI: bergersen_c3po</a> (Bergersen / C3PO)</p><p><b>Niveau de gravité (1-5)</b>: 1</p><p><b>Attribution de l'EI</b>: <a href=\"CodeSystem-ae-attribution.html#ae-attribution-device\">TAUSSIG — Attribution d'un EI: device</a> (Dispositif)</p><p><b>Prise en charge de l'EI</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/ae-management transcatheter_bailout}\">Geste de rattrapage transcathéter</span></p><p><b>actuality</b>: Potential Adverse Event</p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/severityScale" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/severity-scale" ] ;
+       fhir:Coding.code [ fhir:value "bergersen_c3po" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/severityLevel" ] ;
+     fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/adverseEventAttribution" ] ;
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ae-attribution" ] ;
+       fhir:Coding.code [ fhir:value "device" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/adverseEventManagement" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ae-management" ] ;
+         fhir:Coding.code [ fhir:value "transcatheter_bailout" ]
+       ]
+     ]
+  ] ;
+  fhir:AdverseEvent.actuality [ fhir:value "potential"] ;
+  fhir:AdverseEvent.subject [
+     fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/AdverseEvent/ex-taussig-adverse-event.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

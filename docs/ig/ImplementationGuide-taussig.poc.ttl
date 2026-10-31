@@ -11,16 +11,17 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xml:lang=\"fr\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide taussig.poc</b></p><a name=\"taussig.poc\"> </a><a name=\"hctaussig.poc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr</p></div><h2>TAUSSIGPOC</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://taussig/fhir/ImplementationGuide/taussig.poc</pre></div>"
+     fhir:Narrative.div "<div xml:lang=\"fr\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide taussig.poc</b></p><a name=\"taussig.poc\"> </a><a name=\"hctaussig.poc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr</p></div><h2>TAUSSIGPOC</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://taussig/fhir/ImplementationGuide/taussig.poc</pre><div><p>Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://taussig/fhir/ImplementationGuide/taussig.poc"] ;
-  fhir:ImplementationGuide.version [ fhir:value "0.6.0"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.6.1"] ;
   fhir:ImplementationGuide.name [ fhir:value "TAUSSIGPOC"] ;
   fhir:ImplementationGuide.title [ fhir:value "TAUSSIG — Implementation Guide (POC Cathétérisme)"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ImplementationGuide.description [ fhir:value "Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG."] ;
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0 ;
      fhir:CodeableConcept.coding [
@@ -119,11 +120,11 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "special-url" ]
+         fhir:Extension.valueCode [ fhir:value "apply-version" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM" ]
+         fhir:Extension.valueString [ fhir:value "false" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -131,7 +132,7 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "autoload-resources" ]
+         fhir:Extension.valueCode [ fhir:value "default-version" ]
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
@@ -143,6 +144,30 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
          fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
        ], [
          fhir:index 1 ;
@@ -151,7 +176,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 7 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -163,7 +188,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 8 ;
+       fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -175,7 +200,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 9 ;
+       fhir:index 11 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -187,7 +212,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 10 ;
+       fhir:index 12 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -199,7 +224,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 11 ;
+       fhir:index 13 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -211,7 +236,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 12 ;
+       fhir:index 14 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -223,7 +248,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 13 ;
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -235,7 +260,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 14 ;
+       fhir:index 16 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -247,7 +272,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 15 ;
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -259,7 +284,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 16 ;
+       fhir:index 18 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -271,7 +296,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 17 ;
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -283,7 +308,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 18 ;
+       fhir:index 20 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -295,7 +320,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 19 ;
+       fhir:index 21 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -307,7 +332,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 20 ;
+       fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -319,19 +344,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 21 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "code" ] ;
-         fhir:Extension.valueCode [ fhir:value "apply-version" ]
-       ], [
-         fhir:index 1 ;
-         fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "true" ]
-       ] ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
-     ], [
-       fhir:index 22 ;
+       fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -343,7 +356,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 23 ;
+       fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -355,7 +368,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 24 ;
+       fhir:index 25 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -367,7 +380,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 25 ;
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -379,7 +392,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 26 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -391,7 +404,7 @@
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
-       fhir:index 27 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "code" ] ;
@@ -408,20 +421,6 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://taussig/fhir/ConceptMap/access-type-to-snomed> ;
-         fhir:Reference.reference [ fhir:value "ConceptMap/access-type-to-snomed" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AccessTypeToSnomed" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 1 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -432,7 +431,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assistance ECMO pendant la procédure." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2 ;
+       fhir:index 1 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -446,7 +445,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cause suspectée d'un événement indésirable (dispositif, abord, anesthésie…)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3 ;
+       fhir:index 2 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -460,20 +459,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condition physiologique/pharmacologique pendant la mesure." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://taussig/fhir/ConceptMap/ipccc-to-icd10> ;
-         fhir:Reference.reference [ fhir:value "ConceptMap/ipccc-to-icd10" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Crossmap IPCCC -> ICD-10 (v5.0)" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 5 ;
+       fhir:index 3 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -487,7 +473,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rattachement d'une condition évolutive à son diagnostic congénital." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6 ;
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Device/ex-prior-implant> ;
+         fhir:Reference.reference [ fhir:value "Device/ex-prior-implant" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispositif antérieur fictif — exemple technique" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cible distincte du lien previousImplant ; illustre uniquement le chaînage de deux identités de dispositif." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 5 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -501,21 +501,347 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mesure directe ou valeur calculée." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Procedure/ex-taussig-vascular-access> ;
+         fhir:Reference.reference [ fhir:value "Procedure/ex-taussig-vascular-access" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Abord vasculaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-vascular-access" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-vascular-access>
+       ]
+     ], [
        fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+         fhir:Extension.valueString [ fhir:value "MedicationAdministration" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11> ;
-         fhir:Reference.reference [ fhir:value "ConceptMap/genetic-syndrome-to-icd11" ]
+         fhir:link <https://taussig/fhir/MedicationAdministration/ex-taussig-periprocedural-medication-administration> ;
+         fhir:Reference.reference [ fhir:value "MedicationAdministration/ex-taussig-periprocedural-medication-administration" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "GeneticSyndromeToIcd11" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Crossmap Orphanet -> ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Administration médicamenteuse péri-procédurale" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration>
+       ]
      ], [
        fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Observation/ex-taussig-cath-anthropometry-observation> ;
+         fhir:Reference.reference [ fhir:value "Observation/ex-taussig-cath-anthropometry-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Anthropométrie au cathétérisme" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-cath-anthropometry-observation" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-cath-anthropometry-observation>
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Procedure/ex-taussig-catheterization> ;
+         fhir:Reference.reference [ fhir:value "Procedure/ex-taussig-catheterization" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Cathétérisme cardiaque (acte pivot)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-catheterization" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-catheterization>
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Condition/ex-taussig-cardiac-condition-profile> ;
+         fhir:Reference.reference [ fhir:value "Condition/ex-taussig-cardiac-condition-profile" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Condition cardiaque évolutive" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile>
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Condition/ex-taussig-cardiac-diagnosis> ;
+         fhir:Reference.reference [ fhir:value "Condition/ex-taussig-cardiac-diagnosis" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Diagnostic cardiaque congénital" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-cardiac-diagnosis" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-cardiac-diagnosis>
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Observation/ex-taussig-procedure-exposure-observation> ;
+         fhir:Reference.reference [ fhir:value "Observation/ex-taussig-procedure-exposure-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Exposition et contraste de procédure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation>
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Procedure/ex-taussig-interventional-gesture> ;
+         fhir:Reference.reference [ fhir:value "Procedure/ex-taussig-interventional-gesture" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Geste interventionnel" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-interventional-gesture" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-interventional-gesture>
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Procedure/ex-taussig-anesthesia-management> ;
+         fhir:Reference.reference [ fhir:value "Procedure/ex-taussig-anesthesia-management" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Gestion anesthésique" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-anesthesia-management" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-anesthesia-management>
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Device/ex-taussig-cardiac-implant> ;
+         fhir:Reference.reference [ fhir:value "Device/ex-taussig-cardiac-implant" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Implant cardiaque (substrat longitudinal)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-cardiac-implant" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-cardiac-implant>
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Device/ex-taussig-material-used> ;
+         fhir:Reference.reference [ fhir:value "Device/ex-taussig-material-used" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Matériel utilisé (consommable de geste)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-material-used" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-material-used>
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Observation/ex-taussig-clinical-measurement> ;
+         fhir:Reference.reference [ fhir:value "Observation/ex-taussig-clinical-measurement" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Mesure clinique (delta pre/post)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-clinical-measurement" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-clinical-measurement>
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Organization/ex-taussig-organization> ;
+         fhir:Reference.reference [ fhir:value "Organization/ex-taussig-organization" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Organisation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-organization" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-organization>
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
+         fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-patient" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-patient>
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Observation/ex-taussig-birth-weight-observation> ;
+         fhir:Reference.reference [ fhir:value "Observation/ex-taussig-birth-weight-observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Poids de naissance" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation>
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Practitioner/ex-taussig-practitioner> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/ex-taussig-practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Praticien" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-practitioner" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-practitioner>
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Observation/ex-taussig-procedure-outcome> ;
+         fhir:Reference.reference [ fhir:value "Observation/ex-taussig-procedure-outcome" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Résultat global de procédure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-procedure-outcome" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-procedure-outcome>
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Condition/ex-taussig-genetic-syndrome-profile> ;
+         fhir:Reference.reference [ fhir:value "Condition/ex-taussig-genetic-syndrome-profile" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Syndrome génétique (covariable de contexte)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile>
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/Encounter/ex-taussig-care-episode> ;
+         fhir:Reference.reference [ fhir:value "Encounter/ex-taussig-care-episode" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Épisode de soins" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-care-episode" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-care-episode>
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "AdverseEvent" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/AdverseEvent/ex-taussig-adverse-event> ;
+         fhir:Reference.reference [ fhir:value "AdverseEvent/ex-taussig-adverse-event" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exemple technique — TAUSSIG — Événement indésirable" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://taussig/fhir/StructureDefinition/taussig-adverse-event" ;
+         fhir:link <https://taussig/fhir/StructureDefinition/taussig-adverse-event>
+       ]
+     ], [
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -529,7 +855,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Chaînage valve-in-valve / stent-in-stent vers l'implant précédent." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -540,9 +866,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/ipccc-short-list" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPCCC Short List v5.0 (sous-ensemble de saisie)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Représentation FHIR « IPCCC Short List v5.0 (sous-ensemble de saisie) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -553,9 +880,10 @@
          fhir:Reference.reference [ fhir:value "CodeSystem/ipccc" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Représentation FHIR des codes, libellés et définitions IPCCC importés dans TAUSSIG ; contenu source conservé." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11 ;
+       fhir:index 29 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -569,7 +897,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mode de ventilation pendant l'anesthésie." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12 ;
+       fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -583,7 +911,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grade numérique de gravité selon l'échelle (1 à 5)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13 ;
+       fhir:index 31 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -597,7 +925,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Numéro de tentative avec ce matériel." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14 ;
+       fhir:index 32 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -611,7 +939,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ordre d'utilisation du matériel dans le geste." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15 ;
+       fhir:index 33 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -625,7 +953,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Phase de la procédure à laquelle la mesure est faite (baseline/pre/post)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16 ;
+       fhir:index 34 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -639,7 +967,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dispositif posé en chirurgie ou dans un autre centre (hors cathé TAUSSIG)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17 ;
+       fhir:index 35 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -653,7 +981,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Action de prise en charge de l'événement indésirable pendant le cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18 ;
+       fhir:index 36 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -667,7 +995,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indique si un produit de contraste iodé a été injecté pendant le cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19 ;
+       fhir:index 37 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -681,7 +1009,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rôle d'une condition évolutive comme indication d'un cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20 ;
+       fhir:index 38 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -695,7 +1023,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rôle d'un diagnostic congénital comme indication d'un cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21 ;
+       fhir:index 39 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -709,7 +1037,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Calibre de l'introducteur (French/Charrière)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22 ;
+       fhir:index 40 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -723,7 +1051,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abord vasculaire du cathétérisme. Voie d'abord (enum TAUSSIG) en code ; calibre d'introducteur, écho-guidage et latéralité en extensions/bodySite." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23 ;
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/access-type-to-snomed> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/access-type-to-snomed" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — AccessTypeToSnomed" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -737,7 +1079,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Antibioprophylaxie et anticoagulation administrées pendant le cathétérisme, codables en ATC quand disponible." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24 ;
+       fhir:index 43 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -751,7 +1093,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Poids, taille et surface corporelle au moment du cathétérisme, portés par des Observations liées à la Procedure." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25 ;
+       fhir:index 44 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -765,7 +1107,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cause suspectée d'un événement indésirable." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26 ;
+       fhir:index 45 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -779,7 +1121,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Imputabilité d'un décès survenu en péri-procédure (ProcedureOutcome)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27 ;
+       fhir:index 46 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -790,9 +1132,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/ae-attribution-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Attributions d'EI" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Attributions d'EI » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28 ;
+       fhir:index 47 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -803,9 +1146,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/death-attribution-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Attributions du décès" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Attributions du décès » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29 ;
+       fhir:index 48 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -819,7 +1163,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Distingue le diagnostic congénital des conditions évolutives." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30 ;
+       fhir:index 49 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -833,7 +1177,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set des conditions cardiaques évolutives de la POC (distinct du diagnostic congénital figé) : 61 lésions résiduelles/acquises codées en IPCCC, plus 13 états d'étape chirurgicale codés en ECHSA — l'IPCCC ne code pas l'état « status post » d'un montage (Fontan, Glenn, MBTS…), d'où un ValueSet multi-systèmes. ICD-10 = donnée dérivée (crossmap IPCCC). Le typage residual/acquired/post-chir est un choix clinicien à la saisie (CardiacCondition.condition_type), pas une propriété du code." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31 ;
+       fhir:index 50 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -847,7 +1191,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; codage SNOMED (interop) + CCAM (administratif FR) + ECHSA (registre). Dosimétrie/anthropométrie portées par Observations liées." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32 ;
+       fhir:index 51 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -861,7 +1205,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catégorie étiologique d'un syndrome génétique." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33 ;
+       fhir:index 52 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -875,7 +1219,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 34 ;
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ValueSet/ipccc-icd10-targets> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/ipccc-icd10-targets" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Cibles CIM-10 de la correspondance IPCCC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes principaux et produits complémentaires de la table de correspondance normalisée. Leur existence est contrôlée contre le service terminologique ; cela ne prouve pas une équivalence clinique exacte." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -889,7 +1247,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes LOINC utilisés pour poids, taille et surface corporelle au moment du cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35 ;
+       fhir:index 55 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -903,7 +1261,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes des observations quantitatives liées à l'exposition radiologique et au contraste." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36 ;
+       fhir:index 56 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -917,7 +1275,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set SNOMED CT des complications péri-procédurales du cathétérisme congénital (couche d'interopérabilité FHIR AdverseEvent.event / Condition.code). Résolu sur le SMT depuis les complications IPCCC/EPCC retenues. À valider cliniquement." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 37 ;
+       fhir:index 57 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -931,7 +1289,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Axe IPCCC des événements indésirables du cathétérisme congénital retenus pour la POC. La granularité IPCCC est plus grossière que la curation française : plusieurs libellés cliniques peuvent partager un même code (regroupés ici sous le libellé IPCCC officiel)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 38 ;
+       fhir:index 58 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/CodeSystem/anesthesia-type> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/anesthesia-type" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Complément pour le type d’anesthésie" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code local pour l’absence explicite d’anesthésie. Une donnée manquante ne signifie pas aucune anesthésie. Aucune absence d’équivalent SNOMED n’est affirmée." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -945,7 +1317,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Concepts nécessaires au modèle et vérifiés absents des terminologies de référence. Chaque code documente l'absence constatée." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 39 ;
+       fhir:index 60 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -959,7 +1331,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 40 ;
+       fhir:index 61 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -973,7 +1345,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condition physiologique/pharmacologique pendant la mesure." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 41 ;
+       fhir:index 62 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -984,9 +1356,10 @@
          fhir:Reference.reference [ fhir:value "ConceptMap/measurement-condition-to-snomed" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Condition de mesure -> SNOMED" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Représentation FHIR « TAUSSIG — Condition de mesure -> SNOMED » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 42 ;
+       fhir:index 63 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -997,9 +1370,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/measurement-condition-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Conditions de mesure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Conditions de mesure » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 43 ;
+       fhir:index 64 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1013,7 +1387,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnostic congénital (substrat figé). Double codage CIM-11 (classification, primaire) + IPCCC (précision clinique) ; CIM-10 dérivé, ECHSA optionnel. Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 44 ;
+       fhir:index 65 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1027,7 +1401,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Axe de classification diagnostique de la POC : énumération des entités CIM-11 MMS retenues pour les cardiopathies congénitales, avec le libellé français officiel de l'OMS. Liaison extensible : un code CIM-11 hors liste reste admis, mais l'autocomplétion et les statistiques se font sur ce working set curé." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45 ;
+       fhir:index 66 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1041,7 +1415,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Équivalents IPCCC des diagnostics congénitaux du working set CIM-11 (codage parallèle de précision clinique). Un même code IPCCC peut répondre à plusieurs entités CIM-11." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 46 ;
+       fhir:index 67 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1055,7 +1429,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catégories de dispositifs de fermeture distinguées par cible. Codes locaux TAUSSIG ; aucune équivalence SNOMED spécifique n'est affirmée." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 47 ;
+       fhir:index 68 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1066,9 +1440,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/derivation-method-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Dérivation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Dérivation » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 48 ;
+       fhir:index 69 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1082,7 +1457,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mesure directe ou valeur calculée." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 49 ;
+       fhir:index 70 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1096,7 +1471,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Représentation FHIR, pour le POC TAUSSIG, de la nomenclature de la base ECHSA (European Congenital Heart Surgeons Association, dérivée EACTS-STS/IPCCC). Codes extraits du dictionnaire maître `fields-dicts.xls` (onglet factors). Classes : diagnosis, procedure, status post, complication, aae, nca, gprf. Usage recherche ; codes candidats à valider cliniquement." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 50 ;
+       fhir:index 71 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1110,7 +1485,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temps de fluoroscopie, produit dose-surface et volume de contraste portés par des Observations quantitatives liées au cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 51 ;
+       fhir:index 72 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/genetic-syndrome-to-icd11" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — GeneticSyndromeToIcd11" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Crossmap Orphanet -> ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1124,7 +1513,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Geste interventionnel ciblé (unité de l'effet pre/post). Quadruple codage IPCCC (pivot) + SNOMED (interop) + CCAM + ECHSA ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 52 ;
+       fhir:index 74 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1138,7 +1527,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Axe IPCCC des gestes de cathétérisme congénital retenus pour la POC (gestes diagnostiques, interventionnels et hybrides). Remplace, pour l'autocomplétion, la liaison à la short list IPCCC de 1 822 codes, inexploitable comme menu." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 53 ;
+       fhir:index 75 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1149,10 +1538,10 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/taussig-anesthesia-management" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Gestion anesthésique" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (SNOMED) ; ventilation & ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (générale, sédation, locale : SNOMED CT ; aucune anesthésie explicite : complément TAUSSIG) ; ventilation & ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 54 ;
+       fhir:index 76 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1166,7 +1555,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Variable de prise en charge d'un événement indésirable de cathétérisme congénital (échelle d'escalade). Ancrage IPCCC/EPCC chap. 15 + SNOMED procédure. À valider cliniquement." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 55 ;
+       fhir:index 77 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1180,7 +1569,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Échelle qualitative de la régurgitation valvulaire, valeur de la propriété de mesure regurgitation_grade (Observation.valueCodeableConcept). Qualifier values SNOMED CT dont l'existence et le libellé FR ont été vérifiés sur le SMT ; le choix de l'échelle reste à valider cliniquement." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 56 ;
+       fhir:index 78 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1194,7 +1583,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dispositif implanté persistant (conduit, valve, stent, occluder…). État clinique courant en extension (Device.status ne couvre pas functional/degenerated/…) ; chaînage valve-in-valve ; site anatomique SNOMED ; UDI." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 57 ;
+       fhir:index 79 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1208,7 +1597,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Intention globale de la procédure de cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 58 ;
+       fhir:index 80 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1219,9 +1608,24 @@
          fhir:Reference.reference [ fhir:value "ValueSet/cath-intent-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Intentions de cathétérisme" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Intentions de cathétérisme » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 59 ;
+       fhir:index 81 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/ipccc-to-icd10> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/ipccc-to-icd10" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — IPCCC vers CIM-10, normalisation de la source AEPC 5.0" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondances de classification issues de la Long List AEPC 5.0 du 1er mai 2025, normalisées pour l’édition OMS 2019-covid-expanded. Les notations source et les colonnes additionnelles sont conservées dans les commentaires. Les signes dagger/asterisk ne sont pas incorporés au code exporté. Les rapprochements restent relatedto, sans équivalence exacte présumée. Les produits additional-code doivent être conservés comme codes complémentaires distincts, et non comme synonymes interchangeables. La dépendance documented-kidney-disease désigne une condition rénale déjà documentée avant conversion ; elle ne crée aucune obligation de saisie ni aucun stade rénal par défaut. Les colonnes additionnelles historiques non structurées ne déclenchent pas de conversion automatique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1235,7 +1639,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Côté anatomique de l'abord vasculaire (SNOMED CT)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 60 ;
+       fhir:index 83 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1249,7 +1653,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Matériel consommé pendant un geste (ballon, stent, dispositif, consommable). Catégorie en type ; caractéristiques techniques (diamètre, longueur…) en Device.property (LOINC/UCUM) ; UDI ; séquence/tentative d'usage en extensions sur Procedure.usedReference." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 61 ;
+       fhir:index 84 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1263,7 +1667,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mesure hémodynamique/fonctionnelle. Modèle post-coordonné : propriété (CodeSystem TAUSSIG) = la grandeur, site SNOMED = le lieu. Phase procédurale + geste lié = mécanisme du gradient pre/post (cœur du POC). Modalité en method ; condition & dérivation en extensions.\n\nVALEUR ATTENDUE : elle dépend de la propriété, pas du profil. Chaque concept du CodeSystem measurement-property porte une propriété `value_type` (Quantity | CodeableConcept) et, pour les grandeurs qualitatives, une propriété `value_set` donnant le ValueSet canonique des valeurs admises — p. ex. `regurgitation_grade` -> https://taussig/fhir/ValueSet/taussig-regurgitation-grade (grades SNOMED trace / légère / modérée / sévère). Ce contrat est déclaré au niveau de la propriété et non par un binding FHIR sur `value[x]` : en R4, un binding sur ce choix s'appliquerait aussi aux Quantity et imposerait à toutes les propriétés le jeu de valeurs d'une seule d'entre elles." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 62 ;
+       fhir:index 85 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1277,7 +1681,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modalité d'acquisition d'une mesure." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 63 ;
+       fhir:index 86 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1288,9 +1692,10 @@
          fhir:Reference.reference [ fhir:value "ConceptMap/measurement-modality-to-snomed" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Modalité de mesure -> SNOMED (Observation.method)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Représentation FHIR « TAUSSIG — Modalité de mesure -> SNOMED (Observation.method) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 64 ;
+       fhir:index 87 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1301,9 +1706,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/measurement-modality-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Modalités de mesure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Modalités de mesure » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 65 ;
+       fhir:index 88 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1317,7 +1723,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mode de ventilation pendant l'anesthésie." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 66 ;
+       fhir:index 89 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1328,9 +1734,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/ventilation-type-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Modes ventilatoires" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Modes ventilatoires » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 67 ;
+       fhir:index 90 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1344,7 +1751,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formule utilisée pour calculer la surface corporelle (BSA)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 68 ;
+       fhir:index 91 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1358,7 +1765,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Méthode ayant confirmé/écarté le syndrome (Observation.method)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 69 ;
+       fhir:index 92 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1369,9 +1776,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/bsa-method-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Méthodes de calcul BSA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Méthodes de calcul BSA » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 70 ;
+       fhir:index 93 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1385,7 +1793,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes locaux transitoires pour les observations de procédure dont le code LOINC reste à vérifier." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 71 ;
+       fhir:index 94 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1399,7 +1807,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Établissement de santé, dérivé de FR Core Organization (établissement). FINESS porté par les slices FR Core idNatSt (urn:oid:1.2.250.1.71.4.2.2) et finess (https://finess.esante.gouv.fr)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 72 ;
+       fhir:index 95 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1413,7 +1821,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient de cardiopathie congénitale, dérivé de FR Core Patient (identifiants/extensions FR hérités). Les slices d'identité nationale (INS-NIR/NIA) sont portées par FR Core ; pour une identité INS *qualifiée*, utiliser le profil strict fr-core-patient-ins. Poids de naissance porté par une Observation dédiée (LOINC 8339-4)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 73 ;
+       fhir:index 96 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1424,9 +1832,10 @@
          fhir:Reference.reference [ fhir:value "ConceptMap/measurement-phase-to-snomed" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Représentation FHIR « TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 74 ;
+       fhir:index 97 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1440,7 +1849,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Référentiel temporel pour le delta pre/post (cœur de la POC)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 75 ;
+       fhir:index 98 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1451,9 +1860,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/procedure-phase-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Phases procédurales" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Phases procédurales » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 76 ;
+       fhir:index 99 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1467,7 +1877,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Poids de naissance porté par une Observation dédiée (LOINC 8339-4), liée au patient." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 77 ;
+       fhir:index 100 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1481,7 +1891,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Praticien (opérateur, valideur), dérivé de FR Core Practitioner. L'identifiant RPPS est porté par la slice FR Core idNatPs (urn:oid:1.2.250.1.71.4.2.1) — plus besoin de la redéclarer." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 78 ;
+       fhir:index 101 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1495,7 +1905,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modes de prise en charge d'un EI pendant le cathétérisme (CodeSystem TAUSSIG ae-management)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 79 ;
+       fhir:index 102 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1509,7 +1919,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set SNOMED CT des gestes de cathétérisme congénital (couche d'interopérabilité FHIR Procedure.code). Résolu sur le SMT depuis les gestes IPCCC retenus. À valider cliniquement." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 80 ;
+       fhir:index 103 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1523,7 +1933,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set POC des propriétés de mesure hémodynamique de cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 81 ;
+       fhir:index 104 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1537,7 +1947,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 82 ;
+       fhir:index 105 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1551,7 +1961,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Résultat au niveau geste et tentative matériel." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 83 ;
+       fhir:index 106 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1565,7 +1975,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Synthèse du résultat procédural : succès hémodynamique, lésion résiduelle, imputabilité d'un décès péri-procédural (component). NB : succès TECHNIQUE porté par Procedure.outcome (geste/cathétérisme) ; décès porté par Patient.deceased[x]." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 84 ;
+       fhir:index 107 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1576,9 +1986,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/gesture-result-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Résultats de geste" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Résultats de geste » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 85 ;
+       fhir:index 108 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1592,7 +2003,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rôle de l'indication d'un cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 86 ;
+       fhir:index 109 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1606,7 +2017,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rôle clinique d'une administration médicamenteuse pendant le cathétérisme." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 87 ;
+       fhir:index 110 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1617,9 +2028,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/diagnosis-role-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Rôles d'indication" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Rôles d'indication » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 88 ;
+       fhir:index 111 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1630,9 +2042,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/periprocedural-medication-purpose-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Rôles des médicaments péri-procéduraux" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Rôles des médicaments péri-procéduraux » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 89 ;
+       fhir:index 112 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1646,7 +2059,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 90 ;
+       fhir:index 113 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1657,9 +2070,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/technical-success-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Succès technique" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Succès technique » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 91 ;
+       fhir:index 114 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1673,7 +2087,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Niveau de succès technique au niveau procédure." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 92 ;
+       fhir:index 115 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1687,7 +2101,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 93 ;
+       fhir:index 116 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1701,7 +2115,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 94 ;
+       fhir:index 117 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1715,7 +2129,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Voie d'abord vasculaire." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 95 ;
+       fhir:index 118 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1729,7 +2143,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type de dispositif/substrat longitudinal." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 96 ;
+       fhir:index 119 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1743,7 +2157,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catégorie d'une lésion évolutive." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 97 ;
+       fhir:index 120 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1757,7 +2171,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Catégorie de matériel utilisé pendant un geste." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 98 ;
+       fhir:index 121 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1768,9 +2182,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/access-type-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Types d'abord vasculaire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Types d'abord vasculaire » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 99 ;
+       fhir:index 122 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1781,9 +2196,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/implant-device-type-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Types d'implant" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Types d'implant » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 100 ;
+       fhir:index 123 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1794,9 +2210,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/condition-type-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Types de condition évolutive" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Types de condition évolutive » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 101 ;
+       fhir:index 124 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1810,7 +2227,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set de matériel ; catégories de fermeture distinguées par cible selon la décision clinique du 30 octobre 2026. Les catégories fines de fermeture utilisent des codes TAUSSIG locaux." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 102 ;
+       fhir:index 125 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1821,9 +2238,24 @@
          fhir:Reference.reference [ fhir:value "ValueSet/material-type-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Types de matériel (catégories)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Types de matériel (catégories) » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 103 ;
+       fhir:index 126 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ValueSet/anesthesia-type-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/anesthesia-type-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Types d’anesthésie" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Quatre catégories du modèle : anesthésie générale, sédation et anesthésie locale en SNOMED CT, et aucune anesthésie explicite en code TAUSSIG. Sans distinction du niveau de sédation ni des techniques locorégionales." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 127 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1837,7 +2269,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Échelle de gradation validée par la littérature." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 104 ;
+       fhir:index 128 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1848,9 +2280,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/severity-scale-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Échelles de gravité" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — Échelles de gravité » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 105 ;
+       fhir:index 129 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1864,7 +2297,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Épisode de soins (hospitalisation ou ambulatoire) englobant le cathétérisme, dérivé de FR Core Encounter." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 106 ;
+       fhir:index 130 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1878,7 +2311,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "État clinique courant d'un implant (porté en extension de Device)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 107 ;
+       fhir:index 131 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1889,9 +2322,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/implant-status-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — États d'implant" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jeu de valeurs « TAUSSIG — États d'implant » utilisé par les profils TAUSSIG." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 108 ;
+       fhir:index 132 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1905,7 +2339,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 109 ;
+       fhir:index 133 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1919,7 +2353,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Échelle de gradation utilisée (Bergersen/C3PO, NCDR-IMPACT…)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 110 ;
+       fhir:index 134 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1933,7 +2367,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ponction vasculaire écho-guidée." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 111 ;
+       fhir:index 135 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

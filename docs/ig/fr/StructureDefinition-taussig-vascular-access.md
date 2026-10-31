@@ -1,10 +1,10 @@
-# TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Abord vasculaire 
+## Profil de ressource: TAUSSIG — Abord vasculaire ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Procedure/ex-taussig-vascular-access](Procedure-ex-taussig-vascular-access.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-vascular-access)
 
@@ -65,11 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
   "resourceType" : "StructureDefinition",
   "id" : "taussig-vascular-access",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-vascular-access",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigVascularAccess",
   "title" : "TAUSSIG — Abord vasculaire",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Abord vasculaire du cathétérisme. Voie d'abord (enum TAUSSIG) en code ; calibre d'introducteur, écho-guidage et latéralité en extensions/bodySite.",
   "jurisdiction" : [{

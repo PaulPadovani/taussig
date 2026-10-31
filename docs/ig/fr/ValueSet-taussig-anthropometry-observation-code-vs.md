@@ -1,6 +1,6 @@
-# TAUSSIG — Codes d'anthropométrie per-cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Codes d'anthropométrie per-cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## ValueSet: TAUSSIG — Codes d'anthropométrie per-cathétérisme 
+## ValueSet: TAUSSIG — Codes d'anthropométrie per-cathétérisme (Expérimental) 
 
  **References** 
 
@@ -11,8 +11,6 @@
  
 
 ### Expansion
-
-No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -27,11 +25,12 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "taussig-anthropometry-observation-code-vs",
   "url" : "https://taussig/fhir/ValueSet/taussig-anthropometry-observation-code-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigAnthropometryObservationCodeVS",
   "title" : "TAUSSIG — Codes d'anthropométrie per-cathétérisme",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Codes LOINC utilisés pour poids, taille et surface corporelle au moment du cathétérisme.",
   "jurisdiction" : [{

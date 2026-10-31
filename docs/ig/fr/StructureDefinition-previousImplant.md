@@ -1,6 +1,6 @@
-# Implant précédent - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# Implant précédent - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Extension: Implant précédent 
+## Extension: Implant précédent (Expérimental) 
 
 **Context of Use**
 
@@ -9,6 +9,7 @@
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [TAUSSIG — Implant cardiaque (substrat longitudinal)](StructureDefinition-taussig-cardiac-implant.md)
+* Exemples pour ce/t/te Extension: [Device/ex-taussig-cardiac-implant](Device-ex-taussig-cardiac-implant.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/previousImplant)
 
@@ -50,11 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-previousImplant
   "resourceType" : "StructureDefinition",
   "id" : "previousImplant",
   "url" : "https://taussig/fhir/StructureDefinition/previousImplant",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "PreviousImplant",
   "title" : "Implant précédent",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Chaînage valve-in-valve / stent-in-stent vers l'implant précédent.",
   "jurisdiction" : [{

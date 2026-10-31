@@ -1,6 +1,6 @@
-# TAUSSIG — Type de condition évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Type de condition évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## CodeSystem: TAUSSIG — Type de condition évolutive 
+## CodeSystem: TAUSSIG — Type de condition évolutive (Expérimental) 
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
@@ -19,11 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "condition-type",
   "url" : "https://taussig/fhir/CodeSystem/condition-type",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "ConditionType",
   "title" : "TAUSSIG — Type de condition évolutive",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Catégorie d'une lésion évolutive.",
   "jurisdiction" : [{

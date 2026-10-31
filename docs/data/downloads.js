@@ -1,6 +1,6 @@
 /* Généré par 07-site/build/build_mds.py — NE PAS ÉDITER À LA MAIN. */
 window.TAUSSIG_DOWNLOADS = {
- "genere": "30 octobre 2026",
+ "genere": "31 octobre 2026",
  "fichiers": [
   {
    "id": "xlsx",
@@ -8,8 +8,8 @@ window.TAUSSIG_DOWNLOADS = {
    "format": "Excel (.xlsx)",
    "desc": "Le classeur livrable complet : 115 data elements (définitions ISO 11179, mapping FHIR, binding) et 10 value sets.",
    "fichier": "telechargements/TAUSSIG-DataElements-POC-v4.xlsx",
-   "octets": 78690,
-   "taille": "76.8 Ko",
+   "octets": 78799,
+   "taille": "77.0 Ko",
    "licence": "Conditions de réutilisation : voir la page Réutilisation & citation"
   },
   {

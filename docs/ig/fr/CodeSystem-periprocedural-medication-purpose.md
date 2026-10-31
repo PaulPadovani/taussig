@@ -1,6 +1,6 @@
-# TAUSSIG — Rôle du médicament péri-procédural - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Rôle du médicament péri-procédural - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## CodeSystem: TAUSSIG — Rôle du médicament péri-procédural 
+## CodeSystem: TAUSSIG — Rôle du médicament péri-procédural (Expérimental) 
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
@@ -19,11 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "periprocedural-medication-purpose",
   "url" : "https://taussig/fhir/CodeSystem/periprocedural-medication-purpose",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "PeriproceduralMedicationPurpose",
   "title" : "TAUSSIG — Rôle du médicament péri-procédural",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rôle clinique d'une administration médicamenteuse pendant le cathétérisme.",
   "jurisdiction" : [{

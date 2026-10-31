@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ex-taussig-cardiac-condition-profile"/>
+  <meta>
+    <profile value="https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile"/>
+    <tag>
+      <system value="https://taussig/fhir/tags"/>
+      <code value="synthetic-technical-example"/>
+    </tag>
+  </meta>
+  <language value="fr"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Condition ex-taussig-cardiac-condition-profile</b></p><a name="ex-taussig-cardiac-condition-profile"> </a><a name="hcex-taussig-cardiac-condition-profile"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-taussig-cardiac-condition-profile.html">TAUSSIG — Condition cardiaque évolutive</a></p><p style="margin-bottom: 0px">Balise: </p></div><p><b>Diagnostic congénital d'origine</b>: <a href="Condition-ex-taussig-cardiac-diagnosis.html">Condition</a></p><p><b>category</b>: <span title="Codes :{https://taussig/fhir/CodeSystem/condition-type residual_lesion}">Lésion résiduelle</span></p><p><b>subject</b>: <a href="Patient-ex-taussig-patient.html">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>
+  </text>
+  <extension url="https://taussig/fhir/StructureDefinition/relatedDiagnosis">
+    <valueReference>
+      <reference value="Condition/ex-taussig-cardiac-diagnosis"/>
+    </valueReference>
+  </extension>
+  <category>
+    <coding>
+      <system value="https://taussig/fhir/CodeSystem/condition-type"/>
+      <code value="residual_lesion"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/ex-taussig-patient"/>
+  </subject>
+</Condition>

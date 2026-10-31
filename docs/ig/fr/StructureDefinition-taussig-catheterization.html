@@ -8,7 +8,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+    <title>TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,11 +60,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.0 - trial-use
+            <span style="display:inline-block;">0.6.1 - trial-use
 
 
 
-  France
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -133,7 +133,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -172,6 +172,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-taussig-catheterization-examples.html">Exemples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -203,10 +213,10 @@
 
 TAUSSIG — Cathétérisme cardiaque (acte pivot)
 
+(
 
-
-
-
+Expérimental
+)
   </h2>
 
   <table class="colsi" data-fhir="generated">
@@ -215,7 +225,7 @@ TAUSSIG — Cathétérisme cardiaque (acte pivot)
       <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/StructureDefinition/taussig-catheterization<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-catheterization"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-catheterization|0.6.0"/></span>
+      <span class="copy-text">0.6.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-catheterization|0.6.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
@@ -240,7 +250,7 @@ TAUSSIG — Cathétérisme cardiaque (acte pivot)
           
 
             à date du 
-2026-10-30
+2026-10-31
 
           
         
@@ -269,7 +279,7 @@ TAUSSIG — Cathétérisme cardiaque (acte pivot)
 
 <p><b>Utilisations:</b></p>
 <ul>
- <li>Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation</li>
+ <li>Exemples pour ce/t/te Profil: <a href="Procedure-ex-taussig-catheterization.html">Procedure/ex-taussig-catheterization</a></li>
 </ul>
 <p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-catheterization">les usages dans le FHIR IG Statistics</a></p>
 
@@ -411,7 +421,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0">When the procedure was performed</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-catheterizationK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-catheterizationK'), 'binding', document.getElementById('cbtaussig-catheterizationK-binding').checked, document.getElementById('pptaussig-catheterizationK'));
 document.getElementById('cbtaussig-catheterizationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -469,7 +479,7 @@ filterDesc(document.getElementById('taussig-catheterizationK'), 'obligation', do
       <a style="opacity: 1.0" href="ValueSet-cath-intent-vs.html">TAUSSIG — Intentions de cathétérisme</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/cath-intent-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -482,7 +492,7 @@ filterDesc(document.getElementById('taussig-catheterizationK'), 'obligation', do
       <a style="opacity: 1.0" href="ValueSet-taussig-procedure-snomed.html">TAUSSIG — Procédures (SNOMED CT, interopérabilité)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -664,7 +674,7 @@ filterDesc(document.getElementById('taussig-catheterizationK'), 'obligation', do
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">When the procedure was performed</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-catheterizationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-catheterizationD'), 'binding', document.getElementById('cbtaussig-catheterizationD-binding').checked, document.getElementById('pptaussig-catheterizationD'));
 document.getElementById('cbtaussig-catheterizationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -709,7 +719,7 @@ filterDesc(document.getElementById('taussig-catheterizationD'), 'obligation', do
       <a style="opacity: 0.50" href="ValueSet-cath-intent-vs.html">TAUSSIG — Intentions de cathétérisme</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/cath-intent-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -722,7 +732,7 @@ filterDesc(document.getElementById('taussig-catheterizationD'), 'obligation', do
       <a style="opacity: 0.50" href="ValueSet-taussig-procedure-snomed.html">TAUSSIG — Procédures (SNOMED CT, interopérabilité)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -1133,7 +1143,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Coded items used during the procedure<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-device-kind.html" title="http://hl7.org/fhir/ValueSet/device-kind" class="binding">FHIRDeviceTypes</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span class="binding">)</span><span class="binding">: </span><span class="binding">Codes describing items used during a procedure.</span><br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-catheterizationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-catheterizationS'), 'binding', document.getElementById('cbtaussig-catheterizationS-binding').checked, document.getElementById('pptaussig-catheterizationS'));
 document.getElementById('cbtaussig-catheterizationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1222,7 +1232,7 @@ filterDesc(document.getElementById('taussig-catheterizationS'), 'obligation', do
       <a style="opacity: 1.0" href="ValueSet-cath-intent-vs.html">TAUSSIG — Intentions de cathétérisme</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/cath-intent-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1235,7 +1245,7 @@ filterDesc(document.getElementById('taussig-catheterizationS'), 'obligation', do
       <a style="opacity: 1.0" href="ValueSet-taussig-procedure-snomed.html">TAUSSIG — Procédures (SNOMED CT, interopérabilité)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1707,7 +1717,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0">When the procedure was performed</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-catheterizationKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-catheterizationKA'), 'binding', document.getElementById('cbtaussig-catheterizationKA-binding').checked, document.getElementById('pptaussig-catheterizationKA'));
 document.getElementById('cbtaussig-catheterizationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1764,7 +1774,7 @@ filterDesc(document.getElementById('taussig-catheterizationKA'), 'obligation', d
       <a style="opacity: 1.0" href="ValueSet-cath-intent-vs.html">TAUSSIG — Intentions de cathétérisme</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/cath-intent-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1777,7 +1787,7 @@ filterDesc(document.getElementById('taussig-catheterizationKA'), 'obligation', d
       <a style="opacity: 1.0" href="ValueSet-taussig-procedure-snomed.html">TAUSSIG — Procédures (SNOMED CT, interopérabilité)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -1959,7 +1969,7 @@ filterDesc(document.getElementById('taussig-catheterizationKA'), 'obligation', d
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">When the procedure was performed</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-catheterizationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-catheterizationDA'), 'binding', document.getElementById('cbtaussig-catheterizationDA-binding').checked, document.getElementById('pptaussig-catheterizationDA'));
 document.getElementById('cbtaussig-catheterizationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2001,7 +2011,7 @@ filterDesc(document.getElementById('taussig-catheterizationDA'), 'obligation', d
       <a style="opacity: 0.50" href="ValueSet-cath-intent-vs.html">TAUSSIG — Intentions de cathétérisme</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/cath-intent-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2014,7 +2024,7 @@ filterDesc(document.getElementById('taussig-catheterizationDA'), 'obligation', d
       <a style="opacity: 0.50" href="ValueSet-taussig-procedure-snomed.html">TAUSSIG — Procédures (SNOMED CT, interopérabilité)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -2425,7 +2435,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Coded items used during the procedure<br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-device-kind.html" title="http://hl7.org/fhir/ValueSet/device-kind" class="binding">FHIRDeviceTypes</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span class="binding">)</span><span class="binding">: </span><span class="binding">Codes describing items used during a procedure.</span><br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-catheterizationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-catheterizationSA'), 'binding', document.getElementById('cbtaussig-catheterizationSA-binding').checked, document.getElementById('pptaussig-catheterizationSA'));
 document.getElementById('cbtaussig-catheterizationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2512,7 +2522,7 @@ filterDesc(document.getElementById('taussig-catheterizationSA'), 'obligation', d
       <a style="opacity: 1.0" href="ValueSet-cath-intent-vs.html">TAUSSIG — Intentions de cathétérisme</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/cath-intent-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2525,7 +2535,7 @@ filterDesc(document.getElementById('taussig-catheterizationSA'), 'obligation', d
       <a style="opacity: 1.0" href="ValueSet-taussig-procedure-snomed.html">TAUSSIG — Procédures (SNOMED CT, interopérabilité)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-procedure-snomed" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2936,10 +2946,10 @@ Résumé
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-30 22:35:00 +0100">
-    2026-10-30
+  <span title="2026-10-31 15:29:00 +0100">
+    2026-10-31
   </span>
 
           <br/>

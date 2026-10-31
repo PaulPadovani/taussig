@@ -8,7 +8,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0</title>
+    <title>TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -60,11 +60,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.0 - trial-use
+            <span style="display:inline-block;">0.6.1 - trial-use
 
 
 
-  France
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -133,7 +133,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -172,6 +172,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-taussig-cardiac-condition-profile-examples.html">Exemples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -203,10 +213,10 @@
 
 TAUSSIG — Condition cardiaque évolutive
 
+(
 
-
-
-
+Expérimental
+)
   </h2>
 
   <table class="colsi" data-fhir="generated">
@@ -215,7 +225,7 @@ TAUSSIG — Condition cardiaque évolutive
       <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile|0.6.0"/></span>
+      <span class="copy-text">0.6.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile|0.6.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
@@ -240,7 +250,7 @@ TAUSSIG — Condition cardiaque évolutive
           
 
             à date du 
-2026-10-30
+2026-10-31
 
           
         
@@ -269,7 +279,7 @@ TAUSSIG — Condition cardiaque évolutive
 
 <p><b>Utilisations:</b></p>
 <ul>
- <li>Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation</li>
+ <li>Exemples pour ce/t/te Profil: <a href="Condition-ex-taussig-cardiac-condition-profile.html">Condition/ex-taussig-cardiac-condition-profile</a></li>
 </ul>
 <p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-cardiac-condition-profile">les usages dans le FHIR IG Statistics</a></p>
 
@@ -456,7 +466,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-cardiac-condition-profileK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-cardiac-condition-profileK'), 'binding', document.getElementById('cbtaussig-cardiac-condition-profileK-binding').checked, document.getElementById('pptaussig-cardiac-condition-profileK'));
 document.getElementById('cbtaussig-cardiac-condition-profileK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -529,7 +539,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileK'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-condition-type-vs.html">TAUSSIG — Types de condition évolutive</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/condition-type-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -542,7 +552,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileK'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-taussig-cardiac-condition.html">TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-cardiac-condition" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -555,7 +565,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileK'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-ipccc-short-list.html">IPCCC Short List v5.0 (sous-ensemble de saisie)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/ipccc-short-list" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;5.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -779,7 +789,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileK'), 'oblig
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Age" class="xhtPieceDeEmphasized">Age</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Period" class="xhtPieceDeEmphasized">Period</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Range" class="xhtPieceDeEmphasized">Range</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#string" class="xhtPieceDeEmphasized">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Estimated or actual date,  date-time, or age</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-cardiac-condition-profileD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-cardiac-condition-profileD'), 'binding', document.getElementById('cbtaussig-cardiac-condition-profileD-binding').checked, document.getElementById('pptaussig-cardiac-condition-profileD'));
 document.getElementById('cbtaussig-cardiac-condition-profileD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -824,7 +834,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileD'), 'oblig
       <a style="opacity: 0.50" href="ValueSet-condition-type-vs.html">TAUSSIG — Types de condition évolutive</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/condition-type-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -837,7 +847,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileD'), 'oblig
       <a style="opacity: 0.50" href="ValueSet-taussig-cardiac-condition.html">TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-cardiac-condition" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -850,7 +860,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileD'), 'oblig
       <a style="opacity: 0.50" href="ValueSet-ipccc-short-list.html">IPCCC Short List v5.0 (sous-ensemble de saisie)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/ipccc-short-list" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;5.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -1296,7 +1306,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Additional information about the Condition<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-cardiac-condition-profileS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-cardiac-condition-profileS'), 'binding', document.getElementById('cbtaussig-cardiac-condition-profileS-binding').checked, document.getElementById('pptaussig-cardiac-condition-profileS'));
 document.getElementById('cbtaussig-cardiac-condition-profileS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1385,7 +1395,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileS'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-condition-type-vs.html">TAUSSIG — Types de condition évolutive</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/condition-type-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1413,7 +1423,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileS'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-taussig-cardiac-condition.html">TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-cardiac-condition" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1426,7 +1436,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileS'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-ipccc-short-list.html">IPCCC Short List v5.0 (sous-ensemble de saisie)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/ipccc-short-list" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;5.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1936,7 +1946,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0"></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0"></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-cardiac-condition-profileKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-cardiac-condition-profileKA'), 'binding', document.getElementById('cbtaussig-cardiac-condition-profileKA-binding').checked, document.getElementById('pptaussig-cardiac-condition-profileKA'));
 document.getElementById('cbtaussig-cardiac-condition-profileKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2008,7 +2018,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileKA'), 'obli
       <a style="opacity: 1.0" href="ValueSet-condition-type-vs.html">TAUSSIG — Types de condition évolutive</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/condition-type-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2021,7 +2031,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileKA'), 'obli
       <a style="opacity: 1.0" href="ValueSet-taussig-cardiac-condition.html">TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-cardiac-condition" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2034,7 +2044,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileKA'), 'obli
       <a style="opacity: 1.0" href="ValueSet-ipccc-short-list.html">IPCCC Short List v5.0 (sous-ensemble de saisie)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/ipccc-short-list" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;5.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -2258,7 +2268,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileKA'), 'obli
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Age" class="xhtPieceDeEmphasized">Age</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Period" class="xhtPieceDeEmphasized">Period</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#Range" class="xhtPieceDeEmphasized">Range</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R4/datatypes.html#string" class="xhtPieceDeEmphasized">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Estimated or actual date,  date-time, or age</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-cardiac-condition-profileDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-cardiac-condition-profileDA'), 'binding', document.getElementById('cbtaussig-cardiac-condition-profileDA-binding').checked, document.getElementById('pptaussig-cardiac-condition-profileDA'));
 document.getElementById('cbtaussig-cardiac-condition-profileDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2300,7 +2310,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileDA'), 'obli
       <a style="opacity: 0.50" href="ValueSet-condition-type-vs.html">TAUSSIG — Types de condition évolutive</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/condition-type-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2313,7 +2323,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileDA'), 'obli
       <a style="opacity: 0.50" href="ValueSet-taussig-cardiac-condition.html">TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-cardiac-condition" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2326,7 +2336,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileDA'), 'obli
       <a style="opacity: 0.50" href="ValueSet-ipccc-short-list.html">IPCCC Short List v5.0 (sous-ensemble de saisie)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/ipccc-short-list" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;5.0</td>
     <td>cet IG</td>
   </tr>
 </table>
@@ -2772,7 +2782,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Additional information about the Condition<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 8b87a6c7-534b-432c-bfcf-295199aac9aa
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 70159efb-6a37-400e-bc62-70019e5e67ad
 document.getElementById('cbtaussig-cardiac-condition-profileSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('taussig-cardiac-condition-profileSA'), 'binding', document.getElementById('cbtaussig-cardiac-condition-profileSA-binding').checked, document.getElementById('pptaussig-cardiac-condition-profileSA'));
 document.getElementById('cbtaussig-cardiac-condition-profileSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2859,7 +2869,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileSA'), 'obli
       <a style="opacity: 1.0" href="ValueSet-condition-type-vs.html">TAUSSIG — Types de condition évolutive</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/condition-type-vs" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.1</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2887,7 +2897,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileSA'), 'obli
       <a style="opacity: 1.0" href="ValueSet-taussig-cardiac-condition.html">TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/taussig-cardiac-condition" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -2900,7 +2910,7 @@ filterDesc(document.getElementById('taussig-cardiac-condition-profileSA'), 'obli
       <a style="opacity: 1.0" href="ValueSet-ipccc-short-list.html">IPCCC Short List v5.0 (sous-ensemble de saisie)</a>
       <button data-clipboard-text="https://taussig/fhir/ValueSet/ipccc-short-list" title="Cliquer pour copier l'URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.6.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;5.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -3304,10 +3314,10 @@ Résumé
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-30 22:35:00 +0100">
-    2026-10-30
+  <span title="2026-10-31 15:29:00 +0100">
+    2026-10-31
   </span>
 
           <br/>

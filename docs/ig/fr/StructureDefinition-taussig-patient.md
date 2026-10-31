@@ -1,10 +1,10 @@
-# TAUSSIG — Patient - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.0
+# TAUSSIG — Patient - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
 
-## Profil de ressource: TAUSSIG — Patient 
+## Profil de ressource: TAUSSIG — Patient ( Expérimental ) 
 
 **Utilisations:**
 
-* Ce/t/te Profil n'est utilisé/e par aucun autre profil dans ce guide d'implémentation
+* Exemples pour ce/t/te Profil: [Patient/ex-taussig-patient](Patient-ex-taussig-patient.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-patient)
 
@@ -61,11 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-patient
   "resourceType" : "StructureDefinition",
   "id" : "taussig-patient",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-patient",
-  "version" : "0.6.0",
+  "version" : "0.6.1",
   "name" : "TaussigPatient",
   "title" : "TAUSSIG — Patient",
   "status" : "active",
-  "date" : "2026-10-30T22:35:46+01:00",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Patient de cardiopathie congénitale, dérivé de FR Core Patient (identifiants/extensions FR hérités). Les slices d'identité nationale (INS-NIR/NIA) sont portées par FR Core ; pour une identité INS *qualifiée*, utiliser le profil strict fr-core-patient-ins. Poids de naissance porté par une Observation dédiée (LOINC 8339-4).",
   "jurisdiction" : [{

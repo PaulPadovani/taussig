@@ -14,11 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cath-intent</b></p><a name=\"cath-intent\"> </a><a name=\"hccath-intent\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/cath-intent</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">diagnostic<a name=\"cath-intent-diagnostic\"> </a></td><td>Diagnostique</td></tr><tr><td style=\"white-space:nowrap\">interventional<a name=\"cath-intent-interventional\"> </a></td><td>Interventionnel</td></tr><tr><td style=\"white-space:nowrap\">hybrid<a name=\"cath-intent-hybrid\"> </a></td><td>Hybride</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/cath-intent"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
   fhir:CodeSystem.name [ fhir:value "CathIntent"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Intention du cathétérisme"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-30T22:35:46+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Intention globale de la procédure de cathétérisme."] ;
   fhir:CodeSystem.jurisdiction [

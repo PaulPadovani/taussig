@@ -1,0 +1,31 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "anesthesia-type",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem anesthesia-type</b></p><a name=\"anesthesia-type\"> </a><a name=\"hcanesthesia-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/anesthesia-type</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">none<a name=\"anesthesia-type-none\"> </a></td><td>Aucune anesthésie</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/anesthesia-type",
+  "version" : "0.6.1",
+  "name" : "TaussigAnesthesiaType",
+  "title" : "TAUSSIG — Complément pour le type d’anesthésie",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-10-31T15:29:53+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Code local pour l’absence explicite d’anesthésie. Une donnée manquante ne signifie pas aucune anesthésie. Aucune absence d’équivalent SNOMED n’est affirmée.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "none",
+    "display" : "Aucune anesthésie"
+  }]
+}
