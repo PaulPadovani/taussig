@@ -6,10 +6,10 @@ window.TAUSSIG_DOWNLOADS = {
    "id": "xlsx",
    "titre": "Dictionnaire du MDS",
    "format": "Excel (.xlsx)",
-   "desc": "Le classeur livrable complet : 148 data elements (définitions ISO 11179, mapping FHIR, binding) et 10 value sets.",
-   "fichier": "telechargements/TAUSSIG-DataElements-POC-v6.xlsx",
-   "octets": 159709,
-   "taille": "156.0 Ko",
+   "desc": "Le classeur livrable complet : 160 data elements (définitions ISO 11179, mapping FHIR, binding) et 10 value sets.",
+   "fichier": "telechargements/TAUSSIG-DataElements-POC-v6.1.xlsx",
+   "octets": 229428,
+   "taille": "224.1 Ko",
    "licence": "Conditions de réutilisation : voir la page Réutilisation & citation"
   },
   {
@@ -28,8 +28,8 @@ window.TAUSSIG_DOWNLOADS = {
    "format": "Archive ZIP",
    "desc": "Les 10 value sets dérivés, un fichier CSV par axe (libellé clinique + codes des terminologies de référence).",
    "fichier": "telechargements/taussig-valuesets-csv.zip",
-   "octets": 18152,
-   "taille": "17.7 Ko",
+   "octets": 19096,
+   "taille": "18.6 Ko",
    "licence": "Conditions propres aux terminologies référencées"
   }
  ],
@@ -39,16 +39,16 @@ window.TAUSSIG_DOWNLOADS = {
    "titre": "Diagnostics cardiaques congénitaux",
    "fichier": "telechargements/valuesets/taussig-vs-diagnostics.csv",
    "codes": 109,
-   "octets": 9820,
-   "taille": "9.6 Ko"
+   "octets": 11805,
+   "taille": "11.5 Ko"
   },
   {
    "id": "conditions",
    "titre": "Conditions cardiaques évolutives",
    "fichier": "telechargements/valuesets/taussig-vs-conditions.csv",
    "codes": 107,
-   "octets": 7501,
-   "taille": "7.3 Ko"
+   "octets": 9447,
+   "taille": "9.2 Ko"
   },
   {
    "id": "procedures",
@@ -63,8 +63,8 @@ window.TAUSSIG_DOWNLOADS = {
    "titre": "Événements indésirables (complications)",
    "fichier": "telechargements/valuesets/taussig-vs-complications.csv",
    "codes": 43,
-   "octets": 3611,
-   "taille": "3.5 Ko"
+   "octets": 5063,
+   "taille": "4.9 Ko"
   },
   {
    "id": "genetique",
@@ -116,8 +116,8 @@ window.TAUSSIG_DOWNLOADS = {
   }
  ],
  "meta": {
-  "nbElements": 148,
-  "nbEntities": 20,
+  "nbElements": 160,
+  "nbEntities": 21,
   "nbValuesets": 10
  }
 };

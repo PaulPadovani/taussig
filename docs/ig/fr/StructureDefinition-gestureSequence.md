@@ -1,4 +1,4 @@
-# Rang du geste dans le cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Rang du geste dans le cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Rang du geste dans le cathétérisme (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-gestureSequence
   "resourceType" : "StructureDefinition",
   "id" : "gestureSequence",
   "url" : "https://taussig/fhir/StructureDefinition/gestureSequence",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "GestureSequence",
   "title" : "Rang du geste dans le cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rang du geste (1, 2, 3…) dans l'ordre de réalisation au cours du cathétérisme (décision P7).",
   "jurisdiction" : [{

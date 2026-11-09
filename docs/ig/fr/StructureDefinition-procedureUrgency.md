@@ -1,4 +1,4 @@
-# Caractère urgent du cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Caractère urgent du cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Caractère urgent du cathétérisme (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-procedureUrgenc
   "resourceType" : "StructureDefinition",
   "id" : "procedureUrgency",
   "url" : "https://taussig/fhir/StructureDefinition/procedureUrgency",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedureUrgency",
   "title" : "Caractère urgent du cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Programmé, urgent, en urgence ou de sauvetage (décision I3).",
   "jurisdiction" : [{

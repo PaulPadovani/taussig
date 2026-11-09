@@ -1,0 +1,1098 @@
+# TAUSSIG — Diagnostics cardiaques congénitaux vers CIM-10 - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
+
+## ConceptMap: TAUSSIG — Diagnostics cardiaques congénitaux vers CIM-10 (Expérimental) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ConceptMap",
+  "id" : "taussig-diagnosis-to-icd10",
+  "url" : "https://taussig/fhir/ConceptMap/taussig-diagnosis-to-icd10",
+  "version" : "0.8.1",
+  "name" : "TaussigDiagnosisToIcd10",
+  "title" : "TAUSSIG — Diagnostics cardiaques congénitaux vers CIM-10",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-09T15:30:29+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers CIM-10. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "sourceCanonical" : "https://taussig/fhir/ValueSet/taussig-diagnosis",
+  "group" : [{
+    "source" : "https://taussig/fhir/CodeSystem/taussig-diagnosis",
+    "target" : "http://hl7.org/fhir/sid/icd-10",
+    "element" : [{
+      "code" : "TAUSSIG-DIAG-0001",
+      "display" : "Anomalie de position-orientation du cœur",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "inexact",
+        "comment" : "concept générique ; dextro- et lévocardie ont leurs propres codes (Q24.0, Q24.1)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0002",
+      "display" : "Lévocardie",
+      "target" : [{
+        "code" : "Q24.1",
+        "display" : "Laevocardia",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0003",
+      "display" : "Dextrocardie",
+      "target" : [{
+        "code" : "Q24.0",
+        "display" : "Dextrocardia",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0004",
+      "display" : "Mésocardie",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "wider",
+        "comment" : "mésocardie rangée dans « autres malformations précisées du cœur »"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0005",
+      "display" : "Image en miroir complète",
+      "target" : [{
+        "code" : "Q89.3",
+        "display" : "Situs inversus",
+        "equivalence" : "wider",
+        "comment" : "Q89.3 couvre aussi les situs inversus partiels"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0006",
+      "display" : "Isomérisme droit",
+      "target" : [{
+        "code" : "Q20.6",
+        "display" : "Isomerism of atrial appendages",
+        "equivalence" : "wider",
+        "comment" : "Q20.6 ne distingue pas isomérisme droit et gauche"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0007",
+      "display" : "Isomérisme gauche",
+      "target" : [{
+        "code" : "Q20.6",
+        "display" : "Isomerism of atrial appendages",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0008",
+      "display" : "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle",
+      "target" : [{
+        "code" : "Q20.9",
+        "display" : "Congenital malformation of cardiac chambers and connections, unspecified",
+        "equivalence" : "wider",
+        "comment" : "Q20.9 couvre cavités et connexions, non précisé"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0009",
+      "display" : "Connexions atrioventriculaires discordantes",
+      "target" : [{
+        "code" : "Q20.5",
+        "display" : "Discordant atrioventricular connection",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0010",
+      "display" : "Transposition congénitalement corrigée des grandes artères",
+      "target" : [{
+        "code" : "Q20.5",
+        "display" : "Discordant atrioventricular connection",
+        "equivalence" : "wider",
+        "comment" : "Q20.5 couvre toute discordance auriculoventriculaire"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0011",
+      "display" : "Transposition des gros vaisseaux",
+      "target" : [{
+        "code" : "Q20.3",
+        "display" : "Discordant ventriculoarterial connection",
+        "equivalence" : "equivalent",
+        "comment" : "Q20.3 inclut la transposition complète des gros vaisseaux"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0012",
+      "display" : "Ventricule droit à double issue",
+      "target" : [{
+        "code" : "Q20.1",
+        "display" : "Double outlet right ventricle",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0013",
+      "display" : "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition",
+      "target" : [{
+        "code" : "Q20.1",
+        "display" : "Double outlet right ventricle",
+        "equivalence" : "wider",
+        "comment" : "sous-type de VDDI"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0014",
+      "display" : "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux",
+      "target" : [{
+        "code" : "Q20.1",
+        "display" : "Double outlet right ventricle",
+        "equivalence" : "wider",
+        "comment" : "sous-type de VDDI"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0015",
+      "display" : "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire",
+      "target" : [{
+        "code" : "Q20.1",
+        "display" : "Double outlet right ventricle",
+        "equivalence" : "wider",
+        "comment" : "sous-type de VDDI"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0016",
+      "display" : "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot",
+      "target" : [{
+        "code" : "Q20.1",
+        "display" : "Double outlet right ventricle",
+        "equivalence" : "wider",
+        "comment" : "sous-type de VDDI"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0017",
+      "display" : "Ventricule gauche à double issue",
+      "target" : [{
+        "code" : "Q20.2",
+        "display" : "Double outlet left ventricle",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0018",
+      "display" : "Tronc artériel commun",
+      "target" : [{
+        "code" : "Q20.0",
+        "display" : "Common arterial trunk",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0019",
+      "display" : "Tronc artériel commun à dominance aortique",
+      "target" : [{
+        "code" : "Q20.0",
+        "display" : "Common arterial trunk",
+        "equivalence" : "wider",
+        "comment" : "sous-type de tronc artériel commun"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0020",
+      "display" : "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue",
+      "target" : [{
+        "code" : "Q20.0",
+        "display" : "Common arterial trunk",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0021",
+      "display" : "Anomalie congénitale de la veine médiastinale",
+      "target" : [{
+        "code" : "Q26.8",
+        "display" : "Other congenital malformations of great veins",
+        "equivalence" : "inexact",
+        "comment" : "concept générique ; plusieurs sous-types ont leurs propres codes Q26.x"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0022",
+      "display" : "Veine cave supérieure gauche",
+      "target" : [{
+        "code" : "Q26.1",
+        "display" : "Persistent left superior vena cava",
+        "equivalence" : "equivalent",
+        "comment" : "Q26.1 veine cave supérieure gauche persistante (corrigé v6.1) ; corrigé v6.1 — crossmap IPCCC : Q26.8 ; la CIM-10 a un code propre à la veine cave supérieure gauche persistante"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0023",
+      "display" : "Absence de toit du sinus coronaire",
+      "target" : [{
+        "code" : "Q21.1",
+        "display" : "Atrial septal defect",
+        "equivalence" : "wider",
+        "comment" : "la CIM-10 range le défaut du sinus coronaire sous Q21.1 (corrigé v6.1) ; corrigé v6.1 — crossmap IPCCC : Q24.5 ; défaut du sinus coronaire rangé sous Q21.1, non sous les vaisseaux coronaires"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0024",
+      "display" : "Anomalie du retour veineux pulmonaire",
+      "target" : [{
+        "code" : "Q26.4",
+        "display" : "Anomalous pulmonary venous connection, unspecified",
+        "equivalence" : "equivalent",
+        "comment" : "concept générique → catégorie « non précisée »"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0025",
+      "display" : "Connexion veineuse pulmonaire totale anormale",
+      "target" : [{
+        "code" : "Q26.2",
+        "display" : "Total anomalous pulmonary venous connection",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0026",
+      "display" : "Connexion veineuse pulmonaire partielle anormale",
+      "target" : [{
+        "code" : "Q26.3",
+        "display" : "Partial anomalous pulmonary venous connection",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0027",
+      "display" : "Syndrome du cimeterre",
+      "target" : [{
+        "code" : "Q26.8",
+        "display" : "Other congenital malformations of great veins",
+        "equivalence" : "wider",
+        "comment" : "Q26.8 inclut le syndrome du cimeterre parmi d'autres anomalies"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0028",
+      "display" : "Sténose ou hypoplasie veineuse pulmonaire congénitale",
+      "target" : [{
+        "code" : "Q26.8",
+        "display" : "Other congenital malformations of great veins",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle des grosses veines"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0029",
+      "display" : "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire",
+      "target" : [{
+        "code" : "Q23.8",
+        "display" : "Other congenital malformations of aortic and mitral valves",
+        "equivalence" : "inexact",
+        "comment" : "Q23.8 ne couvre que les valves aortique et mitrale"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0030",
+      "display" : "Anomalie congénitale de la valve tricuspide",
+      "target" : [{
+        "code" : "Q22.9",
+        "display" : "Congenital malformation of tricuspid valve, unspecified",
+        "equivalence" : "equivalent",
+        "comment" : "concept générique → catégorie « non précisée »"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0031",
+      "display" : "Insuffisance tricuspide congénitale",
+      "target" : [{
+        "code" : "Q22.8",
+        "display" : "Other congenital malformations of tricuspid valve",
+        "equivalence" : "wider",
+        "comment" : "pas de code propre ; « autres malformations de la valve tricuspide »"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0032",
+      "display" : "Sténose congénitale de la valve tricuspide",
+      "target" : [{
+        "code" : "Q22.4",
+        "display" : "Congenital tricuspid stenosis",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0033",
+      "display" : "Dysplasie de la valve tricuspide",
+      "target" : [{
+        "code" : "Q22.8",
+        "display" : "Other congenital malformations of tricuspid valve",
+        "equivalence" : "wider",
+        "comment" : "idem 31"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0034",
+      "display" : "Malformation d'Ebstein de la valve tricuspide",
+      "target" : [{
+        "code" : "Q22.5",
+        "display" : "Ebstein anomaly",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0035",
+      "display" : "Anomalie congénitale de la valve mitrale",
+      "target" : [{
+        "code" : "Q23.9",
+        "display" : "Congenital malformation of aortic and mitral valves, unspecified",
+        "equivalence" : "wider",
+        "comment" : "Q23.9 couvre valves aortique et mitrale, non précisé"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0036",
+      "display" : "Insuffisance mitrale congénitale",
+      "target" : [{
+        "code" : "Q23.3",
+        "display" : "Congenital mitral insufficiency",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0037",
+      "display" : "Sténose valvulaire mitrale congénitale",
+      "target" : [{
+        "code" : "Q23.2",
+        "display" : "Congenital mitral stenosis",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0038",
+      "display" : "Dysplasie de la valve mitrale",
+      "target" : [{
+        "code" : "Q23.8",
+        "display" : "Other congenital malformations of aortic and mitral valves",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0039",
+      "display" : "Anomalie congénitale de l'appareil mitral sousvalvaire",
+      "target" : [{
+        "code" : "Q23.8",
+        "display" : "Other congenital malformations of aortic and mitral valves",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0040",
+      "display" : "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "inexact",
+        "comment" : "jonction auriculoventriculaire commune SANS défaut septal : Q21.2 ne recouvre que partiellement"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0041",
+      "display" : "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0042",
+      "display" : "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "sous-type de canal atrioventriculaire"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0043",
+      "display" : "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0044",
+      "display" : "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0045",
+      "display" : "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0046",
+      "display" : "Communication septale auriculoventriculaire avec déséquilibre ventriculaire",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0047",
+      "display" : "Anomalie septal auriculoventriculaire et tétralogie de Fallot",
+      "target" : [{
+        "code" : "Q21.2",
+        "display" : "Atrioventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "concept combiné ; Q21.2 n'en code qu'une composante (tout patient du concept a un CAV)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0048",
+      "display" : "Anomalie congénitale du ventricule ou du septum ventriculaire",
+      "target" : [{
+        "code" : "Q20.9",
+        "display" : "Congenital malformation of cardiac chambers and connections, unspecified",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant la CIV (Q21.0), hors Q20.9"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0049",
+      "display" : "Obstruction congénitale de la voie de sortie du ventricule droit",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant la sténose valvulaire pulmonaire (Q22.1), hors Q24.8"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0050",
+      "display" : "Ventricule droit à double chambre",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0051",
+      "display" : "Tétralogie de Fallot",
+      "target" : [{
+        "code" : "Q21.3",
+        "display" : "Tetralogy of Fallot",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0052",
+      "display" : "Tétralogie de Fallot avec syndrome de valve pulmonaire absente",
+      "target" : [{
+        "code" : "Q21.3",
+        "display" : "Tetralogy of Fallot",
+        "equivalence" : "wider",
+        "comment" : "sous-type de tétralogie de Fallot (corrigé v6.1) ; corrigé v6.1 — crossmap IPCCC : Q24.8 ; une tétralogie de Fallot se code Q21.3"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0053",
+      "display" : "Tétralogie de Fallot avec atrésie pulmonaire",
+      "target" : [{
+        "code" : "Q21.3",
+        "display" : "Tetralogy of Fallot",
+        "equivalence" : "wider",
+        "comment" : "sous-type de tétralogie de Fallot"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0054",
+      "display" : "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire",
+      "target" : [{
+        "code" : "Q21.3",
+        "display" : "Tetralogy of Fallot",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0055",
+      "display" : "Obstruction congénitale de la voie de sortie du ventricule gauche",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant la sténose valvulaire aortique (Q23.0), hors Q24.8"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0056",
+      "display" : "Communication interventriculaire",
+      "target" : [{
+        "code" : "Q21.0",
+        "display" : "Ventricular septal defect",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0057",
+      "display" : "Communication interventriculaire musculaire trabéculaire",
+      "target" : [{
+        "code" : "Q21.0",
+        "display" : "Ventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "sous-type de CIV"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0058",
+      "display" : "Communication interventriculaire centrale périmembraneuse",
+      "target" : [{
+        "code" : "Q21.0",
+        "display" : "Ventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "sous-type de CIV"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0059",
+      "display" : "Communication interventriculaire non significatif sur le plan hémodynamique",
+      "target" : [{
+        "code" : "Q21.0",
+        "display" : "Ventricular septal defect",
+        "equivalence" : "wider",
+        "comment" : "sous-type de CIV"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0060",
+      "display" : "Cœur fonctionnellement univentriculaire",
+      "target" : [{
+        "code" : "Q20.9",
+        "display" : "Congenital malformation of cardiac chambers and connections, unspecified",
+        "equivalence" : "inexact",
+        "comment" : "concept générique (HLHS Q23.4, atrésie tricuspide Q22.4… codés ailleurs)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0061",
+      "display" : "Connexion auriculoventriculaire à double entrée",
+      "target" : [{
+        "code" : "Q20.4",
+        "display" : "Double inlet ventricle",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0062",
+      "display" : "Atrésie de la valve tricuspide",
+      "target" : [{
+        "code" : "Q22.4",
+        "display" : "Congenital tricuspid stenosis",
+        "equivalence" : "wider",
+        "comment" : "Q22.4 inclut l'atrésie tricuspide"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0063",
+      "display" : "Atrésie mitrale",
+      "target" : [{
+        "code" : "Q23.2",
+        "display" : "Congenital mitral stenosis",
+        "equivalence" : "wider",
+        "comment" : "Q23.2 inclut l'atrésie mitrale"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0064",
+      "display" : "Syndrome d'hypoplasie du cœur gauche",
+      "target" : [{
+        "code" : "Q23.4",
+        "display" : "Hypoplastic left heart syndrome",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0065",
+      "display" : "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant des codes Q22.x et Q23.x"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0066",
+      "display" : "Anomalie congénitale de la valve pulmonaire",
+      "target" : [{
+        "code" : "Q22.3",
+        "display" : "Other congenital malformations of pulmonary valve",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant la sténose valvulaire pulmonaire (Q22.1)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0067",
+      "display" : "Sténose congénitale de la valve pulmonaire",
+      "target" : [{
+        "code" : "Q22.1",
+        "display" : "Congenital pulmonary valve stenosis",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0068",
+      "display" : "Insuffisance congénitale de la valve pulmonaire",
+      "target" : [{
+        "code" : "Q22.2",
+        "display" : "Congenital pulmonary valve insufficiency",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0069",
+      "display" : "Atrésie pulmonaire congénitale",
+      "target" : [{
+        "code" : "Q22.0",
+        "display" : "Pulmonary valve atresia",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0070",
+      "display" : "Atrésie pulmonaire avec septum ventriculaire intact",
+      "target" : [{
+        "code" : "Q22.0",
+        "display" : "Pulmonary valve atresia",
+        "equivalence" : "wider",
+        "comment" : "sous-type d'atrésie pulmonaire"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0071",
+      "display" : "Anomalie congénitale de la valve aortique",
+      "target" : [{
+        "code" : "Q23.9",
+        "display" : "Congenital malformation of aortic and mitral valves, unspecified",
+        "equivalence" : "wider",
+        "comment" : "Q23.9 couvre valves aortique et mitrale, non précisé"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0072",
+      "display" : "Sténose congénitale de la valve aortique",
+      "target" : [{
+        "code" : "Q23.0",
+        "display" : "Congenital stenosis of aortic valve",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0073",
+      "display" : "Insuffisance aortique congénitale",
+      "target" : [{
+        "code" : "Q23.1",
+        "display" : "Congenital insufficiency of aortic valve",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0074",
+      "display" : "Valve aortique bicuspide",
+      "target" : [{
+        "code" : "Q23.1",
+        "display" : "Congenital insufficiency of aortic valve",
+        "equivalence" : "wider",
+        "comment" : "la CIM-10 range la bicuspidie aortique sous Q23.1"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0075",
+      "display" : "Atrésie de la valve aortique",
+      "target" : [{
+        "code" : "Q23.0",
+        "display" : "Congenital stenosis of aortic valve",
+        "equivalence" : "wider",
+        "comment" : "Q23.0 inclut l'atrésie aortique"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0076",
+      "display" : "Valve aortique unicuspide",
+      "target" : [{
+        "code" : "Q23.0",
+        "display" : "Congenital stenosis of aortic valve",
+        "equivalence" : "inexact",
+        "comment" : "valve unicuspide non citée sous Q23.0 ; rattachement non affirmé par la CIM-10"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0077",
+      "display" : "Sténose supravalvulaire aortique congénitale",
+      "target" : [{
+        "code" : "Q25.3",
+        "display" : "Stenosis of aorta",
+        "equivalence" : "wider",
+        "comment" : "Q25.3 couvre toute sténose aortique congénitale"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0078",
+      "display" : "Anévrisme du sinus aortique de Valsalva",
+      "target" : [{
+        "code" : "Q25.4",
+        "display" : "Other congenital malformations of aorta",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle de l'aorte"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0079",
+      "display" : "Sténose sous-aortique congénitale",
+      "target" : [{
+        "code" : "Q24.4",
+        "display" : "Congenital subaortic stenosis",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0080",
+      "display" : "Sténose sous-pulmonaire congénitale",
+      "target" : [{
+        "code" : "Q24.3",
+        "display" : "Pulmonary infundibular stenosis",
+        "equivalence" : "equivalent",
+        "comment" : "sténose infundibulaire = sous-pulmonaire"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0081",
+      "display" : "Anomalie congénitale des grandes artères, y compris le canal artériel",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "inexact",
+        "comment" : "concept générique (grandes artères, canal) ; Q24.8 concerne le cœur"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0082",
+      "display" : "Fenêtre aortopulmonaire congénitale",
+      "target" : [{
+        "code" : "Q21.4",
+        "display" : "Aortopulmonary septal defect",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0083",
+      "display" : "Anomalie congénitale de l'arbre artériel pulmonaire",
+      "target" : [{
+        "code" : "Q25.7",
+        "display" : "Other congenital malformations of pulmonary artery",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant la sténose de l'artère pulmonaire (Q25.6)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0084",
+      "display" : "Anomalie congénitale de l'aorte ou de ses branches",
+      "target" : [{
+        "code" : "Q25.4",
+        "display" : "Other congenital malformations of aorta",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant la coarctation (Q25.1)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0085",
+      "display" : "Coarctation de l'aorte",
+      "target" : [{
+        "code" : "Q25.1",
+        "display" : "Coarctation of aorta",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0086",
+      "display" : "Interruption de la crosse aortique",
+      "target" : [{
+        "code" : "Q25.4",
+        "display" : "Other congenital malformations of aorta",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle de l'aorte (code du crossmap IPCCC)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0087",
+      "display" : "Anomalie congénitale de l'aorte thoracique descendante ou abdominale",
+      "target" : [{
+        "code" : "Q25.4",
+        "display" : "Other congenital malformations of aorta",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle de l'aorte"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0088",
+      "display" : "Anomalie congénitale de la branche de l'arc aortique",
+      "target" : [{
+        "code" : "Q27.8",
+        "display" : "Other specified congenital malformations of peripheral vascular system",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle du système vasculaire périphérique"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0089",
+      "display" : "Syndrome de compression trachéo-œsophagienne",
+      "target" : [{
+        "code" : "Q25.4",
+        "display" : "Other congenital malformations of aorta",
+        "equivalence" : "inexact",
+        "comment" : "la compression peut venir d'une anomalie pulmonaire (Q25.7) et non aortique"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0090",
+      "display" : "Persistance du canal artériel",
+      "target" : [{
+        "code" : "Q25.0",
+        "display" : "Patent ductus arteriosus",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0091",
+      "display" : "Anomalie congénitale des artères coronaires",
+      "target" : [{
+        "code" : "Q24.5",
+        "display" : "Malformation of coronary vessels",
+        "equivalence" : "equivalent",
+        "comment" : "Q24.5 couvre toutes les malformations des vaisseaux coronaires"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0092",
+      "display" : "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire",
+      "target" : [{
+        "code" : "Q24.5",
+        "display" : "Malformation of coronary vessels",
+        "equivalence" : "wider",
+        "comment" : "sous-type"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0093",
+      "display" : "Origine aortique anormale ou trajet anormal de l'artère coronaire",
+      "target" : [{
+        "code" : "Q24.5",
+        "display" : "Malformation of coronary vessels",
+        "equivalence" : "wider",
+        "comment" : "sous-type"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0094",
+      "display" : "Fistule artérielle coronaire congénitale",
+      "target" : [{
+        "code" : "Q24.5",
+        "display" : "Malformation of coronary vessels",
+        "equivalence" : "wider",
+        "comment" : "sous-type"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0095",
+      "display" : "Malformation congénitale du péricarde",
+      "target" : [{
+        "code" : "Q24.8",
+        "display" : "Other specified congenital malformations of heart",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle du cœur (inclut le péricarde)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0096",
+      "display" : "Anomalie congénitale du septum auriculaire",
+      "target" : [{
+        "code" : "Q21.8",
+        "display" : "Other congenital malformations of cardiac septa",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant la CIA (Q21.1), hors Q21.8"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0097",
+      "display" : "Foramen ovale perméable",
+      "target" : [{
+        "code" : "Q21.1",
+        "display" : "Atrial septal defect",
+        "equivalence" : "wider",
+        "comment" : "le foramen ovale perméable est rangé sous Q21.1"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0098",
+      "display" : "Communication interauriculaire dans la fosse ovale",
+      "target" : [{
+        "code" : "Q21.1",
+        "display" : "Atrial septal defect",
+        "equivalence" : "wider",
+        "comment" : "sous-type de CIA"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0099",
+      "display" : "Anomalie du sinus veineux",
+      "target" : [{
+        "code" : "Q21.1",
+        "display" : "Atrial septal defect",
+        "equivalence" : "wider",
+        "comment" : "sous-type de CIA"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0100",
+      "display" : "Communication interauriculaire par l'orifice du sinus coronaire",
+      "target" : [{
+        "code" : "Q21.1",
+        "display" : "Atrial septal defect",
+        "equivalence" : "wider",
+        "comment" : "sous-type de CIA"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0101",
+      "display" : "Anomalie congénitale de l'oreillette droite",
+      "target" : [{
+        "code" : "Q20.8",
+        "display" : "Other congenital malformations of cardiac chambers and connections",
+        "equivalence" : "inexact",
+        "comment" : "concept générique dont certains sous-types sont codés ailleurs"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0102",
+      "display" : "Anomalie congénitale de l'oreillette gauche",
+      "target" : [{
+        "code" : "Q20.8",
+        "display" : "Other congenital malformations of cardiac chambers and connections",
+        "equivalence" : "inexact",
+        "comment" : "concept générique incluant le cœur triatrial (Q24.2)"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0103",
+      "display" : "Oreillette gauche divisée",
+      "target" : [{
+        "code" : "Q24.2",
+        "display" : "Cor triatriatum",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0104",
+      "display" : "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
+      "target" : [{
+        "code" : "Q25.6",
+        "display" : "Stenosis of pulmonary artery",
+        "equivalence" : "wider",
+        "comment" : "sous-type de sténose de l'artère pulmonaire"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0105",
+      "display" : "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
+      "target" : [{
+        "code" : "Q25.6",
+        "display" : "Stenosis of pulmonary artery",
+        "equivalence" : "wider",
+        "comment" : "idem"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0106",
+      "display" : "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
+      "target" : [{
+        "code" : "Q25.7",
+        "display" : "Other congenital malformations of pulmonary artery",
+        "equivalence" : "wider",
+        "comment" : "catégorie des autres malformations de l'artère pulmonaire"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0107",
+      "display" : "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
+      "target" : [{
+        "code" : "Q27.8",
+        "display" : "Other specified congenital malformations of peripheral vascular system",
+        "equivalence" : "wider",
+        "comment" : "catégorie résiduelle du système vasculaire périphérique"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0108",
+      "display" : "Fistule (malformation) artérioveineuse pulmonaire",
+      "target" : [{
+        "code" : "Q25.7",
+        "display" : "Other congenital malformations of pulmonary artery",
+        "equivalence" : "wider",
+        "comment" : "Q25.7 inclut l'anévrisme artérioveineux pulmonaire"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-DIAG-0109",
+      "display" : "Bloc atrioventriculaire complet congénital idiopathique",
+      "target" : [{
+        "code" : "Q24.6",
+        "display" : "Congenital heart block",
+        "equivalence" : "wider",
+        "comment" : "Q24.6 couvre tout bloc cardiaque congénital"
+      }]
+    }]
+  }]
+}
+
+```

@@ -1,4 +1,4 @@
-# TAUSSIG — Méthode de confirmation génétique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Méthode de confirmation génétique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Méthode de confirmation génétique (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "genetic-method",
   "url" : "https://taussig/fhir/CodeSystem/genetic-method",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "GeneticMethod",
   "title" : "TAUSSIG — Méthode de confirmation génétique",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Méthode ayant confirmé/écarté le syndrome (Observation.method).",
   "jurisdiction" : [{

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="genetic-syndrome-to-echsa"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CarteDeConcepts genetic-syndrome-to-echsa</b></p><a name="genetic-syndrome-to-echsa"> </a><a name="hcgenetic-syndrome-to-echsa"> </a><p>Mapping de <a href="ValueSet-taussig-genetic-syndrome.html">TAUSSIG — Syndromes génétiques (Orphanet)</a> vers (non spécifié)</p><br/><p>Mapping de <code>http://www.orpha.net</code> to <a href="CodeSystem-echsa.html">TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)</a></p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>870 (Trisomie 21)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA9 (Down syndrome (Trisomy 21))</td><td/></tr><tr><td>881 (Syndrome de Turner)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA29 (Turner syndrome (45XO))</td><td/></tr><tr><td>567 (Syndrome de délétion 22q11.2)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA8 (DiGeorge syndrome (velocardiofacial syndrome) (conotruncal anomaly face syndrome) (22q11 deletion))</td><td>syndrome de DiGeorge / vélocardiofacial</td></tr><tr><td>3380 (Syndrome de trisomie 18)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA-2010-S-150 (Edwards syndrome (Trisomy 18))</td><td/></tr><tr><td>3378 (Syndrome de trisomie 13)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA-2010-S-360 (Patau syndrome (Trisomy 13))</td><td/></tr><tr><td>365 (Glycogénose par déficit en maltase acide)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>95 (Ataxie de Friedreich)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>98896 (Dystrophie musculaire de Duchenne)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>558 (Syndrome de Marfan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA17 (Marfan syndrome)</td><td/></tr><tr><td>98249 (Syndrome d'Ehlers-Danlos)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>60030 (Syndrome de Loeys-Dietz)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA-2010-S-270 (Loeys-Dietz syndrome)</td><td/></tr><tr><td>648 (Syndrome de Noonan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA-2010-S-350 (Noonan syndrome)</td><td/></tr><tr><td>805 (Sclérose tubéreuse de Bourneville)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>904 (Syndrome de Williams)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA10 (Williams syndrome (Williams-Beuren syndrome))</td><td/></tr><tr><td>52 (Syndrome d'Alagille)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA4 (Alagille syndrome (intrahepatic biliary duct agenesis))</td><td/></tr><tr><td>290 (Syndrome de rubéole congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>NCA7 (Fetal rubella syndrome (Congenital rubella syndrome))</td><td/></tr><tr><td>68341 (Anomalies congénitales multiples/syndrome dysmorphique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact" title="inexact">maps loosely to</a></td><td>NCA-2010-S-510 (Other syndromic abnormality(ies))</td><td>« autre anomalie syndromique »</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/ConceptMap/genetic-syndrome-to-echsa"/>
+  <version value="0.8.1"/>
+  <name value="GeneticSyndromeToEchsa"/>
+  <title value="TAUSSIG — Syndromes génétiques (Orphanet) vers ECHSA"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-09T15:30:29+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers ECHSA. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://taussig/fhir/ValueSet/taussig-genetic-syndrome"/>
+  <group>
+    <source value="http://www.orpha.net"/>
+    <target value="https://taussig/fhir/CodeSystem/echsa"/>
+    <element>
+      <code value="870"/>
+      <display value="Trisomie 21"/>
+      <target>
+        <code value="NCA9"/>
+        <display value="Down syndrome (Trisomy 21)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="881"/>
+      <display value="Syndrome de Turner"/>
+      <target>
+        <code value="NCA29"/>
+        <display value="Turner syndrome (45XO)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="567"/>
+      <display value="Syndrome de délétion 22q11.2"/>
+      <target>
+        <code value="NCA8"/>
+        <display value="DiGeorge syndrome (velocardiofacial syndrome) (conotruncal anomaly face syndrome) (22q11 deletion)"/>
+        <equivalence value="equivalent"/>
+        <comment value="syndrome de DiGeorge / vélocardiofacial"/>
+      </target>
+    </element>
+    <element>
+      <code value="3380"/>
+      <display value="Syndrome de trisomie 18"/>
+      <target>
+        <code value="NCA-2010-S-150"/>
+        <display value="Edwards syndrome (Trisomy 18)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="3378"/>
+      <display value="Syndrome de trisomie 13"/>
+      <target>
+        <code value="NCA-2010-S-360"/>
+        <display value="Patau syndrome (Trisomy 13)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="365"/>
+      <display value="Glycogénose par déficit en maltase acide"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="95"/>
+      <display value="Ataxie de Friedreich"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="98896"/>
+      <display value="Dystrophie musculaire de Duchenne"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="558"/>
+      <display value="Syndrome de Marfan"/>
+      <target>
+        <code value="NCA17"/>
+        <display value="Marfan syndrome"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="98249"/>
+      <display value="Syndrome d'Ehlers-Danlos"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="60030"/>
+      <display value="Syndrome de Loeys-Dietz"/>
+      <target>
+        <code value="NCA-2010-S-270"/>
+        <display value="Loeys-Dietz syndrome"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="648"/>
+      <display value="Syndrome de Noonan"/>
+      <target>
+        <code value="NCA-2010-S-350"/>
+        <display value="Noonan syndrome"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="805"/>
+      <display value="Sclérose tubéreuse de Bourneville"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="904"/>
+      <display value="Syndrome de Williams"/>
+      <target>
+        <code value="NCA10"/>
+        <display value="Williams syndrome (Williams-Beuren syndrome)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="52"/>
+      <display value="Syndrome d'Alagille"/>
+      <target>
+        <code value="NCA4"/>
+        <display value="Alagille syndrome (intrahepatic biliary duct agenesis)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="290"/>
+      <display value="Syndrome de rubéole congénitale"/>
+      <target>
+        <code value="NCA7"/>
+        <display value="Fetal rubella syndrome (Congenital rubella syndrome)"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="68341"/>
+      <display value="Anomalies congénitales multiples/syndrome dysmorphique"/>
+      <target>
+        <code value="NCA-2010-S-510"/>
+        <display value="Other syndromic abnormality(ies)"/>
+        <equivalence value="inexact"/>
+        <comment value="« autre anomalie syndromique »"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

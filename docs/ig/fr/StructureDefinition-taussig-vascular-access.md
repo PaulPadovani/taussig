@@ -1,4 +1,4 @@
-# TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Abord vasculaire ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
   "resourceType" : "StructureDefinition",
   "id" : "taussig-vascular-access",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-vascular-access",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigVascularAccess",
   "title" : "TAUSSIG — Abord vasculaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Abord vasculaire du cathétérisme. Voie d'abord (enum TAUSSIG) en code ; calibre d'introducteur, écho-guidage et latéralité en extensions/bodySite.",
   "jurisdiction" : [{

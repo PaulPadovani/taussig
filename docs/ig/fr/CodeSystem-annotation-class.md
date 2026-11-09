@@ -1,4 +1,4 @@
-# TAUSSIG — Classe d'annotation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Classe d'annotation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Classe d'annotation (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "annotation-class",
   "url" : "https://taussig/fhir/CodeSystem/annotation-class",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "AnnotationClassCS",
   "title" : "TAUSSIG — Classe d'annotation",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire.",
   "jurisdiction" : [{

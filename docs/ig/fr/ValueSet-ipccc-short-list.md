@@ -1,10 +1,10 @@
-# IPCCC Short List v5.0 (sous-ensemble de saisie) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# IPCCC Short List v5.0 (sous-ensemble de saisie) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: IPCCC Short List v5.0 (sous-ensemble de saisie) (Expérimental) 
 
  **References** 
 
-* [TAUSSIG — Condition cardiaque évolutive](StructureDefinition-taussig-cardiac-condition-profile.md)
+Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
 
 ### Définition logique (CLD)
 
@@ -30,7 +30,7 @@
   "title" : "IPCCC Short List v5.0 (sous-ensemble de saisie)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Représentation FHIR « IPCCC Short List v5.0 (sous-ensemble de saisie) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource.",
   "jurisdiction" : [{

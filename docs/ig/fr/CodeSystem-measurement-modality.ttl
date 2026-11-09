@@ -14,12 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem measurement-modality</b></p><a name=\"measurement-modality\"> </a><a name=\"hcmeasurement-modality\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-modality</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">catheterization<a name=\"measurement-modality-catheterization\"> </a></td><td>Cathétérisme</td></tr><tr><td style=\"white-space:nowrap\">echocardiography<a name=\"measurement-modality-echocardiography\"> </a></td><td>Échocardiographie</td></tr><tr><td style=\"white-space:nowrap\">cardiac_mri<a name=\"measurement-modality-cardiac_mri\"> </a></td><td>IRM cardiaque</td></tr><tr><td style=\"white-space:nowrap\">ct<a name=\"measurement-modality-ct\"> </a></td><td>Scanner</td></tr><tr><td style=\"white-space:nowrap\">ecg<a name=\"measurement-modality-ecg\"> </a></td><td>ECG</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/measurement-modality"] ;
-  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.1"] ;
   fhir:CodeSystem.name [ fhir:value "MeasurementModality"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Modalité de mesure"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Modalité d'acquisition d'une mesure."] ;
   fhir:CodeSystem.jurisdiction [

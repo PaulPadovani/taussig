@@ -1,4 +1,4 @@
-# Diagnostic congénital d'origine - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Diagnostic congénital d'origine - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Diagnostic congénital d'origine (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-relatedDiagnosi
   "resourceType" : "StructureDefinition",
   "id" : "relatedDiagnosis",
   "url" : "https://taussig/fhir/StructureDefinition/relatedDiagnosis",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "RelatedDiagnosis",
   "title" : "Diagnostic congénital d'origine",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rattachement d'une condition évolutive à son diagnostic congénital.",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# TAUSSIG — Modalités de mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Modalités de mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Modalités de mesure (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "measurement-modality-vs",
   "url" : "https://taussig/fhir/ValueSet/measurement-modality-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "MeasurementModalityVS",
   "title" : "TAUSSIG — Modalités de mesure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Modalités de mesure » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

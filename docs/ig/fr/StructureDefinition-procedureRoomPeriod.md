@@ -1,4 +1,4 @@
-# Période en salle de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Période en salle de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Période en salle de cathétérisme (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-procedureRoomPe
   "resourceType" : "StructureDefinition",
   "id" : "procedureRoomPeriod",
   "url" : "https://taussig/fhir/StructureDefinition/procedureRoomPeriod",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedureRoomPeriod",
   "title" : "Période en salle de cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Entrée et sortie de salle ; la période peau-à-peau est dans Procedure.performedPeriod (décision I2).",
   "jurisdiction" : [{

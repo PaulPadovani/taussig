@@ -1024,11 +1024,11 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Veine cave supérieure gauche",
-       "code": "Q26.8"
+       "code": "Q26.1"
       },
       {
        "label": "Absence de toit du sinus coronaire",
-       "code": "Q24.5"
+       "code": "Q21.1"
       },
       {
        "label": "Anomalie du retour veineux pulmonaire",
@@ -1144,7 +1144,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Tétralogie de Fallot avec syndrome de valve pulmonaire absente",
-       "code": "Q24.8"
+       "code": "Q21.3"
       },
       {
        "label": "Tétralogie de Fallot avec atrésie pulmonaire",
@@ -1542,7 +1542,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire",
-       "code": "DIAG010"
+       "code": "DIAG010 ; DIAG011"
       },
       {
        "label": "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire",
@@ -1798,11 +1798,448 @@ window.TAUSSIG_COVERAGE = {
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
-     "n": null,
+     "n": 109,
      "total": 109,
-     "niveau": "non_evalue",
-     "entries": [],
-     "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
+     "niveau": "plein",
+     "entries": [
+      {
+       "label": "Anomalie de position-orientation du cœur",
+       "code": "TAUSSIG-DIAG-0001"
+      },
+      {
+       "label": "Lévocardie",
+       "code": "TAUSSIG-DIAG-0002"
+      },
+      {
+       "label": "Dextrocardie",
+       "code": "TAUSSIG-DIAG-0003"
+      },
+      {
+       "label": "Mésocardie",
+       "code": "TAUSSIG-DIAG-0004"
+      },
+      {
+       "label": "Image en miroir complète",
+       "code": "TAUSSIG-DIAG-0005"
+      },
+      {
+       "label": "Isomérisme droit",
+       "code": "TAUSSIG-DIAG-0006"
+      },
+      {
+       "label": "Isomérisme gauche",
+       "code": "TAUSSIG-DIAG-0007"
+      },
+      {
+       "label": "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle",
+       "code": "TAUSSIG-DIAG-0008"
+      },
+      {
+       "label": "Connexions atrioventriculaires discordantes",
+       "code": "TAUSSIG-DIAG-0009"
+      },
+      {
+       "label": "Transposition congénitalement corrigée des grandes artères",
+       "code": "TAUSSIG-DIAG-0010"
+      },
+      {
+       "label": "Transposition des gros vaisseaux",
+       "code": "TAUSSIG-DIAG-0011"
+      },
+      {
+       "label": "Ventricule droit à double issue",
+       "code": "TAUSSIG-DIAG-0012"
+      },
+      {
+       "label": "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition",
+       "code": "TAUSSIG-DIAG-0013"
+      },
+      {
+       "label": "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux",
+       "code": "TAUSSIG-DIAG-0014"
+      },
+      {
+       "label": "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire",
+       "code": "TAUSSIG-DIAG-0015"
+      },
+      {
+       "label": "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot",
+       "code": "TAUSSIG-DIAG-0016"
+      },
+      {
+       "label": "Ventricule gauche à double issue",
+       "code": "TAUSSIG-DIAG-0017"
+      },
+      {
+       "label": "Tronc artériel commun",
+       "code": "TAUSSIG-DIAG-0018"
+      },
+      {
+       "label": "Tronc artériel commun à dominance aortique",
+       "code": "TAUSSIG-DIAG-0019"
+      },
+      {
+       "label": "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue",
+       "code": "TAUSSIG-DIAG-0020"
+      },
+      {
+       "label": "Anomalie congénitale de la veine médiastinale",
+       "code": "TAUSSIG-DIAG-0021"
+      },
+      {
+       "label": "Veine cave supérieure gauche",
+       "code": "TAUSSIG-DIAG-0022"
+      },
+      {
+       "label": "Absence de toit du sinus coronaire",
+       "code": "TAUSSIG-DIAG-0023"
+      },
+      {
+       "label": "Anomalie du retour veineux pulmonaire",
+       "code": "TAUSSIG-DIAG-0024"
+      },
+      {
+       "label": "Connexion veineuse pulmonaire totale anormale",
+       "code": "TAUSSIG-DIAG-0025"
+      },
+      {
+       "label": "Connexion veineuse pulmonaire partielle anormale",
+       "code": "TAUSSIG-DIAG-0026"
+      },
+      {
+       "label": "Syndrome du cimeterre",
+       "code": "TAUSSIG-DIAG-0027"
+      },
+      {
+       "label": "Sténose ou hypoplasie veineuse pulmonaire congénitale",
+       "code": "TAUSSIG-DIAG-0028"
+      },
+      {
+       "label": "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire",
+       "code": "TAUSSIG-DIAG-0029"
+      },
+      {
+       "label": "Anomalie congénitale de la valve tricuspide",
+       "code": "TAUSSIG-DIAG-0030"
+      },
+      {
+       "label": "Insuffisance tricuspide congénitale",
+       "code": "TAUSSIG-DIAG-0031"
+      },
+      {
+       "label": "Sténose congénitale de la valve tricuspide",
+       "code": "TAUSSIG-DIAG-0032"
+      },
+      {
+       "label": "Dysplasie de la valve tricuspide",
+       "code": "TAUSSIG-DIAG-0033"
+      },
+      {
+       "label": "Malformation d'Ebstein de la valve tricuspide",
+       "code": "TAUSSIG-DIAG-0034"
+      },
+      {
+       "label": "Anomalie congénitale de la valve mitrale",
+       "code": "TAUSSIG-DIAG-0035"
+      },
+      {
+       "label": "Insuffisance mitrale congénitale",
+       "code": "TAUSSIG-DIAG-0036"
+      },
+      {
+       "label": "Sténose valvulaire mitrale congénitale",
+       "code": "TAUSSIG-DIAG-0037"
+      },
+      {
+       "label": "Dysplasie de la valve mitrale",
+       "code": "TAUSSIG-DIAG-0038"
+      },
+      {
+       "label": "Anomalie congénitale de l'appareil mitral sousvalvaire",
+       "code": "TAUSSIG-DIAG-0039"
+      },
+      {
+       "label": "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire",
+       "code": "TAUSSIG-DIAG-0040"
+      },
+      {
+       "label": "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire",
+       "code": "TAUSSIG-DIAG-0041"
+      },
+      {
+       "label": "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement",
+       "code": "TAUSSIG-DIAG-0042"
+      },
+      {
+       "label": "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement",
+       "code": "TAUSSIG-DIAG-0043"
+      },
+      {
+       "label": "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire",
+       "code": "TAUSSIG-DIAG-0044"
+      },
+      {
+       "label": "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire",
+       "code": "TAUSSIG-DIAG-0045"
+      },
+      {
+       "label": "Communication septale auriculoventriculaire avec déséquilibre ventriculaire",
+       "code": "TAUSSIG-DIAG-0046"
+      },
+      {
+       "label": "Anomalie septal auriculoventriculaire et tétralogie de Fallot",
+       "code": "TAUSSIG-DIAG-0047"
+      },
+      {
+       "label": "Anomalie congénitale du ventricule ou du septum ventriculaire",
+       "code": "TAUSSIG-DIAG-0048"
+      },
+      {
+       "label": "Obstruction congénitale de la voie de sortie du ventricule droit",
+       "code": "TAUSSIG-DIAG-0049"
+      },
+      {
+       "label": "Ventricule droit à double chambre",
+       "code": "TAUSSIG-DIAG-0050"
+      },
+      {
+       "label": "Tétralogie de Fallot",
+       "code": "TAUSSIG-DIAG-0051"
+      },
+      {
+       "label": "Tétralogie de Fallot avec syndrome de valve pulmonaire absente",
+       "code": "TAUSSIG-DIAG-0052"
+      },
+      {
+       "label": "Tétralogie de Fallot avec atrésie pulmonaire",
+       "code": "TAUSSIG-DIAG-0053"
+      },
+      {
+       "label": "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire",
+       "code": "TAUSSIG-DIAG-0054"
+      },
+      {
+       "label": "Obstruction congénitale de la voie de sortie du ventricule gauche",
+       "code": "TAUSSIG-DIAG-0055"
+      },
+      {
+       "label": "Communication interventriculaire",
+       "code": "TAUSSIG-DIAG-0056"
+      },
+      {
+       "label": "Communication interventriculaire musculaire trabéculaire",
+       "code": "TAUSSIG-DIAG-0057"
+      },
+      {
+       "label": "Communication interventriculaire centrale périmembraneuse",
+       "code": "TAUSSIG-DIAG-0058"
+      },
+      {
+       "label": "Communication interventriculaire non significatif sur le plan hémodynamique",
+       "code": "TAUSSIG-DIAG-0059"
+      },
+      {
+       "label": "Cœur fonctionnellement univentriculaire",
+       "code": "TAUSSIG-DIAG-0060"
+      },
+      {
+       "label": "Connexion auriculoventriculaire à double entrée",
+       "code": "TAUSSIG-DIAG-0061"
+      },
+      {
+       "label": "Atrésie de la valve tricuspide",
+       "code": "TAUSSIG-DIAG-0062"
+      },
+      {
+       "label": "Atrésie mitrale",
+       "code": "TAUSSIG-DIAG-0063"
+      },
+      {
+       "label": "Syndrome d'hypoplasie du cœur gauche",
+       "code": "TAUSSIG-DIAG-0064"
+      },
+      {
+       "label": "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes",
+       "code": "TAUSSIG-DIAG-0065"
+      },
+      {
+       "label": "Anomalie congénitale de la valve pulmonaire",
+       "code": "TAUSSIG-DIAG-0066"
+      },
+      {
+       "label": "Sténose congénitale de la valve pulmonaire",
+       "code": "TAUSSIG-DIAG-0067"
+      },
+      {
+       "label": "Insuffisance congénitale de la valve pulmonaire",
+       "code": "TAUSSIG-DIAG-0068"
+      },
+      {
+       "label": "Atrésie pulmonaire congénitale",
+       "code": "TAUSSIG-DIAG-0069"
+      },
+      {
+       "label": "Atrésie pulmonaire avec septum ventriculaire intact",
+       "code": "TAUSSIG-DIAG-0070"
+      },
+      {
+       "label": "Anomalie congénitale de la valve aortique",
+       "code": "TAUSSIG-DIAG-0071"
+      },
+      {
+       "label": "Sténose congénitale de la valve aortique",
+       "code": "TAUSSIG-DIAG-0072"
+      },
+      {
+       "label": "Insuffisance aortique congénitale",
+       "code": "TAUSSIG-DIAG-0073"
+      },
+      {
+       "label": "Valve aortique bicuspide",
+       "code": "TAUSSIG-DIAG-0074"
+      },
+      {
+       "label": "Atrésie de la valve aortique",
+       "code": "TAUSSIG-DIAG-0075"
+      },
+      {
+       "label": "Valve aortique unicuspide",
+       "code": "TAUSSIG-DIAG-0076"
+      },
+      {
+       "label": "Sténose supravalvulaire aortique congénitale",
+       "code": "TAUSSIG-DIAG-0077"
+      },
+      {
+       "label": "Anévrisme du sinus aortique de Valsalva",
+       "code": "TAUSSIG-DIAG-0078"
+      },
+      {
+       "label": "Sténose sous-aortique congénitale",
+       "code": "TAUSSIG-DIAG-0079"
+      },
+      {
+       "label": "Sténose sous-pulmonaire congénitale",
+       "code": "TAUSSIG-DIAG-0080"
+      },
+      {
+       "label": "Anomalie congénitale des grandes artères, y compris le canal artériel",
+       "code": "TAUSSIG-DIAG-0081"
+      },
+      {
+       "label": "Fenêtre aortopulmonaire congénitale",
+       "code": "TAUSSIG-DIAG-0082"
+      },
+      {
+       "label": "Anomalie congénitale de l'arbre artériel pulmonaire",
+       "code": "TAUSSIG-DIAG-0083"
+      },
+      {
+       "label": "Anomalie congénitale de l'aorte ou de ses branches",
+       "code": "TAUSSIG-DIAG-0084"
+      },
+      {
+       "label": "Coarctation de l'aorte",
+       "code": "TAUSSIG-DIAG-0085"
+      },
+      {
+       "label": "Interruption de la crosse aortique",
+       "code": "TAUSSIG-DIAG-0086"
+      },
+      {
+       "label": "Anomalie congénitale de l'aorte thoracique descendante ou abdominale",
+       "code": "TAUSSIG-DIAG-0087"
+      },
+      {
+       "label": "Anomalie congénitale de la branche de l'arc aortique",
+       "code": "TAUSSIG-DIAG-0088"
+      },
+      {
+       "label": "Syndrome de compression trachéo-œsophagienne",
+       "code": "TAUSSIG-DIAG-0089"
+      },
+      {
+       "label": "Persistance du canal artériel",
+       "code": "TAUSSIG-DIAG-0090"
+      },
+      {
+       "label": "Anomalie congénitale des artères coronaires",
+       "code": "TAUSSIG-DIAG-0091"
+      },
+      {
+       "label": "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire",
+       "code": "TAUSSIG-DIAG-0092"
+      },
+      {
+       "label": "Origine aortique anormale ou trajet anormal de l'artère coronaire",
+       "code": "TAUSSIG-DIAG-0093"
+      },
+      {
+       "label": "Fistule artérielle coronaire congénitale",
+       "code": "TAUSSIG-DIAG-0094"
+      },
+      {
+       "label": "Malformation congénitale du péricarde",
+       "code": "TAUSSIG-DIAG-0095"
+      },
+      {
+       "label": "Anomalie congénitale du septum auriculaire",
+       "code": "TAUSSIG-DIAG-0096"
+      },
+      {
+       "label": "Foramen ovale perméable",
+       "code": "TAUSSIG-DIAG-0097"
+      },
+      {
+       "label": "Communication interauriculaire dans la fosse ovale",
+       "code": "TAUSSIG-DIAG-0098"
+      },
+      {
+       "label": "Anomalie du sinus veineux",
+       "code": "TAUSSIG-DIAG-0099"
+      },
+      {
+       "label": "Communication interauriculaire par l'orifice du sinus coronaire",
+       "code": "TAUSSIG-DIAG-0100"
+      },
+      {
+       "label": "Anomalie congénitale de l'oreillette droite",
+       "code": "TAUSSIG-DIAG-0101"
+      },
+      {
+       "label": "Anomalie congénitale de l'oreillette gauche",
+       "code": "TAUSSIG-DIAG-0102"
+      },
+      {
+       "label": "Oreillette gauche divisée",
+       "code": "TAUSSIG-DIAG-0103"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
+       "code": "TAUSSIG-DIAG-0104"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
+       "code": "TAUSSIG-DIAG-0105"
+      },
+      {
+       "label": "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
+       "code": "TAUSSIG-DIAG-0106"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
+       "code": "TAUSSIG-DIAG-0107"
+      },
+      {
+       "label": "Fistule (malformation) artérioveineuse pulmonaire",
+       "code": "TAUSSIG-DIAG-0108"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet congénital idiopathique",
+       "code": "TAUSSIG-DIAG-0109"
+      }
+     ],
+     "note": ""
     }
    }
   },
@@ -2203,7 +2640,7 @@ window.TAUSSIG_COVERAGE = {
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "cim10": {
-     "n": 93,
+     "n": 94,
      "total": 107,
      "niveau": "partiel",
      "entries": [
@@ -2289,11 +2726,11 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Sténose acquise de la néovalve aortique d'origine troncale",
-       "code": "Q24.8"
+       "code": "I35.0"
       },
       {
        "label": "Régurgitation acquise de la néovalve aortique d'origine troncale",
-       "code": "I38"
+       "code": "I35.1"
       },
       {
        "label": "Composante ventriculaire résiduelle de canal atrioventriculaire",
@@ -2496,6 +2933,10 @@ window.TAUSSIG_COVERAGE = {
        "code": "I21.9"
       },
       {
+       "label": "État après transplantation cardiaque",
+       "code": "Z94.1"
+      },
+      {
        "label": "Maladie vasculaire pulmonaire irréversible",
        "code": "I27.8"
       },
@@ -2541,7 +2982,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Indication de remplacement programmé d'un stimulateur cardiaque",
-       "code": "T82.9"
+       "code": "Z45.0"
       },
       {
        "label": "Entéropathie exsudative post-procédurale",
@@ -2569,7 +3010,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Corps étranger intracardiaque post-procédural",
-       "code": "T81.8"
+       "code": "T81.5"
       },
       {
        "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
@@ -2975,11 +3416,440 @@ window.TAUSSIG_COVERAGE = {
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
-     "n": null,
+     "n": 107,
      "total": 107,
-     "niveau": "non_evalue",
-     "entries": [],
-     "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
+     "niveau": "plein",
+     "entries": [
+      {
+       "label": "Création/agrandissement de communication interatriale",
+       "code": "TAUSSIG-COND-0001"
+      },
+      {
+       "label": "Cerclage de l'artère pulmonaire",
+       "code": "TAUSSIG-COND-0002"
+      },
+      {
+       "label": "Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)",
+       "code": "TAUSSIG-COND-0003"
+      },
+      {
+       "label": "Intervention de Norwood",
+       "code": "TAUSSIG-COND-0004"
+      },
+      {
+       "label": "Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)",
+       "code": "TAUSSIG-COND-0005"
+      },
+      {
+       "label": "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)",
+       "code": "TAUSSIG-COND-0006"
+      },
+      {
+       "label": "Anastomose cavopulmonaire bidirectionnelle bilatérale",
+       "code": "TAUSSIG-COND-0007"
+      },
+      {
+       "label": "Fontan (TCPC), conduit extracardiaque, fenestré",
+       "code": "TAUSSIG-COND-0008"
+      },
+      {
+       "label": "Fontan (TCPC), conduit extracardiaque, non fenestré",
+       "code": "TAUSSIG-COND-0009"
+      },
+      {
+       "label": "Fontan (TCPC), tunnel latéral, fenestré",
+       "code": "TAUSSIG-COND-0010"
+      },
+      {
+       "label": "Fontan (TCPC), tunnel latéral, non fenestré",
+       "code": "TAUSSIG-COND-0011"
+      },
+      {
+       "label": "Réparation à un ventricule et demi",
+       "code": "TAUSSIG-COND-0012"
+      },
+      {
+       "label": "Palliation, autre",
+       "code": "TAUSSIG-COND-0013"
+      },
+      {
+       "label": "Endocardite infectieuse",
+       "code": "TAUSSIG-COND-0014"
+      },
+      {
+       "label": "Anomalie acquise de la veine cave supérieure",
+       "code": "TAUSSIG-COND-0015"
+      },
+      {
+       "label": "Anomalie acquise de la veine cave inférieure",
+       "code": "TAUSSIG-COND-0016"
+      },
+      {
+       "label": "Anomalie acquise du sinus coronaire",
+       "code": "TAUSSIG-COND-0017"
+      },
+      {
+       "label": "Anomalie acquise des veines pulmonaires",
+       "code": "TAUSSIG-COND-0018"
+      },
+      {
+       "label": "Anomalie acquise de l'oreillette droite",
+       "code": "TAUSSIG-COND-0019"
+      },
+      {
+       "label": "Anomalie acquise de l'oreillette gauche",
+       "code": "TAUSSIG-COND-0020"
+      },
+      {
+       "label": "Communication interatriale résiduelle (CIA)",
+       "code": "TAUSSIG-COND-0021"
+      },
+      {
+       "label": "Régurgitation tricuspide résiduelle",
+       "code": "TAUSSIG-COND-0022"
+      },
+      {
+       "label": "Sténose mitrale résiduelle",
+       "code": "TAUSSIG-COND-0023"
+      },
+      {
+       "label": "Régurgitation mitrale résiduelle",
+       "code": "TAUSSIG-COND-0024"
+      },
+      {
+       "label": "Régurgitation troncale résiduelle",
+       "code": "TAUSSIG-COND-0025"
+      },
+      {
+       "label": "Sténose valvulaire pulmonaire résiduelle",
+       "code": "TAUSSIG-COND-0026"
+      },
+      {
+       "label": "Régurgitation pulmonaire résiduelle",
+       "code": "TAUSSIG-COND-0027"
+      },
+      {
+       "label": "Sténose de la néovalve pulmonaire",
+       "code": "TAUSSIG-COND-0028"
+      },
+      {
+       "label": "Régurgitation de la néovalve pulmonaire",
+       "code": "TAUSSIG-COND-0029"
+      },
+      {
+       "label": "Sténose valvulaire aortique résiduelle",
+       "code": "TAUSSIG-COND-0030"
+      },
+      {
+       "label": "Régurgitation aortique résiduelle",
+       "code": "TAUSSIG-COND-0031"
+      },
+      {
+       "label": "Sténose de la néovalve aortique d'origine pulmonaire",
+       "code": "TAUSSIG-COND-0032"
+      },
+      {
+       "label": "Régurgitation de la néovalve aortique d'origine pulmonaire",
+       "code": "TAUSSIG-COND-0033"
+      },
+      {
+       "label": "Sténose acquise de la néovalve aortique d'origine troncale",
+       "code": "TAUSSIG-COND-0034"
+      },
+      {
+       "label": "Régurgitation acquise de la néovalve aortique d'origine troncale",
+       "code": "TAUSSIG-COND-0035"
+      },
+      {
+       "label": "Composante ventriculaire résiduelle de canal atrioventriculaire",
+       "code": "TAUSSIG-COND-0036"
+      },
+      {
+       "label": "Régurgitation résiduelle de la valve atrioventriculaire commune",
+       "code": "TAUSSIG-COND-0037"
+      },
+      {
+       "label": "Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)",
+       "code": "TAUSSIG-COND-0038"
+      },
+      {
+       "label": "Dilatation ventriculaire droite acquise",
+       "code": "TAUSSIG-COND-0039"
+      },
+      {
+       "label": "Hypertrophie ventriculaire droite acquise",
+       "code": "TAUSSIG-COND-0040"
+      },
+      {
+       "label": "Anévrisme ventriculaire droit acquis",
+       "code": "TAUSSIG-COND-0041"
+      },
+      {
+       "label": "Dysfonction ventriculaire droite",
+       "code": "TAUSSIG-COND-0042"
+      },
+      {
+       "label": "Obstruction résiduelle de la voie d'éjection du ventricule droit",
+       "code": "TAUSSIG-COND-0043"
+      },
+      {
+       "label": "Dilatation ventriculaire gauche acquise",
+       "code": "TAUSSIG-COND-0044"
+      },
+      {
+       "label": "Hypertrophie ventriculaire gauche acquise",
+       "code": "TAUSSIG-COND-0045"
+      },
+      {
+       "label": "Anévrisme ventriculaire gauche acquis",
+       "code": "TAUSSIG-COND-0046"
+      },
+      {
+       "label": "Défaillance ventriculaire gauche",
+       "code": "TAUSSIG-COND-0047"
+      },
+      {
+       "label": "Complication post-procédurale de la voie d'éjection du ventricule gauche",
+       "code": "TAUSSIG-COND-0048"
+      },
+      {
+       "label": "Sténose sous-aortique acquise",
+       "code": "TAUSSIG-COND-0049"
+      },
+      {
+       "label": "Sténose sous-pulmonaire acquise",
+       "code": "TAUSSIG-COND-0050"
+      },
+      {
+       "label": "Communication interventriculaire résiduelle (CIV)",
+       "code": "TAUSSIG-COND-0051"
+      },
+      {
+       "label": "Cardiomyopathie restrictive",
+       "code": "TAUSSIG-COND-0052"
+      },
+      {
+       "label": "Anomalie acquise de l'arbre artériel pulmonaire",
+       "code": "TAUSSIG-COND-0053"
+      },
+      {
+       "label": "Sténose post-procédurale du tronc de l'artère pulmonaire",
+       "code": "TAUSSIG-COND-0054"
+      },
+      {
+       "label": "Sténose résiduelle de l'artère pulmonaire droite",
+       "code": "TAUSSIG-COND-0055"
+      },
+      {
+       "label": "Sténose résiduelle de l'artère pulmonaire gauche",
+       "code": "TAUSSIG-COND-0056"
+      },
+      {
+       "label": "Hypertension artérielle pulmonaire",
+       "code": "TAUSSIG-COND-0057"
+      },
+      {
+       "label": "Embolie pulmonaire",
+       "code": "TAUSSIG-COND-0058"
+      },
+      {
+       "label": "Sténose aortique supravalvulaire acquise",
+       "code": "TAUSSIG-COND-0059"
+      },
+      {
+       "label": "Dilatation acquise de l'aorte ascendante et/ou de la racine aortique",
+       "code": "TAUSSIG-COND-0060"
+      },
+      {
+       "label": "Dilatation de la racine aortique",
+       "code": "TAUSSIG-COND-0061"
+      },
+      {
+       "label": "Dissection aortique",
+       "code": "TAUSSIG-COND-0062"
+      },
+      {
+       "label": "Anévrisme aortique",
+       "code": "TAUSSIG-COND-0063"
+      },
+      {
+       "label": "Coarctation aortique résiduelle",
+       "code": "TAUSSIG-COND-0064"
+      },
+      {
+       "label": "Complication coronaire post-procédurale",
+       "code": "TAUSSIG-COND-0065"
+      },
+      {
+       "label": "Persistance résiduelle du canal artériel (PDA)",
+       "code": "TAUSSIG-COND-0066"
+      },
+      {
+       "label": "Complication liée à un conduit cardiaque",
+       "code": "TAUSSIG-COND-0067"
+      },
+      {
+       "label": "Obstruction d'anastomose systémico-pulmonaire",
+       "code": "TAUSSIG-COND-0068"
+      },
+      {
+       "label": "Obstruction partielle d'anastomose systémico-pulmonaire",
+       "code": "TAUSSIG-COND-0069"
+      },
+      {
+       "label": "Obstruction complète d'anastomose systémico-pulmonaire",
+       "code": "TAUSSIG-COND-0070"
+      },
+      {
+       "label": "Défaillance d'autogreffe pulmonaire",
+       "code": "TAUSSIG-COND-0071"
+      },
+      {
+       "label": "Circulation de Fontan défaillante",
+       "code": "TAUSSIG-COND-0072"
+      },
+      {
+       "label": "Épanchement péricardique",
+       "code": "TAUSSIG-COND-0073"
+      },
+      {
+       "label": "Complication après transplantation cardiaque ou pulmonaire",
+       "code": "TAUSSIG-COND-0074"
+      },
+      {
+       "label": "Sténose acquise des veines pulmonaires",
+       "code": "TAUSSIG-COND-0075"
+      },
+      {
+       "label": "Obstruction d'une veine systémique",
+       "code": "TAUSSIG-COND-0076"
+      },
+      {
+       "label": "Collatérale(s) veino-veineuse(s) systémique(s)",
+       "code": "TAUSSIG-COND-0077"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)",
+       "code": "TAUSSIG-COND-0078"
+      },
+      {
+       "label": "Fistules (malformations) artérioveineuses pulmonaires acquises",
+       "code": "TAUSSIG-COND-0079"
+      },
+      {
+       "label": "Cardiomyopathie dilatée",
+       "code": "TAUSSIG-COND-0080"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique",
+       "code": "TAUSSIG-COND-0081"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique obstructive du ventricule gauche",
+       "code": "TAUSSIG-COND-0082"
+      },
+      {
+       "label": "Myocardite (cardiomyopathie inflammatoire)",
+       "code": "TAUSSIG-COND-0083"
+      },
+      {
+       "label": "Maladie de Kawasaki",
+       "code": "TAUSSIG-COND-0084"
+      },
+      {
+       "label": "Infarctus du myocarde",
+       "code": "TAUSSIG-COND-0085"
+      },
+      {
+       "label": "État après transplantation cardiaque",
+       "code": "TAUSSIG-COND-0086"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible",
+       "code": "TAUSSIG-COND-0087"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)",
+       "code": "TAUSSIG-COND-0088"
+      },
+      {
+       "label": "Trouble du rythme cardiaque",
+       "code": "TAUSSIG-COND-0089"
+      },
+      {
+       "label": "Fibrillation atriale",
+       "code": "TAUSSIG-COND-0090"
+      },
+      {
+       "label": "Flutter atrial",
+       "code": "TAUSSIG-COND-0091"
+      },
+      {
+       "label": "Trouble du rythme atrial",
+       "code": "TAUSSIG-COND-0092"
+      },
+      {
+       "label": "Trouble du rythme de la jonction atrioventriculaire",
+       "code": "TAUSSIG-COND-0093"
+      },
+      {
+       "label": "Trouble du rythme ventriculaire",
+       "code": "TAUSSIG-COND-0094"
+      },
+      {
+       "label": "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)",
+       "code": "TAUSSIG-COND-0095"
+      },
+      {
+       "label": "Bloc atrioventriculaire",
+       "code": "TAUSSIG-COND-0096"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet acquis",
+       "code": "TAUSSIG-COND-0097"
+      },
+      {
+       "label": "Indication de remplacement programmé d'un stimulateur cardiaque",
+       "code": "TAUSSIG-COND-0098"
+      },
+      {
+       "label": "Entéropathie exsudative post-procédurale",
+       "code": "TAUSSIG-COND-0099"
+      },
+      {
+       "label": "Bronchite plastique post-procédurale",
+       "code": "TAUSSIG-COND-0100"
+      },
+      {
+       "label": "Chylothorax",
+       "code": "TAUSSIG-COND-0101"
+      },
+      {
+       "label": "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "TAUSSIG-COND-0102"
+      },
+      {
+       "label": "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "TAUSSIG-COND-0103"
+      },
+      {
+       "label": "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur",
+       "code": "TAUSSIG-COND-0104"
+      },
+      {
+       "label": "Corps étranger intracardiaque post-procédural",
+       "code": "TAUSSIG-COND-0105"
+      },
+      {
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+       "code": "TAUSSIG-COND-0106"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "TAUSSIG-COND-0107"
+      }
+     ],
+     "note": ""
     }
    }
   },
@@ -6213,35 +7083,35 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.90.03"
       },
       {
-       "label": "complication liée à une intervention",
+       "label": "Complication liée à une intervention",
        "code": "15.90.14"
       },
       {
-       "label": "arrêt cardiaque",
+       "label": "Arrêt cardiaque pendant l'intervention",
        "code": "15.00.01"
       },
       {
-       "label": "fibrillation atriale",
+       "label": "Fibrillation atriale",
        "code": "11.03.08"
       },
       {
-       "label": "flutter auriculaire",
+       "label": "Flutter atrial",
        "code": "11.03.07"
       },
       {
-       "label": "Postoperative cardiac arrhythmia",
+       "label": "Trouble du rythme post-procédural",
        "code": "11.00.00"
       },
       {
-       "label": "bloc atrioventriculaire complet",
+       "label": "Bloc atrioventriculaire complet acquis",
        "code": "11.06.10"
       },
       {
-       "label": "tachycardie ectopique jonctionnelle",
+       "label": "Tachycardie jonctionnelle ectopique post-procédurale",
        "code": "11.04.12"
       },
       {
-       "label": "tachycardie ventriculaire",
+       "label": "Tachycardie ventriculaire",
        "code": "11.05.06"
       },
       {
@@ -6249,23 +7119,23 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.60.06"
       },
       {
-       "label": "perforation d'une paroi du cœur due à une procédure",
+       "label": "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme",
        "code": "15.50.03"
       },
       {
-       "label": "Postoperative cardiac tamponade",
+       "label": "Tamponnade cardiaque post-procédurale",
        "code": "15.83.14"
       },
       {
-       "label": "décès intra-opératoire",
+       "label": "Décès peropératoire",
        "code": "12.33.31"
       },
       {
-       "label": "communication interatriale résiduelle survenant après une intervention",
+       "label": "Communication interatriale résiduelle ou récidivante post-procédurale",
        "code": "15.10.72"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme",
        "code": "15.51.47"
       },
       {
@@ -6273,67 +7143,67 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.51.50"
       },
       {
-       "label": "corps étranger au niveau du cœur",
+       "label": "Corps étranger intracardiaque post-procédural",
        "code": "15.80.17"
       },
       {
-       "label": "corps étranger",
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
        "code": "15.50.37"
       },
       {
-       "label": "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
+       "label": "Perméabilité résiduelle du canal artériel post-procédurale",
        "code": "15.39.05"
       },
       {
-       "label": "communication interventriculaire résiduelle",
+       "label": "Communication interventriculaire résiduelle ou récidivante post-procédurale",
        "code": "15.22.13"
       },
       {
-       "label": "communication interatriale résiduelle",
+       "label": "Communication interatriale résiduelle",
        "code": "15.10.63"
       },
       {
-       "label": "régurgitation de la valve aortique",
+       "label": "Régurgitation aortique après lésion valvulaire pendant le cathétérisme",
        "code": "15.50.20"
       },
       {
-       "label": "régurgitation de la valve mitrale",
+       "label": "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme",
        "code": "15.50.20"
       },
       {
-       "label": "dysfonction de la prothèse valvulaire cardiaque",
+       "label": "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme",
        "code": "15.50.20"
       },
       {
-       "label": "régurgitation de la valve pulmonaire",
+       "label": "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme",
        "code": "15.50.20"
       },
       {
-       "label": "régurgitation de la valvule tricuspide",
+       "label": "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme",
        "code": "15.50.20"
       },
       {
-       "label": "perte du pouls distal",
+       "label": "Perte du pouls après cathétérisme",
        "code": "15.50.11"
       },
       {
-       "label": "pseudoanévrisme au site d'abord",
+       "label": "Pseudoanévrisme au site d'abord",
        "code": "15.60.23"
       },
       {
-       "label": "dissection artérielle",
+       "label": "Dissection artérielle au site d'abord",
        "code": "15.50.19"
       },
       {
-       "label": "extravasation de produit de contraste intraveineux",
+       "label": "Extravasation de produit de contraste",
        "code": "15.50.19"
       },
       {
-       "label": "fistule artérioveineuse",
+       "label": "Fistule artérioveineuse au site d'abord",
        "code": "15.50.19"
       },
       {
-       "label": "perforation d'une artère",
+       "label": "Perforation artérielle au site d'abord",
        "code": "15.50.19"
       },
       {
@@ -6341,11 +7211,11 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.50.30"
       },
       {
-       "label": "migration d'endoprothèse vasculaire",
+       "label": "Embolisation d'un stent",
        "code": "15.50.71"
       },
       {
-       "label": "vaisseau sanguin déchiré",
+       "label": "Rupture d'un conduit ou d'un vaisseau après implantation de stent",
        "code": "15.50.78"
       },
       {
@@ -6353,7 +7223,7 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.50.61"
       },
       {
-       "label": "migration d'endoprothèse vasculaire",
+       "label": "Stent laissé déployé en position non prévue après migration ou embolisation",
        "code": "15.50.91"
       },
       {
@@ -6361,7 +7231,7 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.51.50"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation (délogement) d'un coil introduit par cathéter",
        "code": "15.50.65"
       },
       {
@@ -6396,35 +7266,35 @@ window.TAUSSIG_COVERAGE = {
      "niveau": "partiel",
      "entries": [
       {
-       "label": "complication liée à une intervention",
+       "label": "Complication liée à une intervention",
        "code": "T81.8"
       },
       {
-       "label": "arrêt cardiaque",
+       "label": "Arrêt cardiaque pendant l'intervention",
        "code": "T81.8"
       },
       {
-       "label": "fibrillation atriale",
+       "label": "Fibrillation atriale",
        "code": "I48"
       },
       {
-       "label": "flutter auriculaire",
+       "label": "Flutter atrial",
        "code": "I48"
       },
       {
-       "label": "Postoperative cardiac arrhythmia",
+       "label": "Trouble du rythme post-procédural",
        "code": "I49.9"
       },
       {
-       "label": "bloc atrioventriculaire complet",
+       "label": "Bloc atrioventriculaire complet acquis",
        "code": "I44.2"
       },
       {
-       "label": "tachycardie ectopique jonctionnelle",
+       "label": "Tachycardie jonctionnelle ectopique post-procédurale",
        "code": "I97.1"
       },
       {
-       "label": "tachycardie ventriculaire",
+       "label": "Tachycardie ventriculaire",
        "code": "I47.2"
       },
       {
@@ -6432,19 +7302,19 @@ window.TAUSSIG_COVERAGE = {
        "code": "I97.1"
       },
       {
-       "label": "perforation d'une paroi du cœur due à une procédure",
+       "label": "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme",
        "code": "T81.2 / Y60.5"
       },
       {
-       "label": "Postoperative cardiac tamponade",
+       "label": "Tamponnade cardiaque post-procédurale",
        "code": "I31.9"
       },
       {
-       "label": "communication interatriale résiduelle survenant après une intervention",
+       "label": "Communication interatriale résiduelle ou récidivante post-procédurale",
        "code": "Q21.1"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme",
        "code": "T82.8"
       },
       {
@@ -6452,67 +7322,67 @@ window.TAUSSIG_COVERAGE = {
        "code": "T82.5"
       },
       {
-       "label": "corps étranger au niveau du cœur",
-       "code": "T81.8"
+       "label": "Corps étranger intracardiaque post-procédural",
+       "code": "T81.5"
       },
       {
-       "label": "corps étranger",
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
        "code": "T82.8"
       },
       {
-       "label": "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
-       "code": "I77.8"
+       "label": "Perméabilité résiduelle du canal artériel post-procédurale",
+       "code": "Q25.0"
       },
       {
-       "label": "communication interventriculaire résiduelle",
+       "label": "Communication interventriculaire résiduelle ou récidivante post-procédurale",
        "code": "Q21.0"
       },
       {
-       "label": "communication interatriale résiduelle",
+       "label": "Communication interatriale résiduelle",
        "code": "Q21.1"
       },
       {
-       "label": "régurgitation de la valve aortique",
+       "label": "Régurgitation aortique après lésion valvulaire pendant le cathétérisme",
        "code": "T81.2 / Y60.5"
       },
       {
-       "label": "régurgitation de la valve mitrale",
+       "label": "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme",
        "code": "T81.2 / Y60.5"
       },
       {
-       "label": "dysfonction de la prothèse valvulaire cardiaque",
+       "label": "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme",
        "code": "T81.2 / Y60.5"
       },
       {
-       "label": "régurgitation de la valve pulmonaire",
+       "label": "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme",
        "code": "T81.2 / Y60.5"
       },
       {
-       "label": "régurgitation de la valvule tricuspide",
+       "label": "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme",
        "code": "T81.2 / Y60.5"
       },
       {
-       "label": "perte du pouls distal",
+       "label": "Perte du pouls après cathétérisme",
        "code": "T81.7 / Y84.0"
       },
       {
-       "label": "pseudoanévrisme au site d'abord",
-       "code": "T81.8"
+       "label": "Pseudoanévrisme au site d'abord",
+       "code": "T81.7"
       },
       {
-       "label": "dissection artérielle",
+       "label": "Dissection artérielle au site d'abord",
        "code": "T81.7 / Y84.0"
       },
       {
-       "label": "extravasation de produit de contraste intraveineux",
+       "label": "Extravasation de produit de contraste",
        "code": "T81.7 / Y84.0"
       },
       {
-       "label": "fistule artérioveineuse",
+       "label": "Fistule artérioveineuse au site d'abord",
        "code": "T81.7 / Y84.0"
       },
       {
-       "label": "perforation d'une artère",
+       "label": "Perforation artérielle au site d'abord",
        "code": "T81.7 / Y84.0"
       },
       {
@@ -6520,11 +7390,11 @@ window.TAUSSIG_COVERAGE = {
        "code": "T82.5"
       },
       {
-       "label": "migration d'endoprothèse vasculaire",
+       "label": "Embolisation d'un stent",
        "code": "T82.8"
       },
       {
-       "label": "vaisseau sanguin déchiré",
+       "label": "Rupture d'un conduit ou d'un vaisseau après implantation de stent",
        "code": "T82.8"
       },
       {
@@ -6532,7 +7402,7 @@ window.TAUSSIG_COVERAGE = {
        "code": "T82.5"
       },
       {
-       "label": "migration d'endoprothèse vasculaire",
+       "label": "Stent laissé déployé en position non prévue après migration ou embolisation",
        "code": "T82.5"
       },
       {
@@ -6540,12 +7410,12 @@ window.TAUSSIG_COVERAGE = {
        "code": "T82.5"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation (délogement) d'un coil introduit par cathéter",
        "code": "T82.8"
       },
       {
        "label": "Thrombose vasculaire ou de conduit post-procédurale",
-       "code": "T81.0"
+       "code": "T81.7"
       },
       {
        "label": "Hémorragie post-procédurale",
@@ -6568,135 +7438,135 @@ window.TAUSSIG_COVERAGE = {
      "niveau": "partiel",
      "entries": [
       {
-       "label": "complication liée à une intervention",
+       "label": "Complication liée à une intervention",
        "code": "116224001"
       },
       {
-       "label": "arrêt cardiaque",
+       "label": "Arrêt cardiaque pendant l'intervention",
        "code": "410429000"
       },
       {
-       "label": "fibrillation atriale",
+       "label": "Fibrillation atriale",
        "code": "49436004"
       },
       {
-       "label": "flutter auriculaire",
+       "label": "Flutter atrial",
        "code": "5370000"
       },
       {
-       "label": "Postoperative cardiac arrhythmia",
+       "label": "Trouble du rythme post-procédural",
        "code": "1230406008"
       },
       {
-       "label": "bloc atrioventriculaire complet",
+       "label": "Bloc atrioventriculaire complet acquis",
        "code": "27885002"
       },
       {
-       "label": "tachycardie ectopique jonctionnelle",
+       "label": "Tachycardie jonctionnelle ectopique post-procédurale",
        "code": "251155001"
       },
       {
-       "label": "tachycardie ventriculaire",
+       "label": "Tachycardie ventriculaire",
        "code": "25569003"
       },
       {
-       "label": "perforation d'une paroi du cœur due à une procédure",
+       "label": "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme",
        "code": "1162507002"
       },
       {
-       "label": "Postoperative cardiac tamponade",
+       "label": "Tamponnade cardiaque post-procédurale",
        "code": "1230407004"
       },
       {
-       "label": "décès intra-opératoire",
+       "label": "Décès peropératoire",
        "code": "52136000"
       },
       {
-       "label": "communication interatriale résiduelle survenant après une intervention",
+       "label": "Communication interatriale résiduelle ou récidivante post-procédurale",
        "code": "735579001"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme",
        "code": "473163005"
       },
       {
-       "label": "corps étranger au niveau du cœur",
+       "label": "Corps étranger intracardiaque post-procédural",
        "code": "282729004"
       },
       {
-       "label": "corps étranger",
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
        "code": "125670008"
       },
       {
-       "label": "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
+       "label": "Perméabilité résiduelle du canal artériel post-procédurale",
        "code": "871596002"
       },
       {
-       "label": "communication interventriculaire résiduelle",
+       "label": "Communication interventriculaire résiduelle ou récidivante post-procédurale",
        "code": "447941008"
       },
       {
-       "label": "communication interatriale résiduelle",
+       "label": "Communication interatriale résiduelle",
        "code": "449351005"
       },
       {
-       "label": "régurgitation de la valve aortique",
+       "label": "Régurgitation aortique après lésion valvulaire pendant le cathétérisme",
        "code": "60234000"
       },
       {
-       "label": "régurgitation de la valve mitrale",
+       "label": "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme",
        "code": "48724000"
       },
       {
-       "label": "dysfonction de la prothèse valvulaire cardiaque",
+       "label": "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme",
        "code": "271984008"
       },
       {
-       "label": "régurgitation de la valve pulmonaire",
+       "label": "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme",
        "code": "91434003"
       },
       {
-       "label": "régurgitation de la valvule tricuspide",
+       "label": "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme",
        "code": "111287006"
       },
       {
-       "label": "perte du pouls distal",
+       "label": "Perte du pouls après cathétérisme",
        "code": "414617007"
       },
       {
-       "label": "pseudoanévrisme au site d'abord",
+       "label": "Pseudoanévrisme au site d'abord",
        "code": "1162761001"
       },
       {
-       "label": "dissection artérielle",
+       "label": "Dissection artérielle au site d'abord",
        "code": "710864009"
       },
       {
-       "label": "extravasation de produit de contraste intraveineux",
+       "label": "Extravasation de produit de contraste",
        "code": "427924001"
       },
       {
-       "label": "fistule artérioveineuse",
+       "label": "Fistule artérioveineuse au site d'abord",
        "code": "439470001"
       },
       {
-       "label": "perforation d'une artère",
+       "label": "Perforation artérielle au site d'abord",
        "code": "307312008"
       },
       {
-       "label": "migration d'endoprothèse vasculaire",
+       "label": "Embolisation d'un stent",
        "code": "473125002"
       },
       {
-       "label": "vaisseau sanguin déchiré",
+       "label": "Rupture d'un conduit ou d'un vaisseau après implantation de stent",
        "code": "248707009"
       },
       {
-       "label": "migration d'endoprothèse vasculaire",
+       "label": "Stent laissé déployé en position non prévue après migration ou embolisation",
        "code": "473125002"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation (délogement) d'un coil introduit par cathéter",
        "code": "473163005"
       },
       {
@@ -6731,35 +7601,35 @@ window.TAUSSIG_COVERAGE = {
      "niveau": "partiel",
      "entries": [
       {
-       "label": "complication liée à une intervention",
+       "label": "Complication liée à une intervention",
        "code": "CP-2010-900 ; CP-2019-IC-10"
       },
       {
-       "label": "arrêt cardiaque",
+       "label": "Arrêt cardiaque pendant l'intervention",
        "code": "CP2"
       },
       {
-       "label": "fibrillation atriale",
+       "label": "Fibrillation atriale",
        "code": "CP6 ; CP-2019-IC-01"
       },
       {
-       "label": "flutter auriculaire",
+       "label": "Flutter atrial",
        "code": "CP6 ; CP-2019-IC-02"
       },
       {
-       "label": "Postoperative cardiac arrhythmia",
+       "label": "Trouble du rythme post-procédural",
        "code": "CP6 ; CP-2019-IC-03"
       },
       {
-       "label": "bloc atrioventriculaire complet",
+       "label": "Bloc atrioventriculaire complet acquis",
        "code": "CP6 ; CP-2019-IC-04 ; CP-2019-IC-05"
       },
       {
-       "label": "tachycardie ectopique jonctionnelle",
+       "label": "Tachycardie jonctionnelle ectopique post-procédurale",
        "code": "CP6 ; CP-2019-IC-06"
       },
       {
-       "label": "tachycardie ventriculaire",
+       "label": "Tachycardie ventriculaire",
        "code": "CP6 ; CP-2019-IC-08"
       },
       {
@@ -6767,23 +7637,23 @@ window.TAUSSIG_COVERAGE = {
        "code": "CP5 ; CP-2019-IC-07"
       },
       {
-       "label": "perforation d'une paroi du cœur due à une procédure",
+       "label": "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme",
        "code": "CP-2019-IC-13 ; CP-2019-IC-32"
       },
       {
-       "label": "Postoperative cardiac tamponade",
+       "label": "Tamponnade cardiaque post-procédurale",
        "code": "CP10 ; CP-2019-IC-33"
       },
       {
-       "label": "décès intra-opératoire",
+       "label": "Décès peropératoire",
        "code": "CP-2010-350 ; CP-2019-IC-34"
       },
       {
-       "label": "communication interatriale résiduelle survenant après une intervention",
+       "label": "Communication interatriale résiduelle ou récidivante post-procédurale",
        "code": "CP-2019-IC-16"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme",
        "code": "CP-2019-IC-11"
       },
       {
@@ -6791,63 +7661,63 @@ window.TAUSSIG_COVERAGE = {
        "code": "CP-2019-IC-12"
       },
       {
-       "label": "corps étranger au niveau du cœur",
+       "label": "Corps étranger intracardiaque post-procédural",
        "code": "CP-2019-IC-14"
       },
       {
-       "label": "corps étranger",
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
        "code": "CP-2019-IC-15"
       },
       {
-       "label": "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
+       "label": "Perméabilité résiduelle du canal artériel post-procédurale",
        "code": "CP-2019-IC-18"
       },
       {
-       "label": "communication interventriculaire résiduelle",
+       "label": "Communication interventriculaire résiduelle ou récidivante post-procédurale",
        "code": "CP-2019-IC-17"
       },
       {
-       "label": "régurgitation de la valve aortique",
+       "label": "Régurgitation aortique après lésion valvulaire pendant le cathétérisme",
        "code": "CP-2019-IC-20"
       },
       {
-       "label": "régurgitation de la valve mitrale",
+       "label": "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme",
        "code": "CP-2019-IC-22"
       },
       {
-       "label": "dysfonction de la prothèse valvulaire cardiaque",
+       "label": "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme",
        "code": "CP-2019-IC-19"
       },
       {
-       "label": "régurgitation de la valve pulmonaire",
+       "label": "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme",
        "code": "CP-2019-IC-21"
       },
       {
-       "label": "régurgitation de la valvule tricuspide",
+       "label": "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme",
        "code": "CP-2019-IC-23"
       },
       {
-       "label": "pseudoanévrisme au site d'abord",
+       "label": "Pseudoanévrisme au site d'abord",
        "code": "CP-2019-IC-25"
       },
       {
-       "label": "dissection artérielle",
+       "label": "Dissection artérielle au site d'abord",
        "code": "CP-2019-IC-30"
       },
       {
-       "label": "extravasation de produit de contraste intraveineux",
+       "label": "Extravasation de produit de contraste",
        "code": "CP-2019-IC-29"
       },
       {
-       "label": "fistule artérioveineuse",
+       "label": "Fistule artérioveineuse au site d'abord",
        "code": "CP-2019-IC-31"
       },
       {
-       "label": "perforation d'une artère",
+       "label": "Perforation artérielle au site d'abord",
        "code": "CP-2019-IC-27"
       },
       {
-       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "label": "Embolisation (délogement) d'un coil introduit par cathéter",
        "code": "CP-2019-IC-11"
       },
       {
@@ -6884,11 +7754,184 @@ window.TAUSSIG_COVERAGE = {
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
-     "n": null,
+     "n": 43,
      "total": 43,
-     "niveau": "non_evalue",
-     "entries": [],
-     "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
+     "niveau": "plein",
+     "entries": [
+      {
+       "label": "Absence de complication post-procédurale",
+       "code": "TAUSSIG-AE-0001"
+      },
+      {
+       "label": "Complication liée à une intervention",
+       "code": "TAUSSIG-AE-0002"
+      },
+      {
+       "label": "Arrêt cardiaque pendant l'intervention",
+       "code": "TAUSSIG-AE-0003"
+      },
+      {
+       "label": "Fibrillation atriale",
+       "code": "TAUSSIG-AE-0004"
+      },
+      {
+       "label": "Flutter atrial",
+       "code": "TAUSSIG-AE-0005"
+      },
+      {
+       "label": "Trouble du rythme post-procédural",
+       "code": "TAUSSIG-AE-0006"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet acquis",
+       "code": "TAUSSIG-AE-0007"
+      },
+      {
+       "label": "Tachycardie jonctionnelle ectopique post-procédurale",
+       "code": "TAUSSIG-AE-0008"
+      },
+      {
+       "label": "Tachycardie ventriculaire",
+       "code": "TAUSSIG-AE-0009"
+      },
+      {
+       "label": "Arythmie nécessitant l'implantation d'un stimulateur",
+       "code": "TAUSSIG-AE-0010"
+      },
+      {
+       "label": "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0011"
+      },
+      {
+       "label": "Tamponnade cardiaque post-procédurale",
+       "code": "TAUSSIG-AE-0012"
+      },
+      {
+       "label": "Décès peropératoire",
+       "code": "TAUSSIG-AE-0013"
+      },
+      {
+       "label": "Communication interatriale résiduelle ou récidivante post-procédurale",
+       "code": "TAUSSIG-AE-0014"
+      },
+      {
+       "label": "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0015"
+      },
+      {
+       "label": "Dysfonction de dispositif (complication de cathétérisme)",
+       "code": "TAUSSIG-AE-0016"
+      },
+      {
+       "label": "Corps étranger intracardiaque post-procédural",
+       "code": "TAUSSIG-AE-0017"
+      },
+      {
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+       "code": "TAUSSIG-AE-0018"
+      },
+      {
+       "label": "Perméabilité résiduelle du canal artériel post-procédurale",
+       "code": "TAUSSIG-AE-0019"
+      },
+      {
+       "label": "Communication interventriculaire résiduelle ou récidivante post-procédurale",
+       "code": "TAUSSIG-AE-0020"
+      },
+      {
+       "label": "Communication interatriale résiduelle",
+       "code": "TAUSSIG-AE-0021"
+      },
+      {
+       "label": "Régurgitation aortique après lésion valvulaire pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0022"
+      },
+      {
+       "label": "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0023"
+      },
+      {
+       "label": "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0024"
+      },
+      {
+       "label": "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0025"
+      },
+      {
+       "label": "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0026"
+      },
+      {
+       "label": "Perte du pouls après cathétérisme",
+       "code": "TAUSSIG-AE-0027"
+      },
+      {
+       "label": "Pseudoanévrisme au site d'abord",
+       "code": "TAUSSIG-AE-0028"
+      },
+      {
+       "label": "Dissection artérielle au site d'abord",
+       "code": "TAUSSIG-AE-0029"
+      },
+      {
+       "label": "Extravasation de produit de contraste",
+       "code": "TAUSSIG-AE-0030"
+      },
+      {
+       "label": "Fistule artérioveineuse au site d'abord",
+       "code": "TAUSSIG-AE-0031"
+      },
+      {
+       "label": "Perforation artérielle au site d'abord",
+       "code": "TAUSSIG-AE-0032"
+      },
+      {
+       "label": "Problème d'équipement pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0033"
+      },
+      {
+       "label": "Embolisation d'un stent",
+       "code": "TAUSSIG-AE-0034"
+      },
+      {
+       "label": "Rupture d'un conduit ou d'un vaisseau après implantation de stent",
+       "code": "TAUSSIG-AE-0035"
+      },
+      {
+       "label": "Compression coronaire après implantation de dispositif transluminal",
+       "code": "TAUSSIG-AE-0036"
+      },
+      {
+       "label": "Stent laissé déployé en position non prévue après migration ou embolisation",
+       "code": "TAUSSIG-AE-0037"
+      },
+      {
+       "label": "Dysfonction de dispositif pendant le cathétérisme",
+       "code": "TAUSSIG-AE-0038"
+      },
+      {
+       "label": "Embolisation (délogement) d'un coil introduit par cathéter",
+       "code": "TAUSSIG-AE-0039"
+      },
+      {
+       "label": "Thrombose vasculaire ou de conduit post-procédurale",
+       "code": "TAUSSIG-AE-0040"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "TAUSSIG-AE-0041"
+      },
+      {
+       "label": "Anévrisme aortique post-procédural",
+       "code": "TAUSSIG-AE-0042"
+      },
+      {
+       "label": "Anévrisme de l'aorte au site de coarctation après intervention",
+       "code": "TAUSSIG-AE-0043"
+      }
+     ],
+     "note": ""
     }
    }
   },

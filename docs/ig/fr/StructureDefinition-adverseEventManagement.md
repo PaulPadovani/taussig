@@ -1,4 +1,4 @@
-# Prise en charge de l'EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Prise en charge de l'EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Prise en charge de l'EI (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-adverseEventMan
   "resourceType" : "StructureDefinition",
   "id" : "adverseEventManagement",
   "url" : "https://taussig/fhir/StructureDefinition/adverseEventManagement",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "AdverseEventManagement",
   "title" : "Prise en charge de l'EI",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Action de prise en charge de l'événement indésirable pendant le cathétérisme.",
   "jurisdiction" : [{

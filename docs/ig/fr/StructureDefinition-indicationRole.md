@@ -1,4 +1,4 @@
-# Rôle de l'indication - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Rôle de l'indication - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Rôle de l'indication (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-indicationRole.
   "resourceType" : "StructureDefinition",
   "id" : "indicationRole",
   "url" : "https://taussig/fhir/StructureDefinition/indicationRole",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "IndicationRole",
   "title" : "Rôle de l'indication",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rôle d'une condition évolutive comme indication d'un cathétérisme.",
   "jurisdiction" : [{

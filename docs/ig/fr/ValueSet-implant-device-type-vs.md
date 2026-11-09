@@ -1,4 +1,4 @@
-# TAUSSIG — Types d'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Types d'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Types d'implant (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "implant-device-type-vs",
   "url" : "https://taussig/fhir/ValueSet/implant-device-type-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ImplantDeviceTypeVS",
   "title" : "TAUSSIG — Types d'implant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Types d'implant » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

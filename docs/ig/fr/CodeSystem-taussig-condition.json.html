@@ -1,0 +1,1595 @@
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TAUSSIG — Conditions cardiaques évolutives - JSON Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.114"}
+    h3,h4,h5,h6{--heading-prefix:"4.114"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.8.1 - trial-use
+
+
+
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — Conditions cardiaques évolutives</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-format -->
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-taussig-condition.html">Contenu narratif</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-taussig-condition.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-taussig-condition.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+
+<h2 id="root">: TAUSSIG — Conditions cardiaques évolutives</h2>
+
+  <table class="colsd" data-fhir="generated">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+
+            à date du 
+2026-11-09
+
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-taussig-condition.json" no-download="true">json brut</a> | <a href="CodeSystem-taussig-condition.json" download>Télécharger</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "taussig-condition",
+  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.language">language</a>" : "fr",
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;fr\&quot; xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; lang=\&quot;fr\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CodeSystem taussig-condition&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;taussig-condition\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctaussig-condition\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Langue : fr&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Propriétés&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Cette terminologie de référence (CodeSystem) définit les propriétés suivantes pour ses concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Nom&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ipccc-origin&lt;/td&gt;&lt;td&gt;ipccc-origin&lt;/td&gt;&lt;td&gt;Coding&lt;/td&gt;&lt;td&gt;Code IPCCC dont le concept est issu.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://taussig/fhir/CodeSystem/taussig-condition&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Affichage&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ipccc-origin&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0001&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0001\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Création/agrandissement de communication interatriale&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0002&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0002\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cerclage de l'artère pulmonaire&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0003&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0003\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0004&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0004\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Intervention de Norwood&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0005&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0005\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0006&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0006\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0007&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0007\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anastomose cavopulmonaire bidirectionnelle bilatérale&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0008&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0008\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fontan (TCPC), conduit extracardiaque, fenestré&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0009&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0009\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fontan (TCPC), conduit extracardiaque, non fenestré&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0010&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0010\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fontan (TCPC), tunnel latéral, fenestré&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0011&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fontan (TCPC), tunnel latéral, non fenestré&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0012&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0012\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Réparation à un ventricule et demi&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0013&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0013\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Palliation, autre&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0014&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0014\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Endocardite infectieuse&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.06.01}\&quot;&gt;Infective endocarditis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0015&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0015\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anomalie acquise de la veine cave supérieure&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.31.01}\&quot;&gt;Acquired superior caval vein (SVC) abnormality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0016&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0016\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anomalie acquise de la veine cave inférieure&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.31.21}\&quot;&gt;Acquired inferior caval vein (IVC) abnormality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0017&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0017\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anomalie acquise du sinus coronaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.30.16}\&quot;&gt;Acquired coronary sinus abnormality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0018&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0018\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anomalie acquise des veines pulmonaires&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.24.00}\&quot;&gt;Acquired pulmonary venous abnormality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0019&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0019\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anomalie acquise de l'oreillette droite&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.10.10}\&quot;&gt;Acquired right atrial abnormality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0020&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0020\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anomalie acquise de l'oreillette gauche&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.10.20}\&quot;&gt;Acquired left atrial abnormality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0021&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0021\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Communication interatriale résiduelle (CIA)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.10.63}\&quot;&gt;Residual interatrial communication ('ASD')&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0022&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0022\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation tricuspide résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.11.03}\&quot;&gt;Residual tricuspid regurgitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0023&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0023\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose mitrale résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.12.01}\&quot;&gt;Residual mitral stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0024&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0024\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation mitrale résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.12.03}\&quot;&gt;Residual mitral regurgitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0025&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0025\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation troncale résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.25.03}\&quot;&gt;Residual truncal regurgitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0026&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0026\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose valvulaire pulmonaire résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.30.01}\&quot;&gt;Residual pulmonary valvar stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0027&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0027\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation pulmonaire résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.30.03}\&quot;&gt;Residual pulmonary regurgitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0028&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0028\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose de la néovalve pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.30.09}\&quot;&gt;Neopulmonary valvar stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0029&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0029\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation de la néovalve pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.30.10}\&quot;&gt;Neopulmonary valvar regurgitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0030&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0030\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose valvulaire aortique résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.35.01}\&quot;&gt;Residual aortic valvar stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0031&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0031\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation aortique résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.35.03}\&quot;&gt;Residual aortic regurgitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0032&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0032\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose de la néovalve aortique d'origine pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.35.09}\&quot;&gt;Stenosis of the neo-aortic valve of pulmonary origin&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0033&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0033\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation de la néovalve aortique d'origine pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.35.10}\&quot;&gt;Regurgitation of the neo-aortic valve of pulmonary origin&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0034&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0034\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose acquise de la néovalve aortique d'origine troncale&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.25.12}\&quot;&gt;Acquired stenosis of the neo-aortic valve of truncal origin&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0035&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0035\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation acquise de la néovalve aortique d'origine troncale&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.25.13}\&quot;&gt;Acquired regurgitation of the neo-aortic valve of truncal origin&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0036&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0036\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Composante ventriculaire résiduelle de canal atrioventriculaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.16.02}\&quot;&gt;Residual ventricular component of atrioventricular septal defect&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0037&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0037\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Régurgitation résiduelle de la valve atrioventriculaire commune&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.13.02}\&quot;&gt;Residual common atrioventricular valvar regurgitation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0038&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0038\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.34.56}\&quot;&gt;Acquired stenosis of the common atrioventricular valve in biventricular connections&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0039&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0039\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation ventriculaire droite acquise&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.22}\&quot;&gt;Acquired right ventricular dilation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0040&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0040\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypertrophie ventriculaire droite acquise&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.23}\&quot;&gt;Acquired right ventricular hypertrophy&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0041&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0041\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anévrisme ventriculaire droit acquis&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.02}\&quot;&gt;Acquired right ventricular aneurysm&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0042&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0042\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dysfonction ventriculaire droite&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 07.01.11}\&quot;&gt;Right ventricular dysfunction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0043&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0043\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Obstruction résiduelle de la voie d'éjection du ventricule droit&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.20.23}\&quot;&gt;Residual right ventricular outflow tract obstruction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0044&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0044\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation ventriculaire gauche acquise&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.76}\&quot;&gt;Acquired left ventricular dilation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0045&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0045\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypertrophie ventriculaire gauche acquise&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.77}\&quot;&gt;Acquired left ventricular hypertrophy&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0046&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0046\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anévrisme ventriculaire gauche acquis&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.42}\&quot;&gt;Acquired left ventricular aneurysm&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0047&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0047\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Défaillance ventriculaire gauche&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.47}\&quot;&gt;Left ventricular failure&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0048&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0048\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complication post-procédurale de la voie d'éjection du ventricule gauche&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.21.21}\&quot;&gt;Postprocedural left ventricular outflow tract complication&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0049&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0049\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose sous-aortique acquise&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.86}\&quot;&gt;Acquired subaortic stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0050&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0050\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose sous-pulmonaire acquise&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.16.88}\&quot;&gt;Acquired subpulmonary stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0051&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0051\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Communication interventriculaire résiduelle (CIV)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.22.02}\&quot;&gt;Residual ventricular septal defect (VSD)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0052&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0052\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiomyopathie restrictive&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.10.10}\&quot;&gt;Restrictive cardiomyopathy&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0053&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0053\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anomalie acquise de l'arbre artériel pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.13.59}\&quot;&gt;Acquired pulmonary arterial tree abnormality&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0054&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0054\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose post-procédurale du tronc de l'artère pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.32.02}\&quot;&gt;Postprocedural pulmonary trunk stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0055&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0055\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose résiduelle de l'artère pulmonaire droite&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.32.23}\&quot;&gt;Residual right pulmonary artery stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0056&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0056\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose résiduelle de l'artère pulmonaire gauche&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.32.43}\&quot;&gt;Residual left pulmonary artery stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0057&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0057\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hypertension artérielle pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.13.01}\&quot;&gt;Pulmonary arterial hypertension&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0058&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0058\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Embolie pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.13.51}\&quot;&gt;Pulmonary embolism&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0059&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0059\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose aortique supravalvulaire acquise&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.14.77}\&quot;&gt;Acquired supravalvar aortic stenosis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0060&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0060\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation acquise de l'aorte ascendante et/ou de la racine aortique&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.14.82}\&quot;&gt;Acquired dilation of ascending aorta and/or aortic root&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0061&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0061\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dilatation de la racine aortique&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 09.16.13}\&quot;&gt;Aortic root dilation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0062&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0062\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dissection aortique&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.14.51}\&quot;&gt;Aortic dissection&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0063&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0063\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anévrisme aortique&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.14.50}\&quot;&gt;Aortic aneurysm&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0064&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0064\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Coarctation aortique résiduelle&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.37.05}\&quot;&gt;Residual aortic coarctation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0065&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0065\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complication coronaire post-procédurale&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.41.00}\&quot;&gt;Postprocedural coronary arterial complication&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0066&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0066\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Persistance résiduelle du canal artériel (PDA)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.39.02}\&quot;&gt;Residual arterial duct (PDA) patency&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0067&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0067\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complication liée à un conduit cardiaque&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.55.00}\&quot;&gt;Cardiac conduit related complication&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0068&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0068\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Obstruction d'anastomose systémico-pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.56.27}\&quot;&gt;Systemic-to-pulmonary arterial shunt obstruction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0069&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0069\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Obstruction partielle d'anastomose systémico-pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.56.01}\&quot;&gt;Systemic-to-pulmonary arterial shunt partial obstruction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0070&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0070\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Obstruction complète d'anastomose systémico-pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.56.02}\&quot;&gt;Systemic-to-pulmonary arterial shunt complete obstruction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0071&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0071\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Défaillance d'autogreffe pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.55.24}\&quot;&gt;Pulmonary autograft failure&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0072&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0072\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Circulation de Fontan défaillante&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.90.60}\&quot;&gt;'Failed' Fontan type circulation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0073&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0073\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Épanchement péricardique&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.08.31}\&quot;&gt;Pericardial effusion&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0074&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0074\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Complication après transplantation cardiaque ou pulmonaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.95.00}\&quot;&gt;Complication after heart or lung transplant&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0075&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0075\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sténose acquise des veines pulmonaires&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.24.02}\&quot;&gt;Pulmonary venous stenosis: acquired&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0076&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0076\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Obstruction d'une veine systémique&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.30.09}\&quot;&gt;Systemic vein obstruction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0077&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0077\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Collatérale(s) veino-veineuse(s) systémique(s)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 04.00.06}\&quot;&gt;Systemic venovenous collateral(s)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0078&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0078\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.13.74}\&quot;&gt;Systemic-to-pulmonary collateral artery(ies) (MAPCA): acquired&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0079&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0079\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fistules (malformations) artérioveineuses pulmonaires acquises&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.13.57}\&quot;&gt;Acquired pulmonary arteriovenous fistulas (malformations)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0080&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0080\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiomyopathie dilatée&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.10.25}\&quot;&gt;Dilated cardiomyopathy&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0081&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0081\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiomyopathie hypertrophique&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.10.20}\&quot;&gt;Hypertrophic cardiomyopathy&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0082&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0082\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiomyopathie hypertrophique obstructive du ventricule gauche&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.10.05}\&quot;&gt;Obstructive hypertrophic cardiomyopathy of left ventricle&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0083&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0083\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Myocardite (cardiomyopathie inflammatoire)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.07.90}\&quot;&gt;Myocarditis (inflammatory cardiomyopathy)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0084&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0084\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maladie de Kawasaki&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.09.01}\&quot;&gt;Kawasaki disease&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0085&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0085\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Infarctus du myocarde&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.18.00}\&quot;&gt;Myocardial infarction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0086&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0086\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;État après transplantation cardiaque&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.21.63}\&quot;&gt;Patient status post heart transplant&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0087&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0087\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maladie vasculaire pulmonaire irréversible&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.13.00}\&quot;&gt;Irreversible pulmonary vascular disease&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0088&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0088\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.13.08}\&quot;&gt;Irreversible pulmonary vascular disease due to congenital heart disease (Eisenmenger Syndrome)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0089&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0089\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trouble du rythme cardiaque&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.00.00}\&quot;&gt;Arrhythmia&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0090&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0090\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fibrillation atriale&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.03.08}\&quot;&gt;Atrial fibrillation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0091&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0091\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Flutter atrial&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.03.07}\&quot;&gt;Atrial flutter&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0092&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0092\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trouble du rythme atrial&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.03.09}\&quot;&gt;Atrial rhythm disturbance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0093&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0093\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trouble du rythme de la jonction atrioventriculaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.04.00}\&quot;&gt;Rhythm disturbance at level of atrioventricular junction&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0094&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0094\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trouble du rythme ventriculaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.05.00}\&quot;&gt;Ventricular rhythm disturbance&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0095&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0095\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.07.01}\&quot;&gt;Atrioventricular reentry (reciprocating) tachycardia: manifest preexcitation in sinus rhythm (Wolff Parkinson White)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0096&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0096\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bloc atrioventriculaire&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.06.38}\&quot;&gt;Atrioventricular block&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0097&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0097\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bloc atrioventriculaire complet acquis&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.06.10}\&quot;&gt;Acquired complete atrioventricular block&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0098&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0098\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indication de remplacement programmé d'un stimulateur cardiaque&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 11.12.61}\&quot;&gt;Indication for elective replacement of pacemaker system&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0099&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0099\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Entéropathie exsudative post-procédurale&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.82.33}\&quot;&gt;Cardiac postprocedural protein losing enteropathy&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0100&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0100\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bronchite plastique post-procédurale&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.81.01}\&quot;&gt;Cardiac postprocedural plastic bronchitis&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0101&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0101\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chylothorax&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 10.08.16}\&quot;&gt;Chylothorax&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0102&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0102\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.51.47}\&quot;&gt;Embolisation of cardiovascular device during cardiac catheterisation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0103&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0103\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.51.50}\&quot;&gt;Device malfunction during cardiac catheterisation procedure&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0104&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0104\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.50.03}\&quot;&gt;Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0105&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0105\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Corps étranger intracardiaque post-procédural&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.80.17}\&quot;&gt;Postprocedural retained foreign body&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0106&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0106\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.50.37}\&quot;&gt;Embolisation of catheter introduced device&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TAUSSIG-COND-0107&lt;a name=\&quot;taussig-condition-TAUSSIG-COND-0107\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hémorragie post-procédurale&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;CodeSystem-ipccc.html\&quot; title=\&quot;{https://taussig/fhir/CodeSystem/ipccc 15.02.00}\&quot;&gt;Postprocedural haemorrhage&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://taussig/fhir/CodeSystem/taussig-condition",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.8.1",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "TaussigCondition",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "TAUSSIG — Conditions cardiaques évolutives",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-11-09T15:30:29+01:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Projet TAUSSIG",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Terminologie d'interface TAUSSIG : 107 concepts (conditions cardiaques évolutives) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes IPCCC, CIM-10, ECHSA sont déduits par les ConceptMaps taussig-condition-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3).",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "FR"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 107,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "ipccc-origin",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "Code IPCCC dont le concept est issu.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "Coding"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0001",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Création/agrandissement de communication interatriale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0002",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cerclage de l'artère pulmonaire"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0003",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0004",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Intervention de Norwood"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0005",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0006",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0007",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anastomose cavopulmonaire bidirectionnelle bilatérale"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0008",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fontan (TCPC), conduit extracardiaque, fenestré"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0009",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fontan (TCPC), conduit extracardiaque, non fenestré"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0010",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fontan (TCPC), tunnel latéral, fenestré"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0011",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fontan (TCPC), tunnel latéral, non fenestré"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0012",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Réparation à un ventricule et demi"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0013",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Palliation, autre"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0014",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Endocardite infectieuse",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.06.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0015",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anomalie acquise de la veine cave supérieure",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.31.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0016",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anomalie acquise de la veine cave inférieure",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.31.21"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0017",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anomalie acquise du sinus coronaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.30.16"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0018",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anomalie acquise des veines pulmonaires",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.24.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0019",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anomalie acquise de l'oreillette droite",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.10.10"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0020",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anomalie acquise de l'oreillette gauche",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.10.20"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0021",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Communication interatriale résiduelle (CIA)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.10.63"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0022",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation tricuspide résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.11.03"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0023",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose mitrale résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.12.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0024",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation mitrale résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.12.03"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0025",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation troncale résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.25.03"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0026",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose valvulaire pulmonaire résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.30.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0027",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation pulmonaire résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.30.03"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0028",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose de la néovalve pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.30.09"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0029",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation de la néovalve pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.30.10"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0030",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose valvulaire aortique résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.35.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0031",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation aortique résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.35.03"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0032",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose de la néovalve aortique d'origine pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.35.09"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0033",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation de la néovalve aortique d'origine pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.35.10"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0034",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose acquise de la néovalve aortique d'origine troncale",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.25.12"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0035",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation acquise de la néovalve aortique d'origine troncale",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.25.13"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0036",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Composante ventriculaire résiduelle de canal atrioventriculaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.16.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0037",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Régurgitation résiduelle de la valve atrioventriculaire commune",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.13.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0038",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.34.56"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0039",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation ventriculaire droite acquise",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.22"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0040",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hypertrophie ventriculaire droite acquise",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.23"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0041",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anévrisme ventriculaire droit acquis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0042",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dysfonction ventriculaire droite",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "07.01.11"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0043",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Obstruction résiduelle de la voie d'éjection du ventricule droit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.20.23"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0044",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation ventriculaire gauche acquise",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.76"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0045",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hypertrophie ventriculaire gauche acquise",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.77"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0046",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anévrisme ventriculaire gauche acquis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.42"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0047",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Défaillance ventriculaire gauche",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.47"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0048",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Complication post-procédurale de la voie d'éjection du ventricule gauche",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.21.21"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0049",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose sous-aortique acquise",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.86"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0050",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose sous-pulmonaire acquise",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.16.88"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0051",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Communication interventriculaire résiduelle (CIV)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.22.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0052",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiomyopathie restrictive",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.10.10"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0053",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anomalie acquise de l'arbre artériel pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.13.59"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0054",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose post-procédurale du tronc de l'artère pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.32.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0055",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose résiduelle de l'artère pulmonaire droite",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.32.23"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0056",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose résiduelle de l'artère pulmonaire gauche",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.32.43"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0057",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hypertension artérielle pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.13.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0058",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Embolie pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.13.51"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0059",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose aortique supravalvulaire acquise",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.14.77"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0060",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation acquise de l'aorte ascendante et/ou de la racine aortique",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.14.82"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0061",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dilatation de la racine aortique",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "09.16.13"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0062",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dissection aortique",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.14.51"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0063",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Anévrisme aortique",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.14.50"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0064",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Coarctation aortique résiduelle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.37.05"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0065",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Complication coronaire post-procédurale",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.41.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0066",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Persistance résiduelle du canal artériel (PDA)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.39.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0067",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Complication liée à un conduit cardiaque",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.55.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0068",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Obstruction d'anastomose systémico-pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.56.27"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0069",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Obstruction partielle d'anastomose systémico-pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.56.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0070",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Obstruction complète d'anastomose systémico-pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.56.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0071",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Défaillance d'autogreffe pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.55.24"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0072",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Circulation de Fontan défaillante",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.90.60"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0073",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Épanchement péricardique",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.08.31"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0074",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Complication après transplantation cardiaque ou pulmonaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.95.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0075",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sténose acquise des veines pulmonaires",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.24.02"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0076",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Obstruction d'une veine systémique",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.30.09"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0077",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Collatérale(s) veino-veineuse(s) systémique(s)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "04.00.06"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0078",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.13.74"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0079",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fistules (malformations) artérioveineuses pulmonaires acquises",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.13.57"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0080",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiomyopathie dilatée",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.10.25"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0081",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiomyopathie hypertrophique",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.10.20"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0082",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cardiomyopathie hypertrophique obstructive du ventricule gauche",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.10.05"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0083",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Myocardite (cardiomyopathie inflammatoire)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.07.90"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0084",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maladie de Kawasaki",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.09.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0085",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Infarctus du myocarde",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.18.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0086",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "État après transplantation cardiaque",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.21.63"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0087",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maladie vasculaire pulmonaire irréversible",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.13.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0088",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.13.08"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0089",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trouble du rythme cardiaque",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.00.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0090",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fibrillation atriale",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.03.08"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0091",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Flutter atrial",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.03.07"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0092",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trouble du rythme atrial",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.03.09"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0093",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trouble du rythme de la jonction atrioventriculaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.04.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0094",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Trouble du rythme ventriculaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.05.00"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0095",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.07.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0096",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bloc atrioventriculaire",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.06.38"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0097",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bloc atrioventriculaire complet acquis",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.06.10"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0098",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Indication de remplacement programmé d'un stimulateur cardiaque",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11.12.61"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0099",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Entéropathie exsudative post-procédurale",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.82.33"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0100",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Bronchite plastique post-procédurale",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.81.01"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0101",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Chylothorax",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "10.08.16"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0102",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.51.47"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0103",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.51.50"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0104",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.50.03"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0105",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Corps étranger intracardiaque post-procédural",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.80.17"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0106",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.50.37"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TAUSSIG-COND-0107",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Hémorragie post-procédurale",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "ipccc-origin",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/ipccc",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "15.02.00"
+          }
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.8.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-11-09 15:30:00 +0100">
+    2026-11-09
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -6,7 +6,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Profils et extensions - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
+    <title>Profils et extensions - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,7 +57,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.8.0 - trial-use
+            <span style="display:inline-block;">0.8.1 - trial-use
 
 
 
@@ -136,7 +136,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Profils et extensions</h2>
   
 
@@ -190,11 +190,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><a href="StructureDefinition-taussig-cardiac-condition-profile.html">TAUSSIG — Condition cardiaque évolutive</a></td>
-      <td>Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance.</td>
+      <td>Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Concept TAUSSIG saisi (taussig-condition) ; IPCCC, CIM-10 et ECHSA en sont déduits (0.8.1). Type (residual/acquired/post_surgical) = choix clinicien d'instance.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-taussig-cardiac-diagnosis.html">TAUSSIG — Diagnostic cardiaque congénital</a></td>
-      <td>Diagnostic congénital (substrat figé). Double codage CIM-11 (classification, primaire) + IPCCC (précision clinique) ; CIM-10 dérivé, ECHSA optionnel. Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded.</td>
+      <td>Diagnostic congénital (substrat figé). Concept TAUSSIG saisi (taussig-diagnosis) ; CIM-11, IPCCC, CIM-10 et ECHSA en sont déduits par les ConceptMaps taussig-diagnosis-to-* (0.8.1). Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded.</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-taussig-procedure-exposure-observation.html">TAUSSIG — Exposition et contraste de procédure</a></td>
@@ -246,7 +246,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><a href="StructureDefinition-taussig-genetic-syndrome-profile.html">TAUSSIG — Syndrome génétique (covariable de contexte)</a></td>
-      <td>Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé.</td>
+      <td>Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). OrphaCode saisi ; CIM-11, CIM-10 et ECHSA déduits par les ConceptMaps genetic-syndrome-to-* (relations Orphanet validées).</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-taussig-care-episode.html">TAUSSIG — Épisode de soins</a></td>
@@ -254,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><a href="StructureDefinition-taussig-adverse-event.html">TAUSSIG — Événement indésirable</a></td>
-      <td>Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution &amp; prise en charge en extensions (réalisation R4).</td>
+      <td>Complication péri-procédurale. Concept TAUSSIG saisi (taussig-adverse-event) ; IPCCC, CIM-10, SNOMED et ECHSA en sont déduits (0.8.1) ; gravité 1-5 selon échelle validée (extensions) ; attribution &amp; prise en charge en extensions (réalisation R4).</td>
     </tr>
   </tbody>
 </table>
@@ -406,9 +406,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-11-09 08:39:00 +0100">
+  <span title="2026-11-09 15:30:00 +0100">
     2026-11-09
   </span>
 

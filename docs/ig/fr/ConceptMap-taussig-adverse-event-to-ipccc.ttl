@@ -1,0 +1,481 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-adverse-event-to-ipccc> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-adverse-event-to-ipccc"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts taussig-adverse-event-to-ipccc</b></p><a name=\"taussig-adverse-event-to-ipccc\"> </a><a name=\"hctaussig-adverse-event-to-ipccc\"> </a><p>Mapping de <a href=\"ValueSet-taussig-adverse-event.html\">TAUSSIG — Liste des complications</a> vers (non spécifié)</p><br/><p>Mapping de <a href=\"CodeSystem-taussig-adverse-event.html\">TAUSSIG — Complications</a> to <a href=\"CodeSystem-ipccc.html\">IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>TAUSSIG-AE-0001 (Absence de complication post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.90.03 (No postprocedural complications)</td><td/></tr><tr><td>TAUSSIG-AE-0002 (Complication liée à une intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.90.14 (Procedure related complication)</td><td/></tr><tr><td>TAUSSIG-AE-0003 (Arrêt cardiaque pendant l'intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.00.01 (Cardiac arrest during procedure)</td><td/></tr><tr><td>TAUSSIG-AE-0004 (Fibrillation atriale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11.03.08 (Atrial fibrillation)</td><td/></tr><tr><td>TAUSSIG-AE-0005 (Flutter atrial)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11.03.07 (Atrial flutter)</td><td/></tr><tr><td>TAUSSIG-AE-0006 (Trouble du rythme post-procédural)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>11.00.00 (Arrhythmia)</td><td>trouble du rythme sans précision post-procédurale</td></tr><tr><td>TAUSSIG-AE-0007 (Bloc atrioventriculaire complet acquis)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11.06.10 (Acquired complete atrioventricular block)</td><td/></tr><tr><td>TAUSSIG-AE-0008 (Tachycardie jonctionnelle ectopique post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11.04.12 (Junctional ectopic tachycardia (His bundle): post-op)</td><td/></tr><tr><td>TAUSSIG-AE-0009 (Tachycardie ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11.05.06 (Ventricular tachycardia)</td><td/></tr><tr><td>TAUSSIG-AE-0010 (Arythmie nécessitant l'implantation d'un stimulateur)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.60.06 (Procedure related non-heart block arrhythmia requiring permanent pacemaker system)</td><td/></tr><tr><td>TAUSSIG-AE-0011 (Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.03 (Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation)</td><td/></tr><tr><td>TAUSSIG-AE-0012 (Tamponnade cardiaque post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.83.14 (Postprocedural cardiac tamponade)</td><td/></tr><tr><td>TAUSSIG-AE-0013 (Décès peropératoire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>12.33.31 (Intraoperative death)</td><td/></tr><tr><td>TAUSSIG-AE-0014 (Communication interatriale résiduelle ou récidivante post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.10.72 (Postprocedural residual or recurrent interatrial communication ('ASD'))</td><td/></tr><tr><td>TAUSSIG-AE-0015 (Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.51.47 (Embolisation of cardiovascular device during cardiac catheterisation)</td><td/></tr><tr><td>TAUSSIG-AE-0016 (Dysfonction de dispositif (complication de cathétérisme))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.51.50 (Device malfunction during cardiac catheterisation procedure)</td><td/></tr><tr><td>TAUSSIG-AE-0017 (Corps étranger intracardiaque post-procédural)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.80.17 (Postprocedural retained foreign body)</td><td>corps étranger retenu, sans précision du site</td></tr><tr><td>TAUSSIG-AE-0018 (Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.37 (Embolisation of catheter introduced device)</td><td/></tr><tr><td>TAUSSIG-AE-0019 (Perméabilité résiduelle du canal artériel post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.39.05 (Postprocedural residual arterial duct (ductus arteriosus) patency)</td><td/></tr><tr><td>TAUSSIG-AE-0020 (Communication interventriculaire résiduelle ou récidivante post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.22.13 (Postprocedural residual or recurrent ventricular septal defect (VSD))</td><td/></tr><tr><td>TAUSSIG-AE-0021 (Communication interatriale résiduelle)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.10.63 (Residual interatrial communication ('ASD'))</td><td/></tr><tr><td>TAUSSIG-AE-0022 (Régurgitation aortique après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.20 (Traumatic damage to heart valve during cardiovascular catheterisation procedure)</td><td>lésion valvulaire traumatique, toute valve et toute conséquence</td></tr><tr><td>TAUSSIG-AE-0023 (Régurgitation mitrale après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.20 (Traumatic damage to heart valve during cardiovascular catheterisation procedure)</td><td>lésion valvulaire traumatique, toute valve et toute conséquence</td></tr><tr><td>TAUSSIG-AE-0024 (Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.20 (Traumatic damage to heart valve during cardiovascular catheterisation procedure)</td><td>lésion valvulaire traumatique</td></tr><tr><td>TAUSSIG-AE-0025 (Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.20 (Traumatic damage to heart valve during cardiovascular catheterisation procedure)</td><td>lésion valvulaire traumatique, toute valve et toute conséquence</td></tr><tr><td>TAUSSIG-AE-0026 (Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.20 (Traumatic damage to heart valve during cardiovascular catheterisation procedure)</td><td>lésion valvulaire traumatique, toute valve et toute conséquence</td></tr><tr><td>TAUSSIG-AE-0027 (Perte du pouls après cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.11 (Lost pulse after cardiac catheterisation)</td><td/></tr><tr><td>TAUSSIG-AE-0028 (Pseudoanévrisme au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.60.23 (Pseudo-aneurysm at access site for cardiovascular catheter procedure)</td><td/></tr><tr><td>TAUSSIG-AE-0029 (Dissection artérielle au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.19 (Local complication at access site of cardiac catheterisation)</td><td>complication locale au site d'abord, toute nature</td></tr><tr><td>TAUSSIG-AE-0030 (Extravasation de produit de contraste)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>15.50.19 (Local complication at access site of cardiac catheterisation)</td><td>l'extravasation n'est pas toujours au site d'abord</td></tr><tr><td>TAUSSIG-AE-0031 (Fistule artérioveineuse au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.19 (Local complication at access site of cardiac catheterisation)</td><td>complication locale au site d'abord, toute nature</td></tr><tr><td>TAUSSIG-AE-0032 (Perforation artérielle au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>15.50.19 (Local complication at access site of cardiac catheterisation)</td><td>complication locale au site d'abord, toute nature</td></tr><tr><td>TAUSSIG-AE-0033 (Problème d'équipement pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.30 (Equipment problem during cardiac catheterisation)</td><td/></tr><tr><td>TAUSSIG-AE-0034 (Embolisation d'un stent)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.71 (Embolisation of stent)</td><td/></tr><tr><td>TAUSSIG-AE-0035 (Rupture d'un conduit ou d'un vaisseau après implantation de stent)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.78 (Rupture of conduit or vessel following stent implantation)</td><td/></tr><tr><td>TAUSSIG-AE-0036 (Compression coronaire après implantation de dispositif transluminal)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.61 (Coronary arterial compression following transluminal device implantation)</td><td/></tr><tr><td>TAUSSIG-AE-0037 (Stent laissé déployé en position non prévue après migration ou embolisation)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.91 (Stent left expanded in unplanned site after migration or embolisation)</td><td/></tr><tr><td>TAUSSIG-AE-0039 (Embolisation (délogement) d'un coil introduit par cathéter)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.50.65 (Embolisation (dislodgement) of catheter introduced coil)</td><td/></tr><tr><td>TAUSSIG-AE-0040 (Thrombose vasculaire ou de conduit post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.00.21 (Postprocedural vascular or conduit thrombosis)</td><td/></tr><tr><td>TAUSSIG-AE-0041 (Hémorragie post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.02.00 (Postprocedural haemorrhage)</td><td/></tr><tr><td>TAUSSIG-AE-0042 (Anévrisme aortique post-procédural)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.37.80 (Postprocedural aortic aneurysm)</td><td/></tr><tr><td>TAUSSIG-AE-0043 (Anévrisme de l'aorte au site de coarctation après intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>15.37.07 (Postprocedural aneurysm of aorta at coarctation site)</td><td/></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://taussig/fhir/ConceptMap/taussig-adverse-event-to-ipccc"] ;
+  fhir:ConceptMap.version [ fhir:value "0.8.1"] ;
+  fhir:ConceptMap.name [ fhir:value "TaussigAdverseEventToIpccc"] ;
+  fhir:ConceptMap.title [ fhir:value "TAUSSIG — Complications vers IPCCC"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ConceptMap.description [ fhir:value "Correspondance des concepts TAUSSIG (complications) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://taussig/fhir/ValueSet/taussig-adverse-event" ;
+     fhir:link <https://taussig/fhir/ValueSet/taussig-adverse-event>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index -1 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://taussig/fhir/CodeSystem/taussig-adverse-event" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0001" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Absence de complication post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.90.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "No postprocedural complications" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0002" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Complication liée à une intervention" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.90.14" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Procedure related complication" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0003" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Arrêt cardiaque pendant l'intervention" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.00.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Cardiac arrest during procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0004" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fibrillation atriale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "11.03.08" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrial fibrillation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0005" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Flutter atrial" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "11.03.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrial flutter" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0006" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Trouble du rythme post-procédural" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "11.00.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "trouble du rythme sans précision post-procédurale" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0007" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Bloc atrioventriculaire complet acquis" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "11.06.10" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Acquired complete atrioventricular block" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0008" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tachycardie jonctionnelle ectopique post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "11.04.12" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Junctional ectopic tachycardia (His bundle): post-op" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0009" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tachycardie ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "11.05.06" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricular tachycardia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0010" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Arythmie nécessitant l'implantation d'un stimulateur" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.60.06" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Procedure related non-heart block arrhythmia requiring permanent pacemaker system" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0011" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0012" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tamponnade cardiaque post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.83.14" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural cardiac tamponade" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0013" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Décès peropératoire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "12.33.31" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Intraoperative death" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0014" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interatriale résiduelle ou récidivante post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.10.72" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural residual or recurrent interatrial communication ('ASD')" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0015" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.51.47" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Embolisation of cardiovascular device during cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0016" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysfonction de dispositif (complication de cathétérisme)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.51.50" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Device malfunction during cardiac catheterisation procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0017" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Corps étranger intracardiaque post-procédural" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.80.17" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural retained foreign body" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "corps étranger retenu, sans précision du site" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0018" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.37" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Embolisation of catheter introduced device" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0019" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Perméabilité résiduelle du canal artériel post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.39.05" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural residual arterial duct (ductus arteriosus) patency" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0020" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire résiduelle ou récidivante post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.22.13" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural residual or recurrent ventricular septal defect (VSD)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0021" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interatriale résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.10.63" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Residual interatrial communication ('ASD')" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0022" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation aortique après lésion valvulaire pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Traumatic damage to heart valve during cardiovascular catheterisation procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "lésion valvulaire traumatique, toute valve et toute conséquence" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0023" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Traumatic damage to heart valve during cardiovascular catheterisation procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "lésion valvulaire traumatique, toute valve et toute conséquence" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0024" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Traumatic damage to heart valve during cardiovascular catheterisation procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "lésion valvulaire traumatique" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0025" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Traumatic damage to heart valve during cardiovascular catheterisation procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "lésion valvulaire traumatique, toute valve et toute conséquence" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0026" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Traumatic damage to heart valve during cardiovascular catheterisation procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "lésion valvulaire traumatique, toute valve et toute conséquence" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0027" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Perte du pouls après cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.11" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Lost pulse after cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0028" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Pseudoanévrisme au site d'abord" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.60.23" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pseudo-aneurysm at access site for cardiovascular catheter procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0029" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dissection artérielle au site d'abord" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.19" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Local complication at access site of cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "complication locale au site d'abord, toute nature" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0030" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Extravasation de produit de contraste" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.19" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Local complication at access site of cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "l'extravasation n'est pas toujours au site d'abord" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0031" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fistule artérioveineuse au site d'abord" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.19" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Local complication at access site of cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "complication locale au site d'abord, toute nature" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0032" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Perforation artérielle au site d'abord" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.19" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Local complication at access site of cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "complication locale au site d'abord, toute nature" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0033" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Problème d'équipement pendant le cathétérisme" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.30" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Equipment problem during cardiac catheterisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0034" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Embolisation d'un stent" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.71" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Embolisation of stent" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0035" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Rupture d'un conduit ou d'un vaisseau après implantation de stent" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.78" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Rupture of conduit or vessel following stent implantation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0036" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Compression coronaire après implantation de dispositif transluminal" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.61" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Coronary arterial compression following transluminal device implantation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0037" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Stent laissé déployé en position non prévue après migration ou embolisation" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.91" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Stent left expanded in unplanned site after migration or embolisation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0039" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Embolisation (délogement) d'un coil introduit par cathéter" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.50.65" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Embolisation (dislodgement) of catheter introduced coil" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0040" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Thrombose vasculaire ou de conduit post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.00.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural vascular or conduit thrombosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0041" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Hémorragie post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.02.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural haemorrhage" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0042" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anévrisme aortique post-procédural" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.37.80" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural aortic aneurysm" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-AE-0043" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anévrisme de l'aorte au site de coarctation après intervention" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "15.37.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postprocedural aneurysm of aorta at coarctation site" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-adverse-event-to-ipccc.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

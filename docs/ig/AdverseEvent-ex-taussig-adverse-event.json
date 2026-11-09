@@ -10,7 +10,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : AdverseEvent ex-taussig-adverse-event</b></p><a name=\"ex-taussig-adverse-event\"> </a><a name=\"hcex-taussig-adverse-event\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-adverse-event.html\">TAUSSIG — Événement indésirable</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Échelle de gravité</b>: <a href=\"CodeSystem-severity-scale.html#severity-scale-bergersen_c3po\">TAUSSIG — Échelle de gravité d'un EI: bergersen_c3po</a> (Bergersen / C3PO)</p><p><b>Niveau de gravité (1-5)</b>: 1</p><p><b>Attribution de l'EI</b>: <a href=\"CodeSystem-ae-attribution.html#ae-attribution-device\">TAUSSIG — Attribution d'un EI: device</a> (Dispositif)</p><p><b>Prise en charge de l'EI</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/ae-management transcatheter_bailout}\">Geste de rattrapage transcathéter</span></p><p><b>Acte de survenue de l'EI</b>: <a href=\"Procedure-ex-taussig-catheterization.html\">Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques</a></p><p><b>actuality</b>: Potential Adverse Event</p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : AdverseEvent ex-taussig-adverse-event</b></p><a name=\"ex-taussig-adverse-event\"> </a><a name=\"hcex-taussig-adverse-event\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-adverse-event.html\">TAUSSIG — Événement indésirable</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Échelle de gravité</b>: <a href=\"CodeSystem-severity-scale.html#severity-scale-bergersen_c3po\">TAUSSIG — Échelle de gravité d'un EI: bergersen_c3po</a> (Bergersen / C3PO)</p><p><b>Niveau de gravité (1-5)</b>: 1</p><p><b>Attribution de l'EI</b>: <a href=\"CodeSystem-ae-attribution.html#ae-attribution-device\">TAUSSIG — Attribution d'un EI: device</a> (Dispositif)</p><p><b>Prise en charge de l'EI</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/ae-management transcatheter_bailout}\">Geste de rattrapage transcathéter</span></p><p><b>Acte de survenue de l'EI</b>: <a href=\"Procedure-ex-taussig-catheterization.html\">Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques</a></p><p><b>actuality</b>: Potential Adverse Event</p><p><b>event</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/taussig-adverse-event TAUSSIG-AE-0028}, {https://taussig/fhir/CodeSystem/ipccc 15.60.23}, {http://hl7.org/fhir/sid/icd-10 T81.7}, {http://snomed.info/sct 1162761001}, {https://taussig/fhir/CodeSystem/echsa CP-2019-IC-25}\">Pseudoanévrisme au site d'abord</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
   },
   "extension" : [{
     "url" : "https://taussig/fhir/StructureDefinition/severityScale",
@@ -46,6 +46,28 @@
     }
   }],
   "actuality" : "potential",
+  "event" : {
+    "coding" : [{
+      "system" : "https://taussig/fhir/CodeSystem/taussig-adverse-event",
+      "code" : "TAUSSIG-AE-0028"
+    },
+    {
+      "system" : "https://taussig/fhir/CodeSystem/ipccc",
+      "code" : "15.60.23"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "T81.7"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1162761001"
+    },
+    {
+      "system" : "https://taussig/fhir/CodeSystem/echsa",
+      "code" : "CP-2019-IC-25"
+    }]
+  },
   "subject" : {
     "reference" : "Patient/ex-taussig-patient"
   }

@@ -1,4 +1,4 @@
-# TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Condition cardiaque évolutive ( Expérimental ) 
 
@@ -66,14 +66,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cardiac-condition-profile",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigCardiacCondition",
   "title" : "TAUSSIG — Condition cardiaque évolutive",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
-  "description" : "Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance.",
+  "description" : "Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Concept TAUSSIG saisi (taussig-condition) ; IPCCC, CIM-10 et ECHSA en sont déduits (0.8.1). Type (residual/acquired/post_surgical) = choix clinicien d'instance.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -153,10 +153,18 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.clinicalStatus",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.clinicalStatus",
-      "label" : "Statut clinique (active, résolue…)",
-      "short" : "Statut clinique (active, résolue…)",
-      "mustSupport" : true
+      "label" : "Statut clinique (active ou résolue)",
+      "short" : "Statut clinique (active ou résolue)",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://taussig/fhir/ValueSet/taussig-condition-clinical-status-vs"
+      }
     },
     {
       "id" : "Condition.category",
@@ -175,13 +183,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code",
       "label" : "Condition cardiaque évolutive",
       "short" : "Condition cardiaque évolutive",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://taussig/fhir/ValueSet/taussig-cardiac-condition"
+        "valueSet" : "https://taussig/fhir/ValueSet/taussig-condition"
       }
     },
     {
@@ -196,10 +208,30 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
       }
     },
     {
+      "id" : "Condition.code.coding:taussig",
+      "path" : "Condition.code.coding",
+      "sliceName" : "taussig",
+      "label" : "Concept TAUSSIG de la condition",
+      "short" : "Concept TAUSSIG de la condition",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://taussig/fhir/ValueSet/taussig-condition"
+      }
+    },
+    {
+      "id" : "Condition.code.coding:taussig.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "https://taussig/fhir/CodeSystem/taussig-condition"
+    },
+    {
       "id" : "Condition.code.coding:ipccc",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "Condition.code.coding",
       "sliceName" : "ipccc",
@@ -207,10 +239,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
       "short" : "Code IPCCC",
       "min" : 0,
       "max" : "1",
-      "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://taussig/fhir/ValueSet/ipccc-short-list"
+        "valueSet" : "https://taussig/fhir/ValueSet/taussig-condition-ipccc"
       }
     },
     {
@@ -223,7 +254,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
       "id" : "Condition.code.coding:cim10",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "Condition.code.coding",
       "sliceName" : "cim10",
@@ -242,7 +273,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
       "id" : "Condition.code.coding:snomed",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "Condition.code.coding",
       "sliceName" : "snomed",
@@ -261,7 +292,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
       "id" : "Condition.code.coding:echsa",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "Condition.code.coding",
       "sliceName" : "echsa",
@@ -284,11 +315,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
       },
       {
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "Condition.code.text",
-      "label" : "Libellé de la condition (tel qu'écrit)",
-      "short" : "Libellé de la condition (tel qu'écrit)",
+      "label" : "Libellé du concept TAUSSIG (déduit)",
+      "short" : "Libellé du concept TAUSSIG (déduit)",
       "mustSupport" : true
     },
     {

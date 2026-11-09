@@ -1,4 +1,4 @@
-# TAUSSIG — Classes d'annotation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Classes d'annotation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Classes d'annotation (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "annotation-class-vs",
   "url" : "https://taussig/fhir/ValueSet/annotation-class-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "AnnotationClassVS",
   "title" : "TAUSSIG — Classes d'annotation",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Les 5 classes d'annotation des éléments de profil.",
   "jurisdiction" : [{

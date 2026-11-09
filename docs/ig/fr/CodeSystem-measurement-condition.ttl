@@ -14,12 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem measurement-condition</b></p><a name=\"measurement-condition\"> </a><a name=\"hcmeasurement-condition\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/measurement-condition</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">resting<a name=\"measurement-condition-resting\"> </a></td><td>Repos</td></tr><tr><td style=\"white-space:nowrap\">exercise<a name=\"measurement-condition-exercise\"> </a></td><td>Effort</td></tr><tr><td style=\"white-space:nowrap\">pharmacologic_stress<a name=\"measurement-condition-pharmacologic_stress\"> </a></td><td>Stress pharmacologique</td></tr><tr><td style=\"white-space:nowrap\">supplemental_o2<a name=\"measurement-condition-supplemental_o2\"> </a></td><td>Oxygène</td></tr><tr><td style=\"white-space:nowrap\">nitric_oxide<a name=\"measurement-condition-nitric_oxide\"> </a></td><td>Monoxyde d'azote</td></tr><tr><td style=\"white-space:nowrap\">room_air<a name=\"measurement-condition-room_air\"> </a></td><td>Air ambiant</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"measurement-condition-other\"> </a></td><td>Autre</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/measurement-condition"] ;
-  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.1"] ;
   fhir:CodeSystem.name [ fhir:value "MeasurementCondition"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Condition de mesure"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Condition physiologique/pharmacologique pendant la mesure."] ;
   fhir:CodeSystem.jurisdiction [

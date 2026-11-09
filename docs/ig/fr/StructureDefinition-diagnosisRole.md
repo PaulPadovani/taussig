@@ -1,4 +1,4 @@
-# Rôle du diagnostic - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Rôle du diagnostic - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Rôle du diagnostic (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-diagnosisRole.c
   "resourceType" : "StructureDefinition",
   "id" : "diagnosisRole",
   "url" : "https://taussig/fhir/StructureDefinition/diagnosisRole",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "DiagnosisRole",
   "title" : "Rôle du diagnostic",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rôle d'un diagnostic congénital comme indication d'un cathétérisme.",
   "jurisdiction" : [{

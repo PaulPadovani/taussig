@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Exemple technique — TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Exemple Practitioner: Exemple technique — TAUSSIG — Praticien
 
@@ -6,7 +6,7 @@ Profil: [TAUSSIG — Praticien](StructureDefinition-taussig-practitioner.md)
 
 Balise: 
 
-Fictif Exemple
+[OPERATEUR_1]
 
 -------
 
@@ -26,8 +26,7 @@ Fictif Exemple
     }]
   },
   "name" : [{
-    "family" : "Exemple",
-    "given" : ["Fictif"]
+    "text" : "[OPERATEUR_1]"
   }]
 }
 

@@ -1,0 +1,405 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "taussig-condition-ipccc",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-condition-ipccc</b></p><a name=\"taussig-condition-ipccc\"> </a><a name=\"hctaussig-condition-ipccc\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-ipccc.html\"><code>https://taussig/fhir/CodeSystem/ipccc</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;5.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-04.4600.4606\">04.00.06</a></td><td>Systemic venovenous collateral(s)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-07.4601.4611\">07.01.11</a></td><td>Right ventricular dysfunction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-09.4616.4613\">09.16.13</a></td><td>Aortic root dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4606.4601\">10.06.01</a></td><td>Infective endocarditis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4607.4690\">10.07.90</a></td><td>Myocarditis (inflammatory cardiomyopathy)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4608.4616\">10.08.16</a></td><td>Chylothorax</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4608.4631\">10.08.31</a></td><td>Pericardial effusion</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4609.4601\">10.09.01</a></td><td>Kawasaki disease</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4605\">10.10.05</a></td><td>Obstructive hypertrophic cardiomyopathy of left ventricle</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4610\">10.10.10</a></td><td>Restrictive cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4620\">10.10.20</a></td><td>Hypertrophic cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4625\">10.10.25</a></td><td>Dilated cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4600\">10.13.00</a></td><td>Irreversible pulmonary vascular disease</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4601\">10.13.01</a></td><td>Pulmonary arterial hypertension</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4608\">10.13.08</a></td><td>Irreversible pulmonary vascular disease due to congenital heart disease (Eisenmenger Syndrome)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4651\">10.13.51</a></td><td>Pulmonary embolism</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4657\">10.13.57</a></td><td>Acquired pulmonary arteriovenous fistulas (malformations)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4659\">10.13.59</a></td><td>Acquired pulmonary arterial tree abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4674\">10.13.74</a></td><td>Systemic-to-pulmonary collateral artery(ies) (MAPCA): acquired</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4650\">10.14.50</a></td><td>Aortic aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4651\">10.14.51</a></td><td>Aortic dissection</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4677\">10.14.77</a></td><td>Acquired supravalvar aortic stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4682\">10.14.82</a></td><td>Acquired dilation of ascending aorta and/or aortic root</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4602\">10.16.02</a></td><td>Acquired right ventricular aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4622\">10.16.22</a></td><td>Acquired right ventricular dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4623\">10.16.23</a></td><td>Acquired right ventricular hypertrophy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4642\">10.16.42</a></td><td>Acquired left ventricular aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4647\">10.16.47</a></td><td>Left ventricular failure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4676\">10.16.76</a></td><td>Acquired left ventricular dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4677\">10.16.77</a></td><td>Acquired left ventricular hypertrophy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4686\">10.16.86</a></td><td>Acquired subaortic stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4688\">10.16.88</a></td><td>Acquired subpulmonary stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4618.4600\">10.18.00</a></td><td>Myocardial infarction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4621.4663\">10.21.63</a></td><td>Patient status post heart transplant</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4624.4600\">10.24.00</a></td><td>Acquired pulmonary venous abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4624.4602\">10.24.02</a></td><td>Pulmonary venous stenosis: acquired</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4630.4609\">10.30.09</a></td><td>Systemic vein obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4630.4616\">10.30.16</a></td><td>Acquired coronary sinus abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4601\">10.31.01</a></td><td>Acquired superior caval vein (SVC) abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4621\">10.31.21</a></td><td>Acquired inferior caval vein (IVC) abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4634.4656\">10.34.56</a></td><td>Acquired stenosis of the common atrioventricular valve in biventricular connections</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4600.4600\">11.00.00</a></td><td>Arrhythmia</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4607\">11.03.07</a></td><td>Atrial flutter</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4608\">11.03.08</a></td><td>Atrial fibrillation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4609\">11.03.09</a></td><td>Atrial rhythm disturbance</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4604.4600\">11.04.00</a></td><td>Rhythm disturbance at level of atrioventricular junction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4605.4600\">11.05.00</a></td><td>Ventricular rhythm disturbance</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4606.4610\">11.06.10</a></td><td>Acquired complete atrioventricular block</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4606.4638\">11.06.38</a></td><td>Atrioventricular block</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4607.4601\">11.07.01</a></td><td>Atrioventricular reentry (reciprocating) tachycardia: manifest preexcitation in sinus rhythm (Wolff Parkinson White)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4612.4661\">11.12.61</a></td><td>Indication for elective replacement of pacemaker system</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4602.4600\">15.02.00</a></td><td>Postprocedural haemorrhage</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4610\">15.10.10</a></td><td>Acquired right atrial abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4620\">15.10.20</a></td><td>Acquired left atrial abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4663\">15.10.63</a></td><td>Residual interatrial communication ('ASD')</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4611.4603\">15.11.03</a></td><td>Residual tricuspid regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4601\">15.12.01</a></td><td>Residual mitral stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4603\">15.12.03</a></td><td>Residual mitral regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4613.4602\">15.13.02</a></td><td>Residual common atrioventricular valvar regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4616.4602\">15.16.02</a></td><td>Residual ventricular component of atrioventricular septal defect</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4620.4623\">15.20.23</a></td><td>Residual right ventricular outflow tract obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4621.4621\">15.21.21</a></td><td>Postprocedural left ventricular outflow tract complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4622.4602\">15.22.02</a></td><td>Residual ventricular septal defect (VSD)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4603\">15.25.03</a></td><td>Residual truncal regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4612\">15.25.12</a></td><td>Acquired stenosis of the neo-aortic valve of truncal origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4613\">15.25.13</a></td><td>Acquired regurgitation of the neo-aortic valve of truncal origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4601\">15.30.01</a></td><td>Residual pulmonary valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4603\">15.30.03</a></td><td>Residual pulmonary regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4609\">15.30.09</a></td><td>Neopulmonary valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4610\">15.30.10</a></td><td>Neopulmonary valvar regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4602\">15.32.02</a></td><td>Postprocedural pulmonary trunk stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4623\">15.32.23</a></td><td>Residual right pulmonary artery stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4643\">15.32.43</a></td><td>Residual left pulmonary artery stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4601\">15.35.01</a></td><td>Residual aortic valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4603\">15.35.03</a></td><td>Residual aortic regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4609\">15.35.09</a></td><td>Stenosis of the neo-aortic valve of pulmonary origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4610\">15.35.10</a></td><td>Regurgitation of the neo-aortic valve of pulmonary origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4637.4605\">15.37.05</a></td><td>Residual aortic coarctation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4639.4602\">15.39.02</a></td><td>Residual arterial duct (PDA) patency</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4641.4600\">15.41.00</a></td><td>Postprocedural coronary arterial complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4650.4603\">15.50.03</a></td><td>Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4650.4637\">15.50.37</a></td><td>Embolisation of catheter introduced device</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4651.4647\">15.51.47</a></td><td>Embolisation of cardiovascular device during cardiac catheterisation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4651.4650\">15.51.50</a></td><td>Device malfunction during cardiac catheterisation procedure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4600\">15.55.00</a></td><td>Cardiac conduit related complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4624\">15.55.24</a></td><td>Pulmonary autograft failure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4601\">15.56.01</a></td><td>Systemic-to-pulmonary arterial shunt partial obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4602\">15.56.02</a></td><td>Systemic-to-pulmonary arterial shunt complete obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4627\">15.56.27</a></td><td>Systemic-to-pulmonary arterial shunt obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4680.4617\">15.80.17</a></td><td>Postprocedural retained foreign body</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4681.4601\">15.81.01</a></td><td>Cardiac postprocedural plastic bronchitis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4682.4633\">15.82.33</a></td><td>Cardiac postprocedural protein losing enteropathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4690.4660\">15.90.60</a></td><td>'Failed' Fontan type circulation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4695.4600\">15.95.00</a></td><td>Complication after heart or lung transplant</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/taussig-condition-ipccc",
+  "version" : "0.8.1",
+  "name" : "TaussigConditionIpcccVS",
+  "title" : "TAUSSIG — Liste des conditions évolutives (IPCCC)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-09T15:30:29+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Les 94 codes IPCCC de la liste TAUSSIG des conditions cardiaques évolutives (décision B7).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://taussig/fhir/CodeSystem/ipccc",
+      "concept" : [{
+        "code" : "04.00.06",
+        "display" : "Systemic venovenous collateral(s)"
+      },
+      {
+        "code" : "07.01.11",
+        "display" : "Right ventricular dysfunction"
+      },
+      {
+        "code" : "09.16.13",
+        "display" : "Aortic root dilation"
+      },
+      {
+        "code" : "10.06.01",
+        "display" : "Infective endocarditis"
+      },
+      {
+        "code" : "10.07.90",
+        "display" : "Myocarditis (inflammatory cardiomyopathy)"
+      },
+      {
+        "code" : "10.08.16",
+        "display" : "Chylothorax"
+      },
+      {
+        "code" : "10.08.31",
+        "display" : "Pericardial effusion"
+      },
+      {
+        "code" : "10.09.01",
+        "display" : "Kawasaki disease"
+      },
+      {
+        "code" : "10.10.05",
+        "display" : "Obstructive hypertrophic cardiomyopathy of left ventricle"
+      },
+      {
+        "code" : "10.10.10",
+        "display" : "Restrictive cardiomyopathy"
+      },
+      {
+        "code" : "10.10.20",
+        "display" : "Hypertrophic cardiomyopathy"
+      },
+      {
+        "code" : "10.10.25",
+        "display" : "Dilated cardiomyopathy"
+      },
+      {
+        "code" : "10.13.00",
+        "display" : "Irreversible pulmonary vascular disease"
+      },
+      {
+        "code" : "10.13.01",
+        "display" : "Pulmonary arterial hypertension"
+      },
+      {
+        "code" : "10.13.08",
+        "display" : "Irreversible pulmonary vascular disease due to congenital heart disease (Eisenmenger Syndrome)"
+      },
+      {
+        "code" : "10.13.51",
+        "display" : "Pulmonary embolism"
+      },
+      {
+        "code" : "10.13.57",
+        "display" : "Acquired pulmonary arteriovenous fistulas (malformations)"
+      },
+      {
+        "code" : "10.13.59",
+        "display" : "Acquired pulmonary arterial tree abnormality"
+      },
+      {
+        "code" : "10.13.74",
+        "display" : "Systemic-to-pulmonary collateral artery(ies) (MAPCA): acquired"
+      },
+      {
+        "code" : "10.14.50",
+        "display" : "Aortic aneurysm"
+      },
+      {
+        "code" : "10.14.51",
+        "display" : "Aortic dissection"
+      },
+      {
+        "code" : "10.14.77",
+        "display" : "Acquired supravalvar aortic stenosis"
+      },
+      {
+        "code" : "10.14.82",
+        "display" : "Acquired dilation of ascending aorta and/or aortic root"
+      },
+      {
+        "code" : "10.16.02",
+        "display" : "Acquired right ventricular aneurysm"
+      },
+      {
+        "code" : "10.16.22",
+        "display" : "Acquired right ventricular dilation"
+      },
+      {
+        "code" : "10.16.23",
+        "display" : "Acquired right ventricular hypertrophy"
+      },
+      {
+        "code" : "10.16.42",
+        "display" : "Acquired left ventricular aneurysm"
+      },
+      {
+        "code" : "10.16.47",
+        "display" : "Left ventricular failure"
+      },
+      {
+        "code" : "10.16.76",
+        "display" : "Acquired left ventricular dilation"
+      },
+      {
+        "code" : "10.16.77",
+        "display" : "Acquired left ventricular hypertrophy"
+      },
+      {
+        "code" : "10.16.86",
+        "display" : "Acquired subaortic stenosis"
+      },
+      {
+        "code" : "10.16.88",
+        "display" : "Acquired subpulmonary stenosis"
+      },
+      {
+        "code" : "10.18.00",
+        "display" : "Myocardial infarction"
+      },
+      {
+        "code" : "10.21.63",
+        "display" : "Patient status post heart transplant"
+      },
+      {
+        "code" : "10.24.00",
+        "display" : "Acquired pulmonary venous abnormality"
+      },
+      {
+        "code" : "10.24.02",
+        "display" : "Pulmonary venous stenosis: acquired"
+      },
+      {
+        "code" : "10.30.09",
+        "display" : "Systemic vein obstruction"
+      },
+      {
+        "code" : "10.30.16",
+        "display" : "Acquired coronary sinus abnormality"
+      },
+      {
+        "code" : "10.31.01",
+        "display" : "Acquired superior caval vein (SVC) abnormality"
+      },
+      {
+        "code" : "10.31.21",
+        "display" : "Acquired inferior caval vein (IVC) abnormality"
+      },
+      {
+        "code" : "10.34.56",
+        "display" : "Acquired stenosis of the common atrioventricular valve in biventricular connections"
+      },
+      {
+        "code" : "11.00.00",
+        "display" : "Arrhythmia"
+      },
+      {
+        "code" : "11.03.07",
+        "display" : "Atrial flutter"
+      },
+      {
+        "code" : "11.03.08",
+        "display" : "Atrial fibrillation"
+      },
+      {
+        "code" : "11.03.09",
+        "display" : "Atrial rhythm disturbance"
+      },
+      {
+        "code" : "11.04.00",
+        "display" : "Rhythm disturbance at level of atrioventricular junction"
+      },
+      {
+        "code" : "11.05.00",
+        "display" : "Ventricular rhythm disturbance"
+      },
+      {
+        "code" : "11.06.10",
+        "display" : "Acquired complete atrioventricular block"
+      },
+      {
+        "code" : "11.06.38",
+        "display" : "Atrioventricular block"
+      },
+      {
+        "code" : "11.07.01",
+        "display" : "Atrioventricular reentry (reciprocating) tachycardia: manifest preexcitation in sinus rhythm (Wolff Parkinson White)"
+      },
+      {
+        "code" : "11.12.61",
+        "display" : "Indication for elective replacement of pacemaker system"
+      },
+      {
+        "code" : "15.02.00",
+        "display" : "Postprocedural haemorrhage"
+      },
+      {
+        "code" : "15.10.10",
+        "display" : "Acquired right atrial abnormality"
+      },
+      {
+        "code" : "15.10.20",
+        "display" : "Acquired left atrial abnormality"
+      },
+      {
+        "code" : "15.10.63",
+        "display" : "Residual interatrial communication ('ASD')"
+      },
+      {
+        "code" : "15.11.03",
+        "display" : "Residual tricuspid regurgitation"
+      },
+      {
+        "code" : "15.12.01",
+        "display" : "Residual mitral stenosis"
+      },
+      {
+        "code" : "15.12.03",
+        "display" : "Residual mitral regurgitation"
+      },
+      {
+        "code" : "15.13.02",
+        "display" : "Residual common atrioventricular valvar regurgitation"
+      },
+      {
+        "code" : "15.16.02",
+        "display" : "Residual ventricular component of atrioventricular septal defect"
+      },
+      {
+        "code" : "15.20.23",
+        "display" : "Residual right ventricular outflow tract obstruction"
+      },
+      {
+        "code" : "15.21.21",
+        "display" : "Postprocedural left ventricular outflow tract complication"
+      },
+      {
+        "code" : "15.22.02",
+        "display" : "Residual ventricular septal defect (VSD)"
+      },
+      {
+        "code" : "15.25.03",
+        "display" : "Residual truncal regurgitation"
+      },
+      {
+        "code" : "15.25.12",
+        "display" : "Acquired stenosis of the neo-aortic valve of truncal origin"
+      },
+      {
+        "code" : "15.25.13",
+        "display" : "Acquired regurgitation of the neo-aortic valve of truncal origin"
+      },
+      {
+        "code" : "15.30.01",
+        "display" : "Residual pulmonary valvar stenosis"
+      },
+      {
+        "code" : "15.30.03",
+        "display" : "Residual pulmonary regurgitation"
+      },
+      {
+        "code" : "15.30.09",
+        "display" : "Neopulmonary valvar stenosis"
+      },
+      {
+        "code" : "15.30.10",
+        "display" : "Neopulmonary valvar regurgitation"
+      },
+      {
+        "code" : "15.32.02",
+        "display" : "Postprocedural pulmonary trunk stenosis"
+      },
+      {
+        "code" : "15.32.23",
+        "display" : "Residual right pulmonary artery stenosis"
+      },
+      {
+        "code" : "15.32.43",
+        "display" : "Residual left pulmonary artery stenosis"
+      },
+      {
+        "code" : "15.35.01",
+        "display" : "Residual aortic valvar stenosis"
+      },
+      {
+        "code" : "15.35.03",
+        "display" : "Residual aortic regurgitation"
+      },
+      {
+        "code" : "15.35.09",
+        "display" : "Stenosis of the neo-aortic valve of pulmonary origin"
+      },
+      {
+        "code" : "15.35.10",
+        "display" : "Regurgitation of the neo-aortic valve of pulmonary origin"
+      },
+      {
+        "code" : "15.37.05",
+        "display" : "Residual aortic coarctation"
+      },
+      {
+        "code" : "15.39.02",
+        "display" : "Residual arterial duct (PDA) patency"
+      },
+      {
+        "code" : "15.41.00",
+        "display" : "Postprocedural coronary arterial complication"
+      },
+      {
+        "code" : "15.50.03",
+        "display" : "Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation"
+      },
+      {
+        "code" : "15.50.37",
+        "display" : "Embolisation of catheter introduced device"
+      },
+      {
+        "code" : "15.51.47",
+        "display" : "Embolisation of cardiovascular device during cardiac catheterisation"
+      },
+      {
+        "code" : "15.51.50",
+        "display" : "Device malfunction during cardiac catheterisation procedure"
+      },
+      {
+        "code" : "15.55.00",
+        "display" : "Cardiac conduit related complication"
+      },
+      {
+        "code" : "15.55.24",
+        "display" : "Pulmonary autograft failure"
+      },
+      {
+        "code" : "15.56.01",
+        "display" : "Systemic-to-pulmonary arterial shunt partial obstruction"
+      },
+      {
+        "code" : "15.56.02",
+        "display" : "Systemic-to-pulmonary arterial shunt complete obstruction"
+      },
+      {
+        "code" : "15.56.27",
+        "display" : "Systemic-to-pulmonary arterial shunt obstruction"
+      },
+      {
+        "code" : "15.80.17",
+        "display" : "Postprocedural retained foreign body"
+      },
+      {
+        "code" : "15.81.01",
+        "display" : "Cardiac postprocedural plastic bronchitis"
+      },
+      {
+        "code" : "15.82.33",
+        "display" : "Cardiac postprocedural protein losing enteropathy"
+      },
+      {
+        "code" : "15.90.60",
+        "display" : "'Failed' Fontan type circulation"
+      },
+      {
+        "code" : "15.95.00",
+        "display" : "Complication after heart or lung transplant"
+      }]
+    }]
+  }
+}

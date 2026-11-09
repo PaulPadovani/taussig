@@ -1,4 +1,4 @@
-# TAUSSIG — Type de matériel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Type de matériel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Type de matériel (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "material-type",
   "url" : "https://taussig/fhir/CodeSystem/material-type",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "MaterialType",
   "title" : "TAUSSIG — Type de matériel",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Catégorie de matériel utilisé pendant un geste.",
   "jurisdiction" : [{

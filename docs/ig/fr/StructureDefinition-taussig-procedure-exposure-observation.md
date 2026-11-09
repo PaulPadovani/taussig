@@ -1,4 +1,4 @@
-# TAUSSIG — Exposition et contraste de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Exposition et contraste de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Exposition et contraste de procédure ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
   "resourceType" : "StructureDefinition",
   "id" : "taussig-procedure-exposure-observation",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigProcedureExposureObservation",
   "title" : "TAUSSIG — Exposition et contraste de procédure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Temps de fluoroscopie, produit dose-surface et volume de contraste portés par des Observations quantitatives liées au cathétérisme.",
   "jurisdiction" : [{

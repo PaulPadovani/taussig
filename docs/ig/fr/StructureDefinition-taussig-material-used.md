@@ -1,4 +1,4 @@
-# TAUSSIG — Matériel utilisé (consommable de geste) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Matériel utilisé (consommable de geste) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Matériel utilisé (consommable de geste) ( Expérimental ) 
 
@@ -66,12 +66,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-materia
   "resourceType" : "StructureDefinition",
   "id" : "taussig-material-used",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-material-used",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigMaterialUsed",
   "title" : "TAUSSIG — Matériel utilisé (consommable de geste)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Matériel consommé pendant un geste (ballon, stent, dispositif, consommable). Catégorie en type ; caractéristiques techniques (diamètre, longueur…) en Device.property (LOINC/UCUM) ; UDI ; séquence/tentative d'usage en extensions sur Procedure.usedReference.",
   "jurisdiction" : [{
@@ -228,7 +228,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-materia
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
         "valueCode" : "annotatable"
       }],
-      "path" : "Device.property.type"
+      "path" : "Device.property.type",
+      "label" : "Nature de la caractéristique (diamètre, longueur…)",
+      "short" : "Nature de la caractéristique (diamètre, longueur…)"
     },
     {
       "id" : "Device.property.valueQuantity",
@@ -236,7 +238,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-materia
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
         "valueCode" : "annotatable"
       }],
-      "path" : "Device.property.valueQuantity"
+      "path" : "Device.property.valueQuantity",
+      "label" : "Valeur de la caractéristique (avec unité)",
+      "short" : "Valeur de la caractéristique (avec unité)"
     },
     {
       "id" : "Device.property:covering",
@@ -265,6 +269,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-materia
         "valueCode" : "annotatable"
       }],
       "path" : "Device.property.valueCode",
+      "label" : "Couverture du stent (nu ou couvert)",
+      "short" : "Couverture du stent (nu ou couvert)",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true,
@@ -300,6 +306,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-materia
         "valueCode" : "annotatable"
       }],
       "path" : "Device.property.valueCode",
+      "label" : "Mode d'expansion (ballon ou auto-expansible)",
+      "short" : "Mode d'expansion (ballon ou auto-expansible)",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true,
@@ -335,6 +343,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-materia
         "valueCode" : "annotatable"
       }],
       "path" : "Device.property.valueCode",
+      "label" : "Revêtement (actif ou non)",
+      "short" : "Revêtement (actif ou non)",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true,

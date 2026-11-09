@@ -1,4 +1,4 @@
-# TAUSSIG — Gestes et actes de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Gestes et actes de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Gestes et actes de cathétérisme (Expérimental) 
 
@@ -25,7 +25,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TAUSSIG — Gestes et actes de cathétérisme",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Terminologie d'interface TAUSSIG : 188 concepts de gestes et d'actes de cathétérisme cardiaque congénital (Short List IPCCC de la branche cathétérisme, Long List AEPC v5.0), à identifiant neutre jamais réutilisé. Le clinicien choisit le libellé ; les codes IPCCC, CCAM, ECHSA et SNOMED sont déduits par les ConceptMaps taussig-procedure-to-*. Libellés : traduction fidèle du libellé IPCCC.",
   "jurisdiction" : [{

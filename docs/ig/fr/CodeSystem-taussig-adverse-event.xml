@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="taussig-adverse-event"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr"><p class="res-header-id"><b>Narratif généré : CodeSystem taussig-adverse-event</b></p><a name="taussig-adverse-event"> </a><a name="hctaussig-adverse-event"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><p><b>Propriétés</b></p><p><b>Cette terminologie de référence (CodeSystem) définit les propriétés suivantes pour ses concepts</b></p><table class="grid"><tr><td><b>Nom</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>ipccc-origin</td><td>ipccc-origin</td><td/><td>Coding</td><td>Code IPCCC dont le concept est issu.</td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Statut du concept (retired = retiré).</td></tr><tr><td>Inactive</td><td>inactive</td><td>http://hl7.org/fhir/concept-properties#inactive</td><td>boolean</td><td>Concept inactif, à ne plus choisir.</td></tr><tr><td>replaced-by</td><td>replaced-by</td><td/><td>code</td><td>Concept qui remplace un concept retiré.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/taussig-adverse-event</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td><td><b>ipccc-origin</b></td><td><b>status</b></td><td><b>Inactive</b></td><td><b>replaced-by</b></td></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0001<a name="taussig-adverse-event-TAUSSIG-AE-0001"> </a></td><td>Absence de complication post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.90.03}">No postprocedural complications</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0002<a name="taussig-adverse-event-TAUSSIG-AE-0002"> </a></td><td>Complication liée à une intervention</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.90.14}">Procedure related complication</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0003<a name="taussig-adverse-event-TAUSSIG-AE-0003"> </a></td><td>Arrêt cardiaque pendant l'intervention</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.00.01}">Cardiac arrest during procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0004<a name="taussig-adverse-event-TAUSSIG-AE-0004"> </a></td><td>Fibrillation atriale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.03.08}">Atrial fibrillation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0005<a name="taussig-adverse-event-TAUSSIG-AE-0005"> </a></td><td>Flutter atrial</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.03.07}">Atrial flutter</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0006<a name="taussig-adverse-event-TAUSSIG-AE-0006"> </a></td><td>Trouble du rythme post-procédural</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.00.00}">Arrhythmia</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0007<a name="taussig-adverse-event-TAUSSIG-AE-0007"> </a></td><td>Bloc atrioventriculaire complet acquis</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.06.10}">Acquired complete atrioventricular block</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0008<a name="taussig-adverse-event-TAUSSIG-AE-0008"> </a></td><td>Tachycardie jonctionnelle ectopique post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.04.12}">Junctional ectopic tachycardia (His bundle): post-op</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0009<a name="taussig-adverse-event-TAUSSIG-AE-0009"> </a></td><td>Tachycardie ventriculaire</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.05.06}">Ventricular tachycardia</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0010<a name="taussig-adverse-event-TAUSSIG-AE-0010"> </a></td><td>Arythmie nécessitant l'implantation d'un stimulateur</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.60.06}">Procedure related non-heart block arrhythmia requiring permanent pacemaker system</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0011<a name="taussig-adverse-event-TAUSSIG-AE-0011"> </a></td><td>Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.03}">Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0012<a name="taussig-adverse-event-TAUSSIG-AE-0012"> </a></td><td>Tamponnade cardiaque post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.83.14}">Postprocedural cardiac tamponade</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0013<a name="taussig-adverse-event-TAUSSIG-AE-0013"> </a></td><td>Décès peropératoire</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 12.33.31}">Intraoperative death</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0014<a name="taussig-adverse-event-TAUSSIG-AE-0014"> </a></td><td>Communication interatriale résiduelle ou récidivante post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.10.72}">Postprocedural residual or recurrent interatrial communication ('ASD')</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0015<a name="taussig-adverse-event-TAUSSIG-AE-0015"> </a></td><td>Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.51.47}">Embolisation of cardiovascular device during cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0016<a name="taussig-adverse-event-TAUSSIG-AE-0016"> </a></td><td>Dysfonction de dispositif (complication de cathétérisme)</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.51.50}">Device malfunction during cardiac catheterisation procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0017<a name="taussig-adverse-event-TAUSSIG-AE-0017"> </a></td><td>Corps étranger intracardiaque post-procédural</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.80.17}">Postprocedural retained foreign body</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0018<a name="taussig-adverse-event-TAUSSIG-AE-0018"> </a></td><td>Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.37}">Embolisation of catheter introduced device</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0019<a name="taussig-adverse-event-TAUSSIG-AE-0019"> </a></td><td>Perméabilité résiduelle du canal artériel post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.39.05}">Postprocedural residual arterial duct (ductus arteriosus) patency</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0020<a name="taussig-adverse-event-TAUSSIG-AE-0020"> </a></td><td>Communication interventriculaire résiduelle ou récidivante post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.22.13}">Postprocedural residual or recurrent ventricular septal defect (VSD)</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0021<a name="taussig-adverse-event-TAUSSIG-AE-0021"> </a></td><td>Communication interatriale résiduelle</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.10.63}">Residual interatrial communication ('ASD')</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0022<a name="taussig-adverse-event-TAUSSIG-AE-0022"> </a></td><td>Régurgitation aortique après lésion valvulaire pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.20}">Traumatic damage to heart valve during cardiovascular catheterisation procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0023<a name="taussig-adverse-event-TAUSSIG-AE-0023"> </a></td><td>Régurgitation mitrale après lésion valvulaire pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.20}">Traumatic damage to heart valve during cardiovascular catheterisation procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0024<a name="taussig-adverse-event-TAUSSIG-AE-0024"> </a></td><td>Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.20}">Traumatic damage to heart valve during cardiovascular catheterisation procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0025<a name="taussig-adverse-event-TAUSSIG-AE-0025"> </a></td><td>Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.20}">Traumatic damage to heart valve during cardiovascular catheterisation procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0026<a name="taussig-adverse-event-TAUSSIG-AE-0026"> </a></td><td>Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.20}">Traumatic damage to heart valve during cardiovascular catheterisation procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0027<a name="taussig-adverse-event-TAUSSIG-AE-0027"> </a></td><td>Perte du pouls après cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.11}">Lost pulse after cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0028<a name="taussig-adverse-event-TAUSSIG-AE-0028"> </a></td><td>Pseudoanévrisme au site d'abord</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.60.23}">Pseudo-aneurysm at access site for cardiovascular catheter procedure</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0029<a name="taussig-adverse-event-TAUSSIG-AE-0029"> </a></td><td>Dissection artérielle au site d'abord</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.19}">Local complication at access site of cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0030<a name="taussig-adverse-event-TAUSSIG-AE-0030"> </a></td><td>Extravasation de produit de contraste</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.19}">Local complication at access site of cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0031<a name="taussig-adverse-event-TAUSSIG-AE-0031"> </a></td><td>Fistule artérioveineuse au site d'abord</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.19}">Local complication at access site of cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0032<a name="taussig-adverse-event-TAUSSIG-AE-0032"> </a></td><td>Perforation artérielle au site d'abord</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.19}">Local complication at access site of cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0033<a name="taussig-adverse-event-TAUSSIG-AE-0033"> </a></td><td>Problème d'équipement pendant le cathétérisme</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.30}">Equipment problem during cardiac catheterisation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0034<a name="taussig-adverse-event-TAUSSIG-AE-0034"> </a></td><td>Embolisation d'un stent</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.71}">Embolisation of stent</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0035<a name="taussig-adverse-event-TAUSSIG-AE-0035"> </a></td><td>Rupture d'un conduit ou d'un vaisseau après implantation de stent</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.78}">Rupture of conduit or vessel following stent implantation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0036<a name="taussig-adverse-event-TAUSSIG-AE-0036"> </a></td><td>Compression coronaire après implantation de dispositif transluminal</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.61}">Coronary arterial compression following transluminal device implantation</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0037<a name="taussig-adverse-event-TAUSSIG-AE-0037"> </a></td><td>Stent laissé déployé en position non prévue après migration ou embolisation</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.91}">Stent left expanded in unplanned site after migration or embolisation</a></td><td/><td/><td/></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">TAUSSIG-AE-0038<a name="taussig-adverse-event-TAUSSIG-AE-0038"> </a></td><td>Dysfonction de dispositif pendant le cathétérisme</td><td>Concept retiré : retiré, remplacé par TAUSSIG-AE-0016 — doublon : même code IPCCC 15.51.50 (décision A6).</td><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.51.50}">Device malfunction during cardiac catheterisation procedure</a></td><td>retired</td><td>true</td><td>TAUSSIG-AE-0016</td></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0039<a name="taussig-adverse-event-TAUSSIG-AE-0039"> </a></td><td>Embolisation (délogement) d'un coil introduit par cathéter</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.65}">Embolisation (dislodgement) of catheter introduced coil</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0040<a name="taussig-adverse-event-TAUSSIG-AE-0040"> </a></td><td>Thrombose vasculaire ou de conduit post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.00.21}">Postprocedural vascular or conduit thrombosis</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0041<a name="taussig-adverse-event-TAUSSIG-AE-0041"> </a></td><td>Hémorragie post-procédurale</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.02.00}">Postprocedural haemorrhage</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0042<a name="taussig-adverse-event-TAUSSIG-AE-0042"> </a></td><td>Anévrisme aortique post-procédural</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.37.80}">Postprocedural aortic aneurysm</a></td><td/><td/><td/></tr><tr><td style="white-space:nowrap">TAUSSIG-AE-0043<a name="taussig-adverse-event-TAUSSIG-AE-0043"> </a></td><td>Anévrisme de l'aorte au site de coarctation après intervention</td><td/><td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.37.07}">Postprocedural aneurysm of aorta at coarctation site</a></td><td/><td/><td/></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/taussig-adverse-event"/>
+  <version value="0.8.1"/>
+  <name value="TaussigAdverseEvent"/>
+  <title value="TAUSSIG — Complications"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-09T15:30:29+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Terminologie d'interface TAUSSIG : 43 concepts (complications) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes IPCCC, CIM-10, SNOMED, ECHSA sont déduits par les ConceptMaps taussig-adverse-event-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="43"/>
+  <property>
+    <code value="ipccc-origin"/>
+    <description value="Code IPCCC dont le concept est issu."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="Statut du concept (retired = retiré)."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="inactive"/>
+    <uri value="http://hl7.org/fhir/concept-properties#inactive"/>
+    <description value="Concept inactif, à ne plus choisir."/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="replaced-by"/>
+    <description value="Concept qui remplace un concept retiré."/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="TAUSSIG-AE-0001"/>
+    <display value="Absence de complication post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.90.03"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0002"/>
+    <display value="Complication liée à une intervention"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.90.14"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0003"/>
+    <display value="Arrêt cardiaque pendant l'intervention"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.00.01"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0004"/>
+    <display value="Fibrillation atriale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="11.03.08"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0005"/>
+    <display value="Flutter atrial"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="11.03.07"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0006"/>
+    <display value="Trouble du rythme post-procédural"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="11.00.00"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0007"/>
+    <display value="Bloc atrioventriculaire complet acquis"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="11.06.10"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0008"/>
+    <display value="Tachycardie jonctionnelle ectopique post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="11.04.12"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0009"/>
+    <display value="Tachycardie ventriculaire"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="11.05.06"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0010"/>
+    <display value="Arythmie nécessitant l'implantation d'un stimulateur"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.60.06"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0011"/>
+    <display value="Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.03"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0012"/>
+    <display value="Tamponnade cardiaque post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.83.14"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0013"/>
+    <display value="Décès peropératoire"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="12.33.31"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0014"/>
+    <display value="Communication interatriale résiduelle ou récidivante post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.10.72"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0015"/>
+    <display value="Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.51.47"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0016"/>
+    <display value="Dysfonction de dispositif (complication de cathétérisme)"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.51.50"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0017"/>
+    <display value="Corps étranger intracardiaque post-procédural"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.80.17"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0018"/>
+    <display value="Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.37"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0019"/>
+    <display value="Perméabilité résiduelle du canal artériel post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.39.05"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0020"/>
+    <display value="Communication interventriculaire résiduelle ou récidivante post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.22.13"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0021"/>
+    <display value="Communication interatriale résiduelle"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.10.63"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0022"/>
+    <display value="Régurgitation aortique après lésion valvulaire pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.20"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0023"/>
+    <display value="Régurgitation mitrale après lésion valvulaire pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.20"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0024"/>
+    <display value="Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.20"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0025"/>
+    <display value="Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.20"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0026"/>
+    <display value="Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.20"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0027"/>
+    <display value="Perte du pouls après cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.11"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0028"/>
+    <display value="Pseudoanévrisme au site d'abord"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.60.23"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0029"/>
+    <display value="Dissection artérielle au site d'abord"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.19"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0030"/>
+    <display value="Extravasation de produit de contraste"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.19"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0031"/>
+    <display value="Fistule artérioveineuse au site d'abord"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.19"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0032"/>
+    <display value="Perforation artérielle au site d'abord"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.19"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0033"/>
+    <display value="Problème d'équipement pendant le cathétérisme"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.30"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0034"/>
+    <display value="Embolisation d'un stent"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.71"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0035"/>
+    <display value="Rupture d'un conduit ou d'un vaisseau après implantation de stent"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.78"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0036"/>
+    <display value="Compression coronaire après implantation de dispositif transluminal"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.61"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0037"/>
+    <display value="Stent laissé déployé en position non prévue après migration ou embolisation"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.91"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0038"/>
+    <display value="Dysfonction de dispositif pendant le cathétérisme"/>
+    <definition value="Concept retiré : retiré, remplacé par TAUSSIG-AE-0016 — doublon : même code IPCCC 15.51.50 (décision A6)."/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.51.50"/>
+      </valueCoding>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="retired"/>
+    </property>
+    <property>
+      <code value="inactive"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="replaced-by"/>
+      <valueCode value="TAUSSIG-AE-0016"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0039"/>
+    <display value="Embolisation (délogement) d'un coil introduit par cathéter"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.50.65"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0040"/>
+    <display value="Thrombose vasculaire ou de conduit post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.00.21"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0041"/>
+    <display value="Hémorragie post-procédurale"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.02.00"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0042"/>
+    <display value="Anévrisme aortique post-procédural"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.37.80"/>
+      </valueCoding>
+    </property>
+  </concept>
+  <concept>
+    <code value="TAUSSIG-AE-0043"/>
+    <display value="Anévrisme de l'aorte au site de coarctation après intervention"/>
+    <property>
+      <code value="ipccc-origin"/>
+      <valueCoding>
+        <system value="https://taussig/fhir/CodeSystem/ipccc"/>
+        <code value="15.37.07"/>
+      </valueCoding>
+    </property>
+  </concept>
+</CodeSystem>

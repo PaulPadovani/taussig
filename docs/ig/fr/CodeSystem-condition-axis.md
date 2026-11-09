@@ -1,4 +1,4 @@
-# TAUSSIG — Axe d'une condition cardiaque - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Axe d'une condition cardiaque - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Axe d'une condition cardiaque (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "condition-axis",
   "url" : "https://taussig/fhir/CodeSystem/condition-axis",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ConditionAxis",
   "title" : "TAUSSIG — Axe d'une condition cardiaque",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Distingue le diagnostic congénital des conditions évolutives.",
   "jurisdiction" : [{

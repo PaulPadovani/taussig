@@ -1,4 +1,4 @@
-# TAUSSIG — Succès technique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Succès technique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Succès technique (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "technical-success-vs",
   "url" : "https://taussig/fhir/ValueSet/technical-success-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TechnicalSuccessVS",
   "title" : "TAUSSIG — Succès technique",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Succès technique » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

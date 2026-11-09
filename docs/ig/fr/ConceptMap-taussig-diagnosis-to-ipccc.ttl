@@ -1,0 +1,1249 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-diagnosis-to-ipccc> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-diagnosis-to-ipccc"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts taussig-diagnosis-to-ipccc</b></p><a name=\"taussig-diagnosis-to-ipccc\"> </a><a name=\"hctaussig-diagnosis-to-ipccc\"> </a><p>Mapping de <a href=\"ValueSet-taussig-diagnosis.html\">TAUSSIG — Liste des diagnostics cardiaques congénitaux</a> vers (non spécifié)</p><br/><p>Mapping de <a href=\"CodeSystem-taussig-diagnosis.html\">TAUSSIG — Diagnostics cardiaques congénitaux</a> to <a href=\"CodeSystem-ipccc.html\">IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>TAUSSIG-DIAG-0001 (Anomalie de position-orientation du cœur)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>02.01.09 (Anomalous position-orientation of heart)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0002 (Lévocardie)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>02.01.03 (Laevocardia: heart predominantly in left hemithorax)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0003 (Dextrocardie)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>02.01.02 (Dextrocardia: heart predominantly in right hemithorax)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0004 (Mésocardie)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>02.01.04 (Midline heart (mesocardia))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0005 (Image en miroir complète)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>03.01.03 (Total mirror imagery (situs inversus totalis))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0006 (Isomérisme droit)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>03.01.04 (Right isomerism)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0007 (Isomérisme gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>03.01.05 (Left isomerism)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0008 (Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.03.09 (Congenital anomaly of an atrioventricular and-or ventriculo-arterial connection(s))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0009 (Connexions atrioventriculaires discordantes)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.04.01 (Discordant atrioventricular connections)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0010 (Transposition congénitalement corrigée des grandes artères)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.03 (Congenitally corrected transposition of great arteries (discordant atrioventricular &amp; ventriculo-arterial connections))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0011 (Transposition des gros vaisseaux)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.05.01 (Transposition of great arteries (discordant ventriculo-arterial connections) (TGA))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0012 (Ventricule droit à double issue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.04 (Double outlet right ventricle)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0013 (Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.18 (Double outlet right ventricle with subpulmonary ventricular septal defect, transposition type)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0014 (Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.19 (Double outlet right ventricle with non-committed ventricular septal defect)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0015 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.40 (Double outlet right ventricle with subaortic or doubly committed ventricular septal defect without pulmonary stenosis, ventricular septal defect type)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0016 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.17 (Double outlet right ventricle with subaortic or doubly committed ventricular septal defect and pulmonary stenosis, Fallot type)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0017 (Ventricule gauche à double issue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.05.03 (Double outlet left ventricle)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0018 (Tronc artériel commun)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.01.01 (Common arterial trunk (truncus arteriosus))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0019 (Tronc artériel commun à dominance aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.01.15 (Common arterial trunk (truncus arteriosus) with aortic dominance (no aortic arch obstruction))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0020 (Tronc artériel commun à dominance pulmonaire et arc aortique interrompue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.01.18 (Common arterial trunk (truncus arteriosus) with pulmonary dominance and interrupted aortic arch)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0021 (Anomalie congénitale de la veine médiastinale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>04.00.07 (Congenital anomaly of mediastinal vein(s))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0022 (Veine cave supérieure gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>04.01.25 (Left superior caval vein (SVC))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0023 (Absence de toit du sinus coronaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>04.04.13 (Unroofed coronary sinus)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0024 (Anomalie du retour veineux pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>04.08.07 (Anomalous pulmonary venous connection)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0025 (Connexion veineuse pulmonaire totale anormale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>04.08.05 (Total anomalous pulmonary venous connection)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0026 (Connexion veineuse pulmonaire partielle anormale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>04.07.01 (Partial anomalous pulmonary venous connection(s))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0027 (Syndrome du cimeterre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>03.02.23 (Scimitar syndrome)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0028 (Sténose ou hypoplasie veineuse pulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>04.08.31 (Congenital pulmonary venous stenosis and-or hypoplasia)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0029 (Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.00.15 (Congenital anomaly of an atrioventricular valve(s) and-or atrioventricular septum)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0030 (Anomalie congénitale de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.01.11 (Congenital anomaly of tricuspid valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0031 (Insuffisance tricuspide congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.01.25 (Congenital tricuspid regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0032 (Sténose congénitale de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.01.07 (Congenital tricuspid valvar stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0033 (Dysplasie de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.01.03 (Dysplasia of tricuspid valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0034 (Malformation d'Ebstein de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.01.34 (Ebstein malformation of tricuspid valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0035 (Anomalie congénitale de la valve mitrale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.02.11 (Congenital anomaly of mitral valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0036 (Insuffisance mitrale congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.02.25 (Congenital mitral regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0037 (Sténose valvulaire mitrale congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.02.07 (Congenital mitral valvar stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0038 (Dysplasie de la valve mitrale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.02.03 (Dysplasia of mitral valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0039 (Anomalie congénitale de l'appareil mitral sousvalvaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.02.21 (Congenital anomaly of mitral subvalvar apparatus)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0040 (Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.07.28 (Common atrioventricular junction without an atrioventricular septal defect)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0041 (Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.06.00 (Common atrioventricular junction with atrioventricular septal defect (AVSD))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0042 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.06.01 (Atrioventricular septal defect with communication at the atrial level only (primum atrial septal defect) (partial atrioventricular canal defect))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0043 (Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.06.08 (Atrioventricular septal defect with communication at the ventricular level only (atrioventricular canal defect with isolated ventricular communication))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0044 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.06.10 (Atrioventricular septal defect (atrioventricular canal defect) with communication at atrial level and restrictive communication at ventricular level (intermediate atrioventricular septal defect))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0045 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.06.09 (Atrioventricular septal defect (atrioventricular canal defect) with communication at atrial level and unrestrictive communication at ventricular level (Complete atrioventricular septal defect))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0046 (Communication septale auriculoventriculaire avec déséquilibre ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.07.26 (Atrioventricular septal defect (AVSD) with ventricular imbalance)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0047 (Anomalie septal auriculoventriculaire et tétralogie de Fallot)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.20 (Atrioventricular septal defect and Tetralogy of Fallot)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0048 (Anomalie congénitale du ventricule ou du septum ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.00.00 (Congenital anomaly of a ventricle and-or the ventricular septum)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0049 (Obstruction congénitale de la voie de sortie du ventricule droit)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.05.20 (Congenital right ventricular outflow tract obstruction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0050 (Ventricule droit à double chambre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.03.01 (Double chambered right ventricle)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0051 (Tétralogie de Fallot)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.01 (Tetralogy of Fallot)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0052 (Tétralogie de Fallot avec syndrome de valve pulmonaire absente)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.05.25 (Tetralogy of Fallot with absent pulmonary valve syndrome)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0053 (Tétralogie de Fallot avec atrésie pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.26 (Tetralogy of Fallot with pulmonary atresia)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0054 (Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.57 (Tetralogy of Fallot with pulmonary atresia and systemic-to-pulmonary collateral artery(ies) (MAPCA(s)))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0055 (Obstruction congénitale de la voie de sortie du ventricule gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.09.28 (Congenital left ventricular outflow tract obstruction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0056 (Communication interventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.10.00 (Ventricular septal defect (VSD))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0057 (Communication interventriculaire musculaire trabéculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.11.01 (Trabecular muscular ventricular septal defect (VSD))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0058 (Communication interventriculaire centrale périmembraneuse)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.10.01 (Perimembranous central ventricular septal defect (VSD))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0059 (Communication interventriculaire non significatif sur le plan hémodynamique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.15.01 (Ventricular septal defect(s) haemodynamically insignificant)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0060 (Cœur fonctionnellement univentriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.22 (Functionally univentricular heart)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0061 (Connexion auriculoventriculaire à double entrée)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.14 (Double inlet atrioventricular connection (double inlet ventricle))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0062 (Atrésie de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.01.01 (Tricuspid atresia)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0063 (Atrésie mitrale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>06.02.01 (Mitral atresia)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0064 (Syndrome d'hypoplasie du cœur gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.09 (Hypoplastic left heart syndrome)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0065 (Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.04.29 (Congenital anomaly of ventriculo-arterial valve(s) and-or adjacent regions)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0066 (Anomalie congénitale de la valve pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.05.29 (Congenital anomaly of pulmonary valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0067 (Sténose congénitale de la valve pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.05.04 (Congenital pulmonary valvar stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0068 (Insuffisance congénitale de la valve pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.05.22 (Congenital pulmonary regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0069 (Atrésie pulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.05.16 (Congenital pulmonary atresia)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0070 (Atrésie pulmonaire avec septum ventriculaire intact)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>01.01.07 (Pulmonary atresia with intact ventricular septum)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0071 (Anomalie congénitale de la valve aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.15.19 (Congenital anomaly of aortic valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0072 (Sténose congénitale de la valve aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.15.01 (Congenital aortic valvar stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0073 (Insuffisance aortique congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.15.07 (Congenital aortic regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0074 (Valve aortique bicuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.15.22 (Bicuspid aortic valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0075 (Atrésie de la valve aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.15.06 (Aortic valvar atresia)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0076 (Valve aortique unicuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.15.21 (Unicuspid aortic valve)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0077 (Sténose supravalvulaire aortique congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.16.18 (Congenital supravalvar aortic stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0078 (Anévrisme du sinus aortique de Valsalva)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.18.01 (Aneurysm of aortic sinus of Valsalva)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0079 (Sténose sous-aortique congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.09.50 (Congenital subaortic stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0080 (Sténose sous-pulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.05.32 (Congenital subpulmonary stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0081 (Anomalie congénitale des grandes artères, y compris le canal artériel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.04.28 (Congenital anomaly of great arteries including arterial duct)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0082 (Fenêtre aortopulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.04.07 (Congenital aortopulmonary window)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0083 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.07.16 (Congenital anomaly of pulmonary arterial tree)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0084 (Anomalie congénitale de l'aorte ou de ses branches)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>07.09.34 (Congenital anomaly of aorta and-or its branches)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0085 (Coarctation de l'aorte)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.29.01 (Coarctation of aorta)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0086 (Interruption de la crosse aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.29.31 (Interrupted aortic arch)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0087 (Anomalie congénitale de l'aorte thoracique descendante ou abdominale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.28.47 (Congenital anomaly of descending thoracic and-or abdominal aorta)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0088 (Anomalie congénitale de la branche de l'arc aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.30.17 (Congenital anomaly of aortic arch branch)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0089 (Syndrome de compression trachéo-œsophagienne)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.31.40 (Tracheo-esophageal compressive syndrome)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0090 (Persistance du canal artériel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.27.21 (Patent arterial duct (PDA))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0091 (Anomalie congénitale des artères coronaires)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.46.03 (Congenital anomaly of coronary artery(ies))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0092 (Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.41.01 (Anomalous origin of coronary artery from pulmonary arterial tree)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0093 (Origine aortique anormale ou trajet anormal de l'artère coronaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.42.00 (Anomalous aortic origin or course of coronary artery)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0094 (Fistule artérielle coronaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.45.16 (Congenital coronary arterial fistula(s))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0095 (Malformation congénitale du péricarde)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>10.01.05 (Congenital pericardial anomaly)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0096 (Anomalie congénitale du septum auriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.07.01 (Congenital anomaly of atrial septum)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0097 (Foramen ovale perméable)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.03.01 (Patent foramen ovale (PFO))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0098 (Communication interauriculaire dans la fosse ovale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.04.02 (Atrial septal defect (ASD) within oval fossa (secundum))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0099 (Anomalie du sinus veineux)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.05.00 (Sinus venosus defect (ASD))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0100 (Communication interauriculaire par l'orifice du sinus coronaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.05.03 (Interatrial communication (ASD) through coronary sinus orifice)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0101 (Anomalie congénitale de l'oreillette droite)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.01.13 (Congenital anomaly of right atrium)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0102 (Anomalie congénitale de l'oreillette gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.02.11 (Congenital anomaly of left atrium)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0103 (Oreillette gauche divisée)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>05.02.01 (Divided left atrium (cor triatriatum))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0104 (Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.10.37 (Congenital central pulmonary arterial stenosis or hypoplasia proximal to hilar bifurcation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0105 (Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.10.38 (Congenital peripheral pulmonary arterial stenoses or hypoplasia at or beyond hilar bifurcation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0106 (Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.10.30 (Congenitally discontinuous, non-confluent right and left pulmonary arteries)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0107 (Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.08.01 (Major systemic-to-pulmonary collateral artery(ies) (MAPCA(s)))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0108 (Fistule (malformation) artérioveineuse pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>09.19.05 (Pulmonary arteriovenous fistula (malformation))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-DIAG-0109 (Bloc atrioventriculaire complet congénital idiopathique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>11.06.08 (Congenital idiopathic complete atrioventricular block)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://taussig/fhir/ConceptMap/taussig-diagnosis-to-ipccc"] ;
+  fhir:ConceptMap.version [ fhir:value "0.8.1"] ;
+  fhir:ConceptMap.name [ fhir:value "TaussigDiagnosisToIpccc"] ;
+  fhir:ConceptMap.title [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux vers IPCCC"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ConceptMap.description [ fhir:value "Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://taussig/fhir/ValueSet/taussig-diagnosis" ;
+     fhir:link <https://taussig/fhir/ValueSet/taussig-diagnosis>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index -1 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://taussig/fhir/CodeSystem/taussig-diagnosis" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0001" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie de position-orientation du cœur" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "02.01.09" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalous position-orientation of heart" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0002" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Lévocardie" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "02.01.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Laevocardia: heart predominantly in left hemithorax" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0003" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dextrocardie" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "02.01.02" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Dextrocardia: heart predominantly in right hemithorax" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0004" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Mésocardie" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "02.01.04" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Midline heart (mesocardia)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0005" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Image en miroir complète" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "03.01.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Total mirror imagery (situs inversus totalis)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0006" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Isomérisme droit" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "03.01.04" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Right isomerism" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0007" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Isomérisme gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "03.01.05" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Left isomerism" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0008" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.03.09" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of an atrioventricular and-or ventriculo-arterial connection(s)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0009" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexions atrioventriculaires discordantes" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.04.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Discordant atrioventricular connections" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0010" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Transposition congénitalement corrigée des grandes artères" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenitally corrected transposition of great arteries (discordant atrioventricular & ventriculo-arterial connections)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0011" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Transposition des gros vaisseaux" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.05.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Transposition of great arteries (discordant ventriculo-arterial connections) (TGA)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0012" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double issue" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.04" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double outlet right ventricle" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0013" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.18" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double outlet right ventricle with subpulmonary ventricular septal defect, transposition type" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0014" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.19" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double outlet right ventricle with non-committed ventricular septal defect" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0015" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.40" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double outlet right ventricle with subaortic or doubly committed ventricular septal defect without pulmonary stenosis, ventricular septal defect type" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0016" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.17" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double outlet right ventricle with subaortic or doubly committed ventricular septal defect and pulmonary stenosis, Fallot type" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0017" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule gauche à double issue" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.05.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double outlet left ventricle" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0018" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tronc artériel commun" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.01.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Common arterial trunk (truncus arteriosus)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0019" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tronc artériel commun à dominance aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.01.15" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Common arterial trunk (truncus arteriosus) with aortic dominance (no aortic arch obstruction)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0020" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.01.18" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Common arterial trunk (truncus arteriosus) with pulmonary dominance and interrupted aortic arch" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0021" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la veine médiastinale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "04.00.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of mediastinal vein(s)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0022" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Veine cave supérieure gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "04.01.25" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Left superior caval vein (SVC)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0023" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Absence de toit du sinus coronaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "04.04.13" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Unroofed coronary sinus" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0024" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie du retour veineux pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "04.08.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalous pulmonary venous connection" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0025" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexion veineuse pulmonaire totale anormale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "04.08.05" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Total anomalous pulmonary venous connection" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0026" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexion veineuse pulmonaire partielle anormale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "04.07.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Partial anomalous pulmonary venous connection(s)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0027" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome du cimeterre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "03.02.23" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Scimitar syndrome" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0028" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose ou hypoplasie veineuse pulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "04.08.31" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital pulmonary venous stenosis and-or hypoplasia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0029" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.00.15" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of an atrioventricular valve(s) and-or atrioventricular septum" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0030" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.01.11" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of tricuspid valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0031" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance tricuspide congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.01.25" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital tricuspid regurgitation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0032" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose congénitale de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.01.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital tricuspid valvar stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0033" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysplasie de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.01.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Dysplasia of tricuspid valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0034" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Malformation d'Ebstein de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.01.34" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ebstein malformation of tricuspid valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0035" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve mitrale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.02.11" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of mitral valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0036" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance mitrale congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.02.25" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital mitral regurgitation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0037" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose valvulaire mitrale congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.02.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital mitral valvar stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0038" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysplasie de la valve mitrale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.02.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Dysplasia of mitral valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0039" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'appareil mitral sousvalvaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.02.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of mitral subvalvar apparatus" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0040" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.07.28" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Common atrioventricular junction without an atrioventricular septal defect" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0041" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.06.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Common atrioventricular junction with atrioventricular septal defect (AVSD)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0042" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.06.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrioventricular septal defect with communication at the atrial level only (primum atrial septal defect) (partial atrioventricular canal defect)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0043" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.06.08" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrioventricular septal defect with communication at the ventricular level only (atrioventricular canal defect with isolated ventricular communication)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0044" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.06.10" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrioventricular septal defect (atrioventricular canal defect) with communication at atrial level and restrictive communication at ventricular level (intermediate atrioventricular septal defect)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0045" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.06.09" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrioventricular septal defect (atrioventricular canal defect) with communication at atrial level and unrestrictive communication at ventricular level (Complete atrioventricular septal defect)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0046" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication septale auriculoventriculaire avec déséquilibre ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.07.26" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrioventricular septal defect (AVSD) with ventricular imbalance" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0047" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septal auriculoventriculaire et tétralogie de Fallot" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrioventricular septal defect and Tetralogy of Fallot" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0048" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale du ventricule ou du septum ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.00.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of a ventricle and-or the ventricular septum" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0049" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule droit" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.05.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital right ventricular outflow tract obstruction" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0050" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double chambre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.03.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double chambered right ventricle" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0051" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tetralogy of Fallot" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0052" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot avec syndrome de valve pulmonaire absente" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.05.25" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tetralogy of Fallot with absent pulmonary valve syndrome" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0053" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.26" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tetralogy of Fallot with pulmonary atresia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0054" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.57" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tetralogy of Fallot with pulmonary atresia and systemic-to-pulmonary collateral artery(ies) (MAPCA(s))" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0055" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.09.28" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital left ventricular outflow tract obstruction" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0056" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.10.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricular septal defect (VSD)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0057" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire musculaire trabéculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.11.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Trabecular muscular ventricular septal defect (VSD)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0058" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire centrale périmembraneuse" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.10.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Perimembranous central ventricular septal defect (VSD)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0059" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire non significatif sur le plan hémodynamique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.15.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricular septal defect(s) haemodynamically insignificant" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0060" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Cœur fonctionnellement univentriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Functionally univentricular heart" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0061" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexion auriculoventriculaire à double entrée" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.14" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Double inlet atrioventricular connection (double inlet ventricle)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0062" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.01.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tricuspid atresia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0063" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie mitrale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "06.02.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Mitral atresia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0064" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome d'hypoplasie du cœur gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.09" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Hypoplastic left heart syndrome" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0065" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.04.29" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of ventriculo-arterial valve(s) and-or adjacent regions" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0066" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.05.29" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of pulmonary valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0067" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose congénitale de la valve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.05.04" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital pulmonary valvar stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0068" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance congénitale de la valve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.05.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital pulmonary regurgitation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0069" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie pulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.05.16" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital pulmonary atresia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0070" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie pulmonaire avec septum ventriculaire intact" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "01.01.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary atresia with intact ventricular septum" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0071" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.15.19" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of aortic valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0072" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose congénitale de la valve aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.15.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital aortic valvar stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0073" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance aortique congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.15.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital aortic regurgitation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0074" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Valve aortique bicuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.15.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Bicuspid aortic valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0075" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie de la valve aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.15.06" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic valvar atresia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0076" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Valve aortique unicuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.15.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Unicuspid aortic valve" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0077" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose supravalvulaire aortique congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.16.18" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital supravalvar aortic stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0078" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anévrisme du sinus aortique de Valsalva" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.18.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aneurysm of aortic sinus of Valsalva" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0079" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose sous-aortique congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.09.50" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital subaortic stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0080" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose sous-pulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.05.32" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital subpulmonary stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0081" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale des grandes artères, y compris le canal artériel" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.04.28" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of great arteries including arterial duct" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0082" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fenêtre aortopulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.04.07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital aortopulmonary window" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0083" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.07.16" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of pulmonary arterial tree" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0084" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'aorte ou de ses branches" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "07.09.34" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of aorta and-or its branches" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0085" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Coarctation de l'aorte" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.29.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Coarctation of aorta" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0086" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Interruption de la crosse aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.29.31" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Interrupted aortic arch" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0087" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'aorte thoracique descendante ou abdominale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.28.47" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of descending thoracic and-or abdominal aorta" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0088" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la branche de l'arc aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.30.17" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of aortic arch branch" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0089" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de compression trachéo-œsophagienne" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.31.40" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tracheo-esophageal compressive syndrome" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0090" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Persistance du canal artériel" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.27.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Patent arterial duct (PDA)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0091" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale des artères coronaires" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.46.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of coronary artery(ies)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0092" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.41.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalous origin of coronary artery from pulmonary arterial tree" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0093" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Origine aortique anormale ou trajet anormal de l'artère coronaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.42.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalous aortic origin or course of coronary artery" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0094" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fistule artérielle coronaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.45.16" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital coronary arterial fistula(s)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0095" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Malformation congénitale du péricarde" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "10.01.05" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital pericardial anomaly" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0096" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale du septum auriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.07.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of atrial septum" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0097" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Foramen ovale perméable" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.03.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Patent foramen ovale (PFO)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0098" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interauriculaire dans la fosse ovale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.04.02" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrial septal defect (ASD) within oval fossa (secundum)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0099" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie du sinus veineux" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.05.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sinus venosus defect (ASD)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0100" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interauriculaire par l'orifice du sinus coronaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.05.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Interatrial communication (ASD) through coronary sinus orifice" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0101" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'oreillette droite" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.01.13" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of right atrium" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0102" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'oreillette gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.02.11" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital anomaly of left atrium" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0103" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Oreillette gauche divisée" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "05.02.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Divided left atrium (cor triatriatum)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0104" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.10.37" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital central pulmonary arterial stenosis or hypoplasia proximal to hilar bifurcation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0105" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.10.38" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital peripheral pulmonary arterial stenoses or hypoplasia at or beyond hilar bifurcation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0106" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.10.30" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenitally discontinuous, non-confluent right and left pulmonary arteries" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0107" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.08.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Major systemic-to-pulmonary collateral artery(ies) (MAPCA(s))" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0108" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fistule (malformation) artérioveineuse pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "09.19.05" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary arteriovenous fistula (malformation)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0109" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Bloc atrioventriculaire complet congénital idiopathique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "11.06.08" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Congenital idiopathic complete atrioventricular block" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "libellé TAUSSIG = traduction du terme IPCCC" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-diagnosis-to-ipccc.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

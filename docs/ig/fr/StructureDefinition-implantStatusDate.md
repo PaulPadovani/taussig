@@ -1,4 +1,4 @@
-# Date de l'état de l'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Date de l'état de l'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Date de l'état de l'implant (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-implantStatusDa
   "resourceType" : "StructureDefinition",
   "id" : "implantStatusDate",
   "url" : "https://taussig/fhir/StructureDefinition/implantStatusDate",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ImplantStatusDate",
   "title" : "Date de l'état de l'implant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Date à laquelle l'état clinique courant de l'implant (implantClinicalStatus) a été constaté. Un seul état courant par implant ; l'historique des états relève de v5 (ImplantStatusEvent).",
   "jurisdiction" : [{

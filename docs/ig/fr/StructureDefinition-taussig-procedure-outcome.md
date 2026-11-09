@@ -1,4 +1,4 @@
-# TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Résultat global de procédure ( Expérimental ) 
 
@@ -69,12 +69,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
   "resourceType" : "StructureDefinition",
   "id" : "taussig-procedure-outcome",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-procedure-outcome",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigProcedureOutcome",
   "title" : "TAUSSIG — Résultat global de procédure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Synthèse du résultat procédural : succès hémodynamique, lésion résiduelle, imputabilité d'un décès péri-procédural (component). NB : succès TECHNIQUE porté par Procedure.outcome (geste/cathétérisme) ; décès porté par Patient.deceased[x].",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set POC des propriétés de mesure hémodynamique de cathétérisme.",
   "jurisdiction" : [{

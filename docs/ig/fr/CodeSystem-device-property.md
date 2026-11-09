@@ -1,4 +1,4 @@
-# TAUSSIG — Propriété codée d'un dispositif - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Propriété codée d'un dispositif - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Propriété codée d'un dispositif (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "device-property",
   "url" : "https://taussig/fhir/CodeSystem/device-property",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "DeviceProperty",
   "title" : "TAUSSIG — Propriété codée d'un dispositif",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Type de propriété codée portée par Device.property (décision M2).",
   "jurisdiction" : [{

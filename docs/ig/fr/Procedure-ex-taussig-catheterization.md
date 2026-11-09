@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Exemple technique — TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Exemple Procedure: Exemple technique — TAUSSIG — Cathétérisme cardiaque (acte pivot)
 
@@ -25,12 +25,12 @@ Balise:
 | | | |
 | :--- | :--- | :--- |
 | - | **Function** | **Actor** |
-| * | 1er opérateur | [Fictif Exemple](Practitioner-ex-taussig-practitioner.md) |
+| * | 1er opérateur | [[OPERATEUR_1]](Practitioner-ex-taussig-practitioner.md) |
 
 **reasonReference**: 
 
-* [Condition](Condition-ex-taussig-cardiac-diagnosis.md)
-* [Condition : extension = ->Condition; category = Lésion résiduelle](Condition-ex-taussig-cardiac-condition-profile.md)
+* [Condition Coarctation de l'aorte](Condition-ex-taussig-cardiac-diagnosis.md)
+* [Condition Coarctation aortique résiduelle](Condition-ex-taussig-cardiac-condition-profile.md)
 
 **outcome**: Complet
 

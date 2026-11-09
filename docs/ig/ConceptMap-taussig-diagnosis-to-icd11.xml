@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="taussig-diagnosis-to-icd11"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CarteDeConcepts taussig-diagnosis-to-icd11</b></p><a name="taussig-diagnosis-to-icd11"> </a><a name="hctaussig-diagnosis-to-icd11"> </a><p>Mapping de <a href="ValueSet-taussig-diagnosis.html">TAUSSIG — Liste des diagnostics cardiaques congénitaux</a> vers (non spécifié)</p><br/><p>Mapping de <a href="CodeSystem-taussig-diagnosis.html">TAUSSIG — Diagnostics cardiaques congénitaux</a> to <code>http://id.who.int/icd/release/11/mms</code> (International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS))</p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>TAUSSIG-DIAG-0001 (Anomalie de position-orientation du cœur)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA80 (Anomalie de position-orientation du cœur)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0002 (Lévocardie)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA80.0 (Lévocardie)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0003 (Dextrocardie)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA80.1 (Dextrocardie)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0004 (Mésocardie)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA80.2 (Mésocardie)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0005 (Image en miroir complète)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA82 (Image en miroir complète)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0006 (Isomérisme droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA83 (Isomérisme droit)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0007 (Isomérisme gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA84 (Isomérisme gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0008 (Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85 (Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0009 (Connexions atrioventriculaires discordantes)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.0 (Connexions atrioventriculaires discordantes)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0010 (Transposition congénitalement corrigée des grandes artères)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.00 (Transposition congénitalement corrigée des grandes artères)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0011 (Transposition des gros vaisseaux)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.1 (Transposition des gros vaisseaux)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0012 (Ventricule droit à double issue)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.2 (Ventricule droit à double issue)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0013 (Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.20 (Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0014 (Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.21 (Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0015 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.22 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0016 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.23 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0017 (Ventricule gauche à double issue)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.3 (Ventricule gauche à double issue)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0018 (Tronc artériel commun)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.4 (Tronc artériel commun)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0019 (Tronc artériel commun à dominance aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.40 (Tronc artériel commun à dominance aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0020 (Tronc artériel commun à dominance pulmonaire et arc aortique interrompue)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA85.41 (Tronc artériel commun à dominance pulmonaire et arc aortique interrompue)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0021 (Anomalie congénitale de la veine médiastinale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86 (Anomalie congénitale de la veine médiastinale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0022 (Veine cave supérieure gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86.0 (Veine cave supérieure gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0023 (Absence de toit du sinus coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86.1 (Absence de toit du sinus coronaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0024 (Anomalie du retour veineux pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86.2 (Anomalie du retour veineux pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0025 (Connexion veineuse pulmonaire totale anormale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86.20 (Connexion veineuse pulmonaire totale anormale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0026 (Connexion veineuse pulmonaire partielle anormale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86.21 (Connexion veineuse pulmonaire partielle anormale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0027 (Syndrome du cimeterre)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86.22 (Syndrome du cimeterre)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0028 (Sténose ou hypoplasie veineuse pulmonaire congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA86.3 (Sténose ou hypoplasie veineuse pulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0029 (Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87 (Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0030 (Anomalie congénitale de la valve tricuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.0 (Anomalie congénitale de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0031 (Insuffisance tricuspide congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.00 (Insuffisance tricuspide congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0032 (Sténose congénitale de la valve tricuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.01 (Sténose congénitale de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0033 (Dysplasie de la valve tricuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.02 (Dysplasie de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0034 (Malformation d'Ebstein de la valve tricuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.03 (Malformation d'Ebstein de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0035 (Anomalie congénitale de la valve mitrale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.1 (Anomalie congénitale de la valve mitrale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0036 (Insuffisance mitrale congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.10 (Insuffisance mitrale congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0037 (Sténose valvulaire mitrale congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.11 (Sténose valvulaire mitrale congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0038 (Dysplasie de la valve mitrale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.12 (Dysplasie de la valve mitrale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0039 (Anomalie congénitale de l'appareil mitral sousvalvaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.13 (Anomalie congénitale de l'appareil mitral sousvalvaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0040 (Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.3 (Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0041 (Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.4 (Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0042 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.40 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0043 (Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.41 (Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0044 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.42 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0045 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.43 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0046 (Communication septale auriculoventriculaire avec déséquilibre ventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.44 (Communication septale auriculoventriculaire avec déséquilibre ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0047 (Anomalie septal auriculoventriculaire et tétralogie de Fallot)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA87.45 (Anomalie septal auriculoventriculaire et tétralogie de Fallot)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0048 (Anomalie congénitale du ventricule ou du septum ventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88 (Anomalie congénitale du ventricule ou du septum ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0049 (Obstruction congénitale de la voie de sortie du ventricule droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.0 (Obstruction congénitale de la voie de sortie du ventricule droit)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0050 (Ventricule droit à double chambre)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.1 (Ventricule droit à double chambre)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0051 (Tétralogie de Fallot)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.2 (Tétralogie de Fallot)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0052 (Tétralogie de Fallot avec syndrome de valve pulmonaire absente)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.20 (Tétralogie de Fallot avec syndrome de valve pulmonaire absente)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0053 (Tétralogie de Fallot avec atrésie pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.21 (Tétralogie de Fallot avec atrésie pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0054 (Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.22 (Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0055 (Obstruction congénitale de la voie de sortie du ventricule gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.3 (Obstruction congénitale de la voie de sortie du ventricule gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0056 (Communication interventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.4 (Communication interventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0057 (Communication interventriculaire musculaire trabéculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.40 (Communication interventriculaire musculaire trabéculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0058 (Communication interventriculaire centrale périmembraneuse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.41 (Communication interventriculaire centrale périmembraneuse)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0059 (Communication interventriculaire non significatif sur le plan hémodynamique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA88.42 (Communication interventriculaire non significatif sur le plan hémodynamique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0060 (Cœur fonctionnellement univentriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA89 (Cœur fonctionnellement univentriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0061 (Connexion auriculoventriculaire à double entrée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA89.0 (Connexion auriculoventriculaire à double entrée)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0062 (Atrésie de la valve tricuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA89.1 (Atrésie de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0063 (Atrésie mitrale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA89.2 (Atrésie mitrale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0064 (Syndrome d'hypoplasie du cœur gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA89.3 (Syndrome d'hypoplasie du cœur gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0065 (Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A (Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0066 (Anomalie congénitale de la valve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.0 (Anomalie congénitale de la valve pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0067 (Sténose congénitale de la valve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.00 (Sténose congénitale de la valve pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0068 (Insuffisance congénitale de la valve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.01 (Insuffisance congénitale de la valve pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0069 (Atrésie pulmonaire congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.1 (Atrésie pulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0070 (Atrésie pulmonaire avec septum ventriculaire intact)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.10 (Atrésie pulmonaire avec septum ventriculaire intact)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0071 (Anomalie congénitale de la valve aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.2 (Anomalie congénitale de la valve aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0072 (Sténose congénitale de la valve aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.20 (Sténose congénitale de la valve aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0073 (Insuffisance aortique congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.21 (Insuffisance aortique congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0074 (Valve aortique bicuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.22 (Valve aortique bicuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0075 (Atrésie de la valve aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.23 (Atrésie de la valve aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0076 (Valve aortique unicuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.24 (Valve aortique unicuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0077 (Sténose supravalvulaire aortique congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.3 (Sténose supravalvulaire aortique congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0078 (Anévrisme du sinus aortique de Valsalva)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.4 (Anévrisme du sinus aortique de Valsalva)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0079 (Sténose sous-aortique congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.5 (Sténose sous-aortique congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0080 (Sténose sous-pulmonaire congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8A.6 (Sténose sous-pulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0081 (Anomalie congénitale des grandes artères, y compris le canal artériel)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B (Anomalie congénitale des grandes artères, y compris le canal artériel)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0082 (Fenêtre aortopulmonaire congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.0 (Fenêtre aortopulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0083 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0084 (Anomalie congénitale de l'aorte ou de ses branches)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.2 (Anomalie congénitale de l'aorte ou de ses branches)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0085 (Coarctation de l'aorte)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.21 (Coarctation de l'aorte)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0086 (Interruption de la crosse aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.22 (Interruption de la crosse aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0087 (Anomalie congénitale de l'aorte thoracique descendante ou abdominale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.23 (Anomalie congénitale de l'aorte thoracique descendante ou abdominale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0088 (Anomalie congénitale de la branche de l'arc aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.24 (Anomalie congénitale de la branche de l'arc aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0089 (Syndrome de compression trachéo-œsophagienne)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.3 (Syndrome de compression trachéo-œsophagienne)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0090 (Persistance du canal artériel)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8B.4 (Persistance du canal artériel)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0091 (Anomalie congénitale des artères coronaires)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8C (Anomalie congénitale des artères coronaires)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0092 (Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8C.0 (Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0093 (Origine aortique anormale ou trajet anormal de l'artère coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8C.1 (Origine aortique anormale ou trajet anormal de l'artère coronaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0094 (Fistule artérielle coronaire congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8C.2 (Fistule artérielle coronaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0095 (Malformation congénitale du péricarde)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8D (Malformation congénitale du péricarde)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0096 (Anomalie congénitale du septum auriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8E (Anomalie congénitale du septum auriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0097 (Foramen ovale perméable)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8E.0 (Foramen ovale perméable)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0098 (Communication interauriculaire dans la fosse ovale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8E.1 (Communication interauriculaire dans la fosse ovale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0099 (Anomalie du sinus veineux)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8E.2 (Anomalie du sinus veineux)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0100 (Communication interauriculaire par l'orifice du sinus coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8E.3 (Communication interauriculaire par l'orifice du sinus coronaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0101 (Anomalie congénitale de l'oreillette droite)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8F (Anomalie congénitale de l'oreillette droite)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0102 (Anomalie congénitale de l'oreillette gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8G (Anomalie congénitale de l'oreillette gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0103 (Oreillette gauche divisée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA8G.0 (Oreillette gauche divisée)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0104 (Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>pas d'entité CIM-11 plus fine (v6)</td></tr><tr><td>TAUSSIG-DIAG-0105 (Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>idem</td></tr><tr><td>TAUSSIG-DIAG-0106 (Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>idem</td></tr><tr><td>TAUSSIG-DIAG-0107 (Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>pas d'entité CIM-11 pour les MAPCA (v6)</td></tr><tr><td>TAUSSIG-DIAG-0108 (Fistule (malformation) artérioveineuse pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LA90.5 (Fistule artérioveineuse pulmonaire)</td><td>fistule artérioveineuse pulmonaire, malformation du développement</td></tr><tr><td>TAUSSIG-DIAG-0109 (Bloc atrioventriculaire complet congénital idiopathique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>BC63.20 (Bloc auriculoventriculaire complet congénital)</td><td>BC63.20 couvre tout BAV complet congénital ; le concept TAUSSIG est idiopathique</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/ConceptMap/taussig-diagnosis-to-icd11"/>
+  <version value="0.8.1"/>
+  <name value="TaussigDiagnosisToIcd11"/>
+  <title value="TAUSSIG — Diagnostics cardiaques congénitaux vers ICD-11"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-09T15:30:29+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers ICD-11. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://taussig/fhir/ValueSet/taussig-diagnosis"/>
+  <group>
+    <source value="https://taussig/fhir/CodeSystem/taussig-diagnosis"/>
+    <target value="http://id.who.int/icd/release/11/mms"/>
+    <element>
+      <code value="TAUSSIG-DIAG-0001"/>
+      <display value="Anomalie de position-orientation du cœur"/>
+      <target>
+        <code value="LA80"/>
+        <display value="Anomalie de position-orientation du cœur"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0002"/>
+      <display value="Lévocardie"/>
+      <target>
+        <code value="LA80.0"/>
+        <display value="Lévocardie"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0003"/>
+      <display value="Dextrocardie"/>
+      <target>
+        <code value="LA80.1"/>
+        <display value="Dextrocardie"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0004"/>
+      <display value="Mésocardie"/>
+      <target>
+        <code value="LA80.2"/>
+        <display value="Mésocardie"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0005"/>
+      <display value="Image en miroir complète"/>
+      <target>
+        <code value="LA82"/>
+        <display value="Image en miroir complète"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0006"/>
+      <display value="Isomérisme droit"/>
+      <target>
+        <code value="LA83"/>
+        <display value="Isomérisme droit"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0007"/>
+      <display value="Isomérisme gauche"/>
+      <target>
+        <code value="LA84"/>
+        <display value="Isomérisme gauche"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0008"/>
+      <display value="Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle"/>
+      <target>
+        <code value="LA85"/>
+        <display value="Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0009"/>
+      <display value="Connexions atrioventriculaires discordantes"/>
+      <target>
+        <code value="LA85.0"/>
+        <display value="Connexions atrioventriculaires discordantes"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0010"/>
+      <display value="Transposition congénitalement corrigée des grandes artères"/>
+      <target>
+        <code value="LA85.00"/>
+        <display value="Transposition congénitalement corrigée des grandes artères"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0011"/>
+      <display value="Transposition des gros vaisseaux"/>
+      <target>
+        <code value="LA85.1"/>
+        <display value="Transposition des gros vaisseaux"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0012"/>
+      <display value="Ventricule droit à double issue"/>
+      <target>
+        <code value="LA85.2"/>
+        <display value="Ventricule droit à double issue"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0013"/>
+      <display value="Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition"/>
+      <target>
+        <code value="LA85.20"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0014"/>
+      <display value="Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux"/>
+      <target>
+        <code value="LA85.21"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0015"/>
+      <display value="Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire"/>
+      <target>
+        <code value="LA85.22"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0016"/>
+      <display value="Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot"/>
+      <target>
+        <code value="LA85.23"/>
+        <display value="Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0017"/>
+      <display value="Ventricule gauche à double issue"/>
+      <target>
+        <code value="LA85.3"/>
+        <display value="Ventricule gauche à double issue"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0018"/>
+      <display value="Tronc artériel commun"/>
+      <target>
+        <code value="LA85.4"/>
+        <display value="Tronc artériel commun"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0019"/>
+      <display value="Tronc artériel commun à dominance aortique"/>
+      <target>
+        <code value="LA85.40"/>
+        <display value="Tronc artériel commun à dominance aortique"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0020"/>
+      <display value="Tronc artériel commun à dominance pulmonaire et arc aortique interrompue"/>
+      <target>
+        <code value="LA85.41"/>
+        <display value="Tronc artériel commun à dominance pulmonaire et arc aortique interrompue"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0021"/>
+      <display value="Anomalie congénitale de la veine médiastinale"/>
+      <target>
+        <code value="LA86"/>
+        <display value="Anomalie congénitale de la veine médiastinale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0022"/>
+      <display value="Veine cave supérieure gauche"/>
+      <target>
+        <code value="LA86.0"/>
+        <display value="Veine cave supérieure gauche"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0023"/>
+      <display value="Absence de toit du sinus coronaire"/>
+      <target>
+        <code value="LA86.1"/>
+        <display value="Absence de toit du sinus coronaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0024"/>
+      <display value="Anomalie du retour veineux pulmonaire"/>
+      <target>
+        <code value="LA86.2"/>
+        <display value="Anomalie du retour veineux pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0025"/>
+      <display value="Connexion veineuse pulmonaire totale anormale"/>
+      <target>
+        <code value="LA86.20"/>
+        <display value="Connexion veineuse pulmonaire totale anormale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0026"/>
+      <display value="Connexion veineuse pulmonaire partielle anormale"/>
+      <target>
+        <code value="LA86.21"/>
+        <display value="Connexion veineuse pulmonaire partielle anormale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0027"/>
+      <display value="Syndrome du cimeterre"/>
+      <target>
+        <code value="LA86.22"/>
+        <display value="Syndrome du cimeterre"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0028"/>
+      <display value="Sténose ou hypoplasie veineuse pulmonaire congénitale"/>
+      <target>
+        <code value="LA86.3"/>
+        <display value="Sténose ou hypoplasie veineuse pulmonaire congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0029"/>
+      <display value="Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire"/>
+      <target>
+        <code value="LA87"/>
+        <display value="Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0030"/>
+      <display value="Anomalie congénitale de la valve tricuspide"/>
+      <target>
+        <code value="LA87.0"/>
+        <display value="Anomalie congénitale de la valve tricuspide"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0031"/>
+      <display value="Insuffisance tricuspide congénitale"/>
+      <target>
+        <code value="LA87.00"/>
+        <display value="Insuffisance tricuspide congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0032"/>
+      <display value="Sténose congénitale de la valve tricuspide"/>
+      <target>
+        <code value="LA87.01"/>
+        <display value="Sténose congénitale de la valve tricuspide"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0033"/>
+      <display value="Dysplasie de la valve tricuspide"/>
+      <target>
+        <code value="LA87.02"/>
+        <display value="Dysplasie de la valve tricuspide"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0034"/>
+      <display value="Malformation d'Ebstein de la valve tricuspide"/>
+      <target>
+        <code value="LA87.03"/>
+        <display value="Malformation d'Ebstein de la valve tricuspide"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0035"/>
+      <display value="Anomalie congénitale de la valve mitrale"/>
+      <target>
+        <code value="LA87.1"/>
+        <display value="Anomalie congénitale de la valve mitrale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0036"/>
+      <display value="Insuffisance mitrale congénitale"/>
+      <target>
+        <code value="LA87.10"/>
+        <display value="Insuffisance mitrale congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0037"/>
+      <display value="Sténose valvulaire mitrale congénitale"/>
+      <target>
+        <code value="LA87.11"/>
+        <display value="Sténose valvulaire mitrale congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0038"/>
+      <display value="Dysplasie de la valve mitrale"/>
+      <target>
+        <code value="LA87.12"/>
+        <display value="Dysplasie de la valve mitrale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0039"/>
+      <display value="Anomalie congénitale de l'appareil mitral sousvalvaire"/>
+      <target>
+        <code value="LA87.13"/>
+        <display value="Anomalie congénitale de l'appareil mitral sousvalvaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0040"/>
+      <display value="Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire"/>
+      <target>
+        <code value="LA87.3"/>
+        <display value="Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0041"/>
+      <display value="Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire"/>
+      <target>
+        <code value="LA87.4"/>
+        <display value="Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0042"/>
+      <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement"/>
+      <target>
+        <code value="LA87.40"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0043"/>
+      <display value="Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement"/>
+      <target>
+        <code value="LA87.41"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0044"/>
+      <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire"/>
+      <target>
+        <code value="LA87.42"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0045"/>
+      <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire"/>
+      <target>
+        <code value="LA87.43"/>
+        <display value="Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0046"/>
+      <display value="Communication septale auriculoventriculaire avec déséquilibre ventriculaire"/>
+      <target>
+        <code value="LA87.44"/>
+        <display value="Communication septale auriculoventriculaire avec déséquilibre ventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0047"/>
+      <display value="Anomalie septal auriculoventriculaire et tétralogie de Fallot"/>
+      <target>
+        <code value="LA87.45"/>
+        <display value="Anomalie septal auriculoventriculaire et tétralogie de Fallot"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0048"/>
+      <display value="Anomalie congénitale du ventricule ou du septum ventriculaire"/>
+      <target>
+        <code value="LA88"/>
+        <display value="Anomalie congénitale du ventricule ou du septum ventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0049"/>
+      <display value="Obstruction congénitale de la voie de sortie du ventricule droit"/>
+      <target>
+        <code value="LA88.0"/>
+        <display value="Obstruction congénitale de la voie de sortie du ventricule droit"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0050"/>
+      <display value="Ventricule droit à double chambre"/>
+      <target>
+        <code value="LA88.1"/>
+        <display value="Ventricule droit à double chambre"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0051"/>
+      <display value="Tétralogie de Fallot"/>
+      <target>
+        <code value="LA88.2"/>
+        <display value="Tétralogie de Fallot"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0052"/>
+      <display value="Tétralogie de Fallot avec syndrome de valve pulmonaire absente"/>
+      <target>
+        <code value="LA88.20"/>
+        <display value="Tétralogie de Fallot avec syndrome de valve pulmonaire absente"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0053"/>
+      <display value="Tétralogie de Fallot avec atrésie pulmonaire"/>
+      <target>
+        <code value="LA88.21"/>
+        <display value="Tétralogie de Fallot avec atrésie pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0054"/>
+      <display value="Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire"/>
+      <target>
+        <code value="LA88.22"/>
+        <display value="Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0055"/>
+      <display value="Obstruction congénitale de la voie de sortie du ventricule gauche"/>
+      <target>
+        <code value="LA88.3"/>
+        <display value="Obstruction congénitale de la voie de sortie du ventricule gauche"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0056"/>
+      <display value="Communication interventriculaire"/>
+      <target>
+        <code value="LA88.4"/>
+        <display value="Communication interventriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0057"/>
+      <display value="Communication interventriculaire musculaire trabéculaire"/>
+      <target>
+        <code value="LA88.40"/>
+        <display value="Communication interventriculaire musculaire trabéculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0058"/>
+      <display value="Communication interventriculaire centrale périmembraneuse"/>
+      <target>
+        <code value="LA88.41"/>
+        <display value="Communication interventriculaire centrale périmembraneuse"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0059"/>
+      <display value="Communication interventriculaire non significatif sur le plan hémodynamique"/>
+      <target>
+        <code value="LA88.42"/>
+        <display value="Communication interventriculaire non significatif sur le plan hémodynamique"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0060"/>
+      <display value="Cœur fonctionnellement univentriculaire"/>
+      <target>
+        <code value="LA89"/>
+        <display value="Cœur fonctionnellement univentriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0061"/>
+      <display value="Connexion auriculoventriculaire à double entrée"/>
+      <target>
+        <code value="LA89.0"/>
+        <display value="Connexion auriculoventriculaire à double entrée"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0062"/>
+      <display value="Atrésie de la valve tricuspide"/>
+      <target>
+        <code value="LA89.1"/>
+        <display value="Atrésie de la valve tricuspide"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0063"/>
+      <display value="Atrésie mitrale"/>
+      <target>
+        <code value="LA89.2"/>
+        <display value="Atrésie mitrale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0064"/>
+      <display value="Syndrome d'hypoplasie du cœur gauche"/>
+      <target>
+        <code value="LA89.3"/>
+        <display value="Syndrome d'hypoplasie du cœur gauche"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0065"/>
+      <display value="Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes"/>
+      <target>
+        <code value="LA8A"/>
+        <display value="Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0066"/>
+      <display value="Anomalie congénitale de la valve pulmonaire"/>
+      <target>
+        <code value="LA8A.0"/>
+        <display value="Anomalie congénitale de la valve pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0067"/>
+      <display value="Sténose congénitale de la valve pulmonaire"/>
+      <target>
+        <code value="LA8A.00"/>
+        <display value="Sténose congénitale de la valve pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0068"/>
+      <display value="Insuffisance congénitale de la valve pulmonaire"/>
+      <target>
+        <code value="LA8A.01"/>
+        <display value="Insuffisance congénitale de la valve pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0069"/>
+      <display value="Atrésie pulmonaire congénitale"/>
+      <target>
+        <code value="LA8A.1"/>
+        <display value="Atrésie pulmonaire congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0070"/>
+      <display value="Atrésie pulmonaire avec septum ventriculaire intact"/>
+      <target>
+        <code value="LA8A.10"/>
+        <display value="Atrésie pulmonaire avec septum ventriculaire intact"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0071"/>
+      <display value="Anomalie congénitale de la valve aortique"/>
+      <target>
+        <code value="LA8A.2"/>
+        <display value="Anomalie congénitale de la valve aortique"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0072"/>
+      <display value="Sténose congénitale de la valve aortique"/>
+      <target>
+        <code value="LA8A.20"/>
+        <display value="Sténose congénitale de la valve aortique"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0073"/>
+      <display value="Insuffisance aortique congénitale"/>
+      <target>
+        <code value="LA8A.21"/>
+        <display value="Insuffisance aortique congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0074"/>
+      <display value="Valve aortique bicuspide"/>
+      <target>
+        <code value="LA8A.22"/>
+        <display value="Valve aortique bicuspide"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0075"/>
+      <display value="Atrésie de la valve aortique"/>
+      <target>
+        <code value="LA8A.23"/>
+        <display value="Atrésie de la valve aortique"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0076"/>
+      <display value="Valve aortique unicuspide"/>
+      <target>
+        <code value="LA8A.24"/>
+        <display value="Valve aortique unicuspide"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0077"/>
+      <display value="Sténose supravalvulaire aortique congénitale"/>
+      <target>
+        <code value="LA8A.3"/>
+        <display value="Sténose supravalvulaire aortique congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0078"/>
+      <display value="Anévrisme du sinus aortique de Valsalva"/>
+      <target>
+        <code value="LA8A.4"/>
+        <display value="Anévrisme du sinus aortique de Valsalva"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0079"/>
+      <display value="Sténose sous-aortique congénitale"/>
+      <target>
+        <code value="LA8A.5"/>
+        <display value="Sténose sous-aortique congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0080"/>
+      <display value="Sténose sous-pulmonaire congénitale"/>
+      <target>
+        <code value="LA8A.6"/>
+        <display value="Sténose sous-pulmonaire congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0081"/>
+      <display value="Anomalie congénitale des grandes artères, y compris le canal artériel"/>
+      <target>
+        <code value="LA8B"/>
+        <display value="Anomalie congénitale des grandes artères, y compris le canal artériel"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0082"/>
+      <display value="Fenêtre aortopulmonaire congénitale"/>
+      <target>
+        <code value="LA8B.0"/>
+        <display value="Fenêtre aortopulmonaire congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0083"/>
+      <display value="Anomalie congénitale de l'arbre artériel pulmonaire"/>
+      <target>
+        <code value="LA8B.1"/>
+        <display value="Anomalie congénitale de l'arbre artériel pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0084"/>
+      <display value="Anomalie congénitale de l'aorte ou de ses branches"/>
+      <target>
+        <code value="LA8B.2"/>
+        <display value="Anomalie congénitale de l'aorte ou de ses branches"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0085"/>
+      <display value="Coarctation de l'aorte"/>
+      <target>
+        <code value="LA8B.21"/>
+        <display value="Coarctation de l'aorte"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0086"/>
+      <display value="Interruption de la crosse aortique"/>
+      <target>
+        <code value="LA8B.22"/>
+        <display value="Interruption de la crosse aortique"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0087"/>
+      <display value="Anomalie congénitale de l'aorte thoracique descendante ou abdominale"/>
+      <target>
+        <code value="LA8B.23"/>
+        <display value="Anomalie congénitale de l'aorte thoracique descendante ou abdominale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0088"/>
+      <display value="Anomalie congénitale de la branche de l'arc aortique"/>
+      <target>
+        <code value="LA8B.24"/>
+        <display value="Anomalie congénitale de la branche de l'arc aortique"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0089"/>
+      <display value="Syndrome de compression trachéo-œsophagienne"/>
+      <target>
+        <code value="LA8B.3"/>
+        <display value="Syndrome de compression trachéo-œsophagienne"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0090"/>
+      <display value="Persistance du canal artériel"/>
+      <target>
+        <code value="LA8B.4"/>
+        <display value="Persistance du canal artériel"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0091"/>
+      <display value="Anomalie congénitale des artères coronaires"/>
+      <target>
+        <code value="LA8C"/>
+        <display value="Anomalie congénitale des artères coronaires"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0092"/>
+      <display value="Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire"/>
+      <target>
+        <code value="LA8C.0"/>
+        <display value="Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0093"/>
+      <display value="Origine aortique anormale ou trajet anormal de l'artère coronaire"/>
+      <target>
+        <code value="LA8C.1"/>
+        <display value="Origine aortique anormale ou trajet anormal de l'artère coronaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0094"/>
+      <display value="Fistule artérielle coronaire congénitale"/>
+      <target>
+        <code value="LA8C.2"/>
+        <display value="Fistule artérielle coronaire congénitale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0095"/>
+      <display value="Malformation congénitale du péricarde"/>
+      <target>
+        <code value="LA8D"/>
+        <display value="Malformation congénitale du péricarde"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0096"/>
+      <display value="Anomalie congénitale du septum auriculaire"/>
+      <target>
+        <code value="LA8E"/>
+        <display value="Anomalie congénitale du septum auriculaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0097"/>
+      <display value="Foramen ovale perméable"/>
+      <target>
+        <code value="LA8E.0"/>
+        <display value="Foramen ovale perméable"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0098"/>
+      <display value="Communication interauriculaire dans la fosse ovale"/>
+      <target>
+        <code value="LA8E.1"/>
+        <display value="Communication interauriculaire dans la fosse ovale"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0099"/>
+      <display value="Anomalie du sinus veineux"/>
+      <target>
+        <code value="LA8E.2"/>
+        <display value="Anomalie du sinus veineux"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0100"/>
+      <display value="Communication interauriculaire par l'orifice du sinus coronaire"/>
+      <target>
+        <code value="LA8E.3"/>
+        <display value="Communication interauriculaire par l'orifice du sinus coronaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0101"/>
+      <display value="Anomalie congénitale de l'oreillette droite"/>
+      <target>
+        <code value="LA8F"/>
+        <display value="Anomalie congénitale de l'oreillette droite"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0102"/>
+      <display value="Anomalie congénitale de l'oreillette gauche"/>
+      <target>
+        <code value="LA8G"/>
+        <display value="Anomalie congénitale de l'oreillette gauche"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0103"/>
+      <display value="Oreillette gauche divisée"/>
+      <target>
+        <code value="LA8G.0"/>
+        <display value="Oreillette gauche divisée"/>
+        <equivalence value="equivalent"/>
+        <comment value="terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0104"/>
+      <display value="Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)"/>
+      <target>
+        <code value="LA8B.1"/>
+        <display value="Anomalie congénitale de l'arbre artériel pulmonaire"/>
+        <equivalence value="wider"/>
+        <comment value="pas d'entité CIM-11 plus fine (v6)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0105"/>
+      <display value="Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)"/>
+      <target>
+        <code value="LA8B.1"/>
+        <display value="Anomalie congénitale de l'arbre artériel pulmonaire"/>
+        <equivalence value="wider"/>
+        <comment value="idem"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0106"/>
+      <display value="Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes"/>
+      <target>
+        <code value="LA8B.1"/>
+        <display value="Anomalie congénitale de l'arbre artériel pulmonaire"/>
+        <equivalence value="wider"/>
+        <comment value="idem"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0107"/>
+      <display value="Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)"/>
+      <target>
+        <code value="LA8B.1"/>
+        <display value="Anomalie congénitale de l'arbre artériel pulmonaire"/>
+        <equivalence value="wider"/>
+        <comment value="pas d'entité CIM-11 pour les MAPCA (v6)"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0108"/>
+      <display value="Fistule (malformation) artérioveineuse pulmonaire"/>
+      <target>
+        <code value="LA90.5"/>
+        <display value="Fistule artérioveineuse pulmonaire"/>
+        <equivalence value="equivalent"/>
+        <comment value="fistule artérioveineuse pulmonaire, malformation du développement"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-DIAG-0109"/>
+      <display value="Bloc atrioventriculaire complet congénital idiopathique"/>
+      <target>
+        <code value="BC63.20"/>
+        <display value="Bloc auriculoventriculaire complet congénital"/>
+        <equivalence value="wider"/>
+        <comment value="BC63.20 couvre tout BAV complet congénital ; le concept TAUSSIG est idiopathique"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

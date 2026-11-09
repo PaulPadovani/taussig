@@ -1,4 +1,4 @@
-# TAUSSIG — Observations liées au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Observations liées au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Observations liées au cathétérisme (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "procedure-observation-code",
   "url" : "https://taussig/fhir/CodeSystem/procedure-observation-code",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedureObservationCode",
   "title" : "TAUSSIG — Observations liées au cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Codes locaux transitoires pour les observations de procédure dont le code LOINC reste à vérifier.",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# Niveau de gravité (1-5) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Niveau de gravité (1-5) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Niveau de gravité (1-5) (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-severityLevel.c
   "resourceType" : "StructureDefinition",
   "id" : "severityLevel",
   "url" : "https://taussig/fhir/StructureDefinition/severityLevel",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "SeverityLevel",
   "title" : "Niveau de gravité (1-5)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Grade numérique de gravité selon l'échelle (1 à 5).",
   "jurisdiction" : [{

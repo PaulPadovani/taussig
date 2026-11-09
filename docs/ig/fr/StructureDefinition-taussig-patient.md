@@ -1,4 +1,4 @@
-# TAUSSIG — Patient - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Patient - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Patient ( Expérimental ) 
 
@@ -62,12 +62,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-patient
   "resourceType" : "StructureDefinition",
   "id" : "taussig-patient",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-patient",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigPatient",
   "title" : "TAUSSIG — Patient",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Patient de cardiopathie congénitale, dérivé de FR Core Patient (identifiants/extensions FR hérités). Les slices d'identité nationale (INS-NIR/NIA) sont portées par FR Core ; pour une identité INS *qualifiée*, utiliser le profil strict fr-core-patient-ins. Poids de naissance porté par une Observation dédiée (LOINC 8339-4).",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# TAUSSIG — Caractère urgent du cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Caractère urgent du cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Caractère urgent du cathétérisme (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "procedure-urgency",
   "url" : "https://taussig/fhir/CodeSystem/procedure-urgency",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedureUrgencyCS",
   "title" : "TAUSSIG — Caractère urgent du cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Caractère urgent du cathétérisme, en 4 niveaux d'après le statut de procédure du registre NCDR IMPACT (dictionnaire v2.0.1, élément 5020) ; définitions résumées en français (décision I3).",
   "jurisdiction" : [{

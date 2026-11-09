@@ -1,4 +1,4 @@
-# TAUSSIG — Gestes TAUSSIG vers IPCCC - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Gestes TAUSSIG vers IPCCC - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ConceptMap: TAUSSIG — Gestes TAUSSIG vers IPCCC (Expérimental) 
 
@@ -16,7 +16,7 @@
   "title" : "TAUSSIG — Gestes TAUSSIG vers IPCCC",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Correspondance des 188 concepts TAUSSIG de gestes vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.",
   "jurisdiction" : [{

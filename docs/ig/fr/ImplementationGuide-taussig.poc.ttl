@@ -14,12 +14,12 @@
      fhir:Narrative.div "<div xml:lang=\"fr\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide taussig.poc</b></p><a name=\"taussig.poc\"> </a><a name=\"hctaussig.poc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr</p></div><h2>TAUSSIGPOC</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://taussig/fhir/ImplementationGuide/taussig.poc</pre><div><p>Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://taussig/fhir/ImplementationGuide/taussig.poc"] ;
-  fhir:ImplementationGuide.version [ fhir:value "0.8.0"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.8.1"] ;
   fhir:ImplementationGuide.name [ fhir:value "TAUSSIGPOC"] ;
   fhir:ImplementationGuide.title [ fhir:value "TAUSSIG — Implementation Guide (POC Cathétérisme)"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:ImplementationGuide.description [ fhir:value "Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG."] ;
   fhir:ImplementationGuide.jurisdiction [
@@ -1425,6 +1425,20 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/CodeSystem/taussig-adverse-event> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/taussig-adverse-event" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Complications" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologie d'interface TAUSSIG : 43 concepts (complications) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes IPCCC, CIM-10, SNOMED, ECHSA sont déduits par les ConceptMaps taussig-adverse-event-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1447,6 +1461,62 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Complications péri-procédurales (IPCCC)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Axe IPCCC des événements indésirables du cathétérisme congénital retenus pour la POC. La granularité IPCCC est plus grossière que la curation française : plusieurs libellés cliniques peuvent partager un même code (regroupés ici sous le libellé IPCCC officiel)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-adverse-event-to-icd10> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-adverse-event-to-icd10" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Complications vers CIM-10" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (complications) vers CIM-10. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-adverse-event-to-echsa> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-adverse-event-to-echsa" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Complications vers ECHSA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (complications) vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-adverse-event-to-ipccc> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-adverse-event-to-ipccc" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Complications vers IPCCC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (complications) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-adverse-event-to-snomed> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-adverse-event-to-snomed" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Complications vers SNOMED" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (complications) vers SNOMED. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1488,7 +1558,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/taussig-cardiac-condition-profile" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Condition cardiaque évolutive" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Concept TAUSSIG saisi (taussig-condition) ; IPCCC, CIM-10 et ECHSA en sont déduits (0.8.1). Type (residual/acquired/post_surgical) = choix clinicien d'instance." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1517,6 +1587,62 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Condition de mesure -> SNOMED" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Représentation FHIR « TAUSSIG — Condition de mesure -> SNOMED » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/CodeSystem/taussig-condition> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/taussig-condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Conditions cardiaques évolutives" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologie d'interface TAUSSIG : 107 concepts (conditions cardiaques évolutives) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes IPCCC, CIM-10, ECHSA sont déduits par les ConceptMaps taussig-condition-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-condition-to-icd10> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-condition-to-icd10" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Conditions cardiaques évolutives vers CIM-10" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers CIM-10. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-condition-to-echsa> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-condition-to-echsa" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Conditions cardiaques évolutives vers ECHSA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-condition-to-ipccc> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-condition-to-ipccc" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Conditions cardiaques évolutives vers IPCCC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1558,7 +1684,77 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/taussig-cardiac-diagnosis" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Diagnostic cardiaque congénital" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnostic congénital (substrat figé). Double codage CIM-11 (classification, primaire) + IPCCC (précision clinique) ; CIM-10 dérivé, ECHSA optionnel. Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnostic congénital (substrat figé). Concept TAUSSIG saisi (taussig-diagnosis) ; CIM-11, IPCCC, CIM-10 et ECHSA en sont déduits par les ConceptMaps taussig-diagnosis-to-* (0.8.1). Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/CodeSystem/taussig-diagnosis> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/taussig-diagnosis" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologie d'interface TAUSSIG : 109 concepts (diagnostics cardiaques congénitaux) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes ICD-11, IPCCC, CIM-10, ECHSA sont déduits par les ConceptMaps taussig-diagnosis-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-diagnosis-to-icd10> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-diagnosis-to-icd10" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux vers CIM-10" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers CIM-10. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-diagnosis-to-echsa> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-diagnosis-to-echsa" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux vers ECHSA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-diagnosis-to-icd11> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-diagnosis-to-icd11" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux vers ICD-11" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers ICD-11. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/taussig-diagnosis-to-ipccc> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/taussig-diagnosis-to-ipccc" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux vers IPCCC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1657,20 +1853,6 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Exposition et contraste de procédure" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Temps de fluoroscopie, produit dose-surface et volume de contraste portés par des Observations quantitatives liées au cathétérisme." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11> ;
-         fhir:Reference.reference [ fhir:value "ConceptMap/genetic-syndrome-to-icd11" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — GeneticSyndromeToIcd11" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Crossmap Orphanet -> ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1881,6 +2063,62 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Latéralité (gauche/droite)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Côté anatomique de l'abord vasculaire (SNOMED CT)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ValueSet/taussig-adverse-event> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/taussig-adverse-event" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Liste des complications" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Les 42 concepts TAUSSIG actifs (complications)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ValueSet/taussig-condition> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/taussig-condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Liste des conditions cardiaques évolutives" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Les 107 concepts TAUSSIG actifs (conditions cardiaques évolutives)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ValueSet/taussig-condition-ipccc> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/taussig-condition-ipccc" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Liste des conditions évolutives (IPCCC)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Les 94 codes IPCCC de la liste TAUSSIG des conditions cardiaques évolutives (décision B7)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ValueSet/taussig-diagnosis> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/taussig-diagnosis" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Liste des diagnostics cardiaques congénitaux" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Les 109 concepts TAUSSIG actifs (diagnostics cardiaques congénitaux)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -2478,6 +2716,20 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ValueSet/taussig-condition-clinical-status-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/taussig-condition-clinical-status-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Statut clinique d'une condition évolutive" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statut clinique d'une condition cardiaque évolutive au moment du cathétérisme : active ou résolue (décision B1). Distinct de l'état d'annotation « explicitement absent », qui signifie que la condition n'existe pas." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://taussig/fhir/ValueSet/puncture-success-vs> ;
          fhir:Reference.reference [ fhir:value "ValueSet/puncture-success-vs" ]
        ] ;
@@ -2524,7 +2776,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/taussig-genetic-syndrome-profile" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Syndrome génétique (covariable de contexte)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). OrphaCode saisi ; CIM-11, CIM-10 et ECHSA déduits par les ConceptMaps genetic-syndrome-to-* (relations Orphanet validées)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -2539,6 +2791,48 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Syndromes génétiques (Orphanet)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd10> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/genetic-syndrome-to-icd10" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Syndromes génétiques (Orphanet) vers CIM-10" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers CIM-10. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4). Relations CIM validées par Orphanet (Orphadata, produit 1 FR, 2025-12-09, CC BY 4.0) : E → equivalent, NTBT → wider, BTNT → narrower." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/genetic-syndrome-to-echsa> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/genetic-syndrome-to-echsa" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Syndromes génétiques (Orphanet) vers ECHSA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers ECHSA. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11> ;
+         fhir:Reference.reference [ fhir:value "ConceptMap/genetic-syndrome-to-icd11" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Syndromes génétiques (Orphanet) vers ICD-11" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers ICD-11. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4). Relations CIM validées par Orphanet (Orphadata, produit 1 FR, 2025-12-09, CC BY 4.0) : E → equivalent, NTBT → wider, BTNT → narrower." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -2790,7 +3084,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/taussig-adverse-event" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TAUSSIG — Événement indésirable" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complication péri-procédurale. Concept TAUSSIG saisi (taussig-adverse-event) ; IPCCC, CIM-10, SNOMED et ECHSA en sont déduits (0.8.1) ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;

@@ -10,7 +10,29 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Condition ex-taussig-cardiac-diagnosis</b></p><a name=\"ex-taussig-cardiac-diagnosis\"> </a><a name=\"hcex-taussig-cardiac-diagnosis\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-diagnosis.html\">TAUSSIG — Diagnostic cardiaque congénital</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Condition ex-taussig-cardiac-diagnosis</b></p><a name=\"ex-taussig-cardiac-diagnosis\"> </a><a name=\"hcex-taussig-cardiac-diagnosis\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-diagnosis.html\">TAUSSIG — Diagnostic cardiaque congénital</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>code</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/taussig-diagnosis TAUSSIG-DIAG-0085}, {http://id.who.int/icd/release/11/mms LA8B.21}, {https://taussig/fhir/CodeSystem/ipccc 09.29.01}, {http://hl7.org/fhir/sid/icd-10 Q25.1}, {https://taussig/fhir/CodeSystem/echsa DIAG095}\">Coarctation de l'aorte</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "https://taussig/fhir/CodeSystem/taussig-diagnosis",
+      "code" : "TAUSSIG-DIAG-0085"
+    },
+    {
+      "system" : "http://id.who.int/icd/release/11/mms",
+      "code" : "LA8B.21"
+    },
+    {
+      "system" : "https://taussig/fhir/CodeSystem/ipccc",
+      "code" : "09.29.01"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q25.1"
+    },
+    {
+      "system" : "https://taussig/fhir/CodeSystem/echsa",
+      "code" : "DIAG095"
+    }]
   },
   "subject" : {
     "reference" : "Patient/ex-taussig-patient"

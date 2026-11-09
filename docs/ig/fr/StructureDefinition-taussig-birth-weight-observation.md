@@ -1,4 +1,4 @@
-# TAUSSIG — Poids de naissance - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Poids de naissance - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Poids de naissance ( Expérimental ) 
 
@@ -61,12 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-birth-w
   "resourceType" : "StructureDefinition",
   "id" : "taussig-birth-weight-observation",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigBirthWeightObservation",
   "title" : "TAUSSIG — Poids de naissance",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Poids de naissance porté par une Observation dédiée (LOINC 8339-4), liée au patient.",
   "jurisdiction" : [{

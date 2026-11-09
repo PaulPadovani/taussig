@@ -10,8 +10,22 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Condition ex-taussig-genetic-syndrome-profile</b></p><a name="ex-taussig-genetic-syndrome-profile"> </a><a name="hcex-taussig-genetic-syndrome-profile"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-taussig-genetic-syndrome-profile.html">TAUSSIG — Syndrome génétique (covariable de contexte)</a></p><p style="margin-bottom: 0px">Balise: </p></div><p><b>subject</b>: <a href="Patient-ex-taussig-patient.html">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Condition ex-taussig-genetic-syndrome-profile</b></p><a name="ex-taussig-genetic-syndrome-profile"> </a><a name="hcex-taussig-genetic-syndrome-profile"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-taussig-genetic-syndrome-profile.html">TAUSSIG — Syndrome génétique (covariable de contexte)</a></p><p style="margin-bottom: 0px">Balise: </p></div><p><b>code</b>: <span title="Codes :{http://www.orpha.net 870}, {http://id.who.int/icd/release/11/mms LD40.0}, {https://taussig/fhir/CodeSystem/echsa NCA9}">870</span></p><p><b>subject</b>: <a href="Patient-ex-taussig-patient.html">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>
   </text>
+  <code>
+    <coding>
+      <system value="http://www.orpha.net"/>
+      <code value="870"/>
+    </coding>
+    <coding>
+      <system value="http://id.who.int/icd/release/11/mms"/>
+      <code value="LD40.0"/>
+    </coding>
+    <coding>
+      <system value="https://taussig/fhir/CodeSystem/echsa"/>
+      <code value="NCA9"/>
+    </coding>
+  </code>
   <subject>
     <reference value="Patient/ex-taussig-patient"/>
   </subject>

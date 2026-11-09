@@ -1,4 +1,4 @@
-# TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Praticien ( Expérimental ) 
 
@@ -62,12 +62,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-practit
   "resourceType" : "StructureDefinition",
   "id" : "taussig-practitioner",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-practitioner",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigPractitioner",
   "title" : "TAUSSIG — Praticien",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Praticien (opérateur, valideur), dérivé de FR Core Practitioner. L'identifiant RPPS est porté par la slice FR Core idNatPs (urn:oid:1.2.250.1.71.4.2.1) — plus besoin de la redéclarer.",
   "jurisdiction" : [{
@@ -125,8 +125,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-practit
     {
       "id" : "Practitioner.name",
       "path" : "Practitioner.name",
-      "label" : "Nom du praticien",
-      "short" : "Nom du praticien",
+      "label" : "Pseudonyme de l'opérateur",
+      "short" : "Pseudonyme de l'opérateur",
       "max" : "1",
       "mustSupport" : true
     },
@@ -136,7 +136,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-practit
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
         "valueCode" : "annotatable"
       }],
-      "path" : "Practitioner.name.text"
+      "path" : "Practitioner.name.text",
+      "label" : "Pseudonyme de l'opérateur (ex. [OPERATEUR_1], jamais de nom réel)",
+      "short" : "Pseudonyme de l'opérateur (ex. [OPERATEUR_1], jamais de nom réel)"
     }]
   }
 }

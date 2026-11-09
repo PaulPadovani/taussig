@@ -1,0 +1,474 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-condition> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-condition"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-condition</b></p><a name=\"taussig-condition\"> </a><a name=\"hctaussig-condition\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-taussig-condition.html\"><code>https://taussig/fhir/CodeSystem/taussig-condition</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.8.1</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b><a href=\"ConceptMap-taussig-condition-to-echsa.html\">TAUSSIG — Conditions cardiaques évolutives vers ECHSA</a></b></td><td><b><a href=\"ConceptMap-taussig-condition-to-icd10.html\">TAUSSIG — Conditions cardiaques évolutives vers CIM-10</a></b></td><td><b><a href=\"ConceptMap-taussig-condition-to-ipccc.html\">TAUSSIG — Conditions cardiaques évolutives vers IPCCC</a></b></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0001\">TAUSSIG-COND-0001</a></td><td>Création/agrandissement de communication interatriale</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4060\">SP-2010-4060</a><i>(antécédent d'intervention ; pas de code d'état après dédié)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0002\">TAUSSIG-COND-0002</a></td><td>Cerclage de l'artère pulmonaire</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5640\">SP-2010-5640</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0003\">TAUSSIG-COND-0003</a></td><td>Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5590\">SP-2010-5590</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0004\">TAUSSIG-COND-0004</a></td><td>Intervention de Norwood</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4870\">SP-2010-4870</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0005\">TAUSSIG-COND-0005</a></td><td>Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5680\">SP-2010-5680</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0006\">TAUSSIG-COND-0006</a></td><td>Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5670\">SP-2010-5670</a><i>(code d'intervention ; le code d'état après dédié est DIAG-2024-1)</i><br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2024-1\">DIAG-2024-1</a></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0007\">TAUSSIG-COND-0007</a></td><td>Anastomose cavopulmonaire bidirectionnelle bilatérale</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5690\">SP-2010-5690</a><i>(code d'intervention ; le code d'état après dédié est DIAG-2024-2)</i><br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2024-2\">DIAG-2024-2</a></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0008\">TAUSSIG-COND-0008</a></td><td>Fontan (TCPC), conduit extracardiaque, fenestré</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5000\">SP-2010-5000</a><i>(antécédent d'intervention)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0009\">TAUSSIG-COND-0009</a></td><td>Fontan (TCPC), conduit extracardiaque, non fenestré</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5010\">SP-2010-5010</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0010\">TAUSSIG-COND-0010</a></td><td>Fontan (TCPC), tunnel latéral, fenestré</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4970\">SP-2010-4970</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0011\">TAUSSIG-COND-0011</a></td><td>Fontan (TCPC), tunnel latéral, non fenestré</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4980\">SP-2010-4980</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0012\">TAUSSIG-COND-0012</a></td><td>Réparation à un ventricule et demi</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-4520\">SP-2010-4520</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0013\">TAUSSIG-COND-0013</a></td><td>Palliation, autre</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-SP-2010-5710\">SP-2010-5710</a><i>(idem)</i></td><td/><td/></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0014\">TAUSSIG-COND-0014</a></td><td>Endocardite infectieuse</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG123\">DIAG123</a><i>(endocardite sans précision infectieuse)</i></td><td><span title=\"EQUIVALENT\">~</span>I33.0<i>(endocardite infectieuse)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4606.4601\">10.06.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0015\">TAUSSIG-COND-0015</a></td><td>Anomalie acquise de la veine cave supérieure</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG026\">DIAG026</a><i>(anomalie veineuse systémique au sens congénital)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I87.9</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4601\">10.31.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0016\">TAUSSIG-COND-0016</a></td><td>Anomalie acquise de la veine cave inférieure</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG026\">DIAG026</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I87.9</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4621\">10.31.21</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0017\">TAUSSIG-COND-0017</a></td><td>Anomalie acquise du sinus coronaire</td><td/><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>I87.1<i>(compression seulement)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4630.4616\">10.30.16</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0018\">TAUSSIG-COND-0018</a></td><td>Anomalie acquise des veines pulmonaires</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I28.9</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4624.4600\">10.24.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0019\">TAUSSIG-COND-0019</a></td><td>Anomalie acquise de l'oreillette droite</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4610\">15.10.10</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0020\">TAUSSIG-COND-0020</a></td><td>Anomalie acquise de l'oreillette gauche</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4620\">15.10.20</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0021\">TAUSSIG-COND-0021</a></td><td>Communication interatriale résiduelle (CIA)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-17\">DIAG-2019-17</a></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>Q21.1<i>(défaut septal d'origine persistant)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4663\">15.10.63</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0022\">TAUSSIG-COND-0022</a></td><td>Régurgitation tricuspide résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG037\">DIAG037</a><i>(ECHSA ne distingue pas le caractère résiduel)</i></td><td><span title=\"RELATEDTO\">?</span>Q22.8<i>(lésion valvulaire résiduelle, pas nécessairement congénitale)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4611.4603\">15.11.03</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0023\">TAUSSIG-COND-0023</a></td><td>Sténose mitrale résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG164\">DIAG164</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q23.2<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4601\">15.12.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0024\">TAUSSIG-COND-0024</a></td><td>Régurgitation mitrale résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG067\">DIAG067</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q23.3<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4603\">15.12.03</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0025\">TAUSSIG-COND-0025</a></td><td>Régurgitation troncale résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2010-170\">DIAG-2010-170</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q24.8<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4603\">15.25.03</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0026\">TAUSSIG-COND-0026</a></td><td>Sténose valvulaire pulmonaire résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG041\">DIAG041</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q22.1<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4601\">15.30.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0027\">TAUSSIG-COND-0027</a></td><td>Régurgitation pulmonaire résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG049\">DIAG049</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q22.2<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4603\">15.30.03</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0028\">TAUSSIG-COND-0028</a></td><td>Sténose de la néovalve pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG041\">DIAG041</a><i>(ne distingue pas la néovalve)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I37.0</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4609\">15.30.09</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0029\">TAUSSIG-COND-0029</a></td><td>Régurgitation de la néovalve pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG049\">DIAG049</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I37.1</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4610\">15.30.10</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0030\">TAUSSIG-COND-0030</a></td><td>Sténose valvulaire aortique résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG052\">DIAG052</a><i>(ne distingue pas le caractère résiduel)</i></td><td><span title=\"RELATEDTO\">?</span>Q23.0<i>(lésion valvulaire résiduelle, pas nécessairement congénitale)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4601\">15.35.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0031\">TAUSSIG-COND-0031</a></td><td>Régurgitation aortique résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG056\">DIAG056</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q23.1<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4603\">15.35.03</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0032\">TAUSSIG-COND-0032</a></td><td>Sténose de la néovalve aortique d'origine pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG052\">DIAG052</a><i>(ne distingue pas la néovalve)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I35.0</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4609\">15.35.09</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0033\">TAUSSIG-COND-0033</a></td><td>Régurgitation de la néovalve aortique d'origine pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG056\">DIAG056</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I35.1</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4610\">15.35.10</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0034\">TAUSSIG-COND-0034</a></td><td>Sténose acquise de la néovalve aortique d'origine troncale</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG052\">DIAG052</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I35.0<i>(néovalve aortique : sténose valvulaire aortique (corrigé v6.1) ; corrigé v6.1 — crossmap IPCCC : Q24.8 ; sténose acquise d'une néovalve aortique : maladie valvulaire aortique non rhumatismale)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4612\">15.25.12</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0035\">TAUSSIG-COND-0035</a></td><td>Régurgitation acquise de la néovalve aortique d'origine troncale</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG056\">DIAG056</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I35.1<i>(néovalve aortique : insuffisance valvulaire aortique (corrigé v6.1) ; corrigé v6.1 — crossmap IPCCC : I38 ; régurgitation d'une néovalve aortique : la valve est connue)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4613\">15.25.13</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0036\">TAUSSIG-COND-0036</a></td><td>Composante ventriculaire résiduelle de canal atrioventriculaire</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>Q21.2<i>(défaut septal d'origine persistant)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4616.4602\">15.16.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0037\">TAUSSIG-COND-0037</a></td><td>Régurgitation résiduelle de la valve atrioventriculaire commune</td><td/><td><span title=\"RELATEDTO\">?</span>Q24.8<i>(lésion valvulaire résiduelle codée par un code congénital résiduel)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4613.4602\">15.13.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0038\">TAUSSIG-COND-0038</a></td><td>Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I38<i>(I38 inclut la sténose d'une valve non précisée ; la valve auriculoventriculaire commune n'est ni mitrale ni tricuspide)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4634.4656\">10.34.56</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0039\">TAUSSIG-COND-0039</a></td><td>Dilatation ventriculaire droite acquise</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.7</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4622\">10.16.22</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0040\">TAUSSIG-COND-0040</a></td><td>Hypertrophie ventriculaire droite acquise</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.7</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4623\">10.16.23</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0041\">TAUSSIG-COND-0041</a></td><td>Anévrisme ventriculaire droit acquis</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG116\">DIAG116</a><i>(inclut le pseudoanévrisme)</i></td><td><span title=\"RELATEDTO\">?</span>I25.3<i>(I25.3 relève des cardiopathies ischémiques chroniques)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4602\">10.16.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0042\">TAUSSIG-COND-0042</a></td><td>Dysfonction ventriculaire droite</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-07.4601.4611\">07.01.11</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0043\">TAUSSIG-COND-0043</a></td><td>Obstruction résiduelle de la voie d'éjection du ventricule droit</td><td/><td><span title=\"RELATEDTO\">?</span>Q24.8<i>(lésion résiduelle codée par un code congénital résiduel)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4620.4623\">15.20.23</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0044\">TAUSSIG-COND-0044</a></td><td>Dilatation ventriculaire gauche acquise</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.7</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4676\">10.16.76</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0045\">TAUSSIG-COND-0045</a></td><td>Hypertrophie ventriculaire gauche acquise</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.7</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4677\">10.16.77</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0046\">TAUSSIG-COND-0046</a></td><td>Anévrisme ventriculaire gauche acquis</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG117\">DIAG117</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>I25.3<i>(I25.3 relève des cardiopathies ischémiques chroniques)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4642\">10.16.42</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0047\">TAUSSIG-COND-0047</a></td><td>Défaillance ventriculaire gauche</td><td/><td><span title=\"EQUIVALENT\">~</span>I50.1</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4647\">10.16.47</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0048\">TAUSSIG-COND-0048</a></td><td>Complication post-procédurale de la voie d'éjection du ventricule gauche</td><td/><td><span title=\"RELATEDTO\">?</span>I51.8<i>(complication post-procédurale (I97 / T81) codée comme maladie mal définie)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4621.4621\">15.21.21</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0049\">TAUSSIG-COND-0049</a></td><td>Sténose sous-aortique acquise</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG051\">DIAG051</a><i>(ne distingue pas congénital et acquis)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4686\">10.16.86</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0050\">TAUSSIG-COND-0050</a></td><td>Sténose sous-pulmonaire acquise</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG166\">DIAG166</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I51.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4688\">10.16.88</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0051\">TAUSSIG-COND-0051</a></td><td>Communication interventriculaire résiduelle (CIV)</td><td/><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>Q21.0<i>(défaut septal d'origine persistant)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4622.4602\">15.22.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0052\">TAUSSIG-COND-0052</a></td><td>Cardiomyopathie restrictive</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG070\">DIAG070</a><i>(toutes cardiomyopathies)</i><br/><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2023-3\">DIAG-2023-3</a></td><td><span title=\"EQUIVALENT\">~</span>I42.5<i>(code CIM-10 de la cardiomyopathie restrictive)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4610\">10.10.10</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0053\">TAUSSIG-COND-0053</a></td><td>Anomalie acquise de l'arbre artériel pulmonaire</td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG118\">DIAG118</a><i>(anévrisme seulement)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I28.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4659\">10.13.59</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0054\">TAUSSIG-COND-0054</a></td><td>Sténose post-procédurale du tronc de l'artère pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG042\">DIAG042</a><i>(ne distingue pas congénital et post-procédural)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I28.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4602\">15.32.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0055\">TAUSSIG-COND-0055</a></td><td>Sténose résiduelle de l'artère pulmonaire droite</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG043\">DIAG043</a><i>(sténose centrale seulement ; la sténose résiduelle peut être périphérique)</i></td><td><span title=\"RELATEDTO\">?</span>Q25.6<i>(sténose résiduelle, possiblement post-opératoire)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4623\">15.32.23</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0056\">TAUSSIG-COND-0056</a></td><td>Sténose résiduelle de l'artère pulmonaire gauche</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG043\">DIAG043</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q25.6<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4643\">15.32.43</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0057\">TAUSSIG-COND-0057</a></td><td>Hypertension artérielle pulmonaire</td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG131\">DIAG131</a><i>(HTAP primitive seulement)</i></td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>I27.0<i>(l'HTAP du concept inclut les formes associées aux cardiopathies congénitales)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4601\">10.13.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0058\">TAUSSIG-COND-0058</a></td><td>Embolie pulmonaire</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG128\">DIAG128</a></td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>I26.9<i>(sans cœur pulmonaire aigu seulement)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4651\">10.13.51</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0059\">TAUSSIG-COND-0059</a></td><td>Sténose aortique supravalvulaire acquise</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG053\">DIAG053</a><i>(ne distingue pas congénital et acquis)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I77.1</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4677\">10.14.77</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0060\">TAUSSIG-COND-0060</a></td><td>Dilatation acquise de l'aorte ascendante et/ou de la racine aortique</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG102\">DIAG102</a><i>(une dilatation n'est pas un anévrisme)</i></td><td><span title=\"RELATEDTO\">?</span>I71.9<i>(une dilatation n'est pas un anévrisme)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4682\">10.14.82</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0061\">TAUSSIG-COND-0061</a></td><td>Dilatation de la racine aortique</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG102\">DIAG102</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>Q25.4<i>(la dilatation de la racine peut être acquise)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-09.4616.4613\">09.16.13</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0062\">TAUSSIG-COND-0062</a></td><td>Dissection aortique</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG103\">DIAG103</a></td><td><span title=\"EQUIVALENT\">~</span>I71.0</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4651\">10.14.51</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0063\">TAUSSIG-COND-0063</a></td><td>Anévrisme aortique</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG102\">DIAG102</a><i>(inclut le pseudoanévrisme)</i></td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>I71.2<i>(anévrisme thoracique non rompu seulement)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4650\">10.14.50</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0064\">TAUSSIG-COND-0064</a></td><td>Coarctation aortique résiduelle</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG095\">DIAG095</a><i>(ne distingue pas le caractère résiduel)</i><br/><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2024-7\">DIAG-2024-7</a><i>(coarctation après pose de stent seulement)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>Q25.1<i>(défaut d'origine persistant)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4637.4605\">15.37.05</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0065\">TAUSSIG-COND-0065</a></td><td>Complication coronaire post-procédurale</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG161\">DIAG161</a><i>(anomalie coronaire « autre », au sens congénital)</i></td><td><span title=\"RELATEDTO\">?</span>I77.8<i>(complication post-procédurale codée comme maladie artérielle)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4641.4600\">15.41.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0066\">TAUSSIG-COND-0066</a></td><td>Persistance résiduelle du canal artériel (PDA)</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG099\">DIAG099</a><i>(ne distingue pas le caractère résiduel)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>Q25.0<i>(défaut d'origine persistant)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4639.4602\">15.39.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0067\">TAUSSIG-COND-0067</a></td><td>Complication liée à un conduit cardiaque</td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG048\">DIAG048</a><i>(défaillance seulement)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T82.9</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4600\">15.55.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0068\">TAUSSIG-COND-0068</a></td><td>Obstruction d'anastomose systémico-pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2010-2130\">DIAG-2010-2130</a><i>(toute défaillance d'anastomose)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T82.5</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4627\">15.56.27</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0069\">TAUSSIG-COND-0069</a></td><td>Obstruction partielle d'anastomose systémico-pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2010-2130\">DIAG-2010-2130</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T82.5</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4601\">15.56.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0070\">TAUSSIG-COND-0070</a></td><td>Obstruction complète d'anastomose systémico-pulmonaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2010-2130\">DIAG-2010-2130</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T82.5</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4602\">15.56.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0071\">TAUSSIG-COND-0071</a></td><td>Défaillance d'autogreffe pulmonaire</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG124\">DIAG124</a><i>(une autogreffe n'est pas une prothèse)</i></td><td><span title=\"RELATEDTO\">?</span>T82.8<i>(une autogreffe n'est pas une prothèse)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4624\">15.55.24</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0072\">TAUSSIG-COND-0072</a></td><td>Circulation de Fontan défaillante</td><td/><td><span title=\"RELATEDTO\">?</span>T81.8<i>(complication d'acte résiduelle ; l'échec de la circulation de Fontan n'y est pas décrit)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4690.4660\">15.90.60</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0073\">TAUSSIG-COND-0073</a></td><td>Épanchement péricardique</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG071\">DIAG071</a><br/><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-31\">DIAG-2019-31</a><i>(tamponnade)</i></td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>I31.3<i>(épanchement non inflammatoire seulement)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4608.4631\">10.08.31</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0074\">TAUSSIG-COND-0074</a></td><td>Complication après transplantation cardiaque ou pulmonaire</td><td/><td><span title=\"RELATEDTO\">?</span>I97.9<i>(les complications de greffe relèvent de T86)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4695.4600\">15.95.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0075\">TAUSSIG-COND-0075</a></td><td>Sténose acquise des veines pulmonaires</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-10\">DIAG-2019-10</a></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I28.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4624.4602\">10.24.02</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0076\">TAUSSIG-COND-0076</a></td><td>Obstruction d'une veine systémique</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG027\">DIAG027</a></td><td><span title=\"RELATEDTO\">?</span>I87.1<i>(compression ≠ obstruction)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4630.4609\">10.30.09</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0077\">TAUSSIG-COND-0077</a></td><td>Collatérale(s) veino-veineuse(s) systémique(s)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2024-5\">DIAG-2024-5</a></td><td><span title=\"RELATEDTO\">?</span>Q26.8<i>(collatérales le plus souvent acquises après dérivation cavopulmonaire)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-04.4600.4606\">04.00.06</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0078\">TAUSSIG-COND-0078</a></td><td>Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2024-6\">DIAG-2024-6</a><i>(collatérales artérioartérielles, sans précision systémico-pulmonaire)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I77.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4674\">10.13.74</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0079\">TAUSSIG-COND-0079</a></td><td>Fistules (malformations) artérioveineuses pulmonaires acquises</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG127\">DIAG127</a><i>(ne distingue pas congénital et acquis)</i></td><td><span title=\"EQUIVALENT\">~</span>I28.0<i>(I28.0 exclut la forme congénitale (Q25.7))</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4657\">10.13.57</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0080\">TAUSSIG-COND-0080</a></td><td>Cardiomyopathie dilatée</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2023-1\">DIAG-2023-1</a></td><td><span title=\"EQUIVALENT\">~</span>I42.0</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4625\">10.10.25</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0081\">TAUSSIG-COND-0081</a></td><td>Cardiomyopathie hypertrophique</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2023-2\">DIAG-2023-2</a></td><td><span title=\"RELATEDTO\">?</span>I42.2<i>(la forme obstructive a son propre code (I42.1))</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4620\">10.10.20</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0082\">TAUSSIG-COND-0082</a></td><td>Cardiomyopathie hypertrophique obstructive du ventricule gauche</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2023-4\">DIAG-2023-4</a></td><td><span title=\"EQUIVALENT\">~</span>I42.1</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4605\">10.10.05</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0083\">TAUSSIG-COND-0083</a></td><td>Myocardite (cardiomyopathie inflammatoire)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-07\">DIAG-2019-07</a></td><td><span title=\"EQUIVALENT\">~</span>I51.4</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4607.4690\">10.07.90</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0084\">TAUSSIG-COND-0084</a></td><td>Maladie de Kawasaki</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-26\">DIAG-2019-26</a></td><td><span title=\"EQUIVALENT\">~</span>M30.3</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4609.4601\">10.09.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0085\">TAUSSIG-COND-0085</a></td><td>Infarctus du myocarde</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG125\">DIAG125</a></td><td><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span>I21.9<i>(infarctus aigu seulement)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4618.4600\">10.18.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0086\">TAUSSIG-COND-0086</a></td><td>État après transplantation cardiaque</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG175\">DIAG175</a></td><td><span title=\"EQUIVALENT\">~</span>Z94.1<i>(statut de greffe cardiaque (ajouté v6.1) ; corrigé v6.1 — crossmap IPCCC : (vide) ; statut de greffe cardiaque (absent du crossmap))</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4621.4663\">10.21.63</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0087\">TAUSSIG-COND-0087</a></td><td>Maladie vasculaire pulmonaire irréversible</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG167\">DIAG167</a><br/><span title=\"SOURCEISBROADERTHANTARGET\">&gt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG130\">DIAG130</a><i>(forme d'Eisenmenger)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I27.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4600\">10.13.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0088\">TAUSSIG-COND-0088</a></td><td>Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG130\">DIAG130</a></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I27.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4608\">10.13.08</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0089\">TAUSSIG-COND-0089</a></td><td>Trouble du rythme cardiaque</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG109\">DIAG109</a></td><td><span title=\"EQUIVALENT\">~</span>I49.9</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4600.4600\">11.00.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0090\">TAUSSIG-COND-0090</a></td><td>Fibrillation atriale</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-14\">DIAG-2019-14</a></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I48<i>(I48 regroupe fibrillation et flutter)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4608\">11.03.08</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0091\">TAUSSIG-COND-0091</a></td><td>Flutter atrial</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-15\">DIAG-2019-15</a></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I48<i>(idem)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4607\">11.03.07</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0092\">TAUSSIG-COND-0092</a></td><td>Trouble du rythme atrial</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-16\">DIAG-2019-16</a><i>(catégorie « autre » du rythme atrial)</i></td><td><span title=\"RELATEDTO\">?</span>I49.8<i>(la fibrillation et le flutter sont codés en I48)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4609\">11.03.09</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0093\">TAUSSIG-COND-0093</a></td><td>Trouble du rythme de la jonction atrioventriculaire</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2010-2050\">DIAG-2010-2050</a></td><td><span title=\"RELATEDTO\">?</span>I49.8<i>(les tachycardies jonctionnelles sont codées en I47.1)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4604.4600\">11.04.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0094\">TAUSSIG-COND-0094</a></td><td>Trouble du rythme ventriculaire</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2010-2060\">DIAG-2010-2060</a></td><td><span title=\"RELATEDTO\">?</span>I49.8<i>(la tachycardie ventriculaire est codée en I47.2)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4605.4600\">11.05.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0095\">TAUSSIG-COND-0095</a></td><td>Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-13\">DIAG-2019-13</a></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I45.6<i>(I45.6 couvre tous les syndromes de préexcitation)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4607.4601\">11.07.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0096\">TAUSSIG-COND-0096</a></td><td>Bloc atrioventriculaire</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG151\">DIAG151</a><i>(bloc cardiaque sans précision du niveau)</i></td><td><span title=\"RELATEDTO\">?</span>I44.3<i>(le BAV complet est codé en I44.2)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4606.4638\">11.06.38</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0097\">TAUSSIG-COND-0097</a></td><td>Bloc atrioventriculaire complet acquis</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG110\">DIAG110</a><i>(ne précise pas le degré)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>I44.2<i>(ne précise pas l'origine acquise)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4606.4610\">11.06.10</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0098\">TAUSSIG-COND-0098</a></td><td>Indication de remplacement programmé d'un stimulateur cardiaque</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG113\">DIAG113</a></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>Z45.0<i>(ajustement et entretien d'un dispositif cardiaque (corrigé v6.1) ; corrigé v6.1 — crossmap IPCCC : T82.9 ; remplacement programmé : ajustement d'un dispositif, pas une complication)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-11.4612.4661\">11.12.61</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0099\">TAUSSIG-COND-0099</a></td><td>Entéropathie exsudative post-procédurale</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-09\">DIAG-2019-09</a><i>(ne précise pas l'origine post-procédurale)</i></td><td><span title=\"RELATEDTO\">?</span>K90.4<i>(composante lésionnelle ; le concept exige aussi la cause externe)</i><br/><span title=\"RELATEDTO\">?</span>Y83.8<i>(cause externe)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4682.4633\">15.82.33</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0100\">TAUSSIG-COND-0100</a></td><td>Bronchite plastique post-procédurale</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-08\">DIAG-2019-08</a><i>(idem)</i></td><td><span title=\"RELATEDTO\">?</span>J98.0<i>(composante lésionnelle)</i><br/><span title=\"RELATEDTO\">?</span>J95.8<i>(composante post-procédurale)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4681.4601\">15.81.01</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0101\">TAUSSIG-COND-0101</a></td><td>Chylothorax</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG138\">DIAG138</a></td><td><span title=\"EQUIVALENT\">~</span>J94.0</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-10.4608.4616\">10.08.16</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0102\">TAUSSIG-COND-0102</a></td><td>Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-18\">DIAG-2019-18</a><br/><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-21\">DIAG-2019-21</a><i>(radiologie interventionnelle, non cathétérisme cardiaque)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T82.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4651.4647\">15.51.47</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0103\">TAUSSIG-COND-0103</a></td><td>Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-19\">DIAG-2019-19</a><br/><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-22\">DIAG-2019-22</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T82.5</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4651.4650\">15.51.50</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0104\">TAUSSIG-COND-0104</a></td><td>Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-20\">DIAG-2019-20</a><br/><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-23\">DIAG-2019-23</a><i>(idem)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T81.2<br/><span title=\"RELATEDTO\">?</span>Y60.5<i>(cause externe complémentaire)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4650.4603\">15.50.03</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0105\">TAUSSIG-COND-0105</a></td><td>Corps étranger intracardiaque post-procédural</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-24\">DIAG-2019-24</a><i>(ne précise pas l'origine post-procédurale)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T81.5<i>(corps étranger laissé après un acte (corrigé v6.1) ; corrigé v6.1 — crossmap IPCCC : T81.8 ; corps étranger laissé lors d'un acte)</i></td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4680.4617\">15.80.17</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0106\">TAUSSIG-COND-0106</a></td><td>Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)</td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2019-25\">DIAG-2019-25</a><i>(corps étranger intravasculaire, sans précision du dispositif)</i></td><td><span title=\"SOURCEISNARROWERTHANTARGET\">&lt;</span>T82.8</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4650.4637\">15.50.37</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr><tr><td><a href=\"CodeSystem-taussig-condition.html#taussig-condition-TAUSSIG-COND-0107\">TAUSSIG-COND-0107</a></td><td>Hémorragie post-procédurale</td><td><span title=\"RELATEDTO\">?</span><a href=\"CodeSystem-echsa.html#echsa-DIAG-2010-2070\">DIAG-2010-2070</a><i>(saignement post-opératoire (chirurgical), non post-procédural en général)</i></td><td><span title=\"EQUIVALENT\">~</span>T81.0</td><td><span title=\"EQUIVALENT\">~</span><a href=\"CodeSystem-ipccc.html#ipccc-15.4602.4600\">15.02.00</a><i>(libellé TAUSSIG = traduction du terme IPCCC)</i></td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-condition"] ;
+  fhir:ValueSet.version [ fhir:value "0.8.1"] ;
+  fhir:ValueSet.name [ fhir:value "TaussigConditionVS"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Liste des conditions cardiaques évolutives"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Les 107 concepts TAUSSIG actifs (conditions cardiaques évolutives)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/taussig-condition" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0001" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Création/agrandissement de communication interatriale" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0002" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cerclage de l'artère pulmonaire" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0003" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0004" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Intervention de Norwood" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0005" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0006" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anastomose cavopulmonaire bidirectionnelle bilatérale" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0008" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fontan (TCPC), conduit extracardiaque, fenestré" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0009" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fontan (TCPC), conduit extracardiaque, non fenestré" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0010" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fontan (TCPC), tunnel latéral, fenestré" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0011" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fontan (TCPC), tunnel latéral, non fenestré" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0012" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Réparation à un ventricule et demi" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0013" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Palliation, autre" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0014" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Endocardite infectieuse" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0015" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie acquise de la veine cave supérieure" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0016" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie acquise de la veine cave inférieure" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0017" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie acquise du sinus coronaire" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0018" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie acquise des veines pulmonaires" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0019" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie acquise de l'oreillette droite" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0020" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie acquise de l'oreillette gauche" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0021" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interatriale résiduelle (CIA)" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0022" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation tricuspide résiduelle" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0023" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose mitrale résiduelle" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0024" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation mitrale résiduelle" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0025" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation troncale résiduelle" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0026" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose valvulaire pulmonaire résiduelle" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0027" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation pulmonaire résiduelle" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0028" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose de la néovalve pulmonaire" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0029" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation de la néovalve pulmonaire" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0030" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose valvulaire aortique résiduelle" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0031" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation aortique résiduelle" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0032" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose de la néovalve aortique d'origine pulmonaire" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0033" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation de la néovalve aortique d'origine pulmonaire" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0034" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose acquise de la néovalve aortique d'origine troncale" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0035" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation acquise de la néovalve aortique d'origine troncale" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0036" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Composante ventriculaire résiduelle de canal atrioventriculaire" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0037" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Régurgitation résiduelle de la valve atrioventriculaire commune" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0038" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0039" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilatation ventriculaire droite acquise" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0040" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypertrophie ventriculaire droite acquise" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0041" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anévrisme ventriculaire droit acquis" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0042" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dysfonction ventriculaire droite" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0043" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstruction résiduelle de la voie d'éjection du ventricule droit" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0044" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilatation ventriculaire gauche acquise" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0045" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypertrophie ventriculaire gauche acquise" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0046" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anévrisme ventriculaire gauche acquis" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0047" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Défaillance ventriculaire gauche" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0048" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complication post-procédurale de la voie d'éjection du ventricule gauche" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0049" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose sous-aortique acquise" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0050" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose sous-pulmonaire acquise" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0051" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Communication interventriculaire résiduelle (CIV)" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0052" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiomyopathie restrictive" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0053" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anomalie acquise de l'arbre artériel pulmonaire" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0054" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose post-procédurale du tronc de l'artère pulmonaire" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0055" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose résiduelle de l'artère pulmonaire droite" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0056" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose résiduelle de l'artère pulmonaire gauche" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0057" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypertension artérielle pulmonaire" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0058" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Embolie pulmonaire" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0059" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose aortique supravalvulaire acquise" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0060" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilatation acquise de l'aorte ascendante et/ou de la racine aortique" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0061" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilatation de la racine aortique" ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0062" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dissection aortique" ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0063" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Anévrisme aortique" ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0064" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Coarctation aortique résiduelle" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0065" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complication coronaire post-procédurale" ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0066" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Persistance résiduelle du canal artériel (PDA)" ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0067" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complication liée à un conduit cardiaque" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0068" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstruction d'anastomose systémico-pulmonaire" ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0069" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstruction partielle d'anastomose systémico-pulmonaire" ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0070" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstruction complète d'anastomose systémico-pulmonaire" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0071" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Défaillance d'autogreffe pulmonaire" ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0072" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Circulation de Fontan défaillante" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0073" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Épanchement péricardique" ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0074" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complication après transplantation cardiaque ou pulmonaire" ]
+       ], [
+         fhir:index 74 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0075" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sténose acquise des veines pulmonaires" ]
+       ], [
+         fhir:index 75 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0076" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstruction d'une veine systémique" ]
+       ], [
+         fhir:index 76 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0077" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Collatérale(s) veino-veineuse(s) systémique(s)" ]
+       ], [
+         fhir:index 77 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0078" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)" ]
+       ], [
+         fhir:index 78 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0079" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fistules (malformations) artérioveineuses pulmonaires acquises" ]
+       ], [
+         fhir:index 79 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0080" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiomyopathie dilatée" ]
+       ], [
+         fhir:index 80 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0081" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiomyopathie hypertrophique" ]
+       ], [
+         fhir:index 81 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0082" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiomyopathie hypertrophique obstructive du ventricule gauche" ]
+       ], [
+         fhir:index 82 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0083" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myocardite (cardiomyopathie inflammatoire)" ]
+       ], [
+         fhir:index 83 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0084" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maladie de Kawasaki" ]
+       ], [
+         fhir:index 84 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0085" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infarctus du myocarde" ]
+       ], [
+         fhir:index 85 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0086" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "État après transplantation cardiaque" ]
+       ], [
+         fhir:index 86 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0087" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maladie vasculaire pulmonaire irréversible" ]
+       ], [
+         fhir:index 87 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0088" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)" ]
+       ], [
+         fhir:index 88 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0089" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trouble du rythme cardiaque" ]
+       ], [
+         fhir:index 89 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0090" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Fibrillation atriale" ]
+       ], [
+         fhir:index 90 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0091" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Flutter atrial" ]
+       ], [
+         fhir:index 91 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0092" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trouble du rythme atrial" ]
+       ], [
+         fhir:index 92 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0093" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trouble du rythme de la jonction atrioventriculaire" ]
+       ], [
+         fhir:index 93 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0094" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Trouble du rythme ventriculaire" ]
+       ], [
+         fhir:index 94 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0095" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)" ]
+       ], [
+         fhir:index 95 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0096" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bloc atrioventriculaire" ]
+       ], [
+         fhir:index 96 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0097" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bloc atrioventriculaire complet acquis" ]
+       ], [
+         fhir:index 97 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0098" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indication de remplacement programmé d'un stimulateur cardiaque" ]
+       ], [
+         fhir:index 98 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0099" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Entéropathie exsudative post-procédurale" ]
+       ], [
+         fhir:index 99 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0100" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Bronchite plastique post-procédurale" ]
+       ], [
+         fhir:index 100 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0101" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chylothorax" ]
+       ], [
+         fhir:index 101 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0102" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur" ]
+       ], [
+         fhir:index 102 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0103" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur" ]
+       ], [
+         fhir:index 103 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0104" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur" ]
+       ], [
+         fhir:index 104 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0105" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Corps étranger intracardiaque post-procédural" ]
+       ], [
+         fhir:index 105 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0106" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)" ]
+       ], [
+         fhir:index 106 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TAUSSIG-COND-0107" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hémorragie post-procédurale" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-condition.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

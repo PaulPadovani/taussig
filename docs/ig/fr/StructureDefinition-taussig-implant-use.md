@@ -1,4 +1,4 @@
-# TAUSSIG — Pose et port d'un implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Pose et port d'un implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Pose et port d'un implant ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-implant
   "resourceType" : "StructureDefinition",
   "id" : "taussig-implant-use",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-implant-use",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigImplantUse",
   "title" : "TAUSSIG — Pose et port d'un implant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Implant porté par le patient : site anatomique d'implantation, date de pose (début de la période de port) et geste TAUSSIG qui l'a posé, quand il est tracé. Pour un implant posé ailleurs (implantedExternally), le geste source est absent.",
   "jurisdiction" : [{
@@ -178,6 +178,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-implant
     },
     {
       "id" : "DeviceUseStatement.device",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "relation"
+      }],
       "path" : "DeviceUseStatement.device",
       "label" : "Implant",
       "short" : "Implant",

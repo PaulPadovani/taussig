@@ -1,4 +1,4 @@
-# TAUSSIG — Condition de mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Condition de mesure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Condition de mesure (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "measurement-condition",
   "url" : "https://taussig/fhir/CodeSystem/measurement-condition",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "MeasurementCondition",
   "title" : "TAUSSIG — Condition de mesure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Condition physiologique/pharmacologique pendant la mesure.",
   "jurisdiction" : [{

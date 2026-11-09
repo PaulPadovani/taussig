@@ -1,4 +1,4 @@
-# Ordre d'usage - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Ordre d'usage - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Ordre d'usage (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-usageSequence.c
   "resourceType" : "StructureDefinition",
   "id" : "usageSequence",
   "url" : "https://taussig/fhir/StructureDefinition/usageSequence",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "UsageSequence",
   "title" : "Ordre d'usage",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Ordre d'utilisation du matériel dans le geste.",
   "jurisdiction" : [{

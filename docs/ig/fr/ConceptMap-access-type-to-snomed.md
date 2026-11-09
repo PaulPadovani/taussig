@@ -1,4 +1,4 @@
-# TAUSSIG — AccessTypeToSnomed - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — AccessTypeToSnomed - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ConceptMap: TAUSSIG — AccessTypeToSnomed (Expérimental) 
 
@@ -16,7 +16,7 @@
   "title" : "TAUSSIG — AccessTypeToSnomed",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT.",
   "jurisdiction" : [{

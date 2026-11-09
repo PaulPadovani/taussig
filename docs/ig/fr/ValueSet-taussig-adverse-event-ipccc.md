@@ -1,4 +1,4 @@
-# TAUSSIG — Complications péri-procédurales (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Complications péri-procédurales (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Complications péri-procédurales (IPCCC) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — Complications péri-procédurales (IPCCC)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Axe IPCCC des événements indésirables du cathétérisme congénital retenus pour la POC. La granularité IPCCC est plus grossière que la curation française : plusieurs libellés cliniques peuvent partager un même code (regroupés ici sous le libellé IPCCC officiel).",
   "jurisdiction" : [{

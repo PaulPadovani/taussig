@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem procedure-phase</b></p><a name=\"procedure-phase\"> </a><a name=\"hcprocedure-phase\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/procedure-phase</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">baseline<a name=\"procedure-phase-baseline\"> </a></td><td>État de base</td></tr><tr><td style=\"white-space:nowrap\">pre_intervention<a name=\"procedure-phase-pre_intervention\"> </a></td><td>Avant le geste</td></tr><tr><td style=\"white-space:nowrap\">post_intervention<a name=\"procedure-phase-post_intervention\"> </a></td><td>Après le geste</td></tr><tr><td style=\"white-space:nowrap\">not_applicable<a name=\"procedure-phase-not_applicable\"> </a></td><td>Non applicable</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/procedure-phase"] ;
-  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.1"] ;
   fhir:CodeSystem.name [ fhir:value "ProcedurePhase"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Phase procédurale d'une mesure"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Référentiel temporel pour le delta pre/post (cœur de la POC)."] ;
   fhir:CodeSystem.jurisdiction [

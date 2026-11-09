@@ -1,4 +1,4 @@
-# TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Administration médicamenteuse péri-procédurale ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-peripro
   "resourceType" : "StructureDefinition",
   "id" : "taussig-periprocedural-medication-administration",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigPeriproceduralMedicationAdministration",
   "title" : "TAUSSIG — Administration médicamenteuse péri-procédurale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Antibioprophylaxie et anticoagulation administrées pendant le cathétérisme, codables en ATC quand disponible.",
   "jurisdiction" : [{

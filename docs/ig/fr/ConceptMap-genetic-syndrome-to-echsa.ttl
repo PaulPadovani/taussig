@@ -1,0 +1,212 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/genetic-syndrome-to-echsa> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "genetic-syndrome-to-echsa"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts genetic-syndrome-to-echsa</b></p><a name=\"genetic-syndrome-to-echsa\"> </a><a name=\"hcgenetic-syndrome-to-echsa\"> </a><p>Mapping de <a href=\"ValueSet-taussig-genetic-syndrome.html\">TAUSSIG — Syndromes génétiques (Orphanet)</a> vers (non spécifié)</p><br/><p>Mapping de <code>http://www.orpha.net</code> to <a href=\"CodeSystem-echsa.html\">TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>870 (Trisomie 21)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA9 (Down syndrome (Trisomy 21))</td><td/></tr><tr><td>881 (Syndrome de Turner)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA29 (Turner syndrome (45XO))</td><td/></tr><tr><td>567 (Syndrome de délétion 22q11.2)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA8 (DiGeorge syndrome (velocardiofacial syndrome) (conotruncal anomaly face syndrome) (22q11 deletion))</td><td>syndrome de DiGeorge / vélocardiofacial</td></tr><tr><td>3380 (Syndrome de trisomie 18)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA-2010-S-150 (Edwards syndrome (Trisomy 18))</td><td/></tr><tr><td>3378 (Syndrome de trisomie 13)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA-2010-S-360 (Patau syndrome (Trisomy 13))</td><td/></tr><tr><td>365 (Glycogénose par déficit en maltase acide)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>95 (Ataxie de Friedreich)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>98896 (Dystrophie musculaire de Duchenne)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>558 (Syndrome de Marfan)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA17 (Marfan syndrome)</td><td/></tr><tr><td>98249 (Syndrome d'Ehlers-Danlos)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>60030 (Syndrome de Loeys-Dietz)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA-2010-S-270 (Loeys-Dietz syndrome)</td><td/></tr><tr><td>648 (Syndrome de Noonan)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA-2010-S-350 (Noonan syndrome)</td><td/></tr><tr><td>805 (Sclérose tubéreuse de Bourneville)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>904 (Syndrome de Williams)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA10 (Williams syndrome (Williams-Beuren syndrome))</td><td/></tr><tr><td>52 (Syndrome d'Alagille)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA4 (Alagille syndrome (intrahepatic biliary duct agenesis))</td><td/></tr><tr><td>290 (Syndrome de rubéole congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NCA7 (Fetal rubella syndrome (Congenital rubella syndrome))</td><td/></tr><tr><td>68341 (Anomalies congénitales multiples/syndrome dysmorphique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>NCA-2010-S-510 (Other syndromic abnormality(ies))</td><td>« autre anomalie syndromique »</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://taussig/fhir/ConceptMap/genetic-syndrome-to-echsa"] ;
+  fhir:ConceptMap.version [ fhir:value "0.8.1"] ;
+  fhir:ConceptMap.name [ fhir:value "GeneticSyndromeToEchsa"] ;
+  fhir:ConceptMap.title [ fhir:value "TAUSSIG — Syndromes génétiques (Orphanet) vers ECHSA"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ConceptMap.description [ fhir:value "Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers ECHSA. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://taussig/fhir/ValueSet/taussig-genetic-syndrome" ;
+     fhir:link <https://taussig/fhir/ValueSet/taussig-genetic-syndrome>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index -1 ;
+     fhir:ConceptMap.group.source [ fhir:value "http://www.orpha.net" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://taussig/fhir/CodeSystem/echsa" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "870" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Trisomie 21" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA9" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Down syndrome (Trisomy 21)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "881" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de Turner" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA29" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Turner syndrome (45XO)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "567" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de délétion 22q11.2" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA8" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "DiGeorge syndrome (velocardiofacial syndrome) (conotruncal anomaly face syndrome) (22q11 deletion)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "syndrome de DiGeorge / vélocardiofacial" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "3380" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de trisomie 18" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA-2010-S-150" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Edwards syndrome (Trisomy 18)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "3378" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de trisomie 13" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA-2010-S-360" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Patau syndrome (Trisomy 13)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "365" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Glycogénose par déficit en maltase acide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "95" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ataxie de Friedreich" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "98896" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dystrophie musculaire de Duchenne" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "558" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de Marfan" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA17" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Marfan syndrome" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "98249" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome d'Ehlers-Danlos" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "60030" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de Loeys-Dietz" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA-2010-S-270" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Loeys-Dietz syndrome" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "648" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de Noonan" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA-2010-S-350" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Noonan syndrome" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "805" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sclérose tubéreuse de Bourneville" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "904" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de Williams" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA10" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Williams syndrome (Williams-Beuren syndrome)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "52" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome d'Alagille" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Alagille syndrome (intrahepatic biliary duct agenesis)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "290" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de rubéole congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA7" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fetal rubella syndrome (Congenital rubella syndrome)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "68341" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalies congénitales multiples/syndrome dysmorphique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index -1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "NCA-2010-S-510" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Other syndromic abnormality(ies)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "« autre anomalie syndromique »" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/genetic-syndrome-to-echsa.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

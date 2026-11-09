@@ -1,4 +1,4 @@
-# TAUSSIG — Syndrome génétique (covariable de contexte) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Syndrome génétique (covariable de contexte) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Syndrome génétique (covariable de contexte) ( Expérimental ) 
 
@@ -65,14 +65,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
   "resourceType" : "StructureDefinition",
   "id" : "taussig-genetic-syndrome-profile",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigGeneticSyndrome",
   "title" : "TAUSSIG — Syndrome génétique (covariable de contexte)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
-  "description" : "Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé.",
+  "description" : "Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). OrphaCode saisi ; CIM-11, CIM-10 et ECHSA déduits par les ConceptMaps genetic-syndrome-to-* (relations Orphanet validées).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -166,7 +166,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
       "id" : "Condition.code.coding:icd11",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "Condition.code.coding",
       "sliceName" : "icd11",
@@ -182,6 +182,44 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
       "patternUri" : "http://id.who.int/icd/release/11/mms"
     },
     {
+      "id" : "Condition.code.coding:cim10",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "derived"
+      }],
+      "path" : "Condition.code.coding",
+      "sliceName" : "cim10",
+      "label" : "Code CIM-10",
+      "short" : "Code CIM-10",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.code.coding:cim10.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "http://hl7.org/fhir/sid/icd-10"
+    },
+    {
+      "id" : "Condition.code.coding:echsa",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "derived"
+      }],
+      "path" : "Condition.code.coding",
+      "sliceName" : "echsa",
+      "label" : "Code ECHSA",
+      "short" : "Code ECHSA",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.code.coding:echsa.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "https://taussig/fhir/CodeSystem/echsa"
+    },
+    {
       "id" : "Condition.code.text",
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -189,11 +227,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
       },
       {
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "Condition.code.text",
-      "label" : "Libellé du syndrome (tel qu'écrit)",
-      "short" : "Libellé du syndrome (tel qu'écrit)",
+      "label" : "Libellé Orphanet du syndrome (déduit)",
+      "short" : "Libellé Orphanet du syndrome (déduit)",
       "mustSupport" : true
     }]
   }

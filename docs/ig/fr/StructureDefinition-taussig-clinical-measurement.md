@@ -1,4 +1,4 @@
-# TAUSSIG — Mesure clinique (delta pre/post) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Mesure clinique (delta pre/post) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Mesure clinique (delta pre/post) ( Expérimental ) 
 
@@ -69,12 +69,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-clinica
   "resourceType" : "StructureDefinition",
   "id" : "taussig-clinical-measurement",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-clinical-measurement",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigClinicalMeasurement",
   "title" : "TAUSSIG — Mesure clinique (delta pre/post)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Mesure hémodynamique/fonctionnelle. Modèle post-coordonné : propriété (CodeSystem TAUSSIG) = la grandeur, site SNOMED = le lieu. Phase procédurale + geste lié = mécanisme du gradient pre/post (cœur du POC). Modalité en method ; condition & dérivation en extensions.\n\nVALEUR ATTENDUE : elle dépend de la propriété, pas du profil. Chaque concept du CodeSystem measurement-property porte une propriété `value_type` (Quantity | CodeableConcept) et, pour les grandeurs qualitatives, une propriété `value_set` donnant le ValueSet canonique des valeurs admises — p. ex. `regurgitation_grade` -> https://taussig/fhir/ValueSet/taussig-regurgitation-grade (grades SNOMED trace / légère / modérée / sévère). Ce contrat est déclaré au niveau de la propriété et non par un binding FHIR sur `value[x]` : en R4, un binding sur ce choix s'appliquerait aussi aux Quantity et imposerait à toutes les propriétés le jeu de valeurs d'une seule d'entre elles.",
   "jurisdiction" : [{

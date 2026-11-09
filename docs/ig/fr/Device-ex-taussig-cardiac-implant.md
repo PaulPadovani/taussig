@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Implant cardiaque (substrat longitudinal) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Exemple technique — TAUSSIG — Implant cardiaque (substrat longitudinal) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Exemple Device: Exemple technique — TAUSSIG — Implant cardiaque (substrat longitudinal)
 

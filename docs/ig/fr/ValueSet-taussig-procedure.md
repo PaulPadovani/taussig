@@ -1,4 +1,4 @@
-# TAUSSIG — Liste des gestes et actes de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Liste des gestes et actes de cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Liste des gestes et actes de cathétérisme (Expérimental) 
 
@@ -31,7 +31,7 @@
   "title" : "TAUSSIG — Liste des gestes et actes de cathétérisme",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Les 188 concepts TAUSSIG de gestes et d'actes de cathétérisme.",
   "jurisdiction" : [{

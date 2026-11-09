@@ -1,0 +1,420 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "taussig-adverse-event-to-snomed",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts taussig-adverse-event-to-snomed</b></p><a name=\"taussig-adverse-event-to-snomed\"> </a><a name=\"hctaussig-adverse-event-to-snomed\"> </a><p>Mapping de <a href=\"ValueSet-taussig-adverse-event.html\">TAUSSIG — Liste des complications</a> vers (non spécifié)</p><br/><p>Mapping de <a href=\"CodeSystem-taussig-adverse-event.html\">TAUSSIG — Complications</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>TAUSSIG-AE-0001 (Absence de complication post-procédurale)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>TAUSSIG-AE-0002 (Complication liée à une intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>116224001 (complication liée à une intervention)</td><td/></tr><tr><td>TAUSSIG-AE-0003 (Arrêt cardiaque pendant l'intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>410429000 (arrêt cardiaque)</td><td>arrêt cardiaque sans précision du contexte</td></tr><tr><td>TAUSSIG-AE-0004 (Fibrillation atriale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>49436004 (fibrillation auriculaire)</td><td/></tr><tr><td>TAUSSIG-AE-0005 (Flutter atrial)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>5370000 (flutter auriculaire)</td><td/></tr><tr><td>TAUSSIG-AE-0006 (Trouble du rythme post-procédural)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1230406008 (Postoperative cardiac arrhythmia)</td><td/></tr><tr><td>TAUSSIG-AE-0007 (Bloc atrioventriculaire complet acquis)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>27885002 (bloc atrioventriculaire complet)</td><td>congénital ou acquis</td></tr><tr><td>TAUSSIG-AE-0008 (Tachycardie jonctionnelle ectopique post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>251155001 (tachycardie ectopique jonctionnelle)</td><td>sans précision post-procédurale</td></tr><tr><td>TAUSSIG-AE-0009 (Tachycardie ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>25569003 (tachycardie ventriculaire)</td><td/></tr><tr><td>TAUSSIG-AE-0010 (Arythmie nécessitant l'implantation d'un stimulateur)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>TAUSSIG-AE-0011 (Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">maps to narrower concept</a></td><td>1162507002 (perforation d'une paroi du cœur due à une procédure)</td><td>paroi du cœur seulement, pas les vaisseaux</td></tr><tr><td>TAUSSIG-AE-0012 (Tamponnade cardiaque post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1230407004 (Postoperative cardiac tamponade)</td><td/></tr><tr><td>TAUSSIG-AE-0013 (Décès peropératoire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>52136000 (décès intra-opératoire)</td><td/></tr><tr><td>TAUSSIG-AE-0014 (Communication interatriale résiduelle ou récidivante post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>735579001 (communication interatriale résiduelle survenant après une intervention)</td><td/></tr><tr><td>TAUSSIG-AE-0015 (Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">maps to narrower concept</a></td><td>473163005 (embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque)</td><td>fragment de dispositif seulement</td></tr><tr><td>TAUSSIG-AE-0016 (Dysfonction de dispositif (complication de cathétérisme))</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>TAUSSIG-AE-0017 (Corps étranger intracardiaque post-procédural)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>282729004 (corps étranger au niveau du cœur)</td><td>sans précision post-procédurale</td></tr><tr><td>TAUSSIG-AE-0018 (Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>125670008 (corps étranger)</td><td>corps étranger</td></tr><tr><td>TAUSSIG-AE-0019 (Perméabilité résiduelle du canal artériel post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>871596002 (perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant)</td><td/></tr><tr><td>TAUSSIG-AE-0020 (Communication interventriculaire résiduelle ou récidivante post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>447941008 (communication interventriculaire résiduelle)</td><td>résiduelle, sans la récidive</td></tr><tr><td>TAUSSIG-AE-0021 (Communication interatriale résiduelle)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>449351005 (communication interatriale résiduelle)</td><td/></tr><tr><td>TAUSSIG-AE-0022 (Régurgitation aortique après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>60234000 (régurgitation de la valve aortique)</td><td>régurgitation sans précision de cause</td></tr><tr><td>TAUSSIG-AE-0023 (Régurgitation mitrale après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>48724000 (régurgitation de la valve mitrale)</td><td>régurgitation sans précision de cause</td></tr><tr><td>TAUSSIG-AE-0024 (Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>271984008 (dysfonction de la prothèse valvulaire cardiaque)</td><td>sans précision de cause</td></tr><tr><td>TAUSSIG-AE-0025 (Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>91434003 (régurgitation de la valve pulmonaire)</td><td>régurgitation sans précision de cause</td></tr><tr><td>TAUSSIG-AE-0026 (Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>111287006 (régurgitation de la valvule tricuspide)</td><td>régurgitation sans précision de cause</td></tr><tr><td>TAUSSIG-AE-0027 (Perte du pouls après cathétérisme)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>414617007 (perte du pouls distal)</td><td>perte du pouls distal sans précision de cause</td></tr><tr><td>TAUSSIG-AE-0028 (Pseudoanévrisme au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>1162761001 (pseudoanévrisme au niveau du site d'accès vasculaire)</td><td/></tr><tr><td>TAUSSIG-AE-0029 (Dissection artérielle au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>710864009 (dissection artérielle)</td><td>sans précision du site ni de la cause</td></tr><tr><td>TAUSSIG-AE-0030 (Extravasation de produit de contraste)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>427924001 (extravasation de produit de contraste intraveineux)</td><td/></tr><tr><td>TAUSSIG-AE-0031 (Fistule artérioveineuse au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>439470001 (fistule artérioveineuse)</td><td>sans précision du site ni de la cause</td></tr><tr><td>TAUSSIG-AE-0032 (Perforation artérielle au site d'abord)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>307312008 (perforation d'une artère)</td><td>sans précision du site ni de la cause</td></tr><tr><td>TAUSSIG-AE-0033 (Problème d'équipement pendant le cathétérisme)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>TAUSSIG-AE-0034 (Embolisation d'un stent)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>473125002 (migration d'endoprothèse vasculaire)</td><td>migration, dont l'embolisation</td></tr><tr><td>TAUSSIG-AE-0035 (Rupture d'un conduit ou d'un vaisseau après implantation de stent)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>248707009 (vaisseau sanguin déchiré)</td><td>sans précision de cause</td></tr><tr><td>TAUSSIG-AE-0036 (Compression coronaire après implantation de dispositif transluminal)</td><td colspan=\"3\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>TAUSSIG-AE-0037 (Stent laissé déployé en position non prévue après migration ou embolisation)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>473125002 (migration d'endoprothèse vasculaire)</td><td>migration</td></tr><tr><td>TAUSSIG-AE-0039 (Embolisation (délogement) d'un coil introduit par cathéter)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td>473163005 (embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque)</td><td>fragment de dispositif ; un coil entier n'est pas un fragment</td></tr><tr><td>TAUSSIG-AE-0040 (Thrombose vasculaire ou de conduit post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>439127006 (thrombose)</td><td>thrombose</td></tr><tr><td>TAUSSIG-AE-0041 (Hémorragie post-procédurale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>131148009 (hémorragie)</td><td>hémorragie</td></tr><tr><td>TAUSSIG-AE-0042 (Anévrisme aortique post-procédural)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>737158007 (anévrisme de l'aorte consécutif à une intervention)</td><td/></tr><tr><td>TAUSSIG-AE-0043 (Anévrisme de l'aorte au site de coarctation après intervention)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>871661008 (anévrisme de l'aorte au site de coarctation survenant après une intervention)</td><td/></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/ConceptMap/taussig-adverse-event-to-snomed",
+  "version" : "0.8.1",
+  "name" : "TaussigAdverseEventToSnomed",
+  "title" : "TAUSSIG — Complications vers SNOMED",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-09T15:30:29+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Correspondance des concepts TAUSSIG (complications) vers SNOMED. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "sourceCanonical" : "https://taussig/fhir/ValueSet/taussig-adverse-event",
+  "group" : [{
+    "source" : "https://taussig/fhir/CodeSystem/taussig-adverse-event",
+    "target" : "http://snomed.info/sct",
+    "element" : [{
+      "code" : "TAUSSIG-AE-0001",
+      "display" : "Absence de complication post-procédurale",
+      "target" : [{
+        "equivalence" : "unmatched"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0002",
+      "display" : "Complication liée à une intervention",
+      "target" : [{
+        "code" : "116224001",
+        "display" : "complication liée à une intervention",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0003",
+      "display" : "Arrêt cardiaque pendant l'intervention",
+      "target" : [{
+        "code" : "410429000",
+        "display" : "arrêt cardiaque",
+        "equivalence" : "wider",
+        "comment" : "arrêt cardiaque sans précision du contexte"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0004",
+      "display" : "Fibrillation atriale",
+      "target" : [{
+        "code" : "49436004",
+        "display" : "fibrillation auriculaire",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0005",
+      "display" : "Flutter atrial",
+      "target" : [{
+        "code" : "5370000",
+        "display" : "flutter auriculaire",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0006",
+      "display" : "Trouble du rythme post-procédural",
+      "target" : [{
+        "code" : "1230406008",
+        "display" : "Postoperative cardiac arrhythmia",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0007",
+      "display" : "Bloc atrioventriculaire complet acquis",
+      "target" : [{
+        "code" : "27885002",
+        "display" : "bloc atrioventriculaire complet",
+        "equivalence" : "wider",
+        "comment" : "congénital ou acquis"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0008",
+      "display" : "Tachycardie jonctionnelle ectopique post-procédurale",
+      "target" : [{
+        "code" : "251155001",
+        "display" : "tachycardie ectopique jonctionnelle",
+        "equivalence" : "wider",
+        "comment" : "sans précision post-procédurale"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0009",
+      "display" : "Tachycardie ventriculaire",
+      "target" : [{
+        "code" : "25569003",
+        "display" : "tachycardie ventriculaire",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0010",
+      "display" : "Arythmie nécessitant l'implantation d'un stimulateur",
+      "target" : [{
+        "equivalence" : "unmatched"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0011",
+      "display" : "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme",
+      "target" : [{
+        "code" : "1162507002",
+        "display" : "perforation d'une paroi du cœur due à une procédure",
+        "equivalence" : "narrower",
+        "comment" : "paroi du cœur seulement, pas les vaisseaux"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0012",
+      "display" : "Tamponnade cardiaque post-procédurale",
+      "target" : [{
+        "code" : "1230407004",
+        "display" : "Postoperative cardiac tamponade",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0013",
+      "display" : "Décès peropératoire",
+      "target" : [{
+        "code" : "52136000",
+        "display" : "décès intra-opératoire",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0014",
+      "display" : "Communication interatriale résiduelle ou récidivante post-procédurale",
+      "target" : [{
+        "code" : "735579001",
+        "display" : "communication interatriale résiduelle survenant après une intervention",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0015",
+      "display" : "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme",
+      "target" : [{
+        "code" : "473163005",
+        "display" : "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+        "equivalence" : "narrower",
+        "comment" : "fragment de dispositif seulement"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0016",
+      "display" : "Dysfonction de dispositif (complication de cathétérisme)",
+      "target" : [{
+        "equivalence" : "unmatched"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0017",
+      "display" : "Corps étranger intracardiaque post-procédural",
+      "target" : [{
+        "code" : "282729004",
+        "display" : "corps étranger au niveau du cœur",
+        "equivalence" : "wider",
+        "comment" : "sans précision post-procédurale"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0018",
+      "display" : "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+      "target" : [{
+        "code" : "125670008",
+        "display" : "corps étranger",
+        "equivalence" : "wider",
+        "comment" : "corps étranger"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0019",
+      "display" : "Perméabilité résiduelle du canal artériel post-procédurale",
+      "target" : [{
+        "code" : "871596002",
+        "display" : "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0020",
+      "display" : "Communication interventriculaire résiduelle ou récidivante post-procédurale",
+      "target" : [{
+        "code" : "447941008",
+        "display" : "communication interventriculaire résiduelle",
+        "equivalence" : "wider",
+        "comment" : "résiduelle, sans la récidive"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0021",
+      "display" : "Communication interatriale résiduelle",
+      "target" : [{
+        "code" : "449351005",
+        "display" : "communication interatriale résiduelle",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0022",
+      "display" : "Régurgitation aortique après lésion valvulaire pendant le cathétérisme",
+      "target" : [{
+        "code" : "60234000",
+        "display" : "régurgitation de la valve aortique",
+        "equivalence" : "wider",
+        "comment" : "régurgitation sans précision de cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0023",
+      "display" : "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme",
+      "target" : [{
+        "code" : "48724000",
+        "display" : "régurgitation de la valve mitrale",
+        "equivalence" : "wider",
+        "comment" : "régurgitation sans précision de cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0024",
+      "display" : "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme",
+      "target" : [{
+        "code" : "271984008",
+        "display" : "dysfonction de la prothèse valvulaire cardiaque",
+        "equivalence" : "wider",
+        "comment" : "sans précision de cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0025",
+      "display" : "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme",
+      "target" : [{
+        "code" : "91434003",
+        "display" : "régurgitation de la valve pulmonaire",
+        "equivalence" : "wider",
+        "comment" : "régurgitation sans précision de cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0026",
+      "display" : "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme",
+      "target" : [{
+        "code" : "111287006",
+        "display" : "régurgitation de la valvule tricuspide",
+        "equivalence" : "wider",
+        "comment" : "régurgitation sans précision de cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0027",
+      "display" : "Perte du pouls après cathétérisme",
+      "target" : [{
+        "code" : "414617007",
+        "display" : "perte du pouls distal",
+        "equivalence" : "wider",
+        "comment" : "perte du pouls distal sans précision de cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0028",
+      "display" : "Pseudoanévrisme au site d'abord",
+      "target" : [{
+        "code" : "1162761001",
+        "display" : "pseudoanévrisme au niveau du site d'accès vasculaire",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0029",
+      "display" : "Dissection artérielle au site d'abord",
+      "target" : [{
+        "code" : "710864009",
+        "display" : "dissection artérielle",
+        "equivalence" : "wider",
+        "comment" : "sans précision du site ni de la cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0030",
+      "display" : "Extravasation de produit de contraste",
+      "target" : [{
+        "code" : "427924001",
+        "display" : "extravasation de produit de contraste intraveineux",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0031",
+      "display" : "Fistule artérioveineuse au site d'abord",
+      "target" : [{
+        "code" : "439470001",
+        "display" : "fistule artérioveineuse",
+        "equivalence" : "wider",
+        "comment" : "sans précision du site ni de la cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0032",
+      "display" : "Perforation artérielle au site d'abord",
+      "target" : [{
+        "code" : "307312008",
+        "display" : "perforation d'une artère",
+        "equivalence" : "wider",
+        "comment" : "sans précision du site ni de la cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0033",
+      "display" : "Problème d'équipement pendant le cathétérisme",
+      "target" : [{
+        "equivalence" : "unmatched"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0034",
+      "display" : "Embolisation d'un stent",
+      "target" : [{
+        "code" : "473125002",
+        "display" : "migration d'endoprothèse vasculaire",
+        "equivalence" : "wider",
+        "comment" : "migration, dont l'embolisation"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0035",
+      "display" : "Rupture d'un conduit ou d'un vaisseau après implantation de stent",
+      "target" : [{
+        "code" : "248707009",
+        "display" : "vaisseau sanguin déchiré",
+        "equivalence" : "wider",
+        "comment" : "sans précision de cause"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0036",
+      "display" : "Compression coronaire après implantation de dispositif transluminal",
+      "target" : [{
+        "equivalence" : "unmatched"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0037",
+      "display" : "Stent laissé déployé en position non prévue après migration ou embolisation",
+      "target" : [{
+        "code" : "473125002",
+        "display" : "migration d'endoprothèse vasculaire",
+        "equivalence" : "wider",
+        "comment" : "migration"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0039",
+      "display" : "Embolisation (délogement) d'un coil introduit par cathéter",
+      "target" : [{
+        "code" : "473163005",
+        "display" : "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+        "equivalence" : "inexact",
+        "comment" : "fragment de dispositif ; un coil entier n'est pas un fragment"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0040",
+      "display" : "Thrombose vasculaire ou de conduit post-procédurale",
+      "target" : [{
+        "code" : "439127006",
+        "display" : "thrombose",
+        "equivalence" : "wider",
+        "comment" : "thrombose"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0041",
+      "display" : "Hémorragie post-procédurale",
+      "target" : [{
+        "code" : "131148009",
+        "display" : "hémorragie",
+        "equivalence" : "wider",
+        "comment" : "hémorragie"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0042",
+      "display" : "Anévrisme aortique post-procédural",
+      "target" : [{
+        "code" : "737158007",
+        "display" : "anévrisme de l'aorte consécutif à une intervention",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "TAUSSIG-AE-0043",
+      "display" : "Anévrisme de l'aorte au site de coarctation après intervention",
+      "target" : [{
+        "code" : "871661008",
+        "display" : "anévrisme de l'aorte au site de coarctation survenant après une intervention",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

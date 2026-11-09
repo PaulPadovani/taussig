@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem procedure-outcome-type</b></p><a name=\"procedure-outcome-type\"> </a><a name=\"hcprocedure-outcome-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/procedure-outcome-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">hemodynamic_success<a name=\"procedure-outcome-type-hemodynamic_success\"> </a></td><td>Succès hémodynamique</td><td>Critère hémodynamique de succès atteint (valeur oui/non), distinct du succès technique.</td></tr><tr><td style=\"white-space:nowrap\">residual_lesion_present<a name=\"procedure-outcome-type-residual_lesion_present\"> </a></td><td>Lésion résiduelle présente</td><td>Présence d'une lésion résiduelle en fin de procédure (valeur oui/non) ; le détail est porté par une Condition de type residual_lesion.</td></tr><tr><td style=\"white-space:nowrap\">death_attribution<a name=\"procedure-outcome-type-death_attribution\"> </a></td><td>Imputabilité du décès péri-procédural</td><td>Imputabilité d'un décès péri-procédural à la procédure (valeur codée, liste death-attribution-vs) ; le décès lui-même est porté par Patient.deceased[x].</td></tr></table></div>"
   },
   "url" : "https://taussig/fhir/CodeSystem/procedure-outcome-type",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedureOutcomeType",
   "title" : "TAUSSIG — Type de résultat global de procédure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme.",
   "jurisdiction" : [{

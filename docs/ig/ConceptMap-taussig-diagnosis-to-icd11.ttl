@@ -1,0 +1,1248 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-diagnosis-to-icd11> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-diagnosis-to-icd11"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts taussig-diagnosis-to-icd11</b></p><a name=\"taussig-diagnosis-to-icd11\"> </a><a name=\"hctaussig-diagnosis-to-icd11\"> </a><p>Mapping de <a href=\"ValueSet-taussig-diagnosis.html\">TAUSSIG — Liste des diagnostics cardiaques congénitaux</a> vers (non spécifié)</p><br/><p>Mapping de <a href=\"CodeSystem-taussig-diagnosis.html\">TAUSSIG — Diagnostics cardiaques congénitaux</a> to <code>http://id.who.int/icd/release/11/mms</code> (International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS))</p><table class=\"grid\"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>TAUSSIG-DIAG-0001 (Anomalie de position-orientation du cœur)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA80 (Anomalie de position-orientation du cœur)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0002 (Lévocardie)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA80.0 (Lévocardie)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0003 (Dextrocardie)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA80.1 (Dextrocardie)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0004 (Mésocardie)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA80.2 (Mésocardie)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0005 (Image en miroir complète)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA82 (Image en miroir complète)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0006 (Isomérisme droit)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA83 (Isomérisme droit)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0007 (Isomérisme gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA84 (Isomérisme gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0008 (Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85 (Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0009 (Connexions atrioventriculaires discordantes)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.0 (Connexions atrioventriculaires discordantes)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0010 (Transposition congénitalement corrigée des grandes artères)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.00 (Transposition congénitalement corrigée des grandes artères)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0011 (Transposition des gros vaisseaux)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.1 (Transposition des gros vaisseaux)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0012 (Ventricule droit à double issue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.2 (Ventricule droit à double issue)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0013 (Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.20 (Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0014 (Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.21 (Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0015 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.22 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0016 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.23 (Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0017 (Ventricule gauche à double issue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.3 (Ventricule gauche à double issue)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0018 (Tronc artériel commun)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.4 (Tronc artériel commun)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0019 (Tronc artériel commun à dominance aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.40 (Tronc artériel commun à dominance aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0020 (Tronc artériel commun à dominance pulmonaire et arc aortique interrompue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA85.41 (Tronc artériel commun à dominance pulmonaire et arc aortique interrompue)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0021 (Anomalie congénitale de la veine médiastinale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86 (Anomalie congénitale de la veine médiastinale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0022 (Veine cave supérieure gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86.0 (Veine cave supérieure gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0023 (Absence de toit du sinus coronaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86.1 (Absence de toit du sinus coronaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0024 (Anomalie du retour veineux pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86.2 (Anomalie du retour veineux pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0025 (Connexion veineuse pulmonaire totale anormale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86.20 (Connexion veineuse pulmonaire totale anormale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0026 (Connexion veineuse pulmonaire partielle anormale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86.21 (Connexion veineuse pulmonaire partielle anormale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0027 (Syndrome du cimeterre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86.22 (Syndrome du cimeterre)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0028 (Sténose ou hypoplasie veineuse pulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA86.3 (Sténose ou hypoplasie veineuse pulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0029 (Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87 (Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0030 (Anomalie congénitale de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.0 (Anomalie congénitale de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0031 (Insuffisance tricuspide congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.00 (Insuffisance tricuspide congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0032 (Sténose congénitale de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.01 (Sténose congénitale de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0033 (Dysplasie de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.02 (Dysplasie de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0034 (Malformation d'Ebstein de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.03 (Malformation d'Ebstein de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0035 (Anomalie congénitale de la valve mitrale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.1 (Anomalie congénitale de la valve mitrale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0036 (Insuffisance mitrale congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.10 (Insuffisance mitrale congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0037 (Sténose valvulaire mitrale congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.11 (Sténose valvulaire mitrale congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0038 (Dysplasie de la valve mitrale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.12 (Dysplasie de la valve mitrale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0039 (Anomalie congénitale de l'appareil mitral sousvalvaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.13 (Anomalie congénitale de l'appareil mitral sousvalvaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0040 (Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.3 (Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0041 (Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.4 (Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0042 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.40 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0043 (Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.41 (Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0044 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.42 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0045 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.43 (Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0046 (Communication septale auriculoventriculaire avec déséquilibre ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.44 (Communication septale auriculoventriculaire avec déséquilibre ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0047 (Anomalie septal auriculoventriculaire et tétralogie de Fallot)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA87.45 (Anomalie septal auriculoventriculaire et tétralogie de Fallot)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0048 (Anomalie congénitale du ventricule ou du septum ventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88 (Anomalie congénitale du ventricule ou du septum ventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0049 (Obstruction congénitale de la voie de sortie du ventricule droit)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.0 (Obstruction congénitale de la voie de sortie du ventricule droit)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0050 (Ventricule droit à double chambre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.1 (Ventricule droit à double chambre)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0051 (Tétralogie de Fallot)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.2 (Tétralogie de Fallot)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0052 (Tétralogie de Fallot avec syndrome de valve pulmonaire absente)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.20 (Tétralogie de Fallot avec syndrome de valve pulmonaire absente)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0053 (Tétralogie de Fallot avec atrésie pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.21 (Tétralogie de Fallot avec atrésie pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0054 (Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.22 (Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0055 (Obstruction congénitale de la voie de sortie du ventricule gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.3 (Obstruction congénitale de la voie de sortie du ventricule gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0056 (Communication interventriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.4 (Communication interventriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0057 (Communication interventriculaire musculaire trabéculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.40 (Communication interventriculaire musculaire trabéculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0058 (Communication interventriculaire centrale périmembraneuse)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.41 (Communication interventriculaire centrale périmembraneuse)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0059 (Communication interventriculaire non significatif sur le plan hémodynamique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA88.42 (Communication interventriculaire non significatif sur le plan hémodynamique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0060 (Cœur fonctionnellement univentriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA89 (Cœur fonctionnellement univentriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0061 (Connexion auriculoventriculaire à double entrée)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA89.0 (Connexion auriculoventriculaire à double entrée)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0062 (Atrésie de la valve tricuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA89.1 (Atrésie de la valve tricuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0063 (Atrésie mitrale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA89.2 (Atrésie mitrale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0064 (Syndrome d'hypoplasie du cœur gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA89.3 (Syndrome d'hypoplasie du cœur gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0065 (Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A (Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0066 (Anomalie congénitale de la valve pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.0 (Anomalie congénitale de la valve pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0067 (Sténose congénitale de la valve pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.00 (Sténose congénitale de la valve pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0068 (Insuffisance congénitale de la valve pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.01 (Insuffisance congénitale de la valve pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0069 (Atrésie pulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.1 (Atrésie pulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0070 (Atrésie pulmonaire avec septum ventriculaire intact)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.10 (Atrésie pulmonaire avec septum ventriculaire intact)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0071 (Anomalie congénitale de la valve aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.2 (Anomalie congénitale de la valve aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0072 (Sténose congénitale de la valve aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.20 (Sténose congénitale de la valve aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0073 (Insuffisance aortique congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.21 (Insuffisance aortique congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0074 (Valve aortique bicuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.22 (Valve aortique bicuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0075 (Atrésie de la valve aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.23 (Atrésie de la valve aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0076 (Valve aortique unicuspide)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.24 (Valve aortique unicuspide)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0077 (Sténose supravalvulaire aortique congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.3 (Sténose supravalvulaire aortique congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0078 (Anévrisme du sinus aortique de Valsalva)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.4 (Anévrisme du sinus aortique de Valsalva)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0079 (Sténose sous-aortique congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.5 (Sténose sous-aortique congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0080 (Sténose sous-pulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8A.6 (Sténose sous-pulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0081 (Anomalie congénitale des grandes artères, y compris le canal artériel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B (Anomalie congénitale des grandes artères, y compris le canal artériel)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0082 (Fenêtre aortopulmonaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.0 (Fenêtre aortopulmonaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0083 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0084 (Anomalie congénitale de l'aorte ou de ses branches)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.2 (Anomalie congénitale de l'aorte ou de ses branches)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0085 (Coarctation de l'aorte)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.21 (Coarctation de l'aorte)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0086 (Interruption de la crosse aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.22 (Interruption de la crosse aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0087 (Anomalie congénitale de l'aorte thoracique descendante ou abdominale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.23 (Anomalie congénitale de l'aorte thoracique descendante ou abdominale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0088 (Anomalie congénitale de la branche de l'arc aortique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.24 (Anomalie congénitale de la branche de l'arc aortique)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0089 (Syndrome de compression trachéo-œsophagienne)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.3 (Syndrome de compression trachéo-œsophagienne)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0090 (Persistance du canal artériel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8B.4 (Persistance du canal artériel)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0091 (Anomalie congénitale des artères coronaires)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8C (Anomalie congénitale des artères coronaires)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0092 (Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8C.0 (Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0093 (Origine aortique anormale ou trajet anormal de l'artère coronaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8C.1 (Origine aortique anormale ou trajet anormal de l'artère coronaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0094 (Fistule artérielle coronaire congénitale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8C.2 (Fistule artérielle coronaire congénitale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0095 (Malformation congénitale du péricarde)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8D (Malformation congénitale du péricarde)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0096 (Anomalie congénitale du septum auriculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8E (Anomalie congénitale du septum auriculaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0097 (Foramen ovale perméable)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8E.0 (Foramen ovale perméable)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0098 (Communication interauriculaire dans la fosse ovale)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8E.1 (Communication interauriculaire dans la fosse ovale)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0099 (Anomalie du sinus veineux)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8E.2 (Anomalie du sinus veineux)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0100 (Communication interauriculaire par l'orifice du sinus coronaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8E.3 (Communication interauriculaire par l'orifice du sinus coronaire)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0101 (Anomalie congénitale de l'oreillette droite)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8F (Anomalie congénitale de l'oreillette droite)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0102 (Anomalie congénitale de l'oreillette gauche)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8G (Anomalie congénitale de l'oreillette gauche)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0103 (Oreillette gauche divisée)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA8G.0 (Oreillette gauche divisée)</td><td>terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)</td></tr><tr><td>TAUSSIG-DIAG-0104 (Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>pas d'entité CIM-11 plus fine (v6)</td></tr><tr><td>TAUSSIG-DIAG-0105 (Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>idem</td></tr><tr><td>TAUSSIG-DIAG-0106 (Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>idem</td></tr><tr><td>TAUSSIG-DIAG-0107 (Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>LA8B.1 (Anomalie congénitale de l'arbre artériel pulmonaire)</td><td>pas d'entité CIM-11 pour les MAPCA (v6)</td></tr><tr><td>TAUSSIG-DIAG-0108 (Fistule (malformation) artérioveineuse pulmonaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA90.5 (Fistule artérioveineuse pulmonaire)</td><td>fistule artérioveineuse pulmonaire, malformation du développement</td></tr><tr><td>TAUSSIG-DIAG-0109 (Bloc atrioventriculaire complet congénital idiopathique)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td>BC63.20 (Bloc auriculoventriculaire complet congénital)</td><td>BC63.20 couvre tout BAV complet congénital ; le concept TAUSSIG est idiopathique</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://taussig/fhir/ConceptMap/taussig-diagnosis-to-icd11"] ;
+  fhir:ConceptMap.version [ fhir:value "0.8.1"] ;
+  fhir:ConceptMap.name [ fhir:value "TaussigDiagnosisToIcd11"] ;
+  fhir:ConceptMap.title [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux vers ICD-11"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ConceptMap.description [ fhir:value "Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers ICD-11. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://taussig/fhir/ValueSet/taussig-diagnosis" ;
+     fhir:link <https://taussig/fhir/ValueSet/taussig-diagnosis>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://taussig/fhir/CodeSystem/taussig-diagnosis" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://id.who.int/icd/release/11/mms" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0001" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie de position-orientation du cœur" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA80" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie de position-orientation du cœur" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0002" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Lévocardie" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA80.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Lévocardie" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0003" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dextrocardie" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA80.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Dextrocardie" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0004" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Mésocardie" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA80.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Mésocardie" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0005" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Image en miroir complète" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA82" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Image en miroir complète" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0006" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Isomérisme droit" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA83" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Isomérisme droit" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0007" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Isomérisme gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA84" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Isomérisme gauche" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0008" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0009" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexions atrioventriculaires discordantes" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Connexions atrioventriculaires discordantes" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0010" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Transposition congénitalement corrigée des grandes artères" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Transposition congénitalement corrigée des grandes artères" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0011" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Transposition des gros vaisseaux" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Transposition des gros vaisseaux" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0012" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double issue" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricule droit à double issue" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0013" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0014" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0015" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0016" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.23" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0017" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule gauche à double issue" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricule gauche à double issue" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0018" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tronc artériel commun" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tronc artériel commun" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0019" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tronc artériel commun à dominance aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.40" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tronc artériel commun à dominance aortique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0020" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA85.41" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0021" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la veine médiastinale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de la veine médiastinale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0022" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Veine cave supérieure gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Veine cave supérieure gauche" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0023" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Absence de toit du sinus coronaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Absence de toit du sinus coronaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0024" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie du retour veineux pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie du retour veineux pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0025" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexion veineuse pulmonaire totale anormale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Connexion veineuse pulmonaire totale anormale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0026" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexion veineuse pulmonaire partielle anormale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Connexion veineuse pulmonaire partielle anormale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0027" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome du cimeterre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Syndrome du cimeterre" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0028" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose ou hypoplasie veineuse pulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA86.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose ou hypoplasie veineuse pulmonaire congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0029" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0030" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de la valve tricuspide" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0031" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance tricuspide congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Insuffisance tricuspide congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0032" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose congénitale de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose congénitale de la valve tricuspide" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 32 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0033" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysplasie de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.02" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Dysplasie de la valve tricuspide" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 33 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0034" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Malformation d'Ebstein de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.03" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Malformation d'Ebstein de la valve tricuspide" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 34 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0035" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve mitrale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de la valve mitrale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 35 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0036" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance mitrale congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.10" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Insuffisance mitrale congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 36 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0037" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose valvulaire mitrale congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.11" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose valvulaire mitrale congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 37 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0038" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysplasie de la valve mitrale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.12" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Dysplasie de la valve mitrale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 38 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0039" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'appareil mitral sousvalvaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.13" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'appareil mitral sousvalvaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 39 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0040" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 40 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0041" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 41 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0042" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.40" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 42 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0043" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.41" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 43 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0044" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.42" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 44 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0045" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.43" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 45 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0046" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication septale auriculoventriculaire avec déséquilibre ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.44" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Communication septale auriculoventriculaire avec déséquilibre ventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 46 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0047" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie septal auriculoventriculaire et tétralogie de Fallot" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA87.45" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie septal auriculoventriculaire et tétralogie de Fallot" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 47 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0048" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale du ventricule ou du septum ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale du ventricule ou du septum ventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 48 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0049" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule droit" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule droit" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 49 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0050" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Ventricule droit à double chambre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ventricule droit à double chambre" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 50 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0051" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tétralogie de Fallot" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 51 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0052" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot avec syndrome de valve pulmonaire absente" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tétralogie de Fallot avec syndrome de valve pulmonaire absente" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 52 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0053" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 53 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0054" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 54 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0055" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule gauche" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 55 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0056" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Communication interventriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 56 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0057" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire musculaire trabéculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.40" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Communication interventriculaire musculaire trabéculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 57 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0058" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire centrale périmembraneuse" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.41" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Communication interventriculaire centrale périmembraneuse" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 58 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0059" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire non significatif sur le plan hémodynamique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA88.42" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Communication interventriculaire non significatif sur le plan hémodynamique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 59 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0060" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Cœur fonctionnellement univentriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA89" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Cœur fonctionnellement univentriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 60 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0061" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Connexion auriculoventriculaire à double entrée" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA89.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Connexion auriculoventriculaire à double entrée" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 61 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0062" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie de la valve tricuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA89.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrésie de la valve tricuspide" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 62 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0063" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie mitrale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA89.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrésie mitrale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 63 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0064" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome d'hypoplasie du cœur gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA89.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Syndrome d'hypoplasie du cœur gauche" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 64 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0065" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 65 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0066" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de la valve pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 66 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0067" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose congénitale de la valve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.00" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose congénitale de la valve pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 67 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0068" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance congénitale de la valve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.01" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Insuffisance congénitale de la valve pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 68 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0069" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie pulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrésie pulmonaire congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 69 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0070" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie pulmonaire avec septum ventriculaire intact" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.10" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrésie pulmonaire avec septum ventriculaire intact" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 70 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0071" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la valve aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de la valve aortique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 71 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0072" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose congénitale de la valve aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose congénitale de la valve aortique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 72 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0073" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Insuffisance aortique congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Insuffisance aortique congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 73 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0074" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Valve aortique bicuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Valve aortique bicuspide" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 74 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0075" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Atrésie de la valve aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.23" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Atrésie de la valve aortique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 75 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0076" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Valve aortique unicuspide" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.24" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Valve aortique unicuspide" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 76 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0077" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose supravalvulaire aortique congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose supravalvulaire aortique congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 77 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0078" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anévrisme du sinus aortique de Valsalva" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anévrisme du sinus aortique de Valsalva" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 78 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0079" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose sous-aortique congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.5" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose sous-aortique congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 79 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0080" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose sous-pulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8A.6" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Sténose sous-pulmonaire congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 80 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0081" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale des grandes artères, y compris le canal artériel" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale des grandes artères, y compris le canal artériel" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 81 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0082" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fenêtre aortopulmonaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fenêtre aortopulmonaire congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 82 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0083" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 83 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0084" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'aorte ou de ses branches" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'aorte ou de ses branches" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 84 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0085" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Coarctation de l'aorte" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Coarctation de l'aorte" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 85 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0086" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Interruption de la crosse aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Interruption de la crosse aortique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 86 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0087" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'aorte thoracique descendante ou abdominale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.23" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'aorte thoracique descendante ou abdominale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 87 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0088" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de la branche de l'arc aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.24" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de la branche de l'arc aortique" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 88 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0089" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Syndrome de compression trachéo-œsophagienne" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Syndrome de compression trachéo-œsophagienne" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 89 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0090" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Persistance du canal artériel" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Persistance du canal artériel" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 90 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0091" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale des artères coronaires" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8C" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale des artères coronaires" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 91 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0092" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8C.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 92 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0093" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Origine aortique anormale ou trajet anormal de l'artère coronaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8C.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Origine aortique anormale ou trajet anormal de l'artère coronaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 93 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0094" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fistule artérielle coronaire congénitale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8C.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fistule artérielle coronaire congénitale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 94 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0095" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Malformation congénitale du péricarde" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8D" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Malformation congénitale du péricarde" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 95 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0096" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale du septum auriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8E" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale du septum auriculaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 96 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0097" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Foramen ovale perméable" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8E.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Foramen ovale perméable" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 97 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0098" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interauriculaire dans la fosse ovale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8E.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Communication interauriculaire dans la fosse ovale" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 98 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0099" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie du sinus veineux" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8E.2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie du sinus veineux" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 99 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0100" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interauriculaire par l'orifice du sinus coronaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8E.3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Communication interauriculaire par l'orifice du sinus coronaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 100 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0101" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'oreillette droite" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8F" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'oreillette droite" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 101 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0102" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie congénitale de l'oreillette gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8G" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'oreillette gauche" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 102 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0103" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Oreillette gauche divisée" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8G.0" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Oreillette gauche divisée" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "terme IPCCC repris par la CIM-11 (hiérarchie diagnostique IPCCC–CIM-11)" ]
+       ]
+     ], [
+       fhir:index 103 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0104" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "pas d'entité CIM-11 plus fine (v6)" ]
+       ]
+     ], [
+       fhir:index 104 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0105" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 105 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0106" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 106 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0107" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA8B.1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "pas d'entité CIM-11 pour les MAPCA (v6)" ]
+       ]
+     ], [
+       fhir:index 107 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0108" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fistule (malformation) artérioveineuse pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "LA90.5" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fistule artérioveineuse pulmonaire" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "fistule artérioveineuse pulmonaire, malformation du développement" ]
+       ]
+     ], [
+       fhir:index 108 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-DIAG-0109" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Bloc atrioventriculaire complet congénital idiopathique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "BC63.20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Bloc auriculoventriculaire complet congénital" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "BC63.20 couvre tout BAV complet congénital ; le concept TAUSSIG est idiopathique" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-diagnosis-to-icd11.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

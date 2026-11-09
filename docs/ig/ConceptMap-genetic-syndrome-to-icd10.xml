@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="genetic-syndrome-to-icd10"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CarteDeConcepts genetic-syndrome-to-icd10</b></p><a name="genetic-syndrome-to-icd10"> </a><a name="hcgenetic-syndrome-to-icd10"> </a><p>Mapping de <a href="ValueSet-taussig-genetic-syndrome.html">TAUSSIG — Syndromes génétiques (Orphanet)</a> vers (non spécifié)</p><br/><p>Mapping de <code>http://www.orpha.net</code> to <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html">ICD-10</a></p><table class="grid"><tr><td colspan="2"><b>Détails du concept source</b></td><td><b>relation</b></td><td colspan="2"><b>Détails du concept cible</b></td><td><b>Commentaire</b></td></tr><tr><td colspan="2"><b>Codes</b> de http://www.orpha.net</td><td/><td colspan="2"><b>Codes</b> de <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html" title="http://hl7.org/fhir/sid/icd-10">ICD-10</a></td><td/></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">870</td><td style="border-left-width: 0px; border-bottom-style: none">Trisomie 21</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q90.0</td><td style="border-left-width: 0px">Trisomy 21, meiotic nondisjunction</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q90.1</td><td style="border-left-width: 0px">Trisomy 21, mosaicism (mitotic nondisjunction)</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q90.2</td><td style="border-left-width: 0px">Trisomy 21, translocation</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none"/><td style="border-top-style: none; border-left-width: 0px"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q90.9</td><td style="border-left-width: 0px">Down syndrome, unspecified</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">881</td><td style="border-left-width: 0px; border-bottom-style: none">Syndrome de Turner</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q96.0</td><td style="border-left-width: 0px">Karyotype 45,X</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q96.1</td><td style="border-left-width: 0px">Karyotype 46,X iso (Xq)</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q96.8</td><td style="border-left-width: 0px">Other variants of Turner syndrome</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q96.9</td><td style="border-left-width: 0px">Turner syndrome, unspecified</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q96.2</td><td style="border-left-width: 0px">Karyotype 46,X with abnormal sex chromosome, except iso (Xq)</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q96.3</td><td style="border-left-width: 0px">Mosaicism, 45,X/46,XX or XY</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none"/><td style="border-top-style: none; border-left-width: 0px"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q96.4</td><td style="border-left-width: 0px">Mosaicism, 45,X/other cell line(s) with abnormal sex chromosome</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px">567</td><td style="border-left-width: 0px">Syndrome de délétion 22q11.2</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">D82.1</td><td style="border-left-width: 0px">Di George syndrome</td><td>relation Orphanet validée</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">3380</td><td style="border-left-width: 0px; border-bottom-style: none">Syndrome de trisomie 18</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.0</td><td style="border-left-width: 0px">Trisomy 18, meiotic nondisjunction</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.1</td><td style="border-left-width: 0px">Trisomy 18, mosaicism (mitotic nondisjunction)</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.2</td><td style="border-left-width: 0px">Trisomy 18, translocation</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none"/><td style="border-top-style: none; border-left-width: 0px"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.3</td><td style="border-left-width: 0px">Edwards syndrome, unspecified</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">3378</td><td style="border-left-width: 0px; border-bottom-style: none">Syndrome de trisomie 13</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.4</td><td style="border-left-width: 0px">Trisomy 13, meiotic nondisjunction</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.5</td><td style="border-left-width: 0px">Trisomy 13, mosaicism (mitotic nondisjunction)</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none; border-bottom-style: none"/><td style="border-left-width: 0px; border-top-style: none; border-bottom-style: none"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.6</td><td style="border-left-width: 0px">Trisomy 13, translocation</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px; border-top-style: none"/><td style="border-top-style: none; border-left-width: 0px"/><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower" title="narrower">maps to narrower concept</a></td><td style="border-right-width: 0px">Q91.7</td><td style="border-left-width: 0px">Patau syndrome, unspecified</td><td>relation Orphanet validée (BTNT)</td></tr><tr><td style="border-right-width: 0px">365</td><td style="border-left-width: 0px">Glycogénose par déficit en maltase acide</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td style="border-right-width: 0px">E74.0</td><td style="border-left-width: 0px">Glycogen storage disease</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td style="border-right-width: 0px">95</td><td style="border-left-width: 0px">Ataxie de Friedreich</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td style="border-right-width: 0px">G11.1</td><td style="border-left-width: 0px">Early-onset cerebellar ataxia</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td style="border-right-width: 0px">98896</td><td style="border-left-width: 0px">Dystrophie musculaire de Duchenne</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td style="border-right-width: 0px">G71.0</td><td style="border-left-width: 0px">Muscular dystrophy</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td style="border-right-width: 0px">558</td><td style="border-left-width: 0px">Syndrome de Marfan</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">Q87.4</td><td style="border-left-width: 0px">Marfan syndrome</td><td>relation Orphanet validée</td></tr><tr><td style="border-right-width: 0px">98249</td><td style="border-left-width: 0px">Syndrome d'Ehlers-Danlos</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">Q79.6</td><td style="border-left-width: 0px">Ehlers-Danlos syndrome</td><td>relation Orphanet validée</td></tr><tr><td style="border-right-width: 0px">60030</td><td style="border-left-width: 0px">Syndrome de Loeys-Dietz</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td style="border-right-width: 0px">Q87.4</td><td style="border-left-width: 0px">Marfan syndrome</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td style="border-right-width: 0px">648</td><td style="border-left-width: 0px">Syndrome de Noonan</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td style="border-right-width: 0px">Q87.1</td><td style="border-left-width: 0px">Congenital malformation syndromes predominantly associated with short stature</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td style="border-right-width: 0px">805</td><td style="border-left-width: 0px">Sclérose tubéreuse de Bourneville</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">Q85.1</td><td style="border-left-width: 0px">Tuberous sclerosis</td><td>relation Orphanet validée</td></tr><tr><td style="border-right-width: 0px">904</td><td style="border-left-width: 0px">Syndrome de Williams</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td style="border-right-width: 0px">Q93.8</td><td style="border-left-width: 0px">Other deletions from the autosomes</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td style="border-right-width: 0px">52</td><td style="border-left-width: 0px">Syndrome d'Alagille</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td style="border-right-width: 0px">Q44.7</td><td style="border-left-width: 0px">Other congenital malformations of liver</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td style="border-right-width: 0px">290</td><td style="border-left-width: 0px">Syndrome de rubéole congénitale</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">P35.0</td><td style="border-left-width: 0px">Congenital rubella syndrome</td><td>relation Orphanet validée</td></tr><tr><td style="border-right-width: 0px">68341</td><td style="border-left-width: 0px">Anomalies congénitales multiples/syndrome dysmorphique</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact" title="inexact">maps loosely to</a></td><td style="border-right-width: 0px">Q89.7</td><td style="border-left-width: 0px">Multiple congenital malformations, not elsewhere classified</td><td>groupe Orphanet sans alignement CIM publié</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd10"/>
+  <version value="0.8.1"/>
+  <name value="GeneticSyndromeToIcd10"/>
+  <title value="TAUSSIG — Syndromes génétiques (Orphanet) vers CIM-10"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-09T15:30:29+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers CIM-10. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4). Relations CIM validées par Orphanet (Orphadata, produit 1 FR, 2025-12-09, CC BY 4.0) : E → equivalent, NTBT → wider, BTNT → narrower."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://taussig/fhir/ValueSet/taussig-genetic-syndrome"/>
+  <group>
+    <source value="http://www.orpha.net"/>
+    <target value="http://hl7.org/fhir/sid/icd-10"/>
+    <element>
+      <code value="870"/>
+      <display value="Trisomie 21"/>
+      <target>
+        <code value="Q90.0"/>
+        <display value="Trisomy 21, meiotic nondisjunction"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q90.1"/>
+        <display value="Trisomy 21, mosaicism (mitotic nondisjunction)"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q90.2"/>
+        <display value="Trisomy 21, translocation"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q90.9"/>
+        <display value="Down syndrome, unspecified"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="881"/>
+      <display value="Syndrome de Turner"/>
+      <target>
+        <code value="Q96.0"/>
+        <display value="Karyotype 45,X"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q96.1"/>
+        <display value="Karyotype 46,X iso (Xq)"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q96.8"/>
+        <display value="Other variants of Turner syndrome"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q96.9"/>
+        <display value="Turner syndrome, unspecified"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q96.2"/>
+        <display value="Karyotype 46,X with abnormal sex chromosome, except iso (Xq)"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q96.3"/>
+        <display value="Mosaicism, 45,X/46,XX or XY"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q96.4"/>
+        <display value="Mosaicism, 45,X/other cell line(s) with abnormal sex chromosome"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="567"/>
+      <display value="Syndrome de délétion 22q11.2"/>
+      <target>
+        <code value="D82.1"/>
+        <display value="Di George syndrome"/>
+        <equivalence value="equivalent"/>
+        <comment value="relation Orphanet validée"/>
+      </target>
+    </element>
+    <element>
+      <code value="3380"/>
+      <display value="Syndrome de trisomie 18"/>
+      <target>
+        <code value="Q91.0"/>
+        <display value="Trisomy 18, meiotic nondisjunction"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q91.1"/>
+        <display value="Trisomy 18, mosaicism (mitotic nondisjunction)"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q91.2"/>
+        <display value="Trisomy 18, translocation"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q91.3"/>
+        <display value="Edwards syndrome, unspecified"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="3378"/>
+      <display value="Syndrome de trisomie 13"/>
+      <target>
+        <code value="Q91.4"/>
+        <display value="Trisomy 13, meiotic nondisjunction"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q91.5"/>
+        <display value="Trisomy 13, mosaicism (mitotic nondisjunction)"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q91.6"/>
+        <display value="Trisomy 13, translocation"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+      <target>
+        <code value="Q91.7"/>
+        <display value="Patau syndrome, unspecified"/>
+        <equivalence value="narrower"/>
+        <comment value="relation Orphanet validée (BTNT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="365"/>
+      <display value="Glycogénose par déficit en maltase acide"/>
+      <target>
+        <code value="E74.0"/>
+        <display value="Glycogen storage disease"/>
+        <equivalence value="wider"/>
+        <comment value="relation Orphanet validée (NTBT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="95"/>
+      <display value="Ataxie de Friedreich"/>
+      <target>
+        <code value="G11.1"/>
+        <display value="Early-onset cerebellar ataxia"/>
+        <equivalence value="wider"/>
+        <comment value="relation Orphanet validée (NTBT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="98896"/>
+      <display value="Dystrophie musculaire de Duchenne"/>
+      <target>
+        <code value="G71.0"/>
+        <display value="Muscular dystrophy"/>
+        <equivalence value="wider"/>
+        <comment value="relation Orphanet validée (NTBT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="558"/>
+      <display value="Syndrome de Marfan"/>
+      <target>
+        <code value="Q87.4"/>
+        <display value="Marfan syndrome"/>
+        <equivalence value="equivalent"/>
+        <comment value="relation Orphanet validée"/>
+      </target>
+    </element>
+    <element>
+      <code value="98249"/>
+      <display value="Syndrome d'Ehlers-Danlos"/>
+      <target>
+        <code value="Q79.6"/>
+        <display value="Ehlers-Danlos syndrome"/>
+        <equivalence value="equivalent"/>
+        <comment value="relation Orphanet validée"/>
+      </target>
+    </element>
+    <element>
+      <code value="60030"/>
+      <display value="Syndrome de Loeys-Dietz"/>
+      <target>
+        <code value="Q87.4"/>
+        <display value="Marfan syndrome"/>
+        <equivalence value="wider"/>
+        <comment value="relation Orphanet validée (NTBT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="648"/>
+      <display value="Syndrome de Noonan"/>
+      <target>
+        <code value="Q87.1"/>
+        <display value="Congenital malformation syndromes predominantly associated with short stature"/>
+        <equivalence value="wider"/>
+        <comment value="relation Orphanet validée (NTBT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="805"/>
+      <display value="Sclérose tubéreuse de Bourneville"/>
+      <target>
+        <code value="Q85.1"/>
+        <display value="Tuberous sclerosis"/>
+        <equivalence value="equivalent"/>
+        <comment value="relation Orphanet validée"/>
+      </target>
+    </element>
+    <element>
+      <code value="904"/>
+      <display value="Syndrome de Williams"/>
+      <target>
+        <code value="Q93.8"/>
+        <display value="Other deletions from the autosomes"/>
+        <equivalence value="wider"/>
+        <comment value="relation Orphanet validée (NTBT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="52"/>
+      <display value="Syndrome d'Alagille"/>
+      <target>
+        <code value="Q44.7"/>
+        <display value="Other congenital malformations of liver"/>
+        <equivalence value="wider"/>
+        <comment value="relation Orphanet validée (NTBT)"/>
+      </target>
+    </element>
+    <element>
+      <code value="290"/>
+      <display value="Syndrome de rubéole congénitale"/>
+      <target>
+        <code value="P35.0"/>
+        <display value="Congenital rubella syndrome"/>
+        <equivalence value="equivalent"/>
+        <comment value="relation Orphanet validée"/>
+      </target>
+    </element>
+    <element>
+      <code value="68341"/>
+      <display value="Anomalies congénitales multiples/syndrome dysmorphique"/>
+      <target>
+        <code value="Q89.7"/>
+        <display value="Multiple congenital malformations, not elsewhere classified"/>
+        <equivalence value="inexact"/>
+        <comment value="groupe Orphanet sans alignement CIM publié"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -14,12 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem annotation-class</b></p><a name=\"annotation-class\"> </a><a name=\"hcannotation-class\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/annotation-class</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">annotatable<a name=\"annotation-class-annotatable\"> </a></td><td>Saisissable</td><td>La valeur peut être lue dans un compte rendu ; l'annotateur la renseigne avec sa preuve ou un état explicite.</td></tr><tr><td style=\"white-space:nowrap\">relation<a name=\"annotation-class-relation\"> </a></td><td>Relation</td><td>Lien vers une autre fiche, ou attribut porté par ce lien.</td></tr><tr><td style=\"white-space:nowrap\">derived<a name=\"annotation-class-derived\"> </a></td><td>Dérivé</td><td>Calculé ou déduit d'autres éléments (ConceptMap, période) ; jamais saisi.</td></tr><tr><td style=\"white-space:nowrap\">never_annotated<a name=\"annotation-class-never_annotated\"> </a></td><td>Jamais annoté</td><td>Identifiant direct ou donnée nominative, absent d'un texte pseudonymisé.</td></tr><tr><td style=\"white-space:nowrap\">out_of_scope<a name=\"annotation-class-out_of_scope\"> </a></td><td>Hors annotation</td><td>Métadonnée de traçabilité ou de gouvernance, jamais écrite dans un compte rendu.</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/annotation-class"] ;
-  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.1"] ;
   fhir:CodeSystem.name [ fhir:value "AnnotationClassCS"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Classe d'annotation"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire."] ;
   fhir:CodeSystem.jurisdiction [

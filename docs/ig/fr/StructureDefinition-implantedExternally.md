@@ -1,4 +1,4 @@
-# Posé en externe - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Posé en externe - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Posé en externe (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-implantedExtern
   "resourceType" : "StructureDefinition",
   "id" : "implantedExternally",
   "url" : "https://taussig/fhir/StructureDefinition/implantedExternally",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ImplantedExternally",
   "title" : "Posé en externe",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Dispositif posé en chirurgie ou dans un autre centre (hors cathé TAUSSIG).",
   "jurisdiction" : [{

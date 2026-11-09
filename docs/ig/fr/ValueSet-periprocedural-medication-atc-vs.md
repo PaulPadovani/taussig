@@ -1,4 +1,4 @@
-# TAUSSIG — Médicaments péri-procéduraux (ATC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Médicaments péri-procéduraux (ATC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Médicaments péri-procéduraux (ATC) (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "periprocedural-medication-atc-vs",
   "url" : "https://taussig/fhir/ValueSet/periprocedural-medication-atc-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "PeriproceduralMedicationAtcVS",
   "title" : "TAUSSIG — Médicaments péri-procéduraux (ATC)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Molécules d'antibioprophylaxie et d'anticoagulation per-procédurale les plus attendues dans un compte rendu de cathétérisme pédiatrique. Liste courte proposée, à valider cliniquement.",
   "jurisdiction" : [{

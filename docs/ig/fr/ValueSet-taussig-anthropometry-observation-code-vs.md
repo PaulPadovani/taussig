@@ -1,4 +1,4 @@
-# TAUSSIG — Codes d'anthropométrie per-cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Codes d'anthropométrie per-cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Codes d'anthropométrie per-cathétérisme (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "taussig-anthropometry-observation-code-vs",
   "url" : "https://taussig/fhir/ValueSet/taussig-anthropometry-observation-code-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigAnthropometryObservationCodeVS",
   "title" : "TAUSSIG — Codes d'anthropométrie per-cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Codes LOINC utilisés pour poids, taille et surface corporelle au moment du cathétérisme.",
   "jurisdiction" : [{
@@ -44,15 +44,27 @@
       "system" : "http://loinc.org",
       "concept" : [{
         "code" : "29463-7",
-        "display" : "Body weight"
+        "display" : "Body weight",
+        "designation" : [{
+          "language" : "fr-FR",
+          "value" : "Poids corporel"
+        }]
       },
       {
         "code" : "8302-2",
-        "display" : "Body height"
+        "display" : "Body height",
+        "designation" : [{
+          "language" : "fr-FR",
+          "value" : "Taille du patient"
+        }]
       },
       {
         "code" : "8277-6",
-        "display" : "Body surface area"
+        "display" : "Body surface area",
+        "designation" : [{
+          "language" : "fr-FR",
+          "value" : "Surface corporelle"
+        }]
       }]
     }]
   }

@@ -1,0 +1,1196 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-condition-to-echsa> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-condition-to-echsa"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CarteDeConcepts taussig-condition-to-echsa</b></p><a name=\"taussig-condition-to-echsa\"> </a><a name=\"hctaussig-condition-to-echsa\"> </a><p>Mapping de <a href=\"ValueSet-taussig-condition.html\">TAUSSIG — Liste des conditions cardiaques évolutives</a> vers (non spécifié)</p><br/><p>Mapping de <a href=\"CodeSystem-taussig-condition.html\">TAUSSIG — Conditions cardiaques évolutives</a> to <a href=\"CodeSystem-echsa.html\">TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)</a></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Détails du concept source</b></td><td><b>relation</b></td><td colspan=\"2\"><b>Détails du concept cible</b></td><td><b>Commentaire</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> de <a href=\"CodeSystem-taussig-condition.html\" title=\"https://taussig/fhir/CodeSystem/taussig-condition\">TAUSSIG — Conditions cardiaques évolutives</a></td><td/><td colspan=\"2\"><b>Codes</b> de <a href=\"CodeSystem-echsa.html\" title=\"https://taussig/fhir/CodeSystem/echsa\">TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)</a></td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0001</td><td style=\"border-left-width: 0px\">Création/agrandissement de communication interatriale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-4060</td><td style=\"border-left-width: 0px\">ASD creation/enlargement</td><td>antécédent d'intervention ; pas de code d'état après dédié</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0002</td><td style=\"border-left-width: 0px\">Cerclage de l'artère pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-5640</td><td style=\"border-left-width: 0px\">PA banding (PAB)</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0003</td><td style=\"border-left-width: 0px\">Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-5590</td><td style=\"border-left-width: 0px\">Shunt, Systemic to pulmonary, Modified Blalock-Taussig Shunt (MBTS)</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0004</td><td style=\"border-left-width: 0px\">Intervention de Norwood</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-4870</td><td style=\"border-left-width: 0px\">Norwood procedure</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0005</td><td style=\"border-left-width: 0px\">Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-5680</td><td style=\"border-left-width: 0px\">Glenn (unidirectional cavopulmonary anastomosis) (unidirectional Glenn)</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0006</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">SP-2010-5670</td><td style=\"border-left-width: 0px\">Bidirectional cavopulmonary anastomosis (BDCPA) (bidirectional Glenn)</td><td>code d'intervention ; le code d'état après dédié est DIAG-2024-1</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2024-1</td><td style=\"border-left-width: 0px\">Status post - bidirectional Glenn</td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0007</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Anastomose cavopulmonaire bidirectionnelle bilatérale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">SP-2010-5690</td><td style=\"border-left-width: 0px\">Bilateral bidirectional cavopulmonary anastomosis (BBDCPA) (bilateral bidirectional Glenn)</td><td>code d'intervention ; le code d'état après dédié est DIAG-2024-2</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2024-2</td><td style=\"border-left-width: 0px\">Status post - bilateral bidirectional Glenn</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0008</td><td style=\"border-left-width: 0px\">Fontan (TCPC), conduit extracardiaque, fenestré</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-5000</td><td style=\"border-left-width: 0px\">Fontan, TCPC, External conduit, Fenestrated</td><td>antécédent d'intervention</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0009</td><td style=\"border-left-width: 0px\">Fontan (TCPC), conduit extracardiaque, non fenestré</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-5010</td><td style=\"border-left-width: 0px\">Fontan, TCPC, External conduit, Nonfenestrated</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0010</td><td style=\"border-left-width: 0px\">Fontan (TCPC), tunnel latéral, fenestré</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-4970</td><td style=\"border-left-width: 0px\">Fontan, TCPC, Lateral tunnel, Fenestrated</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0011</td><td style=\"border-left-width: 0px\">Fontan (TCPC), tunnel latéral, non fenestré</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-4980</td><td style=\"border-left-width: 0px\">Fontan, TCPC, Lateral tunnel, Nonfenestrated</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0012</td><td style=\"border-left-width: 0px\">Réparation à un ventricule et demi</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-4520</td><td style=\"border-left-width: 0px\">1 1/2 ventricular repair</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0013</td><td style=\"border-left-width: 0px\">Palliation, autre</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">SP-2010-5710</td><td style=\"border-left-width: 0px\">Palliation, Other</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0014</td><td style=\"border-left-width: 0px\">Endocardite infectieuse</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG123</td><td style=\"border-left-width: 0px\">Endocarditis</td><td>endocardite sans précision infectieuse</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0015</td><td style=\"border-left-width: 0px\">Anomalie acquise de la veine cave supérieure</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG026</td><td style=\"border-left-width: 0px\">Systemic venous anomaly</td><td>anomalie veineuse systémique au sens congénital</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0016</td><td style=\"border-left-width: 0px\">Anomalie acquise de la veine cave inférieure</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG026</td><td style=\"border-left-width: 0px\">Systemic venous anomaly</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0017</td><td style=\"border-left-width: 0px\">Anomalie acquise du sinus coronaire</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0018</td><td style=\"border-left-width: 0px\">Anomalie acquise des veines pulmonaires</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0019</td><td style=\"border-left-width: 0px\">Anomalie acquise de l'oreillette droite</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0020</td><td style=\"border-left-width: 0px\">Anomalie acquise de l'oreillette gauche</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0021</td><td style=\"border-left-width: 0px\">Communication interatriale résiduelle (CIA)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-17</td><td style=\"border-left-width: 0px\">ASD, Postoperative interatrial communication</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0022</td><td style=\"border-left-width: 0px\">Régurgitation tricuspide résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG037</td><td style=\"border-left-width: 0px\">Tricuspid regurgitation, non-Ebstein's related</td><td>ECHSA ne distingue pas le caractère résiduel</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0023</td><td style=\"border-left-width: 0px\">Sténose mitrale résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG164</td><td style=\"border-left-width: 0px\">Mitral stenosis</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0024</td><td style=\"border-left-width: 0px\">Régurgitation mitrale résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG067</td><td style=\"border-left-width: 0px\">Mitral regurgitation</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0025</td><td style=\"border-left-width: 0px\">Régurgitation troncale résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2010-170</td><td style=\"border-left-width: 0px\">Truncal valve insufficiency</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0026</td><td style=\"border-left-width: 0px\">Sténose valvulaire pulmonaire résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG041</td><td style=\"border-left-width: 0px\">Pulmonary stenosis, Valvar</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0027</td><td style=\"border-left-width: 0px\">Régurgitation pulmonaire résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG049</td><td style=\"border-left-width: 0px\">Pulmonary insufficiency</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0028</td><td style=\"border-left-width: 0px\">Sténose de la néovalve pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG041</td><td style=\"border-left-width: 0px\">Pulmonary stenosis, Valvar</td><td>ne distingue pas la néovalve</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0029</td><td style=\"border-left-width: 0px\">Régurgitation de la néovalve pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG049</td><td style=\"border-left-width: 0px\">Pulmonary insufficiency</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0030</td><td style=\"border-left-width: 0px\">Sténose valvulaire aortique résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG052</td><td style=\"border-left-width: 0px\">Aortic stenosis, Valvar</td><td>ne distingue pas le caractère résiduel</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0031</td><td style=\"border-left-width: 0px\">Régurgitation aortique résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG056</td><td style=\"border-left-width: 0px\">Aortic insufficiency</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0032</td><td style=\"border-left-width: 0px\">Sténose de la néovalve aortique d'origine pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG052</td><td style=\"border-left-width: 0px\">Aortic stenosis, Valvar</td><td>ne distingue pas la néovalve</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0033</td><td style=\"border-left-width: 0px\">Régurgitation de la néovalve aortique d'origine pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG056</td><td style=\"border-left-width: 0px\">Aortic insufficiency</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0034</td><td style=\"border-left-width: 0px\">Sténose acquise de la néovalve aortique d'origine troncale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG052</td><td style=\"border-left-width: 0px\">Aortic stenosis, Valvar</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0035</td><td style=\"border-left-width: 0px\">Régurgitation acquise de la néovalve aortique d'origine troncale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG056</td><td style=\"border-left-width: 0px\">Aortic insufficiency</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0036</td><td style=\"border-left-width: 0px\">Composante ventriculaire résiduelle de canal atrioventriculaire</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0037</td><td style=\"border-left-width: 0px\">Régurgitation résiduelle de la valve atrioventriculaire commune</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0038</td><td style=\"border-left-width: 0px\">Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0039</td><td style=\"border-left-width: 0px\">Dilatation ventriculaire droite acquise</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0040</td><td style=\"border-left-width: 0px\">Hypertrophie ventriculaire droite acquise</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0041</td><td style=\"border-left-width: 0px\">Anévrisme ventriculaire droit acquis</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG116</td><td style=\"border-left-width: 0px\">Aneurysm, Ventricular, Right (including pseudoaneurysm)</td><td>inclut le pseudoanévrisme</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0042</td><td style=\"border-left-width: 0px\">Dysfonction ventriculaire droite</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0043</td><td style=\"border-left-width: 0px\">Obstruction résiduelle de la voie d'éjection du ventricule droit</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0044</td><td style=\"border-left-width: 0px\">Dilatation ventriculaire gauche acquise</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0045</td><td style=\"border-left-width: 0px\">Hypertrophie ventriculaire gauche acquise</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0046</td><td style=\"border-left-width: 0px\">Anévrisme ventriculaire gauche acquis</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG117</td><td style=\"border-left-width: 0px\">Aneurysm, Ventricular, Left (including pseudoaneurysm)</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0047</td><td style=\"border-left-width: 0px\">Défaillance ventriculaire gauche</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0048</td><td style=\"border-left-width: 0px\">Complication post-procédurale de la voie d'éjection du ventricule gauche</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0049</td><td style=\"border-left-width: 0px\">Sténose sous-aortique acquise</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG051</td><td style=\"border-left-width: 0px\">Aortic stenosis, Subvalvar</td><td>ne distingue pas congénital et acquis</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0050</td><td style=\"border-left-width: 0px\">Sténose sous-pulmonaire acquise</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG166</td><td style=\"border-left-width: 0px\">Pulmonary stenosis, Subvalvar</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0051</td><td style=\"border-left-width: 0px\">Communication interventriculaire résiduelle (CIV)</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0052</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Cardiomyopathie restrictive</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG070</td><td style=\"border-left-width: 0px\">Cardiomyopathy (including dilated, restrictive, and hypertrophic)</td><td>toutes cardiomyopathies</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2023-3</td><td style=\"border-left-width: 0px\">Restrictive cardiomyopathy</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0053</td><td style=\"border-left-width: 0px\">Anomalie acquise de l'arbre artériel pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">maps to narrower concept</a></td><td style=\"border-right-width: 0px\">DIAG118</td><td style=\"border-left-width: 0px\">Aneurysm, Pulmonary artery</td><td>anévrisme seulement</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0054</td><td style=\"border-left-width: 0px\">Sténose post-procédurale du tronc de l'artère pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG042</td><td style=\"border-left-width: 0px\">Pulmonary artery stenosis (hypoplasia), Main (trunk)</td><td>ne distingue pas congénital et post-procédural</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0055</td><td style=\"border-left-width: 0px\">Sténose résiduelle de l'artère pulmonaire droite</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG043</td><td style=\"border-left-width: 0px\">Pulmonary artery stenosis, Branch, Central (within the hilar bifurcation)</td><td>sténose centrale seulement ; la sténose résiduelle peut être périphérique</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0056</td><td style=\"border-left-width: 0px\">Sténose résiduelle de l'artère pulmonaire gauche</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG043</td><td style=\"border-left-width: 0px\">Pulmonary artery stenosis, Branch, Central (within the hilar bifurcation)</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0057</td><td style=\"border-left-width: 0px\">Hypertension artérielle pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">maps to narrower concept</a></td><td style=\"border-right-width: 0px\">DIAG131</td><td style=\"border-left-width: 0px\">Primary pulmonary hypertension</td><td>HTAP primitive seulement</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0058</td><td style=\"border-left-width: 0px\">Embolie pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG128</td><td style=\"border-left-width: 0px\">Pulmonary embolism</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0059</td><td style=\"border-left-width: 0px\">Sténose aortique supravalvulaire acquise</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG053</td><td style=\"border-left-width: 0px\">Aortic stenosis, Supravalvar</td><td>ne distingue pas congénital et acquis</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0060</td><td style=\"border-left-width: 0px\">Dilatation acquise de l'aorte ascendante et/ou de la racine aortique</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG102</td><td style=\"border-left-width: 0px\">Aortic aneurysm (including pseudoaneurysm)</td><td>une dilatation n'est pas un anévrisme</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0061</td><td style=\"border-left-width: 0px\">Dilatation de la racine aortique</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG102</td><td style=\"border-left-width: 0px\">Aortic aneurysm (including pseudoaneurysm)</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0062</td><td style=\"border-left-width: 0px\">Dissection aortique</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG103</td><td style=\"border-left-width: 0px\">Aortic dissection</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0063</td><td style=\"border-left-width: 0px\">Anévrisme aortique</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG102</td><td style=\"border-left-width: 0px\">Aortic aneurysm (including pseudoaneurysm)</td><td>inclut le pseudoanévrisme</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0064</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Coarctation aortique résiduelle</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG095</td><td style=\"border-left-width: 0px\">Coarctation of aorta</td><td>ne distingue pas le caractère résiduel</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG-2024-7</td><td style=\"border-left-width: 0px\">Coarctation - status post stent placement</td><td>coarctation après pose de stent seulement</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0065</td><td style=\"border-left-width: 0px\">Complication coronaire post-procédurale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG161</td><td style=\"border-left-width: 0px\">Coronary artery anomaly, Other</td><td>anomalie coronaire « autre », au sens congénital</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0066</td><td style=\"border-left-width: 0px\">Persistance résiduelle du canal artériel (PDA)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG099</td><td style=\"border-left-width: 0px\">Patent ductus arteriosus</td><td>ne distingue pas le caractère résiduel</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0067</td><td style=\"border-left-width: 0px\">Complication liée à un conduit cardiaque</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">maps to narrower concept</a></td><td style=\"border-right-width: 0px\">DIAG048</td><td style=\"border-left-width: 0px\">Conduit failure</td><td>défaillance seulement</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0068</td><td style=\"border-left-width: 0px\">Obstruction d'anastomose systémico-pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2010-2130</td><td style=\"border-left-width: 0px\">Shunt failure</td><td>toute défaillance d'anastomose</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0069</td><td style=\"border-left-width: 0px\">Obstruction partielle d'anastomose systémico-pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2010-2130</td><td style=\"border-left-width: 0px\">Shunt failure</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0070</td><td style=\"border-left-width: 0px\">Obstruction complète d'anastomose systémico-pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2010-2130</td><td style=\"border-left-width: 0px\">Shunt failure</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0071</td><td style=\"border-left-width: 0px\">Défaillance d'autogreffe pulmonaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG124</td><td style=\"border-left-width: 0px\">Prosthetic valve failure</td><td>une autogreffe n'est pas une prothèse</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0072</td><td style=\"border-left-width: 0px\">Circulation de Fontan défaillante</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0073</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Épanchement péricardique</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG071</td><td style=\"border-left-width: 0px\">Pericardial effusion</td><td/></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">maps to narrower concept</a></td><td style=\"border-right-width: 0px\">DIAG-2019-31</td><td style=\"border-left-width: 0px\">Tamponade</td><td>tamponnade</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0074</td><td style=\"border-left-width: 0px\">Complication après transplantation cardiaque ou pulmonaire</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0075</td><td style=\"border-left-width: 0px\">Sténose acquise des veines pulmonaires</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-10</td><td style=\"border-left-width: 0px\">Pulmonary venous stenosis, Acquired</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0076</td><td style=\"border-left-width: 0px\">Obstruction d'une veine systémique</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG027</td><td style=\"border-left-width: 0px\">Systemic venous obstruction</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0077</td><td style=\"border-left-width: 0px\">Collatérale(s) veino-veineuse(s) systémique(s)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2024-5</td><td style=\"border-left-width: 0px\">Venovenous collaterals</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0078</td><td style=\"border-left-width: 0px\">Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2024-6</td><td style=\"border-left-width: 0px\">Arterioarterial collaterals</td><td>collatérales artérioartérielles, sans précision systémico-pulmonaire</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0079</td><td style=\"border-left-width: 0px\">Fistules (malformations) artérioveineuses pulmonaires acquises</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG127</td><td style=\"border-left-width: 0px\">Pulmonary AV fistula</td><td>ne distingue pas congénital et acquis</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0080</td><td style=\"border-left-width: 0px\">Cardiomyopathie dilatée</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2023-1</td><td style=\"border-left-width: 0px\">Dilated cardiomyopathy</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0081</td><td style=\"border-left-width: 0px\">Cardiomyopathie hypertrophique</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2023-2</td><td style=\"border-left-width: 0px\">Hypertrophic cardiomyopathy</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0082</td><td style=\"border-left-width: 0px\">Cardiomyopathie hypertrophique obstructive du ventricule gauche</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2023-4</td><td style=\"border-left-width: 0px\">Hypertrophic obstructive cardiomyopathy</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0083</td><td style=\"border-left-width: 0px\">Myocardite (cardiomyopathie inflammatoire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-07</td><td style=\"border-left-width: 0px\">Myocarditis</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0084</td><td style=\"border-left-width: 0px\">Maladie de Kawasaki</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-26</td><td style=\"border-left-width: 0px\">Kawasaki disease</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0085</td><td style=\"border-left-width: 0px\">Infarctus du myocarde</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG125</td><td style=\"border-left-width: 0px\">Myocardial infarction</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0086</td><td style=\"border-left-width: 0px\">État après transplantation cardiaque</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG175</td><td style=\"border-left-width: 0px\">Status post - Transplant, Heart</td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0087</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Maladie vasculaire pulmonaire irréversible</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG167</td><td style=\"border-left-width: 0px\">Pulmonary vascular obstructive disease</td><td/></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-narrower\" title=\"narrower\">maps to narrower concept</a></td><td style=\"border-right-width: 0px\">DIAG130</td><td style=\"border-left-width: 0px\">Pulmonary vascular obstructive disease (Eisenmenger's)</td><td>forme d'Eisenmenger</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0088</td><td style=\"border-left-width: 0px\">Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG130</td><td style=\"border-left-width: 0px\">Pulmonary vascular obstructive disease (Eisenmenger's)</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0089</td><td style=\"border-left-width: 0px\">Trouble du rythme cardiaque</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG109</td><td style=\"border-left-width: 0px\">Arrhythmia</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0090</td><td style=\"border-left-width: 0px\">Fibrillation atriale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-14</td><td style=\"border-left-width: 0px\">Arrhythmia, Atrial, Atrial fibrillation</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0091</td><td style=\"border-left-width: 0px\">Flutter atrial</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-15</td><td style=\"border-left-width: 0px\">Arrhythmia, Atrial, Atrial flutter</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0092</td><td style=\"border-left-width: 0px\">Trouble du rythme atrial</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-16</td><td style=\"border-left-width: 0px\">Arrhythmia, Atrial, Other</td><td>catégorie « autre » du rythme atrial</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0093</td><td style=\"border-left-width: 0px\">Trouble du rythme de la jonction atrioventriculaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2010-2050</td><td style=\"border-left-width: 0px\">Arrhythmia, Junctional</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0094</td><td style=\"border-left-width: 0px\">Trouble du rythme ventriculaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2010-2060</td><td style=\"border-left-width: 0px\">Arrhythmia, Ventricular</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0095</td><td style=\"border-left-width: 0px\">Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-13</td><td style=\"border-left-width: 0px\">Wolff-Parkinson-White syndrome (WPW syndrome)</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0096</td><td style=\"border-left-width: 0px\">Bloc atrioventriculaire</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG151</td><td style=\"border-left-width: 0px\">Arrhythmia, Heart block</td><td>bloc cardiaque sans précision du niveau</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0097</td><td style=\"border-left-width: 0px\">Bloc atrioventriculaire complet acquis</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG110</td><td style=\"border-left-width: 0px\">Arrhythmia, Heart block, Acquired</td><td>ne précise pas le degré</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0098</td><td style=\"border-left-width: 0px\">Indication de remplacement programmé d'un stimulateur cardiaque</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG113</td><td style=\"border-left-width: 0px\">Arrhythmia, Pacemaker, Indication for replacement</td><td/></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0099</td><td style=\"border-left-width: 0px\">Entéropathie exsudative post-procédurale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2019-09</td><td style=\"border-left-width: 0px\">Protein-losing enteropathy</td><td>ne précise pas l'origine post-procédurale</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0100</td><td style=\"border-left-width: 0px\">Bronchite plastique post-procédurale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2019-08</td><td style=\"border-left-width: 0px\">Plastic bronchitis</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0101</td><td style=\"border-left-width: 0px\">Chylothorax</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG138</td><td style=\"border-left-width: 0px\">Chylothorax</td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0102</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-18</td><td style=\"border-left-width: 0px\">Complication of cardiovascular catheterization procedure, Device embolization</td><td/></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-21</td><td style=\"border-left-width: 0px\">Complication of interventional radiology procedure, Device embolization</td><td>radiologie interventionnelle, non cathétérisme cardiaque</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0103</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-19</td><td style=\"border-left-width: 0px\">Complication of cardiovascular catheterization procedure, Device malfunction</td><td/></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-22</td><td style=\"border-left-width: 0px\">Complication of interventional radiology procedure, Device malfunction</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">TAUSSIG-COND-0104</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-20</td><td style=\"border-left-width: 0px\">Complication of cardiovascular catheterization procedure, Perforation</td><td/></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG-2019-23</td><td style=\"border-left-width: 0px\">Complication of interventional radiology procedure, Perforation</td><td>idem</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0105</td><td style=\"border-left-width: 0px\">Corps étranger intracardiaque post-procédural</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2019-24</td><td style=\"border-left-width: 0px\">Foreign body, Intracardiac foreign body</td><td>ne précise pas l'origine post-procédurale</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0106</td><td style=\"border-left-width: 0px\">Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">DIAG-2019-25</td><td style=\"border-left-width: 0px\">Foreign body, Intravascular foreign body</td><td>corps étranger intravasculaire, sans précision du dispositif</td></tr><tr><td style=\"border-right-width: 0px\">TAUSSIG-COND-0107</td><td style=\"border-left-width: 0px\">Hémorragie post-procédurale</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">DIAG-2010-2070</td><td style=\"border-left-width: 0px\">Postoperative bleeding</td><td>saignement post-opératoire (chirurgical), non post-procédural en général</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "https://taussig/fhir/ConceptMap/taussig-condition-to-echsa"] ;
+  fhir:ConceptMap.version [ fhir:value "0.8.1"] ;
+  fhir:ConceptMap.name [ fhir:value "TaussigConditionToEchsa"] ;
+  fhir:ConceptMap.title [ fhir:value "TAUSSIG — Conditions cardiaques évolutives vers ECHSA"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:ConceptMap.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ConceptMap.description [ fhir:value "Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."] ;
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ConceptMap.sourceCanonical [
+     fhir:value "https://taussig/fhir/ValueSet/taussig-condition" ;
+     fhir:link <https://taussig/fhir/ValueSet/taussig-condition>
+  ] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "https://taussig/fhir/CodeSystem/taussig-condition" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "https://taussig/fhir/CodeSystem/echsa" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0001" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Création/agrandissement de communication interatriale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-4060" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "ASD creation/enlargement" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "antécédent d'intervention ; pas de code d'état après dédié" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0002" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Cerclage de l'artère pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5640" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "PA banding (PAB)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0003" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5590" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Shunt, Systemic to pulmonary, Modified Blalock-Taussig Shunt (MBTS)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0004" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Intervention de Norwood" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-4870" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Norwood procedure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0005" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5680" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Glenn (unidirectional cavopulmonary anastomosis) (unidirectional Glenn)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0006" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5670" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Bidirectional cavopulmonary anastomosis (BDCPA) (bidirectional Glenn)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "code d'intervention ; le code d'état après dédié est DIAG-2024-1" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2024-1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Status post - bidirectional Glenn" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0007" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anastomose cavopulmonaire bidirectionnelle bilatérale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5690" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Bilateral bidirectional cavopulmonary anastomosis (BBDCPA) (bilateral bidirectional Glenn)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "code d'intervention ; le code d'état après dédié est DIAG-2024-2" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2024-2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Status post - bilateral bidirectional Glenn" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0008" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fontan (TCPC), conduit extracardiaque, fenestré" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5000" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fontan, TCPC, External conduit, Fenestrated" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "antécédent d'intervention" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0009" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fontan (TCPC), conduit extracardiaque, non fenestré" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5010" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fontan, TCPC, External conduit, Nonfenestrated" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0010" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fontan (TCPC), tunnel latéral, fenestré" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-4970" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fontan, TCPC, Lateral tunnel, Fenestrated" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0011" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fontan (TCPC), tunnel latéral, non fenestré" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-4980" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Fontan, TCPC, Lateral tunnel, Nonfenestrated" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0012" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Réparation à un ventricule et demi" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-4520" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "1 1/2 ventricular repair" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0013" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Palliation, autre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "SP-2010-5710" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Palliation, Other" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0014" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Endocardite infectieuse" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG123" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Endocarditis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "endocardite sans précision infectieuse" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0015" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie acquise de la veine cave supérieure" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG026" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Systemic venous anomaly" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "anomalie veineuse systémique au sens congénital" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0016" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie acquise de la veine cave inférieure" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG026" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Systemic venous anomaly" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0017" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie acquise du sinus coronaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0018" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie acquise des veines pulmonaires" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0019" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie acquise de l'oreillette droite" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0020" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie acquise de l'oreillette gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0021" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interatriale résiduelle (CIA)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-17" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "ASD, Postoperative interatrial communication" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0022" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation tricuspide résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG037" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tricuspid regurgitation, non-Ebstein's related" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ECHSA ne distingue pas le caractère résiduel" ]
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0023" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose mitrale résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG164" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Mitral stenosis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0024" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation mitrale résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG067" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Mitral regurgitation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0025" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation troncale résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2010-170" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Truncal valve insufficiency" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0026" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose valvulaire pulmonaire résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG041" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary stenosis, Valvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0027" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation pulmonaire résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG049" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary insufficiency" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0028" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose de la néovalve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG041" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary stenosis, Valvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas la néovalve" ]
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0029" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation de la néovalve pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG049" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary insufficiency" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0030" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose valvulaire aortique résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG052" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic stenosis, Valvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas le caractère résiduel" ]
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0031" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation aortique résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG056" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic insufficiency" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0032" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose de la néovalve aortique d'origine pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG052" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic stenosis, Valvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas la néovalve" ]
+       ]
+     ], [
+       fhir:index 32 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0033" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation de la néovalve aortique d'origine pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG056" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic insufficiency" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 33 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0034" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose acquise de la néovalve aortique d'origine troncale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG052" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic stenosis, Valvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 34 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0035" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation acquise de la néovalve aortique d'origine troncale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG056" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic insufficiency" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 35 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0036" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Composante ventriculaire résiduelle de canal atrioventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 36 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0037" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Régurgitation résiduelle de la valve atrioventriculaire commune" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 37 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0038" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 38 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0039" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dilatation ventriculaire droite acquise" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 39 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0040" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Hypertrophie ventriculaire droite acquise" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 40 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0041" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anévrisme ventriculaire droit acquis" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG116" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aneurysm, Ventricular, Right (including pseudoaneurysm)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "inclut le pseudoanévrisme" ]
+       ]
+     ], [
+       fhir:index 41 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0042" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysfonction ventriculaire droite" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 42 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0043" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction résiduelle de la voie d'éjection du ventricule droit" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 43 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0044" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dilatation ventriculaire gauche acquise" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 44 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0045" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Hypertrophie ventriculaire gauche acquise" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 45 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0046" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anévrisme ventriculaire gauche acquis" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG117" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aneurysm, Ventricular, Left (including pseudoaneurysm)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 46 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0047" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Défaillance ventriculaire gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 47 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0048" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Complication post-procédurale de la voie d'éjection du ventricule gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 48 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0049" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose sous-aortique acquise" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG051" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic stenosis, Subvalvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas congénital et acquis" ]
+       ]
+     ], [
+       fhir:index 49 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0050" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose sous-pulmonaire acquise" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG166" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary stenosis, Subvalvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 50 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0051" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Communication interventriculaire résiduelle (CIV)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 51 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0052" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Cardiomyopathie restrictive" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG070" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Cardiomyopathy (including dilated, restrictive, and hypertrophic)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "toutes cardiomyopathies" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2023-3" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Restrictive cardiomyopathy" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 52 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0053" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anomalie acquise de l'arbre artériel pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG118" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aneurysm, Pulmonary artery" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "anévrisme seulement" ]
+       ]
+     ], [
+       fhir:index 53 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0054" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose post-procédurale du tronc de l'artère pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG042" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary artery stenosis (hypoplasia), Main (trunk)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas congénital et post-procédural" ]
+       ]
+     ], [
+       fhir:index 54 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0055" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose résiduelle de l'artère pulmonaire droite" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG043" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary artery stenosis, Branch, Central (within the hilar bifurcation)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "sténose centrale seulement ; la sténose résiduelle peut être périphérique" ]
+       ]
+     ], [
+       fhir:index 55 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0056" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose résiduelle de l'artère pulmonaire gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG043" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary artery stenosis, Branch, Central (within the hilar bifurcation)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 56 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0057" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Hypertension artérielle pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG131" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Primary pulmonary hypertension" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "HTAP primitive seulement" ]
+       ]
+     ], [
+       fhir:index 57 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0058" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Embolie pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG128" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary embolism" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 58 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0059" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose aortique supravalvulaire acquise" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG053" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic stenosis, Supravalvar" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas congénital et acquis" ]
+       ]
+     ], [
+       fhir:index 59 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0060" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dilatation acquise de l'aorte ascendante et/ou de la racine aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG102" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic aneurysm (including pseudoaneurysm)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "une dilatation n'est pas un anévrisme" ]
+       ]
+     ], [
+       fhir:index 60 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0061" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dilatation de la racine aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG102" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic aneurysm (including pseudoaneurysm)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 61 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0062" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dissection aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG103" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic dissection" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 62 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0063" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Anévrisme aortique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG102" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Aortic aneurysm (including pseudoaneurysm)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "inclut le pseudoanévrisme" ]
+       ]
+     ], [
+       fhir:index 63 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0064" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Coarctation aortique résiduelle" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG095" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Coarctation of aorta" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas le caractère résiduel" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2024-7" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Coarctation - status post stent placement" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "coarctation après pose de stent seulement" ]
+       ]
+     ], [
+       fhir:index 64 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0065" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Complication coronaire post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG161" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Coronary artery anomaly, Other" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "anomalie coronaire « autre », au sens congénital" ]
+       ]
+     ], [
+       fhir:index 65 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0066" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Persistance résiduelle du canal artériel (PDA)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG099" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Patent ductus arteriosus" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas le caractère résiduel" ]
+       ]
+     ], [
+       fhir:index 66 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0067" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Complication liée à un conduit cardiaque" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG048" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Conduit failure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "défaillance seulement" ]
+       ]
+     ], [
+       fhir:index 67 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0068" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction d'anastomose systémico-pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2010-2130" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Shunt failure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "toute défaillance d'anastomose" ]
+       ]
+     ], [
+       fhir:index 68 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0069" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction partielle d'anastomose systémico-pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2010-2130" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Shunt failure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 69 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0070" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction complète d'anastomose systémico-pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2010-2130" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Shunt failure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 70 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0071" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Défaillance d'autogreffe pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG124" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Prosthetic valve failure" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "une autogreffe n'est pas une prothèse" ]
+       ]
+     ], [
+       fhir:index 71 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0072" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Circulation de Fontan défaillante" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 72 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0073" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Épanchement péricardique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG071" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pericardial effusion" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-31" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Tamponade" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "tamponnade" ]
+       ]
+     ], [
+       fhir:index 73 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0074" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Complication après transplantation cardiaque ou pulmonaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 74 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0075" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Sténose acquise des veines pulmonaires" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-10" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary venous stenosis, Acquired" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 75 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0076" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Obstruction d'une veine systémique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG027" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Systemic venous obstruction" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 76 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0077" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Collatérale(s) veino-veineuse(s) systémique(s)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2024-5" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Venovenous collaterals" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 77 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0078" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2024-6" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arterioarterial collaterals" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "collatérales artérioartérielles, sans précision systémico-pulmonaire" ]
+       ]
+     ], [
+       fhir:index 78 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0079" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fistules (malformations) artérioveineuses pulmonaires acquises" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG127" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary AV fistula" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne distingue pas congénital et acquis" ]
+       ]
+     ], [
+       fhir:index 79 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0080" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Cardiomyopathie dilatée" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2023-1" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Dilated cardiomyopathy" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 80 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0081" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Cardiomyopathie hypertrophique" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2023-2" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Hypertrophic cardiomyopathy" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 81 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0082" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Cardiomyopathie hypertrophique obstructive du ventricule gauche" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2023-4" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Hypertrophic obstructive cardiomyopathy" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 82 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0083" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Myocardite (cardiomyopathie inflammatoire)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-07" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Myocarditis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 83 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0084" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Maladie de Kawasaki" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-26" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Kawasaki disease" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 84 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0085" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Infarctus du myocarde" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG125" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Myocardial infarction" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 85 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0086" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "État après transplantation cardiaque" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG175" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Status post - Transplant, Heart" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 86 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0087" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Maladie vasculaire pulmonaire irréversible" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG167" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary vascular obstructive disease" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG130" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary vascular obstructive disease (Eisenmenger's)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "narrower" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "forme d'Eisenmenger" ]
+       ]
+     ], [
+       fhir:index 87 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0088" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG130" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pulmonary vascular obstructive disease (Eisenmenger's)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 88 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0089" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Trouble du rythme cardiaque" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG109" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 89 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0090" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Fibrillation atriale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-14" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Atrial, Atrial fibrillation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 90 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0091" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Flutter atrial" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-15" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Atrial, Atrial flutter" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 91 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0092" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Trouble du rythme atrial" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-16" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Atrial, Other" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "catégorie « autre » du rythme atrial" ]
+       ]
+     ], [
+       fhir:index 92 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0093" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Trouble du rythme de la jonction atrioventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2010-2050" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Junctional" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 93 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0094" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Trouble du rythme ventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2010-2060" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Ventricular" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 94 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0095" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-13" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Wolff-Parkinson-White syndrome (WPW syndrome)" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 95 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0096" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Bloc atrioventriculaire" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG151" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Heart block" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "bloc cardiaque sans précision du niveau" ]
+       ]
+     ], [
+       fhir:index 96 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0097" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Bloc atrioventriculaire complet acquis" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG110" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Heart block, Acquired" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne précise pas le degré" ]
+       ]
+     ], [
+       fhir:index 97 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0098" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Indication de remplacement programmé d'un stimulateur cardiaque" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG113" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Arrhythmia, Pacemaker, Indication for replacement" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 98 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0099" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Entéropathie exsudative post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-09" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Protein-losing enteropathy" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne précise pas l'origine post-procédurale" ]
+       ]
+     ], [
+       fhir:index 99 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0100" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Bronchite plastique post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-08" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Plastic bronchitis" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 100 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0101" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Chylothorax" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG138" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Chylothorax" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 101 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0102" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-18" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Complication of cardiovascular catheterization procedure, Device embolization" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-21" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Complication of interventional radiology procedure, Device embolization" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "radiologie interventionnelle, non cathétérisme cardiaque" ]
+       ]
+     ], [
+       fhir:index 102 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0103" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-19" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Complication of cardiovascular catheterization procedure, Device malfunction" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-22" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Complication of interventional radiology procedure, Device malfunction" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 103 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0104" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-20" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Complication of cardiovascular catheterization procedure, Perforation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-23" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Complication of interventional radiology procedure, Perforation" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "idem" ]
+       ]
+     ], [
+       fhir:index 104 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0105" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Corps étranger intracardiaque post-procédural" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-24" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Foreign body, Intracardiac foreign body" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "ne précise pas l'origine post-procédurale" ]
+       ]
+     ], [
+       fhir:index 105 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0106" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2019-25" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Foreign body, Intravascular foreign body" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "wider" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "corps étranger intravasculaire, sans précision du dispositif" ]
+       ]
+     ], [
+       fhir:index 106 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "TAUSSIG-COND-0107" ] ;
+       fhir:ConceptMap.group.element.display [ fhir:value "Hémorragie post-procédurale" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DIAG-2010-2070" ] ;
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Postoperative bleeding" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "inexact" ] ;
+         fhir:ConceptMap.group.element.target.comment [ fhir:value "saignement post-opératoire (chirurgical), non post-procédural en général" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ConceptMap/taussig-condition-to-echsa.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

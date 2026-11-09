@@ -1,4 +1,4 @@
-# Classe d'annotation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Classe d'annotation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Classe d'annotation (Expérimental) 
 
@@ -58,12 +58,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-annotationClass
   "resourceType" : "StructureDefinition",
   "id" : "annotationClass",
   "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "AnnotationClass",
   "title" : "Classe d'annotation",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Rôle de l'élément dans l'annotation de comptes rendus. Posée sur les ElementDefinition des profils TAUSSIG ; générée depuis le dictionnaire (03-ig/build_annotation_classes.py).",
   "jurisdiction" : [{

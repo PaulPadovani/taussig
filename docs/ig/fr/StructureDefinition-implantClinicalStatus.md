@@ -1,4 +1,4 @@
-# État clinique de l'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# État clinique de l'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: État clinique de l'implant (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-implantClinical
   "resourceType" : "StructureDefinition",
   "id" : "implantClinicalStatus",
   "url" : "https://taussig/fhir/StructureDefinition/implantClinicalStatus",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ImplantClinicalStatus",
   "title" : "État clinique de l'implant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "État clinique courant (Device.status ne couvre pas functional/degenerated/…).",
   "jurisdiction" : [{

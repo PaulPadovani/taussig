@@ -1,0 +1,422 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-condition-ipccc> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-condition-ipccc"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-condition-ipccc</b></p><a name=\"taussig-condition-ipccc\"> </a><a name=\"hctaussig-condition-ipccc\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"CodeSystem-ipccc.html\"><code>https://taussig/fhir/CodeSystem/ipccc</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?5.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-04.4600.4606\">04.00.06</a></td><td>Systemic venovenous collateral(s)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-07.4601.4611\">07.01.11</a></td><td>Right ventricular dysfunction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-09.4616.4613\">09.16.13</a></td><td>Aortic root dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4606.4601\">10.06.01</a></td><td>Infective endocarditis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4607.4690\">10.07.90</a></td><td>Myocarditis (inflammatory cardiomyopathy)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4608.4616\">10.08.16</a></td><td>Chylothorax</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4608.4631\">10.08.31</a></td><td>Pericardial effusion</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4609.4601\">10.09.01</a></td><td>Kawasaki disease</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4605\">10.10.05</a></td><td>Obstructive hypertrophic cardiomyopathy of left ventricle</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4610\">10.10.10</a></td><td>Restrictive cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4620\">10.10.20</a></td><td>Hypertrophic cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4610.4625\">10.10.25</a></td><td>Dilated cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4600\">10.13.00</a></td><td>Irreversible pulmonary vascular disease</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4601\">10.13.01</a></td><td>Pulmonary arterial hypertension</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4608\">10.13.08</a></td><td>Irreversible pulmonary vascular disease due to congenital heart disease (Eisenmenger Syndrome)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4651\">10.13.51</a></td><td>Pulmonary embolism</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4657\">10.13.57</a></td><td>Acquired pulmonary arteriovenous fistulas (malformations)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4659\">10.13.59</a></td><td>Acquired pulmonary arterial tree abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4613.4674\">10.13.74</a></td><td>Systemic-to-pulmonary collateral artery(ies) (MAPCA): acquired</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4650\">10.14.50</a></td><td>Aortic aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4651\">10.14.51</a></td><td>Aortic dissection</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4677\">10.14.77</a></td><td>Acquired supravalvar aortic stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4614.4682\">10.14.82</a></td><td>Acquired dilation of ascending aorta and/or aortic root</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4602\">10.16.02</a></td><td>Acquired right ventricular aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4622\">10.16.22</a></td><td>Acquired right ventricular dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4623\">10.16.23</a></td><td>Acquired right ventricular hypertrophy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4642\">10.16.42</a></td><td>Acquired left ventricular aneurysm</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4647\">10.16.47</a></td><td>Left ventricular failure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4676\">10.16.76</a></td><td>Acquired left ventricular dilation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4677\">10.16.77</a></td><td>Acquired left ventricular hypertrophy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4686\">10.16.86</a></td><td>Acquired subaortic stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4616.4688\">10.16.88</a></td><td>Acquired subpulmonary stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4618.4600\">10.18.00</a></td><td>Myocardial infarction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4621.4663\">10.21.63</a></td><td>Patient status post heart transplant</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4624.4600\">10.24.00</a></td><td>Acquired pulmonary venous abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4624.4602\">10.24.02</a></td><td>Pulmonary venous stenosis: acquired</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4630.4609\">10.30.09</a></td><td>Systemic vein obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4630.4616\">10.30.16</a></td><td>Acquired coronary sinus abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4601\">10.31.01</a></td><td>Acquired superior caval vein (SVC) abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4631.4621\">10.31.21</a></td><td>Acquired inferior caval vein (IVC) abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-10.4634.4656\">10.34.56</a></td><td>Acquired stenosis of the common atrioventricular valve in biventricular connections</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4600.4600\">11.00.00</a></td><td>Arrhythmia</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4607\">11.03.07</a></td><td>Atrial flutter</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4608\">11.03.08</a></td><td>Atrial fibrillation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4603.4609\">11.03.09</a></td><td>Atrial rhythm disturbance</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4604.4600\">11.04.00</a></td><td>Rhythm disturbance at level of atrioventricular junction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4605.4600\">11.05.00</a></td><td>Ventricular rhythm disturbance</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4606.4610\">11.06.10</a></td><td>Acquired complete atrioventricular block</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4606.4638\">11.06.38</a></td><td>Atrioventricular block</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4607.4601\">11.07.01</a></td><td>Atrioventricular reentry (reciprocating) tachycardia: manifest preexcitation in sinus rhythm (Wolff Parkinson White)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-11.4612.4661\">11.12.61</a></td><td>Indication for elective replacement of pacemaker system</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4602.4600\">15.02.00</a></td><td>Postprocedural haemorrhage</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4610\">15.10.10</a></td><td>Acquired right atrial abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4620\">15.10.20</a></td><td>Acquired left atrial abnormality</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4610.4663\">15.10.63</a></td><td>Residual interatrial communication ('ASD')</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4611.4603\">15.11.03</a></td><td>Residual tricuspid regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4601\">15.12.01</a></td><td>Residual mitral stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4612.4603\">15.12.03</a></td><td>Residual mitral regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4613.4602\">15.13.02</a></td><td>Residual common atrioventricular valvar regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4616.4602\">15.16.02</a></td><td>Residual ventricular component of atrioventricular septal defect</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4620.4623\">15.20.23</a></td><td>Residual right ventricular outflow tract obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4621.4621\">15.21.21</a></td><td>Postprocedural left ventricular outflow tract complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4622.4602\">15.22.02</a></td><td>Residual ventricular septal defect (VSD)</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4603\">15.25.03</a></td><td>Residual truncal regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4612\">15.25.12</a></td><td>Acquired stenosis of the neo-aortic valve of truncal origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4625.4613\">15.25.13</a></td><td>Acquired regurgitation of the neo-aortic valve of truncal origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4601\">15.30.01</a></td><td>Residual pulmonary valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4603\">15.30.03</a></td><td>Residual pulmonary regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4609\">15.30.09</a></td><td>Neopulmonary valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4630.4610\">15.30.10</a></td><td>Neopulmonary valvar regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4602\">15.32.02</a></td><td>Postprocedural pulmonary trunk stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4623\">15.32.23</a></td><td>Residual right pulmonary artery stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4632.4643\">15.32.43</a></td><td>Residual left pulmonary artery stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4601\">15.35.01</a></td><td>Residual aortic valvar stenosis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4603\">15.35.03</a></td><td>Residual aortic regurgitation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4609\">15.35.09</a></td><td>Stenosis of the neo-aortic valve of pulmonary origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4635.4610\">15.35.10</a></td><td>Regurgitation of the neo-aortic valve of pulmonary origin</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4637.4605\">15.37.05</a></td><td>Residual aortic coarctation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4639.4602\">15.39.02</a></td><td>Residual arterial duct (PDA) patency</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4641.4600\">15.41.00</a></td><td>Postprocedural coronary arterial complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4650.4603\">15.50.03</a></td><td>Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4650.4637\">15.50.37</a></td><td>Embolisation of catheter introduced device</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4651.4647\">15.51.47</a></td><td>Embolisation of cardiovascular device during cardiac catheterisation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4651.4650\">15.51.50</a></td><td>Device malfunction during cardiac catheterisation procedure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4600\">15.55.00</a></td><td>Cardiac conduit related complication</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4655.4624\">15.55.24</a></td><td>Pulmonary autograft failure</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4601\">15.56.01</a></td><td>Systemic-to-pulmonary arterial shunt partial obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4602\">15.56.02</a></td><td>Systemic-to-pulmonary arterial shunt complete obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4656.4627\">15.56.27</a></td><td>Systemic-to-pulmonary arterial shunt obstruction</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4680.4617\">15.80.17</a></td><td>Postprocedural retained foreign body</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4681.4601\">15.81.01</a></td><td>Cardiac postprocedural plastic bronchitis</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4682.4633\">15.82.33</a></td><td>Cardiac postprocedural protein losing enteropathy</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4690.4660\">15.90.60</a></td><td>'Failed' Fontan type circulation</td></tr><tr><td><a href=\"CodeSystem-ipccc.html#ipccc-15.4695.4600\">15.95.00</a></td><td>Complication after heart or lung transplant</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-condition-ipccc"] ;
+  fhir:ValueSet.version [ fhir:value "0.8.1"] ;
+  fhir:ValueSet.name [ fhir:value "TaussigConditionIpcccVS"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Liste des conditions évolutives (IPCCC)"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Les 94 codes IPCCC de la liste TAUSSIG des conditions cardiaques évolutives (décision B7)."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "04.00.06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Systemic venovenous collateral(s)" ]
+       ], [
+         fhir:index 1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "07.01.11" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Right ventricular dysfunction" ]
+       ], [
+         fhir:index 2 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "09.16.13" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aortic root dilation" ]
+       ], [
+         fhir:index 3 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.06.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Infective endocarditis" ]
+       ], [
+         fhir:index 4 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.07.90" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myocarditis (inflammatory cardiomyopathy)" ]
+       ], [
+         fhir:index 5 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.08.16" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Chylothorax" ]
+       ], [
+         fhir:index 6 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.08.31" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pericardial effusion" ]
+       ], [
+         fhir:index 7 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.09.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kawasaki disease" ]
+       ], [
+         fhir:index 8 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.10.05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Obstructive hypertrophic cardiomyopathy of left ventricle" ]
+       ], [
+         fhir:index 9 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.10.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Restrictive cardiomyopathy" ]
+       ], [
+         fhir:index 10 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.10.20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hypertrophic cardiomyopathy" ]
+       ], [
+         fhir:index 11 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.10.25" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dilated cardiomyopathy" ]
+       ], [
+         fhir:index 12 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.13.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Irreversible pulmonary vascular disease" ]
+       ], [
+         fhir:index 13 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.13.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary arterial hypertension" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.13.08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Irreversible pulmonary vascular disease due to congenital heart disease (Eisenmenger Syndrome)" ]
+       ], [
+         fhir:index 15 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.13.51" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary embolism" ]
+       ], [
+         fhir:index 16 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.13.57" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired pulmonary arteriovenous fistulas (malformations)" ]
+       ], [
+         fhir:index 17 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.13.59" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired pulmonary arterial tree abnormality" ]
+       ], [
+         fhir:index 18 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.13.74" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Systemic-to-pulmonary collateral artery(ies) (MAPCA): acquired" ]
+       ], [
+         fhir:index 19 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.14.50" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aortic aneurysm" ]
+       ], [
+         fhir:index 20 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.14.51" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Aortic dissection" ]
+       ], [
+         fhir:index 21 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.14.77" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired supravalvar aortic stenosis" ]
+       ], [
+         fhir:index 22 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.14.82" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired dilation of ascending aorta and/or aortic root" ]
+       ], [
+         fhir:index 23 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired right ventricular aneurysm" ]
+       ], [
+         fhir:index 24 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.22" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired right ventricular dilation" ]
+       ], [
+         fhir:index 25 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired right ventricular hypertrophy" ]
+       ], [
+         fhir:index 26 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.42" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired left ventricular aneurysm" ]
+       ], [
+         fhir:index 27 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.47" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Left ventricular failure" ]
+       ], [
+         fhir:index 28 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.76" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired left ventricular dilation" ]
+       ], [
+         fhir:index 29 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.77" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired left ventricular hypertrophy" ]
+       ], [
+         fhir:index 30 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.86" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired subaortic stenosis" ]
+       ], [
+         fhir:index 31 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.16.88" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired subpulmonary stenosis" ]
+       ], [
+         fhir:index 32 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.18.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Myocardial infarction" ]
+       ], [
+         fhir:index 33 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.21.63" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Patient status post heart transplant" ]
+       ], [
+         fhir:index 34 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.24.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired pulmonary venous abnormality" ]
+       ], [
+         fhir:index 35 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.24.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary venous stenosis: acquired" ]
+       ], [
+         fhir:index 36 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.30.09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Systemic vein obstruction" ]
+       ], [
+         fhir:index 37 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.30.16" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired coronary sinus abnormality" ]
+       ], [
+         fhir:index 38 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.31.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired superior caval vein (SVC) abnormality" ]
+       ], [
+         fhir:index 39 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.31.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired inferior caval vein (IVC) abnormality" ]
+       ], [
+         fhir:index 40 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10.34.56" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired stenosis of the common atrioventricular valve in biventricular connections" ]
+       ], [
+         fhir:index 41 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.00.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Arrhythmia" ]
+       ], [
+         fhir:index 42 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.03.07" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrial flutter" ]
+       ], [
+         fhir:index 43 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.03.08" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrial fibrillation" ]
+       ], [
+         fhir:index 44 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.03.09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrial rhythm disturbance" ]
+       ], [
+         fhir:index 45 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.04.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rhythm disturbance at level of atrioventricular junction" ]
+       ], [
+         fhir:index 46 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.05.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ventricular rhythm disturbance" ]
+       ], [
+         fhir:index 47 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.06.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired complete atrioventricular block" ]
+       ], [
+         fhir:index 48 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.06.38" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrioventricular block" ]
+       ], [
+         fhir:index 49 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.07.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Atrioventricular reentry (reciprocating) tachycardia: manifest preexcitation in sinus rhythm (Wolff Parkinson White)" ]
+       ], [
+         fhir:index 50 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11.12.61" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indication for elective replacement of pacemaker system" ]
+       ], [
+         fhir:index 51 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.02.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Postprocedural haemorrhage" ]
+       ], [
+         fhir:index 52 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.10.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired right atrial abnormality" ]
+       ], [
+         fhir:index 53 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.10.20" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired left atrial abnormality" ]
+       ], [
+         fhir:index 54 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.10.63" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual interatrial communication ('ASD')" ]
+       ], [
+         fhir:index 55 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.11.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual tricuspid regurgitation" ]
+       ], [
+         fhir:index 56 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.12.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual mitral stenosis" ]
+       ], [
+         fhir:index 57 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.12.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual mitral regurgitation" ]
+       ], [
+         fhir:index 58 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.13.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual common atrioventricular valvar regurgitation" ]
+       ], [
+         fhir:index 59 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.16.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual ventricular component of atrioventricular septal defect" ]
+       ], [
+         fhir:index 60 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.20.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual right ventricular outflow tract obstruction" ]
+       ], [
+         fhir:index 61 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.21.21" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Postprocedural left ventricular outflow tract complication" ]
+       ], [
+         fhir:index 62 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.22.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual ventricular septal defect (VSD)" ]
+       ], [
+         fhir:index 63 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.25.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual truncal regurgitation" ]
+       ], [
+         fhir:index 64 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.25.12" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired stenosis of the neo-aortic valve of truncal origin" ]
+       ], [
+         fhir:index 65 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.25.13" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Acquired regurgitation of the neo-aortic valve of truncal origin" ]
+       ], [
+         fhir:index 66 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.30.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual pulmonary valvar stenosis" ]
+       ], [
+         fhir:index 67 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.30.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual pulmonary regurgitation" ]
+       ], [
+         fhir:index 68 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.30.09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neopulmonary valvar stenosis" ]
+       ], [
+         fhir:index 69 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.30.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Neopulmonary valvar regurgitation" ]
+       ], [
+         fhir:index 70 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.32.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Postprocedural pulmonary trunk stenosis" ]
+       ], [
+         fhir:index 71 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.32.23" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual right pulmonary artery stenosis" ]
+       ], [
+         fhir:index 72 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.32.43" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual left pulmonary artery stenosis" ]
+       ], [
+         fhir:index 73 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.35.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual aortic valvar stenosis" ]
+       ], [
+         fhir:index 74 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.35.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual aortic regurgitation" ]
+       ], [
+         fhir:index 75 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.35.09" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stenosis of the neo-aortic valve of pulmonary origin" ]
+       ], [
+         fhir:index 76 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.35.10" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Regurgitation of the neo-aortic valve of pulmonary origin" ]
+       ], [
+         fhir:index 77 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.37.05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual aortic coarctation" ]
+       ], [
+         fhir:index 78 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.39.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Residual arterial duct (PDA) patency" ]
+       ], [
+         fhir:index 79 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.41.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Postprocedural coronary arterial complication" ]
+       ], [
+         fhir:index 80 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.50.03" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation" ]
+       ], [
+         fhir:index 81 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.50.37" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Embolisation of catheter introduced device" ]
+       ], [
+         fhir:index 82 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.51.47" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Embolisation of cardiovascular device during cardiac catheterisation" ]
+       ], [
+         fhir:index 83 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.51.50" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Device malfunction during cardiac catheterisation procedure" ]
+       ], [
+         fhir:index 84 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.55.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac conduit related complication" ]
+       ], [
+         fhir:index 85 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.55.24" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pulmonary autograft failure" ]
+       ], [
+         fhir:index 86 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.56.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Systemic-to-pulmonary arterial shunt partial obstruction" ]
+       ], [
+         fhir:index 87 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.56.02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Systemic-to-pulmonary arterial shunt complete obstruction" ]
+       ], [
+         fhir:index 88 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.56.27" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Systemic-to-pulmonary arterial shunt obstruction" ]
+       ], [
+         fhir:index 89 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.80.17" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Postprocedural retained foreign body" ]
+       ], [
+         fhir:index 90 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.81.01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac postprocedural plastic bronchitis" ]
+       ], [
+         fhir:index 91 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.82.33" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Cardiac postprocedural protein losing enteropathy" ]
+       ], [
+         fhir:index 92 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.90.60" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "'Failed' Fontan type circulation" ]
+       ], [
+         fhir:index 93 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15.95.00" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Complication after heart or lung transplant" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-condition-ipccc.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

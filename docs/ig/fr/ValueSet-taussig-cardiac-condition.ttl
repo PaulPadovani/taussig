@@ -19,7 +19,7 @@
   fhir:ValueSet.title [ fhir:value "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:ValueSet.description [ fhir:value "Working set des conditions cardiaques évolutives de la POC (distinct du diagnostic congénital figé) : 61 lésions résiduelles/acquises codées en IPCCC, plus 13 états d'étape chirurgicale codés en ECHSA — l'IPCCC ne code pas l'état « status post » d'un montage (Fontan, Glenn, MBTS…), d'où un ValueSet multi-systèmes. ICD-10 = donnée dérivée (crossmap IPCCC). Le typage residual/acquired/post-chir est un choix clinicien à la saisie (CardiacCondition.condition_type), pas une propriété du code."] ;
   fhir:ValueSet.jurisdiction [

@@ -1,4 +1,4 @@
-# Attribution de l'EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Attribution de l'EI - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Attribution de l'EI (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-adverseEventAtt
   "resourceType" : "StructureDefinition",
   "id" : "adverseEventAttribution",
   "url" : "https://taussig/fhir/StructureDefinition/adverseEventAttribution",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "AdverseEventAttribution",
   "title" : "Attribution de l'EI",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Cause suspectée d'un événement indésirable (dispositif, abord, anesthésie…).",
   "jurisdiction" : [{

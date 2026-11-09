@@ -58,7 +58,7 @@ window.TAUSSIG_DICT = {
    "termCol": null
   },
   "Practitioner.display_name": {
-   "def": "Nom d'affichage du praticien.",
+   "def": "Pseudonyme de l'opérateur tel qu'il apparaît dans le texte pseudonymisé (ex. [OPERATEUR_1]). Jamais de nom réel.",
    "res": "Practitioner",
    "path": "Practitioner.name.text",
    "dt": "string",
@@ -315,7 +315,7 @@ window.TAUSSIG_DICT = {
    "path": "Condition.code.coding:ipccc",
    "dt": "Coding",
    "cs": "https://taussig/fhir/CodeSystem/ipccc (IPCCC Long List v5.0)",
-   "vs": "taussig-cardiac-condition",
+   "vs": "taussig-condition-ipccc",
    "bind": "extensible",
    "type": "code",
    "card": "0..1",
@@ -2072,6 +2072,174 @@ window.TAUSSIG_DICT = {
    "req": "non",
    "axis": null,
    "termCol": null
+  },
+  "CardiacDiagnosis.diagnosis_concept": {
+   "def": "Concept TAUSSIG du diagnostic congénital, choisi par son libellé ; CIM-11, IPCCC, CIM-10 et ECHSA en sont déduits.",
+   "res": "Condition",
+   "path": "Condition.code",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/taussig-diagnosis",
+   "vs": "taussig-diagnosis",
+   "bind": "extensible",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacCondition.condition_concept": {
+   "def": "Concept TAUSSIG de la condition cardiaque évolutive, choisi par son libellé ; IPCCC, CIM-10 et ECHSA en sont déduits.",
+   "res": "Condition",
+   "path": "Condition.code",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/taussig-condition",
+   "vs": "taussig-condition",
+   "bind": "extensible",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacCondition.clinical_status": {
+   "def": "Statut clinique de la condition au moment du cathétérisme : active ou résolue (distinct de « explicitement absent », qui signifie que la condition n'existe pas).",
+   "res": "Condition",
+   "path": "Condition.clinicalStatus",
+   "dt": "CodeableConcept",
+   "cs": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+   "vs": "taussig-condition-clinical-status-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "AdverseEvent.adverse_event_concept": {
+   "def": "Concept TAUSSIG de la complication, choisi par son libellé ; IPCCC, CIM-10, SNOMED et ECHSA en sont déduits.",
+   "res": "AdverseEvent",
+   "path": "AdverseEvent.event",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/taussig-adverse-event",
+   "vs": "taussig-adverse-event",
+   "bind": "extensible",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "GeneticSyndrome.syndrome_icd10": {
+   "def": "Code CIM-10 du syndrome, déduit de l'OrphaCode.",
+   "res": "Condition",
+   "path": "Condition.code.coding:cim10",
+   "dt": "Coding",
+   "cs": "http://hl7.org/fhir/sid/icd-10",
+   "vs": "",
+   "bind": "",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "GeneticSyndrome.syndrome_echsa": {
+   "def": "Code ECHSA du syndrome, déduit de l'OrphaCode.",
+   "res": "Condition",
+   "path": "Condition.code.coding:echsa",
+   "dt": "Coding",
+   "cs": "https://taussig/fhir/CodeSystem/echsa",
+   "vs": "",
+   "bind": "",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.stent_covering": {
+   "def": "Couverture du stent posé : nu ou couvert.",
+   "res": "Device",
+   "path": "Device.property:covering.valueCode",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/stent-covering",
+   "vs": "stent-covering-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.stent_expansion": {
+   "def": "Mode d'expansion du stent posé : expansible au ballon ou auto-expansible.",
+   "res": "Device",
+   "path": "Device.property:expansionMode.valueCode",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/stent-expansion",
+   "vs": "stent-expansion-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.stent_coating": {
+   "def": "Revêtement du stent posé : actif (pharmacologique) ou non.",
+   "res": "Device",
+   "path": "Device.property:coating.valueCode",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/stent-coating",
+   "vs": "stent-coating-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "InterventionalGesture.device_action": {
+   "def": "Action du geste sur l'implant : pose, reprise (redilatation, repositionnement), retrait.",
+   "res": "Procedure",
+   "path": "Procedure.focalDevice.action",
+   "dt": "CodeableConcept",
+   "cs": "http://snomed.info/sct",
+   "vs": "device-action (FHIR R4, preferred)",
+   "bind": "preferred",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "ImplantUse.implant_link": {
+   "def": "Implant décrit par la fiche de pose.",
+   "res": "DeviceUseStatement",
+   "path": "DeviceUseStatement.device",
+   "dt": "Reference(TaussigCardiacImplant)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.indication_link": {
+   "def": "Diagnostic ou condition qui motive le cathétérisme (le rôle est porté par l'extension du lien).",
+   "res": "Procedure",
+   "path": "Procedure.reasonReference",
+   "dt": "Reference(TaussigCardiacDiagnosis | TaussigCardiacCondition)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
   }
  },
  "entities": [
@@ -2113,7 +2281,7 @@ window.TAUSSIG_DICT = {
    "desc": "Contexte génétique du patient (covariable, ancrage Orphanet).",
    "zone": "contexte",
    "zoneTitre": "Contexte & acteurs",
-   "n": 3
+   "n": 5
   },
   {
    "name": "CardiacDiagnosis",
@@ -2121,7 +2289,7 @@ window.TAUSSIG_DICT = {
    "desc": "Cardiopathie congénitale : diagnostic figé et verrouillable, multi-codé.",
    "zone": "substrats",
    "zoneTitre": "Les trois substrats",
-   "n": 8
+   "n": 9
   },
   {
    "name": "CardiacCondition",
@@ -2129,7 +2297,7 @@ window.TAUSSIG_DICT = {
    "desc": "État hémodynamique évolutif que le patient traverse (shunt, HTAP…).",
    "zone": "substrats",
    "zoneTitre": "Les trois substrats",
-   "n": 8
+   "n": 10
   },
   {
    "name": "CardiacImplant",
@@ -2137,7 +2305,7 @@ window.TAUSSIG_DICT = {
    "desc": "Matériel implanté doté d’un cycle de vie propre (stent, valve, occluder…).",
    "zone": "substrats",
    "zoneTitre": "Les trois substrats",
-   "n": 14
+   "n": 17
   },
   {
    "name": "Catheterization",
@@ -2145,7 +2313,7 @@ window.TAUSSIG_DICT = {
    "desc": "L’acte-contenant : abord, anesthésie, gestes et mesures d’une même procédure.",
    "zone": "acte",
    "zoneTitre": "L’acte de cathétérisme",
-   "n": 21
+   "n": 22
   },
   {
    "name": "CatheterizationDiagnosis",
@@ -2185,7 +2353,7 @@ window.TAUSSIG_DICT = {
    "desc": "Geste thérapeutique décrit sur trois axes : cible, action, technique.",
    "zone": "gestes",
    "zoneTitre": "Gestes & matériel",
-   "n": 13
+   "n": 14
   },
   {
    "name": "MaterialUsed",
@@ -2225,11 +2393,19 @@ window.TAUSSIG_DICT = {
    "desc": "Complication cotée, avec gestion et origine consignées séparément.",
    "zone": "resultats",
    "zoneTitre": "Mesures & résultats",
-   "n": 11
+   "n": 12
   },
   {
    "name": "PeriproceduralMedication",
    "fr": "PeriproceduralMedication",
+   "desc": "",
+   "zone": "resultats",
+   "zoneTitre": "Mesures & résultats",
+   "n": 1
+  },
+  {
+   "name": "ImplantUse",
+   "fr": "ImplantUse",
    "desc": "",
    "zone": "resultats",
    "zoneTitre": "Mesures & résultats",
@@ -2267,7 +2443,8 @@ window.TAUSSIG_DICT = {
     "ICD-11",
     "IPCCC",
     "CIM-10",
-    "ECHSA"
+    "ECHSA",
+    "Code TAUSSIG"
    ],
    "lignes": [
     [
@@ -2275,763 +2452,872 @@ window.TAUSSIG_DICT = {
      "LA80",
      "02.01.09",
      "Q24.8",
-     ""
+     "",
+     "TAUSSIG-DIAG-0001"
     ],
     [
      "Lévocardie",
      "LA80.0",
      "02.01.03",
      "Q24.1",
-     "DIAG-2010-2100"
+     "DIAG-2010-2100",
+     "TAUSSIG-DIAG-0002"
     ],
     [
      "Dextrocardie",
      "LA80.1",
      "02.01.02",
      "Q24.0",
-     "DIAG-2010-2090"
+     "DIAG-2010-2090",
+     "TAUSSIG-DIAG-0003"
     ],
     [
      "Mésocardie",
      "LA80.2",
      "02.01.04",
      "Q24.8",
-     "DIAG-2010-2110"
+     "DIAG-2010-2110",
+     "TAUSSIG-DIAG-0004"
     ],
     [
      "Image en miroir complète",
      "LA82",
      "03.01.03",
      "Q89.3",
-     "DIAG-2010-2120"
+     "DIAG-2010-2120",
+     "TAUSSIG-DIAG-0005"
     ],
     [
      "Isomérisme droit",
      "LA83",
      "03.01.04",
      "Q20.6",
-     "DIAG115"
+     "DIAG115",
+     "TAUSSIG-DIAG-0006"
     ],
     [
      "Isomérisme gauche",
      "LA84",
      "03.01.05",
      "Q20.6",
-     "DIAG114"
+     "DIAG114",
+     "TAUSSIG-DIAG-0007"
     ],
     [
      "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle",
      "LA85",
      "01.03.09",
      "Q20.9",
-     ""
+     "",
+     "TAUSSIG-DIAG-0008"
     ],
     [
      "Connexions atrioventriculaires discordantes",
      "LA85.0",
      "01.04.01",
      "Q20.5",
-     ""
+     "",
+     "TAUSSIG-DIAG-0009"
     ],
     [
      "Transposition congénitalement corrigée des grandes artères",
      "LA85.00",
      "01.01.03",
      "Q20.5",
-     "DIAG082 ; DIAG155"
+     "DIAG082 ; DIAG155",
+     "TAUSSIG-DIAG-0010"
     ],
     [
      "Transposition des gros vaisseaux",
      "LA85.1",
      "01.05.01",
      "Q20.3",
-     "DIAG083 ; DIAG084 ; DIAG085 ; DIAG086"
+     "DIAG083 ; DIAG084 ; DIAG085 ; DIAG086",
+     "TAUSSIG-DIAG-0011"
     ],
     [
      "Ventricule droit à double issue",
      "LA85.2",
      "01.01.04",
      "Q20.1",
-     "DIAG088 ; DIAG-2024-3"
+     "DIAG088 ; DIAG-2024-3",
+     "TAUSSIG-DIAG-0012"
     ],
     [
      "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition",
      "LA85.20",
      "01.01.18",
      "Q20.1",
-     "DIAG090"
+     "DIAG090",
+     "TAUSSIG-DIAG-0013"
     ],
     [
      "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux",
      "LA85.21",
      "01.01.19",
      "Q20.1",
-     "DIAG091"
+     "DIAG091",
+     "TAUSSIG-DIAG-0014"
     ],
     [
      "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire",
      "LA85.22",
      "01.01.40",
      "Q20.1",
-     "DIAG088"
+     "DIAG088",
+     "TAUSSIG-DIAG-0015"
     ],
     [
      "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot",
      "LA85.23",
      "01.01.17",
      "Q20.1",
-     "DIAG089 ; DIAG-2024-4"
+     "DIAG089 ; DIAG-2024-4",
+     "TAUSSIG-DIAG-0016"
     ],
     [
      "Ventricule gauche à double issue",
      "LA85.3",
      "01.05.03",
      "Q20.2",
-     "DIAG093"
+     "DIAG093",
+     "TAUSSIG-DIAG-0017"
     ],
     [
      "Tronc artériel commun",
      "LA85.4",
      "09.01.01",
      "Q20.0",
-     "DIAG016"
+     "DIAG016",
+     "TAUSSIG-DIAG-0018"
     ],
     [
      "Tronc artériel commun à dominance aortique",
      "LA85.40",
      "09.01.15",
      "Q20.0",
-     "DIAG016"
+     "DIAG016",
+     "TAUSSIG-DIAG-0019"
     ],
     [
      "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue",
      "LA85.41",
      "09.01.18",
      "Q20.0",
-     "DIAG-2010-2010"
+     "DIAG-2010-2010",
+     "TAUSSIG-DIAG-0020"
     ],
     [
      "Anomalie congénitale de la veine médiastinale",
      "LA86",
      "04.00.07",
      "Q26.8",
-     ""
+     "",
+     "TAUSSIG-DIAG-0021"
     ],
     [
      "Veine cave supérieure gauche",
      "LA86.0",
      "04.01.25",
-     "Q26.8",
-     "DIAG026"
+     "Q26.1",
+     "DIAG026",
+     "TAUSSIG-DIAG-0022"
     ],
     [
      "Absence de toit du sinus coronaire",
      "LA86.1",
      "04.04.13",
-     "Q24.5",
-     "DIAG004"
+     "Q21.1",
+     "DIAG004",
+     "TAUSSIG-DIAG-0023"
     ],
     [
      "Anomalie du retour veineux pulmonaire",
      "LA86.2",
      "04.08.07",
      "Q26.4",
-     ""
+     "",
+     "TAUSSIG-DIAG-0024"
     ],
     [
      "Connexion veineuse pulmonaire totale anormale",
      "LA86.20",
      "04.08.05",
      "Q26.2",
-     "DIAG019 ; DIAG020 ; DIAG021 ; DIAG022"
+     "DIAG019 ; DIAG020 ; DIAG021 ; DIAG022",
+     "TAUSSIG-DIAG-0025"
     ],
     [
      "Connexion veineuse pulmonaire partielle anormale",
      "LA86.21",
      "04.07.01",
      "Q26.3",
-     "DIAG017"
+     "DIAG017",
+     "TAUSSIG-DIAG-0026"
     ],
     [
      "Syndrome du cimeterre",
      "LA86.22",
      "03.02.23",
      "Q26.8",
-     "DIAG018"
+     "DIAG018",
+     "TAUSSIG-DIAG-0027"
     ],
     [
      "Sténose ou hypoplasie veineuse pulmonaire congénitale",
      "LA86.3",
      "04.08.31",
      "Q26.8",
-     "DIAG025 ; DIAG-2019-11"
+     "DIAG025 ; DIAG-2019-11",
+     "TAUSSIG-DIAG-0028"
     ],
     [
      "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire",
      "LA87",
      "06.00.15",
      "Q23.8",
-     ""
+     "",
+     "TAUSSIG-DIAG-0029"
     ],
     [
      "Anomalie congénitale de la valve tricuspide",
      "LA87.0",
      "06.01.11",
      "Q22.9",
-     "DIAG040 ; DIAG039"
+     "DIAG040 ; DIAG039",
+     "TAUSSIG-DIAG-0030"
     ],
     [
      "Insuffisance tricuspide congénitale",
      "LA87.00",
      "06.01.25",
      "Q22.8",
-     "DIAG037"
+     "DIAG037",
+     "TAUSSIG-DIAG-0031"
     ],
     [
      "Sténose congénitale de la valve tricuspide",
      "LA87.01",
      "06.01.07",
      "Q22.4",
-     "DIAG038"
+     "DIAG038",
+     "TAUSSIG-DIAG-0032"
     ],
     [
      "Dysplasie de la valve tricuspide",
      "LA87.02",
      "06.01.03",
      "Q22.8",
-     "DIAG040"
+     "DIAG040",
+     "TAUSSIG-DIAG-0033"
     ],
     [
      "Malformation d'Ebstein de la valve tricuspide",
      "LA87.03",
      "06.01.34",
      "Q22.5",
-     "DIAG036"
+     "DIAG036",
+     "TAUSSIG-DIAG-0034"
     ],
     [
      "Anomalie congénitale de la valve mitrale",
      "LA87.1",
      "06.02.11",
      "Q23.9",
-     "DIAG068 ; DIAG066"
+     "DIAG068 ; DIAG066",
+     "TAUSSIG-DIAG-0035"
     ],
     [
      "Insuffisance mitrale congénitale",
      "LA87.10",
      "06.02.25",
      "Q23.3",
-     "DIAG067"
+     "DIAG067",
+     "TAUSSIG-DIAG-0036"
     ],
     [
      "Sténose valvulaire mitrale congénitale",
      "LA87.11",
      "06.02.07",
      "Q23.2",
-     "DIAG062"
+     "DIAG062",
+     "TAUSSIG-DIAG-0037"
     ],
     [
      "Dysplasie de la valve mitrale",
      "LA87.12",
      "06.02.03",
      "Q23.8",
-     "DIAG068"
+     "DIAG068",
+     "TAUSSIG-DIAG-0038"
     ],
     [
      "Anomalie congénitale de l'appareil mitral sousvalvaire",
      "LA87.13",
      "06.02.21",
      "Q23.8",
-     "DIAG063"
+     "DIAG063",
+     "TAUSSIG-DIAG-0039"
     ],
     [
      "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire",
      "LA87.3",
      "06.07.28",
      "Q21.2",
-     ""
+     "",
+     "TAUSSIG-DIAG-0040"
     ],
     [
      "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire",
      "LA87.4",
      "06.06.00",
      "Q21.2",
-     "DIAG010"
+     "DIAG010",
+     "TAUSSIG-DIAG-0041"
     ],
     [
      "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement",
      "LA87.40",
      "06.06.01",
      "Q21.2",
-     "DIAG012"
+     "DIAG012",
+     "TAUSSIG-DIAG-0042"
     ],
     [
      "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement",
      "LA87.41",
      "06.06.08",
      "Q21.2",
-     "DIAG011"
+     "DIAG011",
+     "TAUSSIG-DIAG-0043"
     ],
     [
      "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire",
      "LA87.42",
      "06.06.10",
      "Q21.2",
-     "DIAG010"
+     "DIAG010 ; DIAG011",
+     "TAUSSIG-DIAG-0044"
     ],
     [
      "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire",
      "LA87.43",
      "06.06.09",
      "Q21.2",
-     "DIAG010"
+     "DIAG010",
+     "TAUSSIG-DIAG-0045"
     ],
     [
      "Communication septale auriculoventriculaire avec déséquilibre ventriculaire",
      "LA87.44",
      "06.07.26",
      "Q21.2",
-     "DIAG078"
+     "DIAG078",
+     "TAUSSIG-DIAG-0046"
     ],
     [
      "Anomalie septal auriculoventriculaire et tétralogie de Fallot",
      "LA87.45",
      "01.01.20",
      "Q21.2",
-     "DIAG029"
+     "DIAG029",
+     "TAUSSIG-DIAG-0047"
     ],
     [
      "Anomalie congénitale du ventricule ou du septum ventriculaire",
      "LA88",
      "07.00.00",
      "Q20.9",
-     "DIAG121 ; DIAG120 ; DIAG-2019-27 ; DIAG-2019-28"
+     "DIAG121 ; DIAG120 ; DIAG-2019-27 ; DIAG-2019-28",
+     "TAUSSIG-DIAG-0048"
     ],
     [
      "Obstruction congénitale de la voie de sortie du ventricule droit",
      "LA88.0",
      "07.05.20",
      "Q24.8",
-     ""
+     "",
+     "TAUSSIG-DIAG-0049"
     ],
     [
      "Ventricule droit à double chambre",
      "LA88.1",
      "07.03.01",
      "Q24.8",
-     "DIAG046"
+     "DIAG046",
+     "TAUSSIG-DIAG-0050"
     ],
     [
      "Tétralogie de Fallot",
      "LA88.2",
      "01.01.01",
      "Q21.3",
-     "DIAG028 ; DIAG-2010-2140"
+     "DIAG028 ; DIAG-2010-2140",
+     "TAUSSIG-DIAG-0051"
     ],
     [
      "Tétralogie de Fallot avec syndrome de valve pulmonaire absente",
      "LA88.20",
      "09.05.25",
-     "Q24.8",
-     "DIAG030"
+     "Q21.3",
+     "DIAG030",
+     "TAUSSIG-DIAG-0052"
     ],
     [
      "Tétralogie de Fallot avec atrésie pulmonaire",
      "LA88.21",
      "01.01.26",
      "Q21.3",
-     "DIAG033"
+     "DIAG033",
+     "TAUSSIG-DIAG-0053"
     ],
     [
      "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire",
      "LA88.22",
      "01.01.57",
      "Q21.3",
-     "DIAG034"
+     "DIAG034",
+     "TAUSSIG-DIAG-0054"
     ],
     [
      "Obstruction congénitale de la voie de sortie du ventricule gauche",
      "LA88.3",
      "07.09.28",
      "Q24.8",
-     "DIAG051"
+     "DIAG051",
+     "TAUSSIG-DIAG-0055"
     ],
     [
      "Communication interventriculaire",
      "LA88.4",
      "07.10.00",
      "Q21.0",
-     "DIAG168 ; DIAG169 ; DIAG008 ; DIAG170 ; DIAG172 ; DIAG174"
+     "DIAG168 ; DIAG169 ; DIAG008 ; DIAG170 ; DIAG172 ; DIAG174",
+     "TAUSSIG-DIAG-0056"
     ],
     [
      "Communication interventriculaire musculaire trabéculaire",
      "LA88.40",
      "07.11.01",
      "Q21.0",
-     "DIAG173"
+     "DIAG173",
+     "TAUSSIG-DIAG-0057"
     ],
     [
      "Communication interventriculaire centrale périmembraneuse",
      "LA88.41",
      "07.10.01",
      "Q21.0",
-     "DIAG171"
+     "DIAG171",
+     "TAUSSIG-DIAG-0058"
     ],
     [
      "Communication interventriculaire non significatif sur le plan hémodynamique",
      "LA88.42",
      "07.15.01",
      "Q21.0",
-     ""
+     "",
+     "TAUSSIG-DIAG-0059"
     ],
     [
      "Cœur fonctionnellement univentriculaire",
      "LA89",
      "01.01.22",
      "Q20.9",
-     "DIAG080 ; DIAG-2010-851 ; DIAG079"
+     "DIAG080 ; DIAG-2010-851 ; DIAG079",
+     "TAUSSIG-DIAG-0060"
     ],
     [
      "Connexion auriculoventriculaire à double entrée",
      "LA89.0",
      "01.01.14",
      "Q20.4",
-     "DIAG074"
+     "DIAG074",
+     "TAUSSIG-DIAG-0061"
     ],
     [
      "Atrésie de la valve tricuspide",
      "LA89.1",
      "06.01.01",
      "Q22.4",
-     "DIAG077"
+     "DIAG077",
+     "TAUSSIG-DIAG-0062"
     ],
     [
      "Atrésie mitrale",
      "LA89.2",
      "06.02.01",
      "Q23.2",
-     "DIAG076"
+     "DIAG076",
+     "TAUSSIG-DIAG-0063"
     ],
     [
      "Syndrome d'hypoplasie du cœur gauche",
      "LA89.3",
      "01.01.09",
      "Q23.4",
-     "DIAG069"
+     "DIAG069",
+     "TAUSSIG-DIAG-0064"
     ],
     [
      "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes",
      "LA8A",
      "09.04.29",
      "Q24.8",
-     "DIAG060"
+     "DIAG060",
+     "TAUSSIG-DIAG-0065"
     ],
     [
      "Anomalie congénitale de la valve pulmonaire",
      "LA8A.0",
      "09.05.29",
      "Q22.3",
-     "DIAG047 ; DIAG050"
+     "DIAG047 ; DIAG050",
+     "TAUSSIG-DIAG-0066"
     ],
     [
      "Sténose congénitale de la valve pulmonaire",
      "LA8A.00",
      "09.05.04",
      "Q22.1",
-     "DIAG041"
+     "DIAG041",
+     "TAUSSIG-DIAG-0067"
     ],
     [
      "Insuffisance congénitale de la valve pulmonaire",
      "LA8A.01",
      "09.05.22",
      "Q22.2",
-     "DIAG049"
+     "DIAG049",
+     "TAUSSIG-DIAG-0068"
     ],
     [
      "Atrésie pulmonaire congénitale",
      "LA8A.1",
      "09.05.16",
      "Q22.0",
-     "DIAG031"
+     "DIAG031",
+     "TAUSSIG-DIAG-0069"
     ],
     [
      "Atrésie pulmonaire avec septum ventriculaire intact",
      "LA8A.10",
      "01.01.07",
      "Q22.0",
-     "DIAG032"
+     "DIAG032",
+     "TAUSSIG-DIAG-0070"
     ],
     [
      "Anomalie congénitale de la valve aortique",
      "LA8A.2",
      "09.15.19",
      "Q23.9",
-     "DIAG058 ; DIAG057"
+     "DIAG058 ; DIAG057",
+     "TAUSSIG-DIAG-0071"
     ],
     [
      "Sténose congénitale de la valve aortique",
      "LA8A.20",
      "09.15.01",
      "Q23.0",
-     "DIAG052"
+     "DIAG052",
+     "TAUSSIG-DIAG-0072"
     ],
     [
      "Insuffisance aortique congénitale",
      "LA8A.21",
      "09.15.07",
      "Q23.1",
-     "DIAG056"
+     "DIAG056",
+     "TAUSSIG-DIAG-0073"
     ],
     [
      "Valve aortique bicuspide",
      "LA8A.22",
      "09.15.22",
      "Q23.1",
-     "DIAG058"
+     "DIAG058",
+     "TAUSSIG-DIAG-0074"
     ],
     [
      "Atrésie de la valve aortique",
      "LA8A.23",
      "09.15.06",
      "Q23.0",
-     "DIAG055"
+     "DIAG055",
+     "TAUSSIG-DIAG-0075"
     ],
     [
      "Valve aortique unicuspide",
      "LA8A.24",
      "09.15.21",
      "Q23.0",
-     "DIAG058"
+     "DIAG058",
+     "TAUSSIG-DIAG-0076"
     ],
     [
      "Sténose supravalvulaire aortique congénitale",
      "LA8A.3",
      "09.16.18",
      "Q25.3",
-     "DIAG053"
+     "DIAG053",
+     "TAUSSIG-DIAG-0077"
     ],
     [
      "Anévrisme du sinus aortique de Valsalva",
      "LA8A.4",
      "09.18.01",
      "Q25.4",
-     "DIAG059"
+     "DIAG059",
+     "TAUSSIG-DIAG-0078"
     ],
     [
      "Sténose sous-aortique congénitale",
      "LA8A.5",
      "07.09.50",
      "Q24.4",
-     "DIAG051"
+     "DIAG051",
+     "TAUSSIG-DIAG-0079"
     ],
     [
      "Sténose sous-pulmonaire congénitale",
      "LA8A.6",
      "07.05.32",
      "Q24.3",
-     "DIAG166"
+     "DIAG166",
+     "TAUSSIG-DIAG-0080"
     ],
     [
      "Anomalie congénitale des grandes artères, y compris le canal artériel",
      "LA8B",
      "09.04.28",
      "Q24.8",
-     ""
+     "",
+     "TAUSSIG-DIAG-0081"
     ],
     [
      "Fenêtre aortopulmonaire congénitale",
      "LA8B.0",
      "09.04.07",
      "Q21.4",
-     "DIAG014"
+     "DIAG014",
+     "TAUSSIG-DIAG-0082"
     ],
     [
      "Anomalie congénitale de l'arbre artériel pulmonaire",
      "LA8B.1",
      "09.07.16",
      "Q25.7",
-     "DIAG042"
+     "DIAG042",
+     "TAUSSIG-DIAG-0083"
     ],
     [
      "Anomalie congénitale de l'aorte ou de ses branches",
      "LA8B.2",
      "07.09.34",
      "Q25.4",
-     "DIAG096"
+     "DIAG096",
+     "TAUSSIG-DIAG-0084"
     ],
     [
      "Coarctation de l'aorte",
      "LA8B.21",
      "09.29.01",
      "Q25.1",
-     "DIAG095"
+     "DIAG095",
+     "TAUSSIG-DIAG-0085"
     ],
     [
      "Interruption de la crosse aortique",
      "LA8B.22",
      "09.29.31",
      "Q25.4",
-     "DIAG098 ; DIAG-2010-2000 ; DIAG-2010-2020"
+     "DIAG098 ; DIAG-2010-2000 ; DIAG-2010-2020",
+     "TAUSSIG-DIAG-0086"
     ],
     [
      "Anomalie congénitale de l'aorte thoracique descendante ou abdominale",
      "LA8B.23",
      "09.28.47",
      "Q25.4",
-     ""
+     "",
+     "TAUSSIG-DIAG-0087"
     ],
     [
      "Anomalie congénitale de la branche de l'arc aortique",
      "LA8B.24",
      "09.30.17",
      "Q27.8",
-     ""
+     "",
+     "TAUSSIG-DIAG-0088"
     ],
     [
      "Syndrome de compression trachéo-œsophagienne",
      "LA8B.3",
      "09.31.40",
      "Q25.4",
-     "DIAG100"
+     "DIAG100",
+     "TAUSSIG-DIAG-0089"
     ],
     [
      "Persistance du canal artériel",
      "LA8B.4",
      "09.27.21",
      "Q25.0",
-     "DIAG099"
+     "DIAG099",
+     "TAUSSIG-DIAG-0090"
     ],
     [
      "Anomalie congénitale des artères coronaires",
      "LA8C",
      "09.46.03",
      "Q24.5",
-     "DIAG161 ; DIAG157 ; DIAG-2019-35 ; DIAG-2019-36 ; DIAG-2019-37 ; DIAG-2019-38 ; DIAG-2019-43 ; DIAG-2019-44 ; DIAG-2019-45 ; DIAG-2019-46"
+     "DIAG161 ; DIAG157 ; DIAG-2019-35 ; DIAG-2019-36 ; DIAG-2019-37 ; DIAG-2019-38 ; DIAG-2019-43 ; DIAG-2019-44 ; DIAG-2019-45 ; DIAG-2019-46",
+     "TAUSSIG-DIAG-0091"
     ],
     [
      "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire",
      "LA8C.0",
      "09.41.01",
      "Q24.5",
-     "DIAG159 ; DIAG-2019-33 ; DIAG-2019-34"
+     "DIAG159 ; DIAG-2019-33 ; DIAG-2019-34",
+     "TAUSSIG-DIAG-0092"
     ],
     [
      "Origine aortique anormale ou trajet anormal de l'artère coronaire",
      "LA8C.1",
      "09.42.00",
      "Q24.5",
-     "DIAG158 ; DIAG-2019-32"
+     "DIAG158 ; DIAG-2019-32",
+     "TAUSSIG-DIAG-0093"
     ],
     [
      "Fistule artérielle coronaire congénitale",
      "LA8C.2",
      "09.45.16",
      "Q24.5",
-     "DIAG160 ; DIAG-2019-39 ; DIAG-2019-40 ; DIAG-2019-41 ; DIAG-2019-42"
+     "DIAG160 ; DIAG-2019-39 ; DIAG-2019-40 ; DIAG-2019-41 ; DIAG-2019-42",
+     "TAUSSIG-DIAG-0094"
     ],
     [
      "Malformation congénitale du péricarde",
      "LA8D",
      "10.01.05",
      "Q24.8",
-     "DIAG073"
+     "DIAG073",
+     "TAUSSIG-DIAG-0095"
     ],
     [
      "Anomalie congénitale du septum auriculaire",
      "LA8E",
      "05.07.01",
      "Q21.8",
-     ""
+     "",
+     "TAUSSIG-DIAG-0096"
     ],
     [
      "Foramen ovale perméable",
      "LA8E.0",
      "05.03.01",
      "Q21.1",
-     "DIAG001"
+     "DIAG001",
+     "TAUSSIG-DIAG-0097"
     ],
     [
      "Communication interauriculaire dans la fosse ovale",
      "LA8E.1",
      "05.04.02",
      "Q21.1",
-     "DIAG002"
+     "DIAG002",
+     "TAUSSIG-DIAG-0098"
     ],
     [
      "Anomalie du sinus veineux",
      "LA8E.2",
      "05.05.00",
      "Q21.1",
-     "DIAG003"
+     "DIAG003",
+     "TAUSSIG-DIAG-0099"
     ],
     [
      "Communication interauriculaire par l'orifice du sinus coronaire",
      "LA8E.3",
      "05.05.03",
      "Q21.1",
-     "DIAG004"
+     "DIAG004",
+     "TAUSSIG-DIAG-0100"
     ],
     [
      "Anomalie congénitale de l'oreillette droite",
      "LA8F",
      "05.01.13",
      "Q20.8",
-     "DIAG-2019-30"
+     "DIAG-2019-30",
+     "TAUSSIG-DIAG-0101"
     ],
     [
      "Anomalie congénitale de l'oreillette gauche",
      "LA8G",
      "05.02.11",
      "Q20.8",
-     "DIAG-2019-29"
+     "DIAG-2019-29",
+     "TAUSSIG-DIAG-0102"
     ],
     [
      "Oreillette gauche divisée",
      "LA8G.0",
      "05.02.01",
      "Q24.2",
-     "DIAG024"
+     "DIAG024",
+     "TAUSSIG-DIAG-0103"
     ],
     [
      "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
      "LA8B.1",
      "09.10.37",
      "Q25.6",
-     "DIAG043"
+     "DIAG043",
+     "TAUSSIG-DIAG-0104"
     ],
     [
      "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
      "LA8B.1",
      "09.10.38",
      "Q25.6",
-     "DIAG044"
+     "DIAG044",
+     "TAUSSIG-DIAG-0105"
     ],
     [
      "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
      "LA8B.1",
      "09.10.30",
      "Q25.7",
-     "DIAG165"
+     "DIAG165",
+     "TAUSSIG-DIAG-0106"
     ],
     [
      "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
      "LA8B.1",
      "09.08.01",
      "Q27.8",
-     "DIAG035"
+     "DIAG035",
+     "TAUSSIG-DIAG-0107"
     ],
     [
      "Fistule (malformation) artérioveineuse pulmonaire",
      "LA90.5",
      "09.19.05",
      "Q25.7",
-     "DIAG127"
+     "DIAG127",
+     "TAUSSIG-DIAG-0108"
     ],
     [
      "Bloc atrioventriculaire complet congénital idiopathique",
      "BC63.20",
      "11.06.08",
      "Q24.6",
-     "DIAG111"
+     "DIAG111",
+     "TAUSSIG-DIAG-0109"
     ]
    ]
   },
@@ -3042,650 +3328,758 @@ window.TAUSSIG_DICT = {
     "Libellé",
     "IPCCC",
     "CIM-10",
-    "ECHSA"
+    "ECHSA",
+    "Code TAUSSIG"
    ],
    "lignes": [
     [
      "Création/agrandissement de communication interatriale",
      "",
      "",
-     "SP-2010-4060"
+     "SP-2010-4060",
+     "TAUSSIG-COND-0001"
     ],
     [
      "Cerclage de l'artère pulmonaire",
      "",
      "",
-     "SP-2010-5640"
+     "SP-2010-5640",
+     "TAUSSIG-COND-0002"
     ],
     [
      "Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)",
      "",
      "",
-     "SP-2010-5590"
+     "SP-2010-5590",
+     "TAUSSIG-COND-0003"
     ],
     [
      "Intervention de Norwood",
      "",
      "",
-     "SP-2010-4870"
+     "SP-2010-4870",
+     "TAUSSIG-COND-0004"
     ],
     [
      "Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)",
      "",
      "",
-     "SP-2010-5680"
+     "SP-2010-5680",
+     "TAUSSIG-COND-0005"
     ],
     [
      "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)",
      "",
      "",
-     "SP-2010-5670 ; DIAG-2024-1"
+     "SP-2010-5670 ; DIAG-2024-1",
+     "TAUSSIG-COND-0006"
     ],
     [
      "Anastomose cavopulmonaire bidirectionnelle bilatérale",
      "",
      "",
-     "SP-2010-5690 ; DIAG-2024-2"
+     "SP-2010-5690 ; DIAG-2024-2",
+     "TAUSSIG-COND-0007"
     ],
     [
      "Fontan (TCPC), conduit extracardiaque, fenestré",
      "",
      "",
-     "SP-2010-5000"
+     "SP-2010-5000",
+     "TAUSSIG-COND-0008"
     ],
     [
      "Fontan (TCPC), conduit extracardiaque, non fenestré",
      "",
      "",
-     "SP-2010-5010"
+     "SP-2010-5010",
+     "TAUSSIG-COND-0009"
     ],
     [
      "Fontan (TCPC), tunnel latéral, fenestré",
      "",
      "",
-     "SP-2010-4970"
+     "SP-2010-4970",
+     "TAUSSIG-COND-0010"
     ],
     [
      "Fontan (TCPC), tunnel latéral, non fenestré",
      "",
      "",
-     "SP-2010-4980"
+     "SP-2010-4980",
+     "TAUSSIG-COND-0011"
     ],
     [
      "Réparation à un ventricule et demi",
      "",
      "",
-     "SP-2010-4520"
+     "SP-2010-4520",
+     "TAUSSIG-COND-0012"
     ],
     [
      "Palliation, autre",
      "",
      "",
-     "SP-2010-5710"
+     "SP-2010-5710",
+     "TAUSSIG-COND-0013"
     ],
     [
      "Endocardite infectieuse",
      "10.06.01",
      "I33.0",
-     "DIAG123"
+     "DIAG123",
+     "TAUSSIG-COND-0014"
     ],
     [
      "Anomalie acquise de la veine cave supérieure",
      "10.31.01",
      "I87.9",
-     "DIAG026"
+     "DIAG026",
+     "TAUSSIG-COND-0015"
     ],
     [
      "Anomalie acquise de la veine cave inférieure",
      "10.31.21",
      "I87.9",
-     "DIAG026"
+     "DIAG026",
+     "TAUSSIG-COND-0016"
     ],
     [
      "Anomalie acquise du sinus coronaire",
      "10.30.16",
      "I87.1",
-     ""
+     "",
+     "TAUSSIG-COND-0017"
     ],
     [
      "Anomalie acquise des veines pulmonaires",
      "10.24.00",
      "I28.9",
-     ""
+     "",
+     "TAUSSIG-COND-0018"
     ],
     [
      "Anomalie acquise de l'oreillette droite",
      "15.10.10",
      "I51.8",
-     ""
+     "",
+     "TAUSSIG-COND-0019"
     ],
     [
      "Anomalie acquise de l'oreillette gauche",
      "15.10.20",
      "I51.8",
-     ""
+     "",
+     "TAUSSIG-COND-0020"
     ],
     [
      "Communication interatriale résiduelle (CIA)",
      "15.10.63",
      "Q21.1",
-     "DIAG-2019-17"
+     "DIAG-2019-17",
+     "TAUSSIG-COND-0021"
     ],
     [
      "Régurgitation tricuspide résiduelle",
      "15.11.03",
      "Q22.8",
-     "DIAG037"
+     "DIAG037",
+     "TAUSSIG-COND-0022"
     ],
     [
      "Sténose mitrale résiduelle",
      "15.12.01",
      "Q23.2",
-     "DIAG164"
+     "DIAG164",
+     "TAUSSIG-COND-0023"
     ],
     [
      "Régurgitation mitrale résiduelle",
      "15.12.03",
      "Q23.3",
-     "DIAG067"
+     "DIAG067",
+     "TAUSSIG-COND-0024"
     ],
     [
      "Régurgitation troncale résiduelle",
      "15.25.03",
      "Q24.8",
-     "DIAG-2010-170"
+     "DIAG-2010-170",
+     "TAUSSIG-COND-0025"
     ],
     [
      "Sténose valvulaire pulmonaire résiduelle",
      "15.30.01",
      "Q22.1",
-     "DIAG041"
+     "DIAG041",
+     "TAUSSIG-COND-0026"
     ],
     [
      "Régurgitation pulmonaire résiduelle",
      "15.30.03",
      "Q22.2",
-     "DIAG049"
+     "DIAG049",
+     "TAUSSIG-COND-0027"
     ],
     [
      "Sténose de la néovalve pulmonaire",
      "15.30.09",
      "I37.0",
-     "DIAG041"
+     "DIAG041",
+     "TAUSSIG-COND-0028"
     ],
     [
      "Régurgitation de la néovalve pulmonaire",
      "15.30.10",
      "I37.1",
-     "DIAG049"
+     "DIAG049",
+     "TAUSSIG-COND-0029"
     ],
     [
      "Sténose valvulaire aortique résiduelle",
      "15.35.01",
      "Q23.0",
-     "DIAG052"
+     "DIAG052",
+     "TAUSSIG-COND-0030"
     ],
     [
      "Régurgitation aortique résiduelle",
      "15.35.03",
      "Q23.1",
-     "DIAG056"
+     "DIAG056",
+     "TAUSSIG-COND-0031"
     ],
     [
      "Sténose de la néovalve aortique d'origine pulmonaire",
      "15.35.09",
      "I35.0",
-     "DIAG052"
+     "DIAG052",
+     "TAUSSIG-COND-0032"
     ],
     [
      "Régurgitation de la néovalve aortique d'origine pulmonaire",
      "15.35.10",
      "I35.1",
-     "DIAG056"
+     "DIAG056",
+     "TAUSSIG-COND-0033"
     ],
     [
      "Sténose acquise de la néovalve aortique d'origine troncale",
      "15.25.12",
-     "Q24.8",
-     "DIAG052"
+     "I35.0",
+     "DIAG052",
+     "TAUSSIG-COND-0034"
     ],
     [
      "Régurgitation acquise de la néovalve aortique d'origine troncale",
      "15.25.13",
-     "I38",
-     "DIAG056"
+     "I35.1",
+     "DIAG056",
+     "TAUSSIG-COND-0035"
     ],
     [
      "Composante ventriculaire résiduelle de canal atrioventriculaire",
      "15.16.02",
      "Q21.2",
-     ""
+     "",
+     "TAUSSIG-COND-0036"
     ],
     [
      "Régurgitation résiduelle de la valve atrioventriculaire commune",
      "15.13.02",
      "Q24.8",
-     ""
+     "",
+     "TAUSSIG-COND-0037"
     ],
     [
      "Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)",
      "10.34.56",
      "I38",
-     ""
+     "",
+     "TAUSSIG-COND-0038"
     ],
     [
      "Dilatation ventriculaire droite acquise",
      "10.16.22",
      "I51.7",
-     ""
+     "",
+     "TAUSSIG-COND-0039"
     ],
     [
      "Hypertrophie ventriculaire droite acquise",
      "10.16.23",
      "I51.7",
-     ""
+     "",
+     "TAUSSIG-COND-0040"
     ],
     [
      "Anévrisme ventriculaire droit acquis",
      "10.16.02",
      "I25.3",
-     "DIAG116"
+     "DIAG116",
+     "TAUSSIG-COND-0041"
     ],
     [
      "Dysfonction ventriculaire droite",
      "07.01.11",
      "I51.8",
-     ""
+     "",
+     "TAUSSIG-COND-0042"
     ],
     [
      "Obstruction résiduelle de la voie d'éjection du ventricule droit",
      "15.20.23",
      "Q24.8",
-     ""
+     "",
+     "TAUSSIG-COND-0043"
     ],
     [
      "Dilatation ventriculaire gauche acquise",
      "10.16.76",
      "I51.7",
-     ""
+     "",
+     "TAUSSIG-COND-0044"
     ],
     [
      "Hypertrophie ventriculaire gauche acquise",
      "10.16.77",
      "I51.7",
-     ""
+     "",
+     "TAUSSIG-COND-0045"
     ],
     [
      "Anévrisme ventriculaire gauche acquis",
      "10.16.42",
      "I25.3",
-     "DIAG117"
+     "DIAG117",
+     "TAUSSIG-COND-0046"
     ],
     [
      "Défaillance ventriculaire gauche",
      "10.16.47",
      "I50.1",
-     ""
+     "",
+     "TAUSSIG-COND-0047"
     ],
     [
      "Complication post-procédurale de la voie d'éjection du ventricule gauche",
      "15.21.21",
      "I51.8",
-     ""
+     "",
+     "TAUSSIG-COND-0048"
     ],
     [
      "Sténose sous-aortique acquise",
      "10.16.86",
      "I51.8",
-     "DIAG051"
+     "DIAG051",
+     "TAUSSIG-COND-0049"
     ],
     [
      "Sténose sous-pulmonaire acquise",
      "10.16.88",
      "I51.8",
-     "DIAG166"
+     "DIAG166",
+     "TAUSSIG-COND-0050"
     ],
     [
      "Communication interventriculaire résiduelle (CIV)",
      "15.22.02",
      "Q21.0",
-     ""
+     "",
+     "TAUSSIG-COND-0051"
     ],
     [
      "Cardiomyopathie restrictive",
      "10.10.10",
      "I42.5",
-     "DIAG070 ; DIAG-2023-3"
+     "DIAG070 ; DIAG-2023-3",
+     "TAUSSIG-COND-0052"
     ],
     [
      "Anomalie acquise de l'arbre artériel pulmonaire",
      "10.13.59",
      "I28.8",
-     "DIAG118"
+     "DIAG118",
+     "TAUSSIG-COND-0053"
     ],
     [
      "Sténose post-procédurale du tronc de l'artère pulmonaire",
      "15.32.02",
      "I28.8",
-     "DIAG042"
+     "DIAG042",
+     "TAUSSIG-COND-0054"
     ],
     [
      "Sténose résiduelle de l'artère pulmonaire droite",
      "15.32.23",
      "Q25.6",
-     "DIAG043"
+     "DIAG043",
+     "TAUSSIG-COND-0055"
     ],
     [
      "Sténose résiduelle de l'artère pulmonaire gauche",
      "15.32.43",
      "Q25.6",
-     "DIAG043"
+     "DIAG043",
+     "TAUSSIG-COND-0056"
     ],
     [
      "Hypertension artérielle pulmonaire",
      "10.13.01",
      "I27.0",
-     "DIAG131"
+     "DIAG131",
+     "TAUSSIG-COND-0057"
     ],
     [
      "Embolie pulmonaire",
      "10.13.51",
      "I26.9",
-     "DIAG128"
+     "DIAG128",
+     "TAUSSIG-COND-0058"
     ],
     [
      "Sténose aortique supravalvulaire acquise",
      "10.14.77",
      "I77.1",
-     "DIAG053"
+     "DIAG053",
+     "TAUSSIG-COND-0059"
     ],
     [
      "Dilatation acquise de l'aorte ascendante et/ou de la racine aortique",
      "10.14.82",
      "I71.9",
-     "DIAG102"
+     "DIAG102",
+     "TAUSSIG-COND-0060"
     ],
     [
      "Dilatation de la racine aortique",
      "09.16.13",
      "Q25.4",
-     "DIAG102"
+     "DIAG102",
+     "TAUSSIG-COND-0061"
     ],
     [
      "Dissection aortique",
      "10.14.51",
      "I71.0",
-     "DIAG103"
+     "DIAG103",
+     "TAUSSIG-COND-0062"
     ],
     [
      "Anévrisme aortique",
      "10.14.50",
      "I71.2",
-     "DIAG102"
+     "DIAG102",
+     "TAUSSIG-COND-0063"
     ],
     [
      "Coarctation aortique résiduelle",
      "15.37.05",
      "Q25.1",
-     "DIAG095 ; DIAG-2024-7"
+     "DIAG095 ; DIAG-2024-7",
+     "TAUSSIG-COND-0064"
     ],
     [
      "Complication coronaire post-procédurale",
      "15.41.00",
      "I77.8",
-     "DIAG161"
+     "DIAG161",
+     "TAUSSIG-COND-0065"
     ],
     [
      "Persistance résiduelle du canal artériel (PDA)",
      "15.39.02",
      "Q25.0",
-     "DIAG099"
+     "DIAG099",
+     "TAUSSIG-COND-0066"
     ],
     [
      "Complication liée à un conduit cardiaque",
      "15.55.00",
      "T82.9",
-     "DIAG048"
+     "DIAG048",
+     "TAUSSIG-COND-0067"
     ],
     [
      "Obstruction d'anastomose systémico-pulmonaire",
      "15.56.27",
      "T82.5",
-     "DIAG-2010-2130"
+     "DIAG-2010-2130",
+     "TAUSSIG-COND-0068"
     ],
     [
      "Obstruction partielle d'anastomose systémico-pulmonaire",
      "15.56.01",
      "T82.5",
-     "DIAG-2010-2130"
+     "DIAG-2010-2130",
+     "TAUSSIG-COND-0069"
     ],
     [
      "Obstruction complète d'anastomose systémico-pulmonaire",
      "15.56.02",
      "T82.5",
-     "DIAG-2010-2130"
+     "DIAG-2010-2130",
+     "TAUSSIG-COND-0070"
     ],
     [
      "Défaillance d'autogreffe pulmonaire",
      "15.55.24",
      "T82.8",
-     "DIAG124"
+     "DIAG124",
+     "TAUSSIG-COND-0071"
     ],
     [
      "Circulation de Fontan défaillante",
      "15.90.60",
      "T81.8",
-     ""
+     "",
+     "TAUSSIG-COND-0072"
     ],
     [
      "Épanchement péricardique",
      "10.08.31",
      "I31.3",
-     "DIAG071 ; DIAG-2019-31"
+     "DIAG071 ; DIAG-2019-31",
+     "TAUSSIG-COND-0073"
     ],
     [
      "Complication après transplantation cardiaque ou pulmonaire",
      "15.95.00",
      "I97.9",
-     ""
+     "",
+     "TAUSSIG-COND-0074"
     ],
     [
      "Sténose acquise des veines pulmonaires",
      "10.24.02",
      "I28.8",
-     "DIAG-2019-10"
+     "DIAG-2019-10",
+     "TAUSSIG-COND-0075"
     ],
     [
      "Obstruction d'une veine systémique",
      "10.30.09",
      "I87.1",
-     "DIAG027"
+     "DIAG027",
+     "TAUSSIG-COND-0076"
     ],
     [
      "Collatérale(s) veino-veineuse(s) systémique(s)",
      "04.00.06",
      "Q26.8",
-     "DIAG-2024-5"
+     "DIAG-2024-5",
+     "TAUSSIG-COND-0077"
     ],
     [
      "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)",
      "10.13.74",
      "I77.8",
-     "DIAG-2024-6"
+     "DIAG-2024-6",
+     "TAUSSIG-COND-0078"
     ],
     [
      "Fistules (malformations) artérioveineuses pulmonaires acquises",
      "10.13.57",
      "I28.0",
-     "DIAG127"
+     "DIAG127",
+     "TAUSSIG-COND-0079"
     ],
     [
      "Cardiomyopathie dilatée",
      "10.10.25",
      "I42.0",
-     "DIAG-2023-1"
+     "DIAG-2023-1",
+     "TAUSSIG-COND-0080"
     ],
     [
      "Cardiomyopathie hypertrophique",
      "10.10.20",
      "I42.2",
-     "DIAG-2023-2"
+     "DIAG-2023-2",
+     "TAUSSIG-COND-0081"
     ],
     [
      "Cardiomyopathie hypertrophique obstructive du ventricule gauche",
      "10.10.05",
      "I42.1",
-     "DIAG-2023-4"
+     "DIAG-2023-4",
+     "TAUSSIG-COND-0082"
     ],
     [
      "Myocardite (cardiomyopathie inflammatoire)",
      "10.07.90",
      "I51.4",
-     "DIAG-2019-07"
+     "DIAG-2019-07",
+     "TAUSSIG-COND-0083"
     ],
     [
      "Maladie de Kawasaki",
      "10.09.01",
      "M30.3",
-     "DIAG-2019-26"
+     "DIAG-2019-26",
+     "TAUSSIG-COND-0084"
     ],
     [
      "Infarctus du myocarde",
      "10.18.00",
      "I21.9",
-     "DIAG125"
+     "DIAG125",
+     "TAUSSIG-COND-0085"
     ],
     [
      "État après transplantation cardiaque",
      "10.21.63",
-     "",
-     "DIAG175"
+     "Z94.1",
+     "DIAG175",
+     "TAUSSIG-COND-0086"
     ],
     [
      "Maladie vasculaire pulmonaire irréversible",
      "10.13.00",
      "I27.8",
-     "DIAG167 ; DIAG130"
+     "DIAG167 ; DIAG130",
+     "TAUSSIG-COND-0087"
     ],
     [
      "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)",
      "10.13.08",
      "I27.8",
-     "DIAG130"
+     "DIAG130",
+     "TAUSSIG-COND-0088"
     ],
     [
      "Trouble du rythme cardiaque",
      "11.00.00",
      "I49.9",
-     "DIAG109"
+     "DIAG109",
+     "TAUSSIG-COND-0089"
     ],
     [
      "Fibrillation atriale",
      "11.03.08",
      "I48",
-     "DIAG-2019-14"
+     "DIAG-2019-14",
+     "TAUSSIG-COND-0090"
     ],
     [
      "Flutter atrial",
      "11.03.07",
      "I48",
-     "DIAG-2019-15"
+     "DIAG-2019-15",
+     "TAUSSIG-COND-0091"
     ],
     [
      "Trouble du rythme atrial",
      "11.03.09",
      "I49.8",
-     "DIAG-2019-16"
+     "DIAG-2019-16",
+     "TAUSSIG-COND-0092"
     ],
     [
      "Trouble du rythme de la jonction atrioventriculaire",
      "11.04.00",
      "I49.8",
-     "DIAG-2010-2050"
+     "DIAG-2010-2050",
+     "TAUSSIG-COND-0093"
     ],
     [
      "Trouble du rythme ventriculaire",
      "11.05.00",
      "I49.8",
-     "DIAG-2010-2060"
+     "DIAG-2010-2060",
+     "TAUSSIG-COND-0094"
     ],
     [
      "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)",
      "11.07.01",
      "I45.6",
-     "DIAG-2019-13"
+     "DIAG-2019-13",
+     "TAUSSIG-COND-0095"
     ],
     [
      "Bloc atrioventriculaire",
      "11.06.38",
      "I44.3",
-     "DIAG151"
+     "DIAG151",
+     "TAUSSIG-COND-0096"
     ],
     [
      "Bloc atrioventriculaire complet acquis",
      "11.06.10",
      "I44.2",
-     "DIAG110"
+     "DIAG110",
+     "TAUSSIG-COND-0097"
     ],
     [
      "Indication de remplacement programmé d'un stimulateur cardiaque",
      "11.12.61",
-     "T82.9",
-     "DIAG113"
+     "Z45.0",
+     "DIAG113",
+     "TAUSSIG-COND-0098"
     ],
     [
      "Entéropathie exsudative post-procédurale",
      "15.82.33",
      "K90.4 / Y83.8",
-     "DIAG-2019-09"
+     "DIAG-2019-09",
+     "TAUSSIG-COND-0099"
     ],
     [
      "Bronchite plastique post-procédurale",
      "15.81.01",
      "J98.0 / J95.8",
-     "DIAG-2019-08"
+     "DIAG-2019-08",
+     "TAUSSIG-COND-0100"
     ],
     [
      "Chylothorax",
      "10.08.16",
      "J94.0",
-     "DIAG138"
+     "DIAG138",
+     "TAUSSIG-COND-0101"
     ],
     [
      "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur",
      "15.51.47",
      "T82.8",
-     "DIAG-2019-18 ; DIAG-2019-21"
+     "DIAG-2019-18 ; DIAG-2019-21",
+     "TAUSSIG-COND-0102"
     ],
     [
      "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur",
      "15.51.50",
      "T82.5",
-     "DIAG-2019-19 ; DIAG-2019-22"
+     "DIAG-2019-19 ; DIAG-2019-22",
+     "TAUSSIG-COND-0103"
     ],
     [
      "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur",
      "15.50.03",
      "T81.2 / Y60.5",
-     "DIAG-2019-20 ; DIAG-2019-23"
+     "DIAG-2019-20 ; DIAG-2019-23",
+     "TAUSSIG-COND-0104"
     ],
     [
      "Corps étranger intracardiaque post-procédural",
      "15.80.17",
-     "T81.8",
-     "DIAG-2019-24"
+     "T81.5",
+     "DIAG-2019-24",
+     "TAUSSIG-COND-0105"
     ],
     [
      "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
      "15.50.37",
      "T82.8",
-     "DIAG-2019-25"
+     "DIAG-2019-25",
+     "TAUSSIG-COND-0106"
     ],
     [
      "Hémorragie post-procédurale",
      "15.02.00",
      "T81.0",
-     "DIAG-2010-2070"
+     "DIAG-2010-2070",
+     "TAUSSIG-COND-0107"
     ]
    ]
   },
@@ -5404,7 +5798,9 @@ window.TAUSSIG_DICT = {
     "IPCCC / EPCC",
     "CIM-10",
     "SNOMED",
-    "ECHSA"
+    "ECHSA",
+    "Code TAUSSIG",
+    "Statut"
    ],
    "lignes": [
     [
@@ -5412,301 +5808,387 @@ window.TAUSSIG_DICT = {
      "15.90.03",
      "",
      "",
-     ""
+     "",
+     "TAUSSIG-AE-0001",
+     "actif"
     ],
     [
-     "complication liée à une intervention",
+     "Complication liée à une intervention",
      "15.90.14",
      "T81.8",
      "116224001",
-     "CP-2010-900 ; CP-2019-IC-10"
+     "CP-2010-900 ; CP-2019-IC-10",
+     "TAUSSIG-AE-0002",
+     "actif"
     ],
     [
-     "arrêt cardiaque",
+     "Arrêt cardiaque pendant l'intervention",
      "15.00.01",
      "T81.8",
      "410429000",
-     "CP2"
+     "CP2",
+     "TAUSSIG-AE-0003",
+     "actif"
     ],
     [
-     "fibrillation atriale",
+     "Fibrillation atriale",
      "11.03.08",
      "I48",
      "49436004",
-     "CP6 ; CP-2019-IC-01"
+     "CP6 ; CP-2019-IC-01",
+     "TAUSSIG-AE-0004",
+     "actif"
     ],
     [
-     "flutter auriculaire",
+     "Flutter atrial",
      "11.03.07",
      "I48",
      "5370000",
-     "CP6 ; CP-2019-IC-02"
+     "CP6 ; CP-2019-IC-02",
+     "TAUSSIG-AE-0005",
+     "actif"
     ],
     [
-     "Postoperative cardiac arrhythmia",
+     "Trouble du rythme post-procédural",
      "11.00.00",
      "I49.9",
      "1230406008",
-     "CP6 ; CP-2019-IC-03"
+     "CP6 ; CP-2019-IC-03",
+     "TAUSSIG-AE-0006",
+     "actif"
     ],
     [
-     "bloc atrioventriculaire complet",
+     "Bloc atrioventriculaire complet acquis",
      "11.06.10",
      "I44.2",
      "27885002",
-     "CP6 ; CP-2019-IC-04 ; CP-2019-IC-05"
+     "CP6 ; CP-2019-IC-04 ; CP-2019-IC-05",
+     "TAUSSIG-AE-0007",
+     "actif"
     ],
     [
-     "tachycardie ectopique jonctionnelle",
+     "Tachycardie jonctionnelle ectopique post-procédurale",
      "11.04.12",
      "I97.1",
      "251155001",
-     "CP6 ; CP-2019-IC-06"
+     "CP6 ; CP-2019-IC-06",
+     "TAUSSIG-AE-0008",
+     "actif"
     ],
     [
-     "tachycardie ventriculaire",
+     "Tachycardie ventriculaire",
      "11.05.06",
      "I47.2",
      "25569003",
-     "CP6 ; CP-2019-IC-08"
+     "CP6 ; CP-2019-IC-08",
+     "TAUSSIG-AE-0009",
+     "actif"
     ],
     [
      "Arythmie nécessitant l'implantation d'un stimulateur",
      "15.60.06",
      "I97.1",
      "",
-     "CP5 ; CP-2019-IC-07"
+     "CP5 ; CP-2019-IC-07",
+     "TAUSSIG-AE-0010",
+     "actif"
     ],
     [
-     "perforation d'une paroi du cœur due à une procédure",
+     "Perforation d'une cavité cardiaque ou d'un vaisseau pendant le cathétérisme",
      "15.50.03",
      "T81.2 / Y60.5",
      "1162507002",
-     "CP-2019-IC-13 ; CP-2019-IC-32"
+     "CP-2019-IC-13 ; CP-2019-IC-32",
+     "TAUSSIG-AE-0011",
+     "actif"
     ],
     [
-     "Postoperative cardiac tamponade",
+     "Tamponnade cardiaque post-procédurale",
      "15.83.14",
      "I31.9",
      "1230407004",
-     "CP10 ; CP-2019-IC-33"
+     "CP10 ; CP-2019-IC-33",
+     "TAUSSIG-AE-0012",
+     "actif"
     ],
     [
-     "décès intra-opératoire",
+     "Décès peropératoire",
      "12.33.31",
      "",
      "52136000",
-     "CP-2010-350 ; CP-2019-IC-34"
+     "CP-2010-350 ; CP-2019-IC-34",
+     "TAUSSIG-AE-0013",
+     "actif"
     ],
     [
-     "communication interatriale résiduelle survenant après une intervention",
+     "Communication interatriale résiduelle ou récidivante post-procédurale",
      "15.10.72",
      "Q21.1",
      "735579001",
-     "CP-2019-IC-16"
+     "CP-2019-IC-16",
+     "TAUSSIG-AE-0014",
+     "actif"
     ],
     [
-     "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+     "Embolisation d'un dispositif cardiovasculaire pendant le cathétérisme",
      "15.51.47",
      "T82.8",
      "473163005",
-     "CP-2019-IC-11"
+     "CP-2019-IC-11",
+     "TAUSSIG-AE-0015",
+     "actif"
     ],
     [
      "Dysfonction de dispositif (complication de cathétérisme)",
      "15.51.50",
      "T82.5",
      "",
-     "CP-2019-IC-12"
+     "CP-2019-IC-12",
+     "TAUSSIG-AE-0016",
+     "actif"
     ],
     [
-     "corps étranger au niveau du cœur",
+     "Corps étranger intracardiaque post-procédural",
      "15.80.17",
-     "T81.8",
+     "T81.5",
      "282729004",
-     "CP-2019-IC-14"
+     "CP-2019-IC-14",
+     "TAUSSIG-AE-0017",
+     "actif"
     ],
     [
-     "corps étranger",
+     "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
      "15.50.37",
      "T82.8",
      "125670008",
-     "CP-2019-IC-15"
+     "CP-2019-IC-15",
+     "TAUSSIG-AE-0018",
+     "actif"
     ],
     [
-     "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
+     "Perméabilité résiduelle du canal artériel post-procédurale",
      "15.39.05",
-     "I77.8",
+     "Q25.0",
      "871596002",
-     "CP-2019-IC-18"
+     "CP-2019-IC-18",
+     "TAUSSIG-AE-0019",
+     "actif"
     ],
     [
-     "communication interventriculaire résiduelle",
+     "Communication interventriculaire résiduelle ou récidivante post-procédurale",
      "15.22.13",
      "Q21.0",
      "447941008",
-     "CP-2019-IC-17"
+     "CP-2019-IC-17",
+     "TAUSSIG-AE-0020",
+     "actif"
     ],
     [
-     "communication interatriale résiduelle",
+     "Communication interatriale résiduelle",
      "15.10.63",
      "Q21.1",
      "449351005",
-     ""
+     "",
+     "TAUSSIG-AE-0021",
+     "actif"
     ],
     [
-     "régurgitation de la valve aortique",
+     "Régurgitation aortique après lésion valvulaire pendant le cathétérisme",
      "15.50.20",
      "T81.2 / Y60.5",
      "60234000",
-     "CP-2019-IC-20"
+     "CP-2019-IC-20",
+     "TAUSSIG-AE-0022",
+     "actif"
     ],
     [
-     "régurgitation de la valve mitrale",
+     "Régurgitation mitrale après lésion valvulaire pendant le cathétérisme",
      "15.50.20",
      "T81.2 / Y60.5",
      "48724000",
-     "CP-2019-IC-22"
+     "CP-2019-IC-22",
+     "TAUSSIG-AE-0023",
+     "actif"
     ],
     [
-     "dysfonction de la prothèse valvulaire cardiaque",
+     "Dysfonction de prothèse valvulaire après lésion pendant le cathétérisme",
      "15.50.20",
      "T81.2 / Y60.5",
      "271984008",
-     "CP-2019-IC-19"
+     "CP-2019-IC-19",
+     "TAUSSIG-AE-0024",
+     "actif"
     ],
     [
-     "régurgitation de la valve pulmonaire",
+     "Régurgitation pulmonaire après lésion valvulaire pendant le cathétérisme",
      "15.50.20",
      "T81.2 / Y60.5",
      "91434003",
-     "CP-2019-IC-21"
+     "CP-2019-IC-21",
+     "TAUSSIG-AE-0025",
+     "actif"
     ],
     [
-     "régurgitation de la valvule tricuspide",
+     "Régurgitation tricuspide après lésion valvulaire pendant le cathétérisme",
      "15.50.20",
      "T81.2 / Y60.5",
      "111287006",
-     "CP-2019-IC-23"
+     "CP-2019-IC-23",
+     "TAUSSIG-AE-0026",
+     "actif"
     ],
     [
-     "perte du pouls distal",
+     "Perte du pouls après cathétérisme",
      "15.50.11",
      "T81.7 / Y84.0",
      "414617007",
-     ""
+     "",
+     "TAUSSIG-AE-0027",
+     "actif"
     ],
     [
-     "pseudoanévrisme au site d'abord",
+     "Pseudoanévrisme au site d'abord",
      "15.60.23",
-     "T81.8",
+     "T81.7",
      "1162761001",
-     "CP-2019-IC-25"
+     "CP-2019-IC-25",
+     "TAUSSIG-AE-0028",
+     "actif"
     ],
     [
-     "dissection artérielle",
+     "Dissection artérielle au site d'abord",
      "15.50.19",
      "T81.7 / Y84.0",
      "710864009",
-     "CP-2019-IC-30"
+     "CP-2019-IC-30",
+     "TAUSSIG-AE-0029",
+     "actif"
     ],
     [
-     "extravasation de produit de contraste intraveineux",
+     "Extravasation de produit de contraste",
      "15.50.19",
      "T81.7 / Y84.0",
      "427924001",
-     "CP-2019-IC-29"
+     "CP-2019-IC-29",
+     "TAUSSIG-AE-0030",
+     "actif"
     ],
     [
-     "fistule artérioveineuse",
+     "Fistule artérioveineuse au site d'abord",
      "15.50.19",
      "T81.7 / Y84.0",
      "439470001",
-     "CP-2019-IC-31"
+     "CP-2019-IC-31",
+     "TAUSSIG-AE-0031",
+     "actif"
     ],
     [
-     "perforation d'une artère",
+     "Perforation artérielle au site d'abord",
      "15.50.19",
      "T81.7 / Y84.0",
      "307312008",
-     "CP-2019-IC-27"
+     "CP-2019-IC-27",
+     "TAUSSIG-AE-0032",
+     "actif"
     ],
     [
      "Problème d'équipement pendant le cathétérisme",
      "15.50.30",
      "T82.5",
      "",
-     ""
+     "",
+     "TAUSSIG-AE-0033",
+     "actif"
     ],
     [
-     "migration d'endoprothèse vasculaire",
+     "Embolisation d'un stent",
      "15.50.71",
      "T82.8",
      "473125002",
-     ""
+     "",
+     "TAUSSIG-AE-0034",
+     "actif"
     ],
     [
-     "vaisseau sanguin déchiré",
+     "Rupture d'un conduit ou d'un vaisseau après implantation de stent",
      "15.50.78",
      "T82.8",
      "248707009",
-     ""
+     "",
+     "TAUSSIG-AE-0035",
+     "actif"
     ],
     [
      "Compression coronaire après implantation de dispositif transluminal",
      "15.50.61",
      "T82.5",
      "",
-     ""
+     "",
+     "TAUSSIG-AE-0036",
+     "actif"
     ],
     [
-     "migration d'endoprothèse vasculaire",
+     "Stent laissé déployé en position non prévue après migration ou embolisation",
      "15.50.91",
      "T82.5",
      "473125002",
-     ""
+     "",
+     "TAUSSIG-AE-0037",
+     "actif"
     ],
     [
      "Dysfonction de dispositif pendant le cathétérisme",
      "15.51.50",
      "T82.5",
      "",
-     ""
+     "",
+     "TAUSSIG-AE-0038",
+     "retiré, remplacé par TAUSSIG-AE-0016 — doublon : même code IPCCC 15.51.50 (décision A6)"
     ],
     [
-     "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+     "Embolisation (délogement) d'un coil introduit par cathéter",
      "15.50.65",
      "T82.8",
      "473163005",
-     "CP-2019-IC-11"
+     "CP-2019-IC-11",
+     "TAUSSIG-AE-0039",
+     "actif"
     ],
     [
      "Thrombose vasculaire ou de conduit post-procédurale",
      "15.00.21",
-     "T81.0",
+     "T81.7",
      "439127006",
-     "CP-2019-IC-24"
+     "CP-2019-IC-24",
+     "TAUSSIG-AE-0040",
+     "actif"
     ],
     [
      "Hémorragie post-procédurale",
      "15.02.00",
      "T81.0",
      "131148009",
-     "CP-2019-IC-26"
+     "CP-2019-IC-26",
+     "TAUSSIG-AE-0041",
+     "actif"
     ],
     [
      "Anévrisme aortique post-procédural",
      "15.37.80",
      "I71.2 / Y83.8",
      "737158007",
-     "CP-2019-IC-28"
+     "CP-2019-IC-28",
+     "TAUSSIG-AE-0042",
+     "actif"
     ],
     [
      "Anévrisme de l'aorte au site de coarctation après intervention",
      "15.37.07",
      "I71.2 / Y83.8",
      "871661008",
-     "CP-2019-IC-28"
+     "CP-2019-IC-28",
+     "TAUSSIG-AE-0043",
+     "actif"
     ]
    ]
   },
@@ -6423,8 +6905,8 @@ window.TAUSSIG_DICT = {
  },
  "examples": {},
  "meta": {
-  "nbElements": 148,
-  "nbEntities": 20,
+  "nbElements": 160,
+  "nbEntities": 21,
   "nbValuesets": 10,
   "nbExamples": 0
  }

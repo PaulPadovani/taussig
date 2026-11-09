@@ -1,4 +1,4 @@
-# Mode ventilatoire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Mode ventilatoire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Mode ventilatoire (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-ventilationType
   "resourceType" : "StructureDefinition",
   "id" : "ventilationType",
   "url" : "https://taussig/fhir/StructureDefinition/ventilationType",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "VentilationType",
   "title" : "Mode ventilatoire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Mode de ventilation pendant l'anesthésie.",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# TAUSSIG — Geste interventionnel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Geste interventionnel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Geste interventionnel ( Expérimental ) 
 
@@ -66,12 +66,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-interve
   "resourceType" : "StructureDefinition",
   "id" : "taussig-interventional-gesture",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-interventional-gesture",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigInterventionalGesture",
   "title" : "TAUSSIG — Geste interventionnel",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Geste interventionnel ciblé (unité de l'effet pre/post). Codé par un concept TAUSSIG (188 concepts, Short List IPCCC du cathétérisme) ; IPCCC, SNOMED (interop), CCAM et ECHSA en sont déduits par ConceptMap ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome ; rang dans le cathétérisme.",
   "jurisdiction" : [{
@@ -371,6 +371,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-interve
     },
     {
       "id" : "Procedure.focalDevice.action",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.focalDevice.action",
       "label" : "Action sur l'implant (pose, redilatation…)",
       "short" : "Action sur l'implant (pose, redilatation…)",

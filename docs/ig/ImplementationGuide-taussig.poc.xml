@@ -8,12 +8,12 @@
 </div></div>
   </text>
   <url value="https://taussig/fhir/ImplementationGuide/taussig.poc"/>
-  <version value="0.8.0"/>
+  <version value="0.8.1"/>
   <name value="TAUSSIGPOC"/>
   <title value="TAUSSIG — Implementation Guide (POC Cathétérisme)"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-11-09T08:39:58+01:00"/>
+  <date value="2026-11-09T15:30:29+01:00"/>
   <publisher value="Projet TAUSSIG"/>
   <description value="Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG."/>
   <jurisdiction>
@@ -1013,6 +1013,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/taussig-adverse-event"/>
+      </reference>
+      <name value="TAUSSIG — Complications"/>
+      <description value="Terminologie d'interface TAUSSIG : 43 concepts (complications) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes IPCCC, CIM-10, SNOMED, ECHSA sont déduits par les ConceptMaps taussig-adverse-event-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1031,6 +1042,50 @@
       </reference>
       <name value="TAUSSIG — Complications péri-procédurales (IPCCC)"/>
       <description value="Axe IPCCC des événements indésirables du cathétérisme congénital retenus pour la POC. La granularité IPCCC est plus grossière que la curation française : plusieurs libellés cliniques peuvent partager un même code (regroupés ici sous le libellé IPCCC officiel)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-adverse-event-to-icd10"/>
+      </reference>
+      <name value="TAUSSIG — Complications vers CIM-10"/>
+      <description value="Correspondance des concepts TAUSSIG (complications) vers CIM-10. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-adverse-event-to-echsa"/>
+      </reference>
+      <name value="TAUSSIG — Complications vers ECHSA"/>
+      <description value="Correspondance des concepts TAUSSIG (complications) vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-adverse-event-to-ipccc"/>
+      </reference>
+      <name value="TAUSSIG — Complications vers IPCCC"/>
+      <description value="Correspondance des concepts TAUSSIG (complications) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-adverse-event-to-snomed"/>
+      </reference>
+      <name value="TAUSSIG — Complications vers SNOMED"/>
+      <description value="Correspondance des concepts TAUSSIG (complications) vers SNOMED. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1063,7 +1118,7 @@
         <reference value="StructureDefinition/taussig-cardiac-condition-profile"/>
       </reference>
       <name value="TAUSSIG — Condition cardiaque évolutive"/>
-      <description value="Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance."/>
+      <description value="Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Concept TAUSSIG saisi (taussig-condition) ; IPCCC, CIM-10 et ECHSA en sont déduits (0.8.1). Type (residual/acquired/post_surgical) = choix clinicien d'instance."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1086,6 +1141,50 @@
       </reference>
       <name value="TAUSSIG — Condition de mesure -&gt; SNOMED"/>
       <description value="Représentation FHIR « TAUSSIG — Condition de mesure -&gt; SNOMED » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/taussig-condition"/>
+      </reference>
+      <name value="TAUSSIG — Conditions cardiaques évolutives"/>
+      <description value="Terminologie d'interface TAUSSIG : 107 concepts (conditions cardiaques évolutives) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes IPCCC, CIM-10, ECHSA sont déduits par les ConceptMaps taussig-condition-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-condition-to-icd10"/>
+      </reference>
+      <name value="TAUSSIG — Conditions cardiaques évolutives vers CIM-10"/>
+      <description value="Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers CIM-10. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-condition-to-echsa"/>
+      </reference>
+      <name value="TAUSSIG — Conditions cardiaques évolutives vers ECHSA"/>
+      <description value="Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-condition-to-ipccc"/>
+      </reference>
+      <name value="TAUSSIG — Conditions cardiaques évolutives vers IPCCC"/>
+      <description value="Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1118,7 +1217,62 @@
         <reference value="StructureDefinition/taussig-cardiac-diagnosis"/>
       </reference>
       <name value="TAUSSIG — Diagnostic cardiaque congénital"/>
-      <description value="Diagnostic congénital (substrat figé). Double codage CIM-11 (classification, primaire) + IPCCC (précision clinique) ; CIM-10 dérivé, ECHSA optionnel. Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded."/>
+      <description value="Diagnostic congénital (substrat figé). Concept TAUSSIG saisi (taussig-diagnosis) ; CIM-11, IPCCC, CIM-10 et ECHSA en sont déduits par les ConceptMaps taussig-diagnosis-to-* (0.8.1). Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/taussig-diagnosis"/>
+      </reference>
+      <name value="TAUSSIG — Diagnostics cardiaques congénitaux"/>
+      <description value="Terminologie d'interface TAUSSIG : 109 concepts (diagnostics cardiaques congénitaux) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes ICD-11, IPCCC, CIM-10, ECHSA sont déduits par les ConceptMaps taussig-diagnosis-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-diagnosis-to-icd10"/>
+      </reference>
+      <name value="TAUSSIG — Diagnostics cardiaques congénitaux vers CIM-10"/>
+      <description value="Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers CIM-10. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-diagnosis-to-echsa"/>
+      </reference>
+      <name value="TAUSSIG — Diagnostics cardiaques congénitaux vers ECHSA"/>
+      <description value="Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-diagnosis-to-icd11"/>
+      </reference>
+      <name value="TAUSSIG — Diagnostics cardiaques congénitaux vers ICD-11"/>
+      <description value="Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers ICD-11. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-diagnosis-to-ipccc"/>
+      </reference>
+      <name value="TAUSSIG — Diagnostics cardiaques congénitaux vers IPCCC"/>
+      <description value="Correspondance des concepts TAUSSIG (diagnostics cardiaques congénitaux) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1196,17 +1350,6 @@
       </reference>
       <name value="TAUSSIG — Exposition et contraste de procédure"/>
       <description value="Temps de fluoroscopie, produit dose-surface et volume de contraste portés par des Observations quantitatives liées au cathétérisme."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/genetic-syndrome-to-icd11"/>
-      </reference>
-      <name value="TAUSSIG — GeneticSyndromeToIcd11"/>
-      <description value="Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1372,6 +1515,50 @@
       </reference>
       <name value="TAUSSIG — Latéralité (gauche/droite)"/>
       <description value="Côté anatomique de l'abord vasculaire (SNOMED CT)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/taussig-adverse-event"/>
+      </reference>
+      <name value="TAUSSIG — Liste des complications"/>
+      <description value="Les 42 concepts TAUSSIG actifs (complications)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/taussig-condition"/>
+      </reference>
+      <name value="TAUSSIG — Liste des conditions cardiaques évolutives"/>
+      <description value="Les 107 concepts TAUSSIG actifs (conditions cardiaques évolutives)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/taussig-condition-ipccc"/>
+      </reference>
+      <name value="TAUSSIG — Liste des conditions évolutives (IPCCC)"/>
+      <description value="Les 94 codes IPCCC de la liste TAUSSIG des conditions cardiaques évolutives (décision B7)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/taussig-diagnosis"/>
+      </reference>
+      <name value="TAUSSIG — Liste des diagnostics cardiaques congénitaux"/>
+      <description value="Les 109 concepts TAUSSIG actifs (diagnostics cardiaques congénitaux)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1841,6 +2028,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/taussig-condition-clinical-status-vs"/>
+      </reference>
+      <name value="TAUSSIG — Statut clinique d'une condition évolutive"/>
+      <description value="Statut clinique d'une condition cardiaque évolutive au moment du cathétérisme : active ou résolue (décision B1). Distinct de l'état d'annotation « explicitement absent », qui signifie que la condition n'existe pas."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/puncture-success-vs"/>
       </reference>
       <name value="TAUSSIG — Succès de la ponction vasculaire"/>
@@ -1877,7 +2075,7 @@
         <reference value="StructureDefinition/taussig-genetic-syndrome-profile"/>
       </reference>
       <name value="TAUSSIG — Syndrome génétique (covariable de contexte)"/>
-      <description value="Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé."/>
+      <description value="Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). OrphaCode saisi ; CIM-11, CIM-10 et ECHSA déduits par les ConceptMaps genetic-syndrome-to-* (relations Orphanet validées)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1889,6 +2087,39 @@
       </reference>
       <name value="TAUSSIG — Syndromes génétiques (Orphanet)"/>
       <description value="Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/genetic-syndrome-to-icd10"/>
+      </reference>
+      <name value="TAUSSIG — Syndromes génétiques (Orphanet) vers CIM-10"/>
+      <description value="Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers CIM-10. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4). Relations CIM validées par Orphanet (Orphadata, produit 1 FR, 2025-12-09, CC BY 4.0) : E → equivalent, NTBT → wider, BTNT → narrower."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/genetic-syndrome-to-echsa"/>
+      </reference>
+      <name value="TAUSSIG — Syndromes génétiques (Orphanet) vers ECHSA"/>
+      <description value="Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers ECHSA. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/genetic-syndrome-to-icd11"/>
+      </reference>
+      <name value="TAUSSIG — Syndromes génétiques (Orphanet) vers ICD-11"/>
+      <description value="Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers ICD-11. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4). Relations CIM validées par Orphanet (Orphadata, produit 1 FR, 2025-12-09, CC BY 4.0) : E → equivalent, NTBT → wider, BTNT → narrower."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2086,7 +2317,7 @@
         <reference value="StructureDefinition/taussig-adverse-event"/>
       </reference>
       <name value="TAUSSIG — Événement indésirable"/>
-      <description value="Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution &amp; prise en charge en extensions (réalisation R4)."/>
+      <description value="Complication péri-procédurale. Concept TAUSSIG saisi (taussig-adverse-event) ; IPCCC, CIM-10, SNOMED et ECHSA en sont déduits (0.8.1) ; gravité 1-5 selon échelle validée (extensions) ; attribution &amp; prise en charge en extensions (réalisation R4)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

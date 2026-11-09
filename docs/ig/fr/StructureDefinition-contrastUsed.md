@@ -1,4 +1,4 @@
-# Produit de contraste utilisé - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Produit de contraste utilisé - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Produit de contraste utilisé (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-contrastUsed.cs
   "resourceType" : "StructureDefinition",
   "id" : "contrastUsed",
   "url" : "https://taussig/fhir/StructureDefinition/contrastUsed",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ContrastUsed",
   "title" : "Produit de contraste utilisé",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Indique si un produit de contraste iodé a été injecté pendant le cathétérisme.",
   "jurisdiction" : [{

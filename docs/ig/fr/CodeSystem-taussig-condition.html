@@ -1,0 +1,653 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TAUSSIG — Conditions cardiaques évolutives - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.114"}
+    h3,h4,h5,h6{--heading-prefix:"4.114"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.8.1 - trial-use
+
+
+
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — Conditions cardiaques évolutives</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-codesystem -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Contenu narratif</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-taussig-condition.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-taussig-condition.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-taussig-condition.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CodeSystem: TAUSSIG — Conditions cardiaques évolutives
+(Expérimental)
+  </h2>
+
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/CodeSystem/taussig-condition<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/CodeSystem/taussig-condition"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.8.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/CodeSystem/taussig-condition|0.8.1"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            à date du 
+2026-11-09
+
+          
+        
+      </td>
+
+
+
+      <td><i>Nom computable</i>: <span style="font-family: monospace;">TaussigCondition</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<div data-fhir="generated">
+<p>Terminologie d'interface TAUSSIG : 107 concepts (conditions cardiaques évolutives) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes IPCCC, CIM-10, ECHSA sont déduits par les ConceptMaps taussig-condition-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3).</p>
+
+</div>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :</p>
+
+  
+<ul>
+ <li><a href="ValueSet-taussig-condition.html">TAUSSIG — Liste des conditions cardiaques évolutives</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" data-fhir="generated"><p class="res-header-id"></p><a name="taussig-condition"> </a><a name="hctaussig-condition"> </a>
+<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><p><b>Propriétés</b></p><p><b>Cette terminologie de référence (CodeSystem) définit les propriétés suivantes pour ses concepts</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Nom</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>ipccc-origin</td>
+<td>ipccc-origin</td>
+<td>Coding</td>
+<td>Code IPCCC dont le concept est issu.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/taussig-condition</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>ipccc-origin</b></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0001<a name="taussig-condition-TAUSSIG-COND-0001"> </a></td>
+<td>Création/agrandissement de communication interatriale</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0002<a name="taussig-condition-TAUSSIG-COND-0002"> </a></td>
+<td>Cerclage de l'artère pulmonaire</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0003<a name="taussig-condition-TAUSSIG-COND-0003"> </a></td>
+<td>Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0004<a name="taussig-condition-TAUSSIG-COND-0004"> </a></td>
+<td>Intervention de Norwood</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0005<a name="taussig-condition-TAUSSIG-COND-0005"> </a></td>
+<td>Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0006<a name="taussig-condition-TAUSSIG-COND-0006"> </a></td>
+<td>Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0007<a name="taussig-condition-TAUSSIG-COND-0007"> </a></td>
+<td>Anastomose cavopulmonaire bidirectionnelle bilatérale</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0008<a name="taussig-condition-TAUSSIG-COND-0008"> </a></td>
+<td>Fontan (TCPC), conduit extracardiaque, fenestré</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0009<a name="taussig-condition-TAUSSIG-COND-0009"> </a></td>
+<td>Fontan (TCPC), conduit extracardiaque, non fenestré</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0010<a name="taussig-condition-TAUSSIG-COND-0010"> </a></td>
+<td>Fontan (TCPC), tunnel latéral, fenestré</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0011<a name="taussig-condition-TAUSSIG-COND-0011"> </a></td>
+<td>Fontan (TCPC), tunnel latéral, non fenestré</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0012<a name="taussig-condition-TAUSSIG-COND-0012"> </a></td>
+<td>Réparation à un ventricule et demi</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0013<a name="taussig-condition-TAUSSIG-COND-0013"> </a></td>
+<td>Palliation, autre</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0014<a name="taussig-condition-TAUSSIG-COND-0014"> </a></td>
+<td>Endocardite infectieuse</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.06.01}">Infective endocarditis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0015<a name="taussig-condition-TAUSSIG-COND-0015"> </a></td>
+<td>Anomalie acquise de la veine cave supérieure</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.31.01}">Acquired superior caval vein (SVC) abnormality</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0016<a name="taussig-condition-TAUSSIG-COND-0016"> </a></td>
+<td>Anomalie acquise de la veine cave inférieure</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.31.21}">Acquired inferior caval vein (IVC) abnormality</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0017<a name="taussig-condition-TAUSSIG-COND-0017"> </a></td>
+<td>Anomalie acquise du sinus coronaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.30.16}">Acquired coronary sinus abnormality</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0018<a name="taussig-condition-TAUSSIG-COND-0018"> </a></td>
+<td>Anomalie acquise des veines pulmonaires</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.24.00}">Acquired pulmonary venous abnormality</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0019<a name="taussig-condition-TAUSSIG-COND-0019"> </a></td>
+<td>Anomalie acquise de l'oreillette droite</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.10.10}">Acquired right atrial abnormality</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0020<a name="taussig-condition-TAUSSIG-COND-0020"> </a></td>
+<td>Anomalie acquise de l'oreillette gauche</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.10.20}">Acquired left atrial abnormality</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0021<a name="taussig-condition-TAUSSIG-COND-0021"> </a></td>
+<td>Communication interatriale résiduelle (CIA)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.10.63}">Residual interatrial communication ('ASD')</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0022<a name="taussig-condition-TAUSSIG-COND-0022"> </a></td>
+<td>Régurgitation tricuspide résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.11.03}">Residual tricuspid regurgitation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0023<a name="taussig-condition-TAUSSIG-COND-0023"> </a></td>
+<td>Sténose mitrale résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.12.01}">Residual mitral stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0024<a name="taussig-condition-TAUSSIG-COND-0024"> </a></td>
+<td>Régurgitation mitrale résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.12.03}">Residual mitral regurgitation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0025<a name="taussig-condition-TAUSSIG-COND-0025"> </a></td>
+<td>Régurgitation troncale résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.25.03}">Residual truncal regurgitation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0026<a name="taussig-condition-TAUSSIG-COND-0026"> </a></td>
+<td>Sténose valvulaire pulmonaire résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.30.01}">Residual pulmonary valvar stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0027<a name="taussig-condition-TAUSSIG-COND-0027"> </a></td>
+<td>Régurgitation pulmonaire résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.30.03}">Residual pulmonary regurgitation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0028<a name="taussig-condition-TAUSSIG-COND-0028"> </a></td>
+<td>Sténose de la néovalve pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.30.09}">Neopulmonary valvar stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0029<a name="taussig-condition-TAUSSIG-COND-0029"> </a></td>
+<td>Régurgitation de la néovalve pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.30.10}">Neopulmonary valvar regurgitation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0030<a name="taussig-condition-TAUSSIG-COND-0030"> </a></td>
+<td>Sténose valvulaire aortique résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.35.01}">Residual aortic valvar stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0031<a name="taussig-condition-TAUSSIG-COND-0031"> </a></td>
+<td>Régurgitation aortique résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.35.03}">Residual aortic regurgitation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0032<a name="taussig-condition-TAUSSIG-COND-0032"> </a></td>
+<td>Sténose de la néovalve aortique d'origine pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.35.09}">Stenosis of the neo-aortic valve of pulmonary origin</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0033<a name="taussig-condition-TAUSSIG-COND-0033"> </a></td>
+<td>Régurgitation de la néovalve aortique d'origine pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.35.10}">Regurgitation of the neo-aortic valve of pulmonary origin</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0034<a name="taussig-condition-TAUSSIG-COND-0034"> </a></td>
+<td>Sténose acquise de la néovalve aortique d'origine troncale</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.25.12}">Acquired stenosis of the neo-aortic valve of truncal origin</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0035<a name="taussig-condition-TAUSSIG-COND-0035"> </a></td>
+<td>Régurgitation acquise de la néovalve aortique d'origine troncale</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.25.13}">Acquired regurgitation of the neo-aortic valve of truncal origin</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0036<a name="taussig-condition-TAUSSIG-COND-0036"> </a></td>
+<td>Composante ventriculaire résiduelle de canal atrioventriculaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.16.02}">Residual ventricular component of atrioventricular septal defect</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0037<a name="taussig-condition-TAUSSIG-COND-0037"> </a></td>
+<td>Régurgitation résiduelle de la valve atrioventriculaire commune</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.13.02}">Residual common atrioventricular valvar regurgitation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0038<a name="taussig-condition-TAUSSIG-COND-0038"> </a></td>
+<td>Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.34.56}">Acquired stenosis of the common atrioventricular valve in biventricular connections</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0039<a name="taussig-condition-TAUSSIG-COND-0039"> </a></td>
+<td>Dilatation ventriculaire droite acquise</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.22}">Acquired right ventricular dilation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0040<a name="taussig-condition-TAUSSIG-COND-0040"> </a></td>
+<td>Hypertrophie ventriculaire droite acquise</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.23}">Acquired right ventricular hypertrophy</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0041<a name="taussig-condition-TAUSSIG-COND-0041"> </a></td>
+<td>Anévrisme ventriculaire droit acquis</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.02}">Acquired right ventricular aneurysm</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0042<a name="taussig-condition-TAUSSIG-COND-0042"> </a></td>
+<td>Dysfonction ventriculaire droite</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 07.01.11}">Right ventricular dysfunction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0043<a name="taussig-condition-TAUSSIG-COND-0043"> </a></td>
+<td>Obstruction résiduelle de la voie d'éjection du ventricule droit</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.20.23}">Residual right ventricular outflow tract obstruction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0044<a name="taussig-condition-TAUSSIG-COND-0044"> </a></td>
+<td>Dilatation ventriculaire gauche acquise</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.76}">Acquired left ventricular dilation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0045<a name="taussig-condition-TAUSSIG-COND-0045"> </a></td>
+<td>Hypertrophie ventriculaire gauche acquise</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.77}">Acquired left ventricular hypertrophy</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0046<a name="taussig-condition-TAUSSIG-COND-0046"> </a></td>
+<td>Anévrisme ventriculaire gauche acquis</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.42}">Acquired left ventricular aneurysm</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0047<a name="taussig-condition-TAUSSIG-COND-0047"> </a></td>
+<td>Défaillance ventriculaire gauche</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.47}">Left ventricular failure</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0048<a name="taussig-condition-TAUSSIG-COND-0048"> </a></td>
+<td>Complication post-procédurale de la voie d'éjection du ventricule gauche</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.21.21}">Postprocedural left ventricular outflow tract complication</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0049<a name="taussig-condition-TAUSSIG-COND-0049"> </a></td>
+<td>Sténose sous-aortique acquise</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.86}">Acquired subaortic stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0050<a name="taussig-condition-TAUSSIG-COND-0050"> </a></td>
+<td>Sténose sous-pulmonaire acquise</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.16.88}">Acquired subpulmonary stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0051<a name="taussig-condition-TAUSSIG-COND-0051"> </a></td>
+<td>Communication interventriculaire résiduelle (CIV)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.22.02}">Residual ventricular septal defect (VSD)</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0052<a name="taussig-condition-TAUSSIG-COND-0052"> </a></td>
+<td>Cardiomyopathie restrictive</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.10.10}">Restrictive cardiomyopathy</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0053<a name="taussig-condition-TAUSSIG-COND-0053"> </a></td>
+<td>Anomalie acquise de l'arbre artériel pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.13.59}">Acquired pulmonary arterial tree abnormality</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0054<a name="taussig-condition-TAUSSIG-COND-0054"> </a></td>
+<td>Sténose post-procédurale du tronc de l'artère pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.32.02}">Postprocedural pulmonary trunk stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0055<a name="taussig-condition-TAUSSIG-COND-0055"> </a></td>
+<td>Sténose résiduelle de l'artère pulmonaire droite</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.32.23}">Residual right pulmonary artery stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0056<a name="taussig-condition-TAUSSIG-COND-0056"> </a></td>
+<td>Sténose résiduelle de l'artère pulmonaire gauche</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.32.43}">Residual left pulmonary artery stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0057<a name="taussig-condition-TAUSSIG-COND-0057"> </a></td>
+<td>Hypertension artérielle pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.13.01}">Pulmonary arterial hypertension</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0058<a name="taussig-condition-TAUSSIG-COND-0058"> </a></td>
+<td>Embolie pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.13.51}">Pulmonary embolism</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0059<a name="taussig-condition-TAUSSIG-COND-0059"> </a></td>
+<td>Sténose aortique supravalvulaire acquise</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.14.77}">Acquired supravalvar aortic stenosis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0060<a name="taussig-condition-TAUSSIG-COND-0060"> </a></td>
+<td>Dilatation acquise de l'aorte ascendante et/ou de la racine aortique</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.14.82}">Acquired dilation of ascending aorta and/or aortic root</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0061<a name="taussig-condition-TAUSSIG-COND-0061"> </a></td>
+<td>Dilatation de la racine aortique</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 09.16.13}">Aortic root dilation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0062<a name="taussig-condition-TAUSSIG-COND-0062"> </a></td>
+<td>Dissection aortique</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.14.51}">Aortic dissection</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0063<a name="taussig-condition-TAUSSIG-COND-0063"> </a></td>
+<td>Anévrisme aortique</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.14.50}">Aortic aneurysm</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0064<a name="taussig-condition-TAUSSIG-COND-0064"> </a></td>
+<td>Coarctation aortique résiduelle</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.37.05}">Residual aortic coarctation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0065<a name="taussig-condition-TAUSSIG-COND-0065"> </a></td>
+<td>Complication coronaire post-procédurale</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.41.00}">Postprocedural coronary arterial complication</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0066<a name="taussig-condition-TAUSSIG-COND-0066"> </a></td>
+<td>Persistance résiduelle du canal artériel (PDA)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.39.02}">Residual arterial duct (PDA) patency</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0067<a name="taussig-condition-TAUSSIG-COND-0067"> </a></td>
+<td>Complication liée à un conduit cardiaque</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.55.00}">Cardiac conduit related complication</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0068<a name="taussig-condition-TAUSSIG-COND-0068"> </a></td>
+<td>Obstruction d'anastomose systémico-pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.56.27}">Systemic-to-pulmonary arterial shunt obstruction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0069<a name="taussig-condition-TAUSSIG-COND-0069"> </a></td>
+<td>Obstruction partielle d'anastomose systémico-pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.56.01}">Systemic-to-pulmonary arterial shunt partial obstruction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0070<a name="taussig-condition-TAUSSIG-COND-0070"> </a></td>
+<td>Obstruction complète d'anastomose systémico-pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.56.02}">Systemic-to-pulmonary arterial shunt complete obstruction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0071<a name="taussig-condition-TAUSSIG-COND-0071"> </a></td>
+<td>Défaillance d'autogreffe pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.55.24}">Pulmonary autograft failure</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0072<a name="taussig-condition-TAUSSIG-COND-0072"> </a></td>
+<td>Circulation de Fontan défaillante</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.90.60}">'Failed' Fontan type circulation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0073<a name="taussig-condition-TAUSSIG-COND-0073"> </a></td>
+<td>Épanchement péricardique</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.08.31}">Pericardial effusion</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0074<a name="taussig-condition-TAUSSIG-COND-0074"> </a></td>
+<td>Complication après transplantation cardiaque ou pulmonaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.95.00}">Complication after heart or lung transplant</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0075<a name="taussig-condition-TAUSSIG-COND-0075"> </a></td>
+<td>Sténose acquise des veines pulmonaires</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.24.02}">Pulmonary venous stenosis: acquired</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0076<a name="taussig-condition-TAUSSIG-COND-0076"> </a></td>
+<td>Obstruction d'une veine systémique</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.30.09}">Systemic vein obstruction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0077<a name="taussig-condition-TAUSSIG-COND-0077"> </a></td>
+<td>Collatérale(s) veino-veineuse(s) systémique(s)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 04.00.06}">Systemic venovenous collateral(s)</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0078<a name="taussig-condition-TAUSSIG-COND-0078"> </a></td>
+<td>Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.13.74}">Systemic-to-pulmonary collateral artery(ies) (MAPCA): acquired</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0079<a name="taussig-condition-TAUSSIG-COND-0079"> </a></td>
+<td>Fistules (malformations) artérioveineuses pulmonaires acquises</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.13.57}">Acquired pulmonary arteriovenous fistulas (malformations)</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0080<a name="taussig-condition-TAUSSIG-COND-0080"> </a></td>
+<td>Cardiomyopathie dilatée</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.10.25}">Dilated cardiomyopathy</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0081<a name="taussig-condition-TAUSSIG-COND-0081"> </a></td>
+<td>Cardiomyopathie hypertrophique</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.10.20}">Hypertrophic cardiomyopathy</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0082<a name="taussig-condition-TAUSSIG-COND-0082"> </a></td>
+<td>Cardiomyopathie hypertrophique obstructive du ventricule gauche</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.10.05}">Obstructive hypertrophic cardiomyopathy of left ventricle</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0083<a name="taussig-condition-TAUSSIG-COND-0083"> </a></td>
+<td>Myocardite (cardiomyopathie inflammatoire)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.07.90}">Myocarditis (inflammatory cardiomyopathy)</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0084<a name="taussig-condition-TAUSSIG-COND-0084"> </a></td>
+<td>Maladie de Kawasaki</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.09.01}">Kawasaki disease</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0085<a name="taussig-condition-TAUSSIG-COND-0085"> </a></td>
+<td>Infarctus du myocarde</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.18.00}">Myocardial infarction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0086<a name="taussig-condition-TAUSSIG-COND-0086"> </a></td>
+<td>État après transplantation cardiaque</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.21.63}">Patient status post heart transplant</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0087<a name="taussig-condition-TAUSSIG-COND-0087"> </a></td>
+<td>Maladie vasculaire pulmonaire irréversible</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.13.00}">Irreversible pulmonary vascular disease</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0088<a name="taussig-condition-TAUSSIG-COND-0088"> </a></td>
+<td>Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.13.08}">Irreversible pulmonary vascular disease due to congenital heart disease (Eisenmenger Syndrome)</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0089<a name="taussig-condition-TAUSSIG-COND-0089"> </a></td>
+<td>Trouble du rythme cardiaque</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.00.00}">Arrhythmia</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0090<a name="taussig-condition-TAUSSIG-COND-0090"> </a></td>
+<td>Fibrillation atriale</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.03.08}">Atrial fibrillation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0091<a name="taussig-condition-TAUSSIG-COND-0091"> </a></td>
+<td>Flutter atrial</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.03.07}">Atrial flutter</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0092<a name="taussig-condition-TAUSSIG-COND-0092"> </a></td>
+<td>Trouble du rythme atrial</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.03.09}">Atrial rhythm disturbance</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0093<a name="taussig-condition-TAUSSIG-COND-0093"> </a></td>
+<td>Trouble du rythme de la jonction atrioventriculaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.04.00}">Rhythm disturbance at level of atrioventricular junction</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0094<a name="taussig-condition-TAUSSIG-COND-0094"> </a></td>
+<td>Trouble du rythme ventriculaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.05.00}">Ventricular rhythm disturbance</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0095<a name="taussig-condition-TAUSSIG-COND-0095"> </a></td>
+<td>Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.07.01}">Atrioventricular reentry (reciprocating) tachycardia: manifest preexcitation in sinus rhythm (Wolff Parkinson White)</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0096<a name="taussig-condition-TAUSSIG-COND-0096"> </a></td>
+<td>Bloc atrioventriculaire</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.06.38}">Atrioventricular block</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0097<a name="taussig-condition-TAUSSIG-COND-0097"> </a></td>
+<td>Bloc atrioventriculaire complet acquis</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.06.10}">Acquired complete atrioventricular block</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0098<a name="taussig-condition-TAUSSIG-COND-0098"> </a></td>
+<td>Indication de remplacement programmé d'un stimulateur cardiaque</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 11.12.61}">Indication for elective replacement of pacemaker system</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0099<a name="taussig-condition-TAUSSIG-COND-0099"> </a></td>
+<td>Entéropathie exsudative post-procédurale</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.82.33}">Cardiac postprocedural protein losing enteropathy</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0100<a name="taussig-condition-TAUSSIG-COND-0100"> </a></td>
+<td>Bronchite plastique post-procédurale</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.81.01}">Cardiac postprocedural plastic bronchitis</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0101<a name="taussig-condition-TAUSSIG-COND-0101"> </a></td>
+<td>Chylothorax</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 10.08.16}">Chylothorax</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0102<a name="taussig-condition-TAUSSIG-COND-0102"> </a></td>
+<td>Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.51.47}">Embolisation of cardiovascular device during cardiac catheterisation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0103<a name="taussig-condition-TAUSSIG-COND-0103"> </a></td>
+<td>Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.51.50}">Device malfunction during cardiac catheterisation procedure</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0104<a name="taussig-condition-TAUSSIG-COND-0104"> </a></td>
+<td>Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.03}">Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0105<a name="taussig-condition-TAUSSIG-COND-0105"> </a></td>
+<td>Corps étranger intracardiaque post-procédural</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.80.17}">Postprocedural retained foreign body</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0106<a name="taussig-condition-TAUSSIG-COND-0106"> </a></td>
+<td>Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.50.37}">Embolisation of catheter introduced device</a></td></tr>
+<tr><td style="white-space:nowrap">TAUSSIG-COND-0107<a name="taussig-condition-TAUSSIG-COND-0107"> </a></td>
+<td>Hémorragie post-procédurale</td>
+<td><a href="CodeSystem-ipccc.html" title="{https://taussig/fhir/CodeSystem/ipccc 15.02.00}">Postprocedural haemorrhage</a></td></tr></table></div>
+
+  <hr/>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology">Description du (des) tableau(x) ci-dessus</a>.
+  </p>
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.8.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-11-09 15:30:00 +0100">
+    2026-11-09
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

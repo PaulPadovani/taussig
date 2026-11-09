@@ -260,8 +260,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Device.property:covering.valueQuantity","Device.property.valueQuantity","","","",0,*,"","","","Quantity {[]} {[]}
 ","Property value as a quantity","Property value as a quantity.","","","","","","","","","",,,,,"",,,,"Device.property.valueQuantity",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Device.property:covering.valueCode","Device.property.valueCode","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Property value as a code, e.g., NTP4 (synced to NTP)","Property value as a code, e.g., NTP4 (synced to NTP).","","","","","","","","","",,"required","","https://taussig/fhir/ValueSet/stent-covering-vs","",,,,"Device.property.valueCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Device.property:covering.valueCode","Device.property.valueCode","","","Couverture du stent (nu ou couvert)",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Couverture du stent (nu ou couvert)","Property value as a code, e.g., NTP4 (synced to NTP).","","","","","","","","","",,"required","","https://taussig/fhir/ValueSet/stent-covering-vs","",,,,"Device.property.valueCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Device.property:expansionMode","Device.property","expansionMode","","Mode d'expansion du stent",0,1,"Y","","","BackboneElement {[]} {[]}
 ","Mode d'expansion du stent","The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties.","","","","","","","","","",,,,,"",,,,"Device.property",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -289,8 +289,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Device.property:expansionMode.valueQuantity","Device.property.valueQuantity","","","",0,*,"","","","Quantity {[]} {[]}
 ","Property value as a quantity","Property value as a quantity.","","","","","","","","","",,,,,"",,,,"Device.property.valueQuantity",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Device.property:expansionMode.valueCode","Device.property.valueCode","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Property value as a code, e.g., NTP4 (synced to NTP)","Property value as a code, e.g., NTP4 (synced to NTP).","","","","","","","","","",,"required","","https://taussig/fhir/ValueSet/stent-expansion-vs","",,,,"Device.property.valueCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Device.property:expansionMode.valueCode","Device.property.valueCode","","","Mode d'expansion (ballon ou auto-expansible)",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Mode d'expansion (ballon ou auto-expansible)","Property value as a code, e.g., NTP4 (synced to NTP).","","","","","","","","","",,"required","","https://taussig/fhir/ValueSet/stent-expansion-vs","",,,,"Device.property.valueCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Device.property:coating","Device.property","coating","","Revêtement actif du stent",0,1,"Y","","","BackboneElement {[]} {[]}
 ","Revêtement actif du stent","The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties.","","","","","","","","","",,,,,"",,,,"Device.property",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -318,8 +318,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Device.property:coating.valueQuantity","Device.property.valueQuantity","","","",0,*,"","","","Quantity {[]} {[]}
 ","Property value as a quantity","Property value as a quantity.","","","","","","","","","",,,,,"",,,,"Device.property.valueQuantity",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Device.property:coating.valueCode","Device.property.valueCode","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Property value as a code, e.g., NTP4 (synced to NTP)","Property value as a code, e.g., NTP4 (synced to NTP).","","","","","","","","","",,"required","","https://taussig/fhir/ValueSet/stent-coating-vs","",,,,"Device.property.valueCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Device.property:coating.valueCode","Device.property.valueCode","","","Revêtement (actif ou non)",1,1,"Y","","","CodeableConcept {[]} {[]}
+","Revêtement (actif ou non)","Property value as a code, e.g., NTP4 (synced to NTP).","","","","","","","","","",,"required","","https://taussig/fhir/ValueSet/stent-coating-vs","",,,,"Device.property.valueCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Device.patient","Device.patient","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient|4.0.1]]}
 ","Patient to whom Device is affixed","Patient information, If the device is affixed to a person.","","If the device is implanted in a patient, then need to associate the device to the patient.","","","","","","","",,,,,"",,,,"Device.patient",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

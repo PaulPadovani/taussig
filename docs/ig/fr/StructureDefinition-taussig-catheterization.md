@@ -1,4 +1,4 @@
-# TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Cathétérisme cardiaque (acte pivot) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Cathétérisme cardiaque (acte pivot) ( Expérimental ) 
 
@@ -70,12 +70,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cathete
   "resourceType" : "StructureDefinition",
   "id" : "taussig-catheterization",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-catheterization",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigCatheterization",
   "title" : "TAUSSIG — Cathétérisme cardiaque (acte pivot)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; acte codé par un concept TAUSSIG (CodeSystem taussig-procedure), dont SNOMED (interop), CCAM (administratif FR), IPCCC et ECHSA (registre) sont déduits par ConceptMap ; opérateurs, horodatages salle et peau, caractère urgent. Dosimétrie/anthropométrie portées par Observations liées.",
   "jurisdiction" : [{
@@ -392,6 +392,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cathete
     },
     {
       "id" : "Procedure.reasonReference",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "relation"
+      }],
       "path" : "Procedure.reasonReference",
       "label" : "Indication (diagnostic ou condition)",
       "short" : "Indication (diagnostic ou condition)",

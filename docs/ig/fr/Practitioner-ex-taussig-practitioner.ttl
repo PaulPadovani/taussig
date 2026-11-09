@@ -23,15 +23,11 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Praticien ex-taussig-practitioner</b></p><a name=\"ex-taussig-practitioner\"> </a><a name=\"hcex-taussig-practitioner\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-practitioner.html\">TAUSSIG — Praticien</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Fictif Exemple</p><hr/></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Praticien ex-taussig-practitioner</b></p><a name=\"ex-taussig-practitioner\"> </a><a name=\"hcex-taussig-practitioner\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-practitioner.html\">TAUSSIG — Praticien</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">[OPERATEUR_1]</p><hr/></div>"
   ] ;
   fhir:Practitioner.name [
      fhir:index -1 ;
-     fhir:HumanName.family [ fhir:value "Exemple" ] ;
-     fhir:HumanName.given [
-       fhir:value "Fictif" ;
-       fhir:index -1
-     ]
+     fhir:HumanName.text [ fhir:value "[OPERATEUR_1]" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

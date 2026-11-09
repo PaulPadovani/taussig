@@ -1,0 +1,1358 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/taussig-diagnosis> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-diagnosis"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"fr\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem taussig-diagnosis</b></p><a name=\"taussig-diagnosis\"> </a><a name=\"hctaussig-diagnosis\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr</p></div><p><b>Propriétés</b></p><p><b>Cette terminologie de référence (CodeSystem) définit les propriétés suivantes pour ses concepts</b></p><table class=\"grid\"><tr><td><b>Nom</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>ipccc-origin</td><td>ipccc-origin</td><td>Coding</td><td>Code IPCCC dont le concept est issu.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/taussig-diagnosis</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>ipccc-origin</b></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0001<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0001\"> </a></td><td>Anomalie de position-orientation du cœur</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 02.01.09}\">Anomalous position-orientation of heart</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0002<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0002\"> </a></td><td>Lévocardie</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 02.01.03}\">Laevocardia: heart predominantly in left hemithorax</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0003<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0003\"> </a></td><td>Dextrocardie</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 02.01.02}\">Dextrocardia: heart predominantly in right hemithorax</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0004<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0004\"> </a></td><td>Mésocardie</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 02.01.04}\">Midline heart (mesocardia)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0005<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0005\"> </a></td><td>Image en miroir complète</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 03.01.03}\">Total mirror imagery (situs inversus totalis)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0006<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0006\"> </a></td><td>Isomérisme droit</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 03.01.04}\">Right isomerism</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0007<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0007\"> </a></td><td>Isomérisme gauche</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 03.01.05}\">Left isomerism</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0008<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0008\"> </a></td><td>Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.03.09}\">Congenital anomaly of an atrioventricular and-or ventriculo-arterial connection(s)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0009<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0009\"> </a></td><td>Connexions atrioventriculaires discordantes</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.04.01}\">Discordant atrioventricular connections</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0010<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0010\"> </a></td><td>Transposition congénitalement corrigée des grandes artères</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.03}\">Congenitally corrected transposition of great arteries (discordant atrioventricular &amp; ventriculo-arterial connections)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0011<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0011\"> </a></td><td>Transposition des gros vaisseaux</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.05.01}\">Transposition of great arteries (discordant ventriculo-arterial connections) (TGA)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0012<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0012\"> </a></td><td>Ventricule droit à double issue</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.04}\">Double outlet right ventricle</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0013<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0013\"> </a></td><td>Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.18}\">Double outlet right ventricle with subpulmonary ventricular septal defect, transposition type</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0014<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0014\"> </a></td><td>Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.19}\">Double outlet right ventricle with non-committed ventricular septal defect</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0015<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0015\"> </a></td><td>Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.40}\">Double outlet right ventricle with subaortic or doubly committed ventricular septal defect without pulmonary stenosis, ventricular septal defect type</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0016<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0016\"> </a></td><td>Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.17}\">Double outlet right ventricle with subaortic or doubly committed ventricular septal defect and pulmonary stenosis, Fallot type</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0017<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0017\"> </a></td><td>Ventricule gauche à double issue</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.05.03}\">Double outlet left ventricle</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0018<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0018\"> </a></td><td>Tronc artériel commun</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.01.01}\">Common arterial trunk (truncus arteriosus)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0019<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0019\"> </a></td><td>Tronc artériel commun à dominance aortique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.01.15}\">Common arterial trunk (truncus arteriosus) with aortic dominance (no aortic arch obstruction)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0020<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0020\"> </a></td><td>Tronc artériel commun à dominance pulmonaire et arc aortique interrompue</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.01.18}\">Common arterial trunk (truncus arteriosus) with pulmonary dominance and interrupted aortic arch</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0021<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0021\"> </a></td><td>Anomalie congénitale de la veine médiastinale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 04.00.07}\">Congenital anomaly of mediastinal vein(s)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0022<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0022\"> </a></td><td>Veine cave supérieure gauche</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 04.01.25}\">Left superior caval vein (SVC)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0023<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0023\"> </a></td><td>Absence de toit du sinus coronaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 04.04.13}\">Unroofed coronary sinus</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0024<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0024\"> </a></td><td>Anomalie du retour veineux pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 04.08.07}\">Anomalous pulmonary venous connection</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0025<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0025\"> </a></td><td>Connexion veineuse pulmonaire totale anormale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 04.08.05}\">Total anomalous pulmonary venous connection</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0026<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0026\"> </a></td><td>Connexion veineuse pulmonaire partielle anormale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 04.07.01}\">Partial anomalous pulmonary venous connection(s)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0027<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0027\"> </a></td><td>Syndrome du cimeterre</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 03.02.23}\">Scimitar syndrome</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0028<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0028\"> </a></td><td>Sténose ou hypoplasie veineuse pulmonaire congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 04.08.31}\">Congenital pulmonary venous stenosis and-or hypoplasia</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0029<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0029\"> </a></td><td>Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.00.15}\">Congenital anomaly of an atrioventricular valve(s) and-or atrioventricular septum</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0030<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0030\"> </a></td><td>Anomalie congénitale de la valve tricuspide</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.01.11}\">Congenital anomaly of tricuspid valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0031<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0031\"> </a></td><td>Insuffisance tricuspide congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.01.25}\">Congenital tricuspid regurgitation</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0032<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0032\"> </a></td><td>Sténose congénitale de la valve tricuspide</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.01.07}\">Congenital tricuspid valvar stenosis</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0033<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0033\"> </a></td><td>Dysplasie de la valve tricuspide</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.01.03}\">Dysplasia of tricuspid valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0034<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0034\"> </a></td><td>Malformation d'Ebstein de la valve tricuspide</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.01.34}\">Ebstein malformation of tricuspid valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0035<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0035\"> </a></td><td>Anomalie congénitale de la valve mitrale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.02.11}\">Congenital anomaly of mitral valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0036<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0036\"> </a></td><td>Insuffisance mitrale congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.02.25}\">Congenital mitral regurgitation</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0037<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0037\"> </a></td><td>Sténose valvulaire mitrale congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.02.07}\">Congenital mitral valvar stenosis</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0038<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0038\"> </a></td><td>Dysplasie de la valve mitrale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.02.03}\">Dysplasia of mitral valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0039<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0039\"> </a></td><td>Anomalie congénitale de l'appareil mitral sousvalvaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.02.21}\">Congenital anomaly of mitral subvalvar apparatus</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0040<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0040\"> </a></td><td>Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.07.28}\">Common atrioventricular junction without an atrioventricular septal defect</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0041<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0041\"> </a></td><td>Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.06.00}\">Common atrioventricular junction with atrioventricular septal defect (AVSD)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0042<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0042\"> </a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.06.01}\">Atrioventricular septal defect with communication at the atrial level only (primum atrial septal defect) (partial atrioventricular canal defect)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0043<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0043\"> </a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.06.08}\">Atrioventricular septal defect with communication at the ventricular level only (atrioventricular canal defect with isolated ventricular communication)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0044<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0044\"> </a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.06.10}\">Atrioventricular septal defect (atrioventricular canal defect) with communication at atrial level and restrictive communication at ventricular level (intermediate atrioventricular septal defect)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0045<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0045\"> </a></td><td>Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.06.09}\">Atrioventricular septal defect (atrioventricular canal defect) with communication at atrial level and unrestrictive communication at ventricular level (Complete atrioventricular septal defect)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0046<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0046\"> </a></td><td>Communication septale auriculoventriculaire avec déséquilibre ventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.07.26}\">Atrioventricular septal defect (AVSD) with ventricular imbalance</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0047<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0047\"> </a></td><td>Anomalie septal auriculoventriculaire et tétralogie de Fallot</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.20}\">Atrioventricular septal defect and Tetralogy of Fallot</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0048<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0048\"> </a></td><td>Anomalie congénitale du ventricule ou du septum ventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.00.00}\">Congenital anomaly of a ventricle and-or the ventricular septum</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0049<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0049\"> </a></td><td>Obstruction congénitale de la voie de sortie du ventricule droit</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.05.20}\">Congenital right ventricular outflow tract obstruction</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0050<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0050\"> </a></td><td>Ventricule droit à double chambre</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.03.01}\">Double chambered right ventricle</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0051<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0051\"> </a></td><td>Tétralogie de Fallot</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.01}\">Tetralogy of Fallot</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0052<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0052\"> </a></td><td>Tétralogie de Fallot avec syndrome de valve pulmonaire absente</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.05.25}\">Tetralogy of Fallot with absent pulmonary valve syndrome</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0053<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0053\"> </a></td><td>Tétralogie de Fallot avec atrésie pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.26}\">Tetralogy of Fallot with pulmonary atresia</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0054<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0054\"> </a></td><td>Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.57}\">Tetralogy of Fallot with pulmonary atresia and systemic-to-pulmonary collateral artery(ies) (MAPCA(s))</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0055<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0055\"> </a></td><td>Obstruction congénitale de la voie de sortie du ventricule gauche</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.09.28}\">Congenital left ventricular outflow tract obstruction</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0056<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0056\"> </a></td><td>Communication interventriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.10.00}\">Ventricular septal defect (VSD)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0057<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0057\"> </a></td><td>Communication interventriculaire musculaire trabéculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.11.01}\">Trabecular muscular ventricular septal defect (VSD)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0058<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0058\"> </a></td><td>Communication interventriculaire centrale périmembraneuse</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.10.01}\">Perimembranous central ventricular septal defect (VSD)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0059<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0059\"> </a></td><td>Communication interventriculaire non significatif sur le plan hémodynamique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.15.01}\">Ventricular septal defect(s) haemodynamically insignificant</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0060<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0060\"> </a></td><td>Cœur fonctionnellement univentriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.22}\">Functionally univentricular heart</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0061<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0061\"> </a></td><td>Connexion auriculoventriculaire à double entrée</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.14}\">Double inlet atrioventricular connection (double inlet ventricle)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0062<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0062\"> </a></td><td>Atrésie de la valve tricuspide</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.01.01}\">Tricuspid atresia</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0063<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0063\"> </a></td><td>Atrésie mitrale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 06.02.01}\">Mitral atresia</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0064<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0064\"> </a></td><td>Syndrome d'hypoplasie du cœur gauche</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.09}\">Hypoplastic left heart syndrome</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0065<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0065\"> </a></td><td>Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.04.29}\">Congenital anomaly of ventriculo-arterial valve(s) and-or adjacent regions</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0066<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0066\"> </a></td><td>Anomalie congénitale de la valve pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.05.29}\">Congenital anomaly of pulmonary valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0067<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0067\"> </a></td><td>Sténose congénitale de la valve pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.05.04}\">Congenital pulmonary valvar stenosis</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0068<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0068\"> </a></td><td>Insuffisance congénitale de la valve pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.05.22}\">Congenital pulmonary regurgitation</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0069<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0069\"> </a></td><td>Atrésie pulmonaire congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.05.16}\">Congenital pulmonary atresia</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0070<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0070\"> </a></td><td>Atrésie pulmonaire avec septum ventriculaire intact</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 01.01.07}\">Pulmonary atresia with intact ventricular septum</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0071<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0071\"> </a></td><td>Anomalie congénitale de la valve aortique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.15.19}\">Congenital anomaly of aortic valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0072<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0072\"> </a></td><td>Sténose congénitale de la valve aortique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.15.01}\">Congenital aortic valvar stenosis</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0073<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0073\"> </a></td><td>Insuffisance aortique congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.15.07}\">Congenital aortic regurgitation</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0074<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0074\"> </a></td><td>Valve aortique bicuspide</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.15.22}\">Bicuspid aortic valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0075<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0075\"> </a></td><td>Atrésie de la valve aortique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.15.06}\">Aortic valvar atresia</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0076<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0076\"> </a></td><td>Valve aortique unicuspide</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.15.21}\">Unicuspid aortic valve</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0077<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0077\"> </a></td><td>Sténose supravalvulaire aortique congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.16.18}\">Congenital supravalvar aortic stenosis</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0078<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0078\"> </a></td><td>Anévrisme du sinus aortique de Valsalva</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.18.01}\">Aneurysm of aortic sinus of Valsalva</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0079<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0079\"> </a></td><td>Sténose sous-aortique congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.09.50}\">Congenital subaortic stenosis</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0080<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0080\"> </a></td><td>Sténose sous-pulmonaire congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.05.32}\">Congenital subpulmonary stenosis</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0081<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0081\"> </a></td><td>Anomalie congénitale des grandes artères, y compris le canal artériel</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.04.28}\">Congenital anomaly of great arteries including arterial duct</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0082<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0082\"> </a></td><td>Fenêtre aortopulmonaire congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.04.07}\">Congenital aortopulmonary window</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0083<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0083\"> </a></td><td>Anomalie congénitale de l'arbre artériel pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.07.16}\">Congenital anomaly of pulmonary arterial tree</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0084<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0084\"> </a></td><td>Anomalie congénitale de l'aorte ou de ses branches</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 07.09.34}\">Congenital anomaly of aorta and-or its branches</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0085<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0085\"> </a></td><td>Coarctation de l'aorte</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.29.01}\">Coarctation of aorta</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0086<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0086\"> </a></td><td>Interruption de la crosse aortique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.29.31}\">Interrupted aortic arch</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0087<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0087\"> </a></td><td>Anomalie congénitale de l'aorte thoracique descendante ou abdominale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.28.47}\">Congenital anomaly of descending thoracic and-or abdominal aorta</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0088<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0088\"> </a></td><td>Anomalie congénitale de la branche de l'arc aortique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.30.17}\">Congenital anomaly of aortic arch branch</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0089<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0089\"> </a></td><td>Syndrome de compression trachéo-œsophagienne</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.31.40}\">Tracheo-esophageal compressive syndrome</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0090<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0090\"> </a></td><td>Persistance du canal artériel</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.27.21}\">Patent arterial duct (PDA)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0091<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0091\"> </a></td><td>Anomalie congénitale des artères coronaires</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.46.03}\">Congenital anomaly of coronary artery(ies)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0092<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0092\"> </a></td><td>Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.41.01}\">Anomalous origin of coronary artery from pulmonary arterial tree</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0093<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0093\"> </a></td><td>Origine aortique anormale ou trajet anormal de l'artère coronaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.42.00}\">Anomalous aortic origin or course of coronary artery</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0094<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0094\"> </a></td><td>Fistule artérielle coronaire congénitale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.45.16}\">Congenital coronary arterial fistula(s)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0095<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0095\"> </a></td><td>Malformation congénitale du péricarde</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 10.01.05}\">Congenital pericardial anomaly</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0096<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0096\"> </a></td><td>Anomalie congénitale du septum auriculaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.07.01}\">Congenital anomaly of atrial septum</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0097<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0097\"> </a></td><td>Foramen ovale perméable</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.03.01}\">Patent foramen ovale (PFO)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0098<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0098\"> </a></td><td>Communication interauriculaire dans la fosse ovale</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.04.02}\">Atrial septal defect (ASD) within oval fossa (secundum)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0099<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0099\"> </a></td><td>Anomalie du sinus veineux</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.05.00}\">Sinus venosus defect (ASD)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0100<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0100\"> </a></td><td>Communication interauriculaire par l'orifice du sinus coronaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.05.03}\">Interatrial communication (ASD) through coronary sinus orifice</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0101<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0101\"> </a></td><td>Anomalie congénitale de l'oreillette droite</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.01.13}\">Congenital anomaly of right atrium</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0102<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0102\"> </a></td><td>Anomalie congénitale de l'oreillette gauche</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.02.11}\">Congenital anomaly of left atrium</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0103<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0103\"> </a></td><td>Oreillette gauche divisée</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 05.02.01}\">Divided left atrium (cor triatriatum)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0104<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0104\"> </a></td><td>Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.10.37}\">Congenital central pulmonary arterial stenosis or hypoplasia proximal to hilar bifurcation</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0105<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0105\"> </a></td><td>Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.10.38}\">Congenital peripheral pulmonary arterial stenoses or hypoplasia at or beyond hilar bifurcation</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0106<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0106\"> </a></td><td>Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.10.30}\">Congenitally discontinuous, non-confluent right and left pulmonary arteries</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0107<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0107\"> </a></td><td>Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.08.01}\">Major systemic-to-pulmonary collateral artery(ies) (MAPCA(s))</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0108<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0108\"> </a></td><td>Fistule (malformation) artérioveineuse pulmonaire</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 09.19.05}\">Pulmonary arteriovenous fistula (malformation)</a></td></tr><tr><td style=\"white-space:nowrap\">TAUSSIG-DIAG-0109<a name=\"taussig-diagnosis-TAUSSIG-DIAG-0109\"> </a></td><td>Bloc atrioventriculaire complet congénital idiopathique</td><td><a href=\"CodeSystem-ipccc.html\" title=\"{https://taussig/fhir/CodeSystem/ipccc 11.06.08}\">Congenital idiopathic complete atrioventricular block</a></td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/taussig-diagnosis"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.1"] ;
+  fhir:CodeSystem.name [ fhir:value "TaussigDiagnosis"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Diagnostics cardiaques congénitaux"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Terminologie d'interface TAUSSIG : 109 concepts (diagnostics cardiaques congénitaux) à identifiant neutre jamais réutilisé (dictionnaire v6.1, décision A1). L'annotateur choisit le libellé ; les codes ICD-11, IPCCC, CIM-10, ECHSA sont déduits par les ConceptMaps taussig-diagnosis-to-*, seulement quand la correspondance est « equivalent » ou « wider » et unique (décision A3)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "109"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index 0 ;
+     fhir:CodeSystem.property.code [ fhir:value "ipccc-origin" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "Code IPCCC dont le concept est issu." ] ;
+     fhir:CodeSystem.property.type [ fhir:value "Coding" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0001" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie de position-orientation du cœur" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "02.01.09" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0002" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lévocardie" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "02.01.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0003" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dextrocardie" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "02.01.02" ]
+       ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0004" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mésocardie" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "02.01.04" ]
+       ]
+     ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0005" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Image en miroir complète" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "03.01.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0006" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isomérisme droit" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "03.01.04" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0007" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Isomérisme gauche" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "03.01.05" ]
+       ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0008" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale d'une connexion auriculoventriculaire ou ventriculoartérielle" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.03.09" ]
+       ]
+     ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0009" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Connexions atrioventriculaires discordantes" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.04.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0010" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transposition congénitalement corrigée des grandes artères" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0011" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Transposition des gros vaisseaux" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.05.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0012" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricule droit à double issue" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.04" ]
+       ]
+     ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0013" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.18" ]
+       ]
+     ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0014" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sans relation avec les deux gros vaisseaux" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.19" ]
+       ]
+     ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0015" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux sans sténose pulmonaire, type communication interventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.40" ]
+       ]
+     ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0016" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.17" ]
+       ]
+     ]
+  ], [
+     fhir:index 16 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0017" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricule gauche à double issue" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.05.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 17 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0018" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tronc artériel commun" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.01.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 18 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0019" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tronc artériel commun à dominance aortique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.01.15" ]
+       ]
+     ]
+  ], [
+     fhir:index 19 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0020" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tronc artériel commun à dominance pulmonaire et arc aortique interrompue" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.01.18" ]
+       ]
+     ]
+  ], [
+     fhir:index 20 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0021" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de la veine médiastinale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "04.00.07" ]
+       ]
+     ]
+  ], [
+     fhir:index 21 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0022" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Veine cave supérieure gauche" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "04.01.25" ]
+       ]
+     ]
+  ], [
+     fhir:index 22 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0023" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Absence de toit du sinus coronaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "04.04.13" ]
+       ]
+     ]
+  ], [
+     fhir:index 23 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0024" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie du retour veineux pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "04.08.07" ]
+       ]
+     ]
+  ], [
+     fhir:index 24 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0025" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Connexion veineuse pulmonaire totale anormale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "04.08.05" ]
+       ]
+     ]
+  ], [
+     fhir:index 25 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0026" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Connexion veineuse pulmonaire partielle anormale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "04.07.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 26 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0027" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Syndrome du cimeterre" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "03.02.23" ]
+       ]
+     ]
+  ], [
+     fhir:index 27 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0028" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose ou hypoplasie veineuse pulmonaire congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "04.08.31" ]
+       ]
+     ]
+  ], [
+     fhir:index 28 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0029" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.00.15" ]
+       ]
+     ]
+  ], [
+     fhir:index 29 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0030" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de la valve tricuspide" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.01.11" ]
+       ]
+     ]
+  ], [
+     fhir:index 30 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0031" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Insuffisance tricuspide congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.01.25" ]
+       ]
+     ]
+  ], [
+     fhir:index 31 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0032" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose congénitale de la valve tricuspide" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.01.07" ]
+       ]
+     ]
+  ], [
+     fhir:index 32 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0033" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dysplasie de la valve tricuspide" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.01.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 33 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0034" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malformation d'Ebstein de la valve tricuspide" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.01.34" ]
+       ]
+     ]
+  ], [
+     fhir:index 34 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0035" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de la valve mitrale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.02.11" ]
+       ]
+     ]
+  ], [
+     fhir:index 35 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0036" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Insuffisance mitrale congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.02.25" ]
+       ]
+     ]
+  ], [
+     fhir:index 36 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0037" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose valvulaire mitrale congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.02.07" ]
+       ]
+     ]
+  ], [
+     fhir:index 37 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0038" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dysplasie de la valve mitrale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.02.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 38 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0039" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de l'appareil mitral sousvalvaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.02.21" ]
+       ]
+     ]
+  ], [
+     fhir:index 39 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0040" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Jonction auriculoventriculaire commune sans communication septale auriculoventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.07.28" ]
+       ]
+     ]
+  ], [
+     fhir:index 40 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0041" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Jonction auriculoventriculaire commune avec communication septale auriculoventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.06.00" ]
+       ]
+     ]
+  ], [
+     fhir:index 41 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0042" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire uniquement" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.06.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 42 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0043" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau ventriculaire uniquement" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.06.08" ]
+       ]
+     ]
+  ], [
+     fhir:index 43 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0044" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication restrictive au niveau ventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.06.10" ]
+       ]
+     ]
+  ], [
+     fhir:index 44 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0045" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie septale auriculoventriculaire avec communication au niveau auriculaire et communication non-restrictive au niveau ventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.06.09" ]
+       ]
+     ]
+  ], [
+     fhir:index 45 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0046" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Communication septale auriculoventriculaire avec déséquilibre ventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.07.26" ]
+       ]
+     ]
+  ], [
+     fhir:index 46 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0047" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie septal auriculoventriculaire et tétralogie de Fallot" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.20" ]
+       ]
+     ]
+  ], [
+     fhir:index 47 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0048" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale du ventricule ou du septum ventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.00.00" ]
+       ]
+     ]
+  ], [
+     fhir:index 48 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0049" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule droit" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.05.20" ]
+       ]
+     ]
+  ], [
+     fhir:index 49 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0050" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ventricule droit à double chambre" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.03.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 50 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0051" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tétralogie de Fallot" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 51 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0052" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tétralogie de Fallot avec syndrome de valve pulmonaire absente" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.05.25" ]
+       ]
+     ]
+  ], [
+     fhir:index 52 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0053" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.26" ]
+       ]
+     ]
+  ], [
+     fhir:index 53 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0054" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tétralogie de Fallot avec atrésie pulmonaire et artère collatérale systémique à pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.57" ]
+       ]
+     ]
+  ], [
+     fhir:index 54 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0055" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Obstruction congénitale de la voie de sortie du ventricule gauche" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.09.28" ]
+       ]
+     ]
+  ], [
+     fhir:index 55 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0056" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Communication interventriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.10.00" ]
+       ]
+     ]
+  ], [
+     fhir:index 56 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0057" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Communication interventriculaire musculaire trabéculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.11.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 57 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0058" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Communication interventriculaire centrale périmembraneuse" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.10.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 58 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0059" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Communication interventriculaire non significatif sur le plan hémodynamique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.15.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 59 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0060" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cœur fonctionnellement univentriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.22" ]
+       ]
+     ]
+  ], [
+     fhir:index 60 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0061" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Connexion auriculoventriculaire à double entrée" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.14" ]
+       ]
+     ]
+  ], [
+     fhir:index 61 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0062" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atrésie de la valve tricuspide" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.01.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 62 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0063" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atrésie mitrale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "06.02.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 63 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0064" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Syndrome d'hypoplasie du cœur gauche" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.09" ]
+       ]
+     ]
+  ], [
+     fhir:index 64 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0065" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.04.29" ]
+       ]
+     ]
+  ], [
+     fhir:index 65 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0066" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de la valve pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.05.29" ]
+       ]
+     ]
+  ], [
+     fhir:index 66 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0067" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose congénitale de la valve pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.05.04" ]
+       ]
+     ]
+  ], [
+     fhir:index 67 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0068" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Insuffisance congénitale de la valve pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.05.22" ]
+       ]
+     ]
+  ], [
+     fhir:index 68 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0069" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atrésie pulmonaire congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.05.16" ]
+       ]
+     ]
+  ], [
+     fhir:index 69 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0070" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atrésie pulmonaire avec septum ventriculaire intact" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "01.01.07" ]
+       ]
+     ]
+  ], [
+     fhir:index 70 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0071" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de la valve aortique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.15.19" ]
+       ]
+     ]
+  ], [
+     fhir:index 71 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0072" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose congénitale de la valve aortique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.15.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 72 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0073" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Insuffisance aortique congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.15.07" ]
+       ]
+     ]
+  ], [
+     fhir:index 73 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0074" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Valve aortique bicuspide" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.15.22" ]
+       ]
+     ]
+  ], [
+     fhir:index 74 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0075" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Atrésie de la valve aortique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.15.06" ]
+       ]
+     ]
+  ], [
+     fhir:index 75 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0076" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Valve aortique unicuspide" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.15.21" ]
+       ]
+     ]
+  ], [
+     fhir:index 76 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0077" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose supravalvulaire aortique congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.16.18" ]
+       ]
+     ]
+  ], [
+     fhir:index 77 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0078" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anévrisme du sinus aortique de Valsalva" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.18.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 78 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0079" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose sous-aortique congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.09.50" ]
+       ]
+     ]
+  ], [
+     fhir:index 79 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0080" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose sous-pulmonaire congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.05.32" ]
+       ]
+     ]
+  ], [
+     fhir:index 80 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0081" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale des grandes artères, y compris le canal artériel" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.04.28" ]
+       ]
+     ]
+  ], [
+     fhir:index 81 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0082" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fenêtre aortopulmonaire congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.04.07" ]
+       ]
+     ]
+  ], [
+     fhir:index 82 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0083" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de l'arbre artériel pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.07.16" ]
+       ]
+     ]
+  ], [
+     fhir:index 83 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0084" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de l'aorte ou de ses branches" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "07.09.34" ]
+       ]
+     ]
+  ], [
+     fhir:index 84 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0085" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Coarctation de l'aorte" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.29.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 85 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0086" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Interruption de la crosse aortique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.29.31" ]
+       ]
+     ]
+  ], [
+     fhir:index 86 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0087" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de l'aorte thoracique descendante ou abdominale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.28.47" ]
+       ]
+     ]
+  ], [
+     fhir:index 87 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0088" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de la branche de l'arc aortique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.30.17" ]
+       ]
+     ]
+  ], [
+     fhir:index 88 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0089" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Syndrome de compression trachéo-œsophagienne" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.31.40" ]
+       ]
+     ]
+  ], [
+     fhir:index 89 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0090" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Persistance du canal artériel" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.27.21" ]
+       ]
+     ]
+  ], [
+     fhir:index 90 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0091" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale des artères coronaires" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.46.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 91 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0092" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.41.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 92 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0093" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Origine aortique anormale ou trajet anormal de l'artère coronaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.42.00" ]
+       ]
+     ]
+  ], [
+     fhir:index 93 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0094" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fistule artérielle coronaire congénitale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.45.16" ]
+       ]
+     ]
+  ], [
+     fhir:index 94 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0095" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Malformation congénitale du péricarde" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "10.01.05" ]
+       ]
+     ]
+  ], [
+     fhir:index 95 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0096" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale du septum auriculaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.07.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 96 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0097" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Foramen ovale perméable" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.03.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 97 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0098" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Communication interauriculaire dans la fosse ovale" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.04.02" ]
+       ]
+     ]
+  ], [
+     fhir:index 98 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0099" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie du sinus veineux" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.05.00" ]
+       ]
+     ]
+  ], [
+     fhir:index 99 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0100" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Communication interauriculaire par l'orifice du sinus coronaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.05.03" ]
+       ]
+     ]
+  ], [
+     fhir:index 100 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0101" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de l'oreillette droite" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.01.13" ]
+       ]
+     ]
+  ], [
+     fhir:index 101 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0102" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anomalie congénitale de l'oreillette gauche" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.02.11" ]
+       ]
+     ]
+  ], [
+     fhir:index 102 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0103" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Oreillette gauche divisée" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "05.02.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 103 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0104" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.10.37" ]
+       ]
+     ]
+  ], [
+     fhir:index 104 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0105" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.10.38" ]
+       ]
+     ]
+  ], [
+     fhir:index 105 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0106" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.10.30" ]
+       ]
+     ]
+  ], [
+     fhir:index 106 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0107" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.08.01" ]
+       ]
+     ]
+  ], [
+     fhir:index 107 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0108" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Fistule (malformation) artérioveineuse pulmonaire" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "09.19.05" ]
+       ]
+     ]
+  ], [
+     fhir:index 108 ;
+     fhir:CodeSystem.concept.code [ fhir:value "TAUSSIG-DIAG-0109" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bloc atrioventriculaire complet congénital idiopathique" ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index 0 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "ipccc-origin" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+         fhir:Coding.code [ fhir:value "11.06.08" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/taussig-diagnosis.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

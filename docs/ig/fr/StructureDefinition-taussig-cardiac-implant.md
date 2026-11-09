@@ -1,4 +1,4 @@
-# TAUSSIG — Implant cardiaque (substrat longitudinal) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Implant cardiaque (substrat longitudinal) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Implant cardiaque (substrat longitudinal) ( Expérimental ) 
 
@@ -66,12 +66,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cardiac-implant",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-implant",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigCardiacImplant",
   "title" : "TAUSSIG — Implant cardiaque (substrat longitudinal)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Dispositif implanté persistant (conduit, valve, stent, occluder…). État clinique courant en extension (Device.status ne couvre pas functional/degenerated/…) ; chaînage valve-in-valve ; site anatomique SNOMED ; UDI.",
   "jurisdiction" : [{
@@ -324,7 +324,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Device.property:covering.valueCode",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Device.property.valueCode",
+      "label" : "Couverture du stent (nu ou couvert)",
+      "short" : "Couverture du stent (nu ou couvert)",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true,
@@ -355,7 +361,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Device.property:expansionMode.valueCode",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Device.property.valueCode",
+      "label" : "Mode d'expansion (ballon ou auto-expansible)",
+      "short" : "Mode d'expansion (ballon ou auto-expansible)",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true,
@@ -386,7 +398,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Device.property:coating.valueCode",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Device.property.valueCode",
+      "label" : "Revêtement (actif ou non)",
+      "short" : "Revêtement (actif ou non)",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true,

@@ -1,4 +1,4 @@
-# Phase procédurale (mesure) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Phase procédurale (mesure) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Extension: Phase procédurale (mesure) (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-procedurePhase.
   "resourceType" : "StructureDefinition",
   "id" : "procedurePhase",
   "url" : "https://taussig/fhir/StructureDefinition/procedurePhase",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedurePhase",
   "title" : "Phase procédurale (mesure)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Phase de la procédure à laquelle la mesure est faite (baseline/pre/post).",
   "jurisdiction" : [{

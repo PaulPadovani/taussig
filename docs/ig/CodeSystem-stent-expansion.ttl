@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem stent-expansion</b></p><a name=\"stent-expansion\"> </a><a name=\"hcstent-expansion\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/stent-expansion</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">balloon_expandable<a name=\"stent-expansion-balloon_expandable\"> </a></td><td>Expansible au ballon</td></tr><tr><td style=\"white-space:nowrap\">self_expanding<a name=\"stent-expansion-self_expanding\"> </a></td><td>Auto-expansible</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/stent-expansion"] ;
-  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.1"] ;
   fhir:CodeSystem.name [ fhir:value "StentExpansion"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Mode d'expansion d'un stent"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Stent expansible au ballon ou auto-expansible (décision M2)."] ;
   fhir:CodeSystem.jurisdiction [

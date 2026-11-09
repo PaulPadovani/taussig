@@ -8,7 +8,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — GeneticSyndromeToIcd11 - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
+    <title>TAUSSIG — Syndromes génétiques (Orphanet) vers ICD-11 - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -48,8 +48,8 @@
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.139"}
-    h3,h4,h5,h6{--heading-prefix:"4.139"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.167"}
+    h3,h4,h5,h6{--heading-prefix:"4.167"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,7 +59,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.8.0 - trial-use
+            <span style="display:inline-block;">0.8.1 - trial-use
 
 
 
@@ -118,7 +118,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — GeneticSyndromeToIcd11</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — Syndromes génétiques (Orphanet) vers ICD-11</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -132,7 +132,7 @@
 
 <!-- layouts\layout-canonical -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -179,7 +179,7 @@
   <a name="root"> </a>
 
 
-  <h2 id="root">ConceptMap: TAUSSIG — GeneticSyndromeToIcd11
+  <h2 id="root">ConceptMap: TAUSSIG — Syndromes génétiques (Orphanet) vers ICD-11
 (Expérimental)
   </h2>
 
@@ -189,7 +189,7 @@
       <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11|0.1.0"/></span>
+      <span class="copy-text">0.8.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/ConceptMap/genetic-syndrome-to-icd11|0.8.1"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
@@ -232,7 +232,7 @@
 
 
 <div data-fhir="generated">
-<p>Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1).</p>
+<p>Correspondance des 17 syndromes génétiques TAUSSIG (OrphaCode) vers ICD-11. Équivalence vue depuis l'OrphaCode (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4). Relations CIM validées par Orphanet (Orphadata, produit 1 FR, 2025-12-09, CC BY 4.0) : E → equivalent, NTBT → wider, BTNT → narrower.</p>
 
 </div>
 
@@ -249,7 +249,7 @@
   
 
 
-  <div data-fhir="generated"><p class="res-header-id"/><a name="genetic-syndrome-to-icd11"> </a><a name="hcgenetic-syndrome-to-icd11"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping de <code>http://www.orpha.net</code> to <code>http://id.who.int/icd/release/11/mms</code> (International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS))</p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td></tr><tr><td>870 (Trisomie 21)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD40.0 (Complete trisomy 21)</td></tr><tr><td>881 (Syndrome de Turner)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD50.0 (Turner syndrome)</td></tr><tr><td>567 (Syndrome de délétion 22q11.2)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD44.N0 (CATCH 22 phenotype)</td></tr><tr><td>3380 (Syndrome de trisomie 18)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD40.2 (Complete trisomy 18)</td></tr><tr><td>3378 (Syndrome de trisomie 13)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD40.1 (Complete trisomy 13)</td></tr><tr><td>365 (Glycogénose par déficit en maltase acide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>5C51.3 (Glycogen storage disease)</td></tr><tr><td>95 (Ataxie de Friedreich)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>8A03.10 (Friedreich ataxia)</td></tr><tr><td>98896 (Dystrophie musculaire de Duchenne)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>8C70.1 (Duchenne muscular dystrophy)</td></tr><tr><td>558 (Syndrome de Marfan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD28.01 (Marfan syndrome)</td></tr><tr><td>98249 (Syndrome d'Ehlers-Danlos)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD28.1 (Ehlers-Danlos syndrome)</td></tr><tr><td>60030 (Syndrome de Loeys-Dietz)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>BD50.Z (Aortic aneurysm or dissection, unspecified)</td></tr><tr><td>648 (Syndrome de Noonan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD2F.15 (Noonan syndrome)</td></tr><tr><td>805 (Sclérose tubéreuse de Bourneville)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD2D.2 (Tuberous sclerosis)</td></tr><tr><td>904 (Syndrome de Williams)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD44.70 (Deletions of the long arm of chromosome 7)</td></tr><tr><td>52 (Syndrome d'Alagille)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LB20.0Y (Other specified structural developmental anomalies of liver)</td></tr><tr><td>290 (Syndrome de rubéole congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>KA62.8 (Congenital rubella syndrome)</td></tr><tr><td>68341 (Anomalies congénitales multiples/syndrome dysmorphique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>LD2F (Syndromes with multiple structural anomalies, without predominant body system involvement)</td></tr></table></div>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="genetic-syndrome-to-icd11"> </a><a name="hcgenetic-syndrome-to-icd11"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><p>Mapping de <a href="ValueSet-taussig-genetic-syndrome.html">TAUSSIG — Syndromes génétiques (Orphanet)</a> vers (non spécifié)</p><br/><p>Mapping de <code>http://www.orpha.net</code> to <code>http://id.who.int/icd/release/11/mms</code> (International Classification of Diseases, 11th Revision Mortality and Morbidity Statistics (MMS))</p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>870 (Trisomie 21)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD40.0 (Trisomie 21 complète)</td><td>relation Orphanet validée</td></tr><tr><td>881 (Syndrome de Turner)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD50.0 (Syndrome de Turner)</td><td>relation Orphanet validée</td></tr><tr><td>567 (Syndrome de délétion 22q11.2)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD44.N0 (Phénotype CATCH 22)</td><td>relation Orphanet validée</td></tr><tr><td>3380 (Syndrome de trisomie 18)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD40.2 (Trisomie 18 complète)</td><td>relation Orphanet validée</td></tr><tr><td>3378 (Syndrome de trisomie 13)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD40.1 (Trisomie 13 complète)</td><td>relation Orphanet validée</td></tr><tr><td>365 (Glycogénose par déficit en maltase acide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>5C51.3 (Thésaurismose glycogénique)</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td>95 (Ataxie de Friedreich)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>8A03.10 (Ataxie de Friedreich)</td><td>relation Orphanet validée</td></tr><tr><td>98896 (Dystrophie musculaire de Duchenne)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>8C70.1 (Dystrophie musculaire de Duchenne)</td><td>relation Orphanet validée</td></tr><tr><td>558 (Syndrome de Marfan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD28.01 (Syndrome de Marfan)</td><td>relation Orphanet validée</td></tr><tr><td>98249 (Syndrome d'Ehlers-Danlos)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD28.1 (Syndrome d'Ehlers-Danlos)</td><td>relation Orphanet validée</td></tr><tr><td>60030 (Syndrome de Loeys-Dietz)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>BD50.Z (Anévrisme aortique ou dissection, sans précision)</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td>648 (Syndrome de Noonan)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD2F.15 (Syndrome de Noonan)</td><td>relation Orphanet validée</td></tr><tr><td>805 (Sclérose tubéreuse de Bourneville)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>LD2D.2 (Sclérose tubéreuse)</td><td>relation Orphanet validée</td></tr><tr><td>904 (Syndrome de Williams)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>LD44.70 (Délétions du bras long du chromosome 7)</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td>52 (Syndrome d'Alagille)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-wider" title="wider">maps to wider concept</a></td><td>LB20.0Y (Autres anomalies structurelles du développement du foie)</td><td>relation Orphanet validée (NTBT)</td></tr><tr><td>290 (Syndrome de rubéole congénitale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>KA62.8 (Syndrome de rubéole congénitale)</td><td>relation Orphanet validée</td></tr><tr><td>68341 (Anomalies congénitales multiples/syndrome dysmorphique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-inexact" title="inexact">maps loosely to</a></td><td>LD2F (Syndromes présentant de multiples malformations, sans atteinte prédominante du système corporel)</td><td>groupe Orphanet sans alignement CIM publié</td></tr></table></div>
 
   <!-- insert notes if present -->
   
@@ -281,9 +281,9 @@
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-11-09 08:39:00 +0100">
+  <span title="2026-11-09 15:30:00 +0100">
     2026-11-09
   </span>
 

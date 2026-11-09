@@ -22,7 +22,7 @@
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Condition ex-taussig-cardiac-condition-profile</b></p><a name=\"ex-taussig-cardiac-condition-profile\"> </a><a name=\"hcex-taussig-cardiac-condition-profile\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-condition-profile.html\">TAUSSIG — Condition cardiaque évolutive</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Diagnostic congénital d'origine</b>: <a href=\"Condition-ex-taussig-cardiac-diagnosis.html\">Condition</a></p><p><b>category</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/condition-type residual_lesion}\">Lésion résiduelle</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Condition ex-taussig-cardiac-condition-profile</b></p><a name=\"ex-taussig-cardiac-condition-profile\"> </a><a name=\"hcex-taussig-cardiac-condition-profile\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-condition-profile.html\">TAUSSIG — Condition cardiaque évolutive</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Diagnostic congénital d'origine</b>: <a href=\"Condition-ex-taussig-cardiac-diagnosis.html\">Condition Coarctation de l'aorte</a></p><p><b>clinicalStatus</b>: <span title=\"Codes :{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/condition-type residual_lesion}\">Lésion résiduelle</span></p><p><b>code</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/taussig-condition TAUSSIG-COND-0064}, {https://taussig/fhir/CodeSystem/ipccc 15.37.05}, {http://hl7.org/fhir/sid/icd-10 Q25.1}, {https://taussig/fhir/CodeSystem/echsa DIAG095}\">Coarctation aortique résiduelle</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -32,12 +32,38 @@
        fhir:Reference.reference [ fhir:value "Condition/ex-taussig-cardiac-diagnosis" ]
      ]
   ] ;
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ] ;
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
+  ] ;
   fhir:Condition.category [
      fhir:index 0 ;
      fhir:CodeableConcept.coding [
        fhir:index 0 ;
        fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/condition-type" ] ;
        fhir:Coding.code [ fhir:value "residual_lesion" ]
+     ]
+  ] ;
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/taussig-condition" ] ;
+       fhir:Coding.code [ fhir:value "TAUSSIG-COND-0064" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ] ;
+       fhir:Coding.code [ fhir:value "15.37.05" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ] ;
+       fhir:Coding.code [ fhir:value "Q25.1" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/echsa" ] ;
+       fhir:Coding.code [ fhir:value "DIAG095" ]
      ]
   ] ;
   fhir:Condition.subject [

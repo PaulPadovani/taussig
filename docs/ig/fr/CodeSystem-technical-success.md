@@ -1,4 +1,4 @@
-# TAUSSIG — Succès technique de la procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Succès technique de la procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Succès technique de la procédure (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "technical-success",
   "url" : "https://taussig/fhir/CodeSystem/technical-success",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TechnicalSuccess",
   "title" : "TAUSSIG — Succès technique de la procédure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Niveau de succès technique au niveau procédure.",
   "jurisdiction" : [{

@@ -1,0 +1,321 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TAUSSIG — Conditions cardiaques évolutives vers IPCCC - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.153"}
+    h3,h4,h5,h6{--heading-prefix:"4.153"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
+            <br/>
+            <span style="display:inline-block;">0.8.1 - trial-use
+
+
+
+  <img alt="France drapeau" src="../assets/images/fra.svg" height="16" title="France"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="profils.html">Profils</a>
+  </li>
+  <li>
+    <a href="terminologies.html">Terminologies</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>TAUSSIG — Conditions cardiaques évolutives vers IPCCC</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-canonical -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Contenu narratif</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ConceptMap-taussig-condition-to-ipccc.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ConceptMap-taussig-condition-to-ipccc.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ConceptMap-taussig-condition-to-ipccc.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">ConceptMap: TAUSSIG — Conditions cardiaques évolutives vers IPCCC
+(Expérimental)
+  </h2>
+
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://taussig/fhir/ConceptMap/taussig-condition-to-ipccc<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://taussig/fhir/ConceptMap/taussig-condition-to-ipccc"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.8.1<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://taussig/fhir/ConceptMap/taussig-condition-to-ipccc|0.8.1"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            à date du 
+2026-11-09
+
+          
+        
+      </td>
+
+
+
+      <td><i>Nom computable</i>: <span style="font-family: monospace;">TaussigConditionToIpccc</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<div data-fhir="generated">
+<p>Correspondance des concepts TAUSSIG (conditions cardiaques évolutives) vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source) : HARVEY ne déduit le code que si la correspondance est « equivalent » ou « wider » et unique (décision A3). « unmatched » : aucun code ne convient. Qualification : dictionnaire v6.1, onglet Correspondances Cliniques (décision A4).</p>
+
+</div>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="ConceptMap-taussig-condition-to-ipccc.xml.html">XML</a>, <a href="ConceptMap-taussig-condition-to-ipccc.json.html">JSON</a>, <a href="ConceptMap-taussig-condition-to-ipccc.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div data-fhir="generated"><p class="res-header-id"/><a name="taussig-condition-to-ipccc"> </a><a name="hctaussig-condition-to-ipccc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr</p></div><p>Mapping de <a href="ValueSet-taussig-condition.html">TAUSSIG — Liste des conditions cardiaques évolutives</a> vers (non spécifié)</p><br/><p>Mapping de <a href="CodeSystem-taussig-condition.html">TAUSSIG — Conditions cardiaques évolutives</a> to <a href="CodeSystem-ipccc.html">IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)</a></p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>TAUSSIG-COND-0001 (Création/agrandissement de communication interatriale)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0002 (Cerclage de l'artère pulmonaire)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0003 (Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS))</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0004 (Intervention de Norwood)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0005 (Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel))</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0006 (Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel))</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0007 (Anastomose cavopulmonaire bidirectionnelle bilatérale)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0008 (Fontan (TCPC), conduit extracardiaque, fenestré)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0009 (Fontan (TCPC), conduit extracardiaque, non fenestré)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0010 (Fontan (TCPC), tunnel latéral, fenestré)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0011 (Fontan (TCPC), tunnel latéral, non fenestré)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0012 (Réparation à un ventricule et demi)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0013 (Palliation, autre)</td><td colspan="3" style="background-color: #efefef">(not mapped)</td></tr><tr><td>TAUSSIG-COND-0014 (Endocardite infectieuse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.06.01 (Infective endocarditis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0015 (Anomalie acquise de la veine cave supérieure)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.31.01 (Acquired superior caval vein (SVC) abnormality)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0016 (Anomalie acquise de la veine cave inférieure)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.31.21 (Acquired inferior caval vein (IVC) abnormality)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0017 (Anomalie acquise du sinus coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.30.16 (Acquired coronary sinus abnormality)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0018 (Anomalie acquise des veines pulmonaires)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.24.00 (Acquired pulmonary venous abnormality)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0019 (Anomalie acquise de l'oreillette droite)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.10.10 (Acquired right atrial abnormality)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0020 (Anomalie acquise de l'oreillette gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.10.20 (Acquired left atrial abnormality)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0021 (Communication interatriale résiduelle (CIA))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.10.63 (Residual interatrial communication ('ASD'))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0022 (Régurgitation tricuspide résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.11.03 (Residual tricuspid regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0023 (Sténose mitrale résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.12.01 (Residual mitral stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0024 (Régurgitation mitrale résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.12.03 (Residual mitral regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0025 (Régurgitation troncale résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.25.03 (Residual truncal regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0026 (Sténose valvulaire pulmonaire résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.30.01 (Residual pulmonary valvar stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0027 (Régurgitation pulmonaire résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.30.03 (Residual pulmonary regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0028 (Sténose de la néovalve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.30.09 (Neopulmonary valvar stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0029 (Régurgitation de la néovalve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.30.10 (Neopulmonary valvar regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0030 (Sténose valvulaire aortique résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.35.01 (Residual aortic valvar stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0031 (Régurgitation aortique résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.35.03 (Residual aortic regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0032 (Sténose de la néovalve aortique d'origine pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.35.09 (Stenosis of the neo-aortic valve of pulmonary origin)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0033 (Régurgitation de la néovalve aortique d'origine pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.35.10 (Regurgitation of the neo-aortic valve of pulmonary origin)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0034 (Sténose acquise de la néovalve aortique d'origine troncale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.25.12 (Acquired stenosis of the neo-aortic valve of truncal origin)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0035 (Régurgitation acquise de la néovalve aortique d'origine troncale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.25.13 (Acquired regurgitation of the neo-aortic valve of truncal origin)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0036 (Composante ventriculaire résiduelle de canal atrioventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.16.02 (Residual ventricular component of atrioventricular septal defect)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0037 (Régurgitation résiduelle de la valve atrioventriculaire commune)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.13.02 (Residual common atrioventricular valvar regurgitation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0038 (Sténose acquise de la valve atrioventriculaire commune (connexions biventriculaires))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.34.56 (Acquired stenosis of the common atrioventricular valve in biventricular connections)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0039 (Dilatation ventriculaire droite acquise)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.22 (Acquired right ventricular dilation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0040 (Hypertrophie ventriculaire droite acquise)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.23 (Acquired right ventricular hypertrophy)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0041 (Anévrisme ventriculaire droit acquis)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.02 (Acquired right ventricular aneurysm)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0042 (Dysfonction ventriculaire droite)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>07.01.11 (Right ventricular dysfunction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0043 (Obstruction résiduelle de la voie d'éjection du ventricule droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.20.23 (Residual right ventricular outflow tract obstruction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0044 (Dilatation ventriculaire gauche acquise)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.76 (Acquired left ventricular dilation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0045 (Hypertrophie ventriculaire gauche acquise)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.77 (Acquired left ventricular hypertrophy)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0046 (Anévrisme ventriculaire gauche acquis)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.42 (Acquired left ventricular aneurysm)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0047 (Défaillance ventriculaire gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.47 (Left ventricular failure)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0048 (Complication post-procédurale de la voie d'éjection du ventricule gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.21.21 (Postprocedural left ventricular outflow tract complication)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0049 (Sténose sous-aortique acquise)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.86 (Acquired subaortic stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0050 (Sténose sous-pulmonaire acquise)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.16.88 (Acquired subpulmonary stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0051 (Communication interventriculaire résiduelle (CIV))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.22.02 (Residual ventricular septal defect (VSD))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0052 (Cardiomyopathie restrictive)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.10.10 (Restrictive cardiomyopathy)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0053 (Anomalie acquise de l'arbre artériel pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.13.59 (Acquired pulmonary arterial tree abnormality)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0054 (Sténose post-procédurale du tronc de l'artère pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.32.02 (Postprocedural pulmonary trunk stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0055 (Sténose résiduelle de l'artère pulmonaire droite)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.32.23 (Residual right pulmonary artery stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0056 (Sténose résiduelle de l'artère pulmonaire gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.32.43 (Residual left pulmonary artery stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0057 (Hypertension artérielle pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.13.01 (Pulmonary arterial hypertension)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0058 (Embolie pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.13.51 (Pulmonary embolism)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0059 (Sténose aortique supravalvulaire acquise)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.14.77 (Acquired supravalvar aortic stenosis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0060 (Dilatation acquise de l'aorte ascendante et/ou de la racine aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.14.82 (Acquired dilation of ascending aorta and/or aortic root)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0061 (Dilatation de la racine aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>09.16.13 (Aortic root dilation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0062 (Dissection aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.14.51 (Aortic dissection)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0063 (Anévrisme aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.14.50 (Aortic aneurysm)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0064 (Coarctation aortique résiduelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.37.05 (Residual aortic coarctation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0065 (Complication coronaire post-procédurale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.41.00 (Postprocedural coronary arterial complication)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0066 (Persistance résiduelle du canal artériel (PDA))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.39.02 (Residual arterial duct (PDA) patency)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0067 (Complication liée à un conduit cardiaque)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.55.00 (Cardiac conduit related complication)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0068 (Obstruction d'anastomose systémico-pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.56.27 (Systemic-to-pulmonary arterial shunt obstruction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0069 (Obstruction partielle d'anastomose systémico-pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.56.01 (Systemic-to-pulmonary arterial shunt partial obstruction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0070 (Obstruction complète d'anastomose systémico-pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.56.02 (Systemic-to-pulmonary arterial shunt complete obstruction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0071 (Défaillance d'autogreffe pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.55.24 (Pulmonary autograft failure)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0072 (Circulation de Fontan défaillante)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.90.60 ('Failed' Fontan type circulation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0073 (Épanchement péricardique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.08.31 (Pericardial effusion)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0074 (Complication après transplantation cardiaque ou pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.95.00 (Complication after heart or lung transplant)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0075 (Sténose acquise des veines pulmonaires)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.24.02 (Pulmonary venous stenosis: acquired)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0076 (Obstruction d'une veine systémique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.30.09 (Systemic vein obstruction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0077 (Collatérale(s) veino-veineuse(s) systémique(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>04.00.06 (Systemic venovenous collateral(s))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0078 (Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.13.74 (Systemic-to-pulmonary collateral artery(ies) (MAPCA): acquired)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0079 (Fistules (malformations) artérioveineuses pulmonaires acquises)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.13.57 (Acquired pulmonary arteriovenous fistulas (malformations))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0080 (Cardiomyopathie dilatée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.10.25 (Dilated cardiomyopathy)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0081 (Cardiomyopathie hypertrophique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.10.20 (Hypertrophic cardiomyopathy)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0082 (Cardiomyopathie hypertrophique obstructive du ventricule gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.10.05 (Obstructive hypertrophic cardiomyopathy of left ventricle)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0083 (Myocardite (cardiomyopathie inflammatoire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.07.90 (Myocarditis (inflammatory cardiomyopathy))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0084 (Maladie de Kawasaki)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.09.01 (Kawasaki disease)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0085 (Infarctus du myocarde)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.18.00 (Myocardial infarction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0086 (État après transplantation cardiaque)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.21.63 (Patient status post heart transplant)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0087 (Maladie vasculaire pulmonaire irréversible)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.13.00 (Irreversible pulmonary vascular disease)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0088 (Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.13.08 (Irreversible pulmonary vascular disease due to congenital heart disease (Eisenmenger Syndrome))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0089 (Trouble du rythme cardiaque)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.00.00 (Arrhythmia)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0090 (Fibrillation atriale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.03.08 (Atrial fibrillation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0091 (Flutter atrial)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.03.07 (Atrial flutter)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0092 (Trouble du rythme atrial)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.03.09 (Atrial rhythm disturbance)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0093 (Trouble du rythme de la jonction atrioventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.04.00 (Rhythm disturbance at level of atrioventricular junction)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0094 (Trouble du rythme ventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.05.00 (Ventricular rhythm disturbance)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0095 (Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.07.01 (Atrioventricular reentry (reciprocating) tachycardia: manifest preexcitation in sinus rhythm (Wolff Parkinson White))</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0096 (Bloc atrioventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.06.38 (Atrioventricular block)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0097 (Bloc atrioventriculaire complet acquis)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.06.10 (Acquired complete atrioventricular block)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0098 (Indication de remplacement programmé d'un stimulateur cardiaque)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>11.12.61 (Indication for elective replacement of pacemaker system)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0099 (Entéropathie exsudative post-procédurale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.82.33 (Cardiac postprocedural protein losing enteropathy)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0100 (Bronchite plastique post-procédurale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.81.01 (Cardiac postprocedural plastic bronchitis)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0101 (Chylothorax)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>10.08.16 (Chylothorax)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0102 (Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.51.47 (Embolisation of cardiovascular device during cardiac catheterisation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0103 (Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.51.50 (Device malfunction during cardiac catheterisation procedure)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0104 (Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.50.03 (Inadvertent perforation of cardiac chamber or vessel during cardiac catheterisation)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0105 (Corps étranger intracardiaque post-procédural)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.80.17 (Postprocedural retained foreign body)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0106 (Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.50.37 (Embolisation of catheter introduced device)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr><tr><td>TAUSSIG-COND-0107 (Hémorragie post-procédurale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>15.02.00 (Postprocedural haemorrhage)</td><td>libellé TAUSSIG = traduction du terme IPCCC</td></tr></table></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
+          Le package taussig.poc#0.8.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-11-09 15:30:00 +0100">
+    2026-11-09
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

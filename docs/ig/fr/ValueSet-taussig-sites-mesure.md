@@ -1,4 +1,4 @@
-# TAUSSIG — Sites anatomiques de mesure/geste (validé) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Sites anatomiques de mesure/geste (validé) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Sites anatomiques de mesure/geste (validé) (Expérimental) 
 
@@ -32,7 +32,7 @@
   "title" : "TAUSSIG — Sites anatomiques de mesure/geste (validé)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED).",
   "jurisdiction" : [{

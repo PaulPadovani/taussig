@@ -1,4 +1,4 @@
-# TAUSSIG — Types de résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Types de résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Types de résultat global de procédure (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "procedure-outcome-type-vs",
   "url" : "https://taussig/fhir/ValueSet/procedure-outcome-type-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedureOutcomeTypeVS",
   "title" : "TAUSSIG — Types de résultat global de procédure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Les trois résultats globaux annotables d'un cathétérisme.",
   "jurisdiction" : [{

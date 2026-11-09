@@ -1,4 +1,4 @@
-# TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Profil de ressource: TAUSSIG — Événement indésirable ( Expérimental ) 
 
@@ -65,14 +65,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
   "resourceType" : "StructureDefinition",
   "id" : "taussig-adverse-event",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-adverse-event",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigAdverseEvent",
   "title" : "TAUSSIG — Événement indésirable",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
-  "description" : "Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4).",
+  "description" : "Complication péri-procédurale. Concept TAUSSIG saisi (taussig-adverse-event) ; IPCCC, CIM-10, SNOMED et ECHSA en sont déduits (0.8.1) ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -211,13 +211,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.event",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.event",
       "label" : "Événement indésirable",
       "short" : "Événement indésirable",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://taussig/fhir/ValueSet/taussig-adverse-event-snomed"
+        "valueSet" : "https://taussig/fhir/ValueSet/taussig-adverse-event"
       }
     },
     {
@@ -232,10 +236,30 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       }
     },
     {
+      "id" : "AdverseEvent.event.coding:taussig",
+      "path" : "AdverseEvent.event.coding",
+      "sliceName" : "taussig",
+      "label" : "Concept TAUSSIG de la complication",
+      "short" : "Concept TAUSSIG de la complication",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://taussig/fhir/ValueSet/taussig-adverse-event"
+      }
+    },
+    {
+      "id" : "AdverseEvent.event.coding:taussig.system",
+      "path" : "AdverseEvent.event.coding.system",
+      "min" : 1,
+      "patternUri" : "https://taussig/fhir/CodeSystem/taussig-adverse-event"
+    },
+    {
       "id" : "AdverseEvent.event.coding:snomed",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "snomed",
@@ -243,7 +267,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       "short" : "Code SNOMED CT",
       "min" : 0,
       "max" : "1",
-      "mustSupport" : true
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://taussig/fhir/ValueSet/taussig-adverse-event-snomed"
+      }
     },
     {
       "id" : "AdverseEvent.event.coding:snomed.system",
@@ -255,7 +282,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       "id" : "AdverseEvent.event.coding:ipccc",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "ipccc",
@@ -278,7 +305,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       "id" : "AdverseEvent.event.coding:icd10",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "icd10",
@@ -297,7 +324,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       "id" : "AdverseEvent.event.coding:echsa",
       "extension" : [{
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "echsa",
@@ -320,11 +347,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       },
       {
         "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
-        "valueCode" : "annotatable"
+        "valueCode" : "derived"
       }],
       "path" : "AdverseEvent.event.text",
-      "label" : "Libellé de l'EI (tel qu'écrit)",
-      "short" : "Libellé de l'EI (tel qu'écrit)"
+      "label" : "Libellé du concept TAUSSIG (déduit)",
+      "short" : "Libellé du concept TAUSSIG (déduit)"
     },
     {
       "id" : "AdverseEvent.outcome",

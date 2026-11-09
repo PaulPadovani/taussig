@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Geste interventionnel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# Exemple technique — TAUSSIG — Geste interventionnel - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## Exemple Procedure: Exemple technique — TAUSSIG — Geste interventionnel
 
@@ -16,7 +16,7 @@ Balise:
 
 **subject**: [Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01](Patient-ex-taussig-patient.md)
 
-**reasonReference**: [Condition : extension = ->Condition; category = Lésion résiduelle](Condition-ex-taussig-cardiac-condition-profile.md)
+**reasonReference**: [Condition Coarctation aortique résiduelle](Condition-ex-taussig-cardiac-condition-profile.md)
 
 ### FocalDevices
 

@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem device-property</b></p><a name=\"device-property\"> </a><a name=\"hcdevice-property\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/device-property</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">covering<a name=\"device-property-covering\"> </a></td><td>Couverture</td></tr><tr><td style=\"white-space:nowrap\">expansion_mode<a name=\"device-property-expansion_mode\"> </a></td><td>Mode d'expansion</td></tr><tr><td style=\"white-space:nowrap\">coating<a name=\"device-property-coating\"> </a></td><td>Revêtement</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/device-property"] ;
-  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.1"] ;
   fhir:CodeSystem.name [ fhir:value "DeviceProperty"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Propriété codée d'un dispositif"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T15:30:29+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Type de propriété codée portée par Device.property (décision M2)."] ;
   fhir:CodeSystem.jurisdiction [

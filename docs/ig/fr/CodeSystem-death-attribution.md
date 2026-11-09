@@ -1,4 +1,4 @@
-# TAUSSIG — Attribution du décès péri-procédural - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Attribution du décès péri-procédural - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Attribution du décès péri-procédural (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "death-attribution",
   "url" : "https://taussig/fhir/CodeSystem/death-attribution",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "DeathAttribution",
   "title" : "TAUSSIG — Attribution du décès péri-procédural",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Imputabilité d'un décès survenu en péri-procédure (ProcedureOutcome).",
   "jurisdiction" : [{

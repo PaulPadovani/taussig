@@ -1,4 +1,4 @@
-# TAUSSIG — Types d’anesthésie - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Types d’anesthésie - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Types d’anesthésie (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "anesthesia-type-vs",
   "url" : "https://taussig/fhir/ValueSet/anesthesia-type-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "TaussigAnesthesiaTypeVS",
   "title" : "TAUSSIG — Types d’anesthésie",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Quatre catégories du modèle : anesthésie générale, sédation et anesthésie locale en SNOMED CT, et aucune anesthésie explicite en code TAUSSIG. Sans distinction du niveau de sédation ni des techniques locorégionales.",
   "jurisdiction" : [{

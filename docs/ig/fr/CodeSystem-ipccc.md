@@ -1,4 +1,4 @@
-# IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived) 
 
@@ -7,6 +7,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
 * [IPCCC Short List v5.0 (sous-ensemble de saisie)](ValueSet-ipccc-short-list.md)
 * [TAUSSIG — Complications péri-procédurales (IPCCC)](ValueSet-taussig-adverse-event-ipccc.md)
 * [TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)](ValueSet-taussig-cardiac-condition.md)
+* [TAUSSIG — Liste des conditions évolutives (IPCCC)](ValueSet-taussig-condition-ipccc.md)
 * [TAUSSIG — Diagnostics congénitaux (IPCCC)](ValueSet-taussig-diagnosis-ipccc.md)
 * [TAUSSIG — Gestes de cathétérisme (IPCCC)](ValueSet-taussig-procedure-ipccc.md)
 
@@ -28,7 +29,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Représentation FHIR des codes, libellés et définitions IPCCC importés dans TAUSSIG ; contenu source conservé.",
   "jurisdiction" : [{

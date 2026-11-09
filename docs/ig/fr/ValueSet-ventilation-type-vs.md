@@ -1,4 +1,4 @@
-# TAUSSIG — Modes ventilatoires - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Modes ventilatoires - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## ValueSet: TAUSSIG — Modes ventilatoires (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "ventilation-type-vs",
   "url" : "https://taussig/fhir/ValueSet/ventilation-type-vs",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "VentilationTypeVS",
   "title" : "TAUSSIG — Modes ventilatoires",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Modes ventilatoires » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

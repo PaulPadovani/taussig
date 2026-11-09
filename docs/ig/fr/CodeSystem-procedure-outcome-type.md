@@ -1,4 +1,4 @@
-# TAUSSIG — Type de résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
+# TAUSSIG — Type de résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.1
 
 ## CodeSystem: TAUSSIG — Type de résultat global de procédure (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "procedure-outcome-type",
   "url" : "https://taussig/fhir/CodeSystem/procedure-outcome-type",
-  "version" : "0.8.0",
+  "version" : "0.8.1",
   "name" : "ProcedureOutcomeType",
   "title" : "TAUSSIG — Type de résultat global de procédure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-11-09T08:39:58+01:00",
+  "date" : "2026-11-09T15:30:29+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme.",
   "jurisdiction" : [{
