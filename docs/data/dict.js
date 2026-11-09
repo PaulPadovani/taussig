@@ -4,7 +4,7 @@ window.TAUSSIG_DICT = {
   "Patient.birth_weight_g": {
    "def": "Masse corporelle du patient mesurée à la naissance.",
    "res": "Observation",
-   "path": "Observation.valueQuantity",
+   "path": "Observation.value[x]",
    "dt": "Quantity",
    "cs": "http://loinc.org",
    "vs": "",
@@ -32,9 +32,9 @@ window.TAUSSIG_DICT = {
   "Patient.ins_qualified_identifier": {
    "def": "Matricule d'identité nationale de santé du patient, qualifié après vérification des traits d'identité auprès du téléservice national INSi.",
    "res": "Patient",
-   "path": "Patient.identifier:INS",
+   "path": "Patient.identifier",
    "dt": "Identifier",
-   "cs": "urn:oid:1.2.250.1.213.1.4.10",
+   "cs": "urn:oid:1.2.250.1.213.1.4.8",
    "vs": "",
    "bind": "",
    "type": "identifier",
@@ -74,7 +74,7 @@ window.TAUSSIG_DICT = {
   "Practitioner.rpps": {
    "def": "Numéro d'inscription du praticien au Répertoire partagé des professionnels de santé (RPPS).",
    "res": "Practitioner",
-   "path": "Practitioner.identifier:RPPS",
+   "path": "Practitioner.identifier:rpps",
    "dt": "Identifier",
    "cs": "urn:oid:1.2.250.1.71.4.2.1",
    "vs": "",
@@ -102,7 +102,7 @@ window.TAUSSIG_DICT = {
   "Organization.finess": {
    "def": "Numéro d'inscription de l'établissement de santé au Fichier national des établissements sanitaires et sociaux (FINESS).",
    "res": "Organization",
-   "path": "Organization.identifier:FINESS",
+   "path": "Organization.identifier:finess",
    "dt": "Identifier",
    "cs": "urn:oid:1.2.250.1.71.4.2.2",
    "vs": "",
@@ -270,7 +270,7 @@ window.TAUSSIG_DICT = {
   "CatheterizationDiagnosis.diagnosis_role": {
    "def": "Rôle tenu par une cardiopathie congénitale dans le contexte d'un cathétérisme donné, selon qu'elle en constitue l'indication principale, une lésion associée ou une découverte fortuite.",
    "res": "Procedure",
-   "path": "Procedure.reasonReference + extension:diagnosisRole",
+   "path": "Procedure.reasonReference.extension:diagnosisRole",
    "dt": "Coding (extension)",
    "cs": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
    "vs": "diagnosis-role-vs",
@@ -382,7 +382,7 @@ window.TAUSSIG_DICT = {
   "CatheterizationCondition.indication_role": {
    "def": "Rôle tenu par une condition cardiaque évolutive (résiduelle, acquise ou post-chirurgicale) en tant qu'indication ou contexte d'un cathétérisme donné.",
    "res": "Procedure",
-   "path": "Procedure.reasonReference + extension:indicationRole",
+   "path": "Procedure.reasonReference.extension:indicationRole",
    "dt": "Coding (extension)",
    "cs": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
    "vs": "diagnosis-role-vs",
@@ -410,7 +410,7 @@ window.TAUSSIG_DICT = {
   "CardiacImplant.status": {
    "def": "État fonctionnel courant du dispositif implanté.",
    "res": "Device",
-   "path": "Device.status (+ extension état clinique)",
+   "path": "Device.extension:implantClinicalStatus",
    "dt": "code",
    "cs": "(CodeSystem TAUSSIG)",
    "vs": "implant-status-vs",
@@ -423,8 +423,8 @@ window.TAUSSIG_DICT = {
   },
   "CardiacImplant.anatomical_site_snomed": {
    "def": "Site anatomique d'implantation du dispositif, codé en SNOMED CT.",
-   "res": "BodyStructure",
-   "path": "BodyStructure.location (ou DeviceUseStatement.bodySite)",
+   "res": "DeviceUseStatement",
+   "path": "DeviceUseStatement.bodySite",
    "dt": "CodeableConcept",
    "cs": "http://snomed.info/sct",
    "vs": "",
@@ -438,7 +438,7 @@ window.TAUSSIG_DICT = {
   "CardiacImplant.brand_model": {
    "def": "Marque et modèle commercial du dispositif implanté.",
    "res": "Device",
-   "path": "Device.deviceName",
+   "path": "Device.deviceName.name",
    "dt": "string",
    "cs": "",
    "vs": "",
@@ -452,7 +452,7 @@ window.TAUSSIG_DICT = {
   "CardiacImplant.status_source_catheterization_id": {
    "def": "Cathétérisme au cours duquel l'état courant du dispositif implanté a été constaté.",
    "res": "Provenance",
-   "path": "Provenance.entity / Observation.derivedFrom",
+   "path": "Provenance.entity",
    "dt": "Reference(Procedure)",
    "cs": "",
    "vs": "",
@@ -465,8 +465,8 @@ window.TAUSSIG_DICT = {
   },
   "CardiacImplant.implanted_on": {
    "def": "Date d'implantation du dispositif.",
-   "res": "Procedure",
-   "path": "Procedure.performed[x] (implantation)",
+   "res": "DeviceUseStatement",
+   "path": "DeviceUseStatement.timing[x]",
    "dt": "dateTime",
    "cs": "",
    "vs": "",
@@ -480,7 +480,7 @@ window.TAUSSIG_DICT = {
   "CardiacImplant.status_date": {
    "def": "Date à laquelle l'état courant du dispositif implanté a été constaté.",
    "res": "Device",
-   "path": "Device (état daté)",
+   "path": "Device.extension:implantStatusDate",
    "dt": "dateTime",
    "cs": "",
    "vs": "",
@@ -494,7 +494,7 @@ window.TAUSSIG_DICT = {
   "CardiacImplant.implanted_externally": {
    "def": "Indicateur précisant si le dispositif a été implanté hors des cathétérismes tracés dans TAUSSIG (chirurgie ou autre centre).",
    "res": "Device",
-   "path": "Device.extension(implantedExternally)",
+   "path": "Device.extension:implantedExternally",
    "dt": "boolean",
    "cs": "",
    "vs": "",
@@ -508,7 +508,7 @@ window.TAUSSIG_DICT = {
   "CardiacImplant.udi": {
    "def": "Identifiant unique du dispositif implanté (Unique Device Identification, UDI).",
    "res": "Device",
-   "path": "Device.udiCarrier",
+   "path": "Device.udiCarrier.carrierHRF",
    "dt": "Identifier",
    "cs": "(GS1 / HIBCC)",
    "vs": "",
@@ -578,7 +578,7 @@ window.TAUSSIG_DICT = {
   "Catheterization.bsa_m2": {
    "def": "Surface corporelle du patient au moment du cathétérisme.",
    "res": "Observation",
-   "path": "Observation.valueQuantity",
+   "path": "Observation.value[x]",
    "dt": "Quantity",
    "cs": "http://loinc.org",
    "vs": "",
@@ -606,7 +606,7 @@ window.TAUSSIG_DICT = {
   "Catheterization.contrast_volume_ml": {
    "def": "Volume total de produit de contraste iodé injecté au cours du cathétérisme.",
    "res": "Observation",
-   "path": "Observation.valueQuantity",
+   "path": "Observation.value[x]",
    "dt": "Quantity",
    "cs": "http://loinc.org",
    "vs": "",
@@ -620,7 +620,7 @@ window.TAUSSIG_DICT = {
   "Catheterization.dose_area_product": {
    "def": "Produit dose-surface cumulé délivré au cours du cathétérisme.",
    "res": "Observation",
-   "path": "Observation.valueQuantity",
+   "path": "Observation.value[x]",
    "dt": "Quantity",
    "cs": "http://loinc.org",
    "vs": "",
@@ -634,7 +634,7 @@ window.TAUSSIG_DICT = {
   "Catheterization.fluoroscopy_time_min": {
    "def": "Durée cumulée d'exposition à la fluoroscopie au cours du cathétérisme.",
    "res": "Observation",
-   "path": "Observation.valueQuantity",
+   "path": "Observation.value[x]",
    "dt": "Quantity",
    "cs": "http://loinc.org",
    "vs": "",
@@ -648,7 +648,7 @@ window.TAUSSIG_DICT = {
   "Catheterization.height_cm": {
    "def": "Taille du patient au moment du cathétérisme.",
    "res": "Observation",
-   "path": "Observation.valueQuantity",
+   "path": "Observation.value[x]",
    "dt": "Quantity",
    "cs": "http://loinc.org",
    "vs": "",
@@ -662,7 +662,7 @@ window.TAUSSIG_DICT = {
   "Catheterization.weight_kg": {
    "def": "Masse corporelle du patient au moment du cathétérisme.",
    "res": "Observation",
-   "path": "Observation.valueQuantity",
+   "path": "Observation.value[x]",
    "dt": "Quantity",
    "cs": "http://loinc.org",
    "vs": "",
@@ -674,9 +674,9 @@ window.TAUSSIG_DICT = {
    "termCol": null
   },
   "Catheterization.procedure_datetime": {
-   "def": "Date et heure de réalisation du cathétérisme.",
+   "def": "Date et heure d'entrée peau, c'est-à-dire du début de la procédure ; la date seule si l'heure n'est pas documentée.",
    "res": "Procedure",
-   "path": "Procedure.performed[x]",
+   "path": "Procedure.performedPeriod.start",
    "dt": "dateTime",
    "cs": "",
    "vs": "",
@@ -690,7 +690,7 @@ window.TAUSSIG_DICT = {
   "Catheterization.contrast_used": {
    "def": "Indicateur d'utilisation d'un produit de contraste iodé au cours du cathétérisme.",
    "res": "Procedure",
-   "path": "Procedure.extension(contrastUsed)",
+   "path": "Procedure.extension:contrastUsed",
    "dt": "boolean",
    "cs": "",
    "vs": "",
@@ -735,8 +735,8 @@ window.TAUSSIG_DICT = {
    "path": "MedicationAdministration.medication[x]",
    "dt": "CodeableConcept",
    "cs": "http://www.whocc.no/atc",
-   "vs": "",
-   "bind": "example",
+   "vs": "periprocedural-medication-atc-vs",
+   "bind": "extensible",
    "type": "string",
    "card": "0..1",
    "req": "non",
@@ -763,8 +763,8 @@ window.TAUSSIG_DICT = {
    "path": "MedicationAdministration.medication[x]",
    "dt": "CodeableConcept",
    "cs": "http://www.whocc.no/atc",
-   "vs": "",
-   "bind": "example",
+   "vs": "periprocedural-medication-atc-vs",
+   "bind": "extensible",
    "type": "string",
    "card": "0..1",
    "req": "non",
@@ -774,7 +774,7 @@ window.TAUSSIG_DICT = {
   "AnesthesiaManagement.antibioprophylaxis_given": {
    "def": "Indicateur d'administration d'une antibioprophylaxie lors du cathétérisme.",
    "res": "MedicationAdministration",
-   "path": "MedicationAdministration (catégorie prophylaxie)",
+   "path": "MedicationAdministration.category",
    "dt": "boolean",
    "cs": "",
    "vs": "",
@@ -788,7 +788,7 @@ window.TAUSSIG_DICT = {
   "AnesthesiaManagement.anticoagulant_given": {
    "def": "Indicateur d'administration d'un anticoagulant pendant le cathétérisme.",
    "res": "MedicationAdministration",
-   "path": "MedicationAdministration",
+   "path": "MedicationAdministration.category",
    "dt": "boolean",
    "cs": "",
    "vs": "",
@@ -859,10 +859,10 @@ window.TAUSSIG_DICT = {
    "def": "Indicateur précisant si la ponction vasculaire de l'abord a été réussie.",
    "res": "Procedure",
    "path": "Procedure.outcome",
-   "dt": "boolean",
-   "cs": "",
-   "vs": "",
-   "bind": "",
+   "dt": "CodeableConcept",
+   "cs": "http://snomed.info/sct",
+   "vs": "puncture-success-vs",
+   "bind": "required",
    "type": "boolean",
    "card": "0..1",
    "req": "non",
@@ -872,7 +872,7 @@ window.TAUSSIG_DICT = {
   "VascularAccess.side": {
    "def": "Latéralité anatomique, droite ou gauche, de la voie d'abord vasculaire.",
    "res": "Procedure",
-   "path": "Procedure.bodySite (laterality)",
+   "path": "Procedure.bodySite",
    "dt": "CodeableConcept",
    "cs": "http://snomed.info/sct",
    "vs": "laterality-vs",
@@ -898,13 +898,13 @@ window.TAUSSIG_DICT = {
    "termCol": null
   },
   "InterventionalGesture.gesture_type": {
-   "def": "Nature du geste interventionnel réalisé au cours du cathétérisme.",
+   "def": "Concept TAUSSIG du geste interventionnel, choisi par son libellé dans la liste des 188 concepts (Short List IPCCC du cathétérisme) ; les codes IPCCC, CCAM, ECHSA et SNOMED en sont déduits.",
    "res": "Procedure",
    "path": "Procedure.code",
    "dt": "CodeableConcept",
-   "cs": "http://snomed.info/sct",
-   "vs": "",
-   "bind": "",
+   "cs": "https://taussig/fhir/CodeSystem/taussig-procedure",
+   "vs": "taussig-procedure",
+   "bind": "required",
    "type": "code",
    "card": "0..1",
    "req": "non",
@@ -923,7 +923,7 @@ window.TAUSSIG_DICT = {
    "card": "0..1",
    "req": "non",
    "axis": "procedures",
-   "termCol": 1
+   "termCol": 3
   },
   "InterventionalGesture.snomed_code": {
    "def": "Code SNOMED CT du geste interventionnel, assurant son interopérabilité sémantique internationale.",
@@ -937,7 +937,7 @@ window.TAUSSIG_DICT = {
    "card": "0..1",
    "req": "non",
    "axis": "procedures",
-   "termCol": 4
+   "termCol": 6
   },
   "InterventionalGesture.target_structure_snomed": {
    "def": "Structure anatomique cible du geste interventionnel, codée en SNOMED CT.",
@@ -965,7 +965,7 @@ window.TAUSSIG_DICT = {
    "card": "0..1",
    "req": "non",
    "axis": "procedures",
-   "termCol": 2
+   "termCol": 4
   },
   "InterventionalGesture.echsa_code": {
    "def": "Code procédure de la nomenclature ECHSA-CD correspondant au geste interventionnel.",
@@ -979,7 +979,7 @@ window.TAUSSIG_DICT = {
    "card": "0..1",
    "req": "non",
    "axis": "procedures",
-   "termCol": 3
+   "termCol": 5
   },
   "InterventionalGesture.result": {
    "def": "Résultat technique immédiat propre au geste interventionnel considéré.",
@@ -998,7 +998,7 @@ window.TAUSSIG_DICT = {
   "InterventionalGesture.failure_reason": {
    "def": "Motif d'échec du geste interventionnel, le cas échéant.",
    "res": "Procedure",
-   "path": "Procedure.statusReason",
+   "path": "Procedure.statusReason.text",
    "dt": "string",
    "cs": "",
    "vs": "",
@@ -1053,8 +1053,8 @@ window.TAUSSIG_DICT = {
   },
   "MaterialUsed.attempt_result": {
    "def": "Résultat de la tentative réalisée avec le matériel considéré.",
-   "res": "Observation",
-   "path": "Observation.valueCodeableConcept",
+   "res": "Procedure",
+   "path": "Procedure.usedReference.extension:attemptResult",
    "dt": "CodeableConcept",
    "cs": "(CodeSystem TAUSSIG cs-taussig-gesture-result)",
    "vs": "gesture-result-vs",
@@ -1082,7 +1082,7 @@ window.TAUSSIG_DICT = {
   "MaterialUsed.usage_sequence": {
    "def": "Rang d'utilisation du matériel dans la séquence du geste.",
    "res": "Procedure",
-   "path": "Procedure.usedReference (ordre) / extension:usageSequence",
+   "path": "Procedure.usedReference.extension:usageSequence",
    "dt": "integer",
    "cs": "",
    "vs": "",
@@ -1096,7 +1096,7 @@ window.TAUSSIG_DICT = {
   "MaterialUsed.udi": {
    "def": "Identifiant unique du matériel (UDI-DI et UDI-PI).",
    "res": "Device",
-   "path": "Device.udiCarrier",
+   "path": "Device.udiCarrier.carrierHRF",
    "dt": "UDI",
    "cs": "https://www.gs1.org",
    "vs": "",
@@ -1124,7 +1124,7 @@ window.TAUSSIG_DICT = {
   "MaterialParameter.loinc_code": {
    "def": "Code LOINC du paramètre technique du matériel.",
    "res": "Device",
-   "path": "Device.property.type.coding:loinc",
+   "path": "Device.property.type",
    "dt": "Coding",
    "cs": "http://loinc.org",
    "vs": "",
@@ -1138,7 +1138,7 @@ window.TAUSSIG_DICT = {
   "MaterialParameter.unit_ucum": {
    "def": "Unité du paramètre technique du matériel, exprimée dans le référentiel UCUM.",
    "res": "Device",
-   "path": "Device.property.valueQuantity.code",
+   "path": "Device.property.valueQuantity",
    "dt": "code",
    "cs": "http://unitsofmeasure.org",
    "vs": "",
@@ -1152,7 +1152,7 @@ window.TAUSSIG_DICT = {
   "MaterialParameter.value_numeric": {
    "def": "Valeur numérique du paramètre technique du matériel.",
    "res": "Device",
-   "path": "Device.property.valueQuantity.value",
+   "path": "Device.property.valueQuantity",
    "dt": "decimal",
    "cs": "",
    "vs": "",
@@ -1194,7 +1194,7 @@ window.TAUSSIG_DICT = {
   "ClinicalMeasurement.measurement_property": {
    "def": "Nature de la grandeur physiologique mesurée — le « quoi » de la mesure.",
    "res": "Observation",
-   "path": "Observation.code.coding",
+   "path": "Observation.code",
    "dt": "Coding",
    "cs": "(CodeSystem propre TAUSSIG / measurement-property)",
    "vs": "taussig-measurement-property",
@@ -1278,7 +1278,7 @@ window.TAUSSIG_DICT = {
   "ClinicalMeasurement.unit_ucum": {
    "def": "Unité de mesure de la valeur, exprimée dans le référentiel UCUM.",
    "res": "Observation",
-   "path": "Observation.valueQuantity.code",
+   "path": "Observation.value[x]",
    "dt": "code",
    "cs": "http://unitsofmeasure.org",
    "vs": "",
@@ -1292,7 +1292,7 @@ window.TAUSSIG_DICT = {
   "ClinicalMeasurement.value_coded": {
    "def": "Résultat qualitatif de la mesure exprimé sous forme de valeur codée.",
    "res": "Observation",
-   "path": "Observation.valueCodeableConcept",
+   "path": "Observation.value[x]",
    "dt": "CodeableConcept",
    "cs": "http://snomed.info/sct",
    "vs": "",
@@ -1306,7 +1306,7 @@ window.TAUSSIG_DICT = {
   "ClinicalMeasurement.value_numeric": {
    "def": "Valeur numérique de la mesure — le « combien » de la mesure.",
    "res": "Observation",
-   "path": "Observation.valueQuantity.value",
+   "path": "Observation.value[x]",
    "dt": "decimal",
    "cs": "",
    "vs": "",
@@ -1320,7 +1320,7 @@ window.TAUSSIG_DICT = {
   "ClinicalMeasurement.value_text": {
    "def": "Résultat de la mesure exprimé en texte libre, lorsqu'il n'est ni numérique ni codable.",
    "res": "Observation",
-   "path": "Observation.valueString",
+   "path": "Observation.value[x]",
    "dt": "string",
    "cs": "",
    "vs": "",
@@ -1348,7 +1348,7 @@ window.TAUSSIG_DICT = {
   "ProcedureOutcome.death": {
    "def": "Indicateur de survenue du décès du patient en lien avec l'épisode de cathétérisme.",
    "res": "Patient",
-   "path": "Patient.deceasedBoolean",
+   "path": "Patient.deceased[x]",
    "dt": "boolean",
    "cs": "",
    "vs": "",
@@ -1362,7 +1362,7 @@ window.TAUSSIG_DICT = {
   "ProcedureOutcome.death_attribution": {
    "def": "Degré d'imputabilité du décès à la procédure de cathétérisme.",
    "res": "Observation",
-   "path": "Observation.component",
+   "path": "Observation.value[x]",
    "dt": "CodeableConcept",
    "cs": "(CodeSystem TAUSSIG)",
    "vs": "death-attribution-vs",
@@ -1376,10 +1376,10 @@ window.TAUSSIG_DICT = {
   "ProcedureOutcome.hemodynamic_success": {
    "def": "Indicateur du succès hémodynamique de la procédure.",
    "res": "Observation",
-   "path": "Observation.valueBoolean",
+   "path": "Observation.value[x]",
    "dt": "boolean",
    "cs": "",
-   "vs": "",
+   "vs": "procedure-outcome-type-vs (code hemodynamic_success)",
    "bind": "",
    "type": "boolean",
    "card": "0..1",
@@ -1390,10 +1390,10 @@ window.TAUSSIG_DICT = {
   "ProcedureOutcome.residual_lesion_present": {
    "def": "Indicateur de synthèse signalant la persistance d'une lésion résiduelle en fin de procédure.",
    "res": "Observation",
-   "path": "Observation.valueBoolean",
+   "path": "Observation.value[x]",
    "dt": "boolean",
    "cs": "",
-   "vs": "",
+   "vs": "procedure-outcome-type-vs (code residual_lesion_present)",
    "bind": "",
    "type": "boolean",
    "card": "0..1",
@@ -1418,7 +1418,7 @@ window.TAUSSIG_DICT = {
   "ProcedureOutcome.death_datetime": {
    "def": "Date et heure du décès du patient.",
    "res": "Patient",
-   "path": "Patient.deceasedDateTime",
+   "path": "Patient.deceased[x]",
    "dt": "dateTime",
    "cs": "",
    "vs": "",
@@ -1474,7 +1474,7 @@ window.TAUSSIG_DICT = {
   "AdverseEvent.snomed_code": {
    "def": "Nature de l'événement indésirable survenu, codée en SNOMED CT.",
    "res": "AdverseEvent",
-   "path": "AdverseEvent.event",
+   "path": "AdverseEvent.event.coding:snomed",
    "dt": "CodeableConcept",
    "cs": "http://snomed.info/sct",
    "vs": "taussig-adverse-event-snomed",
@@ -1502,7 +1502,7 @@ window.TAUSSIG_DICT = {
   "AdverseEvent.attribution": {
    "def": "Origine attribuée à l'événement indésirable (dispositif, abord vasculaire, anesthésie, technique procédurale, état du patient, produit de contraste ou indéterminée).",
    "res": "AdverseEvent",
-   "path": "AdverseEvent.extension:adverseEventAttribution",
+   "path": "AdverseEvent.extension:attribution",
    "dt": "CodeableConcept",
    "cs": "https://taussig/fhir/CodeSystem/ae-attribution",
    "vs": "ae-attribution-vs",
@@ -1516,7 +1516,7 @@ window.TAUSSIG_DICT = {
   "AdverseEvent.management": {
    "def": "Niveau de prise en charge mis en œuvre en réponse à l'événement indésirable, selon une échelle d'escalade thérapeutique allant de l'absence de traitement au sauvetage chirurgical.",
    "res": "AdverseEvent",
-   "path": "AdverseEvent.extension:adverseEventManagement",
+   "path": "AdverseEvent.extension:management",
    "dt": "CodeableConcept",
    "cs": "(CodeSystem propre TAUSSIG)",
    "vs": "taussig-ae-management",
@@ -1610,6 +1610,468 @@ window.TAUSSIG_DICT = {
    "req": "non",
    "axis": "genetique",
    "termCol": 1
+  },
+  "InterventionalGesture.catheterization_id": {
+   "def": "Cathétérisme dont le geste fait partie.",
+   "res": "Procedure",
+   "path": "Procedure.partOf",
+   "dt": "Reference(TaussigCatheterization)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "InterventionalGesture.target_diagnosis_id / target_condition_id": {
+   "def": "Lésion ciblée par le geste : diagnostic congénital natif ou condition évolutive.",
+   "res": "Procedure",
+   "path": "Procedure.reasonReference",
+   "dt": "Reference(TaussigCardiacDiagnosis | TaussigCardiacCondition)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "InterventionalGesture.target_substrate_id": {
+   "def": "Implant posé par le geste, ou substrat préexistant repris (redilatation, valve-in-valve).",
+   "res": "Procedure",
+   "path": "Procedure.focalDevice.manipulated",
+   "dt": "Reference(TaussigCardiacImplant)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "MaterialUsed.gesture_id": {
+   "def": "Geste au cours duquel le matériel a été utilisé.",
+   "res": "Procedure",
+   "path": "Procedure.usedReference",
+   "dt": "Reference(TaussigMaterialUsed)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "VascularAccess.catheterization_id": {
+   "def": "Cathétérisme auquel appartient l'abord.",
+   "res": "Procedure",
+   "path": "Procedure.partOf",
+   "dt": "Reference(TaussigCatheterization)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "AnesthesiaManagement.catheterization_id": {
+   "def": "Cathétérisme pris en charge par l'anesthésie.",
+   "res": "Procedure",
+   "path": "Procedure.partOf",
+   "dt": "Reference(TaussigCatheterization)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "ClinicalMeasurement.catheterization_id": {
+   "def": "Cathétérisme pendant lequel la mesure est faite (mesure de contexte, hors geste précis).",
+   "res": "Observation",
+   "path": "Observation.partOf",
+   "dt": "Reference(TaussigCatheterization | TaussigInterventionalGesture)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "ClinicalMeasurement.implant mesuré (v5)": {
+   "def": "Implant sur lequel porte la mesure (lumière intrastent, gradient trans-valve). Demande HARVEY calibres 2026-11-04.",
+   "res": "Observation",
+   "path": "Observation.focus",
+   "dt": "Reference(TaussigCardiacImplant)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "ClinicalMeasurement.qualificatif de site (v5)": {
+   "def": "Précision du site telle qu'écrite (proximal, distal, aval, intrastent). Demande HARVEY calibres 2026-11-04.",
+   "res": "Observation",
+   "path": "Observation.bodySite.text",
+   "dt": "string",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "string",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "ProcedureOutcome.catheterization_id": {
+   "def": "Cathétérisme dont le résultat est synthétisé.",
+   "res": "Observation",
+   "path": "Observation.partOf",
+   "dt": "Reference(TaussigCatheterization)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "AdverseEvent.catheterization_id / gesture_id": {
+   "def": "Acte au cours duquel l'EI est survenu (contexte de survenue, sans jugement d'imputabilité).",
+   "res": "AdverseEvent",
+   "path": "AdverseEvent.extension:procedure",
+   "dt": "Reference(TaussigCatheterization | TaussigInterventionalGesture)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.previous_implant_id": {
+   "def": "Implant précédent (chaînage valve-in-valve, stent-in-stent).",
+   "res": "Device",
+   "path": "Device.extension:previousImplant",
+   "dt": "Reference(TaussigCardiacImplant)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.geste de pose": {
+   "def": "Geste TAUSSIG qui a posé l'implant, quand il est tracé (décision D1).",
+   "res": "DeviceUseStatement",
+   "path": "DeviceUseStatement.derivedFrom",
+   "dt": "Reference(TaussigInterventionalGesture)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacCondition.cardiac_diagnosis_id": {
+   "def": "Diagnostic congénital d'origine de la condition évolutive.",
+   "res": "Condition",
+   "path": "Condition.extension:relatedDiagnosis",
+   "dt": "Reference(TaussigCardiacDiagnosis)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "PeriproceduralMedication.catheterization_id": {
+   "def": "Acte pendant lequel le médicament est administré.",
+   "res": "MedicationAdministration",
+   "path": "MedicationAdministration.partOf",
+   "dt": "Reference(TaussigCatheterization | TaussigAnesthesiaManagement)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.procedure_concept": {
+   "def": "Concept TAUSSIG de l'acte de cathétérisme (même liste que les gestes : cathétérisme diagnostique, thérapeutique…).",
+   "res": "Procedure",
+   "path": "Procedure.code",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/taussig-procedure",
+   "vs": "taussig-procedure",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.skin_out_datetime": {
+   "def": "Date et heure de sortie peau (fin de la procédure).",
+   "res": "Procedure",
+   "path": "Procedure.performedPeriod.end",
+   "dt": "dateTime",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "dateTime",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.room_in_datetime": {
+   "def": "Date et heure d'entrée en salle de cathétérisme.",
+   "res": "Procedure",
+   "path": "Procedure.extension:roomPeriod.value[x].start",
+   "dt": "dateTime",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "dateTime",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.room_out_datetime": {
+   "def": "Date et heure de sortie de salle de cathétérisme.",
+   "res": "Procedure",
+   "path": "Procedure.extension:roomPeriod.value[x].end",
+   "dt": "dateTime",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "dateTime",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.procedure_duration_min": {
+   "def": "Durée de la procédure, de l'entrée à la sortie peau, en minutes.",
+   "res": "Procedure",
+   "path": "Procedure.performedPeriod",
+   "dt": "Period",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "integer",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.urgency": {
+   "def": "Caractère urgent du cathétérisme : programmé, urgent, en urgence, de sauvetage (définitions du registre IMPACT).",
+   "res": "Procedure",
+   "path": "Procedure.extension:procedureUrgency",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/procedure-urgency",
+   "vs": "procedure-urgency-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.operator_id": {
+   "def": "Praticien ayant réalisé le cathétérisme.",
+   "res": "Procedure",
+   "path": "Procedure.performer.actor",
+   "dt": "Reference(TaussigPractitioner)",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "reference",
+   "card": "0..*",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "Catheterization.operator_role": {
+   "def": "Rôle du praticien : 1er opérateur, 2e opérateur, opérateur en formation (interne, fellow).",
+   "res": "Procedure",
+   "path": "Procedure.performer.function",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/operator-role",
+   "vs": "operator-role-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "InterventionalGesture.gesture_sequence": {
+   "def": "Rang du geste dans le cathétérisme (1, 2, 3…), dans l'ordre où les gestes ont été réalisés.",
+   "res": "Procedure",
+   "path": "Procedure.extension:gestureSequence",
+   "dt": "integer",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "integer",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "MaterialUsed.manufacturer": {
+   "def": "Fabricant du matériel, en texte, normalisé selon la liste de référence (onglet VS Fabricants).",
+   "res": "Device",
+   "path": "Device.manufacturer",
+   "dt": "string",
+   "cs": "",
+   "vs": "liste de référence (onglet VS Fabricants)",
+   "bind": "",
+   "type": "string",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "MaterialUsed.serial_number": {
+   "def": "Numéro de série du matériel.",
+   "res": "Device",
+   "path": "Device.serialNumber",
+   "dt": "string",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "string",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "MaterialUsed.lot_number": {
+   "def": "Numéro de lot du matériel.",
+   "res": "Device",
+   "path": "Device.lotNumber",
+   "dt": "string",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "string",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.manufacturer": {
+   "def": "Fabricant de l'implant, en texte, normalisé selon la liste de référence (onglet VS Fabricants).",
+   "res": "Device",
+   "path": "Device.manufacturer",
+   "dt": "string",
+   "cs": "",
+   "vs": "liste de référence (onglet VS Fabricants)",
+   "bind": "",
+   "type": "string",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.serial_number": {
+   "def": "Numéro de série de l'implant.",
+   "res": "Device",
+   "path": "Device.serialNumber",
+   "dt": "string",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "string",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "CardiacImplant.lot_number": {
+   "def": "Numéro de lot de l'implant.",
+   "res": "Device",
+   "path": "Device.lotNumber",
+   "dt": "string",
+   "cs": "",
+   "vs": "",
+   "bind": "",
+   "type": "string",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "MaterialParameter.stent_covering": {
+   "def": "Couverture du stent : nu ou couvert.",
+   "res": "Device",
+   "path": "Device.property:covering.valueCode",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/stent-covering",
+   "vs": "stent-covering-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "MaterialParameter.stent_expansion": {
+   "def": "Mode d'expansion du stent : expansible au ballon ou auto-expansible.",
+   "res": "Device",
+   "path": "Device.property:expansionMode.valueCode",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/stent-expansion",
+   "vs": "stent-expansion-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
+  },
+  "MaterialParameter.stent_coating": {
+   "def": "Revêtement du stent : actif (pharmacologique) ou non.",
+   "res": "Device",
+   "path": "Device.property:coating.valueCode",
+   "dt": "CodeableConcept",
+   "cs": "https://taussig/fhir/CodeSystem/stent-coating",
+   "vs": "stent-coating-vs",
+   "bind": "required",
+   "type": "code",
+   "card": "0..1",
+   "req": "non",
+   "axis": null,
+   "termCol": null
   }
  },
  "entities": [
@@ -1667,7 +2129,7 @@ window.TAUSSIG_DICT = {
    "desc": "État hémodynamique évolutif que le patient traverse (shunt, HTAP…).",
    "zone": "substrats",
    "zoneTitre": "Les trois substrats",
-   "n": 7
+   "n": 8
   },
   {
    "name": "CardiacImplant",
@@ -1675,7 +2137,7 @@ window.TAUSSIG_DICT = {
    "desc": "Matériel implanté doté d’un cycle de vie propre (stent, valve, occluder…).",
    "zone": "substrats",
    "zoneTitre": "Les trois substrats",
-   "n": 9
+   "n": 14
   },
   {
    "name": "Catheterization",
@@ -1683,7 +2145,7 @@ window.TAUSSIG_DICT = {
    "desc": "L’acte-contenant : abord, anesthésie, gestes et mesures d’une même procédure.",
    "zone": "acte",
    "zoneTitre": "L’acte de cathétérisme",
-   "n": 13
+   "n": 21
   },
   {
    "name": "CatheterizationDiagnosis",
@@ -1707,7 +2169,7 @@ window.TAUSSIG_DICT = {
    "desc": "Prise en charge anesthésique de la procédure.",
    "zone": "acte",
    "zoneTitre": "L’acte de cathétérisme",
-   "n": 8
+   "n": 9
   },
   {
    "name": "VascularAccess",
@@ -1715,7 +2177,7 @@ window.TAUSSIG_DICT = {
    "desc": "Voie(s) d’abord utilisée(s) pour le cathétérisme.",
    "zone": "acte",
    "zoneTitre": "L’acte de cathétérisme",
-   "n": 5
+   "n": 6
   },
   {
    "name": "InterventionalGesture",
@@ -1723,7 +2185,7 @@ window.TAUSSIG_DICT = {
    "desc": "Geste thérapeutique décrit sur trois axes : cible, action, technique.",
    "zone": "gestes",
    "zoneTitre": "Gestes & matériel",
-   "n": 9
+   "n": 13
   },
   {
    "name": "MaterialUsed",
@@ -1731,7 +2193,7 @@ window.TAUSSIG_DICT = {
    "desc": "Dispositif employé pour un geste, avec trois niveaux de succès.",
    "zone": "gestes",
    "zoneTitre": "Gestes & matériel",
-   "n": 7
+   "n": 11
   },
   {
    "name": "MaterialParameter",
@@ -1739,7 +2201,7 @@ window.TAUSSIG_DICT = {
    "desc": "Caractéristique dimensionnelle d’un matériel (diamètre, longueur…).",
    "zone": "gestes",
    "zoneTitre": "Gestes & matériel",
-   "n": 4
+   "n": 7
   },
   {
    "name": "ClinicalMeasurement",
@@ -1747,7 +2209,7 @@ window.TAUSSIG_DICT = {
    "desc": "Mesure hémodynamique ou d’imagerie phasée (référence / pré / post).",
    "zone": "resultats",
    "zoneTitre": "Mesures & résultats",
-   "n": 13
+   "n": 16
   },
   {
    "name": "ProcedureOutcome",
@@ -1755,7 +2217,7 @@ window.TAUSSIG_DICT = {
    "desc": "Synthèse de fin d’acte — une vue, pas une source de vérité.",
    "zone": "resultats",
    "zoneTitre": "Mesures & résultats",
-   "n": 6
+   "n": 7
   },
   {
    "name": "AdverseEvent",
@@ -1763,7 +2225,15 @@ window.TAUSSIG_DICT = {
    "desc": "Complication cotée, avec gestion et origine consignées séparément.",
    "zone": "resultats",
    "zoneTitre": "Mesures & résultats",
-   "n": 10
+   "n": 11
+  },
+  {
+   "name": "PeriproceduralMedication",
+   "fr": "PeriproceduralMedication",
+   "desc": "",
+   "zone": "resultats",
+   "zoneTitre": "Mesures & résultats",
+   "n": 1
   }
  ],
  "zones": [
@@ -1868,21 +2338,21 @@ window.TAUSSIG_DICT = {
      "LA85.00",
      "01.01.03",
      "Q20.5",
-     "DIAG082"
+     "DIAG082 ; DIAG155"
     ],
     [
      "Transposition des gros vaisseaux",
      "LA85.1",
      "01.05.01",
      "Q20.3",
-     "DIAG083"
+     "DIAG083 ; DIAG084 ; DIAG085 ; DIAG086"
     ],
     [
      "Ventricule droit à double issue",
      "LA85.2",
      "01.01.04",
      "Q20.1",
-     "DIAG088"
+     "DIAG088 ; DIAG-2024-3"
     ],
     [
      "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition",
@@ -1910,7 +2380,7 @@ window.TAUSSIG_DICT = {
      "LA85.23",
      "01.01.17",
      "Q20.1",
-     "DIAG089"
+     "DIAG089 ; DIAG-2024-4"
     ],
     [
      "Ventricule gauche à double issue",
@@ -1973,7 +2443,7 @@ window.TAUSSIG_DICT = {
      "LA86.20",
      "04.08.05",
      "Q26.2",
-     "DIAG019"
+     "DIAG019 ; DIAG020 ; DIAG021 ; DIAG022"
     ],
     [
      "Connexion veineuse pulmonaire partielle anormale",
@@ -1994,7 +2464,7 @@ window.TAUSSIG_DICT = {
      "LA86.3",
      "04.08.31",
      "Q26.8",
-     "DIAG025"
+     "DIAG025 ; DIAG-2019-11"
     ],
     [
      "Anomalie congénitale d'une valve auriculoventriculaire ou d'un septum auriculoventriculaire",
@@ -2008,7 +2478,7 @@ window.TAUSSIG_DICT = {
      "LA87.0",
      "06.01.11",
      "Q22.9",
-     "DIAG040"
+     "DIAG040 ; DIAG039"
     ],
     [
      "Insuffisance tricuspide congénitale",
@@ -2043,7 +2513,7 @@ window.TAUSSIG_DICT = {
      "LA87.1",
      "06.02.11",
      "Q23.9",
-     "DIAG068"
+     "DIAG068 ; DIAG066"
     ],
     [
      "Insuffisance mitrale congénitale",
@@ -2134,7 +2604,7 @@ window.TAUSSIG_DICT = {
      "LA88",
      "07.00.00",
      "Q20.9",
-     ""
+     "DIAG121 ; DIAG120 ; DIAG-2019-27 ; DIAG-2019-28"
     ],
     [
      "Obstruction congénitale de la voie de sortie du ventricule droit",
@@ -2155,7 +2625,7 @@ window.TAUSSIG_DICT = {
      "LA88.2",
      "01.01.01",
      "Q21.3",
-     "DIAG028"
+     "DIAG028 ; DIAG-2010-2140"
     ],
     [
      "Tétralogie de Fallot avec syndrome de valve pulmonaire absente",
@@ -2190,7 +2660,7 @@ window.TAUSSIG_DICT = {
      "LA88.4",
      "07.10.00",
      "Q21.0",
-     ""
+     "DIAG168 ; DIAG169 ; DIAG008 ; DIAG170 ; DIAG172 ; DIAG174"
     ],
     [
      "Communication interventriculaire musculaire trabéculaire",
@@ -2218,7 +2688,7 @@ window.TAUSSIG_DICT = {
      "LA89",
      "01.01.22",
      "Q20.9",
-     "DIAG080"
+     "DIAG080 ; DIAG-2010-851 ; DIAG079"
     ],
     [
      "Connexion auriculoventriculaire à double entrée",
@@ -2253,14 +2723,14 @@ window.TAUSSIG_DICT = {
      "LA8A",
      "09.04.29",
      "Q24.8",
-     ""
+     "DIAG060"
     ],
     [
      "Anomalie congénitale de la valve pulmonaire",
      "LA8A.0",
      "09.05.29",
      "Q22.3",
-     "DIAG047"
+     "DIAG047 ; DIAG050"
     ],
     [
      "Sténose congénitale de la valve pulmonaire",
@@ -2295,7 +2765,7 @@ window.TAUSSIG_DICT = {
      "LA8A.2",
      "09.15.19",
      "Q23.9",
-     "DIAG058"
+     "DIAG058 ; DIAG057"
     ],
     [
      "Sténose congénitale de la valve aortique",
@@ -2386,7 +2856,7 @@ window.TAUSSIG_DICT = {
      "LA8B.2",
      "07.09.34",
      "Q25.4",
-     ""
+     "DIAG096"
     ],
     [
      "Coarctation de l'aorte",
@@ -2400,7 +2870,7 @@ window.TAUSSIG_DICT = {
      "LA8B.22",
      "09.29.31",
      "Q25.4",
-     "DIAG098"
+     "DIAG098 ; DIAG-2010-2000 ; DIAG-2010-2020"
     ],
     [
      "Anomalie congénitale de l'aorte thoracique descendante ou abdominale",
@@ -2435,28 +2905,28 @@ window.TAUSSIG_DICT = {
      "LA8C",
      "09.46.03",
      "Q24.5",
-     "DIAG161"
+     "DIAG161 ; DIAG157 ; DIAG-2019-35 ; DIAG-2019-36 ; DIAG-2019-37 ; DIAG-2019-38 ; DIAG-2019-43 ; DIAG-2019-44 ; DIAG-2019-45 ; DIAG-2019-46"
     ],
     [
      "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire",
      "LA8C.0",
      "09.41.01",
      "Q24.5",
-     "DIAG159"
+     "DIAG159 ; DIAG-2019-33 ; DIAG-2019-34"
     ],
     [
      "Origine aortique anormale ou trajet anormal de l'artère coronaire",
      "LA8C.1",
      "09.42.00",
      "Q24.5",
-     "DIAG158"
+     "DIAG158 ; DIAG-2019-32"
     ],
     [
      "Fistule artérielle coronaire congénitale",
      "LA8C.2",
      "09.45.16",
      "Q24.5",
-     "DIAG160"
+     "DIAG160 ; DIAG-2019-39 ; DIAG-2019-40 ; DIAG-2019-41 ; DIAG-2019-42"
     ],
     [
      "Malformation congénitale du péricarde",
@@ -2505,14 +2975,14 @@ window.TAUSSIG_DICT = {
      "LA8F",
      "05.01.13",
      "Q20.8",
-     ""
+     "DIAG-2019-30"
     ],
     [
      "Anomalie congénitale de l'oreillette gauche",
      "LA8G",
      "05.02.11",
      "Q20.8",
-     ""
+     "DIAG-2019-29"
     ],
     [
      "Oreillette gauche divisée",
@@ -2520,6 +2990,48 @@ window.TAUSSIG_DICT = {
      "05.02.01",
      "Q24.2",
      "DIAG024"
+    ],
+    [
+     "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
+     "LA8B.1",
+     "09.10.37",
+     "Q25.6",
+     "DIAG043"
+    ],
+    [
+     "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
+     "LA8B.1",
+     "09.10.38",
+     "Q25.6",
+     "DIAG044"
+    ],
+    [
+     "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
+     "LA8B.1",
+     "09.10.30",
+     "Q25.7",
+     "DIAG165"
+    ],
+    [
+     "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
+     "LA8B.1",
+     "09.08.01",
+     "Q27.8",
+     "DIAG035"
+    ],
+    [
+     "Fistule (malformation) artérioveineuse pulmonaire",
+     "LA90.5",
+     "09.19.05",
+     "Q25.7",
+     "DIAG127"
+    ],
+    [
+     "Bloc atrioventriculaire complet congénital idiopathique",
+     "BC63.20",
+     "11.06.08",
+     "Q24.6",
+     "DIAG111"
     ]
    ]
   },
@@ -2567,13 +3079,13 @@ window.TAUSSIG_DICT = {
      "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)",
      "",
      "",
-     "SP-2010-5670"
+     "SP-2010-5670 ; DIAG-2024-1"
     ],
     [
      "Anastomose cavopulmonaire bidirectionnelle bilatérale",
      "",
      "",
-     "SP-2010-5690"
+     "SP-2010-5690 ; DIAG-2024-2"
     ],
     [
      "Fontan (TCPC), conduit extracardiaque, fenestré",
@@ -2657,7 +3169,7 @@ window.TAUSSIG_DICT = {
      "Communication interatriale résiduelle (CIA)",
      "15.10.63",
      "Q21.1",
-     ""
+     "DIAG-2019-17"
     ],
     [
      "Régurgitation tricuspide résiduelle",
@@ -2843,13 +3355,13 @@ window.TAUSSIG_DICT = {
      "Cardiomyopathie restrictive",
      "10.10.10",
      "I42.5",
-     "DIAG070"
+     "DIAG070 ; DIAG-2023-3"
     ],
     [
      "Anomalie acquise de l'arbre artériel pulmonaire",
      "10.13.59",
      "I28.8",
-     ""
+     "DIAG118"
     ],
     [
      "Sténose post-procédurale du tronc de l'artère pulmonaire",
@@ -2915,7 +3427,7 @@ window.TAUSSIG_DICT = {
      "Coarctation aortique résiduelle",
      "15.37.05",
      "Q25.1",
-     "DIAG095"
+     "DIAG095 ; DIAG-2024-7"
     ],
     [
      "Complication coronaire post-procédurale",
@@ -2969,21 +3481,221 @@ window.TAUSSIG_DICT = {
      "Épanchement péricardique",
      "10.08.31",
      "I31.3",
-     "DIAG071"
+     "DIAG071 ; DIAG-2019-31"
     ],
     [
      "Complication après transplantation cardiaque ou pulmonaire",
      "15.95.00",
      "I97.9",
      ""
+    ],
+    [
+     "Sténose acquise des veines pulmonaires",
+     "10.24.02",
+     "I28.8",
+     "DIAG-2019-10"
+    ],
+    [
+     "Obstruction d'une veine systémique",
+     "10.30.09",
+     "I87.1",
+     "DIAG027"
+    ],
+    [
+     "Collatérale(s) veino-veineuse(s) systémique(s)",
+     "04.00.06",
+     "Q26.8",
+     "DIAG-2024-5"
+    ],
+    [
+     "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)",
+     "10.13.74",
+     "I77.8",
+     "DIAG-2024-6"
+    ],
+    [
+     "Fistules (malformations) artérioveineuses pulmonaires acquises",
+     "10.13.57",
+     "I28.0",
+     "DIAG127"
+    ],
+    [
+     "Cardiomyopathie dilatée",
+     "10.10.25",
+     "I42.0",
+     "DIAG-2023-1"
+    ],
+    [
+     "Cardiomyopathie hypertrophique",
+     "10.10.20",
+     "I42.2",
+     "DIAG-2023-2"
+    ],
+    [
+     "Cardiomyopathie hypertrophique obstructive du ventricule gauche",
+     "10.10.05",
+     "I42.1",
+     "DIAG-2023-4"
+    ],
+    [
+     "Myocardite (cardiomyopathie inflammatoire)",
+     "10.07.90",
+     "I51.4",
+     "DIAG-2019-07"
+    ],
+    [
+     "Maladie de Kawasaki",
+     "10.09.01",
+     "M30.3",
+     "DIAG-2019-26"
+    ],
+    [
+     "Infarctus du myocarde",
+     "10.18.00",
+     "I21.9",
+     "DIAG125"
+    ],
+    [
+     "État après transplantation cardiaque",
+     "10.21.63",
+     "",
+     "DIAG175"
+    ],
+    [
+     "Maladie vasculaire pulmonaire irréversible",
+     "10.13.00",
+     "I27.8",
+     "DIAG167 ; DIAG130"
+    ],
+    [
+     "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)",
+     "10.13.08",
+     "I27.8",
+     "DIAG130"
+    ],
+    [
+     "Trouble du rythme cardiaque",
+     "11.00.00",
+     "I49.9",
+     "DIAG109"
+    ],
+    [
+     "Fibrillation atriale",
+     "11.03.08",
+     "I48",
+     "DIAG-2019-14"
+    ],
+    [
+     "Flutter atrial",
+     "11.03.07",
+     "I48",
+     "DIAG-2019-15"
+    ],
+    [
+     "Trouble du rythme atrial",
+     "11.03.09",
+     "I49.8",
+     "DIAG-2019-16"
+    ],
+    [
+     "Trouble du rythme de la jonction atrioventriculaire",
+     "11.04.00",
+     "I49.8",
+     "DIAG-2010-2050"
+    ],
+    [
+     "Trouble du rythme ventriculaire",
+     "11.05.00",
+     "I49.8",
+     "DIAG-2010-2060"
+    ],
+    [
+     "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)",
+     "11.07.01",
+     "I45.6",
+     "DIAG-2019-13"
+    ],
+    [
+     "Bloc atrioventriculaire",
+     "11.06.38",
+     "I44.3",
+     "DIAG151"
+    ],
+    [
+     "Bloc atrioventriculaire complet acquis",
+     "11.06.10",
+     "I44.2",
+     "DIAG110"
+    ],
+    [
+     "Indication de remplacement programmé d'un stimulateur cardiaque",
+     "11.12.61",
+     "T82.9",
+     "DIAG113"
+    ],
+    [
+     "Entéropathie exsudative post-procédurale",
+     "15.82.33",
+     "K90.4 / Y83.8",
+     "DIAG-2019-09"
+    ],
+    [
+     "Bronchite plastique post-procédurale",
+     "15.81.01",
+     "J98.0 / J95.8",
+     "DIAG-2019-08"
+    ],
+    [
+     "Chylothorax",
+     "10.08.16",
+     "J94.0",
+     "DIAG138"
+    ],
+    [
+     "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+     "15.51.47",
+     "T82.8",
+     "DIAG-2019-18 ; DIAG-2019-21"
+    ],
+    [
+     "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+     "15.51.50",
+     "T82.5",
+     "DIAG-2019-19 ; DIAG-2019-22"
+    ],
+    [
+     "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur",
+     "15.50.03",
+     "T81.2 / Y60.5",
+     "DIAG-2019-20 ; DIAG-2019-23"
+    ],
+    [
+     "Corps étranger intracardiaque post-procédural",
+     "15.80.17",
+     "T81.8",
+     "DIAG-2019-24"
+    ],
+    [
+     "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+     "15.50.37",
+     "T82.8",
+     "DIAG-2019-25"
+    ],
+    [
+     "Hémorragie post-procédurale",
+     "15.02.00",
+     "T81.0",
+     "DIAG-2010-2070"
     ]
    ]
   },
   "procedures": {
-   "titre": "Gestes de cathétérisme",
-   "canon": "taussig-procedure",
+   "titre": "Gestes et actes de cathétérisme (concepts TAUSSIG)",
+   "canon": "",
    "colonnes": [
     "Libellé",
+    "Synonymes",
+    "Code TAUSSIG",
     "IPCCC",
     "CCAM",
     "ECHSA",
@@ -2991,557 +3703,1696 @@ window.TAUSSIG_DICT = {
    ],
    "lignes": [
     [
-     "angiocardiographie",
-     "13.05.05",
-     "DFQH001",
-     "PROC-2010-2520",
-     "34945008"
-    ],
-    [
-     "cathétérisme cardiaque",
-     "13.05.07",
-     "EQQF003",
-     "PROC-2010-2540",
-     "41976001"
-    ],
-    [
-     "cathétérisme cardiaque",
-     "13.05.06",
-     "EQQF001",
-     "PROC-2010-2510",
-     "41976001"
-    ],
-    [
-     "électrophysiologie cardiaque",
-     "13.05.12",
-     "DEQF003",
-     "PROC-2010-2680",
-     "252425004"
-    ],
-    [
-     "Extraction endovasculaire de corps étranger de l'aorte",
-     "12.45.04",
-     "DAGF001",
-     "",
-     "708810002"
-    ],
-    [
-     "angioplastie percutanée par ballonnet d'une veine pulmonaire",
-     "12.00.21",
-     "",
-     "PROC150",
-     "276892002"
-    ],
-    [
-     "insertion d'endoprothèse dans une veine pulmonaire",
-     "12.00.22",
-     "",
+     "Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique",
+     "endoprothèse aortique | TEVAR",
+     "TAUSSIG-PROC-0001",
+     "12.18.70",
+     "DGLF003",
      "PROC151",
-     "232978003"
+     "1259910000"
     ],
     [
-     "angioplastie percutanée par ballonnet d'une voie veineuse systémique",
-     "12.00.43",
-     "",
-     "PROC150",
-     "276896004"
-    ],
-    [
-     "insertion d'endoprothèse dans une voie veineuse systémique",
-     "12.00.44",
-     "",
-     "PROC151",
-     "233003002"
-    ],
-    [
-     "Pose de stent dans la veine cave supérieure",
-     "12.00.36",
-     "",
-     "PROC151",
-     ""
-    ],
-    [
-     "septostomie auriculaire par ballonnet par retrait",
-     "12.01.41",
-     "DAMF001",
-     "PROC148",
-     "233044001"
-    ],
-    [
-     "septostomie atriale",
-     "12.01.47",
-     "DAAF003",
-     "PROC-2010-2640",
-     "233043007"
-    ],
-    [
-     "fermeture d'une communication interatriale",
-     "12.01.06",
-     "DASF004",
-     "PROC152",
-     "112811009"
-    ],
-    [
-     "fermeture d'un foramen ovale perméable",
-     "12.01.07",
-     "DASF005",
-     "PROC152",
-     "41817002"
-    ],
-    [
-     "Occlusion de l'auricule gauche",
-     "12.38.25",
-     "DASF074",
-     "PROC152",
-     "1344914001"
-    ],
-    [
-     "Fermeture percutanée d'une CIA sinus venosus par stent couvert",
-     "12.01.88",
-     "",
-     "PROC151",
-     ""
-    ],
-    [
-     "Remplacement valvulaire tricuspide par voie transluminale",
-     "12.02.98",
-     "",
-     "PROC-2010-2660",
-     ""
-    ],
-    [
-     "Valve-in-valve tricuspide transluminale (dans une prothèse)",
-     "12.02.99",
-     "",
-     "PROC-2010-2660",
-     ""
-    ],
-    [
-     "dilatation par ballonnet d'une prothèse de valve tricuspidienne",
-     "12.02.12",
-     "DBAF003",
-     "PROC-2010-2590",
-     "232810003"
-    ],
-    [
-     "valvuloplastie de la valve mitrale",
-     "12.03.10",
-     "DBAF004",
-     "PROC-2010-2590",
-     "384642005"
-    ],
-    [
-     "dilatation par ballonnet d'une prothèse de valve mitrale",
-     "12.03.12",
-     "DBAF004",
-     "PROC-2010-2590",
-     "232770003"
-    ],
-    [
-     "Fermeture percutanée d'une fuite paravalvulaire de prothèse cardiaque par dispositif",
-     "12.45.19",
-     "DBSF001",
-     "PROC152",
-     "1231783006"
-    ],
-    [
-     "réparation de la valve mitrale guidée par radioscopie",
-     "12.03.97",
-     "",
-     "",
-     "432394003"
-    ],
-    [
-     "Remplacement valvulaire mitral par voie transluminale",
-     "12.03.98",
-     "",
-     "PROC-2010-2660",
-     ""
-    ],
-    [
-     "Valve-in-valve mitrale transluminale (dans une prothèse)",
-     "12.04.90",
-     "",
-     "PROC-2010-2660",
-     ""
-    ],
-    [
-     "Valve-in-valve mitrale transcathéter par voie transapicale",
-     "12.04.91",
-     "",
-     "PROC-2010-2660",
-     ""
-    ],
-    [
-     "biopsie transluminale ventriculaire droite après transplantation cardiaque",
-     "12.06.25",
-     "",
-     "",
-     "308683001"
-    ],
-    [
-     "dilatation par ballonnet de la chambre de chasse du ventricule droit",
-     "12.06.05",
-     "DAAF001",
-     "PROC150",
-     "233067004"
-    ],
-    [
-     "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
-     "12.06.18",
-     "DAAF001",
-     "PROC151",
-     ""
-    ],
-    [
-     "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
-     "12.06.95",
-     "DAAF001",
-     "PROC-2010-2630",
-     ""
-    ],
-    [
-     "fermeture transluminale percutanée de communication interventriculaire avec prothèse",
-     "12.08.07",
-     "DASF003",
-     "PROC152",
-     "233100002"
-    ],
-    [
-     "valvuloplastie percutanée par ballonnet de la valve pulmonaire",
-     "12.13.05",
-     "DBAF002",
-     "PROC-2010-2590",
-     "46897002"
-    ],
-    [
-     "valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie",
-     "12.13.09",
-     "DBAF005",
-     "PROC-2010-2590",
-     "442188002"
-    ],
-    [
-     "dilatation par ballonnet d'une prothèse de valve pulmonaire",
-     "12.13.06",
-     "DBAF002",
-     "PROC-2010-2590",
-     "232869005"
-    ],
-    [
-     "valvuloplastie aortique percutanée par ballonnet",
-     "12.16.05",
-     "DBAF001",
-     "PROC-2010-2590",
-     "77166000"
-    ],
-    [
-     "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-     "12.13.51",
-     "DBLF009",
-     "PROC-2010-2660",
-     "787162002"
-    ],
-    [
-     "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-     "12.13.87",
-     "DBLF009",
-     "PROC-2010-2660",
-     "787162002"
-    ],
-    [
-     "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-     "12.13.52",
-     "DBLF009",
-     "PROC-2010-2660",
-     "787162002"
-    ],
-    [
-     "implantation d'une valve aortique transcathéter",
-     "12.13.81",
-     "DBLF001",
-     "PROC-2010-2660",
-     "773996000"
-    ],
-    [
-     "implantation d'une valve aortique transcathéter",
-     "12.13.82",
-     "DBLF001",
-     "PROC-2010-2660",
-     "773996000"
-    ],
-    [
-     "angioplastie de l'artère pulmonaire",
-     "12.14.05",
-     "DFAF002",
-     "PROC150",
-     "233214006"
-    ],
-    [
-     "angioplastie de l'artère pulmonaire",
-     "12.15.03",
-     "DFAF002",
-     "PROC150",
-     "233214006"
-    ],
-    [
-     "angioplastie de l'artère pulmonaire",
-     "12.15.04",
-     "DFAF002",
-     "PROC150",
-     "233214006"
-    ],
-    [
-     "mise en place d'endoprothèse dans l'artère pulmonaire",
-     "12.15.13",
-     "DFAF003",
-     "PROC151",
-     "233215007"
-    ],
-    [
-     "mise en place d'endoprothèse dans l'artère pulmonaire",
-     "12.15.14",
-     "DFAF003",
-     "PROC151",
-     "233215007"
-    ],
-    [
-     "Pose de stent entre artère pulmonaire gauche et aorte descendante (Potts inversé)",
-     "12.15.70",
-     "",
-     "PROC151",
-     ""
-    ],
-    [
-     "Restriction de flux des artères pulmonaires droite et gauche par dispositifs transcathéter",
-     "12.15.42",
-     "",
-     "PROC152",
-     ""
-    ],
-    [
-     "embolectomie percutanée de l'artère pulmonaire",
-     "12.15.49",
-     "DFNF002",
-     "",
-     "175268008"
-    ],
-    [
-     "fermeture d'une fistule ou fenestration aorticopulmonaire",
-     "12.12.08",
-     "",
-     "PROC152",
-     "61192001"
-    ],
-    [
-     "angioplastie de coarctation",
-     "12.18.04",
-     "DGAF006",
-     "PROC150",
-     "308696000"
-    ],
-    [
-     "angioplastie de coarctation",
-     "12.18.08",
-     "DGAF006",
-     "PROC150",
-     "308696000"
-    ],
-    [
-     "mise en place d'endoprothèse au site de coarctation aortique",
-     "12.18.17",
-     "DGAF004",
-     "PROC151",
-     "448785002"
-    ],
-    [
-     "mise en place d'endoprothèse au site de coarctation aortique",
-     "12.18.22",
-     "DGAF004",
-     "PROC151",
-     "448785002"
-    ],
-    [
-     "insertion d'une endoprothèse dans le canal artériel",
-     "12.10.14",
-     "",
-     "PROC151",
-     "428280004"
-    ],
-    [
-     "dilatation par ballonnet du canal artériel",
-     "12.10.26",
-     "",
-     "PROC-2010-2630",
-     "233202003"
-    ],
-    [
-     "fermeture par voie percutanée du ligament artériel persistant",
-     "12.24.04",
-     "",
-     "PROC152",
-     "698642008"
-    ],
-    [
-     "Embolisation percutanée transluminale d'une collatérale systémico-pulmonaire majeure (MAPCA)",
-     "12.25.65",
-     "ECSF004",
-     "PROC154",
-     "707823006"
-    ],
-    [
-     "réparation d'une fistule artérioveineuse par occlusion",
-     "12.25.02",
-     "",
-     "PROC152",
-     "71330003"
-    ],
-    [
-     "Embolisation percutanée d'un vaisseau lymphatique guidée par fluoroscopie",
-     "12.49.50",
-     "",
-     "PROC154",
-     "1357782001"
-    ],
-    [
-     "Occlusion de collatérale véino-veineuse par dispositif",
-     "12.70.08",
-     "",
-     "PROC152",
-     ""
-    ],
-    [
-     "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-     "12.31.19",
-     "",
-     "PROC150",
-     "449227002"
-    ],
-    [
-     "angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-     "12.36.37",
-     "",
-     "PROC-2010-2640",
-     "261562001"
-    ],
-    [
-     "mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire",
-     "12.31.27",
-     "",
-     "PROC151",
-     "448949007"
-    ],
-    [
-     "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-     "12.36.34",
-     "",
-     "PROC-2010-2630",
-     "449227002"
-    ],
-    [
-     "Occlusion d'anastomose systémico-pulmonaire par dispositif d'embolisation transluminal",
-     "12.31.34",
-     "",
-     "PROC152",
-     "448779009"
-    ],
-    [
-     "dilatation par ballonnet d'un conduit cardiaque",
-     "12.36.14",
-     "",
-     "PROC150",
-     "449033003"
-    ],
-    [
-     "dilatation transluminale percutanée par ballonnet d'un conduit cardiaque",
-     "12.36.36",
-     "",
-     "PROC-2010-2640",
-     "707813002"
-    ],
-    [
-     "pose d'une endoprothèse dans un conduit cardiaque",
-     "12.36.23",
-     "",
-     "PROC151",
-     "449389000"
-    ],
-    [
-     "pose d'une endoprothèse dans un conduit cardiaque",
-     "12.36.32",
-     "",
-     "PROC-2010-2630",
-     "449389000"
-    ],
-    [
-     "péricardiocentèse transluminale percutanée",
-     "12.32.43",
-     "",
-     "",
-     "428394001"
-    ],
-    [
-     "Implantation de dispositif par voie transluminale",
-     "12.45.13",
-     "",
-     "PROC152",
-     ""
-    ],
-    [
-     "Stratégie hybride (chirurgicale et transluminale combinées)",
+     "Stratégie hybride (chirurgie et cathétérisme combinés)",
+     "stratégie hybride | procédure hybride",
+     "TAUSSIG-PROC-0002",
      "12.41.30",
      "",
      "",
      ""
     ],
     [
-     "Implantation de valve aortique par voie transapicale (approche hybride)",
-     "12.13.84",
+     "Cathétérisme par voie transseptale avec ponction transseptale",
+     "ponction transseptale | cathétérisme transseptal",
+     "TAUSSIG-PROC-0003",
+     "12.45.01",
      "",
-     "PROC-2010-2660",
+     "",
+     "429267006"
+    ],
+    [
+     "Test d'occlusion diagnostique par voie percutanée",
+     "test d'occlusion | occlusion test au ballon",
+     "TAUSSIG-PROC-0004",
+     "12.45.07",
+     "",
+     "PROC-2010-2530",
+     "699803004"
+    ],
+    [
+     "Geste percutané avec traitement adjuvant",
+     "thérapie adjuvante",
+     "TAUSSIG-PROC-0005",
+     "12.45.59",
+     "",
+     "PROC-2010-2670",
      ""
     ],
     [
-     "Fermeture peropératoire de CIV par dispositif transluminal (approche hybride)",
-     "12.08.28",
+     "Cathétérisme cardiaque diagnostique : angiographie",
+     "angiographie | angiocardiographie | angio",
+     "TAUSSIG-PROC-0006",
+     "13.05.05",
+     "DFQH001",
+     "PROC-2010-2520",
+     "34945008"
+    ],
+    [
+     "Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques",
+     "hémodynamique | cathétérisme droit et gauche | mesures de pressions",
+     "TAUSSIG-PROC-0007",
+     "13.05.06",
+     "EQQF001",
+     "PROC-2010-2510",
+     "41976001"
+    ],
+    [
+     "Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique",
+     "épreuve de vasoréactivité | test au NO | test au monoxyde d'azote | test de remplissage",
+     "TAUSSIG-PROC-0008",
+     "13.05.07",
+     "EQQF003",
+     "PROC-2010-2540",
+     "41976001"
+    ],
+    [
+     "Cathétérisme d'évaluation d'une hypertension pulmonaire",
+     "bilan d'HTAP | cathétérisme pour HTP",
+     "TAUSSIG-PROC-0009",
+     "13.05.13",
+     "EQQF003",
+     "PROC-2010-2510",
+     "40403005"
+    ],
+    [
+     "Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste",
+     "geste non réalisé, anatomie défavorable",
+     "TAUSSIG-PROC-0010",
+     "13.05.36",
+     "",
+     "PROC-2010-2500",
+     "41976001"
+    ],
+    [
+     "Geste percutané pour trouble du rythme",
+     "",
+     "TAUSSIG-PROC-0011",
+     "12.35.57",
+     "",
+     "PROC-2010-2680",
+     "233154000"
+    ],
+    [
+     "Geste percutané pour trouble du rythme atrial",
+     "",
+     "TAUSSIG-PROC-0012",
+     "12.35.82",
+     "",
+     "PROC-2010-2680",
+     "233154000"
+    ],
+    [
+     "Geste percutané pour trouble du rythme ventriculaire",
+     "",
+     "TAUSSIG-PROC-0013",
+     "12.35.83",
+     "",
+     "PROC-2010-2680",
+     "870252007"
+    ],
+    [
+     "Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique",
+     "",
+     "TAUSSIG-PROC-0014",
+     "13.05.08",
+     "DEQF001 ; DEQF002 ; DEQF004 ; DEQF005",
+     "PROC-2010-2550",
+     "82982002"
+    ],
+    [
+     "Exploration électrophysiologique",
+     "EEP | étude électrophysiologique",
+     "TAUSSIG-PROC-0015",
+     "13.05.12",
+     "DEQF003",
+     "PROC-2010-2680",
+     "252425004"
+    ],
+    [
+     "Exploration électrophysiologique avec cartographie tridimensionnelle",
+     "EEP avec cartographie 3D | cartographie 3D",
+     "TAUSSIG-PROC-0016",
+     "13.05.17",
+     "DEQF003 ; DEQF005",
+     "PROC-2010-2680",
+     "707833003"
+    ],
+    [
+     "Geste fœtal",
+     "intervention fœtale",
+     "TAUSSIG-PROC-0017",
+     "12.45.90",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Coagulation laser des anastomoses placentaires dans le syndrome transfuseur-transfusé",
+     "laser fœtoscopique | STT",
+     "TAUSSIG-PROC-0018",
+     "12.45.91",
+     "",
+     "",
+     "709117007"
+    ],
+    [
+     "Geste fœtal par cathéter",
+     "cathétérisme fœtal",
+     "TAUSSIG-PROC-0019",
+     "12.45.70",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Valvuloplastie pulmonaire fœtale au ballon",
+     "valvuloplastie pulmonaire in utero",
+     "TAUSSIG-PROC-0020",
+     "12.45.71",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Valvuloplastie aortique fœtale au ballon",
+     "valvuloplastie aortique in utero",
+     "TAUSSIG-PROC-0021",
+     "12.45.73",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Péricardiocentèse fœtale par cathéter",
+     "",
+     "TAUSSIG-PROC-0022",
+     "12.45.75",
+     "JQHB002",
+     "",
+     ""
+    ],
+    [
+     "Atrioseptostomie fœtale au ballon",
+     "septostomie fœtale",
+     "TAUSSIG-PROC-0023",
+     "12.45.76",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Cathétérisme thérapeutique avec échec de largage d'un dispositif, d'un stent ou d'un coil",
+     "échec de largage | largage impossible",
+     "TAUSSIG-PROC-0024",
+     "12.41.36",
+     "",
+     "PROC-2010-2410",
+     ""
+    ],
+    [
+     "Geste de cathétérisme cardiovasculaire",
+     "cathétérisme",
+     "TAUSSIG-PROC-0025",
+     "12.45.00",
+     "",
+     "PROC-2010-2410",
+     "41976001"
+    ],
+    [
+     "Nouveau cathétérisme pour lésion résiduelle ou récidivante",
+     "reprise percutanée | réintervention percutanée",
+     "TAUSSIG-PROC-0026",
+     "12.45.06",
+     "",
+     "PROC-2010-2410",
+     "41976001"
+    ],
+    [
+     "Redilatation de stent",
+     "redilatation d'endoprothèse",
+     "TAUSSIG-PROC-0027",
+     "12.45.10",
+     "",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Pose de stent",
+     "stenting | endoprothèse | implantation de stent",
+     "TAUSSIG-PROC-0028",
+     "12.45.11",
+     "",
+     "PROC151",
+     "429381005"
+    ],
+    [
+     "Dilatation au ballon",
+     "angioplastie au ballon | ballonnet",
+     "TAUSSIG-PROC-0029",
+     "12.45.12",
+     "",
+     "PROC150",
+     "68457009"
+    ],
+    [
+     "Implantation d'un dispositif par voie percutanée",
+     "prothèse | occluder | dispositif",
+     "TAUSSIG-PROC-0030",
+     "12.45.13",
      "",
      "PROC152",
      ""
     ],
     [
-     "Stratégie hybride pour hypoplasie du cœur gauche (cathéter et chirurgie)",
+     "Occlusion par coil au cours d'un cathétérisme",
+     "embolisation par coil | coil",
+     "TAUSSIG-PROC-0031",
+     "12.45.14",
+     "",
+     "PROC154",
+     ""
+    ],
+    [
+     "Implantation percutanée d'une valve",
+     "valve percutanée | valve transcathéter",
+     "TAUSSIG-PROC-0032",
+     "12.45.15",
+     "DBLF001 ; DBLF009",
+     "PROC-2010-2660",
+     "112815000"
+    ],
+    [
+     "Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif",
+     "fermeture de fuite paraprothétique | fuite paravalvulaire",
+     "TAUSSIG-PROC-0033",
+     "12.45.19",
+     "DBSF001",
+     "PROC152",
+     "1231783006"
+    ],
+    [
+     "Dilatation valvulaire au ballon",
+     "valvuloplastie au ballon",
+     "TAUSSIG-PROC-0034",
+     "12.45.21",
+     "DBAF001 ; DBAF002 ; DBAF003 ; DBAF004",
+     "PROC-2010-2590",
+     "24394009"
+    ],
+    [
+     "Cathétérisme cardiovasculaire thérapeutique",
+     "cathétérisme interventionnel | KT interventionnel",
+     "TAUSSIG-PROC-0035",
+     "12.45.28",
+     "",
+     "PROC-2010-2410",
+     "41976001"
+    ],
+    [
+     "Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux",
+     "perforation thérapeutique | recanalisation par perforation",
+     "TAUSSIG-PROC-0036",
+     "12.45.58",
+     "DBAF005",
+     "PROC-2010-2640",
+     ""
+    ],
+    [
+     "Cathétérisme cardiaque diagnostique",
+     "cathétérisme diagnostique | KT diagnostique",
+     "TAUSSIG-PROC-0037",
+     "13.05.01",
+     "EQQF001 ; EQQF006 ; EQQH001 ; EQQH005 ; EQQH006",
+     "PROC-2010-2500",
+     "41976001"
+    ],
+    [
+     "Agrandissement d'une communication interventriculaire",
+     "agrandissement de CIV",
+     "TAUSSIG-PROC-0038",
+     "12.08.06",
+     "",
+     "PROC-2010-2640",
+     "233104006"
+    ],
+    [
+     "Agrandissement ou création d'une communication interventriculaire",
+     "création de CIV",
+     "TAUSSIG-PROC-0039",
+     "12.08.35",
+     "",
+     "PROC-2010-2640",
+     "233104006"
+    ],
+    [
+     "Approche hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie) : stade 1",
+     "hybride stade 1 | HLHS hybride",
+     "TAUSSIG-PROC-0040",
+     "12.20.20",
+     "",
+     "PROC-2010-2180 ; PROC-2010-2160 ; PROC-2010-2170",
+     "233141007"
+    ],
+    [
+     "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s) et retrait des cerclages pulmonaires",
+     "hybride stade 2 | Norwood-Glenn compréhensif",
+     "TAUSSIG-PROC-0041",
+     "12.20.22",
+     "",
+     "PROC-2010-2150",
+     ""
+    ],
+    [
+     "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s), retrait des cerclages pulmonaires et réparation de l'arche",
+     "hybride stade 2 avec reconstruction de l'arche",
+     "TAUSSIG-PROC-0042",
+     "12.20.23",
+     "",
+     "PROC-2010-2140",
+     ""
+    ],
+    [
+     "Échographie endocoronaire",
+     "IVUS | échographie intravasculaire coronaire",
+     "TAUSSIG-PROC-0043",
+     "12.23.41",
+     "DDQJ001",
+     "",
+     "310658009"
+    ],
+    [
+     "Échocardiographie",
+     "écho | ETT",
+     "TAUSSIG-PROC-0044",
+     "13.01.00",
+     "DZQM006 ; DZQM003",
+     "",
+     "40701008"
+    ],
+    [
+     "Échocardiographie transœsophagienne",
+     "ETO",
+     "TAUSSIG-PROC-0045",
+     "13.01.03",
+     "DZQJ001 ; DZQJ012",
+     "",
+     "105376000"
+    ],
+    [
+     "Geste percutané guidé par échographie intracardiaque",
+     "ICE | échographie intracardiaque",
+     "TAUSSIG-PROC-0046",
+     "13.01.23",
+     "",
+     "",
+     "425789000"
+    ],
+    [
+     "Geste percutané sous guidage radiologique",
+     "sous scopie | sous fluoroscopie",
+     "TAUSSIG-PROC-0047",
+     "13.05.14",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Geste percutané sous guidage par IRM",
+     "cathétérisme sous IRM",
+     "TAUSSIG-PROC-0048",
+     "13.05.15",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Geste percutané sous guidage radiologique et IRM",
+     "XMR",
+     "TAUSSIG-PROC-0049",
+     "13.05.16",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Geste percutané sous guidage échographique",
+     "guidage écho",
+     "TAUSSIG-PROC-0050",
+     "13.05.24",
+     "DZQM003 ; DZQJ012",
+     "",
+     ""
+    ],
+    [
+     "Imagerie endocoronaire par tomographie par cohérence optique",
+     "OCT coronaire | OCT",
+     "TAUSSIG-PROC-0051",
+     "13.05.39",
+     "",
+     "",
+     "698254001"
+    ],
+    [
+     "Retrait peropératoire complet ou partiel d'un stent de l'artère pulmonaire",
+     "ablation chirurgicale de stent pulmonaire",
+     "TAUSSIG-PROC-0052",
+     "12.14.38",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Geste sur l'artère pulmonaire",
+     "",
+     "TAUSSIG-PROC-0053",
+     "12.15.11",
+     "",
+     "",
+     "175266007"
+    ],
+    [
+     "Occlusion d'une collatérale veino-veineuse par dispositif",
+     "embolisation de collatérale veino-veineuse",
+     "TAUSSIG-PROC-0054",
+     "12.70.08",
+     "",
+     "PROC152",
+     "1389030008"
+    ],
+    [
+     "Occlusion percutanée d'une veine systémique",
+     "occlusion de veine cave supérieure gauche | embolisation veineuse",
+     "TAUSSIG-PROC-0055",
+     "12.70.31",
+     "",
+     "PROC152",
+     "175871007"
+    ],
+    [
+     "Pose de stent dans l'artère pulmonaire droite",
+     "stent de l'APD",
+     "TAUSSIG-PROC-0056",
+     "12.15.13",
+     "DFAF003",
+     "PROC151",
+     "233215007"
+    ],
+    [
+     "Pose de stent dans l'artère pulmonaire gauche",
+     "stent de l'APG",
+     "TAUSSIG-PROC-0057",
+     "12.15.14",
+     "DFAF003",
+     "PROC151",
+     "233215007"
+    ],
+    [
+     "Pose de stent dans l'arbre artériel pulmonaire",
+     "stent pulmonaire",
+     "TAUSSIG-PROC-0058",
+     "12.15.50",
+     "DFAF003 ; DFAF001",
+     "PROC151",
+     "233215007"
+    ],
+    [
+     "Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+     "stent proximal de l'APD",
+     "TAUSSIG-PROC-0059",
+     "12.15.56",
+     "DFAF003",
+     "PROC151",
+     "233215007"
+    ],
+    [
+     "Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+     "stent distal de l'APD | stent lobaire droit",
+     "TAUSSIG-PROC-0060",
+     "12.15.57",
+     "DFAF003",
+     "PROC151",
+     "233215007"
+    ],
+    [
+     "Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+     "stent proximal de l'APG",
+     "TAUSSIG-PROC-0061",
+     "12.15.58",
+     "DFAF003",
+     "PROC151",
+     "233215007"
+    ],
+    [
+     "Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+     "stent distal de l'APG | stent lobaire gauche",
+     "TAUSSIG-PROC-0062",
+     "12.15.59",
+     "DFAF003",
+     "PROC151",
+     "233215007"
+    ],
+    [
+     "Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+     "redilatation de stent de l'APD",
+     "TAUSSIG-PROC-0063",
+     "12.15.64",
+     "DFAF002",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+     "redilatation de stent distal de l'APD",
+     "TAUSSIG-PROC-0064",
+     "12.15.65",
+     "DFAF002",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+     "redilatation de stent de l'APG",
+     "TAUSSIG-PROC-0065",
+     "12.15.66",
+     "DFAF002",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+     "redilatation de stent distal de l'APG",
+     "TAUSSIG-PROC-0066",
+     "12.15.67",
+     "DFAF002",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Pose de stent entre l'artère pulmonaire gauche et l'aorte descendante (Potts inverse)",
+     "Potts inverse | Potts percutané",
+     "TAUSSIG-PROC-0067",
+     "12.15.70",
+     "",
+     "PROC151",
+     "86642005"
+    ],
+    [
+     "Pose de stent sur une coarctation de l'aorte",
+     "stent de coarctation | stent CP",
+     "TAUSSIG-PROC-0068",
+     "12.18.17",
+     "DGAF004",
+     "PROC151",
+     "448785002"
+    ],
+    [
+     "Pose de stent sur une recoarctation de l'aorte",
+     "stent de recoarctation",
+     "TAUSSIG-PROC-0069",
+     "12.18.22",
+     "DGAF004",
+     "PROC151",
+     "448785002"
+    ],
+    [
+     "Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte",
+     "stent de coarctation native",
+     "TAUSSIG-PROC-0070",
+     "12.18.48",
+     "DGAF004",
+     "PROC151",
+     "448785002"
+    ],
+    [
+     "Redilatation d'un stent de l'aorte thoracique",
+     "redilatation de stent aortique",
+     "TAUSSIG-PROC-0071",
+     "12.18.54",
+     "DGAF001",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Pose de stent dans une veine pulmonaire",
+     "stent de veine pulmonaire",
+     "TAUSSIG-PROC-0072",
+     "12.00.22",
+     "",
+     "PROC151",
+     "232978003"
+    ],
+    [
+     "Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire",
+     "",
+     "TAUSSIG-PROC-0073",
+     "12.00.25",
+     "",
+     "PROC151",
+     "232981008"
+    ],
+    [
+     "Pose de stent dans la veine cave supérieure",
+     "stent de VCS",
+     "TAUSSIG-PROC-0074",
+     "12.00.36",
+     "DHAF001",
+     "PROC151",
+     "232989005"
+    ],
+    [
+     "Pose de stent dans une veine systémique ou un chenal veineux systémique",
+     "stent veineux | stent de chenal | stent de baffle",
+     "TAUSSIG-PROC-0075",
+     "12.00.44",
+     "DHAF001 ; DHAF004 ; EFAF001 ; EGAF002",
+     "PROC151",
+     "233003002"
+    ],
+    [
+     "Redilatation d'un stent d'une veine systémique",
+     "redilatation de stent veineux",
+     "TAUSSIG-PROC-0076",
+     "12.00.88",
+     "DHAF003 ; DHAF002 ; EFAF002",
+     "PROC-2010-2630",
+     "233441004"
+    ],
+    [
+     "Redilatation d'un stent d'une veine pulmonaire",
+     "",
+     "TAUSSIG-PROC-0077",
+     "12.00.89",
+     "",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Cryoablation percutanée d'un trouble du rythme",
+     "cryoablation",
+     "TAUSSIG-PROC-0078",
+     "12.35.46",
+     "DEPF010 ; DEPF012 ; DEPF033",
+     "PROC-2010-2690",
+     "233161001"
+    ],
+    [
+     "Ablation percutanée d'un trouble du rythme par radiofréquence",
+     "ablation par radiofréquence | RF",
+     "TAUSSIG-PROC-0079",
+     "12.35.48",
+     "DENF014 ; DENF015 ; DENF017 ; DENF018 ; DENF021 ; DENF035 ; DEPF004 ; DEPF005 ; DEPF006 ; DEPF010 ; DEPF012 ; DEPF014 ; DEPF025 ; DEPF033",
+     "PROC153",
+     "233163003"
+    ],
+    [
+     "Ablation percutanée avec isolation des veines pulmonaires",
+     "isolation des veines pulmonaires | PVI",
+     "TAUSSIG-PROC-0080",
+     "12.35.84",
+     "DEPF033",
+     "PROC-2010-2690",
+     "707831001"
+    ],
+    [
+     "Ablation percutanée d'un trouble du rythme",
+     "ablation",
+     "TAUSSIG-PROC-0081",
+     "12.38.40",
+     "DENF014 ; DENF015 ; DENF017 ; DENF018 ; DENF021 ; DENF035 ; DEPF004 ; DEPF005 ; DEPF006 ; DEPF010 ; DEPF012 ; DEPF014 ; DEPF025 ; DEPF033",
+     "PROC-2010-2690",
+     "233159005"
+    ],
+    [
+     "Geste sur une artère coronaire",
+     "",
+     "TAUSSIG-PROC-0082",
+     "12.23.09",
+     "",
+     "",
+     "31413008"
+    ],
+    [
+     "Occlusion percutanée d'une fistule coronaire",
+     "fermeture de fistule coronaire",
+     "TAUSSIG-PROC-0083",
+     "12.23.13",
+     "DDSF001",
+     "PROC152",
+     "232737008"
+    ],
+    [
+     "Injection intracoronaire percutanée d'un agent thrombolytique",
+     "thrombolyse intracoronaire",
+     "TAUSSIG-PROC-0084",
+     "12.23.30",
+     "",
+     "PROC-2010-2410",
+     "384694007"
+    ],
+    [
+     "Angioplastie coronaire percutanée au ballon",
+     "ATL coronaire | angioplastie coronaire",
+     "TAUSSIG-PROC-0085",
+     "12.23.31",
+     "DDAF001 ; DDAF010",
+     "PROC150",
+     "1343583001"
+    ],
+    [
+     "Pose percutanée d'un stent coronaire",
+     "stent coronaire",
+     "TAUSSIG-PROC-0086",
+     "12.23.38",
+     "DDAF006 ; DDAF008 ; DDAF004 ; DDAF007 ; DDAF003 ; DDAF009",
+     "PROC151",
+     "36969009"
+    ],
+    [
+     "Occlusion chimique percutanée d'une artère coronaire",
+     "alcoolisation coronaire",
+     "TAUSSIG-PROC-0087",
+     "12.23.42",
+     "DDLF001",
+     "PROC-2010-2410",
+     ""
+    ],
+    [
+     "Redilatation d'un stent coronaire",
+     "",
+     "TAUSSIG-PROC-0088",
+     "12.23.45",
+     "DDAF001",
+     "PROC-2010-2630",
+     ""
+    ],
+    [
+     "Fermeture percutanée d'une fenêtre aorto-pulmonaire par prothèse",
+     "fermeture de fenêtre aortopulmonaire",
+     "TAUSSIG-PROC-0089",
+     "12.12.08",
+     "",
+     "PROC152",
+     "61192001"
+    ],
+    [
+     "Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte",
+     "angioplastie de coarctation native",
+     "TAUSSIG-PROC-0090",
+     "12.18.04",
+     "DGAF006",
+     "PROC150",
+     "308696000"
+    ],
+    [
+     "Dilatation au ballon d'une recoarctation de l'aorte",
+     "angioplastie de recoarctation",
+     "TAUSSIG-PROC-0091",
+     "12.18.08",
+     "DGAF006",
+     "PROC150",
+     "308696000"
+    ],
+    [
+     "Levée d'obstacle percutanée d'une coarctation de l'aorte",
+     "traitement percutané de coarctation",
+     "TAUSSIG-PROC-0092",
+     "12.18.27",
+     "DGAF004 ; DGAF006",
+     "PROC-2010-2410",
+     "443829004"
+    ],
+    [
+     "Geste sur une artère systémique",
+     "",
+     "TAUSSIG-PROC-0093",
+     "12.22.00",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Occlusion d'une fistule artério-veineuse",
+     "fermeture de fistule AV | embolisation de fistule",
+     "TAUSSIG-PROC-0094",
+     "12.25.02",
+     "DFSF002",
+     "PROC152",
+     "71330003"
+    ],
+    [
+     "Fermeture d'une fistule artério-veineuse pulmonaire",
+     "fermeture de MAV pulmonaire | embolisation de FAV pulmonaire",
+     "TAUSSIG-PROC-0095",
+     "12.25.07",
+     "DFSF002",
+     "PROC152",
+     "233220007"
+    ],
+    [
+     "Fermeture partielle d'une communication interatriale",
+     "fermeture partielle de CIA | restriction de CIA",
+     "TAUSSIG-PROC-0096",
+     "12.01.08",
+     "DASF004",
+     "PROC152",
+     ""
+    ],
+    [
+     "Atrioseptostomie au ballon par retrait (Rashkind)",
+     "Rashkind | septostomie de Rashkind | atrioseptostomie",
+     "TAUSSIG-PROC-0097",
+     "12.01.41",
+     "DAMF001",
+     "PROC148",
+     "233044001"
+    ],
+    [
+     "Atrioseptostomie à la lame",
+     "septostomie de Park | lame de Park",
+     "TAUSSIG-PROC-0098",
+     "12.01.44",
+     "DAAF003 ; DAMF001",
+     "PROC149",
+     "31415001"
+    ],
+    [
+     "Création ou agrandissement d'une communication interatriale",
+     "création de CIA | élargissement de CIA",
+     "TAUSSIG-PROC-0099",
+     "12.01.90",
+     "DAMF001 ; DAAF003",
+     "PROC-2010-2580",
+     "7824000"
+    ],
+    [
+     "Atrioseptostomie au ballon",
+     "septostomie au ballon | BAS",
+     "TAUSSIG-PROC-0100",
+     "12.01.95",
+     "DAAF003 ; DAMF001",
+     "PROC148",
+     "271411002"
+    ],
+    [
+     "Création percutanée d'une communication interatriale",
+     "création de CIA percutanée",
+     "TAUSSIG-PROC-0101",
+     "12.30.74",
+     "DAMF001",
+     "PROC-2010-2580",
+     "233038000"
+    ],
+    [
+     "Retrait d'un thrombus intracardiaque",
+     "thrombectomie intracardiaque",
+     "TAUSSIG-PROC-0102",
+     "12.32.22",
+     "",
+     "PROC-2010-2410",
+     ""
+    ],
+    [
+     "Fermeture percutanée de l'auricule gauche par prothèse",
+     "occlusion de l'auricule gauche | Watchman | Amulet",
+     "TAUSSIG-PROC-0103",
+     "12.38.25",
+     "DASF074",
+     "PROC152",
+     "1344914001"
+    ],
+    [
+     "Geste sur la valve tricuspide",
+     "",
+     "TAUSSIG-PROC-0104",
+     "12.02.00",
+     "",
+     "",
+     "232778005"
+    ],
+    [
+     "Dilatation au ballon d'une prothèse valvulaire tricuspide",
+     "",
+     "TAUSSIG-PROC-0105",
+     "12.02.12",
+     "DBAF003",
+     "PROC-2010-2590",
+     "232810003"
+    ],
+    [
+     "Remplacement valvulaire tricuspide par voie percutanée",
+     "valve tricuspide percutanée | TTVR",
+     "TAUSSIG-PROC-0106",
+     "12.02.98",
+     "",
+     "PROC-2010-2660",
+     "25236004"
+    ],
+    [
+     "Valve-in-valve tricuspide par voie percutanée",
+     "ViV tricuspide",
+     "TAUSSIG-PROC-0107",
+     "12.02.99",
+     "",
+     "PROC-2010-2660",
+     "25236004"
+    ],
+    [
+     "Dilatation au ballon de la valve mitrale",
+     "valvuloplastie mitrale | commissurotomie mitrale percutanée",
+     "TAUSSIG-PROC-0108",
+     "12.03.10",
+     "DBAF004",
+     "PROC-2010-2590",
+     "384642005"
+    ],
+    [
+     "Dilatation au ballon d'une prothèse valvulaire mitrale",
+     "",
+     "TAUSSIG-PROC-0109",
+     "12.03.12",
+     "DBAF004",
+     "PROC-2010-2590",
+     "232770003"
+    ],
+    [
+     "Réparation valvulaire mitrale par voie percutanée",
+     "MitraClip | réparation bord à bord | TEER mitral",
+     "TAUSSIG-PROC-0110",
+     "12.03.97",
+     "DBBF198",
+     "PROC-2010-2410",
+     "432394003"
+    ],
+    [
+     "Remplacement valvulaire mitral par voie percutanée",
+     "valve mitrale percutanée | TMVR",
+     "TAUSSIG-PROC-0111",
+     "12.03.98",
+     "",
+     "PROC-2010-2660",
+     "720583008"
+    ],
+    [
+     "Valve-in-valve mitrale par voie percutanée",
+     "ViV mitral",
+     "TAUSSIG-PROC-0112",
+     "12.04.90",
+     "",
+     "PROC-2010-2660",
+     "1395984000"
+    ],
+    [
+     "Valve-in-valve mitrale transcathéter par voie transapicale",
+     "ViV mitral transapical",
+     "TAUSSIG-PROC-0113",
+     "12.04.91",
+     "",
+     "PROC-2010-2660",
+     "1395984000"
+    ],
+    [
+     "Dilatation au ballon d'une anastomose systémico-pulmonaire",
+     "dilatation de Blalock | dilatation de shunt",
+     "TAUSSIG-PROC-0114",
+     "12.31.19",
+     "",
+     "PROC150",
+     "449227002"
+    ],
+    [
+     "Pose de stent dans une anastomose systémico-pulmonaire",
+     "stent de Blalock | stent de shunt",
+     "TAUSSIG-PROC-0115",
+     "12.31.27",
+     "",
+     "PROC151",
+     "448949007"
+    ],
+    [
+     "Occlusion percutanée d'une anastomose systémico-pulmonaire par dispositif ou embolisation",
+     "fermeture de Blalock | occlusion de shunt",
+     "TAUSSIG-PROC-0116",
+     "12.31.34",
+     "",
+     "PROC152",
+     "448779009"
+    ],
+    [
+     "Dilatation au ballon d'un conduit",
+     "dilatation de conduit VD-AP | dilatation de tube",
+     "TAUSSIG-PROC-0117",
+     "12.36.14",
+     "",
+     "PROC150",
+     "449033003"
+    ],
+    [
+     "Pose de stent dans un conduit",
+     "stent de conduit VD-AP | stent de tube",
+     "TAUSSIG-PROC-0118",
+     "12.36.23",
+     "",
+     "PROC151",
+     "449389000"
+    ],
+    [
+     "Redilatation d'un stent dans un conduit",
+     "redilatation de stent de conduit",
+     "TAUSSIG-PROC-0119",
+     "12.36.32",
+     "",
+     "PROC-2010-2630",
+     "449389000"
+    ],
+    [
+     "Redilatation d'un stent dans une anastomose systémico-pulmonaire",
+     "redilatation de stent de shunt",
+     "TAUSSIG-PROC-0120",
+     "12.36.34",
+     "",
+     "PROC-2010-2630",
+     "449227002"
+    ],
+    [
+     "Perforation et dilatation percutanées d'un conduit",
+     "recanalisation de conduit",
+     "TAUSSIG-PROC-0121",
+     "12.36.36",
+     "",
+     "PROC-2010-2640",
+     "707813002"
+    ],
+    [
+     "Perforation et dilatation percutanées d'une anastomose systémico-pulmonaire",
+     "recanalisation de Blalock | recanalisation de shunt",
+     "TAUSSIG-PROC-0122",
+     "12.36.37",
+     "",
+     "PROC-2010-2640",
+     "261562001"
+    ],
+    [
+     "Dilatation au ballon d'une veine pulmonaire",
+     "angioplastie de veine pulmonaire",
+     "TAUSSIG-PROC-0123",
+     "12.00.21",
+     "",
+     "PROC150",
+     "276892002"
+    ],
+    [
+     "Dilatation d'une veine pulmonaire au ballon de découpe",
+     "cutting balloon veineux pulmonaire",
+     "TAUSSIG-PROC-0124",
+     "12.00.23",
+     "",
+     "PROC150",
+     "712817003"
+    ],
+    [
+     "Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire",
+     "",
+     "TAUSSIG-PROC-0125",
+     "12.00.24",
+     "",
+     "PROC150",
+     "276895000"
+    ],
+    [
+     "Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique",
+     "angioplastie veineuse | dilatation de chenal",
+     "TAUSSIG-PROC-0126",
+     "12.00.43",
+     "DHAF003 ; DHAF002 ; EFAF002 ; EGAF003",
+     "PROC150",
+     "276896004"
+    ],
+    [
+     "Dilatation au ballon du tronc de l'artère pulmonaire",
+     "angioplastie du tronc pulmonaire",
+     "TAUSSIG-PROC-0127",
+     "12.14.05",
+     "DFAF002",
+     "PROC150",
+     "233214006"
+    ],
+    [
+     "Dilatation au ballon de l'artère pulmonaire droite",
+     "angioplastie de l'APD",
+     "TAUSSIG-PROC-0128",
+     "12.15.03",
+     "DFAF002",
+     "PROC150",
+     "233214006"
+    ],
+    [
+     "Dilatation au ballon de l'artère pulmonaire gauche",
+     "angioplastie de l'APG",
+     "TAUSSIG-PROC-0129",
+     "12.15.04",
+     "DFAF002",
+     "PROC150",
+     "233214006"
+    ],
+    [
+     "Restriction du débit du tronc pulmonaire par dispositif implanté par voie percutanée",
+     "restricteur de débit pulmonaire | cerclage percutané",
+     "TAUSSIG-PROC-0130",
+     "12.15.25",
+     "",
+     "PROC152",
+     ""
+    ],
+    [
+     "Restriction du débit des artères pulmonaires droite et gauche par dispositifs implantés par voie percutanée",
+     "restricteurs de débit bilatéraux | cerclage pulmonaire percutané",
+     "TAUSSIG-PROC-0131",
+     "12.15.42",
+     "",
+     "PROC152",
+     ""
+    ],
+    [
+     "Dilatation de l'arbre artériel pulmonaire au ballon de découpe",
+     "cutting balloon pulmonaire",
+     "TAUSSIG-PROC-0132",
+     "12.15.53",
+     "DFAF002 ; DFAF004",
+     "PROC150",
+     "433256008"
+    ],
+    [
+     "Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+     "MAPCA",
+     "TAUSSIG-PROC-0133",
+     "12.25.19",
+     "",
+     "PROC-2010-2410",
+     "233114002"
+    ],
+    [
+     "Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+     "stent de MAPCA",
+     "TAUSSIG-PROC-0134",
+     "12.25.62",
+     "",
+     "PROC151",
+     "707824000"
+    ],
+    [
+     "Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif",
+     "embolisation de MAPCA | embolisation de collatérale aorto-pulmonaire",
+     "TAUSSIG-PROC-0135",
+     "12.25.65",
+     "ECSF004",
+     "PROC154",
+     "707823006"
+    ],
+    [
+     "Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+     "angioplastie de MAPCA",
+     "TAUSSIG-PROC-0136",
+     "12.25.72",
+     "",
+     "PROC150",
+     "707822001"
+    ],
+    [
+     "Pose de stent dans le canal artériel",
+     "stent du canal | stent de PCA | ductal stenting",
+     "TAUSSIG-PROC-0137",
+     "12.10.14",
+     "",
+     "PROC151",
+     "428280004"
+    ],
+    [
+     "Redilatation d'un stent du canal artériel",
+     "redilatation de stent du canal",
+     "TAUSSIG-PROC-0138",
+     "12.10.26",
+     "",
+     "PROC-2010-2630",
+     "233202003"
+    ],
+    [
+     "Geste sur le canal artériel ou le ligament artériel",
+     "",
+     "TAUSSIG-PROC-0139",
+     "12.24.00",
+     "",
+     "",
+     "265859004"
+    ],
+    [
+     "Fermeture percutanée du canal artériel par prothèse",
+     "fermeture du canal artériel | fermeture de PCA | Piccolo | ADO",
+     "TAUSSIG-PROC-0140",
+     "12.24.04",
+     "DASF001",
+     "PROC152",
+     "698642008"
+    ],
+    [
+     "Fermeture percutanée du canal artériel par coil",
+     "fermeture de PCA par coil",
+     "TAUSSIG-PROC-0141",
+     "12.24.21",
+     "DASF001",
+     "PROC154",
+     "441676000"
+    ],
+    [
+     "Fermeture percutanée du canal artériel par plug",
+     "fermeture de PCA par plug | AVP",
+     "TAUSSIG-PROC-0142",
+     "12.24.22",
+     "DASF001",
+     "PROC152",
+     "175218000"
+    ],
+    [
+     "Geste sur la valve pulmonaire",
+     "",
+     "TAUSSIG-PROC-0143",
+     "12.13.00",
+     "",
+     "",
+     ""
+    ],
+    [
+     "Dilatation au ballon de la valve pulmonaire",
+     "valvuloplastie pulmonaire | VPP",
+     "TAUSSIG-PROC-0144",
+     "12.13.05",
+     "DBAF002",
+     "PROC-2010-2590",
+     "46897002"
+    ],
+    [
+     "Dilatation au ballon d'une prothèse valvulaire pulmonaire",
+     "",
+     "TAUSSIG-PROC-0145",
+     "12.13.06",
+     "DBAF002",
+     "PROC-2010-2590",
+     "232869005"
+    ],
+    [
+     "Perforation et dilatation percutanées de la valve pulmonaire",
+     "perforation de valve pulmonaire | perforation par radiofréquence | atrésie pulmonaire à septum intact",
+     "TAUSSIG-PROC-0146",
+     "12.13.09",
+     "DBAF005",
+     "PROC-2010-2590",
+     "442188002"
+    ],
+    [
+     "Implantation percutanée d'une valve pulmonaire montée sur stent",
+     "valve pulmonaire percutanée | TPVI | Melody | Sapien | Harmony",
+     "TAUSSIG-PROC-0147",
+     "12.13.51",
+     "DBLF009",
+     "PROC-2010-2660",
+     "787162002"
+    ],
+    [
+     "Valve-in-valve pulmonaire par voie percutanée (réimplantation)",
+     "ViV pulmonaire | réimplantation de valve pulmonaire",
+     "TAUSSIG-PROC-0148",
+     "12.13.52",
+     "DBLF009",
+     "PROC-2010-2660",
+     "787162002"
+    ],
+    [
+     "Implantation percutanée d'une valve aortique montée sur stent",
+     "TAVI | TAVR | RVAP",
+     "TAUSSIG-PROC-0149",
+     "12.13.81",
+     "DBLF001",
+     "PROC-2010-2660",
+     "773996000"
+    ],
+    [
+     "Valve-in-valve aortique par voie percutanée (réimplantation)",
+     "ViV aortique",
+     "TAUSSIG-PROC-0150",
+     "12.13.82",
+     "DBLF001",
+     "PROC-2010-2660",
+     "773996000"
+    ],
+    [
+     "Implantation d'une valve aortique par voie transapicale (approche hybride)",
+     "TAVI transapical",
+     "TAUSSIG-PROC-0151",
+     "12.13.84",
+     "DBLA004",
+     "PROC-2010-2660",
+     "443887000"
+    ],
+    [
+     "Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting",
+     "TPVI avec prestenting",
+     "TAUSSIG-PROC-0152",
+     "12.13.85",
+     "DBLF009",
+     "PROC-2010-2660",
+     "787162002"
+    ],
+    [
+     "Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire",
+     "prestenting | stent préparatoire",
+     "TAUSSIG-PROC-0153",
+     "12.13.86",
+     "DAAF001",
+     "PROC151",
+     "443532008"
+    ],
+    [
+     "Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure",
+     "rupture de bioprothèse | bioprosthetic valve fracture",
+     "TAUSSIG-PROC-0154",
+     "12.13.87",
+     "DBLF009",
+     "PROC-2010-2660",
+     "787162002"
+    ],
+    [
+     "Dilatation au ballon de la valve aortique",
+     "valvuloplastie aortique | VPA",
+     "TAUSSIG-PROC-0155",
+     "12.16.05",
+     "DBAF001",
+     "PROC-2010-2590",
+     "77166000"
+    ],
+    [
+     "Dilatation au ballon d'une prothèse valvulaire aortique",
+     "",
+     "TAUSSIG-PROC-0156",
+     "12.16.09",
+     "DBAF001",
+     "PROC-2010-2590",
+     "232835009"
+    ],
+    [
+     "Perforation et dilatation percutanées de la valve aortique",
+     "",
+     "TAUSSIG-PROC-0157",
+     "12.16.25",
+     "DBAF001",
+     "PROC-2010-2640",
+     "77166000"
+    ],
+    [
+     "Fenestration percutanée du septum interatrial ou d'un tunnel atrial",
+     "fenestration atriale | fenestration de tunnel",
+     "TAUSSIG-PROC-0158",
+     "12.01.47",
+     "DAAF003",
+     "PROC-2010-2640",
+     "233043007"
+    ],
+    [
+     "Approche hybride stade 1 : cerclage bilatéral des artères pulmonaires et stent du canal artériel par voie percutanée",
+     "hybride de Giessen | cerclages bilatéraux + stent du canal",
+     "TAUSSIG-PROC-0159",
+     "12.10.04",
+     "",
+     "PROC-2010-2180",
+     "233141007"
+    ],
+    [
+     "Stratégie hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie)",
+     "stratégie hybride HLHS",
+     "TAUSSIG-PROC-0160",
      "12.20.21",
      "",
      "",
+     "14257002"
+    ],
+    [
+     "Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse",
+     "fermeture de fenestration de Fontan | fermeture de fenestration",
+     "TAUSSIG-PROC-0161",
+     "12.30.21",
+     "DASF002",
+     "PROC152",
+     "53941002"
+    ],
+    [
+     "Complétion percutanée de la dérivation cavo-pulmonaire totale par stent couvert de la veine cave inférieure à la veine cave supérieure",
+     "Fontan percutané | complétion transcathéter du Fontan | TCPC percutanée",
+     "TAUSSIG-PROC-0162",
+     "12.30.60",
+     "",
+     "PROC-2010-2650",
      ""
     ],
     [
-     "Approche hybride du cœur gauche hypoplasique (cathéter et chirurgie) : stade 1",
-     "12.20.20",
+     "Fermeture percutanée d'une communication interventriculaire par prothèse",
+     "fermeture de CIV | CIV",
+     "TAUSSIG-PROC-0163",
+     "12.08.07",
+     "DASF003",
+     "PROC152",
+     "233100002"
+    ],
+    [
+     "Fenestration percutanée d'un patch de communication interventriculaire",
+     "fenestration de patch de CIV",
+     "TAUSSIG-PROC-0164",
+     "12.08.20",
      "",
+     "PROC-2010-2640",
+     "233101003"
+    ],
+    [
+     "Fermeture peropératoire d'une communication interventriculaire par dispositif (approche hybride)",
+     "fermeture périventriculaire de CIV | fermeture hybride de CIV",
+     "TAUSSIG-PROC-0165",
+     "12.08.28",
      "",
+     "PROC152",
+     "233100002"
+    ],
+    [
+     "Création percutanée d'une communication interventriculaire",
+     "création de CIV percutanée",
+     "TAUSSIG-PROC-0166",
+     "12.08.65",
+     "",
+     "PROC-2010-2640",
      ""
     ],
     [
-     "Cerclage bilatéral des artères pulmonaires + pose transcathéter de stent dans le canal artériel",
-     "12.10.04",
+     "Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse",
+     "fermeture de CIA | CIA OS | Amplatzer",
+     "TAUSSIG-PROC-0167",
+     "12.01.06",
+     "DASF004",
+     "PROC152",
+     "112811009"
+    ],
+    [
+     "Fermeture percutanée d'un foramen ovale perméable par prothèse",
+     "fermeture de FOP | FOP",
+     "TAUSSIG-PROC-0168",
+     "12.01.07",
+     "DASF005",
+     "PROC152",
+     "41817002"
+    ],
+    [
+     "Fermeture percutanée d'une communication interatriale de type sinus venosus par stent couvert",
+     "CIA sinus venosus | stent couvert de la VCS",
+     "TAUSSIG-PROC-0169",
+     "12.01.88",
      "",
      "PROC151",
+     "174899009"
+    ],
+    [
+     "Fermeture percutanée d'une communication interatriale par prothèse",
+     "fermeture de CIA par prothèse",
+     "TAUSSIG-PROC-0170",
+     "12.01.98",
+     "DASF004",
+     "PROC152",
+     "30123000"
+    ],
+    [
+     "Dilatation au ballon de la voie d'éjection du ventricule gauche",
+     "dilatation sous-aortique",
+     "TAUSSIG-PROC-0171",
+     "12.07.07",
+     "DAAF002",
+     "PROC150",
+     "233092001"
+    ],
+    [
+     "Levée d'obstacle de la voie d'éjection du ventricule gauche",
+     "",
+     "TAUSSIG-PROC-0172",
+     "12.07.13",
+     "DAAF002",
+     "PROC-2010-2410",
+     "428589002"
+    ],
+    [
+     "Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée",
+     "alcoolisation septale | ablation septale à l'alcool",
+     "TAUSSIG-PROC-0173",
+     "12.07.19",
+     "DDLF001",
+     "PROC-2010-2410",
+     "1354588005"
+    ],
+    [
+     "Geste sur le ventricule gauche",
+     "",
+     "TAUSSIG-PROC-0174",
+     "12.07.26",
+     "",
+     "",
+     "233076006"
+    ],
+    [
+     "Dilatation au ballon de la voie d'éjection du ventricule droit",
+     "dilatation de la VCVD | dilatation infundibulaire",
+     "TAUSSIG-PROC-0175",
+     "12.06.05",
+     "DAAF001",
+     "PROC150",
+     "233067004"
+    ],
+    [
+     "Pose de stent dans la voie d'éjection du ventricule droit",
+     "stent de la voie d'éjection | stent de VCVD | stent infundibulaire",
+     "TAUSSIG-PROC-0176",
+     "12.06.18",
+     "DAAF001",
+     "PROC151",
+     "443532008"
+    ],
+    [
+     "Biopsie ventriculaire droite par voie percutanée",
+     "biopsie endomyocardique | BEM",
+     "TAUSSIG-PROC-0177",
+     "12.06.25",
+     "DAHF001",
+     "PROC-2010-2410",
+     "308683001"
+    ],
+    [
+     "Geste sur le ventricule droit",
+     "",
+     "TAUSSIG-PROC-0178",
+     "12.06.26",
+     "",
+     "",
+     "233051005"
+    ],
+    [
+     "Levée d'obstacle de la voie d'éjection du ventricule droit",
+     "désobstruction de la voie d'éjection droite",
+     "TAUSSIG-PROC-0179",
+     "12.06.41",
+     "DAAF001",
+     "PROC-2010-2410",
+     "429312007"
+    ],
+    [
+     "Redilatation d'un stent de la voie d'éjection native du ventricule droit",
+     "redilatation de stent de VCVD",
+     "TAUSSIG-PROC-0180",
+     "12.06.95",
+     "DAAF001",
+     "PROC-2010-2630",
+     "233067004"
+    ],
+    [
+     "Péricardiocentèse percutanée",
+     "ponction péricardique | drainage péricardique",
+     "TAUSSIG-PROC-0181",
+     "12.32.43",
+     "DCJB002 ; DCJB001",
+     "PROC88",
+     "428394001"
+    ],
+    [
+     "Embolectomie percutanée de l'arbre artériel pulmonaire",
+     "thrombectomie pulmonaire | embolie pulmonaire",
+     "TAUSSIG-PROC-0182",
+     "12.15.49",
+     "DFNF002",
+     "PROC-2010-2410",
+     "175268008"
+    ],
+    [
+     "Embolisation lymphatique percutanée",
+     "embolisation du canal thoracique | intervention lymphatique",
+     "TAUSSIG-PROC-0183",
+     "12.49.50",
+     "",
+     "PROC154",
+     "1357782001"
+    ],
+    [
+     "Redilatation de stent avec fracture volontaire du stent",
+     "fracture intentionnelle de stent | unzipping",
+     "TAUSSIG-PROC-0184",
+     "12.45.46",
+     "",
+     "PROC-2010-2630",
      ""
     ],
     [
-     "Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP + réparation de l'arc",
-     "12.20.23",
+     "Extraction percutanée d'un dispositif ou d'un corps étranger",
+     "retrait de corps étranger | récupération de prothèse embolisée | lasso",
+     "TAUSSIG-PROC-0185",
+     "12.45.04",
+     "DAGF001",
+     "PROC-2010-2410",
+     "708810002"
+    ],
+    [
+     "Geste percutané pour complication du cathétérisme",
+     "traitement d'une complication du KT",
+     "TAUSSIG-PROC-0186",
+     "12.45.30",
      "",
-     "",
+     "PROC-2010-2410",
      ""
     ],
     [
-     "Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP",
-     "12.20.22",
+     "Retrait chirurgical d'un dispositif",
+     "ablation chirurgicale de dispositif | explantation",
+     "TAUSSIG-PROC-0187",
+     "12.45.45",
      "",
      "",
-     ""
+     "128538000"
+    ],
+    [
+     "Geste sur une veine systémique",
+     "",
+     "TAUSSIG-PROC-0188",
+     "12.00.30",
+     "",
+     "",
+     "232985004"
     ]
    ]
   },
@@ -3568,7 +5419,7 @@ window.TAUSSIG_DICT = {
      "15.90.14",
      "T81.8",
      "116224001",
-     "CP-2010-900"
+     "CP-2010-900 ; CP-2019-IC-10"
     ],
     [
      "arrêt cardiaque",
@@ -3578,123 +5429,123 @@ window.TAUSSIG_DICT = {
      "CP2"
     ],
     [
-     "fibrillation atriale chronique",
+     "fibrillation atriale",
      "11.03.08",
      "I48",
-     "426749004",
-     "CP6"
+     "49436004",
+     "CP6 ; CP-2019-IC-01"
     ],
     [
      "flutter auriculaire",
      "11.03.07",
      "I48",
      "5370000",
-     "CP6"
+     "CP6 ; CP-2019-IC-02"
     ],
     [
      "Postoperative cardiac arrhythmia",
      "11.00.00",
      "I49.9",
      "1230406008",
-     "CP6"
+     "CP6 ; CP-2019-IC-03"
     ],
     [
      "bloc atrioventriculaire complet",
      "11.06.10",
      "I44.2",
      "27885002",
-     "CP6"
+     "CP6 ; CP-2019-IC-04 ; CP-2019-IC-05"
     ],
     [
      "tachycardie ectopique jonctionnelle",
      "11.04.12",
      "I97.1",
      "251155001",
-     "CP6"
+     "CP6 ; CP-2019-IC-06"
     ],
     [
      "tachycardie ventriculaire",
      "11.05.06",
      "I47.2",
      "25569003",
-     "CP6"
+     "CP6 ; CP-2019-IC-08"
     ],
     [
      "Arythmie nécessitant l'implantation d'un stimulateur",
      "15.60.06",
      "I97.1",
      "",
-     "CP5"
+     "CP5 ; CP-2019-IC-07"
     ],
     [
      "perforation d'une paroi du cœur due à une procédure",
      "15.50.03",
      "T81.2 / Y60.5",
      "1162507002",
-     ""
+     "CP-2019-IC-13 ; CP-2019-IC-32"
     ],
     [
      "Postoperative cardiac tamponade",
      "15.83.14",
      "I31.9",
      "1230407004",
-     "CP10"
+     "CP10 ; CP-2019-IC-33"
     ],
     [
      "décès intra-opératoire",
      "12.33.31",
      "",
      "52136000",
-     "CP-2010-350"
+     "CP-2010-350 ; CP-2019-IC-34"
     ],
     [
      "communication interatriale résiduelle survenant après une intervention",
      "15.10.72",
      "Q21.1",
      "735579001",
-     ""
+     "CP-2019-IC-16"
     ],
     [
      "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
      "15.51.47",
      "T82.8",
      "473163005",
-     ""
+     "CP-2019-IC-11"
     ],
     [
      "Dysfonction de dispositif (complication de cathétérisme)",
      "15.51.50",
      "T82.5",
      "",
-     ""
+     "CP-2019-IC-12"
     ],
     [
      "corps étranger au niveau du cœur",
      "15.80.17",
      "T81.8",
      "282729004",
-     ""
+     "CP-2019-IC-14"
     ],
     [
      "corps étranger",
      "15.50.37",
      "T82.8",
      "125670008",
-     ""
+     "CP-2019-IC-15"
     ],
     [
      "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
      "15.39.05",
      "I77.8",
      "871596002",
-     ""
+     "CP-2019-IC-18"
     ],
     [
      "communication interventriculaire résiduelle",
      "15.22.13",
      "Q21.0",
      "447941008",
-     ""
+     "CP-2019-IC-17"
     ],
     [
      "communication interatriale résiduelle",
@@ -3708,35 +5559,35 @@ window.TAUSSIG_DICT = {
      "15.50.20",
      "T81.2 / Y60.5",
      "60234000",
-     ""
+     "CP-2019-IC-20"
     ],
     [
      "régurgitation de la valve mitrale",
      "15.50.20",
      "T81.2 / Y60.5",
      "48724000",
-     ""
+     "CP-2019-IC-22"
     ],
     [
      "dysfonction de la prothèse valvulaire cardiaque",
      "15.50.20",
      "T81.2 / Y60.5",
      "271984008",
-     ""
+     "CP-2019-IC-19"
     ],
     [
      "régurgitation de la valve pulmonaire",
      "15.50.20",
      "T81.2 / Y60.5",
      "91434003",
-     ""
+     "CP-2019-IC-21"
     ],
     [
      "régurgitation de la valvule tricuspide",
      "15.50.20",
      "T81.2 / Y60.5",
      "111287006",
-     ""
+     "CP-2019-IC-23"
     ],
     [
      "perte du pouls distal",
@@ -3746,39 +5597,39 @@ window.TAUSSIG_DICT = {
      ""
     ],
     [
-     "faux anévrisme fémoral",
-     "15.50.19",
-     "T81.7 / Y84.0",
-     "312373008",
-     ""
+     "pseudoanévrisme au site d'abord",
+     "15.60.23",
+     "T81.8",
+     "1162761001",
+     "CP-2019-IC-25"
     ],
     [
      "dissection artérielle",
      "15.50.19",
      "T81.7 / Y84.0",
      "710864009",
-     ""
+     "CP-2019-IC-30"
     ],
     [
      "extravasation de produit de contraste intraveineux",
      "15.50.19",
      "T81.7 / Y84.0",
      "427924001",
-     ""
+     "CP-2019-IC-29"
     ],
     [
      "fistule artérioveineuse",
      "15.50.19",
      "T81.7 / Y84.0",
      "439470001",
-     ""
+     "CP-2019-IC-31"
     ],
     [
      "perforation d'une artère",
      "15.50.19",
      "T81.7 / Y84.0",
      "307312008",
-     ""
+     "CP-2019-IC-27"
     ],
     [
      "Problème d'équipement pendant le cathétérisme",
@@ -3827,7 +5678,35 @@ window.TAUSSIG_DICT = {
      "15.50.65",
      "T82.8",
      "473163005",
-     ""
+     "CP-2019-IC-11"
+    ],
+    [
+     "Thrombose vasculaire ou de conduit post-procédurale",
+     "15.00.21",
+     "T81.0",
+     "439127006",
+     "CP-2019-IC-24"
+    ],
+    [
+     "Hémorragie post-procédurale",
+     "15.02.00",
+     "T81.0",
+     "131148009",
+     "CP-2019-IC-26"
+    ],
+    [
+     "Anévrisme aortique post-procédural",
+     "15.37.80",
+     "I71.2 / Y83.8",
+     "737158007",
+     "CP-2019-IC-28"
+    ],
+    [
+     "Anévrisme de l'aorte au site de coarctation après intervention",
+     "15.37.07",
+     "I71.2 / Y83.8",
+     "871661008",
+     "CP-2019-IC-28"
     ]
    ]
   },
@@ -4528,14 +6407,24 @@ window.TAUSSIG_DICT = {
      "Dispositif de fermeture de FOP",
      "TAUSSIG-OCCLUDER-FOP",
      "Dispositif de fermeture de FOP"
+    ],
+    [
+     "Coil d'embolisation (non neurovasculaire)",
+     "704865009",
+     "Dispositifs d'occlusion"
+    ],
+    [
+     "Prothèse de fermeture de fuite paravalvulaire",
+     "TAUSSIG-OCCLUDER-PARAVALVULAR",
+     "Dispositifs d'occlusion"
     ]
    ]
   }
  },
  "examples": {},
  "meta": {
-  "nbElements": 115,
-  "nbEntities": 19,
+  "nbElements": 148,
+  "nbEntities": 20,
   "nbValuesets": 10,
   "nbExamples": 0
  }

@@ -1,4 +1,4 @@
-# TAUSSIG — CCAM (sous-ensemble cath congénital) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — CCAM (sous-ensemble cath congénital) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — CCAM (sous-ensemble cath congénital) (Expérimental) 
 
@@ -24,7 +24,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TAUSSIG — CCAM (sous-ensemble cath congénital)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé).",
   "jurisdiction" : [{
@@ -215,6 +215,214 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "DBAF005",
     "display" : "Dilatation intraluminale de l'orifice pulmonaire avec perforation de la valve atrésique, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DAHF001",
+    "display" : "Biopsie de l'endocarde et du myocarde, par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DASF001",
+    "display" : "Fermeture du conduit artériel, par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DASF074",
+    "display" : "Fermeture de l’appendice atrial [auricule] gauche par dispositif par voie veineuse transcutanée et voie transseptale avec guidage échographie-doppler par voie transoesophagienne"
+  },
+  {
+    "code" : "DBBF198",
+    "display" : "Rétrécissement de l’orifice atrioventriculaire  gauche par dispositif par voie veineuse  transcutanée et voie transseptale  avec guidage par échographie-doppler par voie transœsophagienne"
+  },
+  {
+    "code" : "DBLA004",
+    "display" : "Pose d'une bioprothèse de la valve aortique, par abord de l'apex du cœur par thoracotomie sans CEC"
+  },
+  {
+    "code" : "DCJB001",
+    "display" : "Drainage d'une collection du péricarde, par voie transcutanée"
+  },
+  {
+    "code" : "DCJB002",
+    "display" : "Évacuation d'une collection du péricarde, par voie transcutanée"
+  },
+  {
+    "code" : "DDAF001",
+    "display" : "Dilatation intraluminale d'un vaisseau coronaire sans pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDAF003",
+    "display" : "Dilatation intraluminale de 3 vaisseaux coronaires ou plus avec pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDAF004",
+    "display" : "Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDAF006",
+    "display" : "Dilatation intraluminale d'un vaisseau coronaire avec pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDAF007",
+    "display" : "Dilatation intraluminale de 2 vaisseaux coronaires avec artériographie coronaire, avec pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDAF008",
+    "display" : "Dilatation intraluminale d'un vaisseau coronaire avec artériographie coronaire, avec pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDAF009",
+    "display" : "Dilatation intraluminale de 3 vaisseaux coronaires ou plus avec artériographie coronaire, avec pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDAF010",
+    "display" : "Dilatation intraluminale d'un vaisseau coronaire avec artériographie coronaire, sans pose d'endoprothèse, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDLF001",
+    "display" : "Injection in situ d'agent pharmacologique dans une branche d'artère coronaire pour réduction de l'épaisseur du septum interventriculaire, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DDQJ001",
+    "display" : "Échographie et/ou échographie-doppler intraartérielle coronaire, au cours d'un acte par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DDSF001",
+    "display" : "Embolisation ou fermeture d'une fistule ou d'un anévrisme coronaire, par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DENF014",
+    "display" : "Destruction d'un foyer arythmogène atrial avec courant de radiofréquence, par voie veineuse transcutanée et voie transseptale"
+  },
+  {
+    "code" : "DENF015",
+    "display" : "Destruction d'un foyer ou interruption d'un circuit arythmogène ventriculaire avec courant de radiofréquence, par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DENF017",
+    "display" : "Destruction d'un foyer arythmogène atrial avec courant de radiofréquence, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DENF018",
+    "display" : "Destruction de plusieurs foyers arythmogènes atriaux avec courant de radiofréquence, par voie veineuse transcutanée et voie transseptale"
+  },
+  {
+    "code" : "DENF021",
+    "display" : "Destruction de plusieurs foyers arythmogènes atriaux avec courant de radiofréquence, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DENF035",
+    "display" : "Destruction de plusieurs foyers et/ou interruption de plusieurs circuits arythmogènes ventriculaires avec courant de radiofréquence, par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DEPF004",
+    "display" : "Interruption complète de plusieurs voies accessoires de conduction cardiaque avec courant de radiofréquence, par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DEPF005",
+    "display" : "Interruption complète d'une voie accessoire de conduction cardiaque avec courant de radiofréquence, par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DEPF006",
+    "display" : "Interruption complète du tissu nodal de la jonction atrioventriculaire avec courant de radiofréquence, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DEPF010",
+    "display" : "Interruption de la voie lente ou de la voie rapide de la jonction atrioventriculaire avec courant de radiofréquence ou cryothérapie, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DEPF012",
+    "display" : "Interruption complète de circuit arythmogène au niveau de l'isthme cavotricuspidien avec courant de radiofréquence ou cryothérapie, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DEPF014",
+    "display" : "Interruption complète de circuit arythmogène en dehors de l'isthme cavotricuspidien avec courant de radiofréquence, par voie veineuse transcutanée et voie transseptale"
+  },
+  {
+    "code" : "DEPF025",
+    "display" : "Interruption complète de circuit arythmogène en dehors de l'isthme cavotricuspidien avec courant de radiofréquence, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DEPF033",
+    "display" : "Interruption complète de circuit arythmogène au niveau de l'ostium des veines pulmonaires avec courant de radiofréquence ou cryothérapie, par voie veineuse transcutanée et voie transseptale"
+  },
+  {
+    "code" : "DEQF001",
+    "display" : "Exploration électrophysiologique cardiaque par sonde intracavitaire droite par voie veineuse transcutanée, avec manœuvres provocatrices d'une tachycardie à l'étage ventriculaire"
+  },
+  {
+    "code" : "DEQF002",
+    "display" : "Exploration électrophysiologique cardiaque par sonde intracavitaire droite par voie veineuse transcutanée, avec manœuvres provocatrices d'une tachycardie à l'étage atrial et à l'étage ventriculaire"
+  },
+  {
+    "code" : "DEQF003",
+    "display" : "Exploration électrophysiologique cardiaque par sonde intracavitaire droite, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DEQF004",
+    "display" : "Exploration électrophysiologique cardiaque par sonde intracavitaire droite par voie veineuse transcutanée, avec manœuvres provocatrices d'une tachycardie à l'étage atrial"
+  },
+  {
+    "code" : "DEQF005",
+    "display" : "Exploration électrophysiologique cardiaque par sondes intracavitaires droite et gauche par voie vasculaire transcutanée, avec manœuvres provocatrices d'une tachycardie"
+  },
+  {
+    "code" : "DFSF002",
+    "display" : "Embolisation de fistule artérioveineuse intrathoracique, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "DHAF001",
+    "display" : "Dilatation intraluminale de la veine cave supérieure avec pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DHAF002",
+    "display" : "Dilatation intraluminale de la veine cave inférieure sans pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DHAF003",
+    "display" : "Dilatation intraluminale de la veine cave supérieure sans pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DHAF004",
+    "display" : "Dilatation intraluminale de la veine cave inférieure avec pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "DZQJ001",
+    "display" : "Échographie-doppler du cœur et des vaisseaux intrathoraciques, par voie œsophagienne [Échocardiographie-doppler transœsophagienne]"
+  },
+  {
+    "code" : "DZQJ012",
+    "display" : "Échographie-doppler du cœur et des vaisseaux intrathoraciques par voie œsophagienne, au cours d'un acte thérapeutique intracavitaire cardiaque par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DZQM003",
+    "display" : "Échographie-doppler transthoracique du cœur et des vaisseaux intrathoraciques, au cours d'un acte thérapeutique intracavitaire cardiaque par voie vasculaire transcutanée"
+  },
+  {
+    "code" : "DZQM006",
+    "display" : "Échographie-doppler transthoracique du cœur et des vaisseaux intrathoraciques"
+  },
+  {
+    "code" : "ECSF004",
+    "display" : "Embolisation sélective ou hypersélective d'artère à destination bronchique ou pleuropulmonaire, par voie artérielle transcutanée"
+  },
+  {
+    "code" : "EFAF001",
+    "display" : "Dilatation intraluminale d'une veine du membre supérieur avec pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "EFAF002",
+    "display" : "Dilatation intraluminale d'une veine du membre supérieur sans pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "EGAF002",
+    "display" : "Dilatation intraluminale de la veine iliaque externe et/ou de la veine iliaque commune avec pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "EGAF003",
+    "display" : "Dilatation intraluminale de la veine iliaque externe et/ou de la veine iliaque commune sans pose d'endoprothèse, par voie veineuse transcutanée"
+  },
+  {
+    "code" : "JQHB002",
+    "display" : "Ponction ou biopsie d'un organe fœtal"
   }]
 }
 

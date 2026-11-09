@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/procedure-outcome-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "procedure-outcome-type"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem procedure-outcome-type</b></p><a name=\"procedure-outcome-type\"> </a><a name=\"hcprocedure-outcome-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/procedure-outcome-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">hemodynamic_success<a name=\"procedure-outcome-type-hemodynamic_success\"> </a></td><td>Succès hémodynamique</td><td>Critère hémodynamique de succès atteint (valeur oui/non), distinct du succès technique.</td></tr><tr><td style=\"white-space:nowrap\">residual_lesion_present<a name=\"procedure-outcome-type-residual_lesion_present\"> </a></td><td>Lésion résiduelle présente</td><td>Présence d'une lésion résiduelle en fin de procédure (valeur oui/non) ; le détail est porté par une Condition de type residual_lesion.</td></tr><tr><td style=\"white-space:nowrap\">death_attribution<a name=\"procedure-outcome-type-death_attribution\"> </a></td><td>Imputabilité du décès péri-procédural</td><td>Imputabilité d'un décès péri-procédural à la procédure (valeur codée, liste death-attribution-vs) ; le décès lui-même est porté par Patient.deceased[x].</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/procedure-outcome-type"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.name [ fhir:value "ProcedureOutcomeType"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Type de résultat global de procédure"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hemodynamic_success" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Succès hémodynamique" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Critère hémodynamique de succès atteint (valeur oui/non), distinct du succès technique." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "residual_lesion_present" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lésion résiduelle présente" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Présence d'une lésion résiduelle en fin de procédure (valeur oui/non) ; le détail est porté par une Condition de type residual_lesion." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "death_attribution" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Imputabilité du décès péri-procédural" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Imputabilité d'un décès péri-procédural à la procédure (valeur codée, liste death-attribution-vs) ; le décès lui-même est porté par Patient.deceased[x]." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/procedure-outcome-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

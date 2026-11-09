@@ -1,4 +1,4 @@
-# Assistance ECMO - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Assistance ECMO - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Extension: Assistance ECMO (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-ecmoSupport.csv
   "resourceType" : "StructureDefinition",
   "id" : "ecmoSupport",
   "url" : "https://taussig/fhir/StructureDefinition/ecmoSupport",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "EcmoSupport",
   "title" : "Assistance ECMO",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Assistance ECMO pendant la procédure.",
   "jurisdiction" : [{
@@ -98,6 +98,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ecmoSupport.csv
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "short" : "Assistance ECMO",
       "type" : [{
         "code" : "boolean"
       }]

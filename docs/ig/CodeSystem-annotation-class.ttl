@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/annotation-class> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "annotation-class"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem annotation-class</b></p><a name=\"annotation-class\"> </a><a name=\"hcannotation-class\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/annotation-class</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">annotatable<a name=\"annotation-class-annotatable\"> </a></td><td>Saisissable</td><td>La valeur peut être lue dans un compte rendu ; l'annotateur la renseigne avec sa preuve ou un état explicite.</td></tr><tr><td style=\"white-space:nowrap\">relation<a name=\"annotation-class-relation\"> </a></td><td>Relation</td><td>Lien vers une autre fiche, ou attribut porté par ce lien.</td></tr><tr><td style=\"white-space:nowrap\">derived<a name=\"annotation-class-derived\"> </a></td><td>Dérivé</td><td>Calculé ou déduit d'autres éléments (ConceptMap, période) ; jamais saisi.</td></tr><tr><td style=\"white-space:nowrap\">never_annotated<a name=\"annotation-class-never_annotated\"> </a></td><td>Jamais annoté</td><td>Identifiant direct ou donnée nominative, absent d'un texte pseudonymisé.</td></tr><tr><td style=\"white-space:nowrap\">out_of_scope<a name=\"annotation-class-out_of_scope\"> </a></td><td>Hors annotation</td><td>Métadonnée de traçabilité ou de gouvernance, jamais écrite dans un compte rendu.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/annotation-class"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.name [ fhir:value "AnnotationClassCS"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Classe d'annotation"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "annotatable" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Saisissable" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "La valeur peut être lue dans un compte rendu ; l'annotateur la renseigne avec sa preuve ou un état explicite." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "relation" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Relation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lien vers une autre fiche, ou attribut porté par ce lien." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "derived" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dérivé" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Calculé ou déduit d'autres éléments (ConceptMap, période) ; jamais saisi." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "never_annotated" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Jamais annoté" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Identifiant direct ou donnée nominative, absent d'un texte pseudonymisé." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "out_of_scope" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hors annotation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Métadonnée de traçabilité ou de gouvernance, jamais écrite dans un compte rendu." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/annotation-class.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

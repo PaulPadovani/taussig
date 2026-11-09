@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-procedure> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "taussig-procedure"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-procedure</b></p><a name=\"taussig-procedure\"> </a><a name=\"hctaussig-procedure\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-taussig-procedure.html\"><code>https://taussig/fhir/CodeSystem/taussig-procedure</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.8.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/taussig-procedure"] ;
+  fhir:ValueSet.version [ fhir:value "0.8.0"] ;
+  fhir:ValueSet.name [ fhir:value "TaussigProcedureVS"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Liste des gestes et actes de cathétérisme"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Les 188 concepts TAUSSIG de gestes et d'actes de cathétérisme."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/taussig-procedure" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/taussig-procedure.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

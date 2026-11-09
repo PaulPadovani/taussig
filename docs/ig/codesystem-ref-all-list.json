@@ -37,6 +37,18 @@
     "http://hl7.org/fhir/R4/valueset-device-nametype.html" : "DeviceNameType"
   },
   {
+    "url" : "http://hl7.org/fhir/device-statement-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceUseStatementStatus",
+    "title" : "DeviceUseStatementStatus",
+    "description" : "A coded concept indicating the current status of the Device Usage.",
+    "oids" : ["2.16.840.1.113883.4.642.4.215"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-device-statement-status.html" : "DeviceUseStatementStatus"
+  },
+  {
     "url" : "http://hl7.org/fhir/device-status",
     "version" : "4.0.1",
     "status" : "draft",
@@ -145,6 +157,17 @@
     "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
   },
   {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+  },
+  {
     "url" : "http://hl7.org/fhir/sid/icd-10",
     "version" : "2.1.1",
     "status" : "retired",
@@ -178,8 +201,8 @@
     "oids" : ["2.16.840.1.113883.6.1"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-    "ValueSet-taussig-anthropometry-observation-code-vs.html" : "TAUSSIG — Codes d'anthropométrie per-cathétérisme"
+    "ValueSet-taussig-anthropometry-observation-code-vs.html" : "TAUSSIG — Codes d'anthropométrie per-cathétérisme",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -191,40 +214,41 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
     "ValueSet-taussig-sites-mesure.html" : "TAUSSIG — Sites anatomiques de mesure/geste (validé)",
-    "https://browser.ihtsdotools.org/" : "All Codes SCT ValueSet",
-    "ValueSet-taussig-regurgitation-grade.html" : "TAUSSIG — Grade de régurgitation (valeurs codées)",
-    "ConceptMap-measurement-phase-to-snomed.html" : "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
     "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-    "ValueSet-anesthesia-type-vs.html" : "TAUSSIG — Types d’anesthésie",
-    "ValueSet-taussig-procedure-snomed.html" : "TAUSSIG — Procédures (SNOMED CT, interopérabilité)",
-    "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-    "ValueSet-taussig-adverse-event-snomed.html" : "TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)",
-    "ValueSet-laterality-vs.html" : "TAUSSIG — Latéralité (gauche/droite)",
-    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-    "ConceptMap-measurement-modality-to-snomed.html" : "TAUSSIG — Modalité de mesure -> SNOMED (Observation.method)",
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-    "ConceptMap-measurement-condition-to-snomed.html" : "TAUSSIG — Condition de mesure -> SNOMED",
-    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "ValueSet-taussig-materiel-types.html" : "TAUSSIG — Types de dispositifs interventionnels",
-    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
-    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+    "https://browser.ihtsdotools.org/" : "All Codes SCT ValueSet",
+    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+    "ConceptMap-measurement-phase-to-snomed.html" : "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)",
     "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
     "ConceptMap-access-type-to-snomed.html" : "TAUSSIG — AccessTypeToSnomed",
-    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes"
+    "ConceptMap-measurement-modality-to-snomed.html" : "TAUSSIG — Modalité de mesure -> SNOMED (Observation.method)",
+    "ValueSet-taussig-materiel-types.html" : "TAUSSIG — Types de dispositifs interventionnels",
+    "ConceptMap-measurement-condition-to-snomed.html" : "TAUSSIG — Condition de mesure -> SNOMED",
+    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "ValueSet-laterality-vs.html" : "TAUSSIG — Latéralité (gauche/droite)",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "ValueSet-taussig-procedure-snomed.html" : "TAUSSIG — Procédures (SNOMED CT, interopérabilité)",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "ConceptMap-taussig-procedure-to-snomed.html" : "TAUSSIG — Gestes TAUSSIG vers SNOMED",
+    "ValueSet-anesthesia-type-vs.html" : "TAUSSIG — Types d’anesthésie",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+    "ValueSet-taussig-adverse-event-snomed.html" : "TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)",
+    "ValueSet-puncture-success-vs.html" : "TAUSSIG — Succès de la ponction vasculaire",
+    "ValueSet-taussig-regurgitation-grade.html" : "TAUSSIG — Grade de régurgitation (valeurs codées)",
+    "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -573,8 +597,8 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type",
-    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type"
+    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
+    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -662,6 +686,18 @@
     "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
   },
   {
+    "url" : "http://www.whocc.no/atc",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "WC",
+    "title" : "WHO ATC",
+    "description" : "WHO ATC",
+    "oids" : ["2.16.840.1.113883.6.73"],
+    "uses" : {
+    },
+    "ValueSet-periprocedural-medication-atc-vs.html" : "TAUSSIG — Médicaments péri-procéduraux (ATC)"
+  },
+  {
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-circonstances-sortie",
     "version" : "2.2.0",
     "status" : "draft",
@@ -736,9 +772,9 @@
     "description" : "HL7 v2 - Identifier type",
     "uses" : {
     },
-    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type",
     "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-practitioner-identifier-type.html" : "FR Core ValueSet Practitioner identifier type",
-    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type"
+    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-organization-identifier-type.html" : "FR Core ValueSet Organization identifier type",
+    "https://hl7.fr/ig/fhir/core/2.2.0/ValueSet-fr-core-vs-patient-identifier-type.html" : "FR Core ValueSet Patient identifier type"
   },
   {
     "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-3307",
@@ -895,6 +931,17 @@
     "uses" : {
     },
     "https://interop.esante.gouv.fr/terminologies/1.7.0/ValueSet-JDV-J106-EnsembleProfession-RASS.html" : "JDV_J106_EnsembleProfession_RASS"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R310-CCAM/FHIR/TRE-R310-CCAM",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "TaussigCcam",
+    "title" : "TAUSSIG — CCAM (sous-ensemble cath congénital)",
+    "description" : "Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé).",
+    "uses" : {
+    },
+    "ConceptMap-taussig-procedure-to-ccam.html" : "TAUSSIG — Gestes TAUSSIG vers CCAM"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R348-FormationSpecialiseeTransversale/FHIR/TRE-R348-FormationSpecialiseeTransversale",
@@ -1210,19 +1257,19 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/access-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "AccessType",
     "title" : "TAUSSIG — Type d'abord vasculaire",
     "description" : "Voie d'abord vasculaire.",
     "uses" : {
     },
-    "ValueSet-access-type-vs.html" : "TAUSSIG — Types d'abord vasculaire",
-    "ConceptMap-access-type-to-snomed.html" : "TAUSSIG — AccessTypeToSnomed"
+    "ConceptMap-access-type-to-snomed.html" : "TAUSSIG — AccessTypeToSnomed",
+    "ValueSet-access-type-vs.html" : "TAUSSIG — Types d'abord vasculaire"
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/ae-attribution",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "AeAttribution",
     "title" : "TAUSSIG — Attribution d'un EI",
@@ -1244,7 +1291,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/anesthesia-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TaussigAnesthesiaType",
     "title" : "TAUSSIG — Complément pour le type d’anesthésie",
@@ -1254,8 +1301,19 @@
     "ValueSet-anesthesia-type-vs.html" : "TAUSSIG — Types d’anesthésie"
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/annotation-class",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "AnnotationClassCS",
+    "title" : "TAUSSIG — Classe d'annotation",
+    "description" : "Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire.",
+    "uses" : {
+    },
+    "ValueSet-annotation-class-vs.html" : "TAUSSIG — Classes d'annotation"
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/bsa-method",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "BsaMethod",
     "title" : "TAUSSIG — Méthode de calcul de surface corporelle",
@@ -1266,7 +1324,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/cath-intent",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "CathIntent",
     "title" : "TAUSSIG — Intention du cathétérisme",
@@ -1277,20 +1335,20 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/closure-device-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ClosureDeviceType",
     "title" : "TAUSSIG — Dispositifs de fermeture par cible",
     "description" : "Catégories de dispositifs de fermeture distinguées par cible. Codes locaux TAUSSIG ; aucune équivalence SNOMED spécifique n'est affirmée.",
     "uses" : {
     },
-    "ValueSet-implant-device-type-vs.html" : "TAUSSIG — Types d'implant",
+    "ValueSet-taussig-materiel-types.html" : "TAUSSIG — Types de dispositifs interventionnels",
     "ValueSet-material-type-vs.html" : "TAUSSIG — Types de matériel (catégories)",
-    "ValueSet-taussig-materiel-types.html" : "TAUSSIG — Types de dispositifs interventionnels"
+    "ValueSet-implant-device-type-vs.html" : "TAUSSIG — Types d'implant"
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/condition-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ConditionType",
     "title" : "TAUSSIG — Type de condition évolutive",
@@ -1301,7 +1359,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/death-attribution",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DeathAttribution",
     "title" : "TAUSSIG — Attribution du décès péri-procédural",
@@ -1312,7 +1370,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/derivation-method",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DerivationMethod",
     "title" : "TAUSSIG — Dérivation d'une mesure",
@@ -1323,7 +1381,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/diagnosis-role",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DiagnosisRole",
     "title" : "TAUSSIG — Rôle d'une indication/diagnostic",
@@ -1334,18 +1392,19 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/echsa",
-    "version" : "0.4.1",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "TaussigEchsa",
     "title" : "TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)",
     "description" : "Représentation FHIR, pour le POC TAUSSIG, de la nomenclature de la base ECHSA (European Congenital Heart Surgeons Association, dérivée EACTS-STS/IPCCC). Codes extraits du dictionnaire maître `fields-dicts.xls` (onglet factors). Classes : diagnosis, procedure, status post, complication, aae, nca, gprf. Usage recherche ; codes candidats à valider cliniquement.",
     "uses" : {
     },
-    "ValueSet-taussig-cardiac-condition.html" : "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)"
+    "ValueSet-taussig-cardiac-condition.html" : "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)",
+    "ConceptMap-taussig-procedure-to-echsa.html" : "TAUSSIG — Gestes TAUSSIG vers ECHSA"
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/gesture-result",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "GestureResult",
     "title" : "TAUSSIG — Résultat d'un geste / d'un matériel",
@@ -1356,7 +1415,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/implant-device-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ImplantDeviceType",
     "title" : "TAUSSIG — Type d'implant",
@@ -1367,7 +1426,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/implant-status",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ImplantStatus",
     "title" : "TAUSSIG — État clinique d'un implant",
@@ -1385,16 +1444,17 @@
     "description" : "Représentation FHIR des codes, libellés et définitions IPCCC importés dans TAUSSIG ; contenu source conservé.",
     "uses" : {
     },
-    "ValueSet-taussig-procedure-ipccc.html" : "TAUSSIG — Gestes de cathétérisme (IPCCC)",
-    "ValueSet-taussig-adverse-event-ipccc.html" : "TAUSSIG — Complications péri-procédurales (IPCCC)",
     "ValueSet-taussig-cardiac-condition.html" : "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)",
-    "ValueSet-taussig-diagnosis-ipccc.html" : "TAUSSIG — Diagnostics congénitaux (IPCCC)",
     "ValueSet-ipccc-short-list.html" : "IPCCC Short List v5.0 (sous-ensemble de saisie)",
-    "ConceptMap-ipccc-to-icd10.html" : "TAUSSIG — IPCCC vers CIM-10, normalisation de la source AEPC 5.0"
+    "ConceptMap-ipccc-to-icd10.html" : "TAUSSIG — IPCCC vers CIM-10, normalisation de la source AEPC 5.0",
+    "ValueSet-taussig-diagnosis-ipccc.html" : "TAUSSIG — Diagnostics congénitaux (IPCCC)",
+    "ConceptMap-taussig-procedure-to-ipccc.html" : "TAUSSIG — Gestes TAUSSIG vers IPCCC",
+    "ValueSet-taussig-procedure-ipccc.html" : "TAUSSIG — Gestes de cathétérisme (IPCCC)",
+    "ValueSet-taussig-adverse-event-ipccc.html" : "TAUSSIG — Complications péri-procédurales (IPCCC)"
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/material-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MaterialType",
     "title" : "TAUSSIG — Type de matériel",
@@ -1405,7 +1465,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/measurement-condition",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MeasurementCondition",
     "title" : "TAUSSIG — Condition de mesure",
@@ -1417,7 +1477,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/measurement-modality",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MeasurementModality",
     "title" : "TAUSSIG — Modalité de mesure",
@@ -1439,8 +1499,19 @@
     "ValueSet-taussig-measurement-property.html" : "TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept)"
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/operator-role",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "OperatorRole",
+    "title" : "TAUSSIG — Rôle de l'opérateur",
+    "description" : "Rôle d'un praticien dans la réalisation du cathétérisme (décision I1).",
+    "uses" : {
+    },
+    "ValueSet-operator-role-vs.html" : "TAUSSIG — Liste — Rôles de l'opérateur"
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/periprocedural-medication-purpose",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "PeriproceduralMedicationPurpose",
     "title" : "TAUSSIG — Rôle du médicament péri-procédural",
@@ -1451,7 +1522,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/procedure-observation-code",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ProcedureObservationCode",
     "title" : "TAUSSIG — Observations liées au cathétérisme",
@@ -1461,20 +1532,42 @@
     "ValueSet-taussig-procedure-exposure-observation-code-vs.html" : "TAUSSIG — Codes d'exposition et contraste"
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/procedure-outcome-type",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "ProcedureOutcomeType",
+    "title" : "TAUSSIG — Type de résultat global de procédure",
+    "description" : "Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme.",
+    "uses" : {
+    },
+    "ValueSet-procedure-outcome-type-vs.html" : "TAUSSIG — Types de résultat global de procédure"
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/procedure-phase",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ProcedurePhase",
     "title" : "TAUSSIG — Phase procédurale d'une mesure",
     "description" : "Référentiel temporel pour le delta pre/post (cœur de la POC).",
     "uses" : {
     },
-    "ConceptMap-measurement-phase-to-snomed.html" : "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)",
-    "ValueSet-procedure-phase-vs.html" : "TAUSSIG — Phases procédurales"
+    "ValueSet-procedure-phase-vs.html" : "TAUSSIG — Phases procédurales",
+    "ConceptMap-measurement-phase-to-snomed.html" : "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)"
+  },
+  {
+    "url" : "https://taussig/fhir/CodeSystem/procedure-urgency",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "ProcedureUrgencyCS",
+    "title" : "TAUSSIG — Caractère urgent du cathétérisme",
+    "description" : "Caractère urgent du cathétérisme, en 4 niveaux d'après le statut de procédure du registre NCDR IMPACT (dictionnaire v2.0.1, élément 5020) ; définitions résumées en français (décision I3).",
+    "uses" : {
+    },
+    "ValueSet-procedure-urgency-vs.html" : "TAUSSIG — Liste — Caractère urgent du cathétérisme"
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/severity-scale",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "SeverityScale",
     "title" : "TAUSSIG — Échelle de gravité d'un EI",
@@ -1484,8 +1577,41 @@
     "ValueSet-severity-scale-vs.html" : "TAUSSIG — Échelles de gravité"
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/stent-coating",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentCoating",
+    "title" : "TAUSSIG — Revêtement actif d'un stent",
+    "description" : "Stent actif (à élution médicamenteuse) ou non (décision M2).",
+    "uses" : {
+    },
+    "ValueSet-stent-coating-vs.html" : "TAUSSIG — Liste — Revêtement actif d'un stent"
+  },
+  {
+    "url" : "https://taussig/fhir/CodeSystem/stent-covering",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentCovering",
+    "title" : "TAUSSIG — Couverture d'un stent",
+    "description" : "Stent nu ou couvert (décision M2).",
+    "uses" : {
+    },
+    "ValueSet-stent-covering-vs.html" : "TAUSSIG — Liste — Couverture d'un stent"
+  },
+  {
+    "url" : "https://taussig/fhir/CodeSystem/stent-expansion",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentExpansion",
+    "title" : "TAUSSIG — Mode d'expansion d'un stent",
+    "description" : "Stent expansible au ballon ou auto-expansible (décision M2).",
+    "uses" : {
+    },
+    "ValueSet-stent-expansion-vs.html" : "TAUSSIG — Liste — Mode d'expansion d'un stent"
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/taussig-local",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "TaussigLocal",
     "title" : "TAUSSIG — Concepts locaux (sans équivalent de référence)",
@@ -1495,8 +1621,23 @@
     "ValueSet-taussig-sites-mesure.html" : "TAUSSIG — Sites anatomiques de mesure/geste (validé)"
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/taussig-procedure",
+    "version" : "0.8.0",
+    "status" : "draft",
+    "name" : "TaussigProcedure",
+    "title" : "TAUSSIG — Gestes et actes de cathétérisme",
+    "description" : "Terminologie d'interface TAUSSIG : 188 concepts de gestes et d'actes de cathétérisme cardiaque congénital (Short List IPCCC de la branche cathétérisme, Long List AEPC v5.0), à identifiant neutre jamais réutilisé. Le clinicien choisit le libellé ; les codes IPCCC, CCAM, ECHSA et SNOMED sont déduits par les ConceptMaps taussig-procedure-to-*. Libellés : traduction fidèle du libellé IPCCC.",
+    "uses" : {
+    },
+    "ConceptMap-taussig-procedure-to-ipccc.html" : "TAUSSIG — Gestes TAUSSIG vers IPCCC",
+    "ValueSet-taussig-procedure.html" : "TAUSSIG — Liste des gestes et actes de cathétérisme",
+    "ConceptMap-taussig-procedure-to-echsa.html" : "TAUSSIG — Gestes TAUSSIG vers ECHSA",
+    "ConceptMap-taussig-procedure-to-ccam.html" : "TAUSSIG — Gestes TAUSSIG vers CCAM",
+    "ConceptMap-taussig-procedure-to-snomed.html" : "TAUSSIG — Gestes TAUSSIG vers SNOMED"
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/technical-success",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TechnicalSuccess",
     "title" : "TAUSSIG — Succès technique de la procédure",
@@ -1507,7 +1648,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/ventilation-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "VentilationType",
     "title" : "TAUSSIG — Mode ventilatoire",

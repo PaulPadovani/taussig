@@ -8,12 +8,12 @@
 </div></div>
   </text>
   <url value="https://taussig/fhir/ImplementationGuide/taussig.poc"/>
-  <version value="0.6.1"/>
+  <version value="0.8.0"/>
   <name value="TAUSSIGPOC"/>
   <title value="TAUSSIG — Implementation Guide (POC Cathétérisme)"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2026-10-31T15:29:53+01:00"/>
+  <date value="2026-11-09T08:39:58+01:00"/>
   <publisher value="Projet TAUSSIG"/>
   <description value="Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG."/>
   <jurisdiction>
@@ -279,6 +279,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/adverseEventProcedure"/>
+      </reference>
+      <name value="Acte de survenue de l'EI"/>
+      <description value="Cathétérisme ou geste interventionnel pendant lequel l'événement indésirable est survenu. Contexte de survenue, sans jugement d'imputabilité (porté par l'extension adverseEventAttribution)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ecmoSupport"/>
       </reference>
       <name value="Assistance ECMO"/>
@@ -301,10 +312,43 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/procedureUrgency"/>
+      </reference>
+      <name value="Caractère urgent du cathétérisme"/>
+      <description value="Programmé, urgent, en urgence ou de sauvetage (décision I3)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/annotationClass"/>
+      </reference>
+      <name value="Classe d'annotation"/>
+      <description value="Rôle de l'élément dans l'annotation de comptes rendus. Posée sur les ElementDefinition des profils TAUSSIG ; générée depuis le dictionnaire (03-ig/build_annotation_classes.py)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/measurementCondition"/>
       </reference>
       <name value="Condition de mesure"/>
       <description value="Condition physiologique/pharmacologique pendant la mesure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/implantStatusDate"/>
+      </reference>
+      <name value="Date de l'état de l'implant"/>
+      <description value="Date à laquelle l'état clinique courant de l'implant (implantClinicalStatus) a été constaté. Un seul état courant par implant ; l'historique des états relève de v5 (ImplantStatusEvent)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -327,7 +371,7 @@
       </reference>
       <name value="Dispositif antérieur fictif — exemple technique"/>
       <description value="Cible distincte du lien previousImplant ; illustre uniquement le chaînage de deux identités de dispositif."/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-cardiac-implant"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -504,6 +548,17 @@
       <name value="Exemple technique — TAUSSIG — Poids de naissance"/>
       <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
       <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DeviceUseStatement"/>
+      </extension>
+      <reference>
+        <reference value="DeviceUseStatement/ex-taussig-implant-use"/>
+      </reference>
+      <name value="Exemple technique — TAUSSIG — Pose et port d'un implant"/>
+      <description value="Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique."/>
+      <exampleCanonical value="https://taussig/fhir/StructureDefinition/taussig-implant-use"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -686,6 +741,39 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/procedureRoomPeriod"/>
+      </reference>
+      <name value="Période en salle de cathétérisme"/>
+      <description value="Entrée et sortie de salle ; la période peau-à-peau est dans Procedure.performedPeriod (décision I2)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/gestureSequence"/>
+      </reference>
+      <name value="Rang du geste dans le cathétérisme"/>
+      <description value="Rang du geste (1, 2, 3…) dans l'ordre de réalisation au cours du cathétérisme (décision P7)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/attemptResult"/>
+      </reference>
+      <name value="Résultat de la tentative"/>
+      <description value="Résultat de la tentative avec ce matériel (réutilise l'énumération du résultat de geste). Porté côté geste, sur Procedure.usedReference (audit M1)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/indicationRole"/>
       </reference>
       <name value="Rôle de l'indication"/>
@@ -815,6 +903,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/procedure-urgency"/>
+      </reference>
+      <name value="TAUSSIG — Caractère urgent du cathétérisme"/>
+      <description value="Caractère urgent du cathétérisme, en 4 niveaux d'après le statut de procédure du registre NCDR IMPACT (dictionnaire v2.0.1, élément 5020) ; définitions résumées en français (décision I3)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -832,7 +931,7 @@
         <reference value="StructureDefinition/taussig-catheterization"/>
       </reference>
       <name value="TAUSSIG — Cathétérisme cardiaque (acte pivot)"/>
-      <description value="Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; codage SNOMED (interop) + CCAM (administratif FR) + ECHSA (registre). Dosimétrie/anthropométrie portées par Observations liées."/>
+      <description value="Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; acte codé par un concept TAUSSIG (CodeSystem taussig-procedure), dont SNOMED (interop), CCAM (administratif FR), IPCCC et ECHSA (registre) sont déduits par ConceptMap ; opérateurs, horodatages salle et peau, caractère urgent. Dosimétrie/anthropométrie portées par Observations liées."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -866,6 +965,28 @@
       </reference>
       <name value="TAUSSIG — Cibles CIM-10 de la correspondance IPCCC"/>
       <description value="Codes principaux et produits complémentaires de la table de correspondance normalisée. Leur existence est contrôlée contre le service terminologique ; cela ne prouve pas une équivalence clinique exacte."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/annotation-class"/>
+      </reference>
+      <name value="TAUSSIG — Classe d'annotation"/>
+      <description value="Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/annotation-class-vs"/>
+      </reference>
+      <name value="TAUSSIG — Classes d'annotation"/>
+      <description value="Les 5 classes d'annotation des éléments de profil."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -980,6 +1101,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stent-covering"/>
+      </reference>
+      <name value="TAUSSIG — Couverture d'un stent"/>
+      <description value="Stent nu ou couvert (décision M2)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1085,7 +1217,7 @@
         <reference value="StructureDefinition/taussig-interventional-gesture"/>
       </reference>
       <name value="TAUSSIG — Geste interventionnel"/>
-      <description value="Geste interventionnel ciblé (unité de l'effet pre/post). Quadruple codage IPCCC (pivot) + SNOMED (interop) + CCAM + ECHSA ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome."/>
+      <description value="Geste interventionnel ciblé (unité de l'effet pre/post). Codé par un concept TAUSSIG (188 concepts, Short List IPCCC du cathétérisme) ; IPCCC, SNOMED (interop), CCAM et ECHSA en sont déduits par ConceptMap ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome ; rang dans le cathétérisme."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1097,6 +1229,61 @@
       </reference>
       <name value="TAUSSIG — Gestes de cathétérisme (IPCCC)"/>
       <description value="Axe IPCCC des gestes de cathétérisme congénital retenus pour la POC (gestes diagnostiques, interventionnels et hybrides). Remplace, pour l'autocomplétion, la liaison à la short list IPCCC de 1 822 codes, inexploitable comme menu."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/taussig-procedure"/>
+      </reference>
+      <name value="TAUSSIG — Gestes et actes de cathétérisme"/>
+      <description value="Terminologie d'interface TAUSSIG : 188 concepts de gestes et d'actes de cathétérisme cardiaque congénital (Short List IPCCC de la branche cathétérisme, Long List AEPC v5.0), à identifiant neutre jamais réutilisé. Le clinicien choisit le libellé ; les codes IPCCC, CCAM, ECHSA et SNOMED sont déduits par les ConceptMaps taussig-procedure-to-*. Libellés : traduction fidèle du libellé IPCCC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-procedure-to-ccam"/>
+      </reference>
+      <name value="TAUSSIG — Gestes TAUSSIG vers CCAM"/>
+      <description value="Correspondance des 188 concepts TAUSSIG de gestes vers CCAM. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-procedure-to-echsa"/>
+      </reference>
+      <name value="TAUSSIG — Gestes TAUSSIG vers ECHSA"/>
+      <description value="Correspondance des 188 concepts TAUSSIG de gestes vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-procedure-to-ipccc"/>
+      </reference>
+      <name value="TAUSSIG — Gestes TAUSSIG vers IPCCC"/>
+      <description value="Correspondance des 188 concepts TAUSSIG de gestes vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/taussig-procedure-to-snomed"/>
+      </reference>
+      <name value="TAUSSIG — Gestes TAUSSIG vers SNOMED"/>
+      <description value="Correspondance des 188 concepts TAUSSIG de gestes vers SNOMED. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1189,6 +1376,72 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/taussig-procedure"/>
+      </reference>
+      <name value="TAUSSIG — Liste des gestes et actes de cathétérisme"/>
+      <description value="Les 188 concepts TAUSSIG de gestes et d'actes de cathétérisme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/procedure-urgency-vs"/>
+      </reference>
+      <name value="TAUSSIG — Liste — Caractère urgent du cathétérisme"/>
+      <description value="Les 4 niveaux d'urgence du cathétérisme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/stent-covering-vs"/>
+      </reference>
+      <name value="TAUSSIG — Liste — Couverture d'un stent"/>
+      <description value="Stent nu ou couvert."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/stent-expansion-vs"/>
+      </reference>
+      <name value="TAUSSIG — Liste — Mode d'expansion d'un stent"/>
+      <description value="Stent expansible au ballon ou auto-expansible."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/stent-coating-vs"/>
+      </reference>
+      <name value="TAUSSIG — Liste — Revêtement actif d'un stent"/>
+      <description value="Stent actif ou non."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/operator-role-vs"/>
+      </reference>
+      <name value="TAUSSIG — Liste — Rôles de l'opérateur"/>
+      <description value="Rôles d'un praticien dans la réalisation du cathétérisme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1247,6 +1500,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/stent-expansion"/>
+      </reference>
+      <name value="TAUSSIG — Mode d'expansion d'un stent"/>
+      <description value="Stent expansible au ballon ou auto-expansible (décision M2)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/ventilation-type"/>
       </reference>
       <name value="TAUSSIG — Mode ventilatoire"/>
@@ -1262,6 +1526,17 @@
       </reference>
       <name value="TAUSSIG — Modes ventilatoires"/>
       <description value="Jeu de valeurs « TAUSSIG — Modes ventilatoires » utilisé par les profils TAUSSIG."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/periprocedural-medication-atc-vs"/>
+      </reference>
+      <name value="TAUSSIG — Médicaments péri-procéduraux (ATC)"/>
+      <description value="Molécules d'antibioprophylaxie et d'anticoagulation per-procédurale les plus attendues dans un compte rendu de cathétérisme pédiatrique. Liste courte proposée, à valider cliniquement."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1379,6 +1654,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/taussig-implant-use"/>
+      </reference>
+      <name value="TAUSSIG — Pose et port d'un implant"/>
+      <description value="Implant porté par le patient : site anatomique d'implantation, date de pose (début de la période de port) et geste TAUSSIG qui l'a posé, quand il est tracé. Pour un implant posé ailleurs (implantedExternally), le geste source est absent."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/taussig-practitioner"/>
       </reference>
       <name value="TAUSSIG — Praticien"/>
@@ -1409,6 +1695,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/device-property"/>
+      </reference>
+      <name value="TAUSSIG — Propriété codée d'un dispositif"/>
+      <description value="Type de propriété codée portée par Device.property (décision M2)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1427,6 +1724,17 @@
       </reference>
       <name value="TAUSSIG — Propriétés de mesure hémodynamique"/>
       <description value="Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/stent-coating"/>
+      </reference>
+      <name value="TAUSSIG — Revêtement actif d'un stent"/>
+      <description value="Stent actif (à élution médicamenteuse) ou non (décision M2)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1478,6 +1786,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/operator-role"/>
+      </reference>
+      <name value="TAUSSIG — Rôle de l'opérateur"/>
+      <description value="Rôle d'un praticien dans la réalisation du cathétérisme (décision I1)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/periprocedural-medication-purpose"/>
       </reference>
       <name value="TAUSSIG — Rôle du médicament péri-procédural"/>
@@ -1515,6 +1834,17 @@
       </reference>
       <name value="TAUSSIG — Sites anatomiques de mesure/geste (validé)"/>
       <description value="Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/puncture-success-vs"/>
+      </reference>
+      <name value="TAUSSIG — Succès de la ponction vasculaire"/>
+      <description value="Ponction réussie ou non réussie (SNOMED CT, qualificatifs de résultat)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1607,6 +1937,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/procedure-outcome-type"/>
+      </reference>
+      <name value="TAUSSIG — Type de résultat global de procédure"/>
+      <description value="Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1658,6 +1999,17 @@
       </reference>
       <name value="TAUSSIG — Types de matériel (catégories)"/>
       <description value="Jeu de valeurs « TAUSSIG — Types de matériel (catégories) » utilisé par les profils TAUSSIG."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/procedure-outcome-type-vs"/>
+      </reference>
+      <name value="TAUSSIG — Types de résultat global de procédure"/>
+      <description value="Les trois résultats globaux annotables d'un cathétérisme."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

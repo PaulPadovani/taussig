@@ -53,7 +53,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/access-type-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "AccessTypeVS",
     "title" : "TAUSSIG — Types d'abord vasculaire",
@@ -66,7 +66,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/ae-attribution-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "AeAttributionVS",
     "title" : "TAUSSIG — Attributions d'EI",
@@ -78,7 +78,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/anesthesia-type-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TaussigAnesthesiaTypeVS",
     "title" : "TAUSSIG — Types d’anesthésie",
@@ -90,8 +90,20 @@
     "StructureDefinition-taussig-anesthesia-management.html" : "TAUSSIG — Gestion anesthésique"
   },
   {
+    "url" : "https://taussig/fhir/ValueSet/annotation-class-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "AnnotationClassVS",
+    "title" : "TAUSSIG — Classes d'annotation",
+    "description" : "Les 5 classes d'annotation des éléments de profil.",
+    "systems" : ["https://taussig/fhir/CodeSystem/annotation-class"],
+    "uses" : {
+    },
+    "StructureDefinition-annotationClass.html" : "Classe d'annotation"
+  },
+  {
     "url" : "https://taussig/fhir/ValueSet/bsa-method-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "BsaMethodVS",
     "title" : "TAUSSIG — Méthodes de calcul BSA",
@@ -103,7 +115,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/cath-intent-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "CathIntentVS",
     "title" : "TAUSSIG — Intentions de cathétérisme",
@@ -115,7 +127,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/condition-type-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ConditionTypeVS",
     "title" : "TAUSSIG — Types de condition évolutive",
@@ -127,16 +139,19 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/death-attribution-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DeathAttributionVS",
     "title" : "TAUSSIG — Attributions du décès",
     "description" : "Jeu de valeurs « TAUSSIG — Attributions du décès » utilisé par les profils TAUSSIG.",
-    "systems" : ["https://taussig/fhir/CodeSystem/death-attribution"]
+    "systems" : ["https://taussig/fhir/CodeSystem/death-attribution"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-procedure-outcome.html" : "TAUSSIG — Résultat global de procédure"
   },
   {
     "url" : "https://taussig/fhir/ValueSet/derivation-method-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DerivationMethodVS",
     "title" : "TAUSSIG — Dérivation",
@@ -148,7 +163,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/diagnosis-role-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DiagnosisRoleVS",
     "title" : "TAUSSIG — Rôles d'indication",
@@ -161,7 +176,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/gesture-result-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "GestureResultVS",
     "title" : "TAUSSIG — Résultats de geste",
@@ -169,11 +184,12 @@
     "systems" : ["https://taussig/fhir/CodeSystem/gesture-result"],
     "uses" : {
     },
-    "StructureDefinition-taussig-interventional-gesture.html" : "TAUSSIG — Geste interventionnel"
+    "StructureDefinition-taussig-interventional-gesture.html" : "TAUSSIG — Geste interventionnel",
+    "StructureDefinition-attemptResult.html" : "Résultat de la tentative"
   },
   {
     "url" : "https://taussig/fhir/ValueSet/implant-device-type-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ImplantDeviceTypeVS",
     "title" : "TAUSSIG — Types d'implant",
@@ -186,7 +202,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/implant-status-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ImplantStatusVS",
     "title" : "TAUSSIG — États d'implant",
@@ -222,7 +238,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/laterality-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "LateralityVS",
     "title" : "TAUSSIG — Latéralité (gauche/droite)",
@@ -234,7 +250,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/material-type-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MaterialTypeVS",
     "title" : "TAUSSIG — Types de matériel (catégories)",
@@ -247,7 +263,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/measurement-condition-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MeasurementConditionVS",
     "title" : "TAUSSIG — Conditions de mesure",
@@ -259,7 +275,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/measurement-modality-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MeasurementModalityVS",
     "title" : "TAUSSIG — Modalités de mesure",
@@ -270,8 +286,32 @@
     "StructureDefinition-taussig-clinical-measurement.html" : "TAUSSIG — Mesure clinique (delta pre/post)"
   },
   {
+    "url" : "https://taussig/fhir/ValueSet/operator-role-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "OperatorRoleVS",
+    "title" : "TAUSSIG — Liste — Rôles de l'opérateur",
+    "description" : "Rôles d'un praticien dans la réalisation du cathétérisme.",
+    "systems" : ["https://taussig/fhir/CodeSystem/operator-role"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-catheterization.html" : "TAUSSIG — Cathétérisme cardiaque (acte pivot)"
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/periprocedural-medication-atc-vs",
+    "version" : "0.8.0",
+    "status" : "draft",
+    "name" : "PeriproceduralMedicationAtcVS",
+    "title" : "TAUSSIG — Médicaments péri-procéduraux (ATC)",
+    "description" : "Molécules d'antibioprophylaxie et d'anticoagulation per-procédurale les plus attendues dans un compte rendu de cathétérisme pédiatrique. Liste courte proposée, à valider cliniquement.",
+    "systems" : ["http://www.whocc.no/atc"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-periprocedural-medication-administration.html" : "TAUSSIG — Administration médicamenteuse péri-procédurale"
+  },
+  {
     "url" : "https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "PeriproceduralMedicationPurposeVS",
     "title" : "TAUSSIG — Rôles des médicaments péri-procéduraux",
@@ -282,8 +322,20 @@
     "StructureDefinition-taussig-periprocedural-medication-administration.html" : "TAUSSIG — Administration médicamenteuse péri-procédurale"
   },
   {
+    "url" : "https://taussig/fhir/ValueSet/procedure-outcome-type-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "ProcedureOutcomeTypeVS",
+    "title" : "TAUSSIG — Types de résultat global de procédure",
+    "description" : "Les trois résultats globaux annotables d'un cathétérisme.",
+    "systems" : ["https://taussig/fhir/CodeSystem/procedure-outcome-type"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-procedure-outcome.html" : "TAUSSIG — Résultat global de procédure"
+  },
+  {
     "url" : "https://taussig/fhir/ValueSet/procedure-phase-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ProcedurePhaseVS",
     "title" : "TAUSSIG — Phases procédurales",
@@ -291,12 +343,36 @@
     "systems" : ["https://taussig/fhir/CodeSystem/procedure-phase"],
     "uses" : {
     },
-    "ConceptMap-measurement-phase-to-snomed.html" : "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)",
-    "StructureDefinition-procedurePhase.html" : "Phase procédurale (mesure)"
+    "StructureDefinition-procedurePhase.html" : "Phase procédurale (mesure)",
+    "ConceptMap-measurement-phase-to-snomed.html" : "TAUSSIG — Phase de mesure -> SNOMED (codage grossier ; sémantique fine = extension procedurePhase + related_gesture_id)"
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/procedure-urgency-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "ProcedureUrgencyVS",
+    "title" : "TAUSSIG — Liste — Caractère urgent du cathétérisme",
+    "description" : "Les 4 niveaux d'urgence du cathétérisme.",
+    "systems" : ["https://taussig/fhir/CodeSystem/procedure-urgency"],
+    "uses" : {
+    },
+    "StructureDefinition-procedureUrgency.html" : "Caractère urgent du cathétérisme"
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/puncture-success-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "PunctureSuccessVS",
+    "title" : "TAUSSIG — Succès de la ponction vasculaire",
+    "description" : "Ponction réussie ou non réussie (SNOMED CT, qualificatifs de résultat).",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-vascular-access.html" : "TAUSSIG — Abord vasculaire"
   },
   {
     "url" : "https://taussig/fhir/ValueSet/severity-scale-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "SeverityScaleVS",
     "title" : "TAUSSIG — Échelles de gravité",
@@ -305,6 +381,45 @@
     "uses" : {
     },
     "StructureDefinition-severityScale.html" : "Échelle de gravité"
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/stent-coating-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentCoatingVS",
+    "title" : "TAUSSIG — Liste — Revêtement actif d'un stent",
+    "description" : "Stent actif ou non.",
+    "systems" : ["https://taussig/fhir/CodeSystem/stent-coating"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-cardiac-implant.html" : "TAUSSIG — Implant cardiaque (substrat longitudinal)",
+    "StructureDefinition-taussig-material-used.html" : "TAUSSIG — Matériel utilisé (consommable de geste)"
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/stent-covering-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentCoveringVS",
+    "title" : "TAUSSIG — Liste — Couverture d'un stent",
+    "description" : "Stent nu ou couvert.",
+    "systems" : ["https://taussig/fhir/CodeSystem/stent-covering"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-cardiac-implant.html" : "TAUSSIG — Implant cardiaque (substrat longitudinal)",
+    "StructureDefinition-taussig-material-used.html" : "TAUSSIG — Matériel utilisé (consommable de geste)"
+  },
+  {
+    "url" : "https://taussig/fhir/ValueSet/stent-expansion-vs",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentExpansionVS",
+    "title" : "TAUSSIG — Liste — Mode d'expansion d'un stent",
+    "description" : "Stent expansible au ballon ou auto-expansible.",
+    "systems" : ["https://taussig/fhir/CodeSystem/stent-expansion"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-cardiac-implant.html" : "TAUSSIG — Implant cardiaque (substrat longitudinal)",
+    "StructureDefinition-taussig-material-used.html" : "TAUSSIG — Matériel utilisé (consommable de geste)"
   },
   {
     "url" : "https://taussig/fhir/ValueSet/taussig-adverse-event-ipccc",
@@ -332,7 +447,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/taussig-ae-management",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TaussigAeManagement",
     "title" : "TAUSSIG — Prise en charge d'un événement indésirable",
@@ -344,7 +459,7 @@
   },
   {
     "url" : "https://taussig/fhir/ValueSet/taussig-anthropometry-observation-code-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TaussigAnthropometryObservationCodeVS",
     "title" : "TAUSSIG — Codes d'anthropométrie per-cathétérisme",
@@ -426,8 +541,25 @@
     "StructureDefinition-taussig-clinical-measurement.html" : "TAUSSIG — Mesure clinique (delta pre/post)"
   },
   {
+    "url" : "https://taussig/fhir/ValueSet/taussig-procedure",
+    "version" : "0.8.0",
+    "status" : "draft",
+    "name" : "TaussigProcedureVS",
+    "title" : "TAUSSIG — Liste des gestes et actes de cathétérisme",
+    "description" : "Les 188 concepts TAUSSIG de gestes et d'actes de cathétérisme.",
+    "systems" : ["https://taussig/fhir/CodeSystem/taussig-procedure"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-catheterization.html" : "TAUSSIG — Cathétérisme cardiaque (acte pivot)",
+    "ConceptMap-taussig-procedure-to-ipccc.html" : "TAUSSIG — Gestes TAUSSIG vers IPCCC",
+    "ConceptMap-taussig-procedure-to-echsa.html" : "TAUSSIG — Gestes TAUSSIG vers ECHSA",
+    "ConceptMap-taussig-procedure-to-ccam.html" : "TAUSSIG — Gestes TAUSSIG vers CCAM",
+    "ConceptMap-taussig-procedure-to-snomed.html" : "TAUSSIG — Gestes TAUSSIG vers SNOMED",
+    "StructureDefinition-taussig-interventional-gesture.html" : "TAUSSIG — Geste interventionnel"
+  },
+  {
     "url" : "https://taussig/fhir/ValueSet/taussig-procedure-exposure-observation-code-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TaussigProcedureExposureObservationCodeVS",
     "title" : "TAUSSIG — Codes d'exposition et contraste",
@@ -456,11 +588,7 @@
     "name" : "TaussigProcedureSnomed",
     "title" : "TAUSSIG — Procédures (SNOMED CT, interopérabilité)",
     "description" : "Working set SNOMED CT des gestes de cathétérisme congénital (couche d'interopérabilité FHIR Procedure.code). Résolu sur le SMT depuis les gestes IPCCC retenus. À valider cliniquement.",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-taussig-interventional-gesture.html" : "TAUSSIG — Geste interventionnel",
-    "StructureDefinition-taussig-catheterization.html" : "TAUSSIG — Cathétérisme cardiaque (acte pivot)"
+    "systems" : ["http://snomed.info/sct"]
   },
   {
     "url" : "https://taussig/fhir/ValueSet/taussig-regurgitation-grade",
@@ -482,21 +610,25 @@
     "http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-taussig-interventional-gesture.html" : "TAUSSIG — Geste interventionnel",
-    "StructureDefinition-taussig-clinical-measurement.html" : "TAUSSIG — Mesure clinique (delta pre/post)"
+    "StructureDefinition-taussig-clinical-measurement.html" : "TAUSSIG — Mesure clinique (delta pre/post)",
+    "StructureDefinition-taussig-implant-use.html" : "TAUSSIG — Pose et port d'un implant",
+    "StructureDefinition-taussig-interventional-gesture.html" : "TAUSSIG — Geste interventionnel"
   },
   {
     "url" : "https://taussig/fhir/ValueSet/technical-success-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TechnicalSuccessVS",
     "title" : "TAUSSIG — Succès technique",
     "description" : "Jeu de valeurs « TAUSSIG — Succès technique » utilisé par les profils TAUSSIG.",
-    "systems" : ["https://taussig/fhir/CodeSystem/technical-success"]
+    "systems" : ["https://taussig/fhir/CodeSystem/technical-success"],
+    "uses" : {
+    },
+    "StructureDefinition-taussig-catheterization.html" : "TAUSSIG — Cathétérisme cardiaque (acte pivot)"
   },
   {
     "url" : "https://taussig/fhir/ValueSet/ventilation-type-vs",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "VentilationTypeVS",
     "title" : "TAUSSIG — Modes ventilatoires",

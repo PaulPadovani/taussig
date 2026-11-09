@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "taussig-procedure",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs taussig-procedure</b></p><a name=\"taussig-procedure\"> </a><a name=\"hctaussig-procedure\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-taussig-procedure.html\"><code>https://taussig/fhir/CodeSystem/taussig-procedure</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;0.8.0</span></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/taussig-procedure",
+  "version" : "0.8.0",
+  "name" : "TaussigProcedureVS",
+  "title" : "TAUSSIG — Liste des gestes et actes de cathétérisme",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-09T08:39:58+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Les 188 concepts TAUSSIG de gestes et d'actes de cathétérisme.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://taussig/fhir/CodeSystem/taussig-procedure"
+    }]
+  }
+}

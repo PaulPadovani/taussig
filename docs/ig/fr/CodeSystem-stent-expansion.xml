@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="stent-expansion"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem stent-expansion</b></p><a name="stent-expansion"> </a><a name="hcstent-expansion"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/stent-expansion</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">balloon_expandable<a name="stent-expansion-balloon_expandable"> </a></td><td>Expansible au ballon</td></tr><tr><td style="white-space:nowrap">self_expanding<a name="stent-expansion-self_expanding"> </a></td><td>Auto-expansible</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/CodeSystem/stent-expansion"/>
+  <version value="0.8.0"/>
+  <name value="StentExpansion"/>
+  <title value="TAUSSIG — Mode d'expansion d'un stent"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-11-09T08:39:58+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Stent expansible au ballon ou auto-expansible (décision M2)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="balloon_expandable"/>
+    <display value="Expansible au ballon"/>
+  </concept>
+  <concept>
+    <code value="self_expanding"/>
+    <display value="Auto-expansible"/>
+  </concept>
+</CodeSystem>

@@ -1,4 +1,4 @@
-# TAUSSIG — Méthode de calcul de surface corporelle - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Méthode de calcul de surface corporelle - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Méthode de calcul de surface corporelle (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "bsa-method",
   "url" : "https://taussig/fhir/CodeSystem/bsa-method",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "BsaMethod",
   "title" : "TAUSSIG — Méthode de calcul de surface corporelle",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Formule utilisée pour calculer la surface corporelle (BSA).",
   "jurisdiction" : [{

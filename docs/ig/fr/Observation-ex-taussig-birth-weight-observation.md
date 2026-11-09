@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Poids de naissance - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Exemple technique — TAUSSIG — Poids de naissance - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple Observation: Exemple technique — TAUSSIG — Poids de naissance
 

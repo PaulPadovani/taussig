@@ -14,12 +14,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem severity-scale</b></p><a name=\"severity-scale\"> </a><a name=\"hcseverity-scale\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/severity-scale</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">bergersen_c3po<a name=\"severity-scale-bergersen_c3po\"> </a></td><td>Bergersen / C3PO</td></tr><tr><td style=\"white-space:nowrap\">ncdr_impact<a name=\"severity-scale-ncdr_impact\"> </a></td><td>NCDR-IMPACT</td></tr><tr><td style=\"white-space:nowrap\">ctcae_v5<a name=\"severity-scale-ctcae_v5\"> </a></td><td>CTCAE v5</td></tr><tr><td style=\"white-space:nowrap\">clavien_dindo<a name=\"severity-scale-clavien_dindo\"> </a></td><td>Clavien-Dindo</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"severity-scale-other\"> </a></td><td>Autre</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/severity-scale"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
   fhir:CodeSystem.name [ fhir:value "SeverityScale"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Échelle de gravité d'un EI"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Échelle de gradation validée par la littérature."] ;
   fhir:CodeSystem.jurisdiction [

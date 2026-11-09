@@ -1,4 +1,4 @@
-# TAUSSIG — Types de dispositifs interventionnels - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Types de dispositifs interventionnels - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Types de dispositifs interventionnels (Expérimental) 
 
@@ -30,7 +30,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "TAUSSIG — Types de dispositifs interventionnels",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set de matériel ; catégories de fermeture distinguées par cible selon la décision clinique du 30 octobre 2026. Les catégories fines de fermeture utilisent des codes TAUSSIG locaux.",
   "jurisdiction" : [{
@@ -81,6 +81,10 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
       {
         "code" : "1141607002",
         "display" : "Transcatheter biologic tricuspid valve prosthesis"
+      },
+      {
+        "code" : "704865009",
+        "display" : "Non-neurovascular embolization coil"
       }]
     },
     {
@@ -104,6 +108,10 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
       {
         "code" : "TAUSSIG-OCCLUDER-FOP",
         "display" : "Dispositif de fermeture de FOP"
+      },
+      {
+        "code" : "TAUSSIG-OCCLUDER-PARAVALVULAR",
+        "display" : "Prothèse de fermeture de fuite paravalvulaire"
       }]
     }]
   }

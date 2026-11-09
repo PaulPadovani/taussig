@@ -10,7 +10,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — AccessTypeToSnomed - TTL Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
+    <title>TAUSSIG — AccessTypeToSnomed - TTL Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,10 +49,9 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.110"}
-    h3,h4,h5,h6{--heading-prefix:"4.110"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.137"}
+    h3,h4,h5,h6{--heading-prefix:"4.137"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -62,7 +61,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.1 - trial-use
+            <span style="display:inline-block;">0.8.0 - trial-use
 
 
 
@@ -135,7 +134,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -195,7 +194,7 @@
           
 
             à date du 
-2026-10-31
+2026-11-09
 
           
         
@@ -226,7 +225,7 @@
   <a href="http://hl7.org/fhir/R4/resource.html#ConceptMap.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;fr&quot;] ;
   <a href="http://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CarteDeConcepts access-type-to-snomed&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;access-type-to-snomed\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcaccess-type-to-snomed\&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping de &lt;a href=\&quot;ValueSet-access-type-vs.html\&quot;&gt;TAUSSIG — Types d'abord vasculaire&lt;/a&gt; vers &lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;All Codes SCT ValueSet&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping de &lt;a href=\&quot;CodeSystem-access-type.html\&quot;&gt;TAUSSIG — Type d'abord vasculaire&lt;/a&gt; to &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-snomedct.html\&quot;&gt;SNOMED CT (all versions)&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code source&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;relation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code cible&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Commentaire&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;arterial_femoral (Artériel fémoral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;7657000 (artère fémorale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;venous_femoral (Veineux fémoral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;83419000 (veine fémorale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;arterial_humeral (Artériel huméral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;17137000 (artère brachiale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;venous_humeral (Veineux huméral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;20115005 (veine brachiale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;arterial_carotid (Artériel carotidien)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;32062004 (artère carotide commune)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;venous_jugular (Veineux jugulaire)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;12123001 (veine jugulaire interne)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;transhepatic (Transhépatique)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;8993003 (veine hépatique)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;umbilical (Ombilical)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;367567000 (veine ombilicale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;surgical_hybrid (Chirurgical/hybride)&lt;/td&gt;&lt;td colspan=\&quot;2\&quot; style=\&quot;background-color: #efefef\&quot;&gt;(not mapped)&lt;/td&gt;&lt;td style=\&quot;background-color: #efefef\&quot;&gt;Voie d'abord (abord chirurgical/hybride), pas un vaisseau : pas de site SNOMED.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CarteDeConcepts access-type-to-snomed&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;access-type-to-snomed\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcaccess-type-to-snomed\&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping de &lt;a href=\&quot;ValueSet-access-type-vs.html\&quot;&gt;TAUSSIG — Types d'abord vasculaire&lt;/a&gt; vers &lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;All Codes SCT ValueSet&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping de &lt;a href=\&quot;CodeSystem-access-type.html\&quot;&gt;TAUSSIG — Type d'abord vasculaire&lt;/a&gt; to &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-snomedct.html\&quot;&gt;SNOMED CT (all versions)&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code source&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;relation&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code cible&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Commentaire&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;arterial_femoral (Artériel fémoral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;7657000 (artère fémorale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;venous_femoral (Veineux fémoral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;83419000 (veine fémorale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;arterial_humeral (Artériel huméral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;17137000 (artère brachiale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;venous_humeral (Veineux huméral)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;20115005 (veine brachiale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;arterial_carotid (Artériel carotidien)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;32062004 (artère carotide commune)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;venous_jugular (Veineux jugulaire)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;12123001 (veine jugulaire interne)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;transhepatic (Transhépatique)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;8993003 (veine hépatique)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;umbilical (Ombilical)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;367567000 (veine ombilicale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;surgical_hybrid (Chirurgical/hybride)&lt;/td&gt;&lt;td colspan=\&quot;2\&quot; style=\&quot;background-color: #efefef\&quot;&gt;(not mapped)&lt;/td&gt;&lt;td style=\&quot;background-color: #efefef\&quot;&gt;Voie d'abord (abord chirurgical/hybride), pas un vaisseau : pas de site SNOMED.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;arterial_radial (Artériel radial)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;45631007 (artère radiale)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;transthoracic (Transthoracique)&lt;/td&gt;&lt;td colspan=\&quot;2\&quot; style=\&quot;background-color: #efefef\&quot;&gt;(not mapped)&lt;/td&gt;&lt;td style=\&quot;background-color: #efefef\&quot;&gt;périventriculaire, transapical ou ponction directe : pas de structure SNOMED unique&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ;
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">fhir:ConceptMap.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://taussig/fhir/ConceptMap/access-type-to-snomed&quot;] ;
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:ConceptMap.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.0&quot;] ;
@@ -234,7 +233,7 @@
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">fhir:ConceptMap.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;TAUSSIG — AccessTypeToSnomed&quot;] ;
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:ConceptMap.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">fhir:ConceptMap.experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean] ;
-  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:ConceptMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-10-31T15:29:53+01:00&quot;^^xsd:dateTime] ;
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:ConceptMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-11-09T08:39:58+01:00&quot;^^xsd:dateTime] ;
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:ConceptMap.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Projet TAUSSIG&quot;] ;
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.description">fhir:ConceptMap.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT.&quot;] ;
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.jurisdiction">fhir:ConceptMap.jurisdiction</a> [
@@ -337,6 +336,23 @@
          <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;unmatched&quot; ] ;
          <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">fhir:ConceptMap.group.element.target.comment</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Voie d'abord (abord chirurgical/hybride), pas un vaisseau : pas de site SNOMED.&quot; ]
        ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;arterial_radial&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;45631007&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:ConceptMap.group.element.target.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;artère radiale&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;transthoracic&quot; ] ;
+       <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;unmatched&quot; ] ;
+         <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">fhir:ConceptMap.group.element.target.comment</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;périventriculaire, transapical ou ponction directe : pas de structure SNOMED unique&quot; ]
+       ]
      ]
   ] .
 
@@ -378,10 +394,10 @@
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-31 15:29:00 +0100">
-    2026-10-31
+  <span title="2026-11-09 08:39:00 +0100">
+    2026-11-09
   </span>
 
           <br/>

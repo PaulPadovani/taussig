@@ -1,4 +1,4 @@
-# TAUSSIG — Syndromes génétiques (Orphanet) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Syndromes génétiques (Orphanet) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Syndromes génétiques (Orphanet) (Expérimental) 
 
@@ -32,7 +32,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "TAUSSIG — Syndromes génétiques (Orphanet)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set Orphanet des syndromes congénitaux pertinents en cathétérisme (covariable de contexte de la POC). Code primaire Orphanet ; ICD-11 = classification (ConceptMap) ; ICD-10 = dérivé.",
   "jurisdiction" : [{

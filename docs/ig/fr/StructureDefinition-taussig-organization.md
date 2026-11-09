@@ -1,4 +1,4 @@
-# TAUSSIG — Organisation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Organisation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Organisation ( Expérimental ) 
 
@@ -61,12 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-organiz
   "resourceType" : "StructureDefinition",
   "id" : "taussig-organization",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-organization",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigOrganization",
   "title" : "TAUSSIG — Organisation",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Établissement de santé, dérivé de FR Core Organization (établissement). FINESS porté par les slices FR Core idNatSt (urn:oid:1.2.250.1.71.4.2.2) et finess (https://finess.esante.gouv.fr).",
   "jurisdiction" : [{
@@ -105,6 +105,31 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-organiz
     "element" : [{
       "id" : "Organization",
       "path" : "Organization"
+    },
+    {
+      "id" : "Organization.identifier",
+      "path" : "Organization.identifier",
+      "label" : "Identifiant FINESS (jamais annoté depuis un texte pseudonymisé)",
+      "short" : "Identifiant FINESS (jamais annoté depuis un texte pseudonymisé)"
+    },
+    {
+      "id" : "Organization.identifier:finess",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "never_annotated"
+      }],
+      "path" : "Organization.identifier",
+      "sliceName" : "finess"
+    },
+    {
+      "id" : "Organization.name",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
+      "path" : "Organization.name",
+      "label" : "Nom de l'établissement",
+      "short" : "Nom de l'établissement"
     }]
   }
 }

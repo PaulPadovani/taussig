@@ -1,4 +1,4 @@
-# TAUSSIG — Poids de naissance - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Poids de naissance - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Poids de naissance ( Expérimental ) 
 
@@ -61,12 +61,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-birth-w
   "resourceType" : "StructureDefinition",
   "id" : "taussig-birth-weight-observation",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigBirthWeightObservation",
   "title" : "TAUSSIG — Poids de naissance",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Poids de naissance porté par une Observation dédiée (LOINC 8339-4), liée au patient.",
   "jurisdiction" : [{
@@ -119,11 +119,15 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-birth-w
     {
       "id" : "Observation.status",
       "path" : "Observation.status",
+      "label" : "Statut de la mesure",
+      "short" : "Statut de la mesure",
       "mustSupport" : true
     },
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
+      "label" : "Code du poids de naissance (LOINC)",
+      "short" : "Code du poids de naissance (LOINC)",
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
@@ -135,15 +139,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-birth-w
     {
       "id" : "Observation.subject",
       "path" : "Observation.subject",
+      "label" : "Patient",
+      "short" : "Patient",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-patient"]
       }],
       "mustSupport" : true
     },
     {
       "id" : "Observation.effective[x]",
       "path" : "Observation.effective[x]",
+      "label" : "Date de la mesure",
+      "short" : "Date de la mesure",
       "type" : [{
         "code" : "dateTime"
       }],
@@ -151,15 +159,29 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-birth-w
     },
     {
       "id" : "Observation.value[x]",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Observation.value[x]",
+      "label" : "Poids de naissance",
+      "short" : "Poids de naissance",
       "type" : [{
         "code" : "Quantity"
       }],
       "mustSupport" : true
     },
     {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "label" : "Poids de naissance (valeur)",
+      "short" : "Poids de naissance (valeur)"
+    },
+    {
       "id" : "Observation.value[x].unit",
       "path" : "Observation.value[x].unit",
+      "label" : "Unité (g)",
+      "short" : "Unité (g)",
       "patternString" : "g"
     },
     {

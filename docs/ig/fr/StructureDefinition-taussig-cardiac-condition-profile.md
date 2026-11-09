@@ -1,9 +1,10 @@
-# TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Condition cardiaque évolutive - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Condition cardiaque évolutive ( Expérimental ) 
 
 **Utilisations:**
 
+* Référence ce Profil: [TAUSSIG — Cathétérisme cardiaque (acte pivot)](StructureDefinition-taussig-catheterization.md) and [TAUSSIG — Geste interventionnel](StructureDefinition-taussig-interventional-gesture.md)
 * Exemples pour ce/t/te Profil: [Condition/ex-taussig-cardiac-condition-profile](Condition-ex-taussig-cardiac-condition-profile.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-cardiac-condition-profile)
@@ -65,12 +66,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cardiac-condition-profile",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-condition-profile",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigCardiacCondition",
   "title" : "TAUSSIG — Condition cardiaque évolutive",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Statut actuel de la cardiopathie : état d'étape chirurgicale (status post ECHSA) OU lésion résiduelle/acquise. Codage IPCCC primaire + CIM-10 + SNOMED + ECHSA. Type (residual/acquired/post_surgical) = choix clinicien d'instance.",
   "jurisdiction" : [{
@@ -134,8 +135,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.extension:relatedDiagnosis",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "relation"
+      }],
       "path" : "Condition.extension",
       "sliceName" : "relatedDiagnosis",
+      "label" : "Diagnostic congénital d'origine",
+      "short" : "Diagnostic congénital d'origine",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -147,11 +154,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     {
       "id" : "Condition.clinicalStatus",
       "path" : "Condition.clinicalStatus",
+      "label" : "Statut clinique (active, résolue…)",
+      "short" : "Statut clinique (active, résolue…)",
       "mustSupport" : true
     },
     {
       "id" : "Condition.category",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.category",
+      "label" : "Type de condition (résiduelle, acquise, post-chirurgicale)",
+      "short" : "Type de condition (résiduelle, acquise, post-chirurgicale)",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -161,6 +176,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     {
       "id" : "Condition.code",
       "path" : "Condition.code",
+      "label" : "Condition cardiaque évolutive",
+      "short" : "Condition cardiaque évolutive",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
@@ -180,8 +197,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:ipccc",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "ipccc",
+      "label" : "Code IPCCC",
+      "short" : "Code IPCCC",
       "min" : 0,
       "max" : "1",
       "mustSupport" : true,
@@ -198,8 +221,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:cim10",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "cim10",
+      "label" : "Code CIM-10",
+      "short" : "Code CIM-10",
       "min" : 0,
       "max" : "1"
     },
@@ -211,8 +240,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:snomed",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "snomed",
+      "label" : "Code SNOMED CT",
+      "short" : "Code SNOMED CT",
       "min" : 0,
       "max" : "1"
     },
@@ -224,8 +259,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:echsa",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "echsa",
+      "label" : "Code ECHSA",
+      "short" : "Code ECHSA",
       "min" : 0,
       "max" : "1"
     },
@@ -237,12 +278,28 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.text",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.text",
+      "label" : "Libellé de la condition (tel qu'écrit)",
+      "short" : "Libellé de la condition (tel qu'écrit)",
       "mustSupport" : true
     },
     {
       "id" : "Condition.onset[x]",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.onset[x]",
+      "label" : "Date de début",
+      "short" : "Date de début",
       "mustSupport" : true
     }]
   }

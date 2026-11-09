@@ -1,4 +1,4 @@
-# TAUSSIG — Prise en charge d'un événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Prise en charge d'un événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Prise en charge d'un événement indésirable (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "taussig-ae-management",
   "url" : "https://taussig/fhir/ValueSet/taussig-ae-management",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigAeManagement",
   "title" : "TAUSSIG — Prise en charge d'un événement indésirable",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Modes de prise en charge d'un EI pendant le cathétérisme (CodeSystem TAUSSIG ae-management).",
   "jurisdiction" : [{

@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -23,7 +24,7 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Procédure ex-taussig-vascular-access</b></p><a name=\"ex-taussig-vascular-access\"> </a><a name=\"hcex-taussig-vascular-access\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-vascular-access.html\">TAUSSIG — Abord vasculaire</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Écho-guidage</b>: false</p><p><b>Taille d'introducteur</b>: 5 French<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUM[Ch] = '[Ch]')</span></p><p><b>partOf</b>: <a href=\"Procedure-ex-taussig-catheterization.html\">Procedure : extension = false; status = unknown; performed[x] = 2026-01-01</a></p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/access-type arterial_femoral}\">Artériel fémoral</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Procédure ex-taussig-vascular-access</b></p><a name=\"ex-taussig-vascular-access\"> </a><a name=\"hcex-taussig-vascular-access\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-vascular-access.html\">TAUSSIG — Abord vasculaire</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>Écho-guidage</b>: false</p><p><b>Taille d'introducteur</b>: 5 French<span style=\"background: LightGoldenRodYellow\"> (Détails : code UCUM[Ch] = '[Ch]')</span></p><p><b>partOf</b>: <a href=\"Procedure-ex-taussig-catheterization.html\">Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques</a></p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/access-type arterial_femoral}\">Artériel fémoral</span></p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>outcome</b>: <span title=\"Codes :{http://snomed.info/sct 385669000}\">réussi(e)</span></p></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index -1 ;
@@ -55,6 +56,14 @@
   fhir:Procedure.subject [
      fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
      fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+  ] ;
+  fhir:Procedure.outcome [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:385669000 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "385669000" ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/stent-expansion> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "stent-expansion"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem stent-expansion</b></p><a name=\"stent-expansion\"> </a><a name=\"hcstent-expansion\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/stent-expansion</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">balloon_expandable<a name=\"stent-expansion-balloon_expandable\"> </a></td><td>Expansible au ballon</td></tr><tr><td style=\"white-space:nowrap\">self_expanding<a name=\"stent-expansion-self_expanding\"> </a></td><td>Auto-expansible</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/stent-expansion"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
+  fhir:CodeSystem.name [ fhir:value "StentExpansion"] ;
+  fhir:CodeSystem.title [ fhir:value "TAUSSIG — Mode d'expansion d'un stent"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:CodeSystem.description [ fhir:value "Stent expansible au ballon ou auto-expansible (décision M2)."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "balloon_expandable" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Expansible au ballon" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "self_expanding" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Auto-expansible" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/CodeSystem/stent-expansion.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

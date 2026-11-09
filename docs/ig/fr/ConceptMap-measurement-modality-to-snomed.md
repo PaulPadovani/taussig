@@ -1,4 +1,4 @@
-# TAUSSIG — Modalité de mesure -> SNOMED (Observation.method) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Modalité de mesure -> SNOMED (Observation.method) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ConceptMap: TAUSSIG — Modalité de mesure -> SNOMED (Observation.method) (Expérimental) 
 
@@ -16,7 +16,7 @@
   "title" : "TAUSSIG — Modalité de mesure -> SNOMED (Observation.method)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Représentation FHIR « TAUSSIG — Modalité de mesure -> SNOMED (Observation.method) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource.",
   "jurisdiction" : [{

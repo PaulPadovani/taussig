@@ -11,15 +11,15 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs technical-success-vs</b></p><a name=\"technical-success-vs\"> </a><a name=\"hctechnical-success-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-technical-success.html\"><code>https://taussig/fhir/CodeSystem/technical-success</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.6.1</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs technical-success-vs</b></p><a name=\"technical-success-vs\"> </a><a name=\"hctechnical-success-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-technical-success.html\"><code>https://taussig/fhir/CodeSystem/technical-success</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.8.0</span></li></ul></div>"
   ] ;
   fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/technical-success-vs"] ;
-  fhir:ValueSet.version [ fhir:value "0.6.1"] ;
+  fhir:ValueSet.version [ fhir:value "0.8.0"] ;
   fhir:ValueSet.name [ fhir:value "TechnicalSuccessVS"] ;
   fhir:ValueSet.title [ fhir:value "TAUSSIG — Succès technique"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
   fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:ValueSet.description [ fhir:value "Jeu de valeurs « TAUSSIG — Succès technique » utilisé par les profils TAUSSIG."] ;
   fhir:ValueSet.jurisdiction [

@@ -1,4 +1,4 @@
-# TAUSSIG — Complément pour le type d’anesthésie - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Complément pour le type d’anesthésie - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Complément pour le type d’anesthésie (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "anesthesia-type",
   "url" : "https://taussig/fhir/CodeSystem/anesthesia-type",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigAnesthesiaType",
   "title" : "TAUSSIG — Complément pour le type d’anesthésie",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Code local pour l’absence explicite d’anesthésie. Une donnée manquante ne signifie pas aucune anesthésie. Aucune absence d’équivalent SNOMED n’est affirmée.",
   "jurisdiction" : [{

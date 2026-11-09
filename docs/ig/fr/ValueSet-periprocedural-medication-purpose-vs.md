@@ -1,4 +1,4 @@
-# TAUSSIG — Rôles des médicaments péri-procéduraux - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Rôles des médicaments péri-procéduraux - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Rôles des médicaments péri-procéduraux (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "periprocedural-medication-purpose-vs",
   "url" : "https://taussig/fhir/ValueSet/periprocedural-medication-purpose-vs",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "PeriproceduralMedicationPurposeVS",
   "title" : "TAUSSIG — Rôles des médicaments péri-procéduraux",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Rôles des médicaments péri-procéduraux » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

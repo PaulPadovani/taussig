@@ -1,4 +1,4 @@
-# TAUSSIG — Intention du cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Intention du cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Intention du cathétérisme (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "cath-intent",
   "url" : "https://taussig/fhir/CodeSystem/cath-intent",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "CathIntent",
   "title" : "TAUSSIG — Intention du cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Intention globale de la procédure de cathétérisme.",
   "jurisdiction" : [{

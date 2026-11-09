@@ -1,10 +1,10 @@
-# TAUSSIG — Succès technique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Succès technique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Succès technique (Expérimental) 
 
  **References** 
 
-Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
+* [TAUSSIG — Cathétérisme cardiaque (acte pivot)](StructureDefinition-taussig-catheterization.md)
 
 ### Définition logique (CLD)
 
@@ -25,12 +25,12 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "resourceType" : "ValueSet",
   "id" : "technical-success-vs",
   "url" : "https://taussig/fhir/ValueSet/technical-success-vs",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TechnicalSuccessVS",
   "title" : "TAUSSIG — Succès technique",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Succès technique » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

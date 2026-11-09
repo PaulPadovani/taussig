@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Exemple technique — TAUSSIG — Résultat global de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple Observation: Exemple technique — TAUSSIG — Résultat global de procédure
 
@@ -6,13 +6,15 @@ Profil: [TAUSSIG — Résultat global de procédure](StructureDefinition-taussig
 
 Balise: 
 
-**partOf**: [Procedure : extension = false; status = unknown; performed[x] = 2026-01-01](Procedure-ex-taussig-catheterization.md)
+**partOf**: [Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques](Procedure-ex-taussig-catheterization.md)
 
 **status**: Unknown
 
-**code**: Exemple technique de résultat — valeur non renseignée
+**code**: Succès hémodynamique
 
 **subject**: [Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01](Patient-ex-taussig-patient.md)
+
+**value**: true
 
 
 
@@ -34,11 +36,15 @@ Balise:
   }],
   "status" : "unknown",
   "code" : {
-    "text" : "Exemple technique de résultat — valeur non renseignée"
+    "coding" : [{
+      "system" : "https://taussig/fhir/CodeSystem/procedure-outcome-type",
+      "code" : "hemodynamic_success"
+    }]
   },
   "subject" : {
     "reference" : "Patient/ex-taussig-patient"
-  }
+  },
+  "valueBoolean" : true
 }
 
 ```

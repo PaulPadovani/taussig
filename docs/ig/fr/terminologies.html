@@ -6,7 +6,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Terminologies - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
+    <title>Terminologies - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,7 +45,6 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3"}
     h3,h4,h5,h6{--heading-prefix:"3"}</style>
@@ -58,7 +57,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.1 - trial-use
+            <span style="display:inline-block;">0.8.0 - trial-use
 
 
 
@@ -137,7 +136,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Terminologies</h2>
   
 
@@ -156,15 +155,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#systèmes-de-codes-31" id="markdown-toc-systèmes-de-codes-31">Systèmes de codes (31)</a></li>
-  <li><a href="#jeux-de-valeurs-38" id="markdown-toc-jeux-de-valeurs-38">Jeux de valeurs (38)</a></li>
-  <li><a href="#tables-de-correspondance-6" id="markdown-toc-tables-de-correspondance-6">Tables de correspondance (6)</a></li>
+  <li><a href="#systèmes-de-codes-40" id="markdown-toc-systèmes-de-codes-40">Systèmes de codes (40)</a></li>
+  <li><a href="#jeux-de-valeurs-48" id="markdown-toc-jeux-de-valeurs-48">Jeux de valeurs (48)</a></li>
+  <li><a href="#tables-de-correspondance-10" id="markdown-toc-tables-de-correspondance-10">Tables de correspondance (10)</a></li>
 </ul>
 
 </div>
 <p>Les systèmes et classifications tiers conservent leurs conditions de réutilisation. Les cinq catégories fines de dispositifs de fermeture utilisent des codes locaux TAUSSIG. La validation technique ne remplace pas la validation clinique des correspondances.</p>
 
-<h3 id="systèmes-de-codes-31">Systèmes de codes (31)</h3>
+<h3 id="systèmes-de-codes-40">Systèmes de codes (40)</h3>
 
 <table>
   <thead>
@@ -191,12 +190,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Distingue le diagnostic congénital des conditions évolutives.</td>
     </tr>
     <tr>
+      <td><a href="CodeSystem-procedure-urgency.html">TAUSSIG — Caractère urgent du cathétérisme</a></td>
+      <td>Caractère urgent du cathétérisme, en 4 niveaux d'après le statut de procédure du registre NCDR IMPACT (dictionnaire v2.0.1, élément 5020) ; définitions résumées en français (décision I3).</td>
+    </tr>
+    <tr>
       <td><a href="CodeSystem-genetic-syndrome-category.html">TAUSSIG — Catégorie de syndrome génétique</a></td>
       <td>Catégorie étiologique d'un syndrome génétique.</td>
     </tr>
     <tr>
       <td><a href="CodeSystem-ccam.html">TAUSSIG — CCAM (sous-ensemble cath congénital)</a></td>
       <td>Sous-ensemble candidat de la CCAM v82 (ATIH) pour le cathétérisme congénital. Fragment : extrait des actes percutanés cœur/gros vaisseaux. CCAM = primaire administratif ; SNOMED procédure = précision (axe séparé).</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-annotation-class.html">TAUSSIG — Classe d'annotation</a></td>
+      <td>Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire.</td>
     </tr>
     <tr>
       <td><a href="CodeSystem-anesthesia-type.html">TAUSSIG — Complément pour le type d’anesthésie</a></td>
@@ -211,6 +218,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Condition physiologique/pharmacologique pendant la mesure.</td>
     </tr>
     <tr>
+      <td><a href="CodeSystem-stent-covering.html">TAUSSIG — Couverture d'un stent</a></td>
+      <td>Stent nu ou couvert (décision M2).</td>
+    </tr>
+    <tr>
       <td><a href="CodeSystem-closure-device-type.html">TAUSSIG — Dispositifs de fermeture par cible</a></td>
       <td>Catégories de dispositifs de fermeture distinguées par cible. Codes locaux TAUSSIG ; aucune équivalence SNOMED spécifique n'est affirmée.</td>
     </tr>
@@ -223,6 +234,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Représentation FHIR, pour le POC TAUSSIG, de la nomenclature de la base ECHSA (European Congenital Heart Surgeons Association, dérivée EACTS-STS/IPCCC). Codes extraits du dictionnaire maître <code class="language-plaintext highlighter-rouge">fields-dicts.xls</code> (onglet factors). Classes : diagnosis, procedure, status post, complication, aae, nca, gprf. Usage recherche ; codes candidats à valider cliniquement.</td>
     </tr>
     <tr>
+      <td><a href="CodeSystem-taussig-procedure.html">TAUSSIG — Gestes et actes de cathétérisme</a></td>
+      <td>Terminologie d'interface TAUSSIG : 188 concepts de gestes et d'actes de cathétérisme cardiaque congénital (Short List IPCCC de la branche cathétérisme, Long List AEPC v5.0), à identifiant neutre jamais réutilisé. Le clinicien choisit le libellé ; les codes IPCCC, CCAM, ECHSA et SNOMED sont déduits par les ConceptMaps taussig-procedure-to-*. Libellés : traduction fidèle du libellé IPCCC.</td>
+    </tr>
+    <tr>
       <td><a href="CodeSystem-ae-management.html">TAUSSIG — Gestion de la complication (prise en charge péri-procédurale)</a></td>
       <td>Variable de prise en charge d'un événement indésirable de cathétérisme congénital (échelle d'escalade). Ancrage IPCCC/EPCC chap. 15 + SNOMED procédure. À valider cliniquement.</td>
     </tr>
@@ -233,6 +248,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="CodeSystem-measurement-modality.html">TAUSSIG — Modalité de mesure</a></td>
       <td>Modalité d'acquisition d'une mesure.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-stent-expansion.html">TAUSSIG — Mode d'expansion d'un stent</a></td>
+      <td>Stent expansible au ballon ou auto-expansible (décision M2).</td>
     </tr>
     <tr>
       <td><a href="CodeSystem-ventilation-type.html">TAUSSIG — Mode ventilatoire</a></td>
@@ -255,8 +274,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Référentiel temporel pour le delta pre/post (cœur de la POC).</td>
     </tr>
     <tr>
+      <td><a href="CodeSystem-device-property.html">TAUSSIG — Propriété codée d'un dispositif</a></td>
+      <td>Type de propriété codée portée par Device.property (décision M2).</td>
+    </tr>
+    <tr>
       <td><a href="CodeSystem-measurement-property.html">TAUSSIG — Propriétés de mesure hémodynamique</a></td>
       <td>Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-stent-coating.html">TAUSSIG — Revêtement actif d'un stent</a></td>
+      <td>Stent actif (à élution médicamenteuse) ou non (décision M2).</td>
     </tr>
     <tr>
       <td><a href="CodeSystem-gesture-result.html">TAUSSIG — Résultat d'un geste / d'un matériel</a></td>
@@ -265,6 +292,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="CodeSystem-diagnosis-role.html">TAUSSIG — Rôle d'une indication/diagnostic</a></td>
       <td>Rôle de l'indication d'un cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-operator-role.html">TAUSSIG — Rôle de l'opérateur</a></td>
+      <td>Rôle d'un praticien dans la réalisation du cathétérisme (décision I1).</td>
     </tr>
     <tr>
       <td><a href="CodeSystem-periprocedural-medication-purpose.html">TAUSSIG — Rôle du médicament péri-procédural</a></td>
@@ -291,6 +322,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Catégorie de matériel utilisé pendant un geste.</td>
     </tr>
     <tr>
+      <td><a href="CodeSystem-procedure-outcome-type.html">TAUSSIG — Type de résultat global de procédure</a></td>
+      <td>Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme.</td>
+    </tr>
+    <tr>
       <td><a href="CodeSystem-severity-scale.html">TAUSSIG — Échelle de gravité d'un EI</a></td>
       <td>Échelle de gradation validée par la littérature.</td>
     </tr>
@@ -301,7 +336,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="jeux-de-valeurs-38">Jeux de valeurs (38)</h3>
+<h3 id="jeux-de-valeurs-48">Jeux de valeurs (48)</h3>
 
 <table>
   <thead>
@@ -330,6 +365,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="ValueSet-ipccc-icd10-targets.html">TAUSSIG — Cibles CIM-10 de la correspondance IPCCC</a></td>
       <td>Codes principaux et produits complémentaires de la table de correspondance normalisée. Leur existence est contrôlée contre le service terminologique ; cela ne prouve pas une équivalence clinique exacte.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-annotation-class-vs.html">TAUSSIG — Classes d'annotation</a></td>
+      <td>Les 5 classes d'annotation des éléments de profil.</td>
     </tr>
     <tr>
       <td><a href="ValueSet-taussig-anthropometry-observation-code-vs.html">TAUSSIG — Codes d'anthropométrie per-cathétérisme</a></td>
@@ -380,12 +419,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Côté anatomique de l'abord vasculaire (SNOMED CT).</td>
     </tr>
     <tr>
+      <td><a href="ValueSet-taussig-procedure.html">TAUSSIG — Liste des gestes et actes de cathétérisme</a></td>
+      <td>Les 188 concepts TAUSSIG de gestes et d'actes de cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-procedure-urgency-vs.html">TAUSSIG — Liste — Caractère urgent du cathétérisme</a></td>
+      <td>Les 4 niveaux d'urgence du cathétérisme.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-stent-covering-vs.html">TAUSSIG — Liste — Couverture d'un stent</a></td>
+      <td>Stent nu ou couvert.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-stent-expansion-vs.html">TAUSSIG — Liste — Mode d'expansion d'un stent</a></td>
+      <td>Stent expansible au ballon ou auto-expansible.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-stent-coating-vs.html">TAUSSIG — Liste — Revêtement actif d'un stent</a></td>
+      <td>Stent actif ou non.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-operator-role-vs.html">TAUSSIG — Liste — Rôles de l'opérateur</a></td>
+      <td>Rôles d'un praticien dans la réalisation du cathétérisme.</td>
+    </tr>
+    <tr>
       <td><a href="ValueSet-measurement-modality-vs.html">TAUSSIG — Modalités de mesure</a></td>
       <td>Jeu de valeurs « TAUSSIG — Modalités de mesure » utilisé par les profils TAUSSIG.</td>
     </tr>
     <tr>
       <td><a href="ValueSet-ventilation-type-vs.html">TAUSSIG — Modes ventilatoires</a></td>
       <td>Jeu de valeurs « TAUSSIG — Modes ventilatoires » utilisé par les profils TAUSSIG.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-periprocedural-medication-atc-vs.html">TAUSSIG — Médicaments péri-procéduraux (ATC)</a></td>
+      <td>Molécules d'antibioprophylaxie et d'anticoagulation per-procédurale les plus attendues dans un compte rendu de cathétérisme pédiatrique. Liste courte proposée, à valider cliniquement.</td>
     </tr>
     <tr>
       <td><a href="ValueSet-bsa-method-vs.html">TAUSSIG — Méthodes de calcul BSA</a></td>
@@ -424,6 +491,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED).</td>
     </tr>
     <tr>
+      <td><a href="ValueSet-puncture-success-vs.html">TAUSSIG — Succès de la ponction vasculaire</a></td>
+      <td>Ponction réussie ou non réussie (SNOMED CT, qualificatifs de résultat).</td>
+    </tr>
+    <tr>
       <td><a href="ValueSet-technical-success-vs.html">TAUSSIG — Succès technique</a></td>
       <td>Jeu de valeurs « TAUSSIG — Succès technique » utilisé par les profils TAUSSIG.</td>
     </tr>
@@ -452,6 +523,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Jeu de valeurs « TAUSSIG — Types de matériel (catégories) » utilisé par les profils TAUSSIG.</td>
     </tr>
     <tr>
+      <td><a href="ValueSet-procedure-outcome-type-vs.html">TAUSSIG — Types de résultat global de procédure</a></td>
+      <td>Les trois résultats globaux annotables d'un cathétérisme.</td>
+    </tr>
+    <tr>
       <td><a href="ValueSet-anesthesia-type-vs.html">TAUSSIG — Types d’anesthésie</a></td>
       <td>Quatre catégories du modèle : anesthésie générale, sédation et anesthésie locale en SNOMED CT, et aucune anesthésie explicite en code TAUSSIG. Sans distinction du niveau de sédation ni des techniques locorégionales.</td>
     </tr>
@@ -466,7 +541,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="tables-de-correspondance-6">Tables de correspondance (6)</h3>
+<h3 id="tables-de-correspondance-10">Tables de correspondance (10)</h3>
 
 <table>
   <thead>
@@ -487,6 +562,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="ConceptMap-genetic-syndrome-to-icd11.html">TAUSSIG — GeneticSyndromeToIcd11</a></td>
       <td>Crossmap Orphanet -&gt; ICD-11 des syndromes génétiques TAUSSIG (références officielles Orphanet product1).</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-taussig-procedure-to-ccam.html">TAUSSIG — Gestes TAUSSIG vers CCAM</a></td>
+      <td>Correspondance des 188 concepts TAUSSIG de gestes vers CCAM. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-taussig-procedure-to-echsa.html">TAUSSIG — Gestes TAUSSIG vers ECHSA</a></td>
+      <td>Correspondance des 188 concepts TAUSSIG de gestes vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-taussig-procedure-to-ipccc.html">TAUSSIG — Gestes TAUSSIG vers IPCCC</a></td>
+      <td>Correspondance des 188 concepts TAUSSIG de gestes vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.</td>
+    </tr>
+    <tr>
+      <td><a href="ConceptMap-taussig-procedure-to-snomed.html">TAUSSIG — Gestes TAUSSIG vers SNOMED</a></td>
+      <td>Correspondance des 188 concepts TAUSSIG de gestes vers SNOMED. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.</td>
     </tr>
     <tr>
       <td><a href="ConceptMap-ipccc-to-icd10.html">TAUSSIG — IPCCC vers CIM-10, normalisation de la source AEPC 5.0</a></td>
@@ -529,10 +620,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-31 15:29:00 +0100">
-    2026-10-31
+  <span title="2026-11-09 08:39:00 +0100">
+    2026-11-09
   </span>
 
           <br/>

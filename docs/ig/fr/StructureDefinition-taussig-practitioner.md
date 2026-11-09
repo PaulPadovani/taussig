@@ -1,9 +1,10 @@
-# TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Praticien - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Praticien ( Expérimental ) 
 
 **Utilisations:**
 
+* Référence ce Profil: [TAUSSIG — Cathétérisme cardiaque (acte pivot)](StructureDefinition-taussig-catheterization.md)
 * Exemples pour ce/t/te Profil: [Practitioner/ex-taussig-practitioner](Practitioner-ex-taussig-practitioner.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-practitioner)
@@ -61,12 +62,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-practit
   "resourceType" : "StructureDefinition",
   "id" : "taussig-practitioner",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-practitioner",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigPractitioner",
   "title" : "TAUSSIG — Praticien",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Praticien (opérateur, valideur), dérivé de FR Core Practitioner. L'identifiant RPPS est porté par la slice FR Core idNatPs (urn:oid:1.2.250.1.71.4.2.1) — plus besoin de la redéclarer.",
   "jurisdiction" : [{
@@ -107,10 +108,35 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-practit
       "path" : "Practitioner"
     },
     {
+      "id" : "Practitioner.identifier",
+      "path" : "Practitioner.identifier",
+      "label" : "Identifiant RPPS (jamais annoté depuis un texte pseudonymisé)",
+      "short" : "Identifiant RPPS (jamais annoté depuis un texte pseudonymisé)"
+    },
+    {
+      "id" : "Practitioner.identifier:rpps",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "never_annotated"
+      }],
+      "path" : "Practitioner.identifier",
+      "sliceName" : "rpps"
+    },
+    {
       "id" : "Practitioner.name",
       "path" : "Practitioner.name",
+      "label" : "Nom du praticien",
+      "short" : "Nom du praticien",
       "max" : "1",
       "mustSupport" : true
+    },
+    {
+      "id" : "Practitioner.name.text",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
+      "path" : "Practitioner.name.text"
     }]
   }
 }

@@ -23,7 +23,7 @@ Dans le dossier de recherche : installer `openpyxl`, recompiler et valider le gu
 
 Les cas réservés aux présentations restent dans `04-exemple/`, hors du paquet public. Les artefacts originaux TAUSSIG sont sous CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Les terminologies tierces conservent leurs conditions propres ; ce paquet ne leur applique pas une licence globale.
 
-Le guide FHIR 0.6.1 est consultable dans `docs/ig/` ; son paquet `package.tgz` permet de résoudre les canoniques sans dépendre du nom de domaine. Le rapport `qa.html` expose les avertissements et limites de vérification. La publication reste destinée à la recherche et aux essais.
+Le guide FHIR 0.8.0 (dictionnaire v6) est consultable dans `docs/ig/` ; son paquet `package.tgz` permet de résoudre les canoniques sans dépendre du nom de domaine. Le rapport `qa.html` expose les avertissements et limites de vérification. La publication reste destinée à la recherche et aux essais.
 
 La table générale IPCCC → CIM-10 contient 5 973 rapprochements indicatifs (`relatedto`) issus de la source AEPC 5.0 et normalisés pour l’édition OMS `2019-covid-expanded`. Le contrôle des 942 codes cibles ne certifie pas l’équivalence clinique de tous les rapprochements hérités. Les deux correspondances urémiques exigent un stade rénal 5 déjà documenté ; les consommateurs doivent respecter cette dépendance et les codes complémentaires distincts.
 

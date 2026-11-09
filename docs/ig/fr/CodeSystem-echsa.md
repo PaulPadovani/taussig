@@ -1,4 +1,4 @@
-# TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC) (Expérimental) 
 
@@ -19,7 +19,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "echsa",
   "url" : "https://taussig/fhir/CodeSystem/echsa",
-  "version" : "0.4.1",
+  "version" : "0.8.0",
   "name" : "TaussigEchsa",
   "title" : "TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)",
   "status" : "draft",
@@ -33,10 +33,10 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
       "code" : "FR"
     }]
   }],
-  "copyright" : "Nomenclature ECHSA © European Congenital Heart Surgeons Association / EACTS. Réutilisation des codes et libellés à usage de recherche (POC TAUSSIG).",
+  "copyright" : "Nomenclature ECHSA © European Congenital Heart Surgeons Association / EACTS. Réutilisation des codes et libellés à usage de recherche (POC TAUSSIG). Codes du module interventionnel ECHSA-AEPC (logiciel ecdbc-ic 7.9.0), © ECHSA / AEPC, intégrés avec attribution pour la recherche (décision TAUSSIG E1).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 920,
+  "count" : 1003,
   "property" : [{
     "code" : "class",
     "description" : "Classe ECHSA (diagnosis, procedure, status post, complication, aae, nca, gprf).",
@@ -56,6 +56,11 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
     "code" : "ver2010",
     "description" : "Présent dans la version 2010 de la nomenclature ECHSA.",
     "type" : "boolean"
+  },
+  {
+    "code" : "module",
+    "description" : "Module ECHSA d'origine du code (interventional-cardiology : module AEPC).",
+    "type" : "string"
   }],
   "concept" : [{
     "code" : "AAE100",
@@ -19213,6 +19218,1334 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
     {
       "code" : "ver2010",
       "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-01",
+    "display" : "Arrhythmia, Atrial, Atrial fibrillation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-02",
+    "display" : "Arrhythmia, Atrial, Atrial flutter",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-03",
+    "display" : "Arrhythmia, Atrial, Other",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-04",
+    "display" : "Arrhythmia, Heart block",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-05",
+    "display" : "Arrhythmia, Heart block, Acquired",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-06",
+    "display" : "Arrhythmia, Junctional",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-07",
+    "display" : "Arrhythmia, Pacemaker implantation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-08",
+    "display" : "Arrhythmia, Ventricular",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Arrhythmias"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-10",
+    "display" : "Complication of cardiovascular catheterization procedure",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-11",
+    "display" : "Complication of cardiovascular catheterization procedure, Device embolization",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-12",
+    "display" : "Complication of cardiovascular catheterization procedure, Device malfunction",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-13",
+    "display" : "Complication of cardiovascular catheterization procedure, Perforation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-14",
+    "display" : "Foreign body, Intracardiac foreign body",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-15",
+    "display" : "Foreign body, Intravascular foreign body",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-16",
+    "display" : "ASD, Postoperative interatrial communication",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-17",
+    "display" : "VSD, Postoperative interventricular communication",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-18",
+    "display" : "PDA, Residual leak",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Device related"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-19",
+    "display" : "Prosthetic valve failure",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Valvar complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-20",
+    "display" : "Aortic regurgitation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Valvar complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-21",
+    "display" : "Pulmonary regurgitation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Valvar complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-22",
+    "display" : "Mitral regurgitation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Valvar complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-23",
+    "display" : "Tricuspid regurgitation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Valvar complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-24",
+    "display" : "Thrombosis",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular access"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-25",
+    "display" : "Pseudoaneurysm",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular access"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-26",
+    "display" : "Bleeding (clinically relevant)",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular access"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-27",
+    "display" : "Vessel perforation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-28",
+    "display" : "Aneurysm",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-29",
+    "display" : "Extravasation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-30",
+    "display" : "Dissection",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-31",
+    "display" : "Fistula",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Vascular complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-32",
+    "display" : "Perforation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Cardiac complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-33",
+    "display" : "Tamponade",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Cardiac complications"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "CP-2019-IC-34",
+    "display" : "Death",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "complication"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Death"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-07",
+    "display" : "Myocarditis",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-08",
+    "display" : "Plastic bronchitis",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-09",
+    "display" : "Protein-losing enteropathy",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-10",
+    "display" : "Pulmonary venous stenosis, Acquired",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Pulmonary Venous Stenosis"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-11",
+    "display" : "Pulmonary venous stenosis, Spontaneous",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Pulmonary Venous Stenosis"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-13",
+    "display" : "Wolff-Parkinson-White syndrome (WPW syndrome)",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-14",
+    "display" : "Arrhythmia, Atrial, Atrial fibrillation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Electrophysiological"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-15",
+    "display" : "Arrhythmia, Atrial, Atrial flutter",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Electrophysiological"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-16",
+    "display" : "Arrhythmia, Atrial, Other",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Electrophysiological"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-17",
+    "display" : "ASD, Postoperative interatrial communication",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Septal Defects"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-18",
+    "display" : "Complication of cardiovascular catheterization procedure, Device embolization",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Complications of previous procedures"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-19",
+    "display" : "Complication of cardiovascular catheterization procedure, Device malfunction",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Complications of previous procedures"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-20",
+    "display" : "Complication of cardiovascular catheterization procedure, Perforation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Complications of previous procedures"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-21",
+    "display" : "Complication of interventional radiology procedure, Device embolization",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Complications of previous procedures"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-22",
+    "display" : "Complication of interventional radiology procedure, Device malfunction",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Complications of previous procedures"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-23",
+    "display" : "Complication of interventional radiology procedure, Perforation",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Complications of previous procedures"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-24",
+    "display" : "Foreign body, Intracardiac foreign body",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Foreign body"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-25",
+    "display" : "Foreign body, Intravascular foreign body",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Foreign body"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-26",
+    "display" : "Kawasaki disease",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-27",
+    "display" : "Diverticulum, Ventricular, Left",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Left Heart Lesions"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-28",
+    "display" : "Diverticulum, Ventricular, Right",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Right Heart Lesions"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-29",
+    "display" : "Diverticulum, Atrium, Left",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Left Heart Lesions"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-30",
+    "display" : "Diverticulum, Atrium, Right",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Right Heart Lesions"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-31",
+    "display" : "Tamponade",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Pericardial Disease"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-32",
+    "display" : "Coronary artery anomaly, Abnormal origin other",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-33",
+    "display" : "Coronary artery anomaly, ALCAPA",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-34",
+    "display" : "Coronary artery anomaly, ARCAPA",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-35",
+    "display" : "Coronary artery anomaly, Aneurysm from LAD",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-36",
+    "display" : "Coronary artery anomaly, Aneurysm from LCA main",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-37",
+    "display" : "Coronary artery anomaly, Aneurysm from LCX",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-38",
+    "display" : "Coronary artery anomaly, Aneurysm from RCA",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-39",
+    "display" : "Coronary artery anomaly, Fistula from LAD",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-40",
+    "display" : "Coronary artery anomaly, Fistula from LCA main",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-41",
+    "display" : "Coronary artery anomaly, Fistula from LCX",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-42",
+    "display" : "Coronary artery anomaly, Fistula from RCA",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-43",
+    "display" : "Coronary artery anomaly, Occlusion from LAD",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-44",
+    "display" : "Coronary artery anomaly, Occlusion from LCA main",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-45",
+    "display" : "Coronary artery anomaly, Occlusion from LCX",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2019-46",
+    "display" : "Coronary artery anomaly, Occlusion from RCA",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Coronary"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2023-1",
+    "display" : "Dilated cardiomyopathy",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Cardiomyopathy"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2023-2",
+    "display" : "Hypertrophic cardiomyopathy",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Cardiomyopathy"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2023-3",
+    "display" : "Restrictive cardiomyopathy",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Cardiomyopathy"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2023-4",
+    "display" : "Hypertrophic obstructive cardiomyopathy",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Cardiomyopathy"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2024-1",
+    "display" : "Status post - bidirectional Glenn",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2024-2",
+    "display" : "Status post - bilateral bidirectional Glenn",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2024-3",
+    "display" : "DORV",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Right Heart Lesions"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2024-4",
+    "display" : "DORV, Fallot type",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Right Heart Lesions"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2024-5",
+    "display" : "Venovenous collaterals",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2024-6",
+    "display" : "Arterioarterial collaterals",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Miscellaneous, Other"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
+    }]
+  },
+  {
+    "code" : "DIAG-2024-7",
+    "display" : "Coarctation - status post stent placement",
+    "property" : [{
+      "code" : "class",
+      "valueString" : "diagnosis"
+    },
+    {
+      "code" : "group",
+      "valueString" : "Thoracic Arteries and Veins"
+    },
+    {
+      "code" : "module",
+      "valueString" : "interventional-cardiology"
     }]
   }]
 }

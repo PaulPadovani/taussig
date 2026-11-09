@@ -11,7 +11,7 @@
   "language" : "fr",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif ex-taussig-cardiac-implant</b></p><a name=\"ex-taussig-cardiac-implant\"> </a><a name=\"hcex-taussig-cardiac-implant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-implant.html\">TAUSSIG — Implant cardiaque (substrat longitudinal)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>État clinique de l'implant</b>: <a href=\"CodeSystem-implant-status.html#implant-status-functional\">TAUSSIG — État clinique d'un implant: functional</a> (Fonctionnel)</p><p><b>Posé en externe</b>: true</p><p><b>Implant précédent</b>: <a href=\"Device-ex-prior-implant.html\">Device</a></p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Dispositif fictif — exemple technique</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/implant-device-type stent}\">Stent</span></p><p><b>patient</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif ex-taussig-cardiac-implant</b></p><a name=\"ex-taussig-cardiac-implant\"> </a><a name=\"hcex-taussig-cardiac-implant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-implant.html\">TAUSSIG — Implant cardiaque (substrat longitudinal)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>État clinique de l'implant</b>: <a href=\"CodeSystem-implant-status.html#implant-status-functional\">TAUSSIG — État clinique d'un implant: functional</a> (Fonctionnel)</p><p><b>Date de l'état de l'implant</b>: 2026-01-01</p><p><b>Posé en externe</b>: true</p><p><b>Implant précédent</b>: <a href=\"Device-ex-prior-implant.html\">Device</a></p><p><b>manufacturer</b>: Fabricant fictif</p><p><b>lotNumber</b>: LOT-EXEMPLE-01</p><p><b>serialNumber</b>: SN-EXEMPLE-0001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Dispositif fictif — exemple technique</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/implant-device-type stent}\">Stent</span></p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property covering}\">Couverture</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-covering bare}\">Nu</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property expansion_mode}\">Mode d'expansion</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-expansion balloon_expandable}\">Expansible au ballon</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property coating}\">Revêtement</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-coating non_drug_eluting}\">Non actif</span></p></blockquote><p><b>patient</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
   },
   "extension" : [{
     "url" : "https://taussig/fhir/StructureDefinition/implantClinicalStatus",
@@ -19,6 +19,10 @@
       "system" : "https://taussig/fhir/CodeSystem/implant-status",
       "code" : "functional"
     }
+  },
+  {
+    "url" : "https://taussig/fhir/StructureDefinition/implantStatusDate",
+    "valueDateTime" : "2026-01-01"
   },
   {
     "url" : "https://taussig/fhir/StructureDefinition/implantedExternally",
@@ -30,9 +34,12 @@
       "reference" : "Device/ex-prior-implant"
     }
   }],
+  "manufacturer" : "Fabricant fictif",
+  "lotNumber" : "LOT-EXEMPLE-01",
+  "serialNumber" : "SN-EXEMPLE-0001",
   "deviceName" : [{
     "name" : "Dispositif fictif — exemple technique",
-    "type" : "user-friendly-name"
+    "type" : "model-name"
   }],
   "type" : {
     "coding" : [{
@@ -40,6 +47,48 @@
       "code" : "stent"
     }]
   },
+  "property" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "https://taussig/fhir/CodeSystem/device-property",
+        "code" : "covering"
+      }]
+    },
+    "valueCode" : [{
+      "coding" : [{
+        "system" : "https://taussig/fhir/CodeSystem/stent-covering",
+        "code" : "bare"
+      }]
+    }]
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://taussig/fhir/CodeSystem/device-property",
+        "code" : "expansion_mode"
+      }]
+    },
+    "valueCode" : [{
+      "coding" : [{
+        "system" : "https://taussig/fhir/CodeSystem/stent-expansion",
+        "code" : "balloon_expandable"
+      }]
+    }]
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://taussig/fhir/CodeSystem/device-property",
+        "code" : "coating"
+      }]
+    },
+    "valueCode" : [{
+      "coding" : [{
+        "system" : "https://taussig/fhir/CodeSystem/stent-coating",
+        "code" : "non_drug_eluting"
+      }]
+    }]
+  }],
   "patient" : {
     "reference" : "Patient/ex-taussig-patient"
   }

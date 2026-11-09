@@ -1,4 +1,4 @@
-# TAUSSIG — Diagnostics congénitaux (CIM-11 MMS) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Diagnostics congénitaux (CIM-11 MMS) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Diagnostics congénitaux (CIM-11 MMS) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — Diagnostics congénitaux (CIM-11 MMS)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Axe de classification diagnostique de la POC : énumération des entités CIM-11 MMS retenues pour les cardiopathies congénitales, avec le libellé français officiel de l'OMS. Liaison extensible : un code CIM-11 hors liste reste admis, mais l'autocomplétion et les statistiques se font sur ce working set curé.",
   "jurisdiction" : [{
@@ -865,6 +865,14 @@
           "language" : "en",
           "value" : "Divided left atrium"
         }]
+      },
+      {
+        "code" : "LA90.5",
+        "display" : "Fistule artérioveineuse pulmonaire"
+      },
+      {
+        "code" : "BC63.20",
+        "display" : "Bloc auriculoventriculaire complet congénital"
       }]
     }]
   }

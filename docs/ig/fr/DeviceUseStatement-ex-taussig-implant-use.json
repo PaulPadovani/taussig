@@ -1,0 +1,29 @@
+{
+  "resourceType" : "DeviceUseStatement",
+  "id" : "ex-taussig-implant-use",
+  "meta" : {
+    "profile" : ["https://taussig/fhir/StructureDefinition/taussig-implant-use"],
+    "tag" : [{
+      "system" : "https://taussig/fhir/tags",
+      "code" : "synthetic-technical-example"
+    }]
+  },
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DeviceUseStatement ex-taussig-implant-use</b></p><a name=\"ex-taussig-implant-use\"> </a><a name=\"hcex-taussig-implant-use\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-implant-use.html\">TAUSSIG — Pose et port d'un implant</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>derivedFrom</b>: <a href=\"Procedure-ex-taussig-interventional-gesture.html\">Procedure Pose de stent dans l'artère pulmonaire gauche</a></p><p><b>timing</b>: 2026-01-01 --&gt; (en cours)</p><p><b>device</b>: <a href=\"Device-ex-taussig-cardiac-implant.html\">Device : extension = Fonctionnel (TAUSSIG — État clinique d'un implant#functional),2026-01-01,true,-&gt;Device; manufacturer = Fabricant fictif; lotNumber = LOT-EXEMPLE-01; serialNumber = SN-EXEMPLE-0001; type = Stent</a></p></div>"
+  },
+  "status" : "active",
+  "subject" : {
+    "reference" : "Patient/ex-taussig-patient"
+  },
+  "derivedFrom" : [{
+    "reference" : "Procedure/ex-taussig-interventional-gesture"
+  }],
+  "timingPeriod" : {
+    "start" : "2026-01-01"
+  },
+  "device" : {
+    "reference" : "Device/ex-taussig-cardiac-implant"
+  }
+}

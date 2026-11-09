@@ -10,15 +10,15 @@
   fhir:Resource.id [ fhir:value "taussig-adverse-event"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure taussig-adverse-event</b></p><a name=\"taussig-adverse-event\"> </a><a name=\"hctaussig-adverse-event\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent\">AdverseEvent</a><a name=\"AdverseEvent\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/adverseevent.html\">AdverseEvent</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Medical care, research study or other healthcare event causing physical injury</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck13.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Extension simple\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension\">Slices pour extension</a><a name=\"AdverseEvent.extension\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\" class=\"xhtPieceDeEmphasized\">Extension</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Extension</span><br/><span class=\"xhtPieceBold\">Slice: </span>Non ordonné, Ouvert par value:url</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck134.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:severityScale\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/severityScale\">extension:severityScale</a><a name=\"AdverseEvent.extension:severityScale\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Extension</span><br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-severityScale.html\">https://taussig/fhir/StructureDefinition/severityScale</a><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-severity-scale-vs.html\" title=\"https://taussig/fhir/ValueSet/severity-scale-vs\" class=\"binding\">TAUSSIG — Échelles de gravité</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck134.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:severityLevel\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/severityLevel\">extension:severityLevel</a><a name=\"AdverseEvent.extension:severityLevel\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Extension</span><br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-severityLevel.html\">https://taussig/fhir/StructureDefinition/severityLevel</a></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck134.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:attribution\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/adverseEventAttribution\">extension:attribution</a><a name=\"AdverseEvent.extension:attribution\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Extension</span><br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-adverseEventAttribution.html\">https://taussig/fhir/StructureDefinition/adverseEventAttribution</a><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ae-attribution-vs.html\" title=\"https://taussig/fhir/ValueSet/ae-attribution-vs\" class=\"binding\">TAUSSIG — Attributions d'EI</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck124.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:management\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/adverseEventManagement\">extension:management</a><a name=\"AdverseEvent.extension:management\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Extension</span><br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-adverseEventManagement.html\">https://taussig/fhir/StructureDefinition/adverseEventManagement</a><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-taussig-ae-management.html\" title=\"https://taussig/fhir/ValueSet/taussig-ae-management\" class=\"binding\">TAUSSIG — Prise en charge d'un événement indésirable</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.actuality\">actuality</a><a name=\"AdverseEvent.actuality\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\" class=\"xhtPieceDeEmphasized\">code</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">actual | potential</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event\">event</a><a name=\"AdverseEvent.event\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Type of the event itself in relation to the subject</span><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-taussig-adverse-event-snomed.html\" title=\"https://taussig/fhir/ValueSet/taussig-adverse-event-snomed\" class=\"binding\">TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck103.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Définition de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding\" class=\"xhtPieceItalic\">Slices pour coding</a><a name=\"AdverseEvent.event.coding\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceItalic\"/><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceItalic xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">Code defined by a terminology system</span><br class=\"xhtPieceItalic\"/><span class=\"xhtPieceBold xhtPieceItalic\">Slice: </span><span class=\"xhtPieceItalic\">Non ordonné, Ouvert par pattern:system</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1035.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:snomed\" title=\"Slice snomed\">coding:snomed</a><a name=\"AdverseEvent.event.coding:snomed\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Code defined by a terminology system</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10340.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:snomed.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:snomed.system\">system</a><a name=\"AdverseEvent.event.coding:snomed.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">http://snomed.info/sct</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1035.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:ipccc\" title=\"Slice ipccc\">coding:ipccc</a><a name=\"AdverseEvent.event.coding:ipccc\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Code defined by a terminology system</span><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-taussig-adverse-event-ipccc.html\" title=\"https://taussig/fhir/ValueSet/taussig-adverse-event-ipccc\" class=\"binding\">TAUSSIG — Complications péri-procédurales (IPCCC)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10340.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:ipccc.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:ipccc.system\">system</a><a name=\"AdverseEvent.event.coding:ipccc.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">https://taussig/fhir/CodeSystem/ipccc</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1035.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:icd10\" title=\"Slice icd10\">coding:icd10</a><a name=\"AdverseEvent.event.coding:icd10\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Code defined by a terminology system</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10340.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:icd10.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:icd10.system\">system</a><a name=\"AdverseEvent.event.coding:icd10.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">http://hl7.org/fhir/sid/icd-10</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1025.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:echsa\" title=\"Slice echsa\">coding:echsa</a><a name=\"AdverseEvent.event.coding:echsa\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Code defined by a terminology system</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10240.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:echsa.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:echsa.system\">system</a><a name=\"AdverseEvent.event.coding:echsa.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">https://taussig/fhir/CodeSystem/echsa</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.outcome\">outcome</a><a name=\"AdverseEvent.outcome\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">resolved | recovering | ongoing | resolvedWithSequelae | fatal | unknown</span><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-adverse-event-outcome.html\" title=\"http://hl7.org/fhir/ValueSet/adverse-event-outcome\" class=\"binding\">AdverseEventOutcome</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure taussig-adverse-event</b></p><a name=\"taussig-adverse-event\"> </a><a name=\"hctaussig-adverse-event\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent\">AdverseEvent</a><a name=\"AdverseEvent\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/adverseevent.html\">AdverseEvent</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Medical care, research study or other healthcare event causing physical injury</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck13.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Extension simple\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension\">Slices pour extension</a><a name=\"AdverseEvent.extension\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\" class=\"xhtPieceDeEmphasized\">Extension</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Extension</span><br/><span class=\"xhtPieceBold\">Slice: </span>Non ordonné, Ouvert par value:url</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck134.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:severityScale\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/severityScale\">extension:severityScale</a><a name=\"AdverseEvent.extension:severityScale\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Échelle de gravité<br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-severityScale.html\">https://taussig/fhir/StructureDefinition/severityScale</a><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-severity-scale-vs.html\" title=\"https://taussig/fhir/ValueSet/severity-scale-vs\" class=\"binding\">TAUSSIG — Échelles de gravité</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck134.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:severityLevel\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/severityLevel\">extension:severityLevel</a><a name=\"AdverseEvent.extension:severityLevel\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Grade de gravité (1 à 5)<br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-severityLevel.html\">https://taussig/fhir/StructureDefinition/severityLevel</a></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck134.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:attribution\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/adverseEventAttribution\">extension:attribution</a><a name=\"AdverseEvent.extension:attribution\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Cause imputée<br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-adverseEventAttribution.html\">https://taussig/fhir/StructureDefinition/adverseEventAttribution</a><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-ae-attribution-vs.html\" title=\"https://taussig/fhir/ValueSet/ae-attribution-vs\" class=\"binding\">TAUSSIG — Attributions d'EI</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck134.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:management\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/adverseEventManagement\">extension:management</a><a name=\"AdverseEvent.extension:management\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Prise en charge<br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-adverseEventManagement.html\">https://taussig/fhir/StructureDefinition/adverseEventManagement</a><br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-taussig-ae-management.html\" title=\"https://taussig/fhir/ValueSet/taussig-ae-management\" class=\"binding\">TAUSSIG — Prise en charge d'un événement indésirable</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck124.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.Slices pour extension.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.extension:procedure\" title=\"URL d'extension = https://taussig/fhir/StructureDefinition/adverseEventProcedure\">extension:procedure</a><a name=\"AdverseEvent.extension:procedure\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-taussig-catheterization.html\">TAUSSIG — Cathétérisme cardiaque (acte pivot)</a> | <a href=\"StructureDefinition-taussig-interventional-gesture.html\">TAUSSIG — Geste interventionnel</a>)</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Acte de survenue (cathétérisme ou geste)<br/><span class=\"xhtPieceBold\">URL: </span><a href=\"StructureDefinition-adverseEventProcedure.html\">https://taussig/fhir/StructureDefinition/adverseEventProcedure</a><br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.actuality\">actuality</a><a name=\"AdverseEvent.actuality\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\" class=\"xhtPieceDeEmphasized\">code</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Survenu ou potentiel</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event\">event</a><a name=\"AdverseEvent.event\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Événement indésirable<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-taussig-adverse-event-snomed.html\" title=\"https://taussig/fhir/ValueSet/taussig-adverse-event-snomed\" class=\"binding\">TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck113.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Définition de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding\" class=\"xhtPieceItalic\">Slices pour coding</a><a name=\"AdverseEvent.event.coding\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceItalic\"/><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceItalic xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">Code defined by a terminology system</span><br class=\"xhtPieceItalic\"/><span class=\"xhtPieceBold xhtPieceItalic\">Slice: </span><span class=\"xhtPieceItalic\">Non ordonné, Ouvert par pattern:system</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1135.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:snomed\" title=\"Slice snomed\">coding:snomed</a><a name=\"AdverseEvent.event.coding:snomed\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Code SNOMED CT</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11340.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:snomed.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:snomed.system\">system</a><a name=\"AdverseEvent.event.coding:snomed.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">http://snomed.info/sct</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1135.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:ipccc\" title=\"Slice ipccc\">coding:ipccc</a><a name=\"AdverseEvent.event.coding:ipccc\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Code IPCCC<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"ValueSet-taussig-adverse-event-ipccc.html\" title=\"https://taussig/fhir/ValueSet/taussig-adverse-event-ipccc\" class=\"binding\">TAUSSIG — Complications péri-procédurales (IPCCC)</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\" class=\"binding\">extensible</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11340.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:ipccc.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:ipccc.system\">system</a><a name=\"AdverseEvent.event.coding:ipccc.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">https://taussig/fhir/CodeSystem/ipccc</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1135.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:icd10\" title=\"Slice icd10\">coding:icd10</a><a name=\"AdverseEvent.event.coding:icd10\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Code CIM-10</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11340.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:icd10.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:icd10.system\">system</a><a name=\"AdverseEvent.event.coding:icd10.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">http://hl7.org/fhir/sid/icd-10</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1125.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Élément de Slice\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:echsa\" title=\"Slice echsa\">coding:echsa</a><a name=\"AdverseEvent.event.coding:echsa\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\" class=\"xhtPieceDeEmphasized\">Coding</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Code ECHSA</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11240.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.Slices pour coding.coding:echsa.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.coding:echsa.system\">system</a><a name=\"AdverseEvent.event.coding:echsa.system\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..<span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\" class=\"xhtPieceDeEmphasized\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Identity of the terminology system</span><br/><span class=\"xhtPieceBold\">Motif requis: </span><span class=\"xhtPieceDarkGreen\">https://taussig/fhir/CodeSystem/echsa</span> (extensions allowed)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.event.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.event.text\">text</a><a name=\"AdverseEvent.event.text\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\" class=\"xhtPieceDeEmphasized\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Libellé de l'EI (tel qu'écrit)</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">AdverseEvent.</span><a href=\"StructureDefinition-taussig-adverse-event-definitions.html#AdverseEvent.outcome\">outcome</a><a name=\"AdverseEvent.outcome\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000\" title=\"Cet élément doit être pris en charge\">S</span><span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\"> Cet élément doit être pris en charge. </span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Évolution de l'EI<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding: </span><a href=\"http://hl7.org/fhir/R4/valueset-adverse-event-outcome.html\" title=\"http://hl7.org/fhir/ValueSet/adverse-event-outcome\" class=\"binding\">AdverseEventOutcome</a><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span></td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
   ] ;
   fhir:StructureDefinition.url [ fhir:value "https://taussig/fhir/StructureDefinition/taussig-adverse-event"] ;
-  fhir:StructureDefinition.version [ fhir:value "0.6.1"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.8.0"] ;
   fhir:StructureDefinition.name [ fhir:value "TaussigAdverseEvent"] ;
   fhir:StructureDefinition.title [ fhir:value "TAUSSIG — Événement indésirable"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:StructureDefinition.description [ fhir:value "Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4)."] ;
   fhir:StructureDefinition.jurisdiction [
@@ -424,9 +424,15 @@
      ], [
        fhir:index 8 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:severityScale" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "severityScale" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extension" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Échelle de gravité" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Échelle de gravité" ] ;
        fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -477,9 +483,15 @@
      ], [
        fhir:index 9 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:severityLevel" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "severityLevel" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extension" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Grade de gravité (1 à 5)" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Grade de gravité (1 à 5)" ] ;
        fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -530,9 +542,15 @@
      ], [
        fhir:index 10 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:attribution" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "attribution" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extension" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Cause imputée" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Cause imputée" ] ;
        fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -583,9 +601,15 @@
      ], [
        fhir:index 11 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:management" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "management" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Extension" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Prise en charge" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Prise en charge" ] ;
        fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -635,6 +659,65 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12 ;
+       fhir:Element.id [ fhir:value "AdverseEvent.extension:procedure" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "relation" ]
+       ] ;
+       fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
+       fhir:ElementDefinition.sliceName [ fhir:value "procedure" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Acte de survenue (cathétérisme ou geste)" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Acte de survenue (cathétérisme ou geste)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "An Extension" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DomainResource.extension" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ] ;
+         fhir:ElementDefinition.type.profile [
+           fhir:value "https://taussig/fhir/StructureDefinition/adverseEventProcedure" ;
+           fhir:index 0 ;
+           fhir:link <https://taussig/fhir/StructureDefinition/adverseEventProcedure>
+         ]
+       ] ;
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1" ;
+         fhir:index 0
+       ] ;
+       fhir:ElementDefinition.constraint [
+         fhir:index 0 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1 ;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ] ;
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ] ;
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ] ;
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ] ;
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension" ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] ;
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13 ;
        fhir:Element.id [ fhir:value "AdverseEvent.modifierExtension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.modifierExtension" ] ;
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ] ;
@@ -691,7 +774,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 13 ;
+       fhir:index 14 ;
        fhir:Element.id [ fhir:value "AdverseEvent.identifier" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.identifier" ] ;
        fhir:ElementDefinition.short [ fhir:value "Business identifier for the event" ] ;
@@ -724,10 +807,11 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14 ;
+       fhir:index 15 ;
        fhir:Element.id [ fhir:value "AdverseEvent.actuality" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.actuality" ] ;
-       fhir:ElementDefinition.short [ fhir:value "actual | potential" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Survenu ou potentiel" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Survenu ou potentiel" ] ;
        fhir:ElementDefinition.definition [ fhir:value "Whether the event actually happened, or just had the potential to. Note that this is independent of whether anyone was affected or harmed or how severely." ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -775,7 +859,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.class" ]
        ]
      ], [
-       fhir:index 15 ;
+       fhir:index 16 ;
        fhir:Element.id [ fhir:value "AdverseEvent.category" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.category" ] ;
        fhir:ElementDefinition.short [ fhir:value "product-problem | product-quality | product-use-error | wrong-dose | incorrect-prescribing-information | wrong-technique | wrong-route-of-administration | wrong-rate | wrong-duration | wrong-time | expired-drug | medical-device-use-error | problem-different-manufacturer | unsafe-physical-environment" ] ;
@@ -824,10 +908,11 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.class" ]
        ]
      ], [
-       fhir:index 16 ;
+       fhir:index 17 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Type of the event itself in relation to the subject" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Événement indésirable" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Événement indésirable" ] ;
        fhir:ElementDefinition.definition [ fhir:value "This element defines the specific type of event that occurred or that was prevented from occurring." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -868,7 +953,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.what[x]" ]
        ]
      ], [
-       fhir:index 17 ;
+       fhir:index 18 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.id" ] ;
        fhir:ElementDefinition.representation [
@@ -901,7 +986,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 18 ;
+       fhir:index 19 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.extension" ] ;
        fhir:ElementDefinition.slicing [
@@ -965,7 +1050,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 19 ;
+       fhir:index 20 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.slicing [
@@ -1019,11 +1104,17 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 20 ;
+       fhir:index 21 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "snomed" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code SNOMED CT" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code SNOMED CT" ] ;
        fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
@@ -1067,7 +1158,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 21 ;
+       fhir:index 22 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.id" ] ;
        fhir:ElementDefinition.representation [
@@ -1100,7 +1191,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 22 ;
+       fhir:index 23 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.extension" ] ;
        fhir:ElementDefinition.slicing [
@@ -1164,7 +1255,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 23 ;
+       fhir:index 24 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ] ;
@@ -1211,7 +1302,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 24 ;
+       fhir:index 25 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.version" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.version" ] ;
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ] ;
@@ -1256,7 +1347,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 25 ;
+       fhir:index 26 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.code" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.code" ] ;
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ] ;
@@ -1301,7 +1392,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 26 ;
+       fhir:index 27 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.display" ] ;
        fhir:Element.extension [
          fhir:index 0 ;
@@ -1351,7 +1442,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 27 ;
+       fhir:index 28 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.userSelected" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.userSelected" ] ;
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ] ;
@@ -1397,11 +1488,17 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 28 ;
+       fhir:index 29 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "ipccc" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code IPCCC" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code IPCCC" ] ;
        fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
@@ -1451,7 +1548,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 29 ;
+       fhir:index 30 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.id" ] ;
        fhir:ElementDefinition.representation [
@@ -1484,7 +1581,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 30 ;
+       fhir:index 31 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.extension" ] ;
        fhir:ElementDefinition.slicing [
@@ -1548,7 +1645,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 31 ;
+       fhir:index 32 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ] ;
@@ -1595,7 +1692,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 32 ;
+       fhir:index 33 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.version" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.version" ] ;
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ] ;
@@ -1640,7 +1737,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 33 ;
+       fhir:index 34 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.code" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.code" ] ;
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ] ;
@@ -1685,7 +1782,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 34 ;
+       fhir:index 35 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.display" ] ;
        fhir:Element.extension [
          fhir:index 0 ;
@@ -1735,7 +1832,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 35 ;
+       fhir:index 36 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.userSelected" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.userSelected" ] ;
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ] ;
@@ -1781,11 +1878,17 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 36 ;
+       fhir:index 37 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "icd10" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code CIM-10" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code CIM-10" ] ;
        fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
@@ -1828,7 +1931,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 37 ;
+       fhir:index 38 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.id" ] ;
        fhir:ElementDefinition.representation [
@@ -1861,7 +1964,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 38 ;
+       fhir:index 39 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.extension" ] ;
        fhir:ElementDefinition.slicing [
@@ -1925,7 +2028,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 39 ;
+       fhir:index 40 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ] ;
@@ -1972,7 +2075,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 40 ;
+       fhir:index 41 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.version" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.version" ] ;
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ] ;
@@ -2017,7 +2120,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 41 ;
+       fhir:index 42 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.code" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.code" ] ;
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ] ;
@@ -2062,7 +2165,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 42 ;
+       fhir:index 43 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.display" ] ;
        fhir:Element.extension [
          fhir:index 0 ;
@@ -2112,7 +2215,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 43 ;
+       fhir:index 44 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.userSelected" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.userSelected" ] ;
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ] ;
@@ -2158,11 +2261,17 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 44 ;
+       fhir:index 45 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "echsa" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code ECHSA" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code ECHSA" ] ;
        fhir:ElementDefinition.definition [ fhir:value "A reference to a code defined by a terminology system." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
@@ -2205,7 +2314,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 45 ;
+       fhir:index 46 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.id" ] ;
        fhir:ElementDefinition.representation [
@@ -2238,7 +2347,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 46 ;
+       fhir:index 47 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.extension" ] ;
        fhir:ElementDefinition.slicing [
@@ -2302,7 +2411,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 47 ;
+       fhir:index 48 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ] ;
@@ -2349,7 +2458,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 48 ;
+       fhir:index 49 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.version" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.version" ] ;
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ] ;
@@ -2394,7 +2503,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 49 ;
+       fhir:index 50 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.code" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.code" ] ;
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ] ;
@@ -2439,7 +2548,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 50 ;
+       fhir:index 51 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.display" ] ;
        fhir:Element.extension [
          fhir:index 0 ;
@@ -2489,7 +2598,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 51 ;
+       fhir:index 52 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.userSelected" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.userSelected" ] ;
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ] ;
@@ -2535,15 +2644,20 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 52 ;
+       fhir:index 53 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.text" ] ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable" ] ;
          fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
        ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.text" ] ;
-       fhir:ElementDefinition.short [ fhir:value "Plain text representation of the concept" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Libellé de l'EI (tel qu'écrit)" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Libellé de l'EI (tel qu'écrit)" ] ;
        fhir:ElementDefinition.definition [ fhir:value "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
        fhir:ElementDefinition.comment [ fhir:value "Very often the text is the same as a displayName of one of the codings." ] ;
        fhir:ElementDefinition.requirements [ fhir:value "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
@@ -2586,7 +2700,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 53 ;
+       fhir:index 54 ;
        fhir:Element.id [ fhir:value "AdverseEvent.subject" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.subject" ] ;
        fhir:ElementDefinition.short [ fhir:value "Subject impacted by event" ] ;
@@ -2645,7 +2759,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.who" ]
        ]
      ], [
-       fhir:index 54 ;
+       fhir:index 55 ;
        fhir:Element.id [ fhir:value "AdverseEvent.encounter" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.encounter" ] ;
        fhir:ElementDefinition.short [ fhir:value "Encounter created as part of" ] ;
@@ -2687,7 +2801,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.context" ]
        ]
      ], [
-       fhir:index 55 ;
+       fhir:index 56 ;
        fhir:Element.id [ fhir:value "AdverseEvent.date" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.date" ] ;
        fhir:ElementDefinition.short [ fhir:value "When the event occurred" ] ;
@@ -2723,7 +2837,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.init" ]
        ]
      ], [
-       fhir:index 56 ;
+       fhir:index 57 ;
        fhir:Element.id [ fhir:value "AdverseEvent.detected" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.detected" ] ;
        fhir:ElementDefinition.short [ fhir:value "When the event was detected" ] ;
@@ -2754,7 +2868,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 57 ;
+       fhir:index 58 ;
        fhir:Element.id [ fhir:value "AdverseEvent.recordedDate" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.recordedDate" ] ;
        fhir:ElementDefinition.short [ fhir:value "When the event was recorded" ] ;
@@ -2791,7 +2905,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.recorded" ]
        ]
      ], [
-       fhir:index 58 ;
+       fhir:index 59 ;
        fhir:Element.id [ fhir:value "AdverseEvent.resultingCondition" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.resultingCondition" ] ;
        fhir:ElementDefinition.short [ fhir:value "Effect on the subject due to this event" ] ;
@@ -2827,7 +2941,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 59 ;
+       fhir:index 60 ;
        fhir:Element.id [ fhir:value "AdverseEvent.location" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.location" ] ;
        fhir:ElementDefinition.short [ fhir:value "Location where adverse event occurred" ] ;
@@ -2863,7 +2977,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 60 ;
+       fhir:index 61 ;
        fhir:Element.id [ fhir:value "AdverseEvent.seriousness" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.seriousness" ] ;
        fhir:ElementDefinition.short [ fhir:value "Seriousness of the event" ] ;
@@ -2907,7 +3021,7 @@
          ]
        ]
      ], [
-       fhir:index 61 ;
+       fhir:index 62 ;
        fhir:Element.id [ fhir:value "AdverseEvent.severity" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.severity" ] ;
        fhir:ElementDefinition.short [ fhir:value "mild | moderate | severe" ] ;
@@ -2951,10 +3065,16 @@
          ]
        ]
      ], [
-       fhir:index 62 ;
+       fhir:index 63 ;
        fhir:Element.id [ fhir:value "AdverseEvent.outcome" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.outcome" ] ;
-       fhir:ElementDefinition.short [ fhir:value "resolved | recovering | ongoing | resolvedWithSequelae | fatal | unknown" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Évolution de l'EI" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Évolution de l'EI" ] ;
        fhir:ElementDefinition.definition [ fhir:value "Describes the type of outcome from the adverse event." ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
@@ -2990,7 +3110,7 @@
          ]
        ]
      ], [
-       fhir:index 63 ;
+       fhir:index 64 ;
        fhir:Element.id [ fhir:value "AdverseEvent.recorder" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.recorder" ] ;
        fhir:ElementDefinition.short [ fhir:value "Who recorded the adverse event" ] ;
@@ -3043,7 +3163,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "FiveWs.author" ]
        ]
      ], [
-       fhir:index 64 ;
+       fhir:index 65 ;
        fhir:Element.id [ fhir:value "AdverseEvent.contributor" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.contributor" ] ;
        fhir:ElementDefinition.short [ fhir:value "Who  was involved in the adverse event or the potential adverse event" ] ;
@@ -3087,7 +3207,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 65 ;
+       fhir:index 66 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity" ] ;
        fhir:ElementDefinition.short [ fhir:value "The suspected agent causing the adverse event" ] ;
@@ -3118,7 +3238,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 66 ;
+       fhir:index 67 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.id" ] ;
        fhir:ElementDefinition.representation [
@@ -3151,7 +3271,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 67 ;
+       fhir:index 68 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.extension" ] ;
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
@@ -3206,7 +3326,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 68 ;
+       fhir:index 69 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.modifierExtension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.modifierExtension" ] ;
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ] ;
@@ -3266,7 +3386,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 69 ;
+       fhir:index 70 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.instance" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.instance" ] ;
        fhir:ElementDefinition.short [ fhir:value "Refers to the specific entity that caused the adverse event" ] ;
@@ -3330,7 +3450,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 70 ;
+       fhir:index 71 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality" ] ;
        fhir:ElementDefinition.short [ fhir:value "Information on the possible cause of the event" ] ;
@@ -3361,7 +3481,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 71 ;
+       fhir:index 72 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality.id" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality.id" ] ;
        fhir:ElementDefinition.representation [
@@ -3394,7 +3514,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 72 ;
+       fhir:index 73 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality.extension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality.extension" ] ;
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ] ;
@@ -3449,7 +3569,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73 ;
+       fhir:index 74 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality.modifierExtension" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality.modifierExtension" ] ;
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ] ;
@@ -3509,7 +3629,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 74 ;
+       fhir:index 75 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality.assessment" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality.assessment" ] ;
        fhir:ElementDefinition.short [ fhir:value "Assessment of if the entity caused the event" ] ;
@@ -3553,7 +3673,7 @@
          ]
        ]
      ], [
-       fhir:index 75 ;
+       fhir:index 76 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality.productRelatedness" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality.productRelatedness" ] ;
        fhir:ElementDefinition.short [ fhir:value "AdverseEvent.suspectEntity.causalityProductRelatedness" ] ;
@@ -3584,7 +3704,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 76 ;
+       fhir:index 77 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality.author" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality.author" ] ;
        fhir:ElementDefinition.short [ fhir:value "AdverseEvent.suspectEntity.causalityAuthor" ] ;
@@ -3624,7 +3744,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 77 ;
+       fhir:index 78 ;
        fhir:Element.id [ fhir:value "AdverseEvent.suspectEntity.causality.method" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.suspectEntity.causality.method" ] ;
        fhir:ElementDefinition.short [ fhir:value "ProbabilityScale | Bayesian | Checklist" ] ;
@@ -3668,7 +3788,7 @@
          ]
        ]
      ], [
-       fhir:index 78 ;
+       fhir:index 79 ;
        fhir:Element.id [ fhir:value "AdverseEvent.subjectMedicalHistory" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.subjectMedicalHistory" ] ;
        fhir:ElementDefinition.short [ fhir:value "AdverseEvent.subjectMedicalHistory" ] ;
@@ -3732,7 +3852,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 79 ;
+       fhir:index 80 ;
        fhir:Element.id [ fhir:value "AdverseEvent.referenceDocument" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.referenceDocument" ] ;
        fhir:ElementDefinition.short [ fhir:value "AdverseEvent.referenceDocument" ] ;
@@ -3768,7 +3888,7 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 80 ;
+       fhir:index 81 ;
        fhir:Element.id [ fhir:value "AdverseEvent.study" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.study" ] ;
        fhir:ElementDefinition.short [ fhir:value "AdverseEvent.study" ] ;
@@ -3826,8 +3946,15 @@
      ], [
        fhir:index 2 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:severityScale" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "severityScale" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Échelle de gravité" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Échelle de gravité" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.type [
@@ -3843,8 +3970,15 @@
      ], [
        fhir:index 3 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:severityLevel" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "severityLevel" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Grade de gravité (1 à 5)" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Grade de gravité (1 à 5)" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.type [
@@ -3860,8 +3994,15 @@
      ], [
        fhir:index 4 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:attribution" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "attribution" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Cause imputée" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Cause imputée" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.type [
@@ -3877,8 +4018,15 @@
      ], [
        fhir:index 5 ;
        fhir:Element.id [ fhir:value "AdverseEvent.extension:management" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "management" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Prise en charge" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Prise en charge" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.type [
@@ -3893,13 +4041,41 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 6 ;
-       fhir:Element.id [ fhir:value "AdverseEvent.actuality" ] ;
-       fhir:ElementDefinition.path [ fhir:value "AdverseEvent.actuality" ] ;
+       fhir:Element.id [ fhir:value "AdverseEvent.extension:procedure" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "relation" ]
+       ] ;
+       fhir:ElementDefinition.path [ fhir:value "AdverseEvent.extension" ] ;
+       fhir:ElementDefinition.sliceName [ fhir:value "procedure" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Acte de survenue (cathétérisme ou geste)" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Acte de survenue (cathétérisme ou geste)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index 0 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ] ;
+         fhir:ElementDefinition.type.profile [
+           fhir:value "https://taussig/fhir/StructureDefinition/adverseEventProcedure" ;
+           fhir:index 0 ;
+           fhir:link <https://taussig/fhir/StructureDefinition/adverseEventProcedure>
+         ]
+       ] ;
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 7 ;
+       fhir:Element.id [ fhir:value "AdverseEvent.actuality" ] ;
+       fhir:ElementDefinition.path [ fhir:value "AdverseEvent.actuality" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Survenu ou potentiel" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Survenu ou potentiel" ] ;
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 8 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Événement indésirable" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Événement indésirable" ] ;
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ] ;
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ] ;
@@ -3909,7 +4085,7 @@
          ]
        ]
      ], [
-       fhir:index 8 ;
+       fhir:index 9 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.slicing [
@@ -3921,24 +4097,38 @@
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
-       fhir:index 9 ;
+       fhir:index 10 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "snomed" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code SNOMED CT" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code SNOMED CT" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10 ;
+       fhir:index 11 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:snomed.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.patternUri [ fhir:value "http://snomed.info/sct" ]
      ], [
-       fhir:index 11 ;
+       fhir:index 12 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "ipccc" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code IPCCC" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code IPCCC" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ] ;
        fhir:ElementDefinition.binding [
@@ -3949,41 +4139,77 @@
          ]
        ]
      ], [
-       fhir:index 12 ;
+       fhir:index 13 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:ipccc.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.patternUri [ fhir:value "https://taussig/fhir/CodeSystem/ipccc" ]
      ], [
-       fhir:index 13 ;
+       fhir:index 14 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "icd10" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code CIM-10" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code CIM-10" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 14 ;
+       fhir:index 15 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:icd10.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.patternUri [ fhir:value "http://hl7.org/fhir/sid/icd-10" ]
      ], [
-       fhir:index 15 ;
+       fhir:index 16 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding" ] ;
        fhir:ElementDefinition.sliceName [ fhir:value "echsa" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Code ECHSA" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Code ECHSA" ] ;
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.max [ fhir:value "1" ]
      ], [
-       fhir:index 16 ;
+       fhir:index 17 ;
        fhir:Element.id [ fhir:value "AdverseEvent.event.coding:echsa.system" ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.coding.system" ] ;
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
        fhir:ElementDefinition.patternUri [ fhir:value "https://taussig/fhir/CodeSystem/echsa" ]
      ], [
-       fhir:index 17 ;
+       fhir:index 18 ;
+       fhir:Element.id [ fhir:value "AdverseEvent.event.text" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable" ] ;
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
+       fhir:ElementDefinition.path [ fhir:value "AdverseEvent.event.text" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Libellé de l'EI (tel qu'écrit)" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Libellé de l'EI (tel qu'écrit)" ]
+     ], [
+       fhir:index 19 ;
        fhir:Element.id [ fhir:value "AdverseEvent.outcome" ] ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/annotationClass" ] ;
+         fhir:Extension.valueCode [ fhir:value "annotatable" ]
+       ] ;
        fhir:ElementDefinition.path [ fhir:value "AdverseEvent.outcome" ] ;
+       fhir:ElementDefinition.label [ fhir:value "Évolution de l'EI" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Évolution de l'EI" ] ;
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ] ;
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;

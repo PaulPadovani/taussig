@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Exemple technique — TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple AdverseEvent: Exemple technique — TAUSSIG — Événement indésirable
 
@@ -13,6 +13,8 @@ Balise:
 **Attribution de l'EI**: [TAUSSIG — Attribution d'un EI: device](CodeSystem-ae-attribution.md#ae-attribution-device) (Dispositif)
 
 **Prise en charge de l'EI**: Geste de rattrapage transcathéter
+
+**Acte de survenue de l'EI**: [Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques](Procedure-ex-taussig-catheterization.md)
 
 **actuality**: Potential Adverse Event
 
@@ -58,6 +60,12 @@ Balise:
         "system" : "https://taussig/fhir/CodeSystem/ae-management",
         "code" : "transcatheter_bailout"
       }]
+    }
+  },
+  {
+    "url" : "https://taussig/fhir/StructureDefinition/adverseEventProcedure",
+    "valueReference" : {
+      "reference" : "Procedure/ex-taussig-catheterization"
     }
   }],
   "actuality" : "potential",

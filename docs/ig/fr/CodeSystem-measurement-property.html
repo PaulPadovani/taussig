@@ -8,7 +8,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — Propriétés de mesure hémodynamique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
+    <title>TAUSSIG — Propriétés de mesure hémodynamique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,10 +47,9 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.99"}
-    h3,h4,h5,h6{--heading-prefix:"4.99"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.123"}
+    h3,h4,h5,h6{--heading-prefix:"4.123"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -60,7 +59,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.1 - trial-use
+            <span style="display:inline-block;">0.8.0 - trial-use
 
 
 
@@ -133,7 +132,7 @@
 
 <!-- layouts\layout-codesystem -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -214,7 +213,7 @@
           
 
             à date du 
-2026-10-31
+2026-11-09
 
           
         
@@ -449,7 +448,34 @@
 <td></td>
 <td>Qualitatif</td>
 <td>CodeableConcept</td>
-<td><code>https://taussig/fhir/ValueSet/taussig-regurgitation-grade</code></td></tr></table></div>
+<td><code>https://taussig/fhir/ValueSet/taussig-regurgitation-grade</code></td></tr>
+<tr><td style="white-space:nowrap">lumen_diameter_minimal<a name="measurement-property-lumen_diameter_minimal"> </a></td>
+<td>Diamètre luminal minimal du segment traité</td>
+<td>mm</td>
+<td>mesuré</td>
+<td>true</td>
+<td></td>
+<td>Dimension anatomique</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">lesion_length<a name="measurement-property-lesion_length"> </a></td>
+<td>Longueur de la lésion</td>
+<td>mm</td>
+<td>mesuré</td>
+<td>true</td>
+<td></td>
+<td>Dimension anatomique</td>
+<td>Quantity</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">vessel_reference_diameter<a name="measurement-property-vessel_reference_diameter"> </a></td>
+<td>Diamètre du vaisseau de référence ou d'aval</td>
+<td>mm</td>
+<td>mesuré</td>
+<td>true</td>
+<td></td>
+<td>Dimension anatomique</td>
+<td>Quantity</td>
+<td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -487,10 +513,10 @@
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-31 15:29:00 +0100">
-    2026-10-31
+  <span title="2026-11-09 08:39:00 +0100">
+    2026-11-09
   </span>
 
           <br/>

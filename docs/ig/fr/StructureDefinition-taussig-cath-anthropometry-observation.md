@@ -1,4 +1,4 @@
-# TAUSSIG — Anthropométrie au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Anthropométrie au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Anthropométrie au cathétérisme ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cath-an
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cath-anthropometry-observation",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cath-anthropometry-observation",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigCathAnthropometryObservation",
   "title" : "TAUSSIG — Anthropométrie au cathétérisme",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Poids, taille et surface corporelle au moment du cathétérisme, portés par des Observations liées à la Procedure.",
   "jurisdiction" : [{
@@ -123,20 +123,26 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cath-an
     {
       "id" : "Observation.partOf",
       "path" : "Observation.partOf",
+      "label" : "Cathétérisme concerné",
+      "short" : "Cathétérisme concerné",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"]
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-catheterization"]
       }],
       "mustSupport" : true
     },
     {
       "id" : "Observation.status",
       "path" : "Observation.status",
+      "label" : "Statut de la mesure",
+      "short" : "Statut de la mesure",
       "mustSupport" : true
     },
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
+      "label" : "Mesure (poids, taille, surface corporelle)",
+      "short" : "Mesure (poids, taille, surface corporelle)",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -146,15 +152,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cath-an
     {
       "id" : "Observation.subject",
       "path" : "Observation.subject",
+      "label" : "Patient",
+      "short" : "Patient",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-patient"]
       }],
       "mustSupport" : true
     },
     {
       "id" : "Observation.effective[x]",
       "path" : "Observation.effective[x]",
+      "label" : "Date de la mesure",
+      "short" : "Date de la mesure",
       "type" : [{
         "code" : "dateTime"
       }],
@@ -162,11 +172,29 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cath-an
     },
     {
       "id" : "Observation.value[x]",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Observation.value[x]",
+      "label" : "Résultat",
+      "short" : "Résultat",
       "type" : [{
         "code" : "Quantity"
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "label" : "Valeur",
+      "short" : "Valeur"
+    },
+    {
+      "id" : "Observation.value[x].unit",
+      "path" : "Observation.value[x].unit",
+      "label" : "Unité",
+      "short" : "Unité"
     },
     {
       "id" : "Observation.value[x].system",
@@ -175,7 +203,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cath-an
     },
     {
       "id" : "Observation.method",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Observation.method",
+      "label" : "Formule de surface corporelle",
+      "short" : "Formule de surface corporelle",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",

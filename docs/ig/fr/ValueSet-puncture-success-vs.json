@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "puncture-success-vs",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs puncture-success-vs</b></p><a name=\"puncture-success-vs\"> </a><a name=\"hcpuncture-success-vs\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"http://snomed.info/id/385669000\">385669000</a></td><td>réussi(e)</td></tr><tr><td><a href=\"http://snomed.info/id/385671000\">385671000</a></td><td>non réussi</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/puncture-success-vs",
+  "version" : "0.8.0",
+  "name" : "PunctureSuccessVS",
+  "title" : "TAUSSIG — Succès de la ponction vasculaire",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-11-09T08:39:58+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Ponction réussie ou non réussie (SNOMED CT, qualificatifs de résultat).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "385669000",
+        "display" : "réussi(e)"
+      },
+      {
+        "code" : "385671000",
+        "display" : "non réussi"
+      }]
+    }]
+  }
+}

@@ -8,7 +8,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>TAUSSIG — CCAM (sous-ensemble cath congénital) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
+    <title>TAUSSIG — CCAM (sous-ensemble cath congénital) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,10 +47,9 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.84"}
-    h3,h4,h5,h6{--heading-prefix:"4.84"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.103"}
+    h3,h4,h5,h6{--heading-prefix:"4.103"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -60,7 +59,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.1 - trial-use
+            <span style="display:inline-block;">0.8.0 - trial-use
 
 
 
@@ -133,7 +132,7 @@
 
 <!-- layouts\layout-codesystem -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -214,7 +213,7 @@
           
 
             à date du 
-2026-10-31
+2026-11-09
 
           
         
@@ -343,7 +342,111 @@
 <tr><td style="white-space:nowrap">DBAF004<a name="ccam-DBAF004"> </a></td>
 <td>Dilatation intraluminale de l'orifice atrioventriculaire gauche, par voie veineuse transcutanée avec perforation du septum interatrial</td></tr>
 <tr><td style="white-space:nowrap">DBAF005<a name="ccam-DBAF005"> </a></td>
-<td>Dilatation intraluminale de l'orifice pulmonaire avec perforation de la valve atrésique, par voie veineuse transcutanée</td></tr></table></div>
+<td>Dilatation intraluminale de l'orifice pulmonaire avec perforation de la valve atrésique, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DAHF001<a name="ccam-DAHF001"> </a></td>
+<td>Biopsie de l'endocarde et du myocarde, par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DASF001<a name="ccam-DASF001"> </a></td>
+<td>Fermeture du conduit artériel, par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DASF074<a name="ccam-DASF074"> </a></td>
+<td>Fermeture de l’appendice atrial [auricule] gauche par dispositif par voie veineuse transcutanée et voie transseptale avec guidage échographie-doppler par voie transoesophagienne</td></tr>
+<tr><td style="white-space:nowrap">DBBF198<a name="ccam-DBBF198"> </a></td>
+<td>Rétrécissement de l’orifice atrioventriculaire  gauche par dispositif par voie veineuse  transcutanée et voie transseptale  avec guidage par échographie-doppler par voie transœsophagienne</td></tr>
+<tr><td style="white-space:nowrap">DBLA004<a name="ccam-DBLA004"> </a></td>
+<td>Pose d'une bioprothèse de la valve aortique, par abord de l'apex du cœur par thoracotomie sans CEC</td></tr>
+<tr><td style="white-space:nowrap">DCJB001<a name="ccam-DCJB001"> </a></td>
+<td>Drainage d'une collection du péricarde, par voie transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DCJB002<a name="ccam-DCJB002"> </a></td>
+<td>Évacuation d'une collection du péricarde, par voie transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF001<a name="ccam-DDAF001"> </a></td>
+<td>Dilatation intraluminale d'un vaisseau coronaire sans pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF003<a name="ccam-DDAF003"> </a></td>
+<td>Dilatation intraluminale de 3 vaisseaux coronaires ou plus avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF004<a name="ccam-DDAF004"> </a></td>
+<td>Dilatation intraluminale de 2 vaisseaux coronaires avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF006<a name="ccam-DDAF006"> </a></td>
+<td>Dilatation intraluminale d'un vaisseau coronaire avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF007<a name="ccam-DDAF007"> </a></td>
+<td>Dilatation intraluminale de 2 vaisseaux coronaires avec artériographie coronaire, avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF008<a name="ccam-DDAF008"> </a></td>
+<td>Dilatation intraluminale d'un vaisseau coronaire avec artériographie coronaire, avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF009<a name="ccam-DDAF009"> </a></td>
+<td>Dilatation intraluminale de 3 vaisseaux coronaires ou plus avec artériographie coronaire, avec pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDAF010<a name="ccam-DDAF010"> </a></td>
+<td>Dilatation intraluminale d'un vaisseau coronaire avec artériographie coronaire, sans pose d'endoprothèse, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDLF001<a name="ccam-DDLF001"> </a></td>
+<td>Injection in situ d'agent pharmacologique dans une branche d'artère coronaire pour réduction de l'épaisseur du septum interventriculaire, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDQJ001<a name="ccam-DDQJ001"> </a></td>
+<td>Échographie et/ou échographie-doppler intraartérielle coronaire, au cours d'un acte par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DDSF001<a name="ccam-DDSF001"> </a></td>
+<td>Embolisation ou fermeture d'une fistule ou d'un anévrisme coronaire, par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DENF014<a name="ccam-DENF014"> </a></td>
+<td>Destruction d'un foyer arythmogène atrial avec courant de radiofréquence, par voie veineuse transcutanée et voie transseptale</td></tr>
+<tr><td style="white-space:nowrap">DENF015<a name="ccam-DENF015"> </a></td>
+<td>Destruction d'un foyer ou interruption d'un circuit arythmogène ventriculaire avec courant de radiofréquence, par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DENF017<a name="ccam-DENF017"> </a></td>
+<td>Destruction d'un foyer arythmogène atrial avec courant de radiofréquence, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DENF018<a name="ccam-DENF018"> </a></td>
+<td>Destruction de plusieurs foyers arythmogènes atriaux avec courant de radiofréquence, par voie veineuse transcutanée et voie transseptale</td></tr>
+<tr><td style="white-space:nowrap">DENF021<a name="ccam-DENF021"> </a></td>
+<td>Destruction de plusieurs foyers arythmogènes atriaux avec courant de radiofréquence, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DENF035<a name="ccam-DENF035"> </a></td>
+<td>Destruction de plusieurs foyers et/ou interruption de plusieurs circuits arythmogènes ventriculaires avec courant de radiofréquence, par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEPF004<a name="ccam-DEPF004"> </a></td>
+<td>Interruption complète de plusieurs voies accessoires de conduction cardiaque avec courant de radiofréquence, par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEPF005<a name="ccam-DEPF005"> </a></td>
+<td>Interruption complète d'une voie accessoire de conduction cardiaque avec courant de radiofréquence, par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEPF006<a name="ccam-DEPF006"> </a></td>
+<td>Interruption complète du tissu nodal de la jonction atrioventriculaire avec courant de radiofréquence, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEPF010<a name="ccam-DEPF010"> </a></td>
+<td>Interruption de la voie lente ou de la voie rapide de la jonction atrioventriculaire avec courant de radiofréquence ou cryothérapie, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEPF012<a name="ccam-DEPF012"> </a></td>
+<td>Interruption complète de circuit arythmogène au niveau de l'isthme cavotricuspidien avec courant de radiofréquence ou cryothérapie, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEPF014<a name="ccam-DEPF014"> </a></td>
+<td>Interruption complète de circuit arythmogène en dehors de l'isthme cavotricuspidien avec courant de radiofréquence, par voie veineuse transcutanée et voie transseptale</td></tr>
+<tr><td style="white-space:nowrap">DEPF025<a name="ccam-DEPF025"> </a></td>
+<td>Interruption complète de circuit arythmogène en dehors de l'isthme cavotricuspidien avec courant de radiofréquence, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEPF033<a name="ccam-DEPF033"> </a></td>
+<td>Interruption complète de circuit arythmogène au niveau de l'ostium des veines pulmonaires avec courant de radiofréquence ou cryothérapie, par voie veineuse transcutanée et voie transseptale</td></tr>
+<tr><td style="white-space:nowrap">DEQF001<a name="ccam-DEQF001"> </a></td>
+<td>Exploration électrophysiologique cardiaque par sonde intracavitaire droite par voie veineuse transcutanée, avec manœuvres provocatrices d'une tachycardie à l'étage ventriculaire</td></tr>
+<tr><td style="white-space:nowrap">DEQF002<a name="ccam-DEQF002"> </a></td>
+<td>Exploration électrophysiologique cardiaque par sonde intracavitaire droite par voie veineuse transcutanée, avec manœuvres provocatrices d'une tachycardie à l'étage atrial et à l'étage ventriculaire</td></tr>
+<tr><td style="white-space:nowrap">DEQF003<a name="ccam-DEQF003"> </a></td>
+<td>Exploration électrophysiologique cardiaque par sonde intracavitaire droite, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DEQF004<a name="ccam-DEQF004"> </a></td>
+<td>Exploration électrophysiologique cardiaque par sonde intracavitaire droite par voie veineuse transcutanée, avec manœuvres provocatrices d'une tachycardie à l'étage atrial</td></tr>
+<tr><td style="white-space:nowrap">DEQF005<a name="ccam-DEQF005"> </a></td>
+<td>Exploration électrophysiologique cardiaque par sondes intracavitaires droite et gauche par voie vasculaire transcutanée, avec manœuvres provocatrices d'une tachycardie</td></tr>
+<tr><td style="white-space:nowrap">DFSF002<a name="ccam-DFSF002"> </a></td>
+<td>Embolisation de fistule artérioveineuse intrathoracique, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DHAF001<a name="ccam-DHAF001"> </a></td>
+<td>Dilatation intraluminale de la veine cave supérieure avec pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DHAF002<a name="ccam-DHAF002"> </a></td>
+<td>Dilatation intraluminale de la veine cave inférieure sans pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DHAF003<a name="ccam-DHAF003"> </a></td>
+<td>Dilatation intraluminale de la veine cave supérieure sans pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DHAF004<a name="ccam-DHAF004"> </a></td>
+<td>Dilatation intraluminale de la veine cave inférieure avec pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DZQJ001<a name="ccam-DZQJ001"> </a></td>
+<td>Échographie-doppler du cœur et des vaisseaux intrathoraciques, par voie œsophagienne [Échocardiographie-doppler transœsophagienne]</td></tr>
+<tr><td style="white-space:nowrap">DZQJ012<a name="ccam-DZQJ012"> </a></td>
+<td>Échographie-doppler du cœur et des vaisseaux intrathoraciques par voie œsophagienne, au cours d'un acte thérapeutique intracavitaire cardiaque par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DZQM003<a name="ccam-DZQM003"> </a></td>
+<td>Échographie-doppler transthoracique du cœur et des vaisseaux intrathoraciques, au cours d'un acte thérapeutique intracavitaire cardiaque par voie vasculaire transcutanée</td></tr>
+<tr><td style="white-space:nowrap">DZQM006<a name="ccam-DZQM006"> </a></td>
+<td>Échographie-doppler transthoracique du cœur et des vaisseaux intrathoraciques</td></tr>
+<tr><td style="white-space:nowrap">ECSF004<a name="ccam-ECSF004"> </a></td>
+<td>Embolisation sélective ou hypersélective d'artère à destination bronchique ou pleuropulmonaire, par voie artérielle transcutanée</td></tr>
+<tr><td style="white-space:nowrap">EFAF001<a name="ccam-EFAF001"> </a></td>
+<td>Dilatation intraluminale d'une veine du membre supérieur avec pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">EFAF002<a name="ccam-EFAF002"> </a></td>
+<td>Dilatation intraluminale d'une veine du membre supérieur sans pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">EGAF002<a name="ccam-EGAF002"> </a></td>
+<td>Dilatation intraluminale de la veine iliaque externe et/ou de la veine iliaque commune avec pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">EGAF003<a name="ccam-EGAF003"> </a></td>
+<td>Dilatation intraluminale de la veine iliaque externe et/ou de la veine iliaque commune sans pose d'endoprothèse, par voie veineuse transcutanée</td></tr>
+<tr><td style="white-space:nowrap">JQHB002<a name="ccam-JQHB002"> </a></td>
+<td>Ponction ou biopsie d'un organe fœtal</td></tr></table></div>
 
   <hr/>
   <p>
@@ -381,10 +484,10 @@
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-31 15:29:00 +0100">
-    2026-10-31
+  <span title="2026-11-09 08:39:00 +0100">
+    2026-11-09
   </span>
 
           <br/>

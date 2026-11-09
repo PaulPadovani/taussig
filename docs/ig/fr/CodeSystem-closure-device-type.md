@@ -1,4 +1,4 @@
-# TAUSSIG — Dispositifs de fermeture par cible - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Dispositifs de fermeture par cible - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Dispositifs de fermeture par cible (Expérimental) 
 
@@ -21,12 +21,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "closure-device-type",
   "url" : "https://taussig/fhir/CodeSystem/closure-device-type",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "ClosureDeviceType",
   "title" : "TAUSSIG — Dispositifs de fermeture par cible",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Catégories de dispositifs de fermeture distinguées par cible. Codes locaux TAUSSIG ; aucune équivalence SNOMED spécifique n'est affirmée.",
   "jurisdiction" : [{
@@ -37,7 +37,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 5,
+  "count" : 6,
   "concept" : [{
     "code" : "TAUSSIG-OCCLUDER-CIA",
     "display" : "Dispositif de fermeture de CIA"
@@ -57,6 +57,10 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "TAUSSIG-OCCLUDER-FOP",
     "display" : "Dispositif de fermeture de FOP"
+  },
+  {
+    "code" : "TAUSSIG-OCCLUDER-PARAVALVULAR",
+    "display" : "Prothèse de fermeture de fuite paravalvulaire"
   }]
 }
 

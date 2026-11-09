@@ -1,15 +1,15 @@
 /* Généré par 07-site/build/build_mds.py — NE PAS ÉDITER À LA MAIN. */
 window.TAUSSIG_DOWNLOADS = {
- "genere": "31 octobre 2026",
+ "genere": "9 novembre 2026",
  "fichiers": [
   {
    "id": "xlsx",
    "titre": "Dictionnaire du MDS",
    "format": "Excel (.xlsx)",
-   "desc": "Le classeur livrable complet : 115 data elements (définitions ISO 11179, mapping FHIR, binding) et 10 value sets.",
-   "fichier": "telechargements/TAUSSIG-DataElements-POC-v4.xlsx",
-   "octets": 78799,
-   "taille": "77.0 Ko",
+   "desc": "Le classeur livrable complet : 148 data elements (définitions ISO 11179, mapping FHIR, binding) et 10 value sets.",
+   "fichier": "telechargements/TAUSSIG-DataElements-POC-v6.xlsx",
+   "octets": 159709,
+   "taille": "156.0 Ko",
    "licence": "Conditions de réutilisation : voir la page Réutilisation & citation"
   },
   {
@@ -28,8 +28,8 @@ window.TAUSSIG_DOWNLOADS = {
    "format": "Archive ZIP",
    "desc": "Les 10 value sets dérivés, un fichier CSV par axe (libellé clinique + codes des terminologies de référence).",
    "fichier": "telechargements/taussig-valuesets-csv.zip",
-   "octets": 11772,
-   "taille": "11.5 Ko",
+   "octets": 18152,
+   "taille": "17.7 Ko",
    "licence": "Conditions propres aux terminologies référencées"
   }
  ],
@@ -38,33 +38,33 @@ window.TAUSSIG_DOWNLOADS = {
    "id": "diagnostics",
    "titre": "Diagnostics cardiaques congénitaux",
    "fichier": "telechargements/valuesets/taussig-vs-diagnostics.csv",
-   "codes": 103,
-   "octets": 8528,
-   "taille": "8.3 Ko"
+   "codes": 109,
+   "octets": 9820,
+   "taille": "9.6 Ko"
   },
   {
    "id": "conditions",
    "titre": "Conditions cardiaques évolutives",
    "fichier": "telechargements/valuesets/taussig-vs-conditions.csv",
-   "codes": 74,
-   "octets": 4895,
-   "taille": "4.8 Ko"
+   "codes": 107,
+   "octets": 7501,
+   "taille": "7.3 Ko"
   },
   {
    "id": "procedures",
-   "titre": "Gestes de cathétérisme",
+   "titre": "Gestes et actes de cathétérisme (concepts TAUSSIG)",
    "fichier": "telechargements/valuesets/taussig-vs-procedures.csv",
-   "codes": 79,
-   "octets": 7592,
-   "taille": "7.4 Ko"
+   "codes": 188,
+   "octets": 27781,
+   "taille": "27.1 Ko"
   },
   {
    "id": "complications",
    "titre": "Événements indésirables (complications)",
    "fichier": "telechargements/valuesets/taussig-vs-complications.csv",
-   "codes": 39,
-   "octets": 2821,
-   "taille": "2.8 Ko"
+   "codes": 43,
+   "octets": 3611,
+   "taille": "3.5 Ko"
   },
   {
    "id": "genetique",
@@ -86,9 +86,9 @@ window.TAUSSIG_DOWNLOADS = {
    "id": "materiel",
    "titre": "Types de matériel",
    "fichier": "telechargements/valuesets/taussig-vs-materiel.csv",
-   "codes": 15,
-   "octets": 1115,
-   "taille": "1.1 Ko"
+   "codes": 17,
+   "octets": 1294,
+   "taille": "1.3 Ko"
   },
   {
    "id": "mesures-prop",
@@ -116,8 +116,8 @@ window.TAUSSIG_DOWNLOADS = {
   }
  ],
  "meta": {
-  "nbElements": 115,
-  "nbEntities": 19,
+  "nbElements": 148,
+  "nbEntities": 20,
   "nbValuesets": 10
  }
 };

@@ -1,4 +1,4 @@
-# TAUSSIG — Syndrome génétique (covariable de contexte) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Syndrome génétique (covariable de contexte) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Syndrome génétique (covariable de contexte) ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
   "resourceType" : "StructureDefinition",
   "id" : "taussig-genetic-syndrome-profile",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-genetic-syndrome-profile",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigGeneticSyndrome",
   "title" : "TAUSSIG — Syndrome génétique (covariable de contexte)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Syndrome génétique comme covariable de contexte (POC KT, pas de cardiogénétique moléculaire). Codage Orphanet primaire + CIM-11 dérivé.",
   "jurisdiction" : [{
@@ -123,6 +123,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
     {
       "id" : "Condition.code",
       "path" : "Condition.code",
+      "label" : "Syndrome génétique",
+      "short" : "Syndrome génétique",
       "mustSupport" : true,
       "binding" : {
         "strength" : "preferred",
@@ -142,8 +144,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
     },
     {
       "id" : "Condition.code.coding:orpha",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "orpha",
+      "label" : "Code Orphanet",
+      "short" : "Code Orphanet",
       "min" : 0,
       "max" : "1",
       "mustSupport" : true
@@ -156,8 +164,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
     },
     {
       "id" : "Condition.code.coding:icd11",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "icd11",
+      "label" : "Code CIM-11",
+      "short" : "Code CIM-11",
       "min" : 0,
       "max" : "1"
     },
@@ -169,7 +183,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-genetic
     },
     {
       "id" : "Condition.code.text",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.text",
+      "label" : "Libellé du syndrome (tel qu'écrit)",
+      "short" : "Libellé du syndrome (tel qu'écrit)",
       "mustSupport" : true
     }]
   }

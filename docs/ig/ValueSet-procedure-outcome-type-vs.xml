@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="procedure-outcome-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs procedure-outcome-type-vs</b></p><a name="procedure-outcome-type-vs"> </a><a name="hcprocedure-outcome-type-vs"> </a><ul><li>Include tous les codes définis dans <a href="CodeSystem-procedure-outcome-type.html"><code>https://taussig/fhir/CodeSystem/procedure-outcome-type</code></a><span title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification"> version &#x1F4E6;0.8.0</span></li></ul></div>
+  </text>
+  <url value="https://taussig/fhir/ValueSet/procedure-outcome-type-vs"/>
+  <version value="0.8.0"/>
+  <name value="ProcedureOutcomeTypeVS"/>
+  <title value="TAUSSIG — Types de résultat global de procédure"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-11-09T08:39:58+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Les trois résultats globaux annotables d'un cathétérisme."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://taussig/fhir/CodeSystem/procedure-outcome-type"/>
+    </include>
+  </compose>
+</ValueSet>

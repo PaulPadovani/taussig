@@ -9,4 +9,10 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
+  <sch:pattern>
+    <sch:title>f:Observation</sch:title>
+    <sch:rule context="f:Observation">
+      <sch:assert test="count(f:component) &lt;= 0">component: maximum cardinality of 'component' is 0</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

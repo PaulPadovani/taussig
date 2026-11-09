@@ -10,7 +10,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Exemple technique — TAUSSIG — Cathétérisme cardiaque (acte pivot) - JSON Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
+    <title>Exemple technique — TAUSSIG — Cathétérisme cardiaque (acte pivot) - JSON Representation - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,10 +49,9 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4.120"}
-    h3,h4,h5,h6{--heading-prefix:"4.120"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.151"}
+    h3,h4,h5,h6{--heading-prefix:"4.151"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -62,7 +61,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.1 - trial-use
+            <span style="display:inline-block;">0.8.0 - trial-use
 
 
 
@@ -135,7 +134,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -211,19 +210,63 @@
   "<a href="http://hl7.org/fhir/R4/resource.html#Procedure.language">language</a>" : "fr",
   "<a href="http://hl7.org/fhir/R4/domainresource.html#Procedure.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Procédure ex-taussig-catheterization&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ex-taussig-catheterization\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcex-taussig-catheterization\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-taussig-catheterization.html\&quot;&gt;TAUSSIG — Cathétérisme cardiaque (acte pivot)&lt;/a&gt;&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Balise: &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Produit de contraste utilisé&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ex-taussig-patient.html\&quot;&gt;Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2026-01-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Condition-ex-taussig-cardiac-diagnosis.html\&quot;&gt;Condition&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Condition-ex-taussig-cardiac-condition-profile.html\&quot;&gt;Condition : extension = -&amp;gt;Condition; category = Lésion résiduelle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Procédure ex-taussig-catheterization&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ex-taussig-catheterization\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcex-taussig-catheterization\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-taussig-catheterization.html\&quot;&gt;TAUSSIG — Cathétérisme cardiaque (acte pivot)&lt;/a&gt;&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Balise: &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Produit de contraste utilisé&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;Période en salle de cathétérisme&lt;/b&gt;: 2026-01-01 08:45:00+0100 --&amp;gt; 2026-01-01 10:15:00+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;Caractère urgent du cathétérisme&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://taussig/fhir/CodeSystem/procedure-urgency elective}\&quot;&gt;Programmé&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Unknown&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://taussig/fhir/CodeSystem/taussig-procedure TAUSSIG-PROC-0007}\&quot;&gt;Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ex-taussig-patient.html\&quot;&gt;Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2026-01-01 09:00:00+0100 --&amp;gt; 2026-01-01 10:00:00+0100&lt;/p&gt;&lt;h3&gt;Performers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Function&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Actor&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes :{https://taussig/fhir/CodeSystem/operator-role primary_operator}\&quot;&gt;1er opérateur&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-ex-taussig-practitioner.html\&quot;&gt;Fictif Exemple&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Condition-ex-taussig-cardiac-diagnosis.html\&quot;&gt;Condition&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Condition-ex-taussig-cardiac-condition-profile.html\&quot;&gt;Condition : extension = -&amp;gt;Condition; category = Lésion résiduelle&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;outcome&lt;/b&gt;: &lt;span title=\&quot;Codes :{https://taussig/fhir/CodeSystem/technical-success complete}\&quot;&gt;Complet&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/domainresource.html#Procedure.extension">extension</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://taussig/fhir/StructureDefinition/contrastUsed",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueBoolean</a>" : false
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://taussig/fhir/StructureDefinition/procedureRoomPeriod",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valuePeriod</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2026-01-01T08:45:00+01:00",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2026-01-01T10:15:00+01:00"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://taussig/fhir/StructureDefinition/procedureUrgency",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/procedure-urgency",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "elective"
+          }
+        ]
+      }
     }
   ],
   "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">status</a>" : "unknown",
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/taussig-procedure",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "TAUSSIG-PROC-0007"
+      }
+    ]
+  },
   "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">subject</a>" : {
     <a href="Patient-ex-taussig-patient.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/ex-taussig-patient"
   },
-  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed_x_">performedDateTime</a>" : "2026-01-01",
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed_x_">performedPeriod</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2026-01-01T09:00:00+01:00",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2026-01-01T10:00:00+01:00"
+  },
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performer">performer</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performer.function">function</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/operator-role",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "primary_operator"
+          }
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performer.actor">actor</a>" : {
+        <a href="Practitioner-ex-taussig-practitioner.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/ex-taussig-practitioner"
+      }
+    }
+  ],
   "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.reasonReference">reasonReference</a>" : [
     {
       <a href="Condition-ex-taussig-cardiac-diagnosis.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Reference.extension">extension</a>" : [
@@ -243,7 +286,15 @@
       ],
       "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/ex-taussig-cardiac-condition-profile"
     }
-  ]
+  ],
+  "<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.outcome">outcome</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://taussig/fhir/CodeSystem/technical-success",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "complete"
+      }
+    ]
+  }
 }</code></pre>
 
 
@@ -275,10 +326,10 @@
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-31 15:29:00 +0100">
-    2026-10-31
+  <span title="2026-11-09 08:39:00 +0100">
+    2026-11-09
   </span>
 
           <br/>

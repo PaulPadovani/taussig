@@ -1,6 +1,6 @@
 {
   "package": "taussig.poc",
-  "version": "0.6.1",
+  "version": "0.8.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -19,10 +19,31 @@
       ]
     },
     {
+      "url": "https://taussig/fhir/StructureDefinition/adverseEventProcedure",
+      "title": "Acte de survenue de l\u0027EI",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/annotationClass",
+      "title": "Classe d\u0027annotation",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "https://taussig/fhir/StructureDefinition/attemptNumber",
       "title": "Numéro de tentative",
       "types": [
         "integer"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/attemptResult",
+      "title": "Résultat de la tentative",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -61,10 +82,24 @@
       ]
     },
     {
+      "url": "https://taussig/fhir/StructureDefinition/gestureSequence",
+      "title": "Rang du geste dans le cathétérisme",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
       "url": "https://taussig/fhir/StructureDefinition/implantClinicalStatus",
       "title": "État clinique de l\u0027implant",
       "types": [
         "Coding"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/implantStatusDate",
+      "title": "Date de l\u0027état de l\u0027implant",
+      "types": [
+        "dateTime"
       ]
     },
     {
@@ -107,6 +142,20 @@
       "title": "Phase procédurale (mesure)",
       "types": [
         "code"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/procedureRoomPeriod",
+      "title": "Période en salle de cathétérisme",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "https://taussig/fhir/StructureDefinition/procedureUrgency",
+      "title": "Caractère urgent du cathétérisme",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -186,6 +235,12 @@
         "title": "TAUSSIG — Épisode de soins"
       }
     ],
+    "DeviceUseStatement": [
+      {
+        "url": "https://taussig/fhir/StructureDefinition/taussig-implant-use",
+        "title": "TAUSSIG — Pose et port d\u0027un implant"
+      }
+    ],
     "Organization": [
       {
         "url": "https://taussig/fhir/StructureDefinition/taussig-organization",
@@ -228,6 +283,7 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0": [
@@ -321,7 +377,17 @@
     "https://taussig/fhir/StructureDefinition/adverseEventManagement": [
       "AdverseEvent"
     ],
+    "https://taussig/fhir/StructureDefinition/adverseEventProcedure": [
+      "AdverseEvent"
+    ],
+    "https://taussig/fhir/StructureDefinition/annotationClass": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
     "https://taussig/fhir/StructureDefinition/attemptNumber": [
+      "Procedure.usedReference"
+    ],
+    "https://taussig/fhir/StructureDefinition/attemptResult": [
       "Procedure.usedReference"
     ],
     "https://taussig/fhir/StructureDefinition/contrastUsed": [
@@ -339,7 +405,13 @@
     "https://taussig/fhir/StructureDefinition/ecmoSupport": [
       "Procedure"
     ],
+    "https://taussig/fhir/StructureDefinition/gestureSequence": [
+      "Procedure"
+    ],
     "https://taussig/fhir/StructureDefinition/implantClinicalStatus": [
+      "Device"
+    ],
+    "https://taussig/fhir/StructureDefinition/implantStatusDate": [
       "Device"
     ],
     "https://taussig/fhir/StructureDefinition/implantedExternally": [
@@ -359,6 +431,12 @@
     ],
     "https://taussig/fhir/StructureDefinition/procedurePhase": [
       "Observation"
+    ],
+    "https://taussig/fhir/StructureDefinition/procedureRoomPeriod": [
+      "Procedure"
+    ],
+    "https://taussig/fhir/StructureDefinition/procedureUrgency": [
+      "Procedure"
     ],
     "https://taussig/fhir/StructureDefinition/relatedDiagnosis": [
       "Condition"

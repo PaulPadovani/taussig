@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Mesure clinique (delta pre/post) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Exemple technique — TAUSSIG — Mesure clinique (delta pre/post) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple Observation: Exemple technique — TAUSSIG — Mesure clinique (delta pre/post)
 
@@ -12,7 +12,7 @@ Balise:
 
 **Dérivation de la mesure**: measured
 
-**partOf**: [Procedure : extension = false; status = unknown; performed[x] = 2026-01-01](Procedure-ex-taussig-catheterization.md)
+**partOf**: [Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques](Procedure-ex-taussig-catheterization.md)
 
 **status**: Unknown
 

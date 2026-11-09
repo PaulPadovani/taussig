@@ -16,4 +16,15 @@
       <sch:assert test="count(f:deviceName) &lt;= 1">deviceName: maximum cardinality of 'deviceName' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Device/f:property</sch:title>
+    <sch:rule context="f:Device/f:property">
+      <sch:assert test="count(f:valueCode) &gt;= 1">valueCode: minimum cardinality of 'valueCode' is 1</sch:assert>
+      <sch:assert test="count(f:valueCode) &lt;= 1">valueCode: maximum cardinality of 'valueCode' is 1</sch:assert>
+      <sch:assert test="count(f:valueCode) &gt;= 1">valueCode: minimum cardinality of 'valueCode' is 1</sch:assert>
+      <sch:assert test="count(f:valueCode) &lt;= 1">valueCode: maximum cardinality of 'valueCode' is 1</sch:assert>
+      <sch:assert test="count(f:valueCode) &gt;= 1">valueCode: minimum cardinality of 'valueCode' is 1</sch:assert>
+      <sch:assert test="count(f:valueCode) &lt;= 1">valueCode: maximum cardinality of 'valueCode' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

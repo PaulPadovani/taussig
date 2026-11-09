@@ -1,10 +1,10 @@
-# TAUSSIG — Attributions du décès - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Attributions du décès - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Attributions du décès (Expérimental) 
 
  **References** 
 
-Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
+* [TAUSSIG — Résultat global de procédure](StructureDefinition-taussig-procedure-outcome.md)
 
 ### Définition logique (CLD)
 
@@ -25,12 +25,12 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "resourceType" : "ValueSet",
   "id" : "death-attribution-vs",
   "url" : "https://taussig/fhir/ValueSet/death-attribution-vs",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "DeathAttributionVS",
   "title" : "TAUSSIG — Attributions du décès",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Attributions du décès » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

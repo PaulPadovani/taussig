@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="taussig-procedure-to-ipccc"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CarteDeConcepts taussig-procedure-to-ipccc</b></p><a name="taussig-procedure-to-ipccc"> </a><a name="hctaussig-procedure-to-ipccc"> </a><p>Mapping de <a href="ValueSet-taussig-procedure.html">TAUSSIG — Liste des gestes et actes de cathétérisme</a> vers (non spécifié)</p><br/><p>Mapping de <a href="CodeSystem-taussig-procedure.html">TAUSSIG — Gestes et actes de cathétérisme</a> to <a href="CodeSystem-ipccc.html">IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)</a></p><table class="grid"><tr><td><b>Code source</b></td><td><b>relation</b></td><td><b>Code cible</b></td><td><b>Commentaire</b></td></tr><tr><td>TAUSSIG-PROC-0001 (Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.70 (Thoracic aorta aneurysm transcatheter stent implantation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0002 (Stratégie hybride (chirurgie et cathétérisme combinés))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.41.30 (Hybrid strategy (combined surgical &amp; transluminal))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0003 (Cathétérisme par voie transseptale avec ponction transseptale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.01 (Catheterisation transeptal approach with transeptal puncture)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0004 (Test d'occlusion diagnostique par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.07 (Transluminal diagnostic test occlusion)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0005 (Geste percutané avec traitement adjuvant)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.59 (Transluminal procedure using adjunctive therapy)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0006 (Cathétérisme cardiaque diagnostique : angiographie)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.05 (Diagnostic cardiovascular catheterisation procedure: angiographic data obtained)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0007 (Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.06 (Diagnostic cardiovascular catheterisation procedure: haemodynamic data obtained)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0008 (Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.07 (Diagnostic cardiovascular catheterisation procedure with haemodynamic alteration (challenge))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0009 (Cathétérisme d'évaluation d'une hypertension pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.13 (Catheterisation study for pulmonary hypertension evaluation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0010 (Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.36 (Diagnostic cardiovascular catheterisation procedure with intention to treat: anatomy unsuitable)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0011 (Geste percutané pour trouble du rythme)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.35.57 (Transluminal procedure for arrhythmia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0012 (Geste percutané pour trouble du rythme atrial)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.35.82 (Transluminal procedure for atrial arrhythmia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0013 (Geste percutané pour trouble du rythme ventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.35.83 (Transluminal procedure for ventricular arrhythmia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0014 (Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.08 (Diagnostic cardiovascular catheterisation procedure with electrophysiological alteration (challenge))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0015 (Exploration électrophysiologique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.12 (Electrophysiological study (EPS))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0016 (Exploration électrophysiologique avec cartographie tridimensionnelle)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.17 (Electrophysiological study (EPS) with three dimensional mapping)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0017 (Geste fœtal)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.90 (Fetal procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0018 (Coagulation laser des anastomoses placentaires dans le syndrome transfuseur-transfusé)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.91 (Division of placental communicating vessels in twin-to-twin transfusion syndrome by laser coagulation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0019 (Geste fœtal par cathéter)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.70 (Fetal transluminal catheter procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0020 (Valvuloplastie pulmonaire fœtale au ballon)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.71 (Fetal balloon pulmonary valvotomy)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0021 (Valvuloplastie aortique fœtale au ballon)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.73 (Fetal balloon aortic valvotomy)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0022 (Péricardiocentèse fœtale par cathéter)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.75 (Fetal pericardiocentesis: transcatheter)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0023 (Atrioseptostomie fœtale au ballon)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.76 (Fetal balloon atrial septostomy)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0024 (Cathétérisme thérapeutique avec échec de largage d'un dispositif, d'un stent ou d'un coil)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.41.36 (Therapeutic cardiovascular catheter procedure with failed attempt to deploy device-stent-coil)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0025 (Geste de cathétérisme cardiovasculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.00 (Cardiovascular catheter procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0026 (Nouveau cathétérisme pour lésion résiduelle ou récidivante)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.06 (Repeat cardiovascular catheter procedure for residual or recurrent lesion)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0027 (Redilatation de stent)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.10 (Stent redilation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0028 (Pose de stent)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.11 (Stent placement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0029 (Dilatation au ballon)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.12 (Balloon dilation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0030 (Implantation d'un dispositif par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.13 (Transluminal device implantation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0031 (Occlusion par coil au cours d'un cathétérisme)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.14 (Cardiovascular catheterisation occlusion procedure with coil)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0032 (Implantation percutanée d'une valve)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.15 (Transluminal implantation of valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0033 (Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.19 (Transluminal prosthetic valve leak closure using device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0034 (Dilatation valvulaire au ballon)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.21 (Balloon dilation of valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0035 (Cathétérisme cardiovasculaire thérapeutique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.28 (Therapeutic cardiovascular catheter procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0036 (Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.58 (Transluminal therapeutic perforation to establish interchamber and-or intervessel communication)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0037 (Cathétérisme cardiaque diagnostique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.01 (Diagnostic cardiovascular catheterisation procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0038 (Agrandissement d'une communication interventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.08.06 (Ventricular septal defect (VSD) enlargement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0039 (Agrandissement ou création d'une communication interventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.08.35 (Ventricular septal defect (VSD) enlargement/ creation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0040 (Approche hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie) : stade 1)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.20.20 (Hypoplastic left heart syndrome hybrid approach (transcatheter &amp; surgery): stage 1)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0041 (Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s) et retrait des cerclages pulmonaires)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.20.22 (Hypoplastic left heart syndrome hybrid approach (transcatheter &amp; surgery) 'stage 2': aortopulmonary amalgamation + superior cavopulmonary anastomosis(es) + debanding of pulmonary arteries)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0042 (Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s), retrait des cerclages pulmonaires et réparation de l'arche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.20.23 (Hypoplastic left heart syndrome hybrid approach (transcatheter &amp; surgery) 'stage 2': aortopulmonary amalgamation + superior cavopulmonary anastomosis(es) + debanding of pulmonary arteries + arch repair)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0043 (Échographie endocoronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.41 (Transluminal intracoronary echocardiography (IVUS))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0044 (Échocardiographie)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.01.00 (Echocardiographic examination)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0045 (Échocardiographie transœsophagienne)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.01.03 (Transoesophageal echocardiographic examination)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0046 (Geste percutané guidé par échographie intracardiaque)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.01.23 (Transcatheter intervention with intracardiac echo guidance (ICE))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0047 (Geste percutané sous guidage radiologique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.14 (Transcatheter procedure undertaken with x-ray guidance)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0048 (Geste percutané sous guidage par IRM)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.15 (Transcatheter procedure undertaken with magnetic resonance imaging guidance)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0049 (Geste percutané sous guidage radiologique et IRM)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.16 (Transcatheter procedure undertaken with x-ray &amp; magnetic resonance imaging guidance)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0050 (Geste percutané sous guidage échographique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.24 (Transcatheter procedure undertaken with ultrasound guidance)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0051 (Imagerie endocoronaire par tomographie par cohérence optique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>13.05.39 (Transluminal intravascular imaging of coronary vessel by optical coherence tomography (OCT))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0052 (Retrait peropératoire complet ou partiel d'un stent de l'artère pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.14.38 (Intraoperative removal or partial removal of pulmonary arterial stent)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0053 (Geste sur l'artère pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.11 (Procedure involving pulmonary artery)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0054 (Occlusion d'une collatérale veino-veineuse par dispositif)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.70.08 (Venovenous collateral occlusion with device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0055 (Occlusion percutanée d'une veine systémique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.70.31 (Transluminal occlusion of systemic vein)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0056 (Pose de stent dans l'artère pulmonaire droite)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.13 (Stent placement in right pulmonary artery)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0057 (Pose de stent dans l'artère pulmonaire gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.14 (Stent placement in left pulmonary artery)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0058 (Pose de stent dans l'arbre artériel pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.50 (Stent placement in pulmonary tree)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0059 (Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.56 (Stent placement in right pulmonary artery proximal to hilar bifurcation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0060 (Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.57 (Stent placement in right pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0061 (Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.58 (Stent placement in left pulmonary artery proximal to hilar bifurcation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0062 (Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.59 (Stent placement in left pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0063 (Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.64 (Stent redilation in right pulmonary artery proximal to hilar bifurcation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0064 (Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.65 (Stent redilation in right pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0065 (Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.66 (Stent redilation in left pulmonary artery proximal to hilar bifurcation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0066 (Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.67 (Stent redilation in left pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0067 (Pose de stent entre l'artère pulmonaire gauche et l'aorte descendante (Potts inverse))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.70 (Stent placement between left pulmonary artery and descending aorta (reverse Potts))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0068 (Pose de stent sur une coarctation de l'aorte)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.17 (Stent placement at site of aortic coarctation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0069 (Pose de stent sur une recoarctation de l'aorte)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.22 (Stent placement at site of aortic recoarctation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0070 (Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.48 (Stent placement at site of native aortic coarctation-hypoplasia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0071 (Redilatation d'un stent de l'aorte thoracique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.54 (Stent redilation in thoracic aorta)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0072 (Pose de stent dans une veine pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.22 (Stent placement in pulmonary vein)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0073 (Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.25 (Stent placement in pulmonary vein or pathway)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0074 (Pose de stent dans la veine cave supérieure)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.36 (Stent placement in superior caval vein (SVC))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0075 (Pose de stent dans une veine systémique ou un chenal veineux systémique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.44 (Stent placement in systemic vein or pathway)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0076 (Redilatation d'un stent d'une veine systémique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.88 (Redilation of stent in systemic vein)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0077 (Redilatation d'un stent d'une veine pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.89 (Redilation of stent in pulmonary vein)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0078 (Cryoablation percutanée d'un trouble du rythme)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.35.46 (Transluminal cryoablation procedure for arrhythmia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0079 (Ablation percutanée d'un trouble du rythme par radiofréquence)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.35.48 (Transluminal radiofrequency ablation procedure for arrhythmia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0080 (Ablation percutanée avec isolation des veines pulmonaires)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.35.84 (Transluminal ablation procedure with pulmonary vein exclusion)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0081 (Ablation percutanée d'un trouble du rythme)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.38.40 (Transluminal ablation procedure for arrhythmia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0082 (Geste sur une artère coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.09 (Coronary arterial procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0083 (Occlusion percutanée d'une fistule coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.13 (Coronary arterial fistula transluminal occlusion)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0084 (Injection intracoronaire percutanée d'un agent thrombolytique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.30 (Transluminal intracoronary injection of thrombolytic agent)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0085 (Angioplastie coronaire percutanée au ballon)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.31 (Percutaneous transluminal balloon coronary angioplasty (PTCA))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0086 (Pose percutanée d'un stent coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.38 (Transluminal coronary stent implantation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0087 (Occlusion chimique percutanée d'une artère coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.42 (Transluminal chemical occlusion of coronary artery)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0088 (Redilatation d'un stent coronaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.23.45 (Stent redilation in coronary artery)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0089 (Fermeture percutanée d'une fenêtre aorto-pulmonaire par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.12.08 (Aortopulmonary window closure with transcatheter device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0090 (Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.04 (Balloon dilation of native aortic coarctation-hypoplasia)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0091 (Dilatation au ballon d'une recoarctation de l'aorte)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.08 (Balloon dilation of aortic recoarctation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0092 (Levée d'obstacle percutanée d'une coarctation de l'aorte)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.18.27 (Aortic coarctation transluminal obstruction relief)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0093 (Geste sur une artère systémique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.22.00 (Systemic arterial procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0094 (Occlusion d'une fistule artério-veineuse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.25.02 (Arteriovenous fistula occlusion)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0095 (Fermeture d'une fistule artério-veineuse pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.25.07 (Pulmonary arteriovenous fistula closure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0096 (Fermeture partielle d'une communication interatriale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.08 (Interatrial communication closure: partial)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0097 (Atrioseptostomie au ballon par retrait (Rashkind))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.41 (Balloon atrial septostomy by pull back (Rashkind))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0098 (Atrioseptostomie à la lame)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.44 (Blade atrial septostomy)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0099 (Création ou agrandissement d'une communication interatriale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.90 (Interatrial communication creation-enlargement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0100 (Atrioseptostomie au ballon)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.95 (Balloon atrial septostomy)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0101 (Création percutanée d'une communication interatriale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.30.74 (Transluminal interatrial communication creation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0102 (Retrait d'un thrombus intracardiaque)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.32.22 (Removal of cardiac thrombus)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0103 (Fermeture percutanée de l'auricule gauche par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.38.25 (Transluminal left atrial appendage occlusion with device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0104 (Geste sur la valve tricuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.02.00 (Tricuspid valvar procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0105 (Dilatation au ballon d'une prothèse valvulaire tricuspide)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.02.12 (Balloon dilation of prosthetic tricuspid valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0106 (Remplacement valvulaire tricuspide par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.02.98 (Transluminal tricuspid valvar replacement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0107 (Valve-in-valve tricuspide par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.02.99 (Transluminal tricuspid valve in prosthetic valve replacement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0108 (Dilatation au ballon de la valve mitrale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.03.10 (Balloon dilation of mitral valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0109 (Dilatation au ballon d'une prothèse valvulaire mitrale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.03.12 (Balloon dilation of prosthetic mitral valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0110 (Réparation valvulaire mitrale par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.03.97 (Transluminal mitral valve repair)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0111 (Remplacement valvulaire mitral par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.03.98 (Transluminal mitral valvar replacement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0112 (Valve-in-valve mitrale par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.04.90 (Transluminal mitral valve in prosthetic valve replacement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0113 (Valve-in-valve mitrale transcathéter par voie transapicale)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.04.91 (Transapical transcatheter mitral valve in prosthetic valve replacement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0114 (Dilatation au ballon d'une anastomose systémico-pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.31.19 (Balloon dilation of systemic-to-pulmonary arterial shunt)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0115 (Pose de stent dans une anastomose systémico-pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.31.27 (Stent placement in systemic-to-pulmonary arterial shunt)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0116 (Occlusion percutanée d'une anastomose systémico-pulmonaire par dispositif ou embolisation)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.31.34 (Occlusion of systemic-to-pulmonary arterial shunt by transluminal device-embolus)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0117 (Dilatation au ballon d'un conduit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.36.14 (Balloon dilation of cardiac conduit)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0118 (Pose de stent dans un conduit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.36.23 (Stent placement in cardiac conduit)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0119 (Redilatation d'un stent dans un conduit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.36.32 (Stent redilation in cardiac conduit)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0120 (Redilatation d'un stent dans une anastomose systémico-pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.36.34 (Stent redilation in systemic-to-pulmonary arterial shunt)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0121 (Perforation et dilatation percutanées d'un conduit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.36.36 (Transluminal perforation and dilation of cardiac conduit)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0122 (Perforation et dilatation percutanées d'une anastomose systémico-pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.36.37 (Transluminal perforation and dilation of systemic-to-pulmonary arterial shunt)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0123 (Dilatation au ballon d'une veine pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.21 (Balloon dilation of pulmonary vein)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0124 (Dilatation d'une veine pulmonaire au ballon de découpe)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.23 (Balloon dilation of pulmonary vein using cutting balloon)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0125 (Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.24 (Balloon dilation of pulmonary vein or pathway)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0126 (Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.43 (Balloon dilation of systemic vein or pathway)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0127 (Dilatation au ballon du tronc de l'artère pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.14.05 (Balloon dilation of pulmonary trunk)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0128 (Dilatation au ballon de l'artère pulmonaire droite)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.03 (Balloon dilation of right pulmonary artery)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0129 (Dilatation au ballon de l'artère pulmonaire gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.04 (Balloon dilation of left pulmonary artery)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0130 (Restriction du débit du tronc pulmonaire par dispositif implanté par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.25 (Pulmonary trunk flow restriction using transcatheter implanted device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0131 (Restriction du débit des artères pulmonaires droite et gauche par dispositifs implantés par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.42 (Right + left pulmonary artery flow restriction using transcatheter implanted devices)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0132 (Dilatation de l'arbre artériel pulmonaire au ballon de découpe)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.53 (Balloon dilation of pulmonary tree with cutting balloon)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0133 (Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.25.19 (Transluminal procedure to systemic-to-pulmonary collateral artery(ies) (MAPCA(s)))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0134 (Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.25.62 (Stent placement in systemic-to-pulmonary collateral artery(ies) (MAPCA(s)))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0135 (Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.25.65 (Transluminal occlusion of systemic-to-pulmonary collateral artery(ies) (MAPCA(s)) with coil-device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0136 (Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.25.72 (Balloon dilation of systemic-to-pulmonary collateral artery(ies) (MAPCA(s)))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0137 (Pose de stent dans le canal artériel)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.10.14 (Stent placement in arterial duct (PDA))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0138 (Redilatation d'un stent du canal artériel)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.10.26 (Stent redilation in arterial duct (PDA))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0139 (Geste sur le canal artériel ou le ligament artériel)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.24.00 (Arterial duct-ligament procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0140 (Fermeture percutanée du canal artériel par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.24.04 (Arterial duct (PDA) closure with transluminal device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0141 (Fermeture percutanée du canal artériel par coil)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.24.21 (Arterial duct (PDA) closure with transluminal coil)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0142 (Fermeture percutanée du canal artériel par plug)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.24.22 (Arterial duct (PDA) closure with transluminal plug device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0143 (Geste sur la valve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.00 (Pulmonary valvar procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0144 (Dilatation au ballon de la valve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.05 (Balloon dilation of pulmonary valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0145 (Dilatation au ballon d'une prothèse valvulaire pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.06 (Balloon dilation of prosthetic pulmonary valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0146 (Perforation et dilatation percutanées de la valve pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.09 (Pulmonary valvar transluminal perforation and dilation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0147 (Implantation percutanée d'une valve pulmonaire montée sur stent)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.51 (Transluminal pulmonary valvar insertion with stent mounted valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0148 (Valve-in-valve pulmonaire par voie percutanée (réimplantation))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.52 (Transluminal pulmonary valvar insertion with stent mounted valve: reimplant (valve in valve))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0149 (Implantation percutanée d'une valve aortique montée sur stent)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.81 (Transluminal aortic valvar insertion (TAVI) with stent mounted valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0150 (Valve-in-valve aortique par voie percutanée (réimplantation))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.82 (Transluminal aortic valvar insertion with stent mounted valve: reimplant (valve in valve))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0151 (Implantation d'une valve aortique par voie transapicale (approche hybride))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.84 (Transapical aortic valve implantation (hybrid approach))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0152 (Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.85 (Transluminal pulmonary valvar insertion with stent mounted valve including prestenting)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0153 (Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.86 (Transluminal pulmonary valvar prestenting procedure in preparation for valve replacement)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0154 (Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.13.87 (Transluminal pulmonary valvar insertion with stent mounted valve with intentional rupture of previous conduit)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0155 (Dilatation au ballon de la valve aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.16.05 (Balloon dilation of aortic valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0156 (Dilatation au ballon d'une prothèse valvulaire aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.16.09 (Balloon dilation of prosthetic aortic valve)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0157 (Perforation et dilatation percutanées de la valve aortique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.16.25 (Aortic valvar transluminal perforation and dilation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0158 (Fenestration percutanée du septum interatrial ou d'un tunnel atrial)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.47 (Transluminal fenestration of atrial septum-tunnel)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0159 (Approche hybride stade 1 : cerclage bilatéral des artères pulmonaires et stent du canal artériel par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.10.04 (Hybrid approach 'Stage 1': application of bilateral pulmonary arterial bands &amp; transcatheter placement of stent in arterial duct)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0160 (Stratégie hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.20.21 (Hypoplastic left heart syndrome hybrid strategy (transcatheter &amp; surgery))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0161 (Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.30.21 (Right atrial septum-tunnel fenestration closure with transluminal device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0162 (Complétion percutanée de la dérivation cavo-pulmonaire totale par stent couvert de la veine cave inférieure à la veine cave supérieure)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.30.60 (Completion of total cavopulmonary connection (TCPC) using transcatheter inferior to superior caval vein covered stent)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0163 (Fermeture percutanée d'une communication interventriculaire par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.08.07 (Ventricular septal defect (VSD) closure with transluminal device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0164 (Fenestration percutanée d'un patch de communication interventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.08.20 (Transluminal fenestration of ventricular septal defect (VSD) patch)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0165 (Fermeture peropératoire d'une communication interventriculaire par dispositif (approche hybride))</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.08.28 (Intraoperative ventricular septal defect (VSD) closure with transluminal device (hybrid approach))</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0166 (Création percutanée d'une communication interventriculaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.08.65 (Transluminal interventricular communication creation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0167 (Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.06 (Atrial septal defect (ASD) secundum closure with transluminal device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0168 (Fermeture percutanée d'un foramen ovale perméable par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.07 (Patent foramen ovale (PFO) closure with transluminal device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0169 (Fermeture percutanée d'une communication interatriale de type sinus venosus par stent couvert)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.88 (Sinus venosus defect closure using transluminal covered stent)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0170 (Fermeture percutanée d'une communication interatriale par prothèse)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.01.98 (Interatrial communication closure with transluminal device)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0171 (Dilatation au ballon de la voie d'éjection du ventricule gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.07.07 (Balloon dilation of left ventricular outflow tract)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0172 (Levée d'obstacle de la voie d'éjection du ventricule gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.07.13 (Left ventricular outflow tract obstruction relief)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0173 (Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.07.19 (Left ventricular outflow tract obstruction relief by transcatheter coronary chemical ablation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0174 (Geste sur le ventricule gauche)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.07.26 (Left ventricular procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0175 (Dilatation au ballon de la voie d'éjection du ventricule droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.06.05 (Balloon dilation of right ventricular outflow tract)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0176 (Pose de stent dans la voie d'éjection du ventricule droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.06.18 (Stent placement in right ventricular outflow tract)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0177 (Biopsie ventriculaire droite par voie percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.06.25 (Transluminal right ventricular biopsy)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0178 (Geste sur le ventricule droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.06.26 (Right ventricular procedure)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0179 (Levée d'obstacle de la voie d'éjection du ventricule droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.06.41 (Right ventricular outflow tract obstruction relief)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0180 (Redilatation d'un stent de la voie d'éjection native du ventricule droit)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.06.95 (Stent redilation in native right ventricular outflow tract)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0181 (Péricardiocentèse percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.32.43 (Pericardiocentesis: percutaneous transcatheter)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0182 (Embolectomie percutanée de l'arbre artériel pulmonaire)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.15.49 (Transluminal embolectomy from pulmonary tree)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0183 (Embolisation lymphatique percutanée)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.49.50 (Percutaneous lymphatic embolisation)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0184 (Redilatation de stent avec fracture volontaire du stent)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.46 (Stent redilation with intentional stent fracture)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0185 (Extraction percutanée d'un dispositif ou d'un corps étranger)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.04 (Transluminal retrieval of device or foreign body)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0186 (Geste percutané pour complication du cathétérisme)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.30 (Transluminal procedure for catheterisation complication)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0187 (Retrait chirurgical d'un dispositif)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.45.45 (Removal of device from body: surgical)</td><td>origine du concept</td></tr><tr><td>TAUSSIG-PROC-0188 (Geste sur une veine systémique)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>12.00.30 (Systemic vein procedure)</td><td>origine du concept</td></tr></table></div>
+  </text>
+  <url value="https://taussig/fhir/ConceptMap/taussig-procedure-to-ipccc"/>
+  <version value="0.8.0"/>
+  <name value="TaussigProcedureToIpccc"/>
+  <title value="TAUSSIG — Gestes TAUSSIG vers IPCCC"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-09T08:39:58+01:00"/>
+  <publisher value="Projet TAUSSIG"/>
+  <description value="Correspondance des 188 concepts TAUSSIG de gestes vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://taussig/fhir/ValueSet/taussig-procedure"/>
+  <group>
+    <source value="https://taussig/fhir/CodeSystem/taussig-procedure"/>
+    <target value="https://taussig/fhir/CodeSystem/ipccc"/>
+    <element>
+      <code value="TAUSSIG-PROC-0001"/>
+      <display value="Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique"/>
+      <target>
+        <code value="12.18.70"/>
+        <display value="Thoracic aorta aneurysm transcatheter stent implantation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0002"/>
+      <display value="Stratégie hybride (chirurgie et cathétérisme combinés)"/>
+      <target>
+        <code value="12.41.30"/>
+        <display value="Hybrid strategy (combined surgical &amp; transluminal)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0003"/>
+      <display value="Cathétérisme par voie transseptale avec ponction transseptale"/>
+      <target>
+        <code value="12.45.01"/>
+        <display value="Catheterisation transeptal approach with transeptal puncture"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0004"/>
+      <display value="Test d'occlusion diagnostique par voie percutanée"/>
+      <target>
+        <code value="12.45.07"/>
+        <display value="Transluminal diagnostic test occlusion"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0005"/>
+      <display value="Geste percutané avec traitement adjuvant"/>
+      <target>
+        <code value="12.45.59"/>
+        <display value="Transluminal procedure using adjunctive therapy"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0006"/>
+      <display value="Cathétérisme cardiaque diagnostique : angiographie"/>
+      <target>
+        <code value="13.05.05"/>
+        <display value="Diagnostic cardiovascular catheterisation procedure: angiographic data obtained"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0007"/>
+      <display value="Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques"/>
+      <target>
+        <code value="13.05.06"/>
+        <display value="Diagnostic cardiovascular catheterisation procedure: haemodynamic data obtained"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0008"/>
+      <display value="Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique"/>
+      <target>
+        <code value="13.05.07"/>
+        <display value="Diagnostic cardiovascular catheterisation procedure with haemodynamic alteration (challenge)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0009"/>
+      <display value="Cathétérisme d'évaluation d'une hypertension pulmonaire"/>
+      <target>
+        <code value="13.05.13"/>
+        <display value="Catheterisation study for pulmonary hypertension evaluation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0010"/>
+      <display value="Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste"/>
+      <target>
+        <code value="13.05.36"/>
+        <display value="Diagnostic cardiovascular catheterisation procedure with intention to treat: anatomy unsuitable"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0011"/>
+      <display value="Geste percutané pour trouble du rythme"/>
+      <target>
+        <code value="12.35.57"/>
+        <display value="Transluminal procedure for arrhythmia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0012"/>
+      <display value="Geste percutané pour trouble du rythme atrial"/>
+      <target>
+        <code value="12.35.82"/>
+        <display value="Transluminal procedure for atrial arrhythmia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0013"/>
+      <display value="Geste percutané pour trouble du rythme ventriculaire"/>
+      <target>
+        <code value="12.35.83"/>
+        <display value="Transluminal procedure for ventricular arrhythmia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0014"/>
+      <display value="Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique"/>
+      <target>
+        <code value="13.05.08"/>
+        <display value="Diagnostic cardiovascular catheterisation procedure with electrophysiological alteration (challenge)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0015"/>
+      <display value="Exploration électrophysiologique"/>
+      <target>
+        <code value="13.05.12"/>
+        <display value="Electrophysiological study (EPS)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0016"/>
+      <display value="Exploration électrophysiologique avec cartographie tridimensionnelle"/>
+      <target>
+        <code value="13.05.17"/>
+        <display value="Electrophysiological study (EPS) with three dimensional mapping"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0017"/>
+      <display value="Geste fœtal"/>
+      <target>
+        <code value="12.45.90"/>
+        <display value="Fetal procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0018"/>
+      <display value="Coagulation laser des anastomoses placentaires dans le syndrome transfuseur-transfusé"/>
+      <target>
+        <code value="12.45.91"/>
+        <display value="Division of placental communicating vessels in twin-to-twin transfusion syndrome by laser coagulation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0019"/>
+      <display value="Geste fœtal par cathéter"/>
+      <target>
+        <code value="12.45.70"/>
+        <display value="Fetal transluminal catheter procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0020"/>
+      <display value="Valvuloplastie pulmonaire fœtale au ballon"/>
+      <target>
+        <code value="12.45.71"/>
+        <display value="Fetal balloon pulmonary valvotomy"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0021"/>
+      <display value="Valvuloplastie aortique fœtale au ballon"/>
+      <target>
+        <code value="12.45.73"/>
+        <display value="Fetal balloon aortic valvotomy"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0022"/>
+      <display value="Péricardiocentèse fœtale par cathéter"/>
+      <target>
+        <code value="12.45.75"/>
+        <display value="Fetal pericardiocentesis: transcatheter"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0023"/>
+      <display value="Atrioseptostomie fœtale au ballon"/>
+      <target>
+        <code value="12.45.76"/>
+        <display value="Fetal balloon atrial septostomy"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0024"/>
+      <display value="Cathétérisme thérapeutique avec échec de largage d'un dispositif, d'un stent ou d'un coil"/>
+      <target>
+        <code value="12.41.36"/>
+        <display value="Therapeutic cardiovascular catheter procedure with failed attempt to deploy device-stent-coil"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0025"/>
+      <display value="Geste de cathétérisme cardiovasculaire"/>
+      <target>
+        <code value="12.45.00"/>
+        <display value="Cardiovascular catheter procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0026"/>
+      <display value="Nouveau cathétérisme pour lésion résiduelle ou récidivante"/>
+      <target>
+        <code value="12.45.06"/>
+        <display value="Repeat cardiovascular catheter procedure for residual or recurrent lesion"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0027"/>
+      <display value="Redilatation de stent"/>
+      <target>
+        <code value="12.45.10"/>
+        <display value="Stent redilation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0028"/>
+      <display value="Pose de stent"/>
+      <target>
+        <code value="12.45.11"/>
+        <display value="Stent placement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0029"/>
+      <display value="Dilatation au ballon"/>
+      <target>
+        <code value="12.45.12"/>
+        <display value="Balloon dilation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0030"/>
+      <display value="Implantation d'un dispositif par voie percutanée"/>
+      <target>
+        <code value="12.45.13"/>
+        <display value="Transluminal device implantation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0031"/>
+      <display value="Occlusion par coil au cours d'un cathétérisme"/>
+      <target>
+        <code value="12.45.14"/>
+        <display value="Cardiovascular catheterisation occlusion procedure with coil"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0032"/>
+      <display value="Implantation percutanée d'une valve"/>
+      <target>
+        <code value="12.45.15"/>
+        <display value="Transluminal implantation of valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0033"/>
+      <display value="Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif"/>
+      <target>
+        <code value="12.45.19"/>
+        <display value="Transluminal prosthetic valve leak closure using device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0034"/>
+      <display value="Dilatation valvulaire au ballon"/>
+      <target>
+        <code value="12.45.21"/>
+        <display value="Balloon dilation of valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0035"/>
+      <display value="Cathétérisme cardiovasculaire thérapeutique"/>
+      <target>
+        <code value="12.45.28"/>
+        <display value="Therapeutic cardiovascular catheter procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0036"/>
+      <display value="Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux"/>
+      <target>
+        <code value="12.45.58"/>
+        <display value="Transluminal therapeutic perforation to establish interchamber and-or intervessel communication"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0037"/>
+      <display value="Cathétérisme cardiaque diagnostique"/>
+      <target>
+        <code value="13.05.01"/>
+        <display value="Diagnostic cardiovascular catheterisation procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0038"/>
+      <display value="Agrandissement d'une communication interventriculaire"/>
+      <target>
+        <code value="12.08.06"/>
+        <display value="Ventricular septal defect (VSD) enlargement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0039"/>
+      <display value="Agrandissement ou création d'une communication interventriculaire"/>
+      <target>
+        <code value="12.08.35"/>
+        <display value="Ventricular septal defect (VSD) enlargement/ creation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0040"/>
+      <display value="Approche hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie) : stade 1"/>
+      <target>
+        <code value="12.20.20"/>
+        <display value="Hypoplastic left heart syndrome hybrid approach (transcatheter &amp; surgery): stage 1"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0041"/>
+      <display value="Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s) et retrait des cerclages pulmonaires"/>
+      <target>
+        <code value="12.20.22"/>
+        <display value="Hypoplastic left heart syndrome hybrid approach (transcatheter &amp; surgery) 'stage 2': aortopulmonary amalgamation + superior cavopulmonary anastomosis(es) + debanding of pulmonary arteries"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0042"/>
+      <display value="Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s), retrait des cerclages pulmonaires et réparation de l'arche"/>
+      <target>
+        <code value="12.20.23"/>
+        <display value="Hypoplastic left heart syndrome hybrid approach (transcatheter &amp; surgery) 'stage 2': aortopulmonary amalgamation + superior cavopulmonary anastomosis(es) + debanding of pulmonary arteries + arch repair"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0043"/>
+      <display value="Échographie endocoronaire"/>
+      <target>
+        <code value="12.23.41"/>
+        <display value="Transluminal intracoronary echocardiography (IVUS)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0044"/>
+      <display value="Échocardiographie"/>
+      <target>
+        <code value="13.01.00"/>
+        <display value="Echocardiographic examination"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0045"/>
+      <display value="Échocardiographie transœsophagienne"/>
+      <target>
+        <code value="13.01.03"/>
+        <display value="Transoesophageal echocardiographic examination"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0046"/>
+      <display value="Geste percutané guidé par échographie intracardiaque"/>
+      <target>
+        <code value="13.01.23"/>
+        <display value="Transcatheter intervention with intracardiac echo guidance (ICE)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0047"/>
+      <display value="Geste percutané sous guidage radiologique"/>
+      <target>
+        <code value="13.05.14"/>
+        <display value="Transcatheter procedure undertaken with x-ray guidance"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0048"/>
+      <display value="Geste percutané sous guidage par IRM"/>
+      <target>
+        <code value="13.05.15"/>
+        <display value="Transcatheter procedure undertaken with magnetic resonance imaging guidance"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0049"/>
+      <display value="Geste percutané sous guidage radiologique et IRM"/>
+      <target>
+        <code value="13.05.16"/>
+        <display value="Transcatheter procedure undertaken with x-ray &amp; magnetic resonance imaging guidance"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0050"/>
+      <display value="Geste percutané sous guidage échographique"/>
+      <target>
+        <code value="13.05.24"/>
+        <display value="Transcatheter procedure undertaken with ultrasound guidance"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0051"/>
+      <display value="Imagerie endocoronaire par tomographie par cohérence optique"/>
+      <target>
+        <code value="13.05.39"/>
+        <display value="Transluminal intravascular imaging of coronary vessel by optical coherence tomography (OCT)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0052"/>
+      <display value="Retrait peropératoire complet ou partiel d'un stent de l'artère pulmonaire"/>
+      <target>
+        <code value="12.14.38"/>
+        <display value="Intraoperative removal or partial removal of pulmonary arterial stent"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0053"/>
+      <display value="Geste sur l'artère pulmonaire"/>
+      <target>
+        <code value="12.15.11"/>
+        <display value="Procedure involving pulmonary artery"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0054"/>
+      <display value="Occlusion d'une collatérale veino-veineuse par dispositif"/>
+      <target>
+        <code value="12.70.08"/>
+        <display value="Venovenous collateral occlusion with device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0055"/>
+      <display value="Occlusion percutanée d'une veine systémique"/>
+      <target>
+        <code value="12.70.31"/>
+        <display value="Transluminal occlusion of systemic vein"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0056"/>
+      <display value="Pose de stent dans l'artère pulmonaire droite"/>
+      <target>
+        <code value="12.15.13"/>
+        <display value="Stent placement in right pulmonary artery"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0057"/>
+      <display value="Pose de stent dans l'artère pulmonaire gauche"/>
+      <target>
+        <code value="12.15.14"/>
+        <display value="Stent placement in left pulmonary artery"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0058"/>
+      <display value="Pose de stent dans l'arbre artériel pulmonaire"/>
+      <target>
+        <code value="12.15.50"/>
+        <display value="Stent placement in pulmonary tree"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0059"/>
+      <display value="Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire"/>
+      <target>
+        <code value="12.15.56"/>
+        <display value="Stent placement in right pulmonary artery proximal to hilar bifurcation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0060"/>
+      <display value="Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"/>
+      <target>
+        <code value="12.15.57"/>
+        <display value="Stent placement in right pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0061"/>
+      <display value="Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire"/>
+      <target>
+        <code value="12.15.58"/>
+        <display value="Stent placement in left pulmonary artery proximal to hilar bifurcation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0062"/>
+      <display value="Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"/>
+      <target>
+        <code value="12.15.59"/>
+        <display value="Stent placement in left pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0063"/>
+      <display value="Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire"/>
+      <target>
+        <code value="12.15.64"/>
+        <display value="Stent redilation in right pulmonary artery proximal to hilar bifurcation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0064"/>
+      <display value="Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"/>
+      <target>
+        <code value="12.15.65"/>
+        <display value="Stent redilation in right pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0065"/>
+      <display value="Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire"/>
+      <target>
+        <code value="12.15.66"/>
+        <display value="Stent redilation in left pulmonary artery proximal to hilar bifurcation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0066"/>
+      <display value="Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"/>
+      <target>
+        <code value="12.15.67"/>
+        <display value="Stent redilation in left pulmonary artery at or distal to hilar bifurcation (lobar &amp; segmental)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0067"/>
+      <display value="Pose de stent entre l'artère pulmonaire gauche et l'aorte descendante (Potts inverse)"/>
+      <target>
+        <code value="12.15.70"/>
+        <display value="Stent placement between left pulmonary artery and descending aorta (reverse Potts)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0068"/>
+      <display value="Pose de stent sur une coarctation de l'aorte"/>
+      <target>
+        <code value="12.18.17"/>
+        <display value="Stent placement at site of aortic coarctation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0069"/>
+      <display value="Pose de stent sur une recoarctation de l'aorte"/>
+      <target>
+        <code value="12.18.22"/>
+        <display value="Stent placement at site of aortic recoarctation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0070"/>
+      <display value="Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte"/>
+      <target>
+        <code value="12.18.48"/>
+        <display value="Stent placement at site of native aortic coarctation-hypoplasia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0071"/>
+      <display value="Redilatation d'un stent de l'aorte thoracique"/>
+      <target>
+        <code value="12.18.54"/>
+        <display value="Stent redilation in thoracic aorta"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0072"/>
+      <display value="Pose de stent dans une veine pulmonaire"/>
+      <target>
+        <code value="12.00.22"/>
+        <display value="Stent placement in pulmonary vein"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0073"/>
+      <display value="Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire"/>
+      <target>
+        <code value="12.00.25"/>
+        <display value="Stent placement in pulmonary vein or pathway"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0074"/>
+      <display value="Pose de stent dans la veine cave supérieure"/>
+      <target>
+        <code value="12.00.36"/>
+        <display value="Stent placement in superior caval vein (SVC)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0075"/>
+      <display value="Pose de stent dans une veine systémique ou un chenal veineux systémique"/>
+      <target>
+        <code value="12.00.44"/>
+        <display value="Stent placement in systemic vein or pathway"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0076"/>
+      <display value="Redilatation d'un stent d'une veine systémique"/>
+      <target>
+        <code value="12.00.88"/>
+        <display value="Redilation of stent in systemic vein"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0077"/>
+      <display value="Redilatation d'un stent d'une veine pulmonaire"/>
+      <target>
+        <code value="12.00.89"/>
+        <display value="Redilation of stent in pulmonary vein"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0078"/>
+      <display value="Cryoablation percutanée d'un trouble du rythme"/>
+      <target>
+        <code value="12.35.46"/>
+        <display value="Transluminal cryoablation procedure for arrhythmia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0079"/>
+      <display value="Ablation percutanée d'un trouble du rythme par radiofréquence"/>
+      <target>
+        <code value="12.35.48"/>
+        <display value="Transluminal radiofrequency ablation procedure for arrhythmia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0080"/>
+      <display value="Ablation percutanée avec isolation des veines pulmonaires"/>
+      <target>
+        <code value="12.35.84"/>
+        <display value="Transluminal ablation procedure with pulmonary vein exclusion"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0081"/>
+      <display value="Ablation percutanée d'un trouble du rythme"/>
+      <target>
+        <code value="12.38.40"/>
+        <display value="Transluminal ablation procedure for arrhythmia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0082"/>
+      <display value="Geste sur une artère coronaire"/>
+      <target>
+        <code value="12.23.09"/>
+        <display value="Coronary arterial procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0083"/>
+      <display value="Occlusion percutanée d'une fistule coronaire"/>
+      <target>
+        <code value="12.23.13"/>
+        <display value="Coronary arterial fistula transluminal occlusion"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0084"/>
+      <display value="Injection intracoronaire percutanée d'un agent thrombolytique"/>
+      <target>
+        <code value="12.23.30"/>
+        <display value="Transluminal intracoronary injection of thrombolytic agent"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0085"/>
+      <display value="Angioplastie coronaire percutanée au ballon"/>
+      <target>
+        <code value="12.23.31"/>
+        <display value="Percutaneous transluminal balloon coronary angioplasty (PTCA)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0086"/>
+      <display value="Pose percutanée d'un stent coronaire"/>
+      <target>
+        <code value="12.23.38"/>
+        <display value="Transluminal coronary stent implantation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0087"/>
+      <display value="Occlusion chimique percutanée d'une artère coronaire"/>
+      <target>
+        <code value="12.23.42"/>
+        <display value="Transluminal chemical occlusion of coronary artery"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0088"/>
+      <display value="Redilatation d'un stent coronaire"/>
+      <target>
+        <code value="12.23.45"/>
+        <display value="Stent redilation in coronary artery"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0089"/>
+      <display value="Fermeture percutanée d'une fenêtre aorto-pulmonaire par prothèse"/>
+      <target>
+        <code value="12.12.08"/>
+        <display value="Aortopulmonary window closure with transcatheter device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0090"/>
+      <display value="Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte"/>
+      <target>
+        <code value="12.18.04"/>
+        <display value="Balloon dilation of native aortic coarctation-hypoplasia"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0091"/>
+      <display value="Dilatation au ballon d'une recoarctation de l'aorte"/>
+      <target>
+        <code value="12.18.08"/>
+        <display value="Balloon dilation of aortic recoarctation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0092"/>
+      <display value="Levée d'obstacle percutanée d'une coarctation de l'aorte"/>
+      <target>
+        <code value="12.18.27"/>
+        <display value="Aortic coarctation transluminal obstruction relief"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0093"/>
+      <display value="Geste sur une artère systémique"/>
+      <target>
+        <code value="12.22.00"/>
+        <display value="Systemic arterial procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0094"/>
+      <display value="Occlusion d'une fistule artério-veineuse"/>
+      <target>
+        <code value="12.25.02"/>
+        <display value="Arteriovenous fistula occlusion"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0095"/>
+      <display value="Fermeture d'une fistule artério-veineuse pulmonaire"/>
+      <target>
+        <code value="12.25.07"/>
+        <display value="Pulmonary arteriovenous fistula closure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0096"/>
+      <display value="Fermeture partielle d'une communication interatriale"/>
+      <target>
+        <code value="12.01.08"/>
+        <display value="Interatrial communication closure: partial"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0097"/>
+      <display value="Atrioseptostomie au ballon par retrait (Rashkind)"/>
+      <target>
+        <code value="12.01.41"/>
+        <display value="Balloon atrial septostomy by pull back (Rashkind)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0098"/>
+      <display value="Atrioseptostomie à la lame"/>
+      <target>
+        <code value="12.01.44"/>
+        <display value="Blade atrial septostomy"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0099"/>
+      <display value="Création ou agrandissement d'une communication interatriale"/>
+      <target>
+        <code value="12.01.90"/>
+        <display value="Interatrial communication creation-enlargement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0100"/>
+      <display value="Atrioseptostomie au ballon"/>
+      <target>
+        <code value="12.01.95"/>
+        <display value="Balloon atrial septostomy"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0101"/>
+      <display value="Création percutanée d'une communication interatriale"/>
+      <target>
+        <code value="12.30.74"/>
+        <display value="Transluminal interatrial communication creation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0102"/>
+      <display value="Retrait d'un thrombus intracardiaque"/>
+      <target>
+        <code value="12.32.22"/>
+        <display value="Removal of cardiac thrombus"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0103"/>
+      <display value="Fermeture percutanée de l'auricule gauche par prothèse"/>
+      <target>
+        <code value="12.38.25"/>
+        <display value="Transluminal left atrial appendage occlusion with device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0104"/>
+      <display value="Geste sur la valve tricuspide"/>
+      <target>
+        <code value="12.02.00"/>
+        <display value="Tricuspid valvar procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0105"/>
+      <display value="Dilatation au ballon d'une prothèse valvulaire tricuspide"/>
+      <target>
+        <code value="12.02.12"/>
+        <display value="Balloon dilation of prosthetic tricuspid valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0106"/>
+      <display value="Remplacement valvulaire tricuspide par voie percutanée"/>
+      <target>
+        <code value="12.02.98"/>
+        <display value="Transluminal tricuspid valvar replacement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0107"/>
+      <display value="Valve-in-valve tricuspide par voie percutanée"/>
+      <target>
+        <code value="12.02.99"/>
+        <display value="Transluminal tricuspid valve in prosthetic valve replacement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0108"/>
+      <display value="Dilatation au ballon de la valve mitrale"/>
+      <target>
+        <code value="12.03.10"/>
+        <display value="Balloon dilation of mitral valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0109"/>
+      <display value="Dilatation au ballon d'une prothèse valvulaire mitrale"/>
+      <target>
+        <code value="12.03.12"/>
+        <display value="Balloon dilation of prosthetic mitral valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0110"/>
+      <display value="Réparation valvulaire mitrale par voie percutanée"/>
+      <target>
+        <code value="12.03.97"/>
+        <display value="Transluminal mitral valve repair"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0111"/>
+      <display value="Remplacement valvulaire mitral par voie percutanée"/>
+      <target>
+        <code value="12.03.98"/>
+        <display value="Transluminal mitral valvar replacement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0112"/>
+      <display value="Valve-in-valve mitrale par voie percutanée"/>
+      <target>
+        <code value="12.04.90"/>
+        <display value="Transluminal mitral valve in prosthetic valve replacement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0113"/>
+      <display value="Valve-in-valve mitrale transcathéter par voie transapicale"/>
+      <target>
+        <code value="12.04.91"/>
+        <display value="Transapical transcatheter mitral valve in prosthetic valve replacement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0114"/>
+      <display value="Dilatation au ballon d'une anastomose systémico-pulmonaire"/>
+      <target>
+        <code value="12.31.19"/>
+        <display value="Balloon dilation of systemic-to-pulmonary arterial shunt"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0115"/>
+      <display value="Pose de stent dans une anastomose systémico-pulmonaire"/>
+      <target>
+        <code value="12.31.27"/>
+        <display value="Stent placement in systemic-to-pulmonary arterial shunt"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0116"/>
+      <display value="Occlusion percutanée d'une anastomose systémico-pulmonaire par dispositif ou embolisation"/>
+      <target>
+        <code value="12.31.34"/>
+        <display value="Occlusion of systemic-to-pulmonary arterial shunt by transluminal device-embolus"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0117"/>
+      <display value="Dilatation au ballon d'un conduit"/>
+      <target>
+        <code value="12.36.14"/>
+        <display value="Balloon dilation of cardiac conduit"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0118"/>
+      <display value="Pose de stent dans un conduit"/>
+      <target>
+        <code value="12.36.23"/>
+        <display value="Stent placement in cardiac conduit"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0119"/>
+      <display value="Redilatation d'un stent dans un conduit"/>
+      <target>
+        <code value="12.36.32"/>
+        <display value="Stent redilation in cardiac conduit"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0120"/>
+      <display value="Redilatation d'un stent dans une anastomose systémico-pulmonaire"/>
+      <target>
+        <code value="12.36.34"/>
+        <display value="Stent redilation in systemic-to-pulmonary arterial shunt"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0121"/>
+      <display value="Perforation et dilatation percutanées d'un conduit"/>
+      <target>
+        <code value="12.36.36"/>
+        <display value="Transluminal perforation and dilation of cardiac conduit"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0122"/>
+      <display value="Perforation et dilatation percutanées d'une anastomose systémico-pulmonaire"/>
+      <target>
+        <code value="12.36.37"/>
+        <display value="Transluminal perforation and dilation of systemic-to-pulmonary arterial shunt"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0123"/>
+      <display value="Dilatation au ballon d'une veine pulmonaire"/>
+      <target>
+        <code value="12.00.21"/>
+        <display value="Balloon dilation of pulmonary vein"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0124"/>
+      <display value="Dilatation d'une veine pulmonaire au ballon de découpe"/>
+      <target>
+        <code value="12.00.23"/>
+        <display value="Balloon dilation of pulmonary vein using cutting balloon"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0125"/>
+      <display value="Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire"/>
+      <target>
+        <code value="12.00.24"/>
+        <display value="Balloon dilation of pulmonary vein or pathway"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0126"/>
+      <display value="Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique"/>
+      <target>
+        <code value="12.00.43"/>
+        <display value="Balloon dilation of systemic vein or pathway"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0127"/>
+      <display value="Dilatation au ballon du tronc de l'artère pulmonaire"/>
+      <target>
+        <code value="12.14.05"/>
+        <display value="Balloon dilation of pulmonary trunk"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0128"/>
+      <display value="Dilatation au ballon de l'artère pulmonaire droite"/>
+      <target>
+        <code value="12.15.03"/>
+        <display value="Balloon dilation of right pulmonary artery"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0129"/>
+      <display value="Dilatation au ballon de l'artère pulmonaire gauche"/>
+      <target>
+        <code value="12.15.04"/>
+        <display value="Balloon dilation of left pulmonary artery"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0130"/>
+      <display value="Restriction du débit du tronc pulmonaire par dispositif implanté par voie percutanée"/>
+      <target>
+        <code value="12.15.25"/>
+        <display value="Pulmonary trunk flow restriction using transcatheter implanted device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0131"/>
+      <display value="Restriction du débit des artères pulmonaires droite et gauche par dispositifs implantés par voie percutanée"/>
+      <target>
+        <code value="12.15.42"/>
+        <display value="Right + left pulmonary artery flow restriction using transcatheter implanted devices"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0132"/>
+      <display value="Dilatation de l'arbre artériel pulmonaire au ballon de découpe"/>
+      <target>
+        <code value="12.15.53"/>
+        <display value="Balloon dilation of pulmonary tree with cutting balloon"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0133"/>
+      <display value="Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA)"/>
+      <target>
+        <code value="12.25.19"/>
+        <display value="Transluminal procedure to systemic-to-pulmonary collateral artery(ies) (MAPCA(s))"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0134"/>
+      <display value="Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA)"/>
+      <target>
+        <code value="12.25.62"/>
+        <display value="Stent placement in systemic-to-pulmonary collateral artery(ies) (MAPCA(s))"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0135"/>
+      <display value="Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif"/>
+      <target>
+        <code value="12.25.65"/>
+        <display value="Transluminal occlusion of systemic-to-pulmonary collateral artery(ies) (MAPCA(s)) with coil-device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0136"/>
+      <display value="Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA)"/>
+      <target>
+        <code value="12.25.72"/>
+        <display value="Balloon dilation of systemic-to-pulmonary collateral artery(ies) (MAPCA(s))"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0137"/>
+      <display value="Pose de stent dans le canal artériel"/>
+      <target>
+        <code value="12.10.14"/>
+        <display value="Stent placement in arterial duct (PDA)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0138"/>
+      <display value="Redilatation d'un stent du canal artériel"/>
+      <target>
+        <code value="12.10.26"/>
+        <display value="Stent redilation in arterial duct (PDA)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0139"/>
+      <display value="Geste sur le canal artériel ou le ligament artériel"/>
+      <target>
+        <code value="12.24.00"/>
+        <display value="Arterial duct-ligament procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0140"/>
+      <display value="Fermeture percutanée du canal artériel par prothèse"/>
+      <target>
+        <code value="12.24.04"/>
+        <display value="Arterial duct (PDA) closure with transluminal device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0141"/>
+      <display value="Fermeture percutanée du canal artériel par coil"/>
+      <target>
+        <code value="12.24.21"/>
+        <display value="Arterial duct (PDA) closure with transluminal coil"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0142"/>
+      <display value="Fermeture percutanée du canal artériel par plug"/>
+      <target>
+        <code value="12.24.22"/>
+        <display value="Arterial duct (PDA) closure with transluminal plug device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0143"/>
+      <display value="Geste sur la valve pulmonaire"/>
+      <target>
+        <code value="12.13.00"/>
+        <display value="Pulmonary valvar procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0144"/>
+      <display value="Dilatation au ballon de la valve pulmonaire"/>
+      <target>
+        <code value="12.13.05"/>
+        <display value="Balloon dilation of pulmonary valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0145"/>
+      <display value="Dilatation au ballon d'une prothèse valvulaire pulmonaire"/>
+      <target>
+        <code value="12.13.06"/>
+        <display value="Balloon dilation of prosthetic pulmonary valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0146"/>
+      <display value="Perforation et dilatation percutanées de la valve pulmonaire"/>
+      <target>
+        <code value="12.13.09"/>
+        <display value="Pulmonary valvar transluminal perforation and dilation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0147"/>
+      <display value="Implantation percutanée d'une valve pulmonaire montée sur stent"/>
+      <target>
+        <code value="12.13.51"/>
+        <display value="Transluminal pulmonary valvar insertion with stent mounted valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0148"/>
+      <display value="Valve-in-valve pulmonaire par voie percutanée (réimplantation)"/>
+      <target>
+        <code value="12.13.52"/>
+        <display value="Transluminal pulmonary valvar insertion with stent mounted valve: reimplant (valve in valve)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0149"/>
+      <display value="Implantation percutanée d'une valve aortique montée sur stent"/>
+      <target>
+        <code value="12.13.81"/>
+        <display value="Transluminal aortic valvar insertion (TAVI) with stent mounted valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0150"/>
+      <display value="Valve-in-valve aortique par voie percutanée (réimplantation)"/>
+      <target>
+        <code value="12.13.82"/>
+        <display value="Transluminal aortic valvar insertion with stent mounted valve: reimplant (valve in valve)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0151"/>
+      <display value="Implantation d'une valve aortique par voie transapicale (approche hybride)"/>
+      <target>
+        <code value="12.13.84"/>
+        <display value="Transapical aortic valve implantation (hybrid approach)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0152"/>
+      <display value="Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting"/>
+      <target>
+        <code value="12.13.85"/>
+        <display value="Transluminal pulmonary valvar insertion with stent mounted valve including prestenting"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0153"/>
+      <display value="Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire"/>
+      <target>
+        <code value="12.13.86"/>
+        <display value="Transluminal pulmonary valvar prestenting procedure in preparation for valve replacement"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0154"/>
+      <display value="Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure"/>
+      <target>
+        <code value="12.13.87"/>
+        <display value="Transluminal pulmonary valvar insertion with stent mounted valve with intentional rupture of previous conduit"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0155"/>
+      <display value="Dilatation au ballon de la valve aortique"/>
+      <target>
+        <code value="12.16.05"/>
+        <display value="Balloon dilation of aortic valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0156"/>
+      <display value="Dilatation au ballon d'une prothèse valvulaire aortique"/>
+      <target>
+        <code value="12.16.09"/>
+        <display value="Balloon dilation of prosthetic aortic valve"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0157"/>
+      <display value="Perforation et dilatation percutanées de la valve aortique"/>
+      <target>
+        <code value="12.16.25"/>
+        <display value="Aortic valvar transluminal perforation and dilation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0158"/>
+      <display value="Fenestration percutanée du septum interatrial ou d'un tunnel atrial"/>
+      <target>
+        <code value="12.01.47"/>
+        <display value="Transluminal fenestration of atrial septum-tunnel"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0159"/>
+      <display value="Approche hybride stade 1 : cerclage bilatéral des artères pulmonaires et stent du canal artériel par voie percutanée"/>
+      <target>
+        <code value="12.10.04"/>
+        <display value="Hybrid approach 'Stage 1': application of bilateral pulmonary arterial bands &amp; transcatheter placement of stent in arterial duct"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0160"/>
+      <display value="Stratégie hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie)"/>
+      <target>
+        <code value="12.20.21"/>
+        <display value="Hypoplastic left heart syndrome hybrid strategy (transcatheter &amp; surgery)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0161"/>
+      <display value="Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse"/>
+      <target>
+        <code value="12.30.21"/>
+        <display value="Right atrial septum-tunnel fenestration closure with transluminal device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0162"/>
+      <display value="Complétion percutanée de la dérivation cavo-pulmonaire totale par stent couvert de la veine cave inférieure à la veine cave supérieure"/>
+      <target>
+        <code value="12.30.60"/>
+        <display value="Completion of total cavopulmonary connection (TCPC) using transcatheter inferior to superior caval vein covered stent"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0163"/>
+      <display value="Fermeture percutanée d'une communication interventriculaire par prothèse"/>
+      <target>
+        <code value="12.08.07"/>
+        <display value="Ventricular septal defect (VSD) closure with transluminal device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0164"/>
+      <display value="Fenestration percutanée d'un patch de communication interventriculaire"/>
+      <target>
+        <code value="12.08.20"/>
+        <display value="Transluminal fenestration of ventricular septal defect (VSD) patch"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0165"/>
+      <display value="Fermeture peropératoire d'une communication interventriculaire par dispositif (approche hybride)"/>
+      <target>
+        <code value="12.08.28"/>
+        <display value="Intraoperative ventricular septal defect (VSD) closure with transluminal device (hybrid approach)"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0166"/>
+      <display value="Création percutanée d'une communication interventriculaire"/>
+      <target>
+        <code value="12.08.65"/>
+        <display value="Transluminal interventricular communication creation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0167"/>
+      <display value="Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse"/>
+      <target>
+        <code value="12.01.06"/>
+        <display value="Atrial septal defect (ASD) secundum closure with transluminal device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0168"/>
+      <display value="Fermeture percutanée d'un foramen ovale perméable par prothèse"/>
+      <target>
+        <code value="12.01.07"/>
+        <display value="Patent foramen ovale (PFO) closure with transluminal device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0169"/>
+      <display value="Fermeture percutanée d'une communication interatriale de type sinus venosus par stent couvert"/>
+      <target>
+        <code value="12.01.88"/>
+        <display value="Sinus venosus defect closure using transluminal covered stent"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0170"/>
+      <display value="Fermeture percutanée d'une communication interatriale par prothèse"/>
+      <target>
+        <code value="12.01.98"/>
+        <display value="Interatrial communication closure with transluminal device"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0171"/>
+      <display value="Dilatation au ballon de la voie d'éjection du ventricule gauche"/>
+      <target>
+        <code value="12.07.07"/>
+        <display value="Balloon dilation of left ventricular outflow tract"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0172"/>
+      <display value="Levée d'obstacle de la voie d'éjection du ventricule gauche"/>
+      <target>
+        <code value="12.07.13"/>
+        <display value="Left ventricular outflow tract obstruction relief"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0173"/>
+      <display value="Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée"/>
+      <target>
+        <code value="12.07.19"/>
+        <display value="Left ventricular outflow tract obstruction relief by transcatheter coronary chemical ablation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0174"/>
+      <display value="Geste sur le ventricule gauche"/>
+      <target>
+        <code value="12.07.26"/>
+        <display value="Left ventricular procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0175"/>
+      <display value="Dilatation au ballon de la voie d'éjection du ventricule droit"/>
+      <target>
+        <code value="12.06.05"/>
+        <display value="Balloon dilation of right ventricular outflow tract"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0176"/>
+      <display value="Pose de stent dans la voie d'éjection du ventricule droit"/>
+      <target>
+        <code value="12.06.18"/>
+        <display value="Stent placement in right ventricular outflow tract"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0177"/>
+      <display value="Biopsie ventriculaire droite par voie percutanée"/>
+      <target>
+        <code value="12.06.25"/>
+        <display value="Transluminal right ventricular biopsy"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0178"/>
+      <display value="Geste sur le ventricule droit"/>
+      <target>
+        <code value="12.06.26"/>
+        <display value="Right ventricular procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0179"/>
+      <display value="Levée d'obstacle de la voie d'éjection du ventricule droit"/>
+      <target>
+        <code value="12.06.41"/>
+        <display value="Right ventricular outflow tract obstruction relief"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0180"/>
+      <display value="Redilatation d'un stent de la voie d'éjection native du ventricule droit"/>
+      <target>
+        <code value="12.06.95"/>
+        <display value="Stent redilation in native right ventricular outflow tract"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0181"/>
+      <display value="Péricardiocentèse percutanée"/>
+      <target>
+        <code value="12.32.43"/>
+        <display value="Pericardiocentesis: percutaneous transcatheter"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0182"/>
+      <display value="Embolectomie percutanée de l'arbre artériel pulmonaire"/>
+      <target>
+        <code value="12.15.49"/>
+        <display value="Transluminal embolectomy from pulmonary tree"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0183"/>
+      <display value="Embolisation lymphatique percutanée"/>
+      <target>
+        <code value="12.49.50"/>
+        <display value="Percutaneous lymphatic embolisation"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0184"/>
+      <display value="Redilatation de stent avec fracture volontaire du stent"/>
+      <target>
+        <code value="12.45.46"/>
+        <display value="Stent redilation with intentional stent fracture"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0185"/>
+      <display value="Extraction percutanée d'un dispositif ou d'un corps étranger"/>
+      <target>
+        <code value="12.45.04"/>
+        <display value="Transluminal retrieval of device or foreign body"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0186"/>
+      <display value="Geste percutané pour complication du cathétérisme"/>
+      <target>
+        <code value="12.45.30"/>
+        <display value="Transluminal procedure for catheterisation complication"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0187"/>
+      <display value="Retrait chirurgical d'un dispositif"/>
+      <target>
+        <code value="12.45.45"/>
+        <display value="Removal of device from body: surgical"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+    <element>
+      <code value="TAUSSIG-PROC-0188"/>
+      <display value="Geste sur une veine systémique"/>
+      <target>
+        <code value="12.00.30"/>
+        <display value="Systemic vein procedure"/>
+        <equivalence value="equivalent"/>
+        <comment value="origine du concept"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

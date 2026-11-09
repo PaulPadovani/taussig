@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Exemple technique — TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple Procedure: Exemple technique — TAUSSIG — Abord vasculaire
 
@@ -10,13 +10,15 @@ Balise:
 
 **Taille d'introducteur**: 5 French (Détails : code UCUM[Ch] = '[Ch]')
 
-**partOf**: [Procedure : extension = false; status = unknown; performed[x] = 2026-01-01](Procedure-ex-taussig-catheterization.md)
+**partOf**: [Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques](Procedure-ex-taussig-catheterization.md)
 
 **status**: Unknown
 
 **code**: Artériel fémoral
 
 **subject**: [Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01](Patient-ex-taussig-patient.md)
+
+**outcome**: réussi(e)
 
 
 
@@ -58,6 +60,12 @@ Balise:
   },
   "subject" : {
     "reference" : "Patient/ex-taussig-patient"
+  },
+  "outcome" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385669000"
+    }]
   }
 }
 

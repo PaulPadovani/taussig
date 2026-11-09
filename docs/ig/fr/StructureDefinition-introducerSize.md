@@ -1,4 +1,4 @@
-# Taille d'introducteur - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Taille d'introducteur - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Extension: Taille d'introducteur (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-introducerSize.
   "resourceType" : "StructureDefinition",
   "id" : "introducerSize",
   "url" : "https://taussig/fhir/StructureDefinition/introducerSize",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "IntroducerSize",
   "title" : "Taille d'introducteur",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Calibre de l'introducteur (French/Charrière).",
   "jurisdiction" : [{
@@ -98,6 +98,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-introducerSize.
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "short" : "Taille d'introducteur",
       "type" : [{
         "code" : "Quantity"
       }]

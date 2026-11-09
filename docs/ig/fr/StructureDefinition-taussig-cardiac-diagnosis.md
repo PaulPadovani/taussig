@@ -1,9 +1,10 @@
-# TAUSSIG — Diagnostic cardiaque congénital - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Diagnostic cardiaque congénital - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Diagnostic cardiaque congénital ( Expérimental ) 
 
 **Utilisations:**
 
+* Référence ce Profil: [Diagnostic congénital d'origine](StructureDefinition-relatedDiagnosis.md), [TAUSSIG — Cathétérisme cardiaque (acte pivot)](StructureDefinition-taussig-catheterization.md) and [TAUSSIG — Geste interventionnel](StructureDefinition-taussig-interventional-gesture.md)
 * Exemples pour ce/t/te Profil: [Condition/ex-taussig-cardiac-diagnosis](Condition-ex-taussig-cardiac-diagnosis.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-cardiac-diagnosis)
@@ -65,12 +66,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
   "resourceType" : "StructureDefinition",
   "id" : "taussig-cardiac-diagnosis",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-diagnosis",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigCardiacDiagnosis",
   "title" : "TAUSSIG — Diagnostic cardiaque congénital",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Diagnostic congénital (substrat figé). Double codage CIM-11 (classification, primaire) + IPCCC (précision clinique) ; CIM-10 dérivé, ECHSA optionnel. Le verrouillage (is_locked) est porté par verificationStatus=confirmed + Provenance.recorded.",
   "jurisdiction" : [{
@@ -145,7 +146,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.verificationStatus",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.verificationStatus",
+      "label" : "Statut du diagnostic (confirmé, provisoire…)",
+      "short" : "Statut du diagnostic (confirmé, provisoire…)",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -155,6 +162,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     {
       "id" : "Condition.code",
       "path" : "Condition.code",
+      "label" : "Diagnostic cardiaque congénital",
+      "short" : "Diagnostic cardiaque congénital",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
@@ -175,8 +184,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:icd11",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "icd11",
+      "label" : "Code CIM-11",
+      "short" : "Code CIM-11",
       "min" : 0,
       "max" : "1",
       "mustSupport" : true,
@@ -193,8 +208,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:ipccc",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "ipccc",
+      "label" : "Code IPCCC",
+      "short" : "Code IPCCC",
       "min" : 0,
       "max" : "1",
       "binding" : {
@@ -210,8 +231,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:cim10",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "cim10",
+      "label" : "Code CIM-10",
+      "short" : "Code CIM-10",
       "min" : 0,
       "max" : "1"
     },
@@ -223,8 +250,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.coding:echsa",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.coding",
       "sliceName" : "echsa",
+      "label" : "Code ECHSA",
+      "short" : "Code ECHSA",
       "min" : 0,
       "max" : "1"
     },
@@ -236,7 +269,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-cardiac
     },
     {
       "id" : "Condition.code.text",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Condition.code.text",
+      "label" : "Libellé du diagnostic (tel qu'écrit)",
+      "short" : "Libellé du diagnostic (tel qu'écrit)",
       "mustSupport" : true
     }]
   }

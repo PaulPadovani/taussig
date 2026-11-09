@@ -1,4 +1,4 @@
-# IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived) 
 
@@ -28,7 +28,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "IPCCC — International Paediatric and Congenital Cardiac Code (Long List v5.0, AEPC-derived)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Représentation FHIR des codes, libellés et définitions IPCCC importés dans TAUSSIG ; contenu source conservé.",
   "jurisdiction" : [{

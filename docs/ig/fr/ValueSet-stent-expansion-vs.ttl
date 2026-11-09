@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/stent-expansion-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "stent-expansion-vs"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs stent-expansion-vs</b></p><a name=\"stent-expansion-vs\"> </a><a name=\"hcstent-expansion-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-stent-expansion.html\"><code>https://taussig/fhir/CodeSystem/stent-expansion</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version ?0.8.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/stent-expansion-vs"] ;
+  fhir:ValueSet.version [ fhir:value "0.8.0"] ;
+  fhir:ValueSet.name [ fhir:value "StentExpansionVS"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Liste — Mode d'expansion d'un stent"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Stent expansible au ballon ou auto-expansible."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://taussig/fhir/CodeSystem/stent-expansion" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/stent-expansion-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Événement indésirable - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Événement indésirable ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
   "resourceType" : "StructureDefinition",
   "id" : "taussig-adverse-event",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-adverse-event",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigAdverseEvent",
   "title" : "TAUSSIG — Événement indésirable",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Complication péri-procédurale. Codage SNOMED (event) + IPCCC/CIM-10/ECHSA en codings parallèles ; gravité 1-5 selon échelle validée (extensions) ; attribution & prise en charge en extensions (réalisation R4).",
   "jurisdiction" : [{
@@ -114,8 +114,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.extension:severityScale",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.extension",
       "sliceName" : "severityScale",
+      "label" : "Échelle de gravité",
+      "short" : "Échelle de gravité",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -126,8 +132,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.extension:severityLevel",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.extension",
       "sliceName" : "severityLevel",
+      "label" : "Grade de gravité (1 à 5)",
+      "short" : "Grade de gravité (1 à 5)",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -138,8 +150,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.extension:attribution",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.extension",
       "sliceName" : "attribution",
+      "label" : "Cause imputée",
+      "short" : "Cause imputée",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -150,8 +168,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.extension:management",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.extension",
       "sliceName" : "management",
+      "label" : "Prise en charge",
+      "short" : "Prise en charge",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -161,13 +185,35 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       "mustSupport" : true
     },
     {
+      "id" : "AdverseEvent.extension:procedure",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "relation"
+      }],
+      "path" : "AdverseEvent.extension",
+      "sliceName" : "procedure",
+      "label" : "Acte de survenue (cathétérisme ou geste)",
+      "short" : "Acte de survenue (cathétérisme ou geste)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://taussig/fhir/StructureDefinition/adverseEventProcedure"]
+      }],
+      "mustSupport" : true
+    },
+    {
       "id" : "AdverseEvent.actuality",
       "path" : "AdverseEvent.actuality",
+      "label" : "Survenu ou potentiel",
+      "short" : "Survenu ou potentiel",
       "mustSupport" : true
     },
     {
       "id" : "AdverseEvent.event",
       "path" : "AdverseEvent.event",
+      "label" : "Événement indésirable",
+      "short" : "Événement indésirable",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
@@ -187,8 +233,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.event.coding:snomed",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "snomed",
+      "label" : "Code SNOMED CT",
+      "short" : "Code SNOMED CT",
       "min" : 0,
       "max" : "1",
       "mustSupport" : true
@@ -201,8 +253,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.event.coding:ipccc",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "ipccc",
+      "label" : "Code IPCCC",
+      "short" : "Code IPCCC",
       "min" : 0,
       "max" : "1",
       "binding" : {
@@ -218,8 +276,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.event.coding:icd10",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "icd10",
+      "label" : "Code CIM-10",
+      "short" : "Code CIM-10",
       "min" : 0,
       "max" : "1"
     },
@@ -231,8 +295,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
     },
     {
       "id" : "AdverseEvent.event.coding:echsa",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.event.coding",
       "sliceName" : "echsa",
+      "label" : "Code ECHSA",
+      "short" : "Code ECHSA",
       "min" : 0,
       "max" : "1"
     },
@@ -243,8 +313,28 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-adverse
       "patternUri" : "https://taussig/fhir/CodeSystem/echsa"
     },
     {
+      "id" : "AdverseEvent.event.text",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
+      "path" : "AdverseEvent.event.text",
+      "label" : "Libellé de l'EI (tel qu'écrit)",
+      "short" : "Libellé de l'EI (tel qu'écrit)"
+    },
+    {
       "id" : "AdverseEvent.outcome",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "AdverseEvent.outcome",
+      "label" : "Évolution de l'EI",
+      "short" : "Évolution de l'EI",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",

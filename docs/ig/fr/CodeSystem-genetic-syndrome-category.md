@@ -1,4 +1,4 @@
-# TAUSSIG — Catégorie de syndrome génétique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Catégorie de syndrome génétique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Catégorie de syndrome génétique (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "genetic-syndrome-category",
   "url" : "https://taussig/fhir/CodeSystem/genetic-syndrome-category",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "GeneticSyndromeCategory",
   "title" : "TAUSSIG — Catégorie de syndrome génétique",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Catégorie étiologique d'un syndrome génétique.",
   "jurisdiction" : [{

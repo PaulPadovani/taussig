@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/DeviceUseStatement/ex-taussig-implant-use> a fhir:DeviceUseStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ex-taussig-implant-use"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://taussig/fhir/StructureDefinition/taussig-implant-use" ;
+       fhir:index -1 ;
+       fhir:link <https://taussig/fhir/StructureDefinition/taussig-implant-use>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://taussig/fhir/tags" ] ;
+       fhir:Coding.code [ fhir:value "synthetic-technical-example" ]
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DeviceUseStatement ex-taussig-implant-use</b></p><a name=\"ex-taussig-implant-use\"> </a><a name=\"hcex-taussig-implant-use\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-implant-use.html\">TAUSSIG — Pose et port d'un implant</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>status</b>: Active</p><p><b>subject</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p><p><b>derivedFrom</b>: <a href=\"Procedure-ex-taussig-interventional-gesture.html\">Procedure Pose de stent dans l'artère pulmonaire gauche</a></p><p><b>timing</b>: 2026-01-01 --&gt; (en cours)</p><p><b>device</b>: <a href=\"Device-ex-taussig-cardiac-implant.html\">Device : extension = Fonctionnel (TAUSSIG — État clinique d'un implant#functional),2026-01-01,true,-&gt;Device; manufacturer = Fabricant fictif; lotNumber = LOT-EXEMPLE-01; serialNumber = SN-EXEMPLE-0001; type = Stent</a></p></div>"
+  ] ;
+  fhir:DeviceUseStatement.status [ fhir:value "active"] ;
+  fhir:DeviceUseStatement.subject [
+     fhir:link <https://taussig/fhir/Patient/ex-taussig-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/ex-taussig-patient" ]
+  ] ;
+  fhir:DeviceUseStatement.derivedFrom [
+     fhir:index -1 ;
+     fhir:link <https://taussig/fhir/Procedure/ex-taussig-interventional-gesture> ;
+     fhir:Reference.reference [ fhir:value "Procedure/ex-taussig-interventional-gesture" ]
+  ] ;
+  fhir:DeviceUseStatement.timingPeriod [
+     fhir:Period.start [ fhir:value "2026-01-01"^^xsd:date ]
+  ] ;
+  fhir:DeviceUseStatement.device [
+     fhir:link <https://taussig/fhir/Device/ex-taussig-cardiac-implant> ;
+     fhir:Reference.reference [ fhir:value "Device/ex-taussig-cardiac-implant" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/DeviceUseStatement/ex-taussig-implant-use.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

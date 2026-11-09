@@ -4,8 +4,8 @@ Cerclage de l'artère pulmonaire,,,SP-2010-5640
 Anastomose systémico-pulmonaire de Blalock-Taussig modifiée (MBTS),,,SP-2010-5590
 Intervention de Norwood,,,SP-2010-4870
 Anastomose cavopulmonaire unidirectionnelle (Glenn unidirectionnel),,,SP-2010-5680
-Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel),,,SP-2010-5670
-Anastomose cavopulmonaire bidirectionnelle bilatérale,,,SP-2010-5690
+Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel),,,SP-2010-5670 ; DIAG-2024-1
+Anastomose cavopulmonaire bidirectionnelle bilatérale,,,SP-2010-5690 ; DIAG-2024-2
 "Fontan (TCPC), conduit extracardiaque, fenestré",,,SP-2010-5000
 "Fontan (TCPC), conduit extracardiaque, non fenestré",,,SP-2010-5010
 "Fontan (TCPC), tunnel latéral, fenestré",,,SP-2010-4970
@@ -19,7 +19,7 @@ Anomalie acquise du sinus coronaire,10.30.16,I87.1,
 Anomalie acquise des veines pulmonaires,10.24.00,I28.9,
 Anomalie acquise de l'oreillette droite,15.10.10,I51.8,
 Anomalie acquise de l'oreillette gauche,15.10.20,I51.8,
-Communication interatriale résiduelle (CIA),15.10.63,Q21.1,
+Communication interatriale résiduelle (CIA),15.10.63,Q21.1,DIAG-2019-17
 Régurgitation tricuspide résiduelle,15.11.03,Q22.8,DIAG037
 Sténose mitrale résiduelle,15.12.01,Q23.2,DIAG164
 Régurgitation mitrale résiduelle,15.12.03,Q23.3,DIAG067
@@ -50,8 +50,8 @@ Complication post-procédurale de la voie d'éjection du ventricule gauche,15.21
 Sténose sous-aortique acquise,10.16.86,I51.8,DIAG051
 Sténose sous-pulmonaire acquise,10.16.88,I51.8,DIAG166
 Communication interventriculaire résiduelle (CIV),15.22.02,Q21.0,
-Cardiomyopathie restrictive,10.10.10,I42.5,DIAG070
-Anomalie acquise de l'arbre artériel pulmonaire,10.13.59,I28.8,
+Cardiomyopathie restrictive,10.10.10,I42.5,DIAG070 ; DIAG-2023-3
+Anomalie acquise de l'arbre artériel pulmonaire,10.13.59,I28.8,DIAG118
 Sténose post-procédurale du tronc de l'artère pulmonaire,15.32.02,I28.8,DIAG042
 Sténose résiduelle de l'artère pulmonaire droite,15.32.23,Q25.6,DIAG043
 Sténose résiduelle de l'artère pulmonaire gauche,15.32.43,Q25.6,DIAG043
@@ -62,7 +62,7 @@ Dilatation acquise de l'aorte ascendante et/ou de la racine aortique,10.14.82,I7
 Dilatation de la racine aortique,09.16.13,Q25.4,DIAG102
 Dissection aortique,10.14.51,I71.0,DIAG103
 Anévrisme aortique,10.14.50,I71.2,DIAG102
-Coarctation aortique résiduelle,15.37.05,Q25.1,DIAG095
+Coarctation aortique résiduelle,15.37.05,Q25.1,DIAG095 ; DIAG-2024-7
 Complication coronaire post-procédurale,15.41.00,I77.8,DIAG161
 Persistance résiduelle du canal artériel (PDA),15.39.02,Q25.0,DIAG099
 Complication liée à un conduit cardiaque,15.55.00,T82.9,DIAG048
@@ -71,5 +71,38 @@ Obstruction partielle d'anastomose systémico-pulmonaire,15.56.01,T82.5,DIAG-201
 Obstruction complète d'anastomose systémico-pulmonaire,15.56.02,T82.5,DIAG-2010-2130
 Défaillance d'autogreffe pulmonaire,15.55.24,T82.8,DIAG124
 Circulation de Fontan défaillante,15.90.60,T81.8,
-Épanchement péricardique,10.08.31,I31.3,DIAG071
+Épanchement péricardique,10.08.31,I31.3,DIAG071 ; DIAG-2019-31
 Complication après transplantation cardiaque ou pulmonaire,15.95.00,I97.9,
+Sténose acquise des veines pulmonaires,10.24.02,I28.8,DIAG-2019-10
+Obstruction d'une veine systémique,10.30.09,I87.1,DIAG027
+Collatérale(s) veino-veineuse(s) systémique(s),04.00.06,Q26.8,DIAG-2024-5
+Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s),10.13.74,I77.8,DIAG-2024-6
+Fistules (malformations) artérioveineuses pulmonaires acquises,10.13.57,I28.0,DIAG127
+Cardiomyopathie dilatée,10.10.25,I42.0,DIAG-2023-1
+Cardiomyopathie hypertrophique,10.10.20,I42.2,DIAG-2023-2
+Cardiomyopathie hypertrophique obstructive du ventricule gauche,10.10.05,I42.1,DIAG-2023-4
+Myocardite (cardiomyopathie inflammatoire),10.07.90,I51.4,DIAG-2019-07
+Maladie de Kawasaki,10.09.01,M30.3,DIAG-2019-26
+Infarctus du myocarde,10.18.00,I21.9,DIAG125
+État après transplantation cardiaque,10.21.63,,DIAG175
+Maladie vasculaire pulmonaire irréversible,10.13.00,I27.8,DIAG167 ; DIAG130
+Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger),10.13.08,I27.8,DIAG130
+Trouble du rythme cardiaque,11.00.00,I49.9,DIAG109
+Fibrillation atriale,11.03.08,I48,DIAG-2019-14
+Flutter atrial,11.03.07,I48,DIAG-2019-15
+Trouble du rythme atrial,11.03.09,I49.8,DIAG-2019-16
+Trouble du rythme de la jonction atrioventriculaire,11.04.00,I49.8,DIAG-2010-2050
+Trouble du rythme ventriculaire,11.05.00,I49.8,DIAG-2010-2060
+Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White),11.07.01,I45.6,DIAG-2019-13
+Bloc atrioventriculaire,11.06.38,I44.3,DIAG151
+Bloc atrioventriculaire complet acquis,11.06.10,I44.2,DIAG110
+Indication de remplacement programmé d'un stimulateur cardiaque,11.12.61,T82.9,DIAG113
+Entéropathie exsudative post-procédurale,15.82.33,K90.4 / Y83.8,DIAG-2019-09
+Bronchite plastique post-procédurale,15.81.01,J98.0 / J95.8,DIAG-2019-08
+Chylothorax,10.08.16,J94.0,DIAG138
+Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur,15.51.47,T82.8,DIAG-2019-18 ; DIAG-2019-21
+Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur,15.51.50,T82.5,DIAG-2019-19 ; DIAG-2019-22
+Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur,15.50.03,T81.2 / Y60.5,DIAG-2019-20 ; DIAG-2019-23
+Corps étranger intracardiaque post-procédural,15.80.17,T81.8,DIAG-2019-24
+Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire),15.50.37,T82.8,DIAG-2019-25
+Hémorragie post-procédurale,15.02.00,T81.0,DIAG-2010-2070

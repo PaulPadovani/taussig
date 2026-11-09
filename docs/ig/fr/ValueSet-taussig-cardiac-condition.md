@@ -1,4 +1,4 @@
-# TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — CardiacCondition (lésions résiduelles/acquises/post-chir)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set des conditions cardiaques évolutives de la POC (distinct du diagnostic congénital figé) : 61 lésions résiduelles/acquises codées en IPCCC, plus 13 états d'étape chirurgicale codés en ECHSA — l'IPCCC ne code pas l'état « status post » d'un montage (Fontan, Glenn, MBTS…), d'où un ValueSet multi-systèmes. ICD-10 = donnée dérivée (crossmap IPCCC). Le typage residual/acquired/post-chir est un choix clinicien à la saisie (CardiacCondition.condition_type), pas une propriété du code.",
   "jurisdiction" : [{
@@ -285,6 +285,138 @@
       {
         "code" : "15.95.00",
         "display" : "Complication after heart or lung transplant"
+      },
+      {
+        "code" : "10.24.02",
+        "display" : "Sténose acquise des veines pulmonaires"
+      },
+      {
+        "code" : "10.30.09",
+        "display" : "Obstruction d'une veine systémique"
+      },
+      {
+        "code" : "04.00.06",
+        "display" : "Collatérale(s) veino-veineuse(s) systémique(s)"
+      },
+      {
+        "code" : "10.13.74",
+        "display" : "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)"
+      },
+      {
+        "code" : "10.13.57",
+        "display" : "Fistules (malformations) artérioveineuses pulmonaires acquises"
+      },
+      {
+        "code" : "10.10.25",
+        "display" : "Cardiomyopathie dilatée"
+      },
+      {
+        "code" : "10.10.20",
+        "display" : "Cardiomyopathie hypertrophique"
+      },
+      {
+        "code" : "10.10.05",
+        "display" : "Cardiomyopathie hypertrophique obstructive du ventricule gauche"
+      },
+      {
+        "code" : "10.07.90",
+        "display" : "Myocardite (cardiomyopathie inflammatoire)"
+      },
+      {
+        "code" : "10.09.01",
+        "display" : "Maladie de Kawasaki"
+      },
+      {
+        "code" : "10.18.00",
+        "display" : "Infarctus du myocarde"
+      },
+      {
+        "code" : "10.21.63",
+        "display" : "État après transplantation cardiaque"
+      },
+      {
+        "code" : "10.13.00",
+        "display" : "Maladie vasculaire pulmonaire irréversible"
+      },
+      {
+        "code" : "10.13.08",
+        "display" : "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)"
+      },
+      {
+        "code" : "11.00.00",
+        "display" : "Trouble du rythme cardiaque"
+      },
+      {
+        "code" : "11.03.08",
+        "display" : "Fibrillation atriale"
+      },
+      {
+        "code" : "11.03.07",
+        "display" : "Flutter atrial"
+      },
+      {
+        "code" : "11.03.09",
+        "display" : "Trouble du rythme atrial"
+      },
+      {
+        "code" : "11.04.00",
+        "display" : "Trouble du rythme de la jonction atrioventriculaire"
+      },
+      {
+        "code" : "11.05.00",
+        "display" : "Trouble du rythme ventriculaire"
+      },
+      {
+        "code" : "11.07.01",
+        "display" : "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)"
+      },
+      {
+        "code" : "11.06.38",
+        "display" : "Bloc atrioventriculaire"
+      },
+      {
+        "code" : "11.06.10",
+        "display" : "Bloc atrioventriculaire complet acquis"
+      },
+      {
+        "code" : "11.12.61",
+        "display" : "Indication de remplacement programmé d'un stimulateur cardiaque"
+      },
+      {
+        "code" : "15.82.33",
+        "display" : "Entéropathie exsudative post-procédurale"
+      },
+      {
+        "code" : "15.81.01",
+        "display" : "Bronchite plastique post-procédurale"
+      },
+      {
+        "code" : "10.08.16",
+        "display" : "Chylothorax"
+      },
+      {
+        "code" : "15.51.47",
+        "display" : "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur"
+      },
+      {
+        "code" : "15.51.50",
+        "display" : "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur"
+      },
+      {
+        "code" : "15.50.03",
+        "display" : "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur"
+      },
+      {
+        "code" : "15.80.17",
+        "display" : "Corps étranger intracardiaque post-procédural"
+      },
+      {
+        "code" : "15.50.37",
+        "display" : "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)"
+      },
+      {
+        "code" : "15.02.00",
+        "display" : "Hémorragie post-procédurale"
       }]
     },
     {

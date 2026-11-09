@@ -1,4 +1,4 @@
-# TAUSSIG — Cibles CIM-10 de la correspondance IPCCC - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Cibles CIM-10 de la correspondance IPCCC - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Cibles CIM-10 de la correspondance IPCCC (Expérimental) 
 
@@ -30,7 +30,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "title" : "TAUSSIG — Cibles CIM-10 de la correspondance IPCCC",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Codes principaux et produits complémentaires de la table de correspondance normalisée. Leur existence est contrôlée contre le service terminologique ; cela ne prouve pas une équivalence clinique exacte.",
   "jurisdiction" : [{

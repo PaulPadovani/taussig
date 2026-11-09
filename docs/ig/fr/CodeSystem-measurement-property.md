@@ -1,4 +1,4 @@
-# TAUSSIG — Propriétés de mesure hémodynamique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Propriétés de mesure hémodynamique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Propriétés de mesure hémodynamique (Expérimental) 
 
@@ -24,7 +24,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "TAUSSIG — Propriétés de mesure hémodynamique",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe.",
   "jurisdiction" : [{
@@ -35,7 +35,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 19,
+  "count" : 22,
   "property" : [{
     "code" : "unit_ucum",
     "description" : "Unité UCUM canonique",
@@ -629,6 +629,78 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
     {
       "code" : "value_set",
       "valueString" : "https://taussig/fhir/ValueSet/taussig-regurgitation-grade"
+    }]
+  },
+  {
+    "code" : "lumen_diameter_minimal",
+    "display" : "Diamètre luminal minimal du segment traité",
+    "property" : [{
+      "code" : "family",
+      "valueString" : "Dimension anatomique"
+    },
+    {
+      "code" : "unit_ucum",
+      "valueString" : "mm"
+    },
+    {
+      "code" : "derivation",
+      "valueString" : "mesuré"
+    },
+    {
+      "code" : "site_dependent",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "value_type",
+      "valueString" : "Quantity"
+    }]
+  },
+  {
+    "code" : "lesion_length",
+    "display" : "Longueur de la lésion",
+    "property" : [{
+      "code" : "family",
+      "valueString" : "Dimension anatomique"
+    },
+    {
+      "code" : "unit_ucum",
+      "valueString" : "mm"
+    },
+    {
+      "code" : "derivation",
+      "valueString" : "mesuré"
+    },
+    {
+      "code" : "site_dependent",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "value_type",
+      "valueString" : "Quantity"
+    }]
+  },
+  {
+    "code" : "vessel_reference_diameter",
+    "display" : "Diamètre du vaisseau de référence ou d'aval",
+    "property" : [{
+      "code" : "family",
+      "valueString" : "Dimension anatomique"
+    },
+    {
+      "code" : "unit_ucum",
+      "valueString" : "mm"
+    },
+    {
+      "code" : "derivation",
+      "valueString" : "mesuré"
+    },
+    {
+      "code" : "site_dependent",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "value_type",
+      "valueString" : "Quantity"
     }]
   }]
 }

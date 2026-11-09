@@ -10,7 +10,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1</title>
+    <title> - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,7 +49,6 @@
 	  <script type="text/javascript" src="assets/js/prism.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:""}
     h3,h4,h5,h6{--heading-prefix:""}</style>
@@ -62,7 +61,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">TAUSSIG — Implementation Guide (POC Cathétérisme)</span>
             <br/>
-            <span style="display:inline-block;">0.6.1 - trial-use
+            <span style="display:inline-block;">0.8.0 - trial-use
 
 
 
@@ -135,7 +134,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.6.1) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">TAUSSIG — Implementation Guide (POC Cathétérisme) - version de développement local (intégration continue v0.8.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://taussig/fhir/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -195,7 +194,7 @@
           
 
             à date du 
-2026-10-31
+2026-11-09
 
           
         
@@ -221,12 +220,12 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;fr\&quot; xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; lang=\&quot;fr\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : ImplementationGuide taussig.poc&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;taussig.poc\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctaussig.poc\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Langue : fr&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;TAUSSIGPOC&lt;/h2&gt;&lt;p&gt;L'URL officielle pour ce guide d'implémentation est : &lt;/p&gt;&lt;pre&gt;https://taussig/fhir/ImplementationGuide/taussig.poc&lt;/pre&gt;&lt;div&gt;&lt;p&gt;Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG.&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.url">url</a>" : "https://taussig/fhir/ImplementationGuide/taussig.poc",
-  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.version">version</a>" : "0.6.1",
+  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.version">version</a>" : "0.8.0",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.name">name</a>" : "TAUSSIGPOC",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.title">title</a>" : "TAUSSIG — Implementation Guide (POC Cathétérisme)",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.experimental">experimental</a>" : true,
-  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.date">date</a>" : "2026-10-31T15:29:53+01:00",
+  "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.date">date</a>" : "2026-11-09T08:39:58+01:00",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "Projet TAUSSIG",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.description">description</a>" : "Profils, extensions et terminologies FHIR R4 de recherche pour représenter le cathétérisme cardiaque congénital selon le modèle TAUSSIG.",
   "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.jurisdiction">jurisdiction</a>" : [
@@ -656,6 +655,20 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-adverseEventProcedure.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/adverseEventProcedure"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Acte de survenue de l'EI",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Cathétérisme ou geste interventionnel pendant lequel l'événement indésirable est survenu. Contexte de survenue, sans jugement d'imputabilité (porté par l'extension adverseEventAttribution).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:extension"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           <a href="StructureDefinition-ecmoSupport.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/ecmoSupport"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Assistance ECMO",
@@ -684,10 +697,52 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-procedureUrgency.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/procedureUrgency"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Caractère urgent du cathétérisme",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Programmé, urgent, en urgence ou de sauvetage (décision I3).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:extension"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-annotationClass.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/annotationClass"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Classe d'annotation",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Rôle de l'élément dans l'annotation de comptes rendus. Posée sur les ElementDefinition des profils TAUSSIG ; générée depuis le dictionnaire (03-ig/build_annotation_classes.py).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:extension"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           <a href="StructureDefinition-measurementCondition.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/measurementCondition"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Condition de mesure",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Condition physiologique/pharmacologique pendant la mesure.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:extension"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-implantStatusDate.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/implantStatusDate"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Date de l'état de l'implant",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Date à laquelle l'état clinique courant de l'implant (implantClinicalStatus) a été constaté. Un seul état courant par implant ; l'historique des états relève de v5 (ImplantStatusEvent).",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -716,7 +771,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Dispositif antérieur fictif — exemple technique",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Cible distincte du lien previousImplant ; illustre uniquement le chaînage de deux identités de dispositif.",
-        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : true
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleCanonical</a>" : "https://taussig/fhir/StructureDefinition/taussig-cardiac-implant"
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
@@ -941,6 +996,20 @@
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Exemple technique — TAUSSIG — Poids de naissance",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleCanonical</a>" : "https://taussig/fhir/StructureDefinition/taussig-birth-weight-observation"
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "DeviceUseStatement"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="DeviceUseStatement-ex-taussig-implant-use.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "DeviceUseStatement/ex-taussig-implant-use"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Exemple technique — TAUSSIG — Pose et port d'un implant",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Exemple entièrement fictif de sérialisation du profil. Les valeurs servent au contrôle technique ; cet exemple ne décrit aucun patient du corpus et ne constitue pas une validation clinique.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleCanonical</a>" : "https://taussig/fhir/StructureDefinition/taussig-implant-use"
       },
       {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
@@ -1174,6 +1243,48 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-procedureRoomPeriod.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/procedureRoomPeriod"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Période en salle de cathétérisme",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Entrée et sortie de salle ; la période peau-à-peau est dans Procedure.performedPeriod (décision I2).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:extension"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-gestureSequence.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/gestureSequence"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Rang du geste dans le cathétérisme",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Rang du geste (1, 2, 3…) dans l'ordre de réalisation au cours du cathétérisme (décision P7).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:extension"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-attemptResult.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/attemptResult"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Résultat de la tentative",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Résultat de la tentative avec ce matériel (réutilise l'énumération du résultat de geste). Porté côté geste, sur Procedure.usedReference (audit M1).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:extension"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           <a href="StructureDefinition-indicationRole.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/indicationRole"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "Rôle de l'indication",
@@ -1338,6 +1449,20 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-procedure-urgency.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/procedure-urgency"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Caractère urgent du cathétérisme",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Caractère urgent du cathétérisme, en 4 niveaux d'après le statut de procédure du registre NCDR IMPACT (dictionnaire v2.0.1, élément 5020) ; définitions résumées en français (décision I3).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
           }
         ],
@@ -1359,7 +1484,7 @@
           <a href="StructureDefinition-taussig-catheterization.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/taussig-catheterization"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Cathétérisme cardiaque (acte pivot)",
-        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; codage SNOMED (interop) + CCAM (administratif FR) + ECHSA (registre). Dosimétrie/anthropométrie portées par Observations liées.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Acte de cathétérisme. Intention (diagnostique/interventionnel/hybride) en category ; acte codé par un concept TAUSSIG (CodeSystem taussig-procedure), dont SNOMED (interop), CCAM (administratif FR), IPCCC et ECHSA (registre) sont déduits par ConceptMap ; opérateurs, horodatages salle et peau, caractère urgent. Dosimétrie/anthropométrie portées par Observations liées.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -1402,6 +1527,34 @@
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Cibles CIM-10 de la correspondance IPCCC",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Codes principaux et produits complémentaires de la table de correspondance normalisée. Leur existence est contrôlée contre le service terminologique ; cela ne prouve pas une équivalence clinique exacte.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-annotation-class.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/annotation-class"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Classe d'annotation",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-annotation-class-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/annotation-class-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Classes d'annotation",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Les 5 classes d'annotation des éléments de profil.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -1548,6 +1701,20 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-stent-covering.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/stent-covering"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Couverture d'un stent",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Stent nu ou couvert (décision M2).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:resource"
           }
         ],
@@ -1681,7 +1848,7 @@
           <a href="StructureDefinition-taussig-interventional-gesture.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/taussig-interventional-gesture"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Geste interventionnel",
-        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Geste interventionnel ciblé (unité de l'effet pre/post). Quadruple codage IPCCC (pivot) + SNOMED (interop) + CCAM + ECHSA ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Geste interventionnel ciblé (unité de l'effet pre/post). Codé par un concept TAUSSIG (188 concepts, Short List IPCCC du cathétérisme) ; IPCCC, SNOMED (interop), CCAM et ECHSA en sont déduits par ConceptMap ; structure cible en bodySite (SNOMED sites de mesure) ; résultat en outcome ; rang dans le cathétérisme.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -1696,6 +1863,76 @@
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Gestes de cathétérisme (IPCCC)",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Axe IPCCC des gestes de cathétérisme congénital retenus pour la POC (gestes diagnostiques, interventionnels et hybrides). Remplace, pour l'autocomplétion, la liaison à la short list IPCCC de 1 822 codes, inexploitable comme menu.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-taussig-procedure.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/taussig-procedure"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Gestes et actes de cathétérisme",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Terminologie d'interface TAUSSIG : 188 concepts de gestes et d'actes de cathétérisme cardiaque congénital (Short List IPCCC de la branche cathétérisme, Long List AEPC v5.0), à identifiant neutre jamais réutilisé. Le clinicien choisit le libellé ; les codes IPCCC, CCAM, ECHSA et SNOMED sont déduits par les ConceptMaps taussig-procedure-to-*. Libellés : traduction fidèle du libellé IPCCC.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ConceptMap"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ConceptMap-taussig-procedure-to-ccam.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ConceptMap/taussig-procedure-to-ccam"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Gestes TAUSSIG vers CCAM",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Correspondance des 188 concepts TAUSSIG de gestes vers CCAM. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ConceptMap"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ConceptMap-taussig-procedure-to-echsa.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ConceptMap/taussig-procedure-to-echsa"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Gestes TAUSSIG vers ECHSA",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Correspondance des 188 concepts TAUSSIG de gestes vers ECHSA. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ConceptMap"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ConceptMap-taussig-procedure-to-ipccc.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ConceptMap/taussig-procedure-to-ipccc"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Gestes TAUSSIG vers IPCCC",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Correspondance des 188 concepts TAUSSIG de gestes vers IPCCC. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ConceptMap"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ConceptMap-taussig-procedure-to-snomed.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ConceptMap/taussig-procedure-to-snomed"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Gestes TAUSSIG vers SNOMED",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Correspondance des 188 concepts TAUSSIG de gestes vers SNOMED. Équivalence vue depuis le concept TAUSSIG (source). « unmatched » : aucun code ne convient. Les correspondances « proposé v6 » restent à vérifier.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -1814,6 +2051,90 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-taussig-procedure.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/taussig-procedure"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Liste des gestes et actes de cathétérisme",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Les 188 concepts TAUSSIG de gestes et d'actes de cathétérisme.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-procedure-urgency-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/procedure-urgency-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Liste — Caractère urgent du cathétérisme",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Les 4 niveaux d'urgence du cathétérisme.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-stent-covering-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/stent-covering-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Liste — Couverture d'un stent",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Stent nu ou couvert.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-stent-expansion-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/stent-expansion-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Liste — Mode d'expansion d'un stent",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Stent expansible au ballon ou auto-expansible.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-stent-coating-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/stent-coating-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Liste — Revêtement actif d'un stent",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Stent actif ou non.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-operator-role-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/operator-role-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Liste — Rôles de l'opérateur",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Rôles d'un praticien dans la réalisation du cathétérisme.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:resource"
           }
         ],
@@ -1888,6 +2209,20 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-stent-expansion.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/stent-expansion"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Mode d'expansion d'un stent",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Stent expansible au ballon ou auto-expansible (décision M2).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           <a href="CodeSystem-ventilation-type.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/ventilation-type"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Mode ventilatoire",
@@ -1906,6 +2241,20 @@
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Modes ventilatoires",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Jeu de valeurs « TAUSSIG — Modes ventilatoires » utilisé par les profils TAUSSIG.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-periprocedural-medication-atc-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/periprocedural-medication-atc-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Médicaments péri-procéduraux (ATC)",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Molécules d'antibioprophylaxie et d'anticoagulation per-procédurale les plus attendues dans un compte rendu de cathétérisme pédiatrique. Liste courte proposée, à valider cliniquement.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -2056,6 +2405,20 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="StructureDefinition-taussig-implant-use.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/taussig-implant-use"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Pose et port d'un implant",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Implant porté par le patient : site anatomique d'implantation, date de pose (début de la période de port) et geste TAUSSIG qui l'a posé, quand il est tracé. Pour un implant posé ailleurs (implantedExternally), le geste source est absent.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "StructureDefinition:resource"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           <a href="StructureDefinition-taussig-practitioner.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/taussig-practitioner"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Praticien",
@@ -2094,6 +2457,20 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-device-property.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/device-property"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Propriété codée d'un dispositif",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Type de propriété codée portée par Device.property (décision M2).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
           }
         ],
@@ -2116,6 +2493,20 @@
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Propriétés de mesure hémodynamique",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-stent-coating.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/stent-coating"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Revêtement actif d'un stent",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Stent actif (à élution médicamenteuse) ou non (décision M2).",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -2182,6 +2573,20 @@
           }
         ],
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-operator-role.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/operator-role"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Rôle de l'opérateur",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Rôle d'un praticien dans la réalisation du cathétérisme (décision I1).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           <a href="CodeSystem-periprocedural-medication-purpose.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/periprocedural-medication-purpose"
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Rôle du médicament péri-procédural",
@@ -2228,6 +2633,20 @@
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Sites anatomiques de mesure/geste (validé)",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Working set des sites de cathétérisme validé cliniquement (cavités, valves, septa, gros vaisseaux, abords, sites post-chirurgicaux). Codes SNOMED CT + 1 code TAUSSIG-local (connexion cavopulmonaire inférieure, absente de SNOMED).",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-puncture-success-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/puncture-success-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Succès de la ponction vasculaire",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Ponction réussie ou non réussie (SNOMED CT, qualificatifs de résultat).",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -2346,6 +2765,20 @@
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "CodeSystem"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="CodeSystem-procedure-outcome-type.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "CodeSystem/procedure-outcome-type"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Type de résultat global de procédure",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
           }
         ],
@@ -2410,6 +2843,20 @@
         },
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Types de matériel (catégories)",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Jeu de valeurs « TAUSSIG — Types de matériel (catégories) » utilisé par les profils TAUSSIG.",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "ValueSet"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          <a href="ValueSet-procedure-outcome-type-vs.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ValueSet/procedure-outcome-type-vs"
+        },
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.name">name</a>" : "TAUSSIG — Types de résultat global de procédure",
+        "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.description">description</a>" : "Les trois résultats globaux annotables d'un cathétérisme.",
         "<a href="http://hl7.org/fhir/R4/implementationguide.html#ImplementationGuide.definition.resource.example_x_">exampleBoolean</a>" : false
       },
       {
@@ -2697,10 +3144,10 @@
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="">Projet TAUSSIG</a>.  
-          Le package taussig.poc#0.6.1 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package taussig.poc#0.8.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-10-31 15:29:00 +0100">
-    2026-10-31
+  <span title="2026-11-09 08:39:00 +0100">
+    2026-11-09
   </span>
 
           <br/>

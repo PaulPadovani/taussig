@@ -1,4 +1,4 @@
-# TAUSSIG — Gestes de cathétérisme (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Gestes de cathétérisme (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Gestes de cathétérisme (IPCCC) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — Gestes de cathétérisme (IPCCC)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Axe IPCCC des gestes de cathétérisme congénital retenus pour la POC (gestes diagnostiques, interventionnels et hybrides). Remplace, pour l'autocomplétion, la liaison à la short list IPCCC de 1 822 codes, inexploitable comme menu.",
   "jurisdiction" : [{
@@ -357,6 +357,442 @@
       {
         "code" : "12.20.22",
         "display" : "Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP"
+      },
+      {
+        "code" : "12.18.70",
+        "display" : "Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique"
+      },
+      {
+        "code" : "12.45.01",
+        "display" : "Cathétérisme par voie transseptale avec ponction transseptale"
+      },
+      {
+        "code" : "12.45.07",
+        "display" : "Test d'occlusion diagnostique par voie percutanée"
+      },
+      {
+        "code" : "12.45.59",
+        "display" : "Geste percutané avec traitement adjuvant"
+      },
+      {
+        "code" : "13.05.13",
+        "display" : "Cathétérisme d'évaluation d'une hypertension pulmonaire"
+      },
+      {
+        "code" : "13.05.36",
+        "display" : "Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste"
+      },
+      {
+        "code" : "12.35.57",
+        "display" : "Geste percutané pour trouble du rythme"
+      },
+      {
+        "code" : "12.35.82",
+        "display" : "Geste percutané pour trouble du rythme atrial"
+      },
+      {
+        "code" : "12.35.83",
+        "display" : "Geste percutané pour trouble du rythme ventriculaire"
+      },
+      {
+        "code" : "13.05.08",
+        "display" : "Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique"
+      },
+      {
+        "code" : "13.05.17",
+        "display" : "Exploration électrophysiologique avec cartographie tridimensionnelle"
+      },
+      {
+        "code" : "12.45.90",
+        "display" : "Geste fœtal"
+      },
+      {
+        "code" : "12.45.91",
+        "display" : "Coagulation laser des anastomoses placentaires dans le syndrome transfuseur-transfusé"
+      },
+      {
+        "code" : "12.45.70",
+        "display" : "Geste fœtal par cathéter"
+      },
+      {
+        "code" : "12.45.71",
+        "display" : "Valvuloplastie pulmonaire fœtale au ballon"
+      },
+      {
+        "code" : "12.45.73",
+        "display" : "Valvuloplastie aortique fœtale au ballon"
+      },
+      {
+        "code" : "12.45.75",
+        "display" : "Péricardiocentèse fœtale par cathéter"
+      },
+      {
+        "code" : "12.45.76",
+        "display" : "Atrioseptostomie fœtale au ballon"
+      },
+      {
+        "code" : "12.41.36",
+        "display" : "Cathétérisme thérapeutique avec échec de largage d'un dispositif, d'un stent ou d'un coil"
+      },
+      {
+        "code" : "12.45.00",
+        "display" : "Geste de cathétérisme cardiovasculaire"
+      },
+      {
+        "code" : "12.45.06",
+        "display" : "Nouveau cathétérisme pour lésion résiduelle ou récidivante"
+      },
+      {
+        "code" : "12.45.10",
+        "display" : "Redilatation de stent"
+      },
+      {
+        "code" : "12.45.11",
+        "display" : "Pose de stent"
+      },
+      {
+        "code" : "12.45.12",
+        "display" : "Dilatation au ballon"
+      },
+      {
+        "code" : "12.45.14",
+        "display" : "Occlusion par coil au cours d'un cathétérisme"
+      },
+      {
+        "code" : "12.45.15",
+        "display" : "Implantation percutanée d'une valve"
+      },
+      {
+        "code" : "12.45.21",
+        "display" : "Dilatation valvulaire au ballon"
+      },
+      {
+        "code" : "12.45.28",
+        "display" : "Cathétérisme cardiovasculaire thérapeutique"
+      },
+      {
+        "code" : "12.45.58",
+        "display" : "Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux"
+      },
+      {
+        "code" : "13.05.01",
+        "display" : "Cathétérisme cardiaque diagnostique"
+      },
+      {
+        "code" : "12.08.06",
+        "display" : "Agrandissement d'une communication interventriculaire"
+      },
+      {
+        "code" : "12.08.35",
+        "display" : "Agrandissement ou création d'une communication interventriculaire"
+      },
+      {
+        "code" : "12.23.41",
+        "display" : "Échographie endocoronaire"
+      },
+      {
+        "code" : "13.01.00",
+        "display" : "Échocardiographie"
+      },
+      {
+        "code" : "13.01.03",
+        "display" : "Échocardiographie transœsophagienne"
+      },
+      {
+        "code" : "13.01.23",
+        "display" : "Geste percutané guidé par échographie intracardiaque"
+      },
+      {
+        "code" : "13.05.14",
+        "display" : "Geste percutané sous guidage radiologique"
+      },
+      {
+        "code" : "13.05.15",
+        "display" : "Geste percutané sous guidage par IRM"
+      },
+      {
+        "code" : "13.05.16",
+        "display" : "Geste percutané sous guidage radiologique et IRM"
+      },
+      {
+        "code" : "13.05.24",
+        "display" : "Geste percutané sous guidage échographique"
+      },
+      {
+        "code" : "13.05.39",
+        "display" : "Imagerie endocoronaire par tomographie par cohérence optique"
+      },
+      {
+        "code" : "12.14.38",
+        "display" : "Retrait peropératoire complet ou partiel d'un stent de l'artère pulmonaire"
+      },
+      {
+        "code" : "12.15.11",
+        "display" : "Geste sur l'artère pulmonaire"
+      },
+      {
+        "code" : "12.70.31",
+        "display" : "Occlusion percutanée d'une veine systémique"
+      },
+      {
+        "code" : "12.15.50",
+        "display" : "Pose de stent dans l'arbre artériel pulmonaire"
+      },
+      {
+        "code" : "12.15.56",
+        "display" : "Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire"
+      },
+      {
+        "code" : "12.15.57",
+        "display" : "Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"
+      },
+      {
+        "code" : "12.15.58",
+        "display" : "Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire"
+      },
+      {
+        "code" : "12.15.59",
+        "display" : "Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"
+      },
+      {
+        "code" : "12.15.64",
+        "display" : "Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire"
+      },
+      {
+        "code" : "12.15.65",
+        "display" : "Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"
+      },
+      {
+        "code" : "12.15.66",
+        "display" : "Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire"
+      },
+      {
+        "code" : "12.15.67",
+        "display" : "Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)"
+      },
+      {
+        "code" : "12.18.48",
+        "display" : "Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte"
+      },
+      {
+        "code" : "12.18.54",
+        "display" : "Redilatation d'un stent de l'aorte thoracique"
+      },
+      {
+        "code" : "12.00.25",
+        "display" : "Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire"
+      },
+      {
+        "code" : "12.00.88",
+        "display" : "Redilatation d'un stent d'une veine systémique"
+      },
+      {
+        "code" : "12.00.89",
+        "display" : "Redilatation d'un stent d'une veine pulmonaire"
+      },
+      {
+        "code" : "12.35.46",
+        "display" : "Cryoablation percutanée d'un trouble du rythme"
+      },
+      {
+        "code" : "12.35.48",
+        "display" : "Ablation percutanée d'un trouble du rythme par radiofréquence"
+      },
+      {
+        "code" : "12.35.84",
+        "display" : "Ablation percutanée avec isolation des veines pulmonaires"
+      },
+      {
+        "code" : "12.38.40",
+        "display" : "Ablation percutanée d'un trouble du rythme"
+      },
+      {
+        "code" : "12.23.09",
+        "display" : "Geste sur une artère coronaire"
+      },
+      {
+        "code" : "12.23.13",
+        "display" : "Occlusion percutanée d'une fistule coronaire"
+      },
+      {
+        "code" : "12.23.30",
+        "display" : "Injection intracoronaire percutanée d'un agent thrombolytique"
+      },
+      {
+        "code" : "12.23.31",
+        "display" : "Angioplastie coronaire percutanée au ballon"
+      },
+      {
+        "code" : "12.23.38",
+        "display" : "Pose percutanée d'un stent coronaire"
+      },
+      {
+        "code" : "12.23.42",
+        "display" : "Occlusion chimique percutanée d'une artère coronaire"
+      },
+      {
+        "code" : "12.23.45",
+        "display" : "Redilatation d'un stent coronaire"
+      },
+      {
+        "code" : "12.18.27",
+        "display" : "Levée d'obstacle percutanée d'une coarctation de l'aorte"
+      },
+      {
+        "code" : "12.22.00",
+        "display" : "Geste sur une artère systémique"
+      },
+      {
+        "code" : "12.25.07",
+        "display" : "Fermeture d'une fistule artério-veineuse pulmonaire"
+      },
+      {
+        "code" : "12.01.08",
+        "display" : "Fermeture partielle d'une communication interatriale"
+      },
+      {
+        "code" : "12.01.44",
+        "display" : "Atrioseptostomie à la lame"
+      },
+      {
+        "code" : "12.01.90",
+        "display" : "Création ou agrandissement d'une communication interatriale"
+      },
+      {
+        "code" : "12.01.95",
+        "display" : "Atrioseptostomie au ballon"
+      },
+      {
+        "code" : "12.30.74",
+        "display" : "Création percutanée d'une communication interatriale"
+      },
+      {
+        "code" : "12.32.22",
+        "display" : "Retrait d'un thrombus intracardiaque"
+      },
+      {
+        "code" : "12.02.00",
+        "display" : "Geste sur la valve tricuspide"
+      },
+      {
+        "code" : "12.00.23",
+        "display" : "Dilatation d'une veine pulmonaire au ballon de découpe"
+      },
+      {
+        "code" : "12.00.24",
+        "display" : "Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire"
+      },
+      {
+        "code" : "12.15.25",
+        "display" : "Restriction du débit du tronc pulmonaire par dispositif implanté par voie percutanée"
+      },
+      {
+        "code" : "12.15.53",
+        "display" : "Dilatation de l'arbre artériel pulmonaire au ballon de découpe"
+      },
+      {
+        "code" : "12.25.19",
+        "display" : "Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA)"
+      },
+      {
+        "code" : "12.25.62",
+        "display" : "Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA)"
+      },
+      {
+        "code" : "12.25.72",
+        "display" : "Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA)"
+      },
+      {
+        "code" : "12.24.00",
+        "display" : "Geste sur le canal artériel ou le ligament artériel"
+      },
+      {
+        "code" : "12.24.21",
+        "display" : "Fermeture percutanée du canal artériel par coil"
+      },
+      {
+        "code" : "12.24.22",
+        "display" : "Fermeture percutanée du canal artériel par plug"
+      },
+      {
+        "code" : "12.13.00",
+        "display" : "Geste sur la valve pulmonaire"
+      },
+      {
+        "code" : "12.13.85",
+        "display" : "Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting"
+      },
+      {
+        "code" : "12.13.86",
+        "display" : "Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire"
+      },
+      {
+        "code" : "12.16.09",
+        "display" : "Dilatation au ballon d'une prothèse valvulaire aortique"
+      },
+      {
+        "code" : "12.16.25",
+        "display" : "Perforation et dilatation percutanées de la valve aortique"
+      },
+      {
+        "code" : "12.30.21",
+        "display" : "Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse"
+      },
+      {
+        "code" : "12.30.60",
+        "display" : "Complétion percutanée de la dérivation cavo-pulmonaire totale par stent couvert de la veine cave inférieure à la veine cave supérieure"
+      },
+      {
+        "code" : "12.08.20",
+        "display" : "Fenestration percutanée d'un patch de communication interventriculaire"
+      },
+      {
+        "code" : "12.08.65",
+        "display" : "Création percutanée d'une communication interventriculaire"
+      },
+      {
+        "code" : "12.01.98",
+        "display" : "Fermeture percutanée d'une communication interatriale par prothèse"
+      },
+      {
+        "code" : "12.07.07",
+        "display" : "Dilatation au ballon de la voie d'éjection du ventricule gauche"
+      },
+      {
+        "code" : "12.07.13",
+        "display" : "Levée d'obstacle de la voie d'éjection du ventricule gauche"
+      },
+      {
+        "code" : "12.07.19",
+        "display" : "Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée"
+      },
+      {
+        "code" : "12.07.26",
+        "display" : "Geste sur le ventricule gauche"
+      },
+      {
+        "code" : "12.06.26",
+        "display" : "Geste sur le ventricule droit"
+      },
+      {
+        "code" : "12.06.41",
+        "display" : "Levée d'obstacle de la voie d'éjection du ventricule droit"
+      },
+      {
+        "code" : "12.45.46",
+        "display" : "Redilatation de stent avec fracture volontaire du stent"
+      },
+      {
+        "code" : "12.45.30",
+        "display" : "Geste percutané pour complication du cathétérisme"
+      },
+      {
+        "code" : "12.45.45",
+        "display" : "Retrait chirurgical d'un dispositif"
+      },
+      {
+        "code" : "12.00.30",
+        "display" : "Geste sur une veine systémique"
       }]
     }]
   }

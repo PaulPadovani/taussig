@@ -1,4 +1,4 @@
-# TAUSSIG — État clinique d'un implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — État clinique d'un implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — État clinique d'un implant (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "implant-status",
   "url" : "https://taussig/fhir/CodeSystem/implant-status",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "ImplantStatus",
   "title" : "TAUSSIG — État clinique d'un implant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "État clinique courant d'un implant (porté en extension de Device).",
   "jurisdiction" : [{

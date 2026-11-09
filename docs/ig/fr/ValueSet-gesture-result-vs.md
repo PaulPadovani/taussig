@@ -1,9 +1,10 @@
-# TAUSSIG — Résultats de geste - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Résultats de geste - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Résultats de geste (Expérimental) 
 
  **References** 
 
+* [Résultat de la tentative](StructureDefinition-attemptResult.md)
 * [TAUSSIG — Geste interventionnel](StructureDefinition-taussig-interventional-gesture.md)
 
 ### Définition logique (CLD)
@@ -25,12 +26,12 @@
   "resourceType" : "ValueSet",
   "id" : "gesture-result-vs",
   "url" : "https://taussig/fhir/ValueSet/gesture-result-vs",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "GestureResultVS",
   "title" : "TAUSSIG — Résultats de geste",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Résultats de geste » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

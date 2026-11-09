@@ -43,11 +43,11 @@ window.TAUSSIG_COVERAGE = {
   {
    "id": "diagnostics",
    "titre": "Diagnostics congénitaux",
-   "total": 103,
+   "total": 109,
    "cells": {
     "ipccc": {
-     "n": 103,
-     "total": 103,
+     "n": 109,
+     "total": 109,
      "niveau": "plein",
      "entries": [
       {
@@ -461,13 +461,37 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Oreillette gauche divisée",
        "code": "05.02.01"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
+       "code": "09.10.37"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
+       "code": "09.10.38"
+      },
+      {
+       "label": "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
+       "code": "09.10.30"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
+       "code": "09.08.01"
+      },
+      {
+       "label": "Fistule (malformation) artérioveineuse pulmonaire",
+       "code": "09.19.05"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet congénital idiopathique",
+       "code": "11.06.08"
       }
      ],
      "note": ""
     },
     "cim11": {
-     "n": 103,
-     "total": 103,
+     "n": 109,
+     "total": 109,
      "niveau": "plein",
      "entries": [
       {
@@ -881,13 +905,37 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Oreillette gauche divisée",
        "code": "LA8G.0"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
+       "code": "LA8B.1"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
+       "code": "LA8B.1"
+      },
+      {
+       "label": "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
+       "code": "LA8B.1"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
+       "code": "LA8B.1"
+      },
+      {
+       "label": "Fistule (malformation) artérioveineuse pulmonaire",
+       "code": "LA90.5"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet congénital idiopathique",
+       "code": "BC63.20"
       }
      ],
      "note": ""
     },
     "cim10": {
-     "n": 103,
-     "total": 103,
+     "n": 109,
+     "total": 109,
      "niveau": "plein",
      "entries": [
       {
@@ -1301,27 +1349,51 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Oreillette gauche divisée",
        "code": "Q24.2"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
+       "code": "Q25.6"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
+       "code": "Q25.6"
+      },
+      {
+       "label": "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
+       "code": "Q25.7"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
+       "code": "Q27.8"
+      },
+      {
+       "label": "Fistule (malformation) artérioveineuse pulmonaire",
+       "code": "Q25.7"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet congénital idiopathique",
+       "code": "Q24.6"
       }
      ],
      "note": ""
     },
     "snomed": {
      "n": null,
-     "total": 103,
+     "total": 109,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Axe diagnostic : SNOMED CT écarté au profit de CIM-11 (classification, licence OMS) + IPCCC (granularité)."
     },
     "ccam": {
      "n": null,
-     "total": 103,
+     "total": 109,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "echsa": {
-     "n": 84,
-     "total": 103,
+     "n": 96,
+     "total": 109,
      "niveau": "partiel",
      "entries": [
       {
@@ -1350,15 +1422,15 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Transposition congénitalement corrigée des grandes artères",
-       "code": "DIAG082"
+       "code": "DIAG082 ; DIAG155"
       },
       {
        "label": "Transposition des gros vaisseaux",
-       "code": "DIAG083"
+       "code": "DIAG083 ; DIAG084 ; DIAG085 ; DIAG086"
       },
       {
        "label": "Ventricule droit à double issue",
-       "code": "DIAG088"
+       "code": "DIAG088 ; DIAG-2024-3"
       },
       {
        "label": "Ventricule droit à double sortie avec communication interventriculaire sous-pulmonaire de type transposition",
@@ -1374,7 +1446,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Ventricule droit à double sortie avec communication interventriculaire sous-aortique ou en relation avec les deux gros vaisseaux et sténose pulmonaire de type Fallot",
-       "code": "DIAG089"
+       "code": "DIAG089 ; DIAG-2024-4"
       },
       {
        "label": "Ventricule gauche à double issue",
@@ -1402,7 +1474,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Connexion veineuse pulmonaire totale anormale",
-       "code": "DIAG019"
+       "code": "DIAG019 ; DIAG020 ; DIAG021 ; DIAG022"
       },
       {
        "label": "Connexion veineuse pulmonaire partielle anormale",
@@ -1414,11 +1486,11 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Sténose ou hypoplasie veineuse pulmonaire congénitale",
-       "code": "DIAG025"
+       "code": "DIAG025 ; DIAG-2019-11"
       },
       {
        "label": "Anomalie congénitale de la valve tricuspide",
-       "code": "DIAG040"
+       "code": "DIAG040 ; DIAG039"
       },
       {
        "label": "Insuffisance tricuspide congénitale",
@@ -1438,7 +1510,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Anomalie congénitale de la valve mitrale",
-       "code": "DIAG068"
+       "code": "DIAG068 ; DIAG066"
       },
       {
        "label": "Insuffisance mitrale congénitale",
@@ -1485,12 +1557,16 @@ window.TAUSSIG_COVERAGE = {
        "code": "DIAG029"
       },
       {
+       "label": "Anomalie congénitale du ventricule ou du septum ventriculaire",
+       "code": "DIAG121 ; DIAG120 ; DIAG-2019-27 ; DIAG-2019-28"
+      },
+      {
        "label": "Ventricule droit à double chambre",
        "code": "DIAG046"
       },
       {
        "label": "Tétralogie de Fallot",
-       "code": "DIAG028"
+       "code": "DIAG028 ; DIAG-2010-2140"
       },
       {
        "label": "Tétralogie de Fallot avec syndrome de valve pulmonaire absente",
@@ -1509,6 +1585,10 @@ window.TAUSSIG_COVERAGE = {
        "code": "DIAG051"
       },
       {
+       "label": "Communication interventriculaire",
+       "code": "DIAG168 ; DIAG169 ; DIAG008 ; DIAG170 ; DIAG172 ; DIAG174"
+      },
+      {
        "label": "Communication interventriculaire musculaire trabéculaire",
        "code": "DIAG173"
       },
@@ -1518,7 +1598,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Cœur fonctionnellement univentriculaire",
-       "code": "DIAG080"
+       "code": "DIAG080 ; DIAG-2010-851 ; DIAG079"
       },
       {
        "label": "Connexion auriculoventriculaire à double entrée",
@@ -1537,8 +1617,12 @@ window.TAUSSIG_COVERAGE = {
        "code": "DIAG069"
       },
       {
+       "label": "Anomalie congénitale d'une valve ventriculoartérielle ou des régions adjacentes",
+       "code": "DIAG060"
+      },
+      {
        "label": "Anomalie congénitale de la valve pulmonaire",
-       "code": "DIAG047"
+       "code": "DIAG047 ; DIAG050"
       },
       {
        "label": "Sténose congénitale de la valve pulmonaire",
@@ -1558,7 +1642,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Anomalie congénitale de la valve aortique",
-       "code": "DIAG058"
+       "code": "DIAG058 ; DIAG057"
       },
       {
        "label": "Sténose congénitale de la valve aortique",
@@ -1605,12 +1689,16 @@ window.TAUSSIG_COVERAGE = {
        "code": "DIAG042"
       },
       {
+       "label": "Anomalie congénitale de l'aorte ou de ses branches",
+       "code": "DIAG096"
+      },
+      {
        "label": "Coarctation de l'aorte",
        "code": "DIAG095"
       },
       {
        "label": "Interruption de la crosse aortique",
-       "code": "DIAG098"
+       "code": "DIAG098 ; DIAG-2010-2000 ; DIAG-2010-2020"
       },
       {
        "label": "Syndrome de compression trachéo-œsophagienne",
@@ -1622,19 +1710,19 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Anomalie congénitale des artères coronaires",
-       "code": "DIAG161"
+       "code": "DIAG161 ; DIAG157 ; DIAG-2019-35 ; DIAG-2019-36 ; DIAG-2019-37 ; DIAG-2019-38 ; DIAG-2019-43 ; DIAG-2019-44 ; DIAG-2019-45 ; DIAG-2019-46"
       },
       {
        "label": "Origine anormale de l'artère coronaire à partir de l'arbre artériel pulmonaire",
-       "code": "DIAG159"
+       "code": "DIAG159 ; DIAG-2019-33 ; DIAG-2019-34"
       },
       {
        "label": "Origine aortique anormale ou trajet anormal de l'artère coronaire",
-       "code": "DIAG158"
+       "code": "DIAG158 ; DIAG-2019-32"
       },
       {
        "label": "Fistule artérielle coronaire congénitale",
-       "code": "DIAG160"
+       "code": "DIAG160 ; DIAG-2019-39 ; DIAG-2019-40 ; DIAG-2019-41 ; DIAG-2019-42"
       },
       {
        "label": "Malformation congénitale du péricarde",
@@ -1657,29 +1745,61 @@ window.TAUSSIG_COVERAGE = {
        "code": "DIAG004"
       },
       {
+       "label": "Anomalie congénitale de l'oreillette droite",
+       "code": "DIAG-2019-30"
+      },
+      {
+       "label": "Anomalie congénitale de l'oreillette gauche",
+       "code": "DIAG-2019-29"
+      },
+      {
        "label": "Oreillette gauche divisée",
        "code": "DIAG024"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)",
+       "code": "DIAG043"
+      },
+      {
+       "label": "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)",
+       "code": "DIAG044"
+      },
+      {
+       "label": "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes",
+       "code": "DIAG165"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)",
+       "code": "DIAG035"
+      },
+      {
+       "label": "Fistule (malformation) artérioveineuse pulmonaire",
+       "code": "DIAG127"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet congénital idiopathique",
+       "code": "DIAG111"
       }
      ],
      "note": "Correspondances renseignées dans le catalogue local ; les lignes restantes ne sont pas assimilées à des absences confirmées."
     },
     "orphanet": {
      "n": null,
-     "total": 103,
+     "total": 109,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "ucum": {
      "n": null,
-     "total": 103,
+     "total": 109,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
      "n": null,
-     "total": 103,
+     "total": 109,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
@@ -1689,11 +1809,11 @@ window.TAUSSIG_COVERAGE = {
   {
    "id": "conditions",
    "titre": "Conditions évolutives",
-   "total": 74,
+   "total": 107,
    "cells": {
     "ipccc": {
-     "n": 61,
-     "total": 74,
+     "n": 94,
+     "total": 107,
      "niveau": "partiel",
      "entries": [
       {
@@ -1939,20 +2059,152 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Complication après transplantation cardiaque ou pulmonaire",
        "code": "15.95.00"
+      },
+      {
+       "label": "Sténose acquise des veines pulmonaires",
+       "code": "10.24.02"
+      },
+      {
+       "label": "Obstruction d'une veine systémique",
+       "code": "10.30.09"
+      },
+      {
+       "label": "Collatérale(s) veino-veineuse(s) systémique(s)",
+       "code": "04.00.06"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)",
+       "code": "10.13.74"
+      },
+      {
+       "label": "Fistules (malformations) artérioveineuses pulmonaires acquises",
+       "code": "10.13.57"
+      },
+      {
+       "label": "Cardiomyopathie dilatée",
+       "code": "10.10.25"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique",
+       "code": "10.10.20"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique obstructive du ventricule gauche",
+       "code": "10.10.05"
+      },
+      {
+       "label": "Myocardite (cardiomyopathie inflammatoire)",
+       "code": "10.07.90"
+      },
+      {
+       "label": "Maladie de Kawasaki",
+       "code": "10.09.01"
+      },
+      {
+       "label": "Infarctus du myocarde",
+       "code": "10.18.00"
+      },
+      {
+       "label": "État après transplantation cardiaque",
+       "code": "10.21.63"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible",
+       "code": "10.13.00"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)",
+       "code": "10.13.08"
+      },
+      {
+       "label": "Trouble du rythme cardiaque",
+       "code": "11.00.00"
+      },
+      {
+       "label": "Fibrillation atriale",
+       "code": "11.03.08"
+      },
+      {
+       "label": "Flutter atrial",
+       "code": "11.03.07"
+      },
+      {
+       "label": "Trouble du rythme atrial",
+       "code": "11.03.09"
+      },
+      {
+       "label": "Trouble du rythme de la jonction atrioventriculaire",
+       "code": "11.04.00"
+      },
+      {
+       "label": "Trouble du rythme ventriculaire",
+       "code": "11.05.00"
+      },
+      {
+       "label": "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)",
+       "code": "11.07.01"
+      },
+      {
+       "label": "Bloc atrioventriculaire",
+       "code": "11.06.38"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet acquis",
+       "code": "11.06.10"
+      },
+      {
+       "label": "Indication de remplacement programmé d'un stimulateur cardiaque",
+       "code": "11.12.61"
+      },
+      {
+       "label": "Entéropathie exsudative post-procédurale",
+       "code": "15.82.33"
+      },
+      {
+       "label": "Bronchite plastique post-procédurale",
+       "code": "15.81.01"
+      },
+      {
+       "label": "Chylothorax",
+       "code": "10.08.16"
+      },
+      {
+       "label": "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "15.51.47"
+      },
+      {
+       "label": "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "15.51.50"
+      },
+      {
+       "label": "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur",
+       "code": "15.50.03"
+      },
+      {
+       "label": "Corps étranger intracardiaque post-procédural",
+       "code": "15.80.17"
+      },
+      {
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+       "code": "15.50.37"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "15.02.00"
       }
      ],
      "note": ""
     },
     "cim11": {
      "n": null,
-     "total": 74,
+     "total": 107,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "cim10": {
-     "n": 61,
-     "total": 74,
+     "n": 93,
+     "total": 107,
      "niveau": "partiel",
      "entries": [
       {
@@ -2198,27 +2450,155 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Complication après transplantation cardiaque ou pulmonaire",
        "code": "I97.9"
+      },
+      {
+       "label": "Sténose acquise des veines pulmonaires",
+       "code": "I28.8"
+      },
+      {
+       "label": "Obstruction d'une veine systémique",
+       "code": "I87.1"
+      },
+      {
+       "label": "Collatérale(s) veino-veineuse(s) systémique(s)",
+       "code": "Q26.8"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)",
+       "code": "I77.8"
+      },
+      {
+       "label": "Fistules (malformations) artérioveineuses pulmonaires acquises",
+       "code": "I28.0"
+      },
+      {
+       "label": "Cardiomyopathie dilatée",
+       "code": "I42.0"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique",
+       "code": "I42.2"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique obstructive du ventricule gauche",
+       "code": "I42.1"
+      },
+      {
+       "label": "Myocardite (cardiomyopathie inflammatoire)",
+       "code": "I51.4"
+      },
+      {
+       "label": "Maladie de Kawasaki",
+       "code": "M30.3"
+      },
+      {
+       "label": "Infarctus du myocarde",
+       "code": "I21.9"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible",
+       "code": "I27.8"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)",
+       "code": "I27.8"
+      },
+      {
+       "label": "Trouble du rythme cardiaque",
+       "code": "I49.9"
+      },
+      {
+       "label": "Fibrillation atriale",
+       "code": "I48"
+      },
+      {
+       "label": "Flutter atrial",
+       "code": "I48"
+      },
+      {
+       "label": "Trouble du rythme atrial",
+       "code": "I49.8"
+      },
+      {
+       "label": "Trouble du rythme de la jonction atrioventriculaire",
+       "code": "I49.8"
+      },
+      {
+       "label": "Trouble du rythme ventriculaire",
+       "code": "I49.8"
+      },
+      {
+       "label": "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)",
+       "code": "I45.6"
+      },
+      {
+       "label": "Bloc atrioventriculaire",
+       "code": "I44.3"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet acquis",
+       "code": "I44.2"
+      },
+      {
+       "label": "Indication de remplacement programmé d'un stimulateur cardiaque",
+       "code": "T82.9"
+      },
+      {
+       "label": "Entéropathie exsudative post-procédurale",
+       "code": "K90.4 / Y83.8"
+      },
+      {
+       "label": "Bronchite plastique post-procédurale",
+       "code": "J98.0 / J95.8"
+      },
+      {
+       "label": "Chylothorax",
+       "code": "J94.0"
+      },
+      {
+       "label": "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "T82.8"
+      },
+      {
+       "label": "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "T82.5"
+      },
+      {
+       "label": "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur",
+       "code": "T81.2 / Y60.5"
+      },
+      {
+       "label": "Corps étranger intracardiaque post-procédural",
+       "code": "T81.8"
+      },
+      {
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+       "code": "T82.8"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "T81.0"
       }
      ],
      "note": ""
     },
     "snomed": {
      "n": null,
-     "total": 74,
+     "total": 107,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "ccam": {
      "n": null,
-     "total": 74,
+     "total": 107,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "echsa": {
-     "n": 54,
-     "total": 74,
+     "n": 89,
+     "total": 107,
      "niveau": "partiel",
      "entries": [
       {
@@ -2243,11 +2623,11 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Anastomose cavopulmonaire bidirectionnelle (Glenn bidirectionnel)",
-       "code": "SP-2010-5670"
+       "code": "SP-2010-5670 ; DIAG-2024-1"
       },
       {
        "label": "Anastomose cavopulmonaire bidirectionnelle bilatérale",
-       "code": "SP-2010-5690"
+       "code": "SP-2010-5690 ; DIAG-2024-2"
       },
       {
        "label": "Fontan (TCPC), conduit extracardiaque, fenestré",
@@ -2284,6 +2664,10 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Anomalie acquise de la veine cave inférieure",
        "code": "DIAG026"
+      },
+      {
+       "label": "Communication interatriale résiduelle (CIA)",
+       "code": "DIAG-2019-17"
       },
       {
        "label": "Régurgitation tricuspide résiduelle",
@@ -2359,7 +2743,11 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Cardiomyopathie restrictive",
-       "code": "DIAG070"
+       "code": "DIAG070 ; DIAG-2023-3"
+      },
+      {
+       "label": "Anomalie acquise de l'arbre artériel pulmonaire",
+       "code": "DIAG118"
       },
       {
        "label": "Sténose post-procédurale du tronc de l'artère pulmonaire",
@@ -2403,7 +2791,7 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Coarctation aortique résiduelle",
-       "code": "DIAG095"
+       "code": "DIAG095 ; DIAG-2024-7"
       },
       {
        "label": "Complication coronaire post-procédurale",
@@ -2435,28 +2823,160 @@ window.TAUSSIG_COVERAGE = {
       },
       {
        "label": "Épanchement péricardique",
-       "code": "DIAG071"
+       "code": "DIAG071 ; DIAG-2019-31"
+      },
+      {
+       "label": "Sténose acquise des veines pulmonaires",
+       "code": "DIAG-2019-10"
+      },
+      {
+       "label": "Obstruction d'une veine systémique",
+       "code": "DIAG027"
+      },
+      {
+       "label": "Collatérale(s) veino-veineuse(s) systémique(s)",
+       "code": "DIAG-2024-5"
+      },
+      {
+       "label": "Artère(s) collatérale(s) systémico-pulmonaire(s) acquise(s)",
+       "code": "DIAG-2024-6"
+      },
+      {
+       "label": "Fistules (malformations) artérioveineuses pulmonaires acquises",
+       "code": "DIAG127"
+      },
+      {
+       "label": "Cardiomyopathie dilatée",
+       "code": "DIAG-2023-1"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique",
+       "code": "DIAG-2023-2"
+      },
+      {
+       "label": "Cardiomyopathie hypertrophique obstructive du ventricule gauche",
+       "code": "DIAG-2023-4"
+      },
+      {
+       "label": "Myocardite (cardiomyopathie inflammatoire)",
+       "code": "DIAG-2019-07"
+      },
+      {
+       "label": "Maladie de Kawasaki",
+       "code": "DIAG-2019-26"
+      },
+      {
+       "label": "Infarctus du myocarde",
+       "code": "DIAG125"
+      },
+      {
+       "label": "État après transplantation cardiaque",
+       "code": "DIAG175"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible",
+       "code": "DIAG167 ; DIAG130"
+      },
+      {
+       "label": "Maladie vasculaire pulmonaire irréversible due à une cardiopathie congénitale (syndrome d'Eisenmenger)",
+       "code": "DIAG130"
+      },
+      {
+       "label": "Trouble du rythme cardiaque",
+       "code": "DIAG109"
+      },
+      {
+       "label": "Fibrillation atriale",
+       "code": "DIAG-2019-14"
+      },
+      {
+       "label": "Flutter atrial",
+       "code": "DIAG-2019-15"
+      },
+      {
+       "label": "Trouble du rythme atrial",
+       "code": "DIAG-2019-16"
+      },
+      {
+       "label": "Trouble du rythme de la jonction atrioventriculaire",
+       "code": "DIAG-2010-2050"
+      },
+      {
+       "label": "Trouble du rythme ventriculaire",
+       "code": "DIAG-2010-2060"
+      },
+      {
+       "label": "Tachycardie par réentrée atrioventriculaire avec préexcitation manifeste (Wolff-Parkinson-White)",
+       "code": "DIAG-2019-13"
+      },
+      {
+       "label": "Bloc atrioventriculaire",
+       "code": "DIAG151"
+      },
+      {
+       "label": "Bloc atrioventriculaire complet acquis",
+       "code": "DIAG110"
+      },
+      {
+       "label": "Indication de remplacement programmé d'un stimulateur cardiaque",
+       "code": "DIAG113"
+      },
+      {
+       "label": "Entéropathie exsudative post-procédurale",
+       "code": "DIAG-2019-09"
+      },
+      {
+       "label": "Bronchite plastique post-procédurale",
+       "code": "DIAG-2019-08"
+      },
+      {
+       "label": "Chylothorax",
+       "code": "DIAG138"
+      },
+      {
+       "label": "Embolisation d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "DIAG-2019-18 ; DIAG-2019-21"
+      },
+      {
+       "label": "Dysfonction d'un dispositif lors d'un cathétérisme cardiaque antérieur",
+       "code": "DIAG-2019-19 ; DIAG-2019-22"
+      },
+      {
+       "label": "Perforation d'une cavité ou d'un vaisseau lors d'un cathétérisme cardiaque antérieur",
+       "code": "DIAG-2019-20 ; DIAG-2019-23"
+      },
+      {
+       "label": "Corps étranger intracardiaque post-procédural",
+       "code": "DIAG-2019-24"
+      },
+      {
+       "label": "Embolisation d'un dispositif introduit par cathéter (corps étranger intravasculaire)",
+       "code": "DIAG-2019-25"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "DIAG-2010-2070"
       }
      ],
      "note": "Les états fonctionnels et les états anatomiques doivent être examinés séparément lors de l'arbitrage des correspondances."
     },
     "orphanet": {
      "n": null,
-     "total": 74,
+     "total": 107,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "ucum": {
      "n": null,
-     "total": 74,
+     "total": 107,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
      "n": null,
-     "total": 74,
+     "total": 107,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
@@ -2466,111 +2986,459 @@ window.TAUSSIG_COVERAGE = {
   {
    "id": "procedures",
    "titre": "Gestes de cathétérisme",
-   "total": 79,
+   "total": 188,
    "cells": {
     "ipccc": {
-     "n": 79,
-     "total": 79,
+     "n": 188,
+     "total": 188,
      "niveau": "plein",
      "entries": [
       {
-       "label": "angiocardiographie",
+       "label": "Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique",
+       "code": "12.18.70"
+      },
+      {
+       "label": "Stratégie hybride (chirurgie et cathétérisme combinés)",
+       "code": "12.41.30"
+      },
+      {
+       "label": "Cathétérisme par voie transseptale avec ponction transseptale",
+       "code": "12.45.01"
+      },
+      {
+       "label": "Test d'occlusion diagnostique par voie percutanée",
+       "code": "12.45.07"
+      },
+      {
+       "label": "Geste percutané avec traitement adjuvant",
+       "code": "12.45.59"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique : angiographie",
        "code": "13.05.05"
       },
       {
-       "label": "cathétérisme cardiaque",
-       "code": "13.05.07"
-      },
-      {
-       "label": "cathétérisme cardiaque",
+       "label": "Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques",
        "code": "13.05.06"
       },
       {
-       "label": "électrophysiologie cardiaque",
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique",
+       "code": "13.05.07"
+      },
+      {
+       "label": "Cathétérisme d'évaluation d'une hypertension pulmonaire",
+       "code": "13.05.13"
+      },
+      {
+       "label": "Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste",
+       "code": "13.05.36"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme",
+       "code": "12.35.57"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme atrial",
+       "code": "12.35.82"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme ventriculaire",
+       "code": "12.35.83"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique",
+       "code": "13.05.08"
+      },
+      {
+       "label": "Exploration électrophysiologique",
        "code": "13.05.12"
       },
       {
-       "label": "Extraction endovasculaire de corps étranger de l'aorte",
-       "code": "12.45.04"
+       "label": "Exploration électrophysiologique avec cartographie tridimensionnelle",
+       "code": "13.05.17"
       },
       {
-       "label": "angioplastie percutanée par ballonnet d'une veine pulmonaire",
-       "code": "12.00.21"
+       "label": "Geste fœtal",
+       "code": "12.45.90"
       },
       {
-       "label": "insertion d'endoprothèse dans une veine pulmonaire",
+       "label": "Coagulation laser des anastomoses placentaires dans le syndrome transfuseur-transfusé",
+       "code": "12.45.91"
+      },
+      {
+       "label": "Geste fœtal par cathéter",
+       "code": "12.45.70"
+      },
+      {
+       "label": "Valvuloplastie pulmonaire fœtale au ballon",
+       "code": "12.45.71"
+      },
+      {
+       "label": "Valvuloplastie aortique fœtale au ballon",
+       "code": "12.45.73"
+      },
+      {
+       "label": "Péricardiocentèse fœtale par cathéter",
+       "code": "12.45.75"
+      },
+      {
+       "label": "Atrioseptostomie fœtale au ballon",
+       "code": "12.45.76"
+      },
+      {
+       "label": "Cathétérisme thérapeutique avec échec de largage d'un dispositif, d'un stent ou d'un coil",
+       "code": "12.41.36"
+      },
+      {
+       "label": "Geste de cathétérisme cardiovasculaire",
+       "code": "12.45.00"
+      },
+      {
+       "label": "Nouveau cathétérisme pour lésion résiduelle ou récidivante",
+       "code": "12.45.06"
+      },
+      {
+       "label": "Redilatation de stent",
+       "code": "12.45.10"
+      },
+      {
+       "label": "Pose de stent",
+       "code": "12.45.11"
+      },
+      {
+       "label": "Dilatation au ballon",
+       "code": "12.45.12"
+      },
+      {
+       "label": "Implantation d'un dispositif par voie percutanée",
+       "code": "12.45.13"
+      },
+      {
+       "label": "Occlusion par coil au cours d'un cathétérisme",
+       "code": "12.45.14"
+      },
+      {
+       "label": "Implantation percutanée d'une valve",
+       "code": "12.45.15"
+      },
+      {
+       "label": "Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif",
+       "code": "12.45.19"
+      },
+      {
+       "label": "Dilatation valvulaire au ballon",
+       "code": "12.45.21"
+      },
+      {
+       "label": "Cathétérisme cardiovasculaire thérapeutique",
+       "code": "12.45.28"
+      },
+      {
+       "label": "Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux",
+       "code": "12.45.58"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique",
+       "code": "13.05.01"
+      },
+      {
+       "label": "Agrandissement d'une communication interventriculaire",
+       "code": "12.08.06"
+      },
+      {
+       "label": "Agrandissement ou création d'une communication interventriculaire",
+       "code": "12.08.35"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie) : stade 1",
+       "code": "12.20.20"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s) et retrait des cerclages pulmonaires",
+       "code": "12.20.22"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s), retrait des cerclages pulmonaires et réparation de l'arche",
+       "code": "12.20.23"
+      },
+      {
+       "label": "Échographie endocoronaire",
+       "code": "12.23.41"
+      },
+      {
+       "label": "Échocardiographie",
+       "code": "13.01.00"
+      },
+      {
+       "label": "Échocardiographie transœsophagienne",
+       "code": "13.01.03"
+      },
+      {
+       "label": "Geste percutané guidé par échographie intracardiaque",
+       "code": "13.01.23"
+      },
+      {
+       "label": "Geste percutané sous guidage radiologique",
+       "code": "13.05.14"
+      },
+      {
+       "label": "Geste percutané sous guidage par IRM",
+       "code": "13.05.15"
+      },
+      {
+       "label": "Geste percutané sous guidage radiologique et IRM",
+       "code": "13.05.16"
+      },
+      {
+       "label": "Geste percutané sous guidage échographique",
+       "code": "13.05.24"
+      },
+      {
+       "label": "Imagerie endocoronaire par tomographie par cohérence optique",
+       "code": "13.05.39"
+      },
+      {
+       "label": "Retrait peropératoire complet ou partiel d'un stent de l'artère pulmonaire",
+       "code": "12.14.38"
+      },
+      {
+       "label": "Geste sur l'artère pulmonaire",
+       "code": "12.15.11"
+      },
+      {
+       "label": "Occlusion d'une collatérale veino-veineuse par dispositif",
+       "code": "12.70.08"
+      },
+      {
+       "label": "Occlusion percutanée d'une veine systémique",
+       "code": "12.70.31"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite",
+       "code": "12.15.13"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche",
+       "code": "12.15.14"
+      },
+      {
+       "label": "Pose de stent dans l'arbre artériel pulmonaire",
+       "code": "12.15.50"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "12.15.56"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "12.15.57"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "12.15.58"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "12.15.59"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "12.15.64"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "12.15.65"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "12.15.66"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "12.15.67"
+      },
+      {
+       "label": "Pose de stent entre l'artère pulmonaire gauche et l'aorte descendante (Potts inverse)",
+       "code": "12.15.70"
+      },
+      {
+       "label": "Pose de stent sur une coarctation de l'aorte",
+       "code": "12.18.17"
+      },
+      {
+       "label": "Pose de stent sur une recoarctation de l'aorte",
+       "code": "12.18.22"
+      },
+      {
+       "label": "Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "12.18.48"
+      },
+      {
+       "label": "Redilatation d'un stent de l'aorte thoracique",
+       "code": "12.18.54"
+      },
+      {
+       "label": "Pose de stent dans une veine pulmonaire",
        "code": "12.00.22"
       },
       {
-       "label": "angioplastie percutanée par ballonnet d'une voie veineuse systémique",
-       "code": "12.00.43"
-      },
-      {
-       "label": "insertion d'endoprothèse dans une voie veineuse systémique",
-       "code": "12.00.44"
+       "label": "Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire",
+       "code": "12.00.25"
       },
       {
        "label": "Pose de stent dans la veine cave supérieure",
        "code": "12.00.36"
       },
       {
-       "label": "septostomie auriculaire par ballonnet par retrait",
+       "label": "Pose de stent dans une veine systémique ou un chenal veineux systémique",
+       "code": "12.00.44"
+      },
+      {
+       "label": "Redilatation d'un stent d'une veine systémique",
+       "code": "12.00.88"
+      },
+      {
+       "label": "Redilatation d'un stent d'une veine pulmonaire",
+       "code": "12.00.89"
+      },
+      {
+       "label": "Cryoablation percutanée d'un trouble du rythme",
+       "code": "12.35.46"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme par radiofréquence",
+       "code": "12.35.48"
+      },
+      {
+       "label": "Ablation percutanée avec isolation des veines pulmonaires",
+       "code": "12.35.84"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme",
+       "code": "12.38.40"
+      },
+      {
+       "label": "Geste sur une artère coronaire",
+       "code": "12.23.09"
+      },
+      {
+       "label": "Occlusion percutanée d'une fistule coronaire",
+       "code": "12.23.13"
+      },
+      {
+       "label": "Injection intracoronaire percutanée d'un agent thrombolytique",
+       "code": "12.23.30"
+      },
+      {
+       "label": "Angioplastie coronaire percutanée au ballon",
+       "code": "12.23.31"
+      },
+      {
+       "label": "Pose percutanée d'un stent coronaire",
+       "code": "12.23.38"
+      },
+      {
+       "label": "Occlusion chimique percutanée d'une artère coronaire",
+       "code": "12.23.42"
+      },
+      {
+       "label": "Redilatation d'un stent coronaire",
+       "code": "12.23.45"
+      },
+      {
+       "label": "Fermeture percutanée d'une fenêtre aorto-pulmonaire par prothèse",
+       "code": "12.12.08"
+      },
+      {
+       "label": "Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "12.18.04"
+      },
+      {
+       "label": "Dilatation au ballon d'une recoarctation de l'aorte",
+       "code": "12.18.08"
+      },
+      {
+       "label": "Levée d'obstacle percutanée d'une coarctation de l'aorte",
+       "code": "12.18.27"
+      },
+      {
+       "label": "Geste sur une artère systémique",
+       "code": "12.22.00"
+      },
+      {
+       "label": "Occlusion d'une fistule artério-veineuse",
+       "code": "12.25.02"
+      },
+      {
+       "label": "Fermeture d'une fistule artério-veineuse pulmonaire",
+       "code": "12.25.07"
+      },
+      {
+       "label": "Fermeture partielle d'une communication interatriale",
+       "code": "12.01.08"
+      },
+      {
+       "label": "Atrioseptostomie au ballon par retrait (Rashkind)",
        "code": "12.01.41"
       },
       {
-       "label": "septostomie atriale",
-       "code": "12.01.47"
+       "label": "Atrioseptostomie à la lame",
+       "code": "12.01.44"
       },
       {
-       "label": "fermeture d'une communication interatriale",
-       "code": "12.01.06"
+       "label": "Création ou agrandissement d'une communication interatriale",
+       "code": "12.01.90"
       },
       {
-       "label": "fermeture d'un foramen ovale perméable",
-       "code": "12.01.07"
+       "label": "Atrioseptostomie au ballon",
+       "code": "12.01.95"
       },
       {
-       "label": "Occlusion de l'auricule gauche",
+       "label": "Création percutanée d'une communication interatriale",
+       "code": "12.30.74"
+      },
+      {
+       "label": "Retrait d'un thrombus intracardiaque",
+       "code": "12.32.22"
+      },
+      {
+       "label": "Fermeture percutanée de l'auricule gauche par prothèse",
        "code": "12.38.25"
       },
       {
-       "label": "Fermeture percutanée d'une CIA sinus venosus par stent couvert",
-       "code": "12.01.88"
+       "label": "Geste sur la valve tricuspide",
+       "code": "12.02.00"
       },
       {
-       "label": "Remplacement valvulaire tricuspide par voie transluminale",
-       "code": "12.02.98"
-      },
-      {
-       "label": "Valve-in-valve tricuspide transluminale (dans une prothèse)",
-       "code": "12.02.99"
-      },
-      {
-       "label": "dilatation par ballonnet d'une prothèse de valve tricuspidienne",
+       "label": "Dilatation au ballon d'une prothèse valvulaire tricuspide",
        "code": "12.02.12"
       },
       {
-       "label": "valvuloplastie de la valve mitrale",
+       "label": "Remplacement valvulaire tricuspide par voie percutanée",
+       "code": "12.02.98"
+      },
+      {
+       "label": "Valve-in-valve tricuspide par voie percutanée",
+       "code": "12.02.99"
+      },
+      {
+       "label": "Dilatation au ballon de la valve mitrale",
        "code": "12.03.10"
       },
       {
-       "label": "dilatation par ballonnet d'une prothèse de valve mitrale",
+       "label": "Dilatation au ballon d'une prothèse valvulaire mitrale",
        "code": "12.03.12"
       },
       {
-       "label": "Fermeture percutanée d'une fuite paravalvulaire de prothèse cardiaque par dispositif",
-       "code": "12.45.19"
-      },
-      {
-       "label": "réparation de la valve mitrale guidée par radioscopie",
+       "label": "Réparation valvulaire mitrale par voie percutanée",
        "code": "12.03.97"
       },
       {
-       "label": "Remplacement valvulaire mitral par voie transluminale",
+       "label": "Remplacement valvulaire mitral par voie percutanée",
        "code": "12.03.98"
       },
       {
-       "label": "Valve-in-valve mitrale transluminale (dans une prothèse)",
+       "label": "Valve-in-valve mitrale par voie percutanée",
        "code": "12.04.90"
       },
       {
@@ -2578,669 +3446,1557 @@ window.TAUSSIG_COVERAGE = {
        "code": "12.04.91"
       },
       {
-       "label": "biopsie transluminale ventriculaire droite après transplantation cardiaque",
-       "code": "12.06.25"
-      },
-      {
-       "label": "dilatation par ballonnet de la chambre de chasse du ventricule droit",
-       "code": "12.06.05"
-      },
-      {
-       "label": "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
-       "code": "12.06.18"
-      },
-      {
-       "label": "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
-       "code": "12.06.95"
-      },
-      {
-       "label": "fermeture transluminale percutanée de communication interventriculaire avec prothèse",
-       "code": "12.08.07"
-      },
-      {
-       "label": "valvuloplastie percutanée par ballonnet de la valve pulmonaire",
-       "code": "12.13.05"
-      },
-      {
-       "label": "valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie",
-       "code": "12.13.09"
-      },
-      {
-       "label": "dilatation par ballonnet d'une prothèse de valve pulmonaire",
-       "code": "12.13.06"
-      },
-      {
-       "label": "valvuloplastie aortique percutanée par ballonnet",
-       "code": "12.16.05"
-      },
-      {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "12.13.51"
-      },
-      {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "12.13.87"
-      },
-      {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "12.13.52"
-      },
-      {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "12.13.81"
-      },
-      {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "12.13.82"
-      },
-      {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "12.14.05"
-      },
-      {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "12.15.03"
-      },
-      {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "12.15.04"
-      },
-      {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
-       "code": "12.15.13"
-      },
-      {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
-       "code": "12.15.14"
-      },
-      {
-       "label": "Pose de stent entre artère pulmonaire gauche et aorte descendante (Potts inversé)",
-       "code": "12.15.70"
-      },
-      {
-       "label": "Restriction de flux des artères pulmonaires droite et gauche par dispositifs transcathéter",
-       "code": "12.15.42"
-      },
-      {
-       "label": "embolectomie percutanée de l'artère pulmonaire",
-       "code": "12.15.49"
-      },
-      {
-       "label": "fermeture d'une fistule ou fenestration aorticopulmonaire",
-       "code": "12.12.08"
-      },
-      {
-       "label": "angioplastie de coarctation",
-       "code": "12.18.04"
-      },
-      {
-       "label": "angioplastie de coarctation",
-       "code": "12.18.08"
-      },
-      {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "12.18.17"
-      },
-      {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "12.18.22"
-      },
-      {
-       "label": "insertion d'une endoprothèse dans le canal artériel",
-       "code": "12.10.14"
-      },
-      {
-       "label": "dilatation par ballonnet du canal artériel",
-       "code": "12.10.26"
-      },
-      {
-       "label": "fermeture par voie percutanée du ligament artériel persistant",
-       "code": "12.24.04"
-      },
-      {
-       "label": "Embolisation percutanée transluminale d'une collatérale systémico-pulmonaire majeure (MAPCA)",
-       "code": "12.25.65"
-      },
-      {
-       "label": "réparation d'une fistule artérioveineuse par occlusion",
-       "code": "12.25.02"
-      },
-      {
-       "label": "Embolisation percutanée d'un vaisseau lymphatique guidée par fluoroscopie",
-       "code": "12.49.50"
-      },
-      {
-       "label": "Occlusion de collatérale véino-veineuse par dispositif",
-       "code": "12.70.08"
-      },
-      {
-       "label": "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
+       "label": "Dilatation au ballon d'une anastomose systémico-pulmonaire",
        "code": "12.31.19"
       },
       {
-       "label": "angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-       "code": "12.36.37"
-      },
-      {
-       "label": "mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire",
+       "label": "Pose de stent dans une anastomose systémico-pulmonaire",
        "code": "12.31.27"
       },
       {
-       "label": "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-       "code": "12.36.34"
-      },
-      {
-       "label": "Occlusion d'anastomose systémico-pulmonaire par dispositif d'embolisation transluminal",
+       "label": "Occlusion percutanée d'une anastomose systémico-pulmonaire par dispositif ou embolisation",
        "code": "12.31.34"
       },
       {
-       "label": "dilatation par ballonnet d'un conduit cardiaque",
+       "label": "Dilatation au ballon d'un conduit",
        "code": "12.36.14"
       },
       {
-       "label": "dilatation transluminale percutanée par ballonnet d'un conduit cardiaque",
-       "code": "12.36.36"
-      },
-      {
-       "label": "pose d'une endoprothèse dans un conduit cardiaque",
+       "label": "Pose de stent dans un conduit",
        "code": "12.36.23"
       },
       {
-       "label": "pose d'une endoprothèse dans un conduit cardiaque",
+       "label": "Redilatation d'un stent dans un conduit",
        "code": "12.36.32"
       },
       {
-       "label": "péricardiocentèse transluminale percutanée",
-       "code": "12.32.43"
+       "label": "Redilatation d'un stent dans une anastomose systémico-pulmonaire",
+       "code": "12.36.34"
       },
       {
-       "label": "Implantation de dispositif par voie transluminale",
-       "code": "12.45.13"
+       "label": "Perforation et dilatation percutanées d'un conduit",
+       "code": "12.36.36"
       },
       {
-       "label": "Stratégie hybride (chirurgicale et transluminale combinées)",
-       "code": "12.41.30"
+       "label": "Perforation et dilatation percutanées d'une anastomose systémico-pulmonaire",
+       "code": "12.36.37"
       },
       {
-       "label": "Implantation de valve aortique par voie transapicale (approche hybride)",
+       "label": "Dilatation au ballon d'une veine pulmonaire",
+       "code": "12.00.21"
+      },
+      {
+       "label": "Dilatation d'une veine pulmonaire au ballon de découpe",
+       "code": "12.00.23"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire",
+       "code": "12.00.24"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique",
+       "code": "12.00.43"
+      },
+      {
+       "label": "Dilatation au ballon du tronc de l'artère pulmonaire",
+       "code": "12.14.05"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire droite",
+       "code": "12.15.03"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire gauche",
+       "code": "12.15.04"
+      },
+      {
+       "label": "Restriction du débit du tronc pulmonaire par dispositif implanté par voie percutanée",
+       "code": "12.15.25"
+      },
+      {
+       "label": "Restriction du débit des artères pulmonaires droite et gauche par dispositifs implantés par voie percutanée",
+       "code": "12.15.42"
+      },
+      {
+       "label": "Dilatation de l'arbre artériel pulmonaire au ballon de découpe",
+       "code": "12.15.53"
+      },
+      {
+       "label": "Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "12.25.19"
+      },
+      {
+       "label": "Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "12.25.62"
+      },
+      {
+       "label": "Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif",
+       "code": "12.25.65"
+      },
+      {
+       "label": "Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "12.25.72"
+      },
+      {
+       "label": "Pose de stent dans le canal artériel",
+       "code": "12.10.14"
+      },
+      {
+       "label": "Redilatation d'un stent du canal artériel",
+       "code": "12.10.26"
+      },
+      {
+       "label": "Geste sur le canal artériel ou le ligament artériel",
+       "code": "12.24.00"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par prothèse",
+       "code": "12.24.04"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par coil",
+       "code": "12.24.21"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par plug",
+       "code": "12.24.22"
+      },
+      {
+       "label": "Geste sur la valve pulmonaire",
+       "code": "12.13.00"
+      },
+      {
+       "label": "Dilatation au ballon de la valve pulmonaire",
+       "code": "12.13.05"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire pulmonaire",
+       "code": "12.13.06"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve pulmonaire",
+       "code": "12.13.09"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent",
+       "code": "12.13.51"
+      },
+      {
+       "label": "Valve-in-valve pulmonaire par voie percutanée (réimplantation)",
+       "code": "12.13.52"
+      },
+      {
+       "label": "Implantation percutanée d'une valve aortique montée sur stent",
+       "code": "12.13.81"
+      },
+      {
+       "label": "Valve-in-valve aortique par voie percutanée (réimplantation)",
+       "code": "12.13.82"
+      },
+      {
+       "label": "Implantation d'une valve aortique par voie transapicale (approche hybride)",
        "code": "12.13.84"
       },
       {
-       "label": "Fermeture peropératoire de CIV par dispositif transluminal (approche hybride)",
-       "code": "12.08.28"
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting",
+       "code": "12.13.85"
       },
       {
-       "label": "Stratégie hybride pour hypoplasie du cœur gauche (cathéter et chirurgie)",
-       "code": "12.20.21"
+       "label": "Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire",
+       "code": "12.13.86"
       },
       {
-       "label": "Approche hybride du cœur gauche hypoplasique (cathéter et chirurgie) : stade 1",
-       "code": "12.20.20"
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure",
+       "code": "12.13.87"
       },
       {
-       "label": "Cerclage bilatéral des artères pulmonaires + pose transcathéter de stent dans le canal artériel",
+       "label": "Dilatation au ballon de la valve aortique",
+       "code": "12.16.05"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire aortique",
+       "code": "12.16.09"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve aortique",
+       "code": "12.16.25"
+      },
+      {
+       "label": "Fenestration percutanée du septum interatrial ou d'un tunnel atrial",
+       "code": "12.01.47"
+      },
+      {
+       "label": "Approche hybride stade 1 : cerclage bilatéral des artères pulmonaires et stent du canal artériel par voie percutanée",
        "code": "12.10.04"
       },
       {
-       "label": "Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP + réparation de l'arc",
-       "code": "12.20.23"
+       "label": "Stratégie hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie)",
+       "code": "12.20.21"
       },
       {
-       "label": "Approche hybride HLHS stade 2 : amalgame aortopulmonaire + anastomose(s) cavopulmonaire(s) supérieure(s) + décerclage des AP",
-       "code": "12.20.22"
+       "label": "Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse",
+       "code": "12.30.21"
+      },
+      {
+       "label": "Complétion percutanée de la dérivation cavo-pulmonaire totale par stent couvert de la veine cave inférieure à la veine cave supérieure",
+       "code": "12.30.60"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interventriculaire par prothèse",
+       "code": "12.08.07"
+      },
+      {
+       "label": "Fenestration percutanée d'un patch de communication interventriculaire",
+       "code": "12.08.20"
+      },
+      {
+       "label": "Fermeture peropératoire d'une communication interventriculaire par dispositif (approche hybride)",
+       "code": "12.08.28"
+      },
+      {
+       "label": "Création percutanée d'une communication interventriculaire",
+       "code": "12.08.65"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse",
+       "code": "12.01.06"
+      },
+      {
+       "label": "Fermeture percutanée d'un foramen ovale perméable par prothèse",
+       "code": "12.01.07"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type sinus venosus par stent couvert",
+       "code": "12.01.88"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale par prothèse",
+       "code": "12.01.98"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule gauche",
+       "code": "12.07.07"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche",
+       "code": "12.07.13"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée",
+       "code": "12.07.19"
+      },
+      {
+       "label": "Geste sur le ventricule gauche",
+       "code": "12.07.26"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule droit",
+       "code": "12.06.05"
+      },
+      {
+       "label": "Pose de stent dans la voie d'éjection du ventricule droit",
+       "code": "12.06.18"
+      },
+      {
+       "label": "Biopsie ventriculaire droite par voie percutanée",
+       "code": "12.06.25"
+      },
+      {
+       "label": "Geste sur le ventricule droit",
+       "code": "12.06.26"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule droit",
+       "code": "12.06.41"
+      },
+      {
+       "label": "Redilatation d'un stent de la voie d'éjection native du ventricule droit",
+       "code": "12.06.95"
+      },
+      {
+       "label": "Péricardiocentèse percutanée",
+       "code": "12.32.43"
+      },
+      {
+       "label": "Embolectomie percutanée de l'arbre artériel pulmonaire",
+       "code": "12.15.49"
+      },
+      {
+       "label": "Embolisation lymphatique percutanée",
+       "code": "12.49.50"
+      },
+      {
+       "label": "Redilatation de stent avec fracture volontaire du stent",
+       "code": "12.45.46"
+      },
+      {
+       "label": "Extraction percutanée d'un dispositif ou d'un corps étranger",
+       "code": "12.45.04"
+      },
+      {
+       "label": "Geste percutané pour complication du cathétérisme",
+       "code": "12.45.30"
+      },
+      {
+       "label": "Retrait chirurgical d'un dispositif",
+       "code": "12.45.45"
+      },
+      {
+       "label": "Geste sur une veine systémique",
+       "code": "12.00.30"
       }
      ],
      "note": ""
     },
     "cim11": {
      "n": null,
-     "total": 79,
+     "total": 188,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "cim10": {
      "n": null,
-     "total": 79,
+     "total": 188,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "snomed": {
-     "n": 58,
-     "total": 79,
+     "n": 150,
+     "total": 188,
      "niveau": "partiel",
      "entries": [
       {
-       "label": "angiocardiographie",
+       "label": "Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique",
+       "code": "1259910000"
+      },
+      {
+       "label": "Cathétérisme par voie transseptale avec ponction transseptale",
+       "code": "429267006"
+      },
+      {
+       "label": "Test d'occlusion diagnostique par voie percutanée",
+       "code": "699803004"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique : angiographie",
        "code": "34945008"
       },
       {
-       "label": "cathétérisme cardiaque",
+       "label": "Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques",
        "code": "41976001"
       },
       {
-       "label": "cathétérisme cardiaque",
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique",
        "code": "41976001"
       },
       {
-       "label": "électrophysiologie cardiaque",
+       "label": "Cathétérisme d'évaluation d'une hypertension pulmonaire",
+       "code": "40403005"
+      },
+      {
+       "label": "Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste",
+       "code": "41976001"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme",
+       "code": "233154000"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme atrial",
+       "code": "233154000"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme ventriculaire",
+       "code": "870252007"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique",
+       "code": "82982002"
+      },
+      {
+       "label": "Exploration électrophysiologique",
        "code": "252425004"
       },
       {
-       "label": "Extraction endovasculaire de corps étranger de l'aorte",
-       "code": "708810002"
+       "label": "Exploration électrophysiologique avec cartographie tridimensionnelle",
+       "code": "707833003"
       },
       {
-       "label": "angioplastie percutanée par ballonnet d'une veine pulmonaire",
-       "code": "276892002"
+       "label": "Coagulation laser des anastomoses placentaires dans le syndrome transfuseur-transfusé",
+       "code": "709117007"
       },
       {
-       "label": "insertion d'endoprothèse dans une veine pulmonaire",
-       "code": "232978003"
+       "label": "Geste de cathétérisme cardiovasculaire",
+       "code": "41976001"
       },
       {
-       "label": "angioplastie percutanée par ballonnet d'une voie veineuse systémique",
-       "code": "276896004"
+       "label": "Nouveau cathétérisme pour lésion résiduelle ou récidivante",
+       "code": "41976001"
       },
       {
-       "label": "insertion d'endoprothèse dans une voie veineuse systémique",
-       "code": "233003002"
+       "label": "Pose de stent",
+       "code": "429381005"
       },
       {
-       "label": "septostomie auriculaire par ballonnet par retrait",
-       "code": "233044001"
+       "label": "Dilatation au ballon",
+       "code": "68457009"
       },
       {
-       "label": "septostomie atriale",
-       "code": "233043007"
+       "label": "Implantation percutanée d'une valve",
+       "code": "112815000"
       },
       {
-       "label": "fermeture d'une communication interatriale",
-       "code": "112811009"
-      },
-      {
-       "label": "fermeture d'un foramen ovale perméable",
-       "code": "41817002"
-      },
-      {
-       "label": "Occlusion de l'auricule gauche",
-       "code": "1344914001"
-      },
-      {
-       "label": "dilatation par ballonnet d'une prothèse de valve tricuspidienne",
-       "code": "232810003"
-      },
-      {
-       "label": "valvuloplastie de la valve mitrale",
-       "code": "384642005"
-      },
-      {
-       "label": "dilatation par ballonnet d'une prothèse de valve mitrale",
-       "code": "232770003"
-      },
-      {
-       "label": "Fermeture percutanée d'une fuite paravalvulaire de prothèse cardiaque par dispositif",
+       "label": "Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif",
        "code": "1231783006"
       },
       {
-       "label": "réparation de la valve mitrale guidée par radioscopie",
-       "code": "432394003"
+       "label": "Dilatation valvulaire au ballon",
+       "code": "24394009"
       },
       {
-       "label": "biopsie transluminale ventriculaire droite après transplantation cardiaque",
-       "code": "308683001"
+       "label": "Cathétérisme cardiovasculaire thérapeutique",
+       "code": "41976001"
       },
       {
-       "label": "dilatation par ballonnet de la chambre de chasse du ventricule droit",
-       "code": "233067004"
+       "label": "Cathétérisme cardiaque diagnostique",
+       "code": "41976001"
       },
       {
-       "label": "fermeture transluminale percutanée de communication interventriculaire avec prothèse",
-       "code": "233100002"
+       "label": "Agrandissement d'une communication interventriculaire",
+       "code": "233104006"
       },
       {
-       "label": "valvuloplastie percutanée par ballonnet de la valve pulmonaire",
-       "code": "46897002"
+       "label": "Agrandissement ou création d'une communication interventriculaire",
+       "code": "233104006"
       },
       {
-       "label": "valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie",
-       "code": "442188002"
+       "label": "Approche hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie) : stade 1",
+       "code": "233141007"
       },
       {
-       "label": "dilatation par ballonnet d'une prothèse de valve pulmonaire",
-       "code": "232869005"
+       "label": "Échographie endocoronaire",
+       "code": "310658009"
       },
       {
-       "label": "valvuloplastie aortique percutanée par ballonnet",
-       "code": "77166000"
+       "label": "Échocardiographie",
+       "code": "40701008"
       },
       {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "787162002"
+       "label": "Échocardiographie transœsophagienne",
+       "code": "105376000"
       },
       {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "787162002"
+       "label": "Geste percutané guidé par échographie intracardiaque",
+       "code": "425789000"
       },
       {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "787162002"
+       "label": "Imagerie endocoronaire par tomographie par cohérence optique",
+       "code": "698254001"
       },
       {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "773996000"
+       "label": "Geste sur l'artère pulmonaire",
+       "code": "175266007"
       },
       {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "773996000"
+       "label": "Occlusion d'une collatérale veino-veineuse par dispositif",
+       "code": "1389030008"
       },
       {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "233214006"
+       "label": "Occlusion percutanée d'une veine systémique",
+       "code": "175871007"
       },
       {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "233214006"
-      },
-      {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "233214006"
-      },
-      {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
+       "label": "Pose de stent dans l'artère pulmonaire droite",
        "code": "233215007"
       },
       {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
+       "label": "Pose de stent dans l'artère pulmonaire gauche",
        "code": "233215007"
       },
       {
-       "label": "embolectomie percutanée de l'artère pulmonaire",
-       "code": "175268008"
+       "label": "Pose de stent dans l'arbre artériel pulmonaire",
+       "code": "233215007"
       },
       {
-       "label": "fermeture d'une fistule ou fenestration aorticopulmonaire",
+       "label": "Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "233215007"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "233215007"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "233215007"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "233215007"
+      },
+      {
+       "label": "Pose de stent entre l'artère pulmonaire gauche et l'aorte descendante (Potts inverse)",
+       "code": "86642005"
+      },
+      {
+       "label": "Pose de stent sur une coarctation de l'aorte",
+       "code": "448785002"
+      },
+      {
+       "label": "Pose de stent sur une recoarctation de l'aorte",
+       "code": "448785002"
+      },
+      {
+       "label": "Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "448785002"
+      },
+      {
+       "label": "Pose de stent dans une veine pulmonaire",
+       "code": "232978003"
+      },
+      {
+       "label": "Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire",
+       "code": "232981008"
+      },
+      {
+       "label": "Pose de stent dans la veine cave supérieure",
+       "code": "232989005"
+      },
+      {
+       "label": "Pose de stent dans une veine systémique ou un chenal veineux systémique",
+       "code": "233003002"
+      },
+      {
+       "label": "Redilatation d'un stent d'une veine systémique",
+       "code": "233441004"
+      },
+      {
+       "label": "Cryoablation percutanée d'un trouble du rythme",
+       "code": "233161001"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme par radiofréquence",
+       "code": "233163003"
+      },
+      {
+       "label": "Ablation percutanée avec isolation des veines pulmonaires",
+       "code": "707831001"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme",
+       "code": "233159005"
+      },
+      {
+       "label": "Geste sur une artère coronaire",
+       "code": "31413008"
+      },
+      {
+       "label": "Occlusion percutanée d'une fistule coronaire",
+       "code": "232737008"
+      },
+      {
+       "label": "Injection intracoronaire percutanée d'un agent thrombolytique",
+       "code": "384694007"
+      },
+      {
+       "label": "Angioplastie coronaire percutanée au ballon",
+       "code": "1343583001"
+      },
+      {
+       "label": "Pose percutanée d'un stent coronaire",
+       "code": "36969009"
+      },
+      {
+       "label": "Fermeture percutanée d'une fenêtre aorto-pulmonaire par prothèse",
        "code": "61192001"
       },
       {
-       "label": "angioplastie de coarctation",
+       "label": "Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte",
        "code": "308696000"
       },
       {
-       "label": "angioplastie de coarctation",
+       "label": "Dilatation au ballon d'une recoarctation de l'aorte",
        "code": "308696000"
       },
       {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "448785002"
+       "label": "Levée d'obstacle percutanée d'une coarctation de l'aorte",
+       "code": "443829004"
       },
       {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "448785002"
-      },
-      {
-       "label": "insertion d'une endoprothèse dans le canal artériel",
-       "code": "428280004"
-      },
-      {
-       "label": "dilatation par ballonnet du canal artériel",
-       "code": "233202003"
-      },
-      {
-       "label": "fermeture par voie percutanée du ligament artériel persistant",
-       "code": "698642008"
-      },
-      {
-       "label": "Embolisation percutanée transluminale d'une collatérale systémico-pulmonaire majeure (MAPCA)",
-       "code": "707823006"
-      },
-      {
-       "label": "réparation d'une fistule artérioveineuse par occlusion",
+       "label": "Occlusion d'une fistule artério-veineuse",
        "code": "71330003"
       },
       {
-       "label": "Embolisation percutanée d'un vaisseau lymphatique guidée par fluoroscopie",
-       "code": "1357782001"
+       "label": "Fermeture d'une fistule artério-veineuse pulmonaire",
+       "code": "233220007"
       },
       {
-       "label": "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
+       "label": "Atrioseptostomie au ballon par retrait (Rashkind)",
+       "code": "233044001"
+      },
+      {
+       "label": "Atrioseptostomie à la lame",
+       "code": "31415001"
+      },
+      {
+       "label": "Création ou agrandissement d'une communication interatriale",
+       "code": "7824000"
+      },
+      {
+       "label": "Atrioseptostomie au ballon",
+       "code": "271411002"
+      },
+      {
+       "label": "Création percutanée d'une communication interatriale",
+       "code": "233038000"
+      },
+      {
+       "label": "Fermeture percutanée de l'auricule gauche par prothèse",
+       "code": "1344914001"
+      },
+      {
+       "label": "Geste sur la valve tricuspide",
+       "code": "232778005"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire tricuspide",
+       "code": "232810003"
+      },
+      {
+       "label": "Remplacement valvulaire tricuspide par voie percutanée",
+       "code": "25236004"
+      },
+      {
+       "label": "Valve-in-valve tricuspide par voie percutanée",
+       "code": "25236004"
+      },
+      {
+       "label": "Dilatation au ballon de la valve mitrale",
+       "code": "384642005"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire mitrale",
+       "code": "232770003"
+      },
+      {
+       "label": "Réparation valvulaire mitrale par voie percutanée",
+       "code": "432394003"
+      },
+      {
+       "label": "Remplacement valvulaire mitral par voie percutanée",
+       "code": "720583008"
+      },
+      {
+       "label": "Valve-in-valve mitrale par voie percutanée",
+       "code": "1395984000"
+      },
+      {
+       "label": "Valve-in-valve mitrale transcathéter par voie transapicale",
+       "code": "1395984000"
+      },
+      {
+       "label": "Dilatation au ballon d'une anastomose systémico-pulmonaire",
        "code": "449227002"
       },
       {
-       "label": "angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-       "code": "261562001"
-      },
-      {
-       "label": "mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire",
+       "label": "Pose de stent dans une anastomose systémico-pulmonaire",
        "code": "448949007"
       },
       {
-       "label": "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-       "code": "449227002"
-      },
-      {
-       "label": "Occlusion d'anastomose systémico-pulmonaire par dispositif d'embolisation transluminal",
+       "label": "Occlusion percutanée d'une anastomose systémico-pulmonaire par dispositif ou embolisation",
        "code": "448779009"
       },
       {
-       "label": "dilatation par ballonnet d'un conduit cardiaque",
+       "label": "Dilatation au ballon d'un conduit",
        "code": "449033003"
       },
       {
-       "label": "dilatation transluminale percutanée par ballonnet d'un conduit cardiaque",
+       "label": "Pose de stent dans un conduit",
+       "code": "449389000"
+      },
+      {
+       "label": "Redilatation d'un stent dans un conduit",
+       "code": "449389000"
+      },
+      {
+       "label": "Redilatation d'un stent dans une anastomose systémico-pulmonaire",
+       "code": "449227002"
+      },
+      {
+       "label": "Perforation et dilatation percutanées d'un conduit",
        "code": "707813002"
       },
       {
-       "label": "pose d'une endoprothèse dans un conduit cardiaque",
-       "code": "449389000"
+       "label": "Perforation et dilatation percutanées d'une anastomose systémico-pulmonaire",
+       "code": "261562001"
       },
       {
-       "label": "pose d'une endoprothèse dans un conduit cardiaque",
-       "code": "449389000"
+       "label": "Dilatation au ballon d'une veine pulmonaire",
+       "code": "276892002"
       },
       {
-       "label": "péricardiocentèse transluminale percutanée",
+       "label": "Dilatation d'une veine pulmonaire au ballon de découpe",
+       "code": "712817003"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire",
+       "code": "276895000"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique",
+       "code": "276896004"
+      },
+      {
+       "label": "Dilatation au ballon du tronc de l'artère pulmonaire",
+       "code": "233214006"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire droite",
+       "code": "233214006"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire gauche",
+       "code": "233214006"
+      },
+      {
+       "label": "Dilatation de l'arbre artériel pulmonaire au ballon de découpe",
+       "code": "433256008"
+      },
+      {
+       "label": "Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "233114002"
+      },
+      {
+       "label": "Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "707824000"
+      },
+      {
+       "label": "Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif",
+       "code": "707823006"
+      },
+      {
+       "label": "Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "707822001"
+      },
+      {
+       "label": "Pose de stent dans le canal artériel",
+       "code": "428280004"
+      },
+      {
+       "label": "Redilatation d'un stent du canal artériel",
+       "code": "233202003"
+      },
+      {
+       "label": "Geste sur le canal artériel ou le ligament artériel",
+       "code": "265859004"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par prothèse",
+       "code": "698642008"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par coil",
+       "code": "441676000"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par plug",
+       "code": "175218000"
+      },
+      {
+       "label": "Dilatation au ballon de la valve pulmonaire",
+       "code": "46897002"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire pulmonaire",
+       "code": "232869005"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve pulmonaire",
+       "code": "442188002"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent",
+       "code": "787162002"
+      },
+      {
+       "label": "Valve-in-valve pulmonaire par voie percutanée (réimplantation)",
+       "code": "787162002"
+      },
+      {
+       "label": "Implantation percutanée d'une valve aortique montée sur stent",
+       "code": "773996000"
+      },
+      {
+       "label": "Valve-in-valve aortique par voie percutanée (réimplantation)",
+       "code": "773996000"
+      },
+      {
+       "label": "Implantation d'une valve aortique par voie transapicale (approche hybride)",
+       "code": "443887000"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting",
+       "code": "787162002"
+      },
+      {
+       "label": "Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire",
+       "code": "443532008"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure",
+       "code": "787162002"
+      },
+      {
+       "label": "Dilatation au ballon de la valve aortique",
+       "code": "77166000"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire aortique",
+       "code": "232835009"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve aortique",
+       "code": "77166000"
+      },
+      {
+       "label": "Fenestration percutanée du septum interatrial ou d'un tunnel atrial",
+       "code": "233043007"
+      },
+      {
+       "label": "Approche hybride stade 1 : cerclage bilatéral des artères pulmonaires et stent du canal artériel par voie percutanée",
+       "code": "233141007"
+      },
+      {
+       "label": "Stratégie hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie)",
+       "code": "14257002"
+      },
+      {
+       "label": "Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse",
+       "code": "53941002"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interventriculaire par prothèse",
+       "code": "233100002"
+      },
+      {
+       "label": "Fenestration percutanée d'un patch de communication interventriculaire",
+       "code": "233101003"
+      },
+      {
+       "label": "Fermeture peropératoire d'une communication interventriculaire par dispositif (approche hybride)",
+       "code": "233100002"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse",
+       "code": "112811009"
+      },
+      {
+       "label": "Fermeture percutanée d'un foramen ovale perméable par prothèse",
+       "code": "41817002"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type sinus venosus par stent couvert",
+       "code": "174899009"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale par prothèse",
+       "code": "30123000"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule gauche",
+       "code": "233092001"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche",
+       "code": "428589002"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée",
+       "code": "1354588005"
+      },
+      {
+       "label": "Geste sur le ventricule gauche",
+       "code": "233076006"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule droit",
+       "code": "233067004"
+      },
+      {
+       "label": "Pose de stent dans la voie d'éjection du ventricule droit",
+       "code": "443532008"
+      },
+      {
+       "label": "Biopsie ventriculaire droite par voie percutanée",
+       "code": "308683001"
+      },
+      {
+       "label": "Geste sur le ventricule droit",
+       "code": "233051005"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule droit",
+       "code": "429312007"
+      },
+      {
+       "label": "Redilatation d'un stent de la voie d'éjection native du ventricule droit",
+       "code": "233067004"
+      },
+      {
+       "label": "Péricardiocentèse percutanée",
        "code": "428394001"
+      },
+      {
+       "label": "Embolectomie percutanée de l'arbre artériel pulmonaire",
+       "code": "175268008"
+      },
+      {
+       "label": "Embolisation lymphatique percutanée",
+       "code": "1357782001"
+      },
+      {
+       "label": "Extraction percutanée d'un dispositif ou d'un corps étranger",
+       "code": "708810002"
+      },
+      {
+       "label": "Retrait chirurgical d'un dispositif",
+       "code": "128538000"
+      },
+      {
+       "label": "Geste sur une veine systémique",
+       "code": "232985004"
       }
      ],
      "note": "Les lignes sans correspondance nécessitent une recherche documentée dans une version identifiée de SNOMED CT avant de conclure à une absence."
     },
     "ccam": {
-     "n": 38,
-     "total": 79,
+     "n": 101,
+     "total": 188,
      "niveau": "partiel",
      "entries": [
       {
-       "label": "angiocardiographie",
+       "label": "Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique",
+       "code": "DGLF003"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique : angiographie",
        "code": "DFQH001"
       },
       {
-       "label": "cathétérisme cardiaque",
-       "code": "EQQF003"
-      },
-      {
-       "label": "cathétérisme cardiaque",
+       "label": "Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques",
        "code": "EQQF001"
       },
       {
-       "label": "électrophysiologie cardiaque",
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique",
+       "code": "EQQF003"
+      },
+      {
+       "label": "Cathétérisme d'évaluation d'une hypertension pulmonaire",
+       "code": "EQQF003"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique",
+       "code": "DEQF001 ; DEQF002 ; DEQF004 ; DEQF005"
+      },
+      {
+       "label": "Exploration électrophysiologique",
        "code": "DEQF003"
       },
       {
-       "label": "Extraction endovasculaire de corps étranger de l'aorte",
-       "code": "DAGF001"
+       "label": "Exploration électrophysiologique avec cartographie tridimensionnelle",
+       "code": "DEQF003 ; DEQF005"
       },
       {
-       "label": "septostomie auriculaire par ballonnet par retrait",
-       "code": "DAMF001"
+       "label": "Péricardiocentèse fœtale par cathéter",
+       "code": "JQHB002"
       },
       {
-       "label": "septostomie atriale",
-       "code": "DAAF003"
+       "label": "Implantation percutanée d'une valve",
+       "code": "DBLF001 ; DBLF009"
       },
       {
-       "label": "fermeture d'une communication interatriale",
-       "code": "DASF004"
-      },
-      {
-       "label": "fermeture d'un foramen ovale perméable",
-       "code": "DASF005"
-      },
-      {
-       "label": "Occlusion de l'auricule gauche",
-       "code": "DASF074"
-      },
-      {
-       "label": "dilatation par ballonnet d'une prothèse de valve tricuspidienne",
-       "code": "DBAF003"
-      },
-      {
-       "label": "valvuloplastie de la valve mitrale",
-       "code": "DBAF004"
-      },
-      {
-       "label": "dilatation par ballonnet d'une prothèse de valve mitrale",
-       "code": "DBAF004"
-      },
-      {
-       "label": "Fermeture percutanée d'une fuite paravalvulaire de prothèse cardiaque par dispositif",
+       "label": "Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif",
        "code": "DBSF001"
       },
       {
-       "label": "dilatation par ballonnet de la chambre de chasse du ventricule droit",
-       "code": "DAAF001"
+       "label": "Dilatation valvulaire au ballon",
+       "code": "DBAF001 ; DBAF002 ; DBAF003 ; DBAF004"
       },
       {
-       "label": "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
-       "code": "DAAF001"
-      },
-      {
-       "label": "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
-       "code": "DAAF001"
-      },
-      {
-       "label": "fermeture transluminale percutanée de communication interventriculaire avec prothèse",
-       "code": "DASF003"
-      },
-      {
-       "label": "valvuloplastie percutanée par ballonnet de la valve pulmonaire",
-       "code": "DBAF002"
-      },
-      {
-       "label": "valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie",
+       "label": "Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux",
        "code": "DBAF005"
       },
       {
-       "label": "dilatation par ballonnet d'une prothèse de valve pulmonaire",
+       "label": "Cathétérisme cardiaque diagnostique",
+       "code": "EQQF001 ; EQQF006 ; EQQH001 ; EQQH005 ; EQQH006"
+      },
+      {
+       "label": "Échographie endocoronaire",
+       "code": "DDQJ001"
+      },
+      {
+       "label": "Échocardiographie",
+       "code": "DZQM006 ; DZQM003"
+      },
+      {
+       "label": "Échocardiographie transœsophagienne",
+       "code": "DZQJ001 ; DZQJ012"
+      },
+      {
+       "label": "Geste percutané sous guidage échographique",
+       "code": "DZQM003 ; DZQJ012"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite",
+       "code": "DFAF003"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche",
+       "code": "DFAF003"
+      },
+      {
+       "label": "Pose de stent dans l'arbre artériel pulmonaire",
+       "code": "DFAF003 ; DFAF001"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "DFAF003"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "DFAF003"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "DFAF003"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "DFAF003"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "DFAF002"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "DFAF002"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "DFAF002"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "DFAF002"
+      },
+      {
+       "label": "Pose de stent sur une coarctation de l'aorte",
+       "code": "DGAF004"
+      },
+      {
+       "label": "Pose de stent sur une recoarctation de l'aorte",
+       "code": "DGAF004"
+      },
+      {
+       "label": "Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "DGAF004"
+      },
+      {
+       "label": "Redilatation d'un stent de l'aorte thoracique",
+       "code": "DGAF001"
+      },
+      {
+       "label": "Pose de stent dans la veine cave supérieure",
+       "code": "DHAF001"
+      },
+      {
+       "label": "Pose de stent dans une veine systémique ou un chenal veineux systémique",
+       "code": "DHAF001 ; DHAF004 ; EFAF001 ; EGAF002"
+      },
+      {
+       "label": "Redilatation d'un stent d'une veine systémique",
+       "code": "DHAF003 ; DHAF002 ; EFAF002"
+      },
+      {
+       "label": "Cryoablation percutanée d'un trouble du rythme",
+       "code": "DEPF010 ; DEPF012 ; DEPF033"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme par radiofréquence",
+       "code": "DENF014 ; DENF015 ; DENF017 ; DENF018 ; DENF021 ; DENF035 ; DEPF004 ; DEPF005 ; DEPF006 ; DEPF010 ; DEPF012 ; DEPF014 ; DEPF025 ; DEPF033"
+      },
+      {
+       "label": "Ablation percutanée avec isolation des veines pulmonaires",
+       "code": "DEPF033"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme",
+       "code": "DENF014 ; DENF015 ; DENF017 ; DENF018 ; DENF021 ; DENF035 ; DEPF004 ; DEPF005 ; DEPF006 ; DEPF010 ; DEPF012 ; DEPF014 ; DEPF025 ; DEPF033"
+      },
+      {
+       "label": "Occlusion percutanée d'une fistule coronaire",
+       "code": "DDSF001"
+      },
+      {
+       "label": "Angioplastie coronaire percutanée au ballon",
+       "code": "DDAF001 ; DDAF010"
+      },
+      {
+       "label": "Pose percutanée d'un stent coronaire",
+       "code": "DDAF006 ; DDAF008 ; DDAF004 ; DDAF007 ; DDAF003 ; DDAF009"
+      },
+      {
+       "label": "Occlusion chimique percutanée d'une artère coronaire",
+       "code": "DDLF001"
+      },
+      {
+       "label": "Redilatation d'un stent coronaire",
+       "code": "DDAF001"
+      },
+      {
+       "label": "Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "DGAF006"
+      },
+      {
+       "label": "Dilatation au ballon d'une recoarctation de l'aorte",
+       "code": "DGAF006"
+      },
+      {
+       "label": "Levée d'obstacle percutanée d'une coarctation de l'aorte",
+       "code": "DGAF004 ; DGAF006"
+      },
+      {
+       "label": "Occlusion d'une fistule artério-veineuse",
+       "code": "DFSF002"
+      },
+      {
+       "label": "Fermeture d'une fistule artério-veineuse pulmonaire",
+       "code": "DFSF002"
+      },
+      {
+       "label": "Fermeture partielle d'une communication interatriale",
+       "code": "DASF004"
+      },
+      {
+       "label": "Atrioseptostomie au ballon par retrait (Rashkind)",
+       "code": "DAMF001"
+      },
+      {
+       "label": "Atrioseptostomie à la lame",
+       "code": "DAAF003 ; DAMF001"
+      },
+      {
+       "label": "Création ou agrandissement d'une communication interatriale",
+       "code": "DAMF001 ; DAAF003"
+      },
+      {
+       "label": "Atrioseptostomie au ballon",
+       "code": "DAAF003 ; DAMF001"
+      },
+      {
+       "label": "Création percutanée d'une communication interatriale",
+       "code": "DAMF001"
+      },
+      {
+       "label": "Fermeture percutanée de l'auricule gauche par prothèse",
+       "code": "DASF074"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire tricuspide",
+       "code": "DBAF003"
+      },
+      {
+       "label": "Dilatation au ballon de la valve mitrale",
+       "code": "DBAF004"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire mitrale",
+       "code": "DBAF004"
+      },
+      {
+       "label": "Réparation valvulaire mitrale par voie percutanée",
+       "code": "DBBF198"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique",
+       "code": "DHAF003 ; DHAF002 ; EFAF002 ; EGAF003"
+      },
+      {
+       "label": "Dilatation au ballon du tronc de l'artère pulmonaire",
+       "code": "DFAF002"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire droite",
+       "code": "DFAF002"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire gauche",
+       "code": "DFAF002"
+      },
+      {
+       "label": "Dilatation de l'arbre artériel pulmonaire au ballon de découpe",
+       "code": "DFAF002 ; DFAF004"
+      },
+      {
+       "label": "Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif",
+       "code": "ECSF004"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par prothèse",
+       "code": "DASF001"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par coil",
+       "code": "DASF001"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par plug",
+       "code": "DASF001"
+      },
+      {
+       "label": "Dilatation au ballon de la valve pulmonaire",
        "code": "DBAF002"
       },
       {
-       "label": "valvuloplastie aortique percutanée par ballonnet",
+       "label": "Dilatation au ballon d'une prothèse valvulaire pulmonaire",
+       "code": "DBAF002"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve pulmonaire",
+       "code": "DBAF005"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent",
+       "code": "DBLF009"
+      },
+      {
+       "label": "Valve-in-valve pulmonaire par voie percutanée (réimplantation)",
+       "code": "DBLF009"
+      },
+      {
+       "label": "Implantation percutanée d'une valve aortique montée sur stent",
+       "code": "DBLF001"
+      },
+      {
+       "label": "Valve-in-valve aortique par voie percutanée (réimplantation)",
+       "code": "DBLF001"
+      },
+      {
+       "label": "Implantation d'une valve aortique par voie transapicale (approche hybride)",
+       "code": "DBLA004"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting",
+       "code": "DBLF009"
+      },
+      {
+       "label": "Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire",
+       "code": "DAAF001"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure",
+       "code": "DBLF009"
+      },
+      {
+       "label": "Dilatation au ballon de la valve aortique",
        "code": "DBAF001"
       },
       {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "DBLF009"
+       "label": "Dilatation au ballon d'une prothèse valvulaire aortique",
+       "code": "DBAF001"
       },
       {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "DBLF009"
+       "label": "Perforation et dilatation percutanées de la valve aortique",
+       "code": "DBAF001"
       },
       {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "DBLF009"
+       "label": "Fenestration percutanée du septum interatrial ou d'un tunnel atrial",
+       "code": "DAAF003"
       },
       {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "DBLF001"
+       "label": "Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse",
+       "code": "DASF002"
       },
       {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "DBLF001"
+       "label": "Fermeture percutanée d'une communication interventriculaire par prothèse",
+       "code": "DASF003"
       },
       {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "DFAF002"
+       "label": "Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse",
+       "code": "DASF004"
       },
       {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "DFAF002"
+       "label": "Fermeture percutanée d'un foramen ovale perméable par prothèse",
+       "code": "DASF005"
       },
       {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "DFAF002"
+       "label": "Fermeture percutanée d'une communication interatriale par prothèse",
+       "code": "DASF004"
       },
       {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
-       "code": "DFAF003"
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule gauche",
+       "code": "DAAF002"
       },
       {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
-       "code": "DFAF003"
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche",
+       "code": "DAAF002"
       },
       {
-       "label": "embolectomie percutanée de l'artère pulmonaire",
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée",
+       "code": "DDLF001"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule droit",
+       "code": "DAAF001"
+      },
+      {
+       "label": "Pose de stent dans la voie d'éjection du ventricule droit",
+       "code": "DAAF001"
+      },
+      {
+       "label": "Biopsie ventriculaire droite par voie percutanée",
+       "code": "DAHF001"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule droit",
+       "code": "DAAF001"
+      },
+      {
+       "label": "Redilatation d'un stent de la voie d'éjection native du ventricule droit",
+       "code": "DAAF001"
+      },
+      {
+       "label": "Péricardiocentèse percutanée",
+       "code": "DCJB002 ; DCJB001"
+      },
+      {
+       "label": "Embolectomie percutanée de l'arbre artériel pulmonaire",
        "code": "DFNF002"
       },
       {
-       "label": "angioplastie de coarctation",
-       "code": "DGAF006"
-      },
-      {
-       "label": "angioplastie de coarctation",
-       "code": "DGAF006"
-      },
-      {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "DGAF004"
-      },
-      {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "DGAF004"
-      },
-      {
-       "label": "Embolisation percutanée transluminale d'une collatérale systémico-pulmonaire majeure (MAPCA)",
-       "code": "ECSF004"
+       "label": "Extraction percutanée d'un dispositif ou d'un corps étranger",
+       "code": "DAGF001"
       }
      ],
      "note": "Correspondances locales à réauditer. DASF001 figure dans la CCAM V75 pour la fermeture du conduit artériel par voie vasculaire transcutanée. La case locale vide ne démontre donc pas une absence dans la CCAM. Les effectifs restent ceux du classeur, avant correction clinique des correspondances."
     },
     "echsa": {
-     "n": 69,
-     "total": 79,
+     "n": 158,
+     "total": 188,
      "niveau": "partiel",
      "entries": [
       {
-       "label": "angiocardiographie",
-       "code": "PROC-2010-2520"
-      },
-      {
-       "label": "cathétérisme cardiaque",
-       "code": "PROC-2010-2540"
-      },
-      {
-       "label": "cathétérisme cardiaque",
-       "code": "PROC-2010-2510"
-      },
-      {
-       "label": "électrophysiologie cardiaque",
-       "code": "PROC-2010-2680"
-      },
-      {
-       "label": "angioplastie percutanée par ballonnet d'une veine pulmonaire",
-       "code": "PROC150"
-      },
-      {
-       "label": "insertion d'endoprothèse dans une veine pulmonaire",
+       "label": "Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique",
        "code": "PROC151"
       },
       {
-       "label": "angioplastie percutanée par ballonnet d'une voie veineuse systémique",
+       "label": "Test d'occlusion diagnostique par voie percutanée",
+       "code": "PROC-2010-2530"
+      },
+      {
+       "label": "Geste percutané avec traitement adjuvant",
+       "code": "PROC-2010-2670"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique : angiographie",
+       "code": "PROC-2010-2520"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques",
+       "code": "PROC-2010-2510"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique",
+       "code": "PROC-2010-2540"
+      },
+      {
+       "label": "Cathétérisme d'évaluation d'une hypertension pulmonaire",
+       "code": "PROC-2010-2510"
+      },
+      {
+       "label": "Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste",
+       "code": "PROC-2010-2500"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme",
+       "code": "PROC-2010-2680"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme atrial",
+       "code": "PROC-2010-2680"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme ventriculaire",
+       "code": "PROC-2010-2680"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique",
+       "code": "PROC-2010-2550"
+      },
+      {
+       "label": "Exploration électrophysiologique",
+       "code": "PROC-2010-2680"
+      },
+      {
+       "label": "Exploration électrophysiologique avec cartographie tridimensionnelle",
+       "code": "PROC-2010-2680"
+      },
+      {
+       "label": "Cathétérisme thérapeutique avec échec de largage d'un dispositif, d'un stent ou d'un coil",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Geste de cathétérisme cardiovasculaire",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Nouveau cathétérisme pour lésion résiduelle ou récidivante",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Redilatation de stent",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Pose de stent",
+       "code": "PROC151"
+      },
+      {
+       "label": "Dilatation au ballon",
        "code": "PROC150"
       },
       {
-       "label": "insertion d'endoprothèse dans une voie veineuse systémique",
+       "label": "Implantation d'un dispositif par voie percutanée",
+       "code": "PROC152"
+      },
+      {
+       "label": "Occlusion par coil au cours d'un cathétérisme",
+       "code": "PROC154"
+      },
+      {
+       "label": "Implantation percutanée d'une valve",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif",
+       "code": "PROC152"
+      },
+      {
+       "label": "Dilatation valvulaire au ballon",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Cathétérisme cardiovasculaire thérapeutique",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux",
+       "code": "PROC-2010-2640"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique",
+       "code": "PROC-2010-2500"
+      },
+      {
+       "label": "Agrandissement d'une communication interventriculaire",
+       "code": "PROC-2010-2640"
+      },
+      {
+       "label": "Agrandissement ou création d'une communication interventriculaire",
+       "code": "PROC-2010-2640"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie) : stade 1",
+       "code": "PROC-2010-2180 ; PROC-2010-2160 ; PROC-2010-2170"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s) et retrait des cerclages pulmonaires",
+       "code": "PROC-2010-2150"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s), retrait des cerclages pulmonaires et réparation de l'arche",
+       "code": "PROC-2010-2140"
+      },
+      {
+       "label": "Occlusion d'une collatérale veino-veineuse par dispositif",
+       "code": "PROC152"
+      },
+      {
+       "label": "Occlusion percutanée d'une veine systémique",
+       "code": "PROC152"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent dans l'arbre artériel pulmonaire",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "PROC151"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Pose de stent entre l'artère pulmonaire gauche et l'aorte descendante (Potts inverse)",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent sur une coarctation de l'aorte",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent sur une recoarctation de l'aorte",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "PROC151"
+      },
+      {
+       "label": "Redilatation d'un stent de l'aorte thoracique",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Pose de stent dans une veine pulmonaire",
+       "code": "PROC151"
+      },
+      {
+       "label": "Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire",
        "code": "PROC151"
       },
       {
@@ -3248,59 +5004,143 @@ window.TAUSSIG_COVERAGE = {
        "code": "PROC151"
       },
       {
-       "label": "septostomie auriculaire par ballonnet par retrait",
-       "code": "PROC148"
-      },
-      {
-       "label": "septostomie atriale",
-       "code": "PROC-2010-2640"
-      },
-      {
-       "label": "fermeture d'une communication interatriale",
-       "code": "PROC152"
-      },
-      {
-       "label": "fermeture d'un foramen ovale perméable",
-       "code": "PROC152"
-      },
-      {
-       "label": "Occlusion de l'auricule gauche",
-       "code": "PROC152"
-      },
-      {
-       "label": "Fermeture percutanée d'une CIA sinus venosus par stent couvert",
+       "label": "Pose de stent dans une veine systémique ou un chenal veineux systémique",
        "code": "PROC151"
       },
       {
-       "label": "Remplacement valvulaire tricuspide par voie transluminale",
-       "code": "PROC-2010-2660"
+       "label": "Redilatation d'un stent d'une veine systémique",
+       "code": "PROC-2010-2630"
       },
       {
-       "label": "Valve-in-valve tricuspide transluminale (dans une prothèse)",
-       "code": "PROC-2010-2660"
+       "label": "Redilatation d'un stent d'une veine pulmonaire",
+       "code": "PROC-2010-2630"
       },
       {
-       "label": "dilatation par ballonnet d'une prothèse de valve tricuspidienne",
-       "code": "PROC-2010-2590"
+       "label": "Cryoablation percutanée d'un trouble du rythme",
+       "code": "PROC-2010-2690"
       },
       {
-       "label": "valvuloplastie de la valve mitrale",
-       "code": "PROC-2010-2590"
+       "label": "Ablation percutanée d'un trouble du rythme par radiofréquence",
+       "code": "PROC153"
       },
       {
-       "label": "dilatation par ballonnet d'une prothèse de valve mitrale",
-       "code": "PROC-2010-2590"
+       "label": "Ablation percutanée avec isolation des veines pulmonaires",
+       "code": "PROC-2010-2690"
       },
       {
-       "label": "Fermeture percutanée d'une fuite paravalvulaire de prothèse cardiaque par dispositif",
+       "label": "Ablation percutanée d'un trouble du rythme",
+       "code": "PROC-2010-2690"
+      },
+      {
+       "label": "Occlusion percutanée d'une fistule coronaire",
        "code": "PROC152"
       },
       {
-       "label": "Remplacement valvulaire mitral par voie transluminale",
+       "label": "Injection intracoronaire percutanée d'un agent thrombolytique",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Angioplastie coronaire percutanée au ballon",
+       "code": "PROC150"
+      },
+      {
+       "label": "Pose percutanée d'un stent coronaire",
+       "code": "PROC151"
+      },
+      {
+       "label": "Occlusion chimique percutanée d'une artère coronaire",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Redilatation d'un stent coronaire",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Fermeture percutanée d'une fenêtre aorto-pulmonaire par prothèse",
+       "code": "PROC152"
+      },
+      {
+       "label": "Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "PROC150"
+      },
+      {
+       "label": "Dilatation au ballon d'une recoarctation de l'aorte",
+       "code": "PROC150"
+      },
+      {
+       "label": "Levée d'obstacle percutanée d'une coarctation de l'aorte",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Occlusion d'une fistule artério-veineuse",
+       "code": "PROC152"
+      },
+      {
+       "label": "Fermeture d'une fistule artério-veineuse pulmonaire",
+       "code": "PROC152"
+      },
+      {
+       "label": "Fermeture partielle d'une communication interatriale",
+       "code": "PROC152"
+      },
+      {
+       "label": "Atrioseptostomie au ballon par retrait (Rashkind)",
+       "code": "PROC148"
+      },
+      {
+       "label": "Atrioseptostomie à la lame",
+       "code": "PROC149"
+      },
+      {
+       "label": "Création ou agrandissement d'une communication interatriale",
+       "code": "PROC-2010-2580"
+      },
+      {
+       "label": "Atrioseptostomie au ballon",
+       "code": "PROC148"
+      },
+      {
+       "label": "Création percutanée d'une communication interatriale",
+       "code": "PROC-2010-2580"
+      },
+      {
+       "label": "Retrait d'un thrombus intracardiaque",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Fermeture percutanée de l'auricule gauche par prothèse",
+       "code": "PROC152"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire tricuspide",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Remplacement valvulaire tricuspide par voie percutanée",
        "code": "PROC-2010-2660"
       },
       {
-       "label": "Valve-in-valve mitrale transluminale (dans une prothèse)",
+       "label": "Valve-in-valve tricuspide par voie percutanée",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Dilatation au ballon de la valve mitrale",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire mitrale",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Réparation valvulaire mitrale par voie percutanée",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Remplacement valvulaire mitral par voie percutanée",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Valve-in-valve mitrale par voie percutanée",
        "code": "PROC-2010-2660"
       },
       {
@@ -3308,219 +5148,1064 @@ window.TAUSSIG_COVERAGE = {
        "code": "PROC-2010-2660"
       },
       {
-       "label": "dilatation par ballonnet de la chambre de chasse du ventricule droit",
+       "label": "Dilatation au ballon d'une anastomose systémico-pulmonaire",
        "code": "PROC150"
       },
       {
-       "label": "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
+       "label": "Pose de stent dans une anastomose systémico-pulmonaire",
        "code": "PROC151"
       },
       {
-       "label": "Dilatation intraluminale de la voie d'éjection du ventricule droit et du tronc de l'artère pulmonaire, par voie veineuse transcutanée",
+       "label": "Occlusion percutanée d'une anastomose systémico-pulmonaire par dispositif ou embolisation",
+       "code": "PROC152"
+      },
+      {
+       "label": "Dilatation au ballon d'un conduit",
+       "code": "PROC150"
+      },
+      {
+       "label": "Pose de stent dans un conduit",
+       "code": "PROC151"
+      },
+      {
+       "label": "Redilatation d'un stent dans un conduit",
        "code": "PROC-2010-2630"
       },
       {
-       "label": "fermeture transluminale percutanée de communication interventriculaire avec prothèse",
-       "code": "PROC152"
-      },
-      {
-       "label": "valvuloplastie percutanée par ballonnet de la valve pulmonaire",
-       "code": "PROC-2010-2590"
-      },
-      {
-       "label": "valvulotomie transluminale percutanée de valve pulmonaire avec valvuloplastie",
-       "code": "PROC-2010-2590"
-      },
-      {
-       "label": "dilatation par ballonnet d'une prothèse de valve pulmonaire",
-       "code": "PROC-2010-2590"
-      },
-      {
-       "label": "valvuloplastie aortique percutanée par ballonnet",
-       "code": "PROC-2010-2590"
-      },
-      {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "PROC-2010-2660"
-      },
-      {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "PROC-2010-2660"
-      },
-      {
-       "label": "implantation d'une prothèse de valve pulmonaire, par voie percutanée",
-       "code": "PROC-2010-2660"
-      },
-      {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "PROC-2010-2660"
-      },
-      {
-       "label": "implantation d'une valve aortique transcathéter",
-       "code": "PROC-2010-2660"
-      },
-      {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "PROC150"
-      },
-      {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "PROC150"
-      },
-      {
-       "label": "angioplastie de l'artère pulmonaire",
-       "code": "PROC150"
-      },
-      {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
-       "code": "PROC151"
-      },
-      {
-       "label": "mise en place d'endoprothèse dans l'artère pulmonaire",
-       "code": "PROC151"
-      },
-      {
-       "label": "Pose de stent entre artère pulmonaire gauche et aorte descendante (Potts inversé)",
-       "code": "PROC151"
-      },
-      {
-       "label": "Restriction de flux des artères pulmonaires droite et gauche par dispositifs transcathéter",
-       "code": "PROC152"
-      },
-      {
-       "label": "fermeture d'une fistule ou fenestration aorticopulmonaire",
-       "code": "PROC152"
-      },
-      {
-       "label": "angioplastie de coarctation",
-       "code": "PROC150"
-      },
-      {
-       "label": "angioplastie de coarctation",
-       "code": "PROC150"
-      },
-      {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "PROC151"
-      },
-      {
-       "label": "mise en place d'endoprothèse au site de coarctation aortique",
-       "code": "PROC151"
-      },
-      {
-       "label": "insertion d'une endoprothèse dans le canal artériel",
-       "code": "PROC151"
-      },
-      {
-       "label": "dilatation par ballonnet du canal artériel",
+       "label": "Redilatation d'un stent dans une anastomose systémico-pulmonaire",
        "code": "PROC-2010-2630"
       },
       {
-       "label": "fermeture par voie percutanée du ligament artériel persistant",
-       "code": "PROC152"
-      },
-      {
-       "label": "Embolisation percutanée transluminale d'une collatérale systémico-pulmonaire majeure (MAPCA)",
-       "code": "PROC154"
-      },
-      {
-       "label": "réparation d'une fistule artérioveineuse par occlusion",
-       "code": "PROC152"
-      },
-      {
-       "label": "Embolisation percutanée d'un vaisseau lymphatique guidée par fluoroscopie",
-       "code": "PROC154"
-      },
-      {
-       "label": "Occlusion de collatérale véino-veineuse par dispositif",
-       "code": "PROC152"
-      },
-      {
-       "label": "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-       "code": "PROC150"
-      },
-      {
-       "label": "angioplastie au niveau d'une dérivation de la circulation systémique vers l'artère pulmonaire",
+       "label": "Perforation et dilatation percutanées d'un conduit",
        "code": "PROC-2010-2640"
       },
       {
-       "label": "mise en place d'endoprothèse dans une dérivation de la circulation systémique vers l'artère pulmonaire",
-       "code": "PROC151"
-      },
-      {
-       "label": "dilatation par ballonnet d'une dérivation de la circulation systémique vers l'artère pulmonaire",
-       "code": "PROC-2010-2630"
-      },
-      {
-       "label": "Occlusion d'anastomose systémico-pulmonaire par dispositif d'embolisation transluminal",
-       "code": "PROC152"
-      },
-      {
-       "label": "dilatation par ballonnet d'un conduit cardiaque",
-       "code": "PROC150"
-      },
-      {
-       "label": "dilatation transluminale percutanée par ballonnet d'un conduit cardiaque",
+       "label": "Perforation et dilatation percutanées d'une anastomose systémico-pulmonaire",
        "code": "PROC-2010-2640"
       },
       {
-       "label": "pose d'une endoprothèse dans un conduit cardiaque",
+       "label": "Dilatation au ballon d'une veine pulmonaire",
+       "code": "PROC150"
+      },
+      {
+       "label": "Dilatation d'une veine pulmonaire au ballon de découpe",
+       "code": "PROC150"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire",
+       "code": "PROC150"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique",
+       "code": "PROC150"
+      },
+      {
+       "label": "Dilatation au ballon du tronc de l'artère pulmonaire",
+       "code": "PROC150"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire droite",
+       "code": "PROC150"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire gauche",
+       "code": "PROC150"
+      },
+      {
+       "label": "Restriction du débit du tronc pulmonaire par dispositif implanté par voie percutanée",
+       "code": "PROC152"
+      },
+      {
+       "label": "Restriction du débit des artères pulmonaires droite et gauche par dispositifs implantés par voie percutanée",
+       "code": "PROC152"
+      },
+      {
+       "label": "Dilatation de l'arbre artériel pulmonaire au ballon de découpe",
+       "code": "PROC150"
+      },
+      {
+       "label": "Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
        "code": "PROC151"
       },
       {
-       "label": "pose d'une endoprothèse dans un conduit cardiaque",
+       "label": "Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif",
+       "code": "PROC154"
+      },
+      {
+       "label": "Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "PROC150"
+      },
+      {
+       "label": "Pose de stent dans le canal artériel",
+       "code": "PROC151"
+      },
+      {
+       "label": "Redilatation d'un stent du canal artériel",
        "code": "PROC-2010-2630"
       },
       {
-       "label": "Implantation de dispositif par voie transluminale",
+       "label": "Fermeture percutanée du canal artériel par prothèse",
        "code": "PROC152"
       },
       {
-       "label": "Implantation de valve aortique par voie transapicale (approche hybride)",
+       "label": "Fermeture percutanée du canal artériel par coil",
+       "code": "PROC154"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par plug",
+       "code": "PROC152"
+      },
+      {
+       "label": "Dilatation au ballon de la valve pulmonaire",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire pulmonaire",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve pulmonaire",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent",
        "code": "PROC-2010-2660"
       },
       {
-       "label": "Fermeture peropératoire de CIV par dispositif transluminal (approche hybride)",
+       "label": "Valve-in-valve pulmonaire par voie percutanée (réimplantation)",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Implantation percutanée d'une valve aortique montée sur stent",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Valve-in-valve aortique par voie percutanée (réimplantation)",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Implantation d'une valve aortique par voie transapicale (approche hybride)",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire",
+       "code": "PROC151"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure",
+       "code": "PROC-2010-2660"
+      },
+      {
+       "label": "Dilatation au ballon de la valve aortique",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire aortique",
+       "code": "PROC-2010-2590"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve aortique",
+       "code": "PROC-2010-2640"
+      },
+      {
+       "label": "Fenestration percutanée du septum interatrial ou d'un tunnel atrial",
+       "code": "PROC-2010-2640"
+      },
+      {
+       "label": "Approche hybride stade 1 : cerclage bilatéral des artères pulmonaires et stent du canal artériel par voie percutanée",
+       "code": "PROC-2010-2180"
+      },
+      {
+       "label": "Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse",
        "code": "PROC152"
       },
       {
-       "label": "Cerclage bilatéral des artères pulmonaires + pose transcathéter de stent dans le canal artériel",
+       "label": "Complétion percutanée de la dérivation cavo-pulmonaire totale par stent couvert de la veine cave inférieure à la veine cave supérieure",
+       "code": "PROC-2010-2650"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interventriculaire par prothèse",
+       "code": "PROC152"
+      },
+      {
+       "label": "Fenestration percutanée d'un patch de communication interventriculaire",
+       "code": "PROC-2010-2640"
+      },
+      {
+       "label": "Fermeture peropératoire d'une communication interventriculaire par dispositif (approche hybride)",
+       "code": "PROC152"
+      },
+      {
+       "label": "Création percutanée d'une communication interventriculaire",
+       "code": "PROC-2010-2640"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse",
+       "code": "PROC152"
+      },
+      {
+       "label": "Fermeture percutanée d'un foramen ovale perméable par prothèse",
+       "code": "PROC152"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type sinus venosus par stent couvert",
        "code": "PROC151"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale par prothèse",
+       "code": "PROC152"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule gauche",
+       "code": "PROC150"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule droit",
+       "code": "PROC150"
+      },
+      {
+       "label": "Pose de stent dans la voie d'éjection du ventricule droit",
+       "code": "PROC151"
+      },
+      {
+       "label": "Biopsie ventriculaire droite par voie percutanée",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule droit",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Redilatation d'un stent de la voie d'éjection native du ventricule droit",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Péricardiocentèse percutanée",
+       "code": "PROC88"
+      },
+      {
+       "label": "Embolectomie percutanée de l'arbre artériel pulmonaire",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Embolisation lymphatique percutanée",
+       "code": "PROC154"
+      },
+      {
+       "label": "Redilatation de stent avec fracture volontaire du stent",
+       "code": "PROC-2010-2630"
+      },
+      {
+       "label": "Extraction percutanée d'un dispositif ou d'un corps étranger",
+       "code": "PROC-2010-2410"
+      },
+      {
+       "label": "Geste percutané pour complication du cathétérisme",
+       "code": "PROC-2010-2410"
       }
      ],
      "note": "Nombre de lignes ayant une correspondance ECHSA renseignée. Les correspondances exactes et les rattachements à un concept plus large restent à distinguer."
     },
     "orphanet": {
      "n": null,
-     "total": 79,
+     "total": 188,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "ucum": {
      "n": null,
-     "total": 79,
+     "total": 188,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
-     "n": null,
-     "total": 79,
-     "niveau": "non_evalue",
-     "entries": [],
-     "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
+     "n": 188,
+     "total": 188,
+     "niveau": "plein",
+     "entries": [
+      {
+       "label": "Pose percutanée d'un stent sur un anévrisme de l'aorte thoracique",
+       "code": "TAUSSIG-PROC-0001"
+      },
+      {
+       "label": "Stratégie hybride (chirurgie et cathétérisme combinés)",
+       "code": "TAUSSIG-PROC-0002"
+      },
+      {
+       "label": "Cathétérisme par voie transseptale avec ponction transseptale",
+       "code": "TAUSSIG-PROC-0003"
+      },
+      {
+       "label": "Test d'occlusion diagnostique par voie percutanée",
+       "code": "TAUSSIG-PROC-0004"
+      },
+      {
+       "label": "Geste percutané avec traitement adjuvant",
+       "code": "TAUSSIG-PROC-0005"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique : angiographie",
+       "code": "TAUSSIG-PROC-0006"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques",
+       "code": "TAUSSIG-PROC-0007"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve de modification hémodynamique",
+       "code": "TAUSSIG-PROC-0008"
+      },
+      {
+       "label": "Cathétérisme d'évaluation d'une hypertension pulmonaire",
+       "code": "TAUSSIG-PROC-0009"
+      },
+      {
+       "label": "Cathétérisme diagnostique à visée interventionnelle : anatomie inadaptée au geste",
+       "code": "TAUSSIG-PROC-0010"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme",
+       "code": "TAUSSIG-PROC-0011"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme atrial",
+       "code": "TAUSSIG-PROC-0012"
+      },
+      {
+       "label": "Geste percutané pour trouble du rythme ventriculaire",
+       "code": "TAUSSIG-PROC-0013"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique avec épreuve électrophysiologique",
+       "code": "TAUSSIG-PROC-0014"
+      },
+      {
+       "label": "Exploration électrophysiologique",
+       "code": "TAUSSIG-PROC-0015"
+      },
+      {
+       "label": "Exploration électrophysiologique avec cartographie tridimensionnelle",
+       "code": "TAUSSIG-PROC-0016"
+      },
+      {
+       "label": "Geste fœtal",
+       "code": "TAUSSIG-PROC-0017"
+      },
+      {
+       "label": "Coagulation laser des anastomoses placentaires dans le syndrome transfuseur-transfusé",
+       "code": "TAUSSIG-PROC-0018"
+      },
+      {
+       "label": "Geste fœtal par cathéter",
+       "code": "TAUSSIG-PROC-0019"
+      },
+      {
+       "label": "Valvuloplastie pulmonaire fœtale au ballon",
+       "code": "TAUSSIG-PROC-0020"
+      },
+      {
+       "label": "Valvuloplastie aortique fœtale au ballon",
+       "code": "TAUSSIG-PROC-0021"
+      },
+      {
+       "label": "Péricardiocentèse fœtale par cathéter",
+       "code": "TAUSSIG-PROC-0022"
+      },
+      {
+       "label": "Atrioseptostomie fœtale au ballon",
+       "code": "TAUSSIG-PROC-0023"
+      },
+      {
+       "label": "Cathétérisme thérapeutique avec échec de largage d'un dispositif, d'un stent ou d'un coil",
+       "code": "TAUSSIG-PROC-0024"
+      },
+      {
+       "label": "Geste de cathétérisme cardiovasculaire",
+       "code": "TAUSSIG-PROC-0025"
+      },
+      {
+       "label": "Nouveau cathétérisme pour lésion résiduelle ou récidivante",
+       "code": "TAUSSIG-PROC-0026"
+      },
+      {
+       "label": "Redilatation de stent",
+       "code": "TAUSSIG-PROC-0027"
+      },
+      {
+       "label": "Pose de stent",
+       "code": "TAUSSIG-PROC-0028"
+      },
+      {
+       "label": "Dilatation au ballon",
+       "code": "TAUSSIG-PROC-0029"
+      },
+      {
+       "label": "Implantation d'un dispositif par voie percutanée",
+       "code": "TAUSSIG-PROC-0030"
+      },
+      {
+       "label": "Occlusion par coil au cours d'un cathétérisme",
+       "code": "TAUSSIG-PROC-0031"
+      },
+      {
+       "label": "Implantation percutanée d'une valve",
+       "code": "TAUSSIG-PROC-0032"
+      },
+      {
+       "label": "Fermeture percutanée d'une fuite de prothèse valvulaire par dispositif",
+       "code": "TAUSSIG-PROC-0033"
+      },
+      {
+       "label": "Dilatation valvulaire au ballon",
+       "code": "TAUSSIG-PROC-0034"
+      },
+      {
+       "label": "Cathétérisme cardiovasculaire thérapeutique",
+       "code": "TAUSSIG-PROC-0035"
+      },
+      {
+       "label": "Perforation thérapeutique percutanée pour créer une communication entre cavités ou vaisseaux",
+       "code": "TAUSSIG-PROC-0036"
+      },
+      {
+       "label": "Cathétérisme cardiaque diagnostique",
+       "code": "TAUSSIG-PROC-0037"
+      },
+      {
+       "label": "Agrandissement d'une communication interventriculaire",
+       "code": "TAUSSIG-PROC-0038"
+      },
+      {
+       "label": "Agrandissement ou création d'une communication interventriculaire",
+       "code": "TAUSSIG-PROC-0039"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie) : stade 1",
+       "code": "TAUSSIG-PROC-0040"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s) et retrait des cerclages pulmonaires",
+       "code": "TAUSSIG-PROC-0041"
+      },
+      {
+       "label": "Approche hybride de l'hypoplasie du cœur gauche, stade 2 : amalgame aorto-pulmonaire, anastomose(s) cavo-pulmonaire(s) supérieure(s), retrait des cerclages pulmonaires et réparation de l'arche",
+       "code": "TAUSSIG-PROC-0042"
+      },
+      {
+       "label": "Échographie endocoronaire",
+       "code": "TAUSSIG-PROC-0043"
+      },
+      {
+       "label": "Échocardiographie",
+       "code": "TAUSSIG-PROC-0044"
+      },
+      {
+       "label": "Échocardiographie transœsophagienne",
+       "code": "TAUSSIG-PROC-0045"
+      },
+      {
+       "label": "Geste percutané guidé par échographie intracardiaque",
+       "code": "TAUSSIG-PROC-0046"
+      },
+      {
+       "label": "Geste percutané sous guidage radiologique",
+       "code": "TAUSSIG-PROC-0047"
+      },
+      {
+       "label": "Geste percutané sous guidage par IRM",
+       "code": "TAUSSIG-PROC-0048"
+      },
+      {
+       "label": "Geste percutané sous guidage radiologique et IRM",
+       "code": "TAUSSIG-PROC-0049"
+      },
+      {
+       "label": "Geste percutané sous guidage échographique",
+       "code": "TAUSSIG-PROC-0050"
+      },
+      {
+       "label": "Imagerie endocoronaire par tomographie par cohérence optique",
+       "code": "TAUSSIG-PROC-0051"
+      },
+      {
+       "label": "Retrait peropératoire complet ou partiel d'un stent de l'artère pulmonaire",
+       "code": "TAUSSIG-PROC-0052"
+      },
+      {
+       "label": "Geste sur l'artère pulmonaire",
+       "code": "TAUSSIG-PROC-0053"
+      },
+      {
+       "label": "Occlusion d'une collatérale veino-veineuse par dispositif",
+       "code": "TAUSSIG-PROC-0054"
+      },
+      {
+       "label": "Occlusion percutanée d'une veine systémique",
+       "code": "TAUSSIG-PROC-0055"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite",
+       "code": "TAUSSIG-PROC-0056"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche",
+       "code": "TAUSSIG-PROC-0057"
+      },
+      {
+       "label": "Pose de stent dans l'arbre artériel pulmonaire",
+       "code": "TAUSSIG-PROC-0058"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "TAUSSIG-PROC-0059"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "TAUSSIG-PROC-0060"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "TAUSSIG-PROC-0061"
+      },
+      {
+       "label": "Pose de stent dans l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "TAUSSIG-PROC-0062"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, en amont de la bifurcation hilaire",
+       "code": "TAUSSIG-PROC-0063"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire droite, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "TAUSSIG-PROC-0064"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, en amont de la bifurcation hilaire",
+       "code": "TAUSSIG-PROC-0065"
+      },
+      {
+       "label": "Redilatation d'un stent de l'artère pulmonaire gauche, au niveau ou en aval de la bifurcation hilaire (lobaire et segmentaire)",
+       "code": "TAUSSIG-PROC-0066"
+      },
+      {
+       "label": "Pose de stent entre l'artère pulmonaire gauche et l'aorte descendante (Potts inverse)",
+       "code": "TAUSSIG-PROC-0067"
+      },
+      {
+       "label": "Pose de stent sur une coarctation de l'aorte",
+       "code": "TAUSSIG-PROC-0068"
+      },
+      {
+       "label": "Pose de stent sur une recoarctation de l'aorte",
+       "code": "TAUSSIG-PROC-0069"
+      },
+      {
+       "label": "Pose de stent sur une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "TAUSSIG-PROC-0070"
+      },
+      {
+       "label": "Redilatation d'un stent de l'aorte thoracique",
+       "code": "TAUSSIG-PROC-0071"
+      },
+      {
+       "label": "Pose de stent dans une veine pulmonaire",
+       "code": "TAUSSIG-PROC-0072"
+      },
+      {
+       "label": "Pose de stent dans une veine pulmonaire ou un chenal veineux pulmonaire",
+       "code": "TAUSSIG-PROC-0073"
+      },
+      {
+       "label": "Pose de stent dans la veine cave supérieure",
+       "code": "TAUSSIG-PROC-0074"
+      },
+      {
+       "label": "Pose de stent dans une veine systémique ou un chenal veineux systémique",
+       "code": "TAUSSIG-PROC-0075"
+      },
+      {
+       "label": "Redilatation d'un stent d'une veine systémique",
+       "code": "TAUSSIG-PROC-0076"
+      },
+      {
+       "label": "Redilatation d'un stent d'une veine pulmonaire",
+       "code": "TAUSSIG-PROC-0077"
+      },
+      {
+       "label": "Cryoablation percutanée d'un trouble du rythme",
+       "code": "TAUSSIG-PROC-0078"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme par radiofréquence",
+       "code": "TAUSSIG-PROC-0079"
+      },
+      {
+       "label": "Ablation percutanée avec isolation des veines pulmonaires",
+       "code": "TAUSSIG-PROC-0080"
+      },
+      {
+       "label": "Ablation percutanée d'un trouble du rythme",
+       "code": "TAUSSIG-PROC-0081"
+      },
+      {
+       "label": "Geste sur une artère coronaire",
+       "code": "TAUSSIG-PROC-0082"
+      },
+      {
+       "label": "Occlusion percutanée d'une fistule coronaire",
+       "code": "TAUSSIG-PROC-0083"
+      },
+      {
+       "label": "Injection intracoronaire percutanée d'un agent thrombolytique",
+       "code": "TAUSSIG-PROC-0084"
+      },
+      {
+       "label": "Angioplastie coronaire percutanée au ballon",
+       "code": "TAUSSIG-PROC-0085"
+      },
+      {
+       "label": "Pose percutanée d'un stent coronaire",
+       "code": "TAUSSIG-PROC-0086"
+      },
+      {
+       "label": "Occlusion chimique percutanée d'une artère coronaire",
+       "code": "TAUSSIG-PROC-0087"
+      },
+      {
+       "label": "Redilatation d'un stent coronaire",
+       "code": "TAUSSIG-PROC-0088"
+      },
+      {
+       "label": "Fermeture percutanée d'une fenêtre aorto-pulmonaire par prothèse",
+       "code": "TAUSSIG-PROC-0089"
+      },
+      {
+       "label": "Dilatation au ballon d'une coarctation (ou hypoplasie) native de l'aorte",
+       "code": "TAUSSIG-PROC-0090"
+      },
+      {
+       "label": "Dilatation au ballon d'une recoarctation de l'aorte",
+       "code": "TAUSSIG-PROC-0091"
+      },
+      {
+       "label": "Levée d'obstacle percutanée d'une coarctation de l'aorte",
+       "code": "TAUSSIG-PROC-0092"
+      },
+      {
+       "label": "Geste sur une artère systémique",
+       "code": "TAUSSIG-PROC-0093"
+      },
+      {
+       "label": "Occlusion d'une fistule artério-veineuse",
+       "code": "TAUSSIG-PROC-0094"
+      },
+      {
+       "label": "Fermeture d'une fistule artério-veineuse pulmonaire",
+       "code": "TAUSSIG-PROC-0095"
+      },
+      {
+       "label": "Fermeture partielle d'une communication interatriale",
+       "code": "TAUSSIG-PROC-0096"
+      },
+      {
+       "label": "Atrioseptostomie au ballon par retrait (Rashkind)",
+       "code": "TAUSSIG-PROC-0097"
+      },
+      {
+       "label": "Atrioseptostomie à la lame",
+       "code": "TAUSSIG-PROC-0098"
+      },
+      {
+       "label": "Création ou agrandissement d'une communication interatriale",
+       "code": "TAUSSIG-PROC-0099"
+      },
+      {
+       "label": "Atrioseptostomie au ballon",
+       "code": "TAUSSIG-PROC-0100"
+      },
+      {
+       "label": "Création percutanée d'une communication interatriale",
+       "code": "TAUSSIG-PROC-0101"
+      },
+      {
+       "label": "Retrait d'un thrombus intracardiaque",
+       "code": "TAUSSIG-PROC-0102"
+      },
+      {
+       "label": "Fermeture percutanée de l'auricule gauche par prothèse",
+       "code": "TAUSSIG-PROC-0103"
+      },
+      {
+       "label": "Geste sur la valve tricuspide",
+       "code": "TAUSSIG-PROC-0104"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire tricuspide",
+       "code": "TAUSSIG-PROC-0105"
+      },
+      {
+       "label": "Remplacement valvulaire tricuspide par voie percutanée",
+       "code": "TAUSSIG-PROC-0106"
+      },
+      {
+       "label": "Valve-in-valve tricuspide par voie percutanée",
+       "code": "TAUSSIG-PROC-0107"
+      },
+      {
+       "label": "Dilatation au ballon de la valve mitrale",
+       "code": "TAUSSIG-PROC-0108"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire mitrale",
+       "code": "TAUSSIG-PROC-0109"
+      },
+      {
+       "label": "Réparation valvulaire mitrale par voie percutanée",
+       "code": "TAUSSIG-PROC-0110"
+      },
+      {
+       "label": "Remplacement valvulaire mitral par voie percutanée",
+       "code": "TAUSSIG-PROC-0111"
+      },
+      {
+       "label": "Valve-in-valve mitrale par voie percutanée",
+       "code": "TAUSSIG-PROC-0112"
+      },
+      {
+       "label": "Valve-in-valve mitrale transcathéter par voie transapicale",
+       "code": "TAUSSIG-PROC-0113"
+      },
+      {
+       "label": "Dilatation au ballon d'une anastomose systémico-pulmonaire",
+       "code": "TAUSSIG-PROC-0114"
+      },
+      {
+       "label": "Pose de stent dans une anastomose systémico-pulmonaire",
+       "code": "TAUSSIG-PROC-0115"
+      },
+      {
+       "label": "Occlusion percutanée d'une anastomose systémico-pulmonaire par dispositif ou embolisation",
+       "code": "TAUSSIG-PROC-0116"
+      },
+      {
+       "label": "Dilatation au ballon d'un conduit",
+       "code": "TAUSSIG-PROC-0117"
+      },
+      {
+       "label": "Pose de stent dans un conduit",
+       "code": "TAUSSIG-PROC-0118"
+      },
+      {
+       "label": "Redilatation d'un stent dans un conduit",
+       "code": "TAUSSIG-PROC-0119"
+      },
+      {
+       "label": "Redilatation d'un stent dans une anastomose systémico-pulmonaire",
+       "code": "TAUSSIG-PROC-0120"
+      },
+      {
+       "label": "Perforation et dilatation percutanées d'un conduit",
+       "code": "TAUSSIG-PROC-0121"
+      },
+      {
+       "label": "Perforation et dilatation percutanées d'une anastomose systémico-pulmonaire",
+       "code": "TAUSSIG-PROC-0122"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine pulmonaire",
+       "code": "TAUSSIG-PROC-0123"
+      },
+      {
+       "label": "Dilatation d'une veine pulmonaire au ballon de découpe",
+       "code": "TAUSSIG-PROC-0124"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine pulmonaire ou d'un chenal veineux pulmonaire",
+       "code": "TAUSSIG-PROC-0125"
+      },
+      {
+       "label": "Dilatation au ballon d'une veine systémique ou d'un chenal veineux systémique",
+       "code": "TAUSSIG-PROC-0126"
+      },
+      {
+       "label": "Dilatation au ballon du tronc de l'artère pulmonaire",
+       "code": "TAUSSIG-PROC-0127"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire droite",
+       "code": "TAUSSIG-PROC-0128"
+      },
+      {
+       "label": "Dilatation au ballon de l'artère pulmonaire gauche",
+       "code": "TAUSSIG-PROC-0129"
+      },
+      {
+       "label": "Restriction du débit du tronc pulmonaire par dispositif implanté par voie percutanée",
+       "code": "TAUSSIG-PROC-0130"
+      },
+      {
+       "label": "Restriction du débit des artères pulmonaires droite et gauche par dispositifs implantés par voie percutanée",
+       "code": "TAUSSIG-PROC-0131"
+      },
+      {
+       "label": "Dilatation de l'arbre artériel pulmonaire au ballon de découpe",
+       "code": "TAUSSIG-PROC-0132"
+      },
+      {
+       "label": "Geste percutané sur une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "TAUSSIG-PROC-0133"
+      },
+      {
+       "label": "Pose de stent dans une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "TAUSSIG-PROC-0134"
+      },
+      {
+       "label": "Occlusion percutanée d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA) par coil ou dispositif",
+       "code": "TAUSSIG-PROC-0135"
+      },
+      {
+       "label": "Dilatation au ballon d'une ou plusieurs collatérales systémico-pulmonaires (MAPCA)",
+       "code": "TAUSSIG-PROC-0136"
+      },
+      {
+       "label": "Pose de stent dans le canal artériel",
+       "code": "TAUSSIG-PROC-0137"
+      },
+      {
+       "label": "Redilatation d'un stent du canal artériel",
+       "code": "TAUSSIG-PROC-0138"
+      },
+      {
+       "label": "Geste sur le canal artériel ou le ligament artériel",
+       "code": "TAUSSIG-PROC-0139"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par prothèse",
+       "code": "TAUSSIG-PROC-0140"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par coil",
+       "code": "TAUSSIG-PROC-0141"
+      },
+      {
+       "label": "Fermeture percutanée du canal artériel par plug",
+       "code": "TAUSSIG-PROC-0142"
+      },
+      {
+       "label": "Geste sur la valve pulmonaire",
+       "code": "TAUSSIG-PROC-0143"
+      },
+      {
+       "label": "Dilatation au ballon de la valve pulmonaire",
+       "code": "TAUSSIG-PROC-0144"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire pulmonaire",
+       "code": "TAUSSIG-PROC-0145"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve pulmonaire",
+       "code": "TAUSSIG-PROC-0146"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent",
+       "code": "TAUSSIG-PROC-0147"
+      },
+      {
+       "label": "Valve-in-valve pulmonaire par voie percutanée (réimplantation)",
+       "code": "TAUSSIG-PROC-0148"
+      },
+      {
+       "label": "Implantation percutanée d'une valve aortique montée sur stent",
+       "code": "TAUSSIG-PROC-0149"
+      },
+      {
+       "label": "Valve-in-valve aortique par voie percutanée (réimplantation)",
+       "code": "TAUSSIG-PROC-0150"
+      },
+      {
+       "label": "Implantation d'une valve aortique par voie transapicale (approche hybride)",
+       "code": "TAUSSIG-PROC-0151"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec pré-stenting",
+       "code": "TAUSSIG-PROC-0152"
+      },
+      {
+       "label": "Pré-stenting de la voie pulmonaire en préparation d'un remplacement valvulaire",
+       "code": "TAUSSIG-PROC-0153"
+      },
+      {
+       "label": "Implantation percutanée d'une valve pulmonaire montée sur stent avec rupture volontaire de la prothèse antérieure",
+       "code": "TAUSSIG-PROC-0154"
+      },
+      {
+       "label": "Dilatation au ballon de la valve aortique",
+       "code": "TAUSSIG-PROC-0155"
+      },
+      {
+       "label": "Dilatation au ballon d'une prothèse valvulaire aortique",
+       "code": "TAUSSIG-PROC-0156"
+      },
+      {
+       "label": "Perforation et dilatation percutanées de la valve aortique",
+       "code": "TAUSSIG-PROC-0157"
+      },
+      {
+       "label": "Fenestration percutanée du septum interatrial ou d'un tunnel atrial",
+       "code": "TAUSSIG-PROC-0158"
+      },
+      {
+       "label": "Approche hybride stade 1 : cerclage bilatéral des artères pulmonaires et stent du canal artériel par voie percutanée",
+       "code": "TAUSSIG-PROC-0159"
+      },
+      {
+       "label": "Stratégie hybride de l'hypoplasie du cœur gauche (cathétérisme et chirurgie)",
+       "code": "TAUSSIG-PROC-0160"
+      },
+      {
+       "label": "Fermeture percutanée de la fenestration d'un tunnel atrial (Fontan) par prothèse",
+       "code": "TAUSSIG-PROC-0161"
+      },
+      {
+       "label": "Complétion percutanée de la dérivation cavo-pulmonaire totale par stent couvert de la veine cave inférieure à la veine cave supérieure",
+       "code": "TAUSSIG-PROC-0162"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interventriculaire par prothèse",
+       "code": "TAUSSIG-PROC-0163"
+      },
+      {
+       "label": "Fenestration percutanée d'un patch de communication interventriculaire",
+       "code": "TAUSSIG-PROC-0164"
+      },
+      {
+       "label": "Fermeture peropératoire d'une communication interventriculaire par dispositif (approche hybride)",
+       "code": "TAUSSIG-PROC-0165"
+      },
+      {
+       "label": "Création percutanée d'une communication interventriculaire",
+       "code": "TAUSSIG-PROC-0166"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type ostium secundum par prothèse",
+       "code": "TAUSSIG-PROC-0167"
+      },
+      {
+       "label": "Fermeture percutanée d'un foramen ovale perméable par prothèse",
+       "code": "TAUSSIG-PROC-0168"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale de type sinus venosus par stent couvert",
+       "code": "TAUSSIG-PROC-0169"
+      },
+      {
+       "label": "Fermeture percutanée d'une communication interatriale par prothèse",
+       "code": "TAUSSIG-PROC-0170"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule gauche",
+       "code": "TAUSSIG-PROC-0171"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche",
+       "code": "TAUSSIG-PROC-0172"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule gauche par alcoolisation coronaire percutanée",
+       "code": "TAUSSIG-PROC-0173"
+      },
+      {
+       "label": "Geste sur le ventricule gauche",
+       "code": "TAUSSIG-PROC-0174"
+      },
+      {
+       "label": "Dilatation au ballon de la voie d'éjection du ventricule droit",
+       "code": "TAUSSIG-PROC-0175"
+      },
+      {
+       "label": "Pose de stent dans la voie d'éjection du ventricule droit",
+       "code": "TAUSSIG-PROC-0176"
+      },
+      {
+       "label": "Biopsie ventriculaire droite par voie percutanée",
+       "code": "TAUSSIG-PROC-0177"
+      },
+      {
+       "label": "Geste sur le ventricule droit",
+       "code": "TAUSSIG-PROC-0178"
+      },
+      {
+       "label": "Levée d'obstacle de la voie d'éjection du ventricule droit",
+       "code": "TAUSSIG-PROC-0179"
+      },
+      {
+       "label": "Redilatation d'un stent de la voie d'éjection native du ventricule droit",
+       "code": "TAUSSIG-PROC-0180"
+      },
+      {
+       "label": "Péricardiocentèse percutanée",
+       "code": "TAUSSIG-PROC-0181"
+      },
+      {
+       "label": "Embolectomie percutanée de l'arbre artériel pulmonaire",
+       "code": "TAUSSIG-PROC-0182"
+      },
+      {
+       "label": "Embolisation lymphatique percutanée",
+       "code": "TAUSSIG-PROC-0183"
+      },
+      {
+       "label": "Redilatation de stent avec fracture volontaire du stent",
+       "code": "TAUSSIG-PROC-0184"
+      },
+      {
+       "label": "Extraction percutanée d'un dispositif ou d'un corps étranger",
+       "code": "TAUSSIG-PROC-0185"
+      },
+      {
+       "label": "Geste percutané pour complication du cathétérisme",
+       "code": "TAUSSIG-PROC-0186"
+      },
+      {
+       "label": "Retrait chirurgical d'un dispositif",
+       "code": "TAUSSIG-PROC-0187"
+      },
+      {
+       "label": "Geste sur une veine systémique",
+       "code": "TAUSSIG-PROC-0188"
+      }
+     ],
+     "note": ""
     }
    }
   },
   {
    "id": "complications",
    "titre": "Complications (EI)",
-   "total": 39,
+   "total": 43,
    "cells": {
     "ipccc": {
-     "n": 39,
-     "total": 39,
+     "n": 43,
+     "total": 43,
      "niveau": "plein",
      "entries": [
       {
@@ -3536,7 +6221,7 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.00.01"
       },
       {
-       "label": "fibrillation atriale chronique",
+       "label": "fibrillation atriale",
        "code": "11.03.08"
       },
       {
@@ -3632,8 +6317,8 @@ window.TAUSSIG_COVERAGE = {
        "code": "15.50.11"
       },
       {
-       "label": "faux anévrisme fémoral",
-       "code": "15.50.19"
+       "label": "pseudoanévrisme au site d'abord",
+       "code": "15.60.23"
       },
       {
        "label": "dissection artérielle",
@@ -3678,20 +6363,36 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
        "code": "15.50.65"
+      },
+      {
+       "label": "Thrombose vasculaire ou de conduit post-procédurale",
+       "code": "15.00.21"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "15.02.00"
+      },
+      {
+       "label": "Anévrisme aortique post-procédural",
+       "code": "15.37.80"
+      },
+      {
+       "label": "Anévrisme de l'aorte au site de coarctation après intervention",
+       "code": "15.37.07"
       }
      ],
      "note": ""
     },
     "cim11": {
      "n": null,
-     "total": 39,
+     "total": 43,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "cim10": {
-     "n": 37,
-     "total": 39,
+     "n": 41,
+     "total": 43,
      "niveau": "partiel",
      "entries": [
       {
@@ -3703,7 +6404,7 @@ window.TAUSSIG_COVERAGE = {
        "code": "T81.8"
       },
       {
-       "label": "fibrillation atriale chronique",
+       "label": "fibrillation atriale",
        "code": "I48"
       },
       {
@@ -3795,8 +6496,8 @@ window.TAUSSIG_COVERAGE = {
        "code": "T81.7 / Y84.0"
       },
       {
-       "label": "faux anévrisme fémoral",
-       "code": "T81.7 / Y84.0"
+       "label": "pseudoanévrisme au site d'abord",
+       "code": "T81.8"
       },
       {
        "label": "dissection artérielle",
@@ -3841,13 +6542,29 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
        "code": "T82.8"
+      },
+      {
+       "label": "Thrombose vasculaire ou de conduit post-procédurale",
+       "code": "T81.0"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "T81.0"
+      },
+      {
+       "label": "Anévrisme aortique post-procédural",
+       "code": "I71.2 / Y83.8"
+      },
+      {
+       "label": "Anévrisme de l'aorte au site de coarctation après intervention",
+       "code": "I71.2 / Y83.8"
       }
      ],
      "note": ""
     },
     "snomed": {
-     "n": 33,
-     "total": 39,
+     "n": 37,
+     "total": 43,
      "niveau": "partiel",
      "entries": [
       {
@@ -3859,8 +6576,8 @@ window.TAUSSIG_COVERAGE = {
        "code": "410429000"
       },
       {
-       "label": "fibrillation atriale chronique",
-       "code": "426749004"
+       "label": "fibrillation atriale",
+       "code": "49436004"
       },
       {
        "label": "flutter auriculaire",
@@ -3947,8 +6664,8 @@ window.TAUSSIG_COVERAGE = {
        "code": "414617007"
       },
       {
-       "label": "faux anévrisme fémoral",
-       "code": "312373008"
+       "label": "pseudoanévrisme au site d'abord",
+       "code": "1162761001"
       },
       {
        "label": "dissection artérielle",
@@ -3981,86 +6698,194 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
        "code": "473163005"
+      },
+      {
+       "label": "Thrombose vasculaire ou de conduit post-procédurale",
+       "code": "439127006"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "131148009"
+      },
+      {
+       "label": "Anévrisme aortique post-procédural",
+       "code": "737158007"
+      },
+      {
+       "label": "Anévrisme de l'aorte au site de coarctation après intervention",
+       "code": "871661008"
       }
      ],
      "note": "Existence du code et fidélité de la correspondance sont deux vérifications distinctes, non effectuées par cette matrice."
     },
     "ccam": {
      "n": null,
-     "total": 39,
+     "total": 43,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "echsa": {
-     "n": 11,
-     "total": 39,
+     "n": 34,
+     "total": 43,
      "niveau": "partiel",
      "entries": [
       {
        "label": "complication liée à une intervention",
-       "code": "CP-2010-900"
+       "code": "CP-2010-900 ; CP-2019-IC-10"
       },
       {
        "label": "arrêt cardiaque",
        "code": "CP2"
       },
       {
-       "label": "fibrillation atriale chronique",
-       "code": "CP6"
+       "label": "fibrillation atriale",
+       "code": "CP6 ; CP-2019-IC-01"
       },
       {
        "label": "flutter auriculaire",
-       "code": "CP6"
+       "code": "CP6 ; CP-2019-IC-02"
       },
       {
        "label": "Postoperative cardiac arrhythmia",
-       "code": "CP6"
+       "code": "CP6 ; CP-2019-IC-03"
       },
       {
        "label": "bloc atrioventriculaire complet",
-       "code": "CP6"
+       "code": "CP6 ; CP-2019-IC-04 ; CP-2019-IC-05"
       },
       {
        "label": "tachycardie ectopique jonctionnelle",
-       "code": "CP6"
+       "code": "CP6 ; CP-2019-IC-06"
       },
       {
        "label": "tachycardie ventriculaire",
-       "code": "CP6"
+       "code": "CP6 ; CP-2019-IC-08"
       },
       {
        "label": "Arythmie nécessitant l'implantation d'un stimulateur",
-       "code": "CP5"
+       "code": "CP5 ; CP-2019-IC-07"
+      },
+      {
+       "label": "perforation d'une paroi du cœur due à une procédure",
+       "code": "CP-2019-IC-13 ; CP-2019-IC-32"
       },
       {
        "label": "Postoperative cardiac tamponade",
-       "code": "CP10"
+       "code": "CP10 ; CP-2019-IC-33"
       },
       {
        "label": "décès intra-opératoire",
-       "code": "CP-2010-350"
+       "code": "CP-2010-350 ; CP-2019-IC-34"
+      },
+      {
+       "label": "communication interatriale résiduelle survenant après une intervention",
+       "code": "CP-2019-IC-16"
+      },
+      {
+       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "code": "CP-2019-IC-11"
+      },
+      {
+       "label": "Dysfonction de dispositif (complication de cathétérisme)",
+       "code": "CP-2019-IC-12"
+      },
+      {
+       "label": "corps étranger au niveau du cœur",
+       "code": "CP-2019-IC-14"
+      },
+      {
+       "label": "corps étranger",
+       "code": "CP-2019-IC-15"
+      },
+      {
+       "label": "perméabilité résiduelle du canal artériel survenant après une intervention pour canal artériel perméable persistant",
+       "code": "CP-2019-IC-18"
+      },
+      {
+       "label": "communication interventriculaire résiduelle",
+       "code": "CP-2019-IC-17"
+      },
+      {
+       "label": "régurgitation de la valve aortique",
+       "code": "CP-2019-IC-20"
+      },
+      {
+       "label": "régurgitation de la valve mitrale",
+       "code": "CP-2019-IC-22"
+      },
+      {
+       "label": "dysfonction de la prothèse valvulaire cardiaque",
+       "code": "CP-2019-IC-19"
+      },
+      {
+       "label": "régurgitation de la valve pulmonaire",
+       "code": "CP-2019-IC-21"
+      },
+      {
+       "label": "régurgitation de la valvule tricuspide",
+       "code": "CP-2019-IC-23"
+      },
+      {
+       "label": "pseudoanévrisme au site d'abord",
+       "code": "CP-2019-IC-25"
+      },
+      {
+       "label": "dissection artérielle",
+       "code": "CP-2019-IC-30"
+      },
+      {
+       "label": "extravasation de produit de contraste intraveineux",
+       "code": "CP-2019-IC-29"
+      },
+      {
+       "label": "fistule artérioveineuse",
+       "code": "CP-2019-IC-31"
+      },
+      {
+       "label": "perforation d'une artère",
+       "code": "CP-2019-IC-27"
+      },
+      {
+       "label": "embolisation d'un fragment de dispositif vasculaire lors d'un cathétérisme cardiaque",
+       "code": "CP-2019-IC-11"
+      },
+      {
+       "label": "Thrombose vasculaire ou de conduit post-procédurale",
+       "code": "CP-2019-IC-24"
+      },
+      {
+       "label": "Hémorragie post-procédurale",
+       "code": "CP-2019-IC-26"
+      },
+      {
+       "label": "Anévrisme aortique post-procédural",
+       "code": "CP-2019-IC-28"
+      },
+      {
+       "label": "Anévrisme de l'aorte au site de coarctation après intervention",
+       "code": "CP-2019-IC-28"
       }
      ],
      "note": "Le catalogue local comporte des correspondances non renseignées. Ce comptage ne démontre pas à lui seul une lacune du registre pour toutes les complications transcathéter."
     },
     "orphanet": {
      "n": null,
-     "total": 39,
+     "total": 43,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "ucum": {
      "n": null,
-     "total": 39,
+     "total": 43,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
      "n": null,
-     "total": 39,
+     "total": 43,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
@@ -4798,32 +7623,32 @@ window.TAUSSIG_COVERAGE = {
   {
    "id": "materiel",
    "titre": "Matériel",
-   "total": 15,
+   "total": 17,
    "cells": {
     "ipccc": {
      "n": null,
-     "total": 15,
+     "total": 17,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "cim11": {
      "n": null,
-     "total": 15,
+     "total": 17,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "cim10": {
      "n": null,
-     "total": 15,
+     "total": 17,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "snomed": {
-     "n": 10,
-     "total": 15,
+     "n": 11,
+     "total": 17,
      "niveau": "partiel",
      "entries": [
       {
@@ -4865,41 +7690,45 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Bioprothèse valvulaire tricuspide transcathéter",
        "code": "1141607002"
+      },
+      {
+       "label": "Coil d'embolisation (non neurovasculaire)",
+       "code": "704865009"
       }
      ],
      "note": ""
     },
     "ccam": {
      "n": null,
-     "total": 15,
+     "total": 17,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "echsa": {
      "n": null,
-     "total": 15,
+     "total": 17,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "orphanet": {
      "n": null,
-     "total": 15,
+     "total": 17,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "ucum": {
      "n": null,
-     "total": 15,
+     "total": 17,
      "niveau": "non_evalue",
      "entries": [],
      "note": "Colonne non retenue dans le classeur. Aucun résultat de couverture n'est déduit."
     },
     "maison": {
-     "n": 5,
-     "total": 15,
+     "n": 6,
+     "total": 17,
      "niveau": "partiel",
      "entries": [
       {
@@ -4921,6 +7750,10 @@ window.TAUSSIG_COVERAGE = {
       {
        "label": "Dispositif de fermeture de FOP",
        "code": "TAUSSIG-OCCLUDER-FOP"
+      },
+      {
+       "label": "Prothèse de fermeture de fuite paravalvulaire",
+       "code": "TAUSSIG-OCCLUDER-PARAVALVULAR"
       }
      ],
      "note": "Codes locaux renseignés dans une colonne externe, exclus du compteur de cette terminologie."

@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "procedure-urgency",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem procedure-urgency</b></p><a name=\"procedure-urgency\"> </a><a name=\"hcprocedure-urgency\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/procedure-urgency</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">elective<a name=\"procedure-urgency-elective\"> </a></td><td>Programmé</td><td>Réalisable en ambulatoire ou lors d'une hospitalisation ultérieure sans risque significatif ; chez un patient hospitalisé stable, réalisé pendant le séjour par commodité.</td></tr><tr><td style=\"white-space:nowrap\">urgent<a name=\"procedure-urgency-urgent\"> </a></td><td>Urgent</td><td>Réalisé pendant l'hospitalisation, avant la sortie, en raison d'inquiétudes significatives.</td></tr><tr><td style=\"white-space:nowrap\">emergency<a name=\"procedure-urgency-emergency\"> </a></td><td>En urgence</td><td>Réalisé dès que possible en raison d'un risque vital : un cas programmé serait décalé, ou l'équipe d'astreinte appelée.</td></tr><tr><td style=\"white-space:nowrap\">salvage<a name=\"procedure-urgency-salvage\"> </a></td><td>De sauvetage</td><td>Dernier recours : choc cardiogénique au début de la procédure, avec massage cardiaque d'au moins 60 secondes dans les 10 minutes précédentes ou assistance circulatoire extracorporelle non prévue.</td></tr></table></div>"
+  },
+  "url" : "https://taussig/fhir/CodeSystem/procedure-urgency",
+  "version" : "0.8.0",
+  "name" : "ProcedureUrgencyCS",
+  "title" : "TAUSSIG — Caractère urgent du cathétérisme",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-11-09T08:39:58+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Caractère urgent du cathétérisme, en 4 niveaux d'après le statut de procédure du registre NCDR IMPACT (dictionnaire v2.0.1, élément 5020) ; définitions résumées en français (décision I3).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "elective",
+    "display" : "Programmé",
+    "definition" : "Réalisable en ambulatoire ou lors d'une hospitalisation ultérieure sans risque significatif ; chez un patient hospitalisé stable, réalisé pendant le séjour par commodité."
+  },
+  {
+    "code" : "urgent",
+    "display" : "Urgent",
+    "definition" : "Réalisé pendant l'hospitalisation, avant la sortie, en raison d'inquiétudes significatives."
+  },
+  {
+    "code" : "emergency",
+    "display" : "En urgence",
+    "definition" : "Réalisé dès que possible en raison d'un risque vital : un cas programmé serait décalé, ou l'équipe d'astreinte appelée."
+  },
+  {
+    "code" : "salvage",
+    "display" : "De sauvetage",
+    "definition" : "Dernier recours : choc cardiogénique au début de la procédure, avec massage cardiaque d'au moins 60 secondes dans les 10 minutes précédentes ou assistance circulatoire extracorporelle non prévue."
+  }]
+}

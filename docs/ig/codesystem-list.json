@@ -9,7 +9,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/access-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "AccessType",
     "title" : "TAUSSIG — Type d'abord vasculaire",
@@ -17,7 +17,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/ae-attribution",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "AeAttribution",
     "title" : "TAUSSIG — Attribution d'un EI",
@@ -33,15 +33,23 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/anesthesia-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TaussigAnesthesiaType",
     "title" : "TAUSSIG — Complément pour le type d’anesthésie",
     "description" : "Code local pour l’absence explicite d’anesthésie. Une donnée manquante ne signifie pas aucune anesthésie. Aucune absence d’équivalent SNOMED n’est affirmée."
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/annotation-class",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "AnnotationClassCS",
+    "title" : "TAUSSIG — Classe d'annotation",
+    "description" : "Rôle d'un élément de profil dans l'annotation de comptes rendus (outil HARVEY), repris de la colonne classe_annotation du dictionnaire."
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/bsa-method",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "BsaMethod",
     "title" : "TAUSSIG — Méthode de calcul de surface corporelle",
@@ -49,7 +57,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/cath-intent",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "CathIntent",
     "title" : "TAUSSIG — Intention du cathétérisme",
@@ -57,7 +65,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/closure-device-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ClosureDeviceType",
     "title" : "TAUSSIG — Dispositifs de fermeture par cible",
@@ -65,7 +73,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/condition-axis",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ConditionAxis",
     "title" : "TAUSSIG — Axe d'une condition cardiaque",
@@ -73,7 +81,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/condition-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ConditionType",
     "title" : "TAUSSIG — Type de condition évolutive",
@@ -81,7 +89,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/death-attribution",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DeathAttribution",
     "title" : "TAUSSIG — Attribution du décès péri-procédural",
@@ -89,15 +97,23 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/derivation-method",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DerivationMethod",
     "title" : "TAUSSIG — Dérivation d'une mesure",
     "description" : "Mesure directe ou valeur calculée."
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/device-property",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "DeviceProperty",
+    "title" : "TAUSSIG — Propriété codée d'un dispositif",
+    "description" : "Type de propriété codée portée par Device.property (décision M2)."
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/diagnosis-role",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "DiagnosisRole",
     "title" : "TAUSSIG — Rôle d'une indication/diagnostic",
@@ -105,7 +121,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/echsa",
-    "version" : "0.4.1",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "TaussigEchsa",
     "title" : "TAUSSIG — ECHSA (nomenclature EACTS-ECHSA, représentation POC)",
@@ -113,7 +129,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/genetic-method",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "GeneticMethod",
     "title" : "TAUSSIG — Méthode de confirmation génétique",
@@ -121,7 +137,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/genetic-syndrome-category",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "GeneticSyndromeCategory",
     "title" : "TAUSSIG — Catégorie de syndrome génétique",
@@ -129,7 +145,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/gesture-result",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "GestureResult",
     "title" : "TAUSSIG — Résultat d'un geste / d'un matériel",
@@ -137,7 +153,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/implant-device-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ImplantDeviceType",
     "title" : "TAUSSIG — Type d'implant",
@@ -145,7 +161,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/implant-status",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ImplantStatus",
     "title" : "TAUSSIG — État clinique d'un implant",
@@ -161,7 +177,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/material-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MaterialType",
     "title" : "TAUSSIG — Type de matériel",
@@ -169,7 +185,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/measurement-condition",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MeasurementCondition",
     "title" : "TAUSSIG — Condition de mesure",
@@ -177,7 +193,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/measurement-modality",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "MeasurementModality",
     "title" : "TAUSSIG — Modalité de mesure",
@@ -192,8 +208,16 @@
     "description" : "Le QUOI d'une mesure de cathétérisme (modèle décomposé : propriété × site SNOMED). Codes TAUSSIG-local car aucune terminologie standard n'a de propriété intravasculaire générique sans site ; codage SNOMED secondaire générique fourni quand il existe."
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/operator-role",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "OperatorRole",
+    "title" : "TAUSSIG — Rôle de l'opérateur",
+    "description" : "Rôle d'un praticien dans la réalisation du cathétérisme (décision I1)."
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/periprocedural-medication-purpose",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "PeriproceduralMedicationPurpose",
     "title" : "TAUSSIG — Rôle du médicament péri-procédural",
@@ -201,39 +225,87 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/procedure-observation-code",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ProcedureObservationCode",
     "title" : "TAUSSIG — Observations liées au cathétérisme",
     "description" : "Codes locaux transitoires pour les observations de procédure dont le code LOINC reste à vérifier."
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/procedure-outcome-type",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "ProcedureOutcomeType",
+    "title" : "TAUSSIG — Type de résultat global de procédure",
+    "description" : "Nature du résultat porté par une Observation TaussigProcedureOutcome. Le succès technique n'en fait pas partie : il est porté par Procedure.outcome du cathétérisme."
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/procedure-phase",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "ProcedurePhase",
     "title" : "TAUSSIG — Phase procédurale d'une mesure",
     "description" : "Référentiel temporel pour le delta pre/post (cœur de la POC)."
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/procedure-urgency",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "ProcedureUrgencyCS",
+    "title" : "TAUSSIG — Caractère urgent du cathétérisme",
+    "description" : "Caractère urgent du cathétérisme, en 4 niveaux d'après le statut de procédure du registre NCDR IMPACT (dictionnaire v2.0.1, élément 5020) ; définitions résumées en français (décision I3)."
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/severity-scale",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "SeverityScale",
     "title" : "TAUSSIG — Échelle de gravité d'un EI",
     "description" : "Échelle de gradation validée par la littérature."
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/stent-coating",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentCoating",
+    "title" : "TAUSSIG — Revêtement actif d'un stent",
+    "description" : "Stent actif (à élution médicamenteuse) ou non (décision M2)."
+  },
+  {
+    "url" : "https://taussig/fhir/CodeSystem/stent-covering",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentCovering",
+    "title" : "TAUSSIG — Couverture d'un stent",
+    "description" : "Stent nu ou couvert (décision M2)."
+  },
+  {
+    "url" : "https://taussig/fhir/CodeSystem/stent-expansion",
+    "version" : "0.8.0",
+    "status" : "active",
+    "name" : "StentExpansion",
+    "title" : "TAUSSIG — Mode d'expansion d'un stent",
+    "description" : "Stent expansible au ballon ou auto-expansible (décision M2)."
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/taussig-local",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "draft",
     "name" : "TaussigLocal",
     "title" : "TAUSSIG — Concepts locaux (sans équivalent de référence)",
     "description" : "Concepts nécessaires au modèle et vérifiés absents des terminologies de référence. Chaque code documente l'absence constatée."
   },
   {
+    "url" : "https://taussig/fhir/CodeSystem/taussig-procedure",
+    "version" : "0.8.0",
+    "status" : "draft",
+    "name" : "TaussigProcedure",
+    "title" : "TAUSSIG — Gestes et actes de cathétérisme",
+    "description" : "Terminologie d'interface TAUSSIG : 188 concepts de gestes et d'actes de cathétérisme cardiaque congénital (Short List IPCCC de la branche cathétérisme, Long List AEPC v5.0), à identifiant neutre jamais réutilisé. Le clinicien choisit le libellé ; les codes IPCCC, CCAM, ECHSA et SNOMED sont déduits par les ConceptMaps taussig-procedure-to-*. Libellés : traduction fidèle du libellé IPCCC."
+  },
+  {
     "url" : "https://taussig/fhir/CodeSystem/technical-success",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "TechnicalSuccess",
     "title" : "TAUSSIG — Succès technique de la procédure",
@@ -241,7 +313,7 @@
   },
   {
     "url" : "https://taussig/fhir/CodeSystem/ventilation-type",
-    "version" : "0.6.1",
+    "version" : "0.8.0",
     "status" : "active",
     "name" : "VentilationType",
     "title" : "TAUSSIG — Mode ventilatoire",

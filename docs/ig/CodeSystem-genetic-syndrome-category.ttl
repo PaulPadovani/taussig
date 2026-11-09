@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem genetic-syndrome-category</b></p><a name=\"genetic-syndrome-category\"> </a><a name=\"hcgenetic-syndrome-category\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/genetic-syndrome-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">chromosomal_anomaly<a name=\"genetic-syndrome-category-chromosomal_anomaly\"> </a></td><td>Anomalie chromosomique</td></tr><tr><td style=\"white-space:nowrap\">monogenic_disorder<a name=\"genetic-syndrome-category-monogenic_disorder\"> </a></td><td>Maladie monogénique</td></tr><tr><td style=\"white-space:nowrap\">syndromic_association<a name=\"genetic-syndrome-category-syndromic_association\"> </a></td><td>Association syndromique</td></tr><tr><td style=\"white-space:nowrap\">teratogenic<a name=\"genetic-syndrome-category-teratogenic\"> </a></td><td>Tératogène</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"genetic-syndrome-category-unknown\"> </a></td><td>Inconnu</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/genetic-syndrome-category"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
   fhir:CodeSystem.name [ fhir:value "GeneticSyndromeCategory"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Catégorie de syndrome génétique"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Catégorie étiologique d'un syndrome génétique."] ;
   fhir:CodeSystem.jurisdiction [

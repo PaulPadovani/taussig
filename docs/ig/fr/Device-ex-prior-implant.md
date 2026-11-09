@@ -1,13 +1,15 @@
-# Dispositif antérieur fictif — exemple technique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Dispositif antérieur fictif — exemple technique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple Device: Dispositif antérieur fictif — exemple technique
+
+Profil: [TAUSSIG — Implant cardiaque (substrat longitudinal)](StructureDefinition-taussig-cardiac-implant.md)
 
 ### DeviceNames
 
 | | | |
 | :--- | :--- | :--- |
 | - | **Name** | **Type** |
-| * | Dispositif antérieur fictif | User Friendly name |
+| * | Dispositif antérieur fictif | Model name |
 
 
 
@@ -17,9 +19,12 @@
 {
   "resourceType" : "Device",
   "id" : "ex-prior-implant",
+  "meta" : {
+    "profile" : ["https://taussig/fhir/StructureDefinition/taussig-cardiac-implant"]
+  },
   "deviceName" : [{
     "name" : "Dispositif antérieur fictif",
-    "type" : "user-friendly-name"
+    "type" : "model-name"
   }]
 }
 

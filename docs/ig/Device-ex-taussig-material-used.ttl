@@ -22,13 +22,68 @@
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif ex-taussig-material-used</b></p><a name=\"ex-taussig-material-used\"> </a><a name=\"hcex-taussig-material-used\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-material-used.html\">TAUSSIG — Matériel utilisé (consommable de geste)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/material-type balloon}\">Ballon</span></p><p><b>patient</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif ex-taussig-material-used</b></p><a name=\"ex-taussig-material-used\"> </a><a name=\"hcex-taussig-material-used\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-material-used.html\">TAUSSIG — Matériel utilisé (consommable de geste)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>manufacturer</b>: Fabricant fictif</p><p><b>lotNumber</b>: LOT-EXEMPLE-01</p><p><b>serialNumber</b>: SN-EXEMPLE-0001</p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/material-type stent}\">Stent</span></p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property covering}\">Couverture</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-covering bare}\">Nu</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property expansion_mode}\">Mode d'expansion</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-expansion balloon_expandable}\">Expansible au ballon</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property coating}\">Revêtement</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-coating non_drug_eluting}\">Non actif</span></p></blockquote><p><b>patient</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
   ] ;
+  fhir:Device.manufacturer [ fhir:value "Fabricant fictif"] ;
+  fhir:Device.lotNumber [ fhir:value "LOT-EXEMPLE-01"] ;
+  fhir:Device.serialNumber [ fhir:value "SN-EXEMPLE-0001"] ;
   fhir:Device.type [
      fhir:CodeableConcept.coding [
        fhir:index 0 ;
        fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/material-type" ] ;
-       fhir:Coding.code [ fhir:value "balloon" ]
+       fhir:Coding.code [ fhir:value "stent" ]
+     ]
+  ] ;
+  fhir:Device.property [
+     fhir:index 0 ;
+     fhir:Device.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/device-property" ] ;
+         fhir:Coding.code [ fhir:value "covering" ]
+       ]
+     ] ;
+     fhir:Device.property.valueCode [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/stent-covering" ] ;
+         fhir:Coding.code [ fhir:value "bare" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Device.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/device-property" ] ;
+         fhir:Coding.code [ fhir:value "expansion_mode" ]
+       ]
+     ] ;
+     fhir:Device.property.valueCode [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/stent-expansion" ] ;
+         fhir:Coding.code [ fhir:value "balloon_expandable" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Device.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/device-property" ] ;
+         fhir:Coding.code [ fhir:value "coating" ]
+       ]
+     ] ;
+     fhir:Device.property.valueCode [
+       fhir:index 0 ;
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/stent-coating" ] ;
+         fhir:Coding.code [ fhir:value "non_drug_eluting" ]
+       ]
      ]
   ] ;
   fhir:Device.patient [

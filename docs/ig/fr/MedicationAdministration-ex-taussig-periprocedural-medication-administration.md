@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Exemple technique — TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple MedicationAdministration: Exemple technique — TAUSSIG — Administration médicamenteuse péri-procédurale
 
@@ -6,9 +6,13 @@ Profil: [TAUSSIG — Administration médicamenteuse péri-procédurale](Structur
 
 Balise: 
 
+**partOf**: [Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques](Procedure-ex-taussig-catheterization.md)
+
 **status**: Unknown
 
-**medication**: Médicament non précisé — exemple technique
+**category**: Antibioprophylaxie
+
+**medication**: cefazolin
 
 **subject**: [Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01](Patient-ex-taussig-patient.md)
 
@@ -29,9 +33,21 @@ Balise:
       "code" : "synthetic-technical-example"
     }]
   },
+  "partOf" : [{
+    "reference" : "Procedure/ex-taussig-catheterization"
+  }],
   "status" : "unknown",
+  "category" : {
+    "coding" : [{
+      "system" : "https://taussig/fhir/CodeSystem/periprocedural-medication-purpose",
+      "code" : "antibioprophylaxis"
+    }]
+  },
   "medicationCodeableConcept" : {
-    "text" : "Médicament non précisé — exemple technique"
+    "coding" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J01DB04"
+    }]
   },
   "subject" : {
     "reference" : "Patient/ex-taussig-patient"

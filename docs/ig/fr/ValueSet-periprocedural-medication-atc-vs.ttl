@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/periprocedural-medication-atc-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "periprocedural-medication-atc-vs"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs periprocedural-medication-atc-vs</b></p><a name=\"periprocedural-medication-atc-vs\"> </a><a name=\"hcperiprocedural-medication-atc-vs\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version non précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>French (fr)</b></td></tr><tr><td>J01DB04</td><td>cefazolin</td><td>céfazoline</td></tr><tr><td>J01DC02</td><td>cefuroxime</td><td>céfuroxime</td></tr><tr><td>J01XA01</td><td>vancomycin</td><td>vancomycine</td></tr><tr><td>B01AB01</td><td>heparin</td><td>héparine</td></tr><tr><td>B01AB05</td><td>enoxaparin</td><td>énoxaparine</td></tr><tr><td>B01AE06</td><td>bivalirudin</td><td>bivalirudine</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://taussig/fhir/ValueSet/periprocedural-medication-atc-vs"] ;
+  fhir:ValueSet.version [ fhir:value "0.8.0"] ;
+  fhir:ValueSet.name [ fhir:value "PeriproceduralMedicationAtcVS"] ;
+  fhir:ValueSet.title [ fhir:value "TAUSSIG — Médicaments péri-procéduraux (ATC)"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Projet TAUSSIG"] ;
+  fhir:ValueSet.description [ fhir:value "Molécules d'antibioprophylaxie et d'anticoagulation per-procédurale les plus attendues dans un compte rendu de cathétérisme pédiatrique. Liste courte proposée, à valider cliniquement."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://www.whocc.no/atc" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "J01DB04" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cefazolin" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index -1 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "céfazoline" ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "J01DC02" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "cefuroxime" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index -1 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "céfuroxime" ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "J01XA01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "vancomycin" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index -1 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "vancomycine" ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B01AB01" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "heparin" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index -1 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "héparine" ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B01AB05" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "enoxaparin" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index -1 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "énoxaparine" ]
+         ]
+       ], [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "B01AE06" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "bivalirudin" ] ;
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index -1 ;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr" ] ;
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "bivalirudine" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://taussig/fhir/ValueSet/periprocedural-medication-atc-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Exemple technique — TAUSSIG — Anthropométrie au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Exemple technique — TAUSSIG — Anthropométrie au cathétérisme - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Exemple Observation: Exemple technique — TAUSSIG — Anthropométrie au cathétérisme
 
@@ -6,7 +6,7 @@ Profil: [TAUSSIG — Anthropométrie au cathétérisme](StructureDefinition-taus
 
 Balise: 
 
-**partOf**: [Procedure : extension = false; status = unknown; performed[x] = 2026-01-01](Procedure-ex-taussig-catheterization.md)
+**partOf**: [Procedure Cathétérisme cardiaque diagnostique : recueil des données hémodynamiques](Procedure-ex-taussig-catheterization.md)
 
 **status**: Unknown
 

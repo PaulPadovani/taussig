@@ -1,4 +1,4 @@
-# TAUSSIG — États d'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — États d'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — États d'implant (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "implant-status-vs",
   "url" : "https://taussig/fhir/ValueSet/implant-status-vs",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "ImplantStatusVS",
   "title" : "TAUSSIG — États d'implant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — États d'implant » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# TAUSSIG — Méthodes de calcul BSA - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Méthodes de calcul BSA - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Méthodes de calcul BSA (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "bsa-method-vs",
   "url" : "https://taussig/fhir/ValueSet/bsa-method-vs",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "BsaMethodVS",
   "title" : "TAUSSIG — Méthodes de calcul BSA",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Jeu de valeurs « TAUSSIG — Méthodes de calcul BSA » utilisé par les profils TAUSSIG.",
   "jurisdiction" : [{

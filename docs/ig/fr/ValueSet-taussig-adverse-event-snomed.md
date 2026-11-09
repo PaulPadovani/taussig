@@ -1,4 +1,4 @@
-# TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — Complications / événements indésirables (SNOMED CT, interopérabilité)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set SNOMED CT des complications péri-procédurales du cathétérisme congénital (couche d'interopérabilité FHIR AdverseEvent.event / Condition.code). Résolu sur le SMT depuis les complications IPCCC/EPCC retenues. À valider cliniquement.",
   "jurisdiction" : [{
@@ -95,20 +95,12 @@
         "display" : "perforation d'une artère"
       },
       {
-        "code" : "312373008",
-        "display" : "faux anévrisme fémoral"
-      },
-      {
         "code" : "410429000",
         "display" : "arrêt cardiaque"
       },
       {
         "code" : "414617007",
         "display" : "perte du pouls distal"
-      },
-      {
-        "code" : "426749004",
-        "display" : "fibrillation atriale chronique"
       },
       {
         "code" : "427924001",
@@ -165,6 +157,30 @@
       {
         "code" : "91434003",
         "display" : "régurgitation de la valve pulmonaire"
+      },
+      {
+        "code" : "49436004",
+        "display" : "fibrillation auriculaire"
+      },
+      {
+        "code" : "1162761001",
+        "display" : "pseudoanévrisme au niveau du site d'accès vasculaire"
+      },
+      {
+        "code" : "439127006",
+        "display" : "thrombose"
+      },
+      {
+        "code" : "131148009",
+        "display" : "hémorragie"
+      },
+      {
+        "code" : "737158007",
+        "display" : "anévrisme de l'aorte consécutif à une intervention"
+      },
+      {
+        "code" : "871661008",
+        "display" : "anévrisme de l'aorte au site de coarctation survenant après une intervention"
       }]
     }]
   }

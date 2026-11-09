@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TAUSSIGPOC</h1>
- <p>Generated Sat Oct 31 15:33:46 CET 2026, FHIR version 4.0.1 for taussig.poc#0.6.1 (canonical = <a href="https://taussig/fhir">https://taussig/fhir</a> (<a href="https://taussig/fhir/history.html">history</a>))</p>
+ <p>Generated Mon Nov 09 08:43:53 CET 2026, FHIR version 4.0.1 for taussig.poc#0.8.0 (canonical = <a href="https://taussig/fhir">https://taussig/fhir</a> (<a href="https://taussig/fhir/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -426,11 +426,60 @@
     <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Candidate server http://127.0.0.1:18768 dropped for https://taussig/fhir/tags: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>https://taussig/fhir/tags</td>
+    <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>https://taussig/fhir/tags</td>
+    <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>https://taussig/fhir/tags</td>
+    <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Candidate server http://127.0.0.1:18768 dropped for https://taussig/fhir/tags: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>https://taussig/fhir/tags</td>
+    <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>https://taussig/fhir/tags</td>
+    <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>https://taussig/fhir/tags</td>
+    <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -486,7 +535,7 @@
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -808,7 +857,7 @@
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Candidate server http://127.0.0.1:18768 dropped for https://taussig/fhir/tags: no usable copy of the code system found there</td>
@@ -944,389 +993,410 @@
     <td>[http://unitsofmeasure.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td></td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Found candidate server http://127.0.0.1:18768</td>
@@ -1340,413 +1410,469 @@
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td></td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td></td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
-    <td></td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
+    <td></td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td></td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for urn:iso:std:iso:3166</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>urn:iso:std:iso:3166</td>
-    <td>[urn:iso:std:iso:3166]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>http://127.0.0.1:18768</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18766]</td>
+    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18768]</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
-    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18766]</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://loinc.org</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://loinc.org|3.0.1</td>
-    <td>[http://loinc.org|3.0.1]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://loinc.org</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://loinc.org</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://loinc.org</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://127.0.0.1:18768</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</td>
-    <td>[http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://127.0.0.1:18768</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</td>
-    <td>[http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://127.0.0.1:18768</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
-    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://127.0.0.1:18768</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
-    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://127.0.0.1:18768</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
-    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
-  </tr>
-  <tr>
-    <td>Found candidate server http://127.0.0.1:18768</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
-    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for urn:ietf:bcp:47</td>
     <td>http://127.0.0.1:18768</td>
     <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
     <td>urn:ietf:bcp:47</td>
-    <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
-    <td></td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
-    <td></td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
-    <td></td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
-  </tr>
-  <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://www.orpha.net: no usable copy of the code system found there</td>
-    <td></td>
-    <td>null</td>
-    <td>http://www.orpha.net</td>
-    <td>[http://www.orpha.net]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://www.orpha.net</td>
-    <td>[http://www.orpha.net]: authoritative = , candidates=https://127.0.0.1:18764</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://www.orpha.net</td>
-    <td>[http://www.orpha.net]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
-    <td>null</td>
+    <td>http://hl7.org/fhir/ValueSet/designation-use|4.0.1</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>http://127.0.0.1:18768</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18766]</td>
+    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18768]</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.whocc.no/atc|2.0.1</td>
+    <td>[http://www.whocc.no/atc|2.0.1]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://loinc.org|3.0.1</td>
+    <td>[http://loinc.org|3.0.1]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</td>
+    <td>[http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://hl7.org/fhir/sid/icd-10|2019-covid-expanded</td>
+    <td>[http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
+    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
+    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
+    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>[http://hl7.org/fhir/sid/icd-10, http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]</td>
+    <td>[[http://hl7.org/fhir/sid/icd-10]: authoritative = , candidates=http://127.0.0.1:18768, [http://hl7.org/fhir/sid/icd-10|2019-covid-expanded]: authoritative = , candidates=http://127.0.0.1:18768]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://id.who.int/icd/release/11/mms</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://www.orpha.net: no usable copy of the code system found there</td>
+    <td></td>
+    <td>null</td>
+    <td>http://www.orpha.net</td>
+    <td>[http://www.orpha.net]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.orpha.net</td>
+    <td>[http://www.orpha.net]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.orpha.net</td>
+    <td>[http://www.orpha.net]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18768]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Found candidate server http://127.0.0.1:18768</td>
@@ -1760,35 +1886,28 @@
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>http://127.0.0.1:18768</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18766]</td>
+    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18768]</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18766</td>
-  </tr>
-  <tr>
-    <td>Use primary server for urn:ietf:bcp:47</td>
-    <td>http://127.0.0.1:18768</td>
-    <td>http://hl7.org/fhir/ValueSet/languages|4.0.1</td>
-    <td>urn:ietf:bcp:47</td>
-    <td>[urn:ietf:bcp:47]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>http://127.0.0.1:18768</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18766]</td>
+    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18768]</td>
   </tr>
   <tr>
     <td>Candidate server http://127.0.0.1:18768 dropped for https://taussig/fhir/tags: no usable copy of the code system found there</td>
@@ -1812,6 +1931,20 @@
     <td>[https://taussig/fhir/tags]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>null</td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>https://taussig/fhir/ValueSet/periprocedural-medication-atc-vs--0|0.8.0</td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
     <td>http://127.0.0.1:18768</td>
     <td>null</td>
@@ -1828,9 +1961,9 @@
   <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
-    <td>https://taussig/fhir/ValueSet/taussig-anthropometry-observation-code-vs|0.6.1</td>
+    <td>https://taussig/fhir/ValueSet/taussig-anthropometry-observation-code-vs|0.8.0</td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -1844,7 +1977,7 @@
     <td>http://127.0.0.1:18768</td>
     <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -1870,9 +2003,9 @@
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
-    <td>https://taussig/fhir/ValueSet/anesthesia-type-vs|0.6.1</td>
+    <td>https://taussig/fhir/ValueSet/anesthesia-type-vs|0.8.0</td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18766</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
@@ -1882,60 +2015,81 @@
     <td>[http://unitsofmeasure.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td>https://taussig/fhir/ValueSet/puncture-success-vs|0.8.0</td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td></td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://127.0.0.1:18768</td>
+    <td>http://127.0.0.1:18768</td>
+    <td></td>
+    <td>http://www.whocc.no/atc</td>
+    <td>[http://www.whocc.no/atc]: authoritative = , candidates=http://127.0.0.1:18768</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>http://127.0.0.1:18768</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://loinc.org</td>
-    <td>[http://loinc.org]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://loinc.org]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Found candidate server http://127.0.0.1:18768</td>
@@ -1949,61 +2103,61 @@
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
-    <td>Candidate server https://127.0.0.1:18764 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
+    <td>Candidate server http://127.0.0.1:18768 dropped for http://id.who.int/icd/release/11/mms: no usable copy of the code system found there</td>
     <td></td>
     <td></td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://id.who.int/icd/release/11/mms</td>
-    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://id.who.int/icd/release/11/mms]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
     <td>http://127.0.0.1:18768</td>
     <td></td>
     <td>http://snomed.info/sct</td>
-    <td>[http://snomed.info/sct]: authoritative = , candidates=https://127.0.0.1:18764</td>
+    <td>[http://snomed.info/sct]: authoritative = , candidates=http://127.0.0.1:18768</td>
   </tr>
   <tr>
     <td>Use primary server for http://unstats.un.org/unsd/methods/m49/m49.htm</td>
     <td>http://127.0.0.1:18768</td>
     <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
     <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
-    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18766, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18766]</td>
+    <td>[[http://unstats.un.org/unsd/methods/m49/m49.htm]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166]: authoritative = , candidates=http://127.0.0.1:18768, [urn:iso:std:iso:3166:-2]: authoritative = , candidates=http://127.0.0.1:18768]</td>
   </tr>
 </table>
 <h2>Primary Server: http://127.0.0.1:18768</h2>
 <a href="http://127.0.0.1:18768"></a>
-<p>Use Count: 154. Code Systems used: </p>
+<p>Use Count: 178. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -2054,9 +2208,25 @@
     <td></td>
   </tr>
   <tr>
+    <td>http://www.whocc.no/atc</td>
+    <td>2</td>
+    <td>6</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://www.whocc.no/atc|2.0.1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-WC.html">WHO ATC</a>
+    </td>
+  </tr>
+  <tr>
     <td>https://taussig/fhir/tags</td>
     <td>0</td>
-    <td>41</td>
+    <td>43</td>
     <td></td>
   </tr>
 </table>

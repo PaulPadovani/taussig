@@ -1,9 +1,10 @@
-# TAUSSIG — Patient - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Patient - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Patient ( Expérimental ) 
 
 **Utilisations:**
 
+* Référence ce Profil: [TAUSSIG — Poids de naissance](StructureDefinition-taussig-birth-weight-observation.md), [TAUSSIG — Anthropométrie au cathétérisme](StructureDefinition-taussig-cath-anthropometry-observation.md), [TAUSSIG — Mesure clinique (delta pre/post)](StructureDefinition-taussig-clinical-measurement.md), [TAUSSIG — Pose et port d'un implant](StructureDefinition-taussig-implant-use.md)... Show 2 more, [TAUSSIG — Exposition et contraste de procédure](StructureDefinition-taussig-procedure-exposure-observation.md) and [TAUSSIG — Résultat global de procédure](StructureDefinition-taussig-procedure-outcome.md)
 * Exemples pour ce/t/te Profil: [Patient/ex-taussig-patient](Patient-ex-taussig-patient.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-patient)
@@ -61,12 +62,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-patient
   "resourceType" : "StructureDefinition",
   "id" : "taussig-patient",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-patient",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigPatient",
   "title" : "TAUSSIG — Patient",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Patient de cardiopathie congénitale, dérivé de FR Core Patient (identifiants/extensions FR hérités). Les slices d'identité nationale (INS-NIR/NIA) sont portées par FR Core ; pour une identité INS *qualifiée*, utiliser le profil strict fr-core-patient-ins. Poids de naissance porté par une Observation dédiée (LOINC 8339-4).",
   "jurisdiction" : [{
@@ -112,18 +113,46 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-patient
       "path" : "Patient"
     },
     {
+      "id" : "Patient.identifier",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "never_annotated"
+      }],
+      "path" : "Patient.identifier",
+      "label" : "Identifiant national (jamais annoté depuis un texte pseudonymisé)",
+      "short" : "Identifiant national (jamais annoté depuis un texte pseudonymisé)"
+    },
+    {
       "id" : "Patient.gender",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Patient.gender",
+      "label" : "Sexe administratif",
+      "short" : "Sexe administratif",
       "mustSupport" : true
     },
     {
       "id" : "Patient.birthDate",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Patient.birthDate",
+      "label" : "Date de naissance",
+      "short" : "Date de naissance",
       "mustSupport" : true
     },
     {
       "id" : "Patient.deceased[x]",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Patient.deceased[x]",
+      "label" : "Décès (oui/non ou date du décès)",
+      "short" : "Décès (oui/non ou date du décès)",
       "mustSupport" : true
     }]
   }

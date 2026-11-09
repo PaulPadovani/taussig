@@ -1,4 +1,4 @@
-# Écho-guidage - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Écho-guidage - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Extension: Écho-guidage (Expérimental) 
 
@@ -51,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-echoGuided.csv)
   "resourceType" : "StructureDefinition",
   "id" : "echoGuided",
   "url" : "https://taussig/fhir/StructureDefinition/echoGuided",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "EchoGuided",
   "title" : "Écho-guidage",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Ponction vasculaire écho-guidée.",
   "jurisdiction" : [{
@@ -98,6 +98,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-echoGuided.csv)
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "short" : "Écho-guidage",
       "type" : [{
         "code" : "boolean"
       }]

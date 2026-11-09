@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem genetic-method</b></p><a name=\"genetic-method\"> </a><a name=\"hcgenetic-method\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/genetic-method</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">clinical<a name=\"genetic-method-clinical\"> </a></td><td>Clinique</td></tr><tr><td style=\"white-space:nowrap\">cytogenetic<a name=\"genetic-method-cytogenetic\"> </a></td><td>Cytogénétique</td></tr><tr><td style=\"white-space:nowrap\">molecular<a name=\"genetic-method-molecular\"> </a></td><td>Moléculaire</td></tr><tr><td style=\"white-space:nowrap\">suspected<a name=\"genetic-method-suspected\"> </a></td><td>Suspecté</td></tr><tr><td style=\"white-space:nowrap\">ruled_out<a name=\"genetic-method-ruled_out\"> </a></td><td>Écarté</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/genetic-method"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
   fhir:CodeSystem.name [ fhir:value "GeneticMethod"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Méthode de confirmation génétique"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Méthode ayant confirmé/écarté le syndrome (Observation.method)."] ;
   fhir:CodeSystem.jurisdiction [

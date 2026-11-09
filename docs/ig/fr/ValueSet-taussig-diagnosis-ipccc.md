@@ -1,4 +1,4 @@
-# TAUSSIG — Diagnostics congénitaux (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Diagnostics congénitaux (IPCCC) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Diagnostics congénitaux (IPCCC) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — Diagnostics congénitaux (IPCCC)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Équivalents IPCCC des diagnostics congénitaux du working set CIM-11 (codage parallèle de précision clinique). Un même code IPCCC peut répondre à plusieurs entités CIM-11.",
   "jurisdiction" : [{
@@ -453,6 +453,30 @@
       {
         "code" : "05.02.01",
         "display" : "Oreillette gauche divisée"
+      },
+      {
+        "code" : "09.10.37",
+        "display" : "Sténose ou hypoplasie congénitale centrale des artères pulmonaires (en amont de la bifurcation hilaire)"
+      },
+      {
+        "code" : "09.10.38",
+        "display" : "Sténose ou hypoplasie congénitale périphérique des artères pulmonaires (au niveau ou en aval de la bifurcation hilaire)"
+      },
+      {
+        "code" : "09.10.30",
+        "display" : "Artères pulmonaires droite et gauche congénitalement discontinues, non confluentes"
+      },
+      {
+        "code" : "09.08.01",
+        "display" : "Artère(s) collatérale(s) systémico-pulmonaire(s) majeure(s) (MAPCA)"
+      },
+      {
+        "code" : "09.19.05",
+        "display" : "Fistule (malformation) artérioveineuse pulmonaire"
+      },
+      {
+        "code" : "11.06.08",
+        "display" : "Bloc atrioventriculaire complet congénital idiopathique"
       }]
     }]
   }

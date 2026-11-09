@@ -1,4 +1,4 @@
-# TAUSSIG — Type d'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Type d'implant - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Type d'implant (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "implant-device-type",
   "url" : "https://taussig/fhir/CodeSystem/implant-device-type",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "ImplantDeviceType",
   "title" : "TAUSSIG — Type d'implant",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Type de dispositif/substrat longitudinal.",
   "jurisdiction" : [{

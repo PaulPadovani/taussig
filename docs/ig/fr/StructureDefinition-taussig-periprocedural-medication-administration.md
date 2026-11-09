@@ -1,4 +1,4 @@
-# TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Administration médicamenteuse péri-procédurale - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Administration médicamenteuse péri-procédurale ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-peripro
   "resourceType" : "StructureDefinition",
   "id" : "taussig-periprocedural-medication-administration",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-periprocedural-medication-administration",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigPeriproceduralMedicationAdministration",
   "title" : "TAUSSIG — Administration médicamenteuse péri-procédurale",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Antibioprophylaxie et anticoagulation administrées pendant le cathétérisme, codables en ATC quand disponible.",
   "jurisdiction" : [{
@@ -117,21 +117,36 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-peripro
     },
     {
       "id" : "MedicationAdministration.partOf",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "relation"
+      }],
       "path" : "MedicationAdministration.partOf",
+      "label" : "Acte concerné",
+      "short" : "Acte concerné",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"]
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-catheterization",
+        "https://taussig/fhir/StructureDefinition/taussig-anesthesia-management"]
       }],
       "mustSupport" : true
     },
     {
       "id" : "MedicationAdministration.status",
       "path" : "MedicationAdministration.status",
+      "label" : "Statut de l'administration",
+      "short" : "Statut de l'administration",
       "mustSupport" : true
     },
     {
       "id" : "MedicationAdministration.category",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "derived"
+      }],
       "path" : "MedicationAdministration.category",
+      "label" : "Rôle (antibioprophylaxie, anticoagulation)",
+      "short" : "Rôle (antibioprophylaxie, anticoagulation)",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -140,15 +155,27 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-peripro
     },
     {
       "id" : "MedicationAdministration.medication[x]",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "MedicationAdministration.medication[x]",
+      "label" : "Médicament",
+      "short" : "Médicament",
       "type" : [{
         "code" : "CodeableConcept"
       }],
-      "mustSupport" : true
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://taussig/fhir/ValueSet/periprocedural-medication-atc-vs"
+      }
     },
     {
       "id" : "MedicationAdministration.subject",
       "path" : "MedicationAdministration.subject",
+      "label" : "Patient",
+      "short" : "Patient",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
@@ -158,6 +185,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-peripro
     {
       "id" : "MedicationAdministration.context",
       "path" : "MedicationAdministration.context",
+      "label" : "Séjour",
+      "short" : "Séjour",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
@@ -167,6 +196,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-peripro
     {
       "id" : "MedicationAdministration.effective[x]",
       "path" : "MedicationAdministration.effective[x]",
+      "label" : "Date et heure d'administration",
+      "short" : "Date et heure d'administration",
       "type" : [{
         "code" : "dateTime"
       }],
@@ -175,11 +206,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-peripro
     {
       "id" : "MedicationAdministration.dosage",
       "path" : "MedicationAdministration.dosage",
+      "label" : "Posologie",
+      "short" : "Posologie",
       "mustSupport" : true
     },
     {
       "id" : "MedicationAdministration.dosage.dose",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "MedicationAdministration.dosage.dose",
+      "label" : "Dose administrée",
+      "short" : "Dose administrée",
       "mustSupport" : true
     }]
   }

@@ -1,4 +1,4 @@
-# TAUSSIG — Codes d'exposition et contraste - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Codes d'exposition et contraste - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Codes d'exposition et contraste (Expérimental) 
 
@@ -25,12 +25,12 @@
   "resourceType" : "ValueSet",
   "id" : "taussig-procedure-exposure-observation-code-vs",
   "url" : "https://taussig/fhir/ValueSet/taussig-procedure-exposure-observation-code-vs",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigProcedureExposureObservationCodeVS",
   "title" : "TAUSSIG — Codes d'exposition et contraste",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Codes des observations quantitatives liées à l'exposition radiologique et au contraste.",
   "jurisdiction" : [{

@@ -1,4 +1,4 @@
-# TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Abord vasculaire ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
   "resourceType" : "StructureDefinition",
   "id" : "taussig-vascular-access",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-vascular-access",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigVascularAccess",
   "title" : "TAUSSIG — Abord vasculaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Abord vasculaire du cathétérisme. Voie d'abord (enum TAUSSIG) en code ; calibre d'introducteur, écho-guidage et latéralité en extensions/bodySite.",
   "jurisdiction" : [{
@@ -124,8 +124,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
     },
     {
       "id" : "Procedure.extension:introducerSize",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.extension",
       "sliceName" : "introducerSize",
+      "label" : "Calibre de l'introducteur (Fr)",
+      "short" : "Calibre de l'introducteur (Fr)",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -136,8 +142,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
     },
     {
       "id" : "Procedure.extension:echoGuided",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.extension",
       "sliceName" : "echoGuided",
+      "label" : "Ponction écho-guidée",
+      "short" : "Ponction écho-guidée",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -147,8 +159,29 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
       "mustSupport" : true
     },
     {
+      "id" : "Procedure.partOf",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "relation"
+      }],
+      "path" : "Procedure.partOf",
+      "label" : "Cathétérisme concerné",
+      "short" : "Cathétérisme concerné",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-catheterization"]
+      }],
+      "mustSupport" : true
+    },
+    {
       "id" : "Procedure.code",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.code",
+      "label" : "Voie d'abord",
+      "short" : "Voie d'abord",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -157,7 +190,13 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
     },
     {
       "id" : "Procedure.bodySite",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.bodySite",
+      "label" : "Côté",
+      "short" : "Côté",
       "max" : "1",
       "mustSupport" : true,
       "binding" : {
@@ -167,8 +206,18 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-vascula
     },
     {
       "id" : "Procedure.outcome",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.outcome",
-      "mustSupport" : true
+      "label" : "Succès de la ponction",
+      "short" : "Succès de la ponction",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://taussig/fhir/ValueSet/puncture-success-vs"
+      }
     }]
   }
 }

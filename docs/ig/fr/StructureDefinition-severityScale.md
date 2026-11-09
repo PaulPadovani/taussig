@@ -1,4 +1,4 @@
-# Échelle de gravité - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Échelle de gravité - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Extension: Échelle de gravité (Expérimental) 
 
@@ -59,12 +59,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-severityScale.c
   "resourceType" : "StructureDefinition",
   "id" : "severityScale",
   "url" : "https://taussig/fhir/StructureDefinition/severityScale",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "SeverityScale",
   "title" : "Échelle de gravité",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Échelle de gradation utilisée (Bergersen/C3PO, NCDR-IMPACT…).",
   "jurisdiction" : [{
@@ -106,6 +106,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-severityScale.c
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "short" : "Échelle de gravité",
       "type" : [{
         "code" : "Coding"
       }],

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "procedure-urgency-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs procedure-urgency-vs</b></p><a name=\"procedure-urgency-vs\"> </a><a name=\"hcprocedure-urgency-vs\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-procedure-urgency.html\"><code>https://taussig/fhir/CodeSystem/procedure-urgency</code></a><span title=\"La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification\"> version &#x1F4E6;0.8.0</span></li></ul></div>"
+  },
+  "url" : "https://taussig/fhir/ValueSet/procedure-urgency-vs",
+  "version" : "0.8.0",
+  "name" : "ProcedureUrgencyVS",
+  "title" : "TAUSSIG — Liste — Caractère urgent du cathétérisme",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-11-09T08:39:58+01:00",
+  "publisher" : "Projet TAUSSIG",
+  "description" : "Les 4 niveaux d'urgence du cathétérisme.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://taussig/fhir/CodeSystem/procedure-urgency"
+    }]
+  }
+}

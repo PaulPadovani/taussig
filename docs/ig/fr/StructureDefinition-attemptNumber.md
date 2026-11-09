@@ -1,4 +1,4 @@
-# Numéro de tentative - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Numéro de tentative - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Extension: Numéro de tentative (Expérimental) 
 
@@ -8,6 +8,7 @@
 
 **Utilisations:**
 
+* Utilise ce/t/te Extension: [TAUSSIG — Geste interventionnel](StructureDefinition-taussig-interventional-gesture.md)
 * Exemples pour ce/t/te Extension: [Procedure/ex-taussig-interventional-gesture](Procedure-ex-taussig-interventional-gesture.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/attemptNumber)
@@ -50,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-attemptNumber.c
   "resourceType" : "StructureDefinition",
   "id" : "attemptNumber",
   "url" : "https://taussig/fhir/StructureDefinition/attemptNumber",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "AttemptNumber",
   "title" : "Numéro de tentative",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Numéro de tentative avec ce matériel.",
   "jurisdiction" : [{
@@ -97,6 +98,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-attemptNumber.c
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "short" : "Numéro de tentative",
       "type" : [{
         "code" : "integer"
       }]

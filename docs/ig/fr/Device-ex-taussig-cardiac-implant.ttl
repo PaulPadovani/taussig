@@ -23,7 +23,7 @@
   fhir:Resource.language [ fhir:value "fr"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif ex-taussig-cardiac-implant</b></p><a name=\"ex-taussig-cardiac-implant\"> </a><a name=\"hcex-taussig-cardiac-implant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-implant.html\">TAUSSIG — Implant cardiaque (substrat longitudinal)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>État clinique de l'implant</b>: <a href=\"CodeSystem-implant-status.html#implant-status-functional\">TAUSSIG — État clinique d'un implant: functional</a> (Fonctionnel)</p><p><b>Posé en externe</b>: true</p><p><b>Implant précédent</b>: <a href=\"Device-ex-prior-implant.html\">Device</a></p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Dispositif fictif — exemple technique</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/implant-device-type stent}\">Stent</span></p><p><b>patient</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Dispositif ex-taussig-cardiac-implant</b></p><a name=\"ex-taussig-cardiac-implant\"> </a><a name=\"hcex-taussig-cardiac-implant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-taussig-cardiac-implant.html\">TAUSSIG — Implant cardiaque (substrat longitudinal)</a></p><p style=\"margin-bottom: 0px\">Balise: </p></div><p><b>État clinique de l'implant</b>: <a href=\"CodeSystem-implant-status.html#implant-status-functional\">TAUSSIG — État clinique d'un implant: functional</a> (Fonctionnel)</p><p><b>Date de l'état de l'implant</b>: 2026-01-01</p><p><b>Posé en externe</b>: true</p><p><b>Implant précédent</b>: <a href=\"Device-ex-prior-implant.html\">Device</a></p><p><b>manufacturer</b>: Fabricant fictif</p><p><b>lotNumber</b>: LOT-EXEMPLE-01</p><p><b>serialNumber</b>: SN-EXEMPLE-0001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Dispositif fictif — exemple technique</td><td>Model name</td></tr></table><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/implant-device-type stent}\">Stent</span></p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property covering}\">Couverture</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-covering bare}\">Nu</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property expansion_mode}\">Mode d'expansion</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-expansion balloon_expandable}\">Expansible au ballon</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/device-property coating}\">Revêtement</span></p><p><b>valueCode</b>: <span title=\"Codes :{https://taussig/fhir/CodeSystem/stent-coating non_drug_eluting}\">Non actif</span></p></blockquote><p><b>patient</b>: <a href=\"Patient-ex-taussig-patient.html\">Patient fictif — exemple technique Unknown, Date de Naissance :2020-01-01</a></p></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index -1 ;
@@ -32,6 +32,10 @@
        fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/implant-status" ] ;
        fhir:Coding.code [ fhir:value "functional" ]
      ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/implantStatusDate" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-01-01"^^xsd:date ]
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "https://taussig/fhir/StructureDefinition/implantedExternally" ] ;
@@ -44,16 +48,71 @@
        fhir:Reference.reference [ fhir:value "Device/ex-prior-implant" ]
      ]
   ] ;
+  fhir:Device.manufacturer [ fhir:value "Fabricant fictif"] ;
+  fhir:Device.lotNumber [ fhir:value "LOT-EXEMPLE-01"] ;
+  fhir:Device.serialNumber [ fhir:value "SN-EXEMPLE-0001"] ;
   fhir:Device.deviceName [
      fhir:index -1 ;
      fhir:Device.deviceName.name [ fhir:value "Dispositif fictif — exemple technique" ] ;
-     fhir:Device.deviceName.type [ fhir:value "user-friendly-name" ]
+     fhir:Device.deviceName.type [ fhir:value "model-name" ]
   ] ;
   fhir:Device.type [
      fhir:CodeableConcept.coding [
        fhir:index -1 ;
        fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/implant-device-type" ] ;
        fhir:Coding.code [ fhir:value "stent" ]
+     ]
+  ] ;
+  fhir:Device.property [
+     fhir:index -1 ;
+     fhir:Device.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/device-property" ] ;
+         fhir:Coding.code [ fhir:value "covering" ]
+       ]
+     ] ;
+     fhir:Device.property.valueCode [
+       fhir:index -1 ;
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/stent-covering" ] ;
+         fhir:Coding.code [ fhir:value "bare" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Device.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/device-property" ] ;
+         fhir:Coding.code [ fhir:value "expansion_mode" ]
+       ]
+     ] ;
+     fhir:Device.property.valueCode [
+       fhir:index -1 ;
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/stent-expansion" ] ;
+         fhir:Coding.code [ fhir:value "balloon_expandable" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Device.property.type [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/device-property" ] ;
+         fhir:Coding.code [ fhir:value "coating" ]
+       ]
+     ] ;
+     fhir:Device.property.valueCode [
+       fhir:index -1 ;
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "https://taussig/fhir/CodeSystem/stent-coating" ] ;
+         fhir:Coding.code [ fhir:value "non_drug_eluting" ]
+       ]
      ]
   ] ;
   fhir:Device.patient [

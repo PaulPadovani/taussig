@@ -1,4 +1,4 @@
-# TAUSSIG — Exposition et contraste de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Exposition et contraste de procédure - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Exposition et contraste de procédure ( Expérimental ) 
 
@@ -65,12 +65,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
   "resourceType" : "StructureDefinition",
   "id" : "taussig-procedure-exposure-observation",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-procedure-exposure-observation",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigProcedureExposureObservation",
   "title" : "TAUSSIG — Exposition et contraste de procédure",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Temps de fluoroscopie, produit dose-surface et volume de contraste portés par des Observations quantitatives liées au cathétérisme.",
   "jurisdiction" : [{
@@ -123,20 +123,26 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
     {
       "id" : "Observation.partOf",
       "path" : "Observation.partOf",
+      "label" : "Cathétérisme concerné",
+      "short" : "Cathétérisme concerné",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Procedure"]
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-catheterization"]
       }],
       "mustSupport" : true
     },
     {
       "id" : "Observation.status",
       "path" : "Observation.status",
+      "label" : "Statut de la mesure",
+      "short" : "Statut de la mesure",
       "mustSupport" : true
     },
     {
       "id" : "Observation.code",
       "path" : "Observation.code",
+      "label" : "Type (fluoroscopie, produit dose-surface, contraste)",
+      "short" : "Type (fluoroscopie, produit dose-surface, contraste)",
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -146,15 +152,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
     {
       "id" : "Observation.subject",
       "path" : "Observation.subject",
+      "label" : "Patient",
+      "short" : "Patient",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-patient"]
       }],
       "mustSupport" : true
     },
     {
       "id" : "Observation.effective[x]",
       "path" : "Observation.effective[x]",
+      "label" : "Date de la mesure",
+      "short" : "Date de la mesure",
       "type" : [{
         "code" : "dateTime"
       }],
@@ -162,11 +172,29 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-procedu
     },
     {
       "id" : "Observation.value[x]",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Observation.value[x]",
+      "label" : "Résultat",
+      "short" : "Résultat",
       "type" : [{
         "code" : "Quantity"
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "Observation.value[x].value",
+      "path" : "Observation.value[x].value",
+      "label" : "Valeur",
+      "short" : "Valeur"
+    },
+    {
+      "id" : "Observation.value[x].unit",
+      "path" : "Observation.value[x].unit",
+      "label" : "Unité",
+      "short" : "Unité"
     },
     {
       "id" : "Observation.value[x].system",

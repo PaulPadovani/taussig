@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem material-type</b></p><a name=\"material-type\"> </a><a name=\"hcmaterial-type\"> </a><p>This case-sensitive code system <code>https://taussig/fhir/CodeSystem/material-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">balloon<a name=\"material-type-balloon\"> </a></td><td>Ballon</td></tr><tr><td style=\"white-space:nowrap\">stent<a name=\"material-type-stent\"> </a></td><td>Stent</td></tr><tr><td style=\"white-space:nowrap\">device_implant<a name=\"material-type-device_implant\"> </a></td><td>Dispositif implantable</td></tr><tr><td style=\"white-space:nowrap\">consumable<a name=\"material-type-consumable\"> </a></td><td>Consommable</td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://taussig/fhir/CodeSystem/material-type"] ;
-  fhir:CodeSystem.version [ fhir:value "0.6.1"] ;
+  fhir:CodeSystem.version [ fhir:value "0.8.0"] ;
   fhir:CodeSystem.name [ fhir:value "MaterialType"] ;
   fhir:CodeSystem.title [ fhir:value "TAUSSIG — Type de matériel"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-31T15:29:53+01:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-09T08:39:58+01:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Projet TAUSSIG"] ;
   fhir:CodeSystem.description [ fhir:value "Catégorie de matériel utilisé pendant un geste."] ;
   fhir:CodeSystem.jurisdiction [

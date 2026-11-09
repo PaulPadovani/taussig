@@ -95,14 +95,14 @@ let h = '';
 // ————— couverture —————
 h += `<section class="couv">
   <div class="marque">TAUSSIG</div>
-  <div class="kicker">Modèle de données · POC v4</div>
+  <div class="kicker">Dictionnaire de données · v6</div>
   <h1>Ensemble minimal de données du cathétérisme cardiaque congénital</h1>
   <div class="stitre">Minimum Data Set — définitions normalisées et correspondances FHIR</div>
   <div class="meta">
     <div><b>${D.meta.nbElements}</b> variables</div>
     <div><b>${D.meta.nbEntities}</b> entités</div>
     <div><b>${D.meta.nbValuesets}</b> value sets</div>
-    <div>Version <b>v4</b></div>
+    <div>Version <b>v6</b></div>
     <div>Généré le ${DATE}</div>
   </div>
   <p class="abstract">Ce document décrit, variable par variable, l’ensemble minimal de données proposé pour structurer le cathétérisme cardiaque congénital. Chaque attribut est défini selon la norme ISO/IEC 11179 (définition nominale, singulière, autoportante), typé et cardinalisé, puis rattaché à sa ressource et à son chemin FHIR ainsi qu’aux terminologies de référence. Il est destiné à servir de support à un consensus d’experts (Delphi) et de spécification pour l’Implementation Guide FHIR.</p>
@@ -158,7 +158,7 @@ AXES.forEach(([id]) => {
 });
 
 document.getElementById('doc').innerHTML = h;
-document.title = `TAUSSIG — MDS cathétérisme congénital v4 (${D.meta.nbElements} variables)`;
+document.title = `TAUSSIG — MDS cathétérisme congénital v6 (${D.meta.nbElements} variables)`;
 </script>
 </body>
 </html>

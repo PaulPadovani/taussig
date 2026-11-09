@@ -119,8 +119,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.statusHistory.period","Encounter.statusHistory.period","","","",1,1,"","","","Period {[]} {[]}
 ","The time that the episode was in the specified status","The time that the episode was in the specified status.","","","","","","","","","",,,,,"",,,,"Encounter.statusHistory.period",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a"
-"Encounter.class","Encounter.class","","","",1,1,"Y","","Y","Coding {[]} {[]}
-","Classification of patient encounter","Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.","","","","","","","","","",,"extensible","Classification of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0","",,,,"Encounter.class",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Encounter.class","Encounter.class","","","Type de séjour (hospitalisation, ambulatoire…)",1,1,"Y","","Y","Coding {[]} {[]}
+","Type de séjour (hospitalisation, ambulatoire…)","Concepts representing classification of patient encounter such as ambulatory (outpatient), inpatient, emergency, home health or others due to local variations.","","","","","","","","","",,"extensible","Classification of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0","",,,,"Encounter.class",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".inboundRelationship[typeCode=SUBJ].source[classCode=LIST].code","FiveWs.class","PV1-2"
 "Encounter.class.id","Encounter.class.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -212,8 +212,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.appointment","Encounter.appointment","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment|2.2.0]]}
 ","The appointment that scheduled this encounter","The appointment that scheduled this encounter.","","","","","","","","","",,,,,"",,,,"Encounter.appointment",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn",".outboundRelationship[typeCode=FLFS].target[classCode=ENC, moodCode=APT]","SCH-1 / SCH-2"
-"Encounter.period","Encounter.period","","","",1,1,"Y","","","Period {[]} {[]}
-","The start and end time of the encounter","The start and end time of the encounter.","If not (yet) known, the end of the Period may be omitted.","","","","","","","","",,,,,"",,,,"Encounter.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Encounter.period","Encounter.period","","","Dates du séjour",1,1,"Y","","","Period {[]} {[]}
+","Dates du séjour","The start and end time of the encounter.","If not (yet) known, the end of the Period may be omitted.","","","","","","","","",,,,,"",,,,"Encounter.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime (low & high)","FiveWs.done[x]","PV1-44, PV1-45"
 "Encounter.period.id","Encounter.period.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -222,12 +222,12 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Encounter.period.start","Encounter.period.start","","","",0,1,"Y","","Y","dateTime {[]} {[]}
-","Starting time with inclusive boundary","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
+"Encounter.period.start","Encounter.period.start","","","Date d'admission",0,1,"Y","","Y","dateTime {[]} {[]}
+","Date d'admission","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./low","DR.1"
-"Encounter.period.end","Encounter.period.end","","","",0,1,"Y","","Y","dateTime {[]} {[]}
-","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
+"Encounter.period.end","Encounter.period.end","","","Date de sortie",0,1,"Y","","Y","dateTime {[]} {[]}
+","Date de sortie","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./high","DR.2"
 "Encounter.length","Encounter.length","","","",0,1,"","","","Duration {[]} {[]}

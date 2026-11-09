@@ -1,4 +1,4 @@
-# Ordre d'usage - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# Ordre d'usage - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Extension: Ordre d'usage (Expérimental) 
 
@@ -8,6 +8,7 @@
 
 **Utilisations:**
 
+* Utilise ce/t/te Extension: [TAUSSIG — Geste interventionnel](StructureDefinition-taussig-interventional-gesture.md)
 * Exemples pour ce/t/te Extension: [Procedure/ex-taussig-interventional-gesture](Procedure-ex-taussig-interventional-gesture.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/usageSequence)
@@ -50,12 +51,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-usageSequence.c
   "resourceType" : "StructureDefinition",
   "id" : "usageSequence",
   "url" : "https://taussig/fhir/StructureDefinition/usageSequence",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "UsageSequence",
   "title" : "Ordre d'usage",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Ordre d'utilisation du matériel dans le geste.",
   "jurisdiction" : [{
@@ -81,10 +82,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-usageSequence.c
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Extension",
-      "path" : "Extension"
-    },
-    {
       "id" : "Extension.extension",
       "path" : "Extension.extension",
       "max" : "0"
@@ -97,6 +94,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-usageSequence.c
     {
       "id" : "Extension.value[x]",
       "path" : "Extension.value[x]",
+      "short" : "Ordre d'usage",
       "type" : [{
         "code" : "integer"
       }]

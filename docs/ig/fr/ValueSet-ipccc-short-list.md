@@ -1,4 +1,4 @@
-# IPCCC Short List v5.0 (sous-ensemble de saisie) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# IPCCC Short List v5.0 (sous-ensemble de saisie) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: IPCCC Short List v5.0 (sous-ensemble de saisie) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "IPCCC Short List v5.0 (sous-ensemble de saisie)",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Représentation FHIR « IPCCC Short List v5.0 (sous-ensemble de saisie) » utilisée dans le guide TAUSSIG ; contenu et correspondances définis dans cette ressource.",
   "jurisdiction" : [{

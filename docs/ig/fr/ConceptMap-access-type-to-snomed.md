@@ -1,4 +1,4 @@
-# TAUSSIG — AccessTypeToSnomed - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — AccessTypeToSnomed - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ConceptMap: TAUSSIG — AccessTypeToSnomed (Expérimental) 
 
@@ -16,7 +16,7 @@
   "title" : "TAUSSIG — AccessTypeToSnomed",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Correspondance du CodeSystem TAUSSIG access-type vers les vaisseaux SNOMED CT.",
   "jurisdiction" : [{
@@ -99,6 +99,21 @@
       "target" : [{
         "equivalence" : "unmatched",
         "comment" : "Voie d'abord (abord chirurgical/hybride), pas un vaisseau : pas de site SNOMED."
+      }]
+    },
+    {
+      "code" : "arterial_radial",
+      "target" : [{
+        "code" : "45631007",
+        "display" : "artère radiale",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "transthoracic",
+      "target" : [{
+        "equivalence" : "unmatched",
+        "comment" : "périventriculaire, transapical ou ponction directe : pas de structure SNOMED unique"
       }]
     }]
   }]

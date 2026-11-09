@@ -1,4 +1,4 @@
-# TAUSSIG — Type d'abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Type d'abord vasculaire - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## CodeSystem: TAUSSIG — Type d'abord vasculaire (Expérimental) 
 
@@ -19,12 +19,12 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "resourceType" : "CodeSystem",
   "id" : "access-type",
   "url" : "https://taussig/fhir/CodeSystem/access-type",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "AccessType",
   "title" : "TAUSSIG — Type d'abord vasculaire",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Voie d'abord vasculaire.",
   "jurisdiction" : [{
@@ -35,7 +35,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 9,
+  "count" : 11,
   "concept" : [{
     "code" : "arterial_femoral",
     "display" : "Artériel fémoral"
@@ -71,6 +71,15 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "surgical_hybrid",
     "display" : "Chirurgical/hybride"
+  },
+  {
+    "code" : "arterial_radial",
+    "display" : "Artériel radial"
+  },
+  {
+    "code" : "transthoracic",
+    "display" : "Transthoracique",
+    "definition" : "Abord transthoracique : périventriculaire, transapical ou ponction directe."
   }]
 }
 

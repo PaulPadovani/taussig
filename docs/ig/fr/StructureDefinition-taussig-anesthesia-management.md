@@ -1,9 +1,10 @@
-# TAUSSIG — Gestion anesthésique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Gestion anesthésique - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## Profil de ressource: TAUSSIG — Gestion anesthésique ( Expérimental ) 
 
 **Utilisations:**
 
+* Référence ce Profil: [TAUSSIG — Administration médicamenteuse péri-procédurale](StructureDefinition-taussig-periprocedural-medication-administration.md)
 * Exemples pour ce/t/te Profil: [Procedure/ex-taussig-anesthesia-management](Procedure-ex-taussig-anesthesia-management.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/taussig.poc|current/StructureDefinition/taussig-anesthesia-management)
@@ -65,12 +66,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-anesthe
   "resourceType" : "StructureDefinition",
   "id" : "taussig-anesthesia-management",
   "url" : "https://taussig/fhir/StructureDefinition/taussig-anesthesia-management",
-  "version" : "0.6.1",
+  "version" : "0.8.0",
   "name" : "TaussigAnesthesiaManagement",
   "title" : "TAUSSIG — Gestion anesthésique",
   "status" : "active",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Prise en charge anesthésique du cathétérisme. Type d'anesthésie en code (générale, sédation, locale : SNOMED CT ; aucune anesthésie explicite : complément TAUSSIG) ; ventilation & ECMO en extensions ; antibioprophylaxie/anticoagulant portés par MedicationAdministration (ATC).",
   "jurisdiction" : [{
@@ -124,8 +125,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-anesthe
     },
     {
       "id" : "Procedure.extension:ventilationType",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.extension",
       "sliceName" : "ventilationType",
+      "label" : "Mode ventilatoire",
+      "short" : "Mode ventilatoire",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -136,8 +143,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-anesthe
     },
     {
       "id" : "Procedure.extension:ecmoSupport",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.extension",
       "sliceName" : "ecmoSupport",
+      "label" : "Assistance ECMO",
+      "short" : "Assistance ECMO",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -147,8 +160,29 @@ Autres représentations du profil : [CSV](../StructureDefinition-taussig-anesthe
       "mustSupport" : true
     },
     {
+      "id" : "Procedure.partOf",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "relation"
+      }],
+      "path" : "Procedure.partOf",
+      "label" : "Cathétérisme concerné",
+      "short" : "Cathétérisme concerné",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://taussig/fhir/StructureDefinition/taussig-catheterization"]
+      }],
+      "mustSupport" : true
+    },
+    {
       "id" : "Procedure.code",
+      "extension" : [{
+        "url" : "https://taussig/fhir/StructureDefinition/annotationClass",
+        "valueCode" : "annotatable"
+      }],
       "path" : "Procedure.code",
+      "label" : "Type d'anesthésie",
+      "short" : "Type d'anesthésie",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",

@@ -1,4 +1,4 @@
-# TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.6.1
+# TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept) - TAUSSIG — Implementation Guide (POC Cathétérisme) v0.8.0
 
 ## ValueSet: TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept) (Expérimental) 
 
@@ -30,7 +30,7 @@
   "title" : "TAUSSIG — Propriétés de mesure (binding ClinicalMeasurement.concept)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-10-31T15:29:53+01:00",
+  "date" : "2026-11-09T08:39:58+01:00",
   "publisher" : "Projet TAUSSIG",
   "description" : "Working set POC des propriétés de mesure hémodynamique de cathétérisme.",
   "jurisdiction" : [{
@@ -117,6 +117,18 @@
       {
         "code" : "regurgitation_grade",
         "display" : "Grade de régurgitation"
+      },
+      {
+        "code" : "lumen_diameter_minimal",
+        "display" : "Diamètre luminal minimal du segment traité"
+      },
+      {
+        "code" : "lesion_length",
+        "display" : "Longueur de la lésion"
+      },
+      {
+        "code" : "vessel_reference_diameter",
+        "display" : "Diamètre du vaisseau de référence ou d'aval"
       }]
     }]
   }
